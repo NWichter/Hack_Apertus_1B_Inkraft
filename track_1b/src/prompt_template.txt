@@ -1,0 +1,35 @@
+You draft evaluation items for "Stichtag", a closed-book short-answer benchmark about Swiss social and health insurance administration (reference date 2026-10-01). A human reviewer checks every item afterwards. The ground truth is the Swiss federal statute text given below, never your own knowledge.
+
+TASK
+Write exactly {N_ITEMS} items from the ARTICLES block below. Use only the articles listed in the BATCH PARAMETERS. Spread the items over these articles; at most {MAX_PER_ARTICLE} items per article; never two items about the same fact.
+
+HARD RULES
+1. Every answer must be stated literally in the cited paragraph of the current version. Copy an "evidence" span verbatim (character for character, including spaces and punctuation) from that paragraph. The evidence must contain the answer: the same number, or the answer words. Keep the evidence short (one clause, max. 250 characters).
+2. One question = one short, unambiguous answer. No question may have two defensible answers. The question must name the insurance branch or law context in plain words (e.g. "in der obligatorischen Krankenpflegeversicherung", "in der AHV") so a person without the article can understand it. Do not mention article numbers in the question.
+3. Do not invent facts. Do not use knowledge from outside the given text. No cantonal facts, no facts about the financing of the 13th AHV pension, no facts that depend on a value the text leaves to the Federal Council or to cantons.
+4. German items use Swiss spelling: "ss" instead of "ß", amounts as "CHF 300" or "300 Franken". No personal names, no real persons; vignettes use roles only ("eine 40-jährige Arbeitnehmerin").
+5. French and Italian versions: translate the German question faithfully, but take answer and evidence from the French/Italian text of the same paragraph (these texts are equally authentic). Never translate the answer yourself if the authentic text uses a different term; use the term of the authentic text.
+6. Answers: numbers as digits ("3 Monate", "CHF 700", "80 Prozent"); procedural answers name the body or step exactly as the text does ("die IV-Stelle", "Einsprache"); yes/no answers are exactly "Ja"/"Nein" (FR "Oui"/"Non", IT "Sì"/"No") and the question must contain the condition that decides the answer.
+
+QUESTION TYPES (use the quota in the BATCH PARAMETERS)
+- numeric: amount, rate, age, period or deadline expressed as a number.
+- procedural: who is responsible, where to file, which remedy or step.
+- yes_no: yes/no question with an explicit condition from the text.
+- temporal: a rule that changed since 2024. Only for articles marked CHANGED in the ARTICLES block. The question asks for the current rule; give the outdated answer from the PREVIOUS version, with a verbatim evidence span from the previous version's paragraph. The question must not reveal the date of the change.
+
+REGISTER: "lay" (how an insured person would ask) or "professional" (how a clerk at a compensation office, a medical practice or an IV office would ask). Mix both, roughly half each.
+DIFFICULTY_PRIOR: 1 = core fact known to most practitioners, 2 = detail, 3 = rare detail or exception.
+
+OUTPUT
+Return only JSON Lines (one JSON object per line, no Markdown fences, no commentary). Schema per line:
+{"act": "<act abbreviation>", "article_id": "<e.g. art_64_a>", "paragraph": "<paragraph number as shown, e.g. 1, 1bis, or empty string>", "domain": "<domain from BATCH PARAMETERS>", "question_type": "numeric|procedural|yes_no|temporal", "register": "lay|professional", "difficulty_prior": 1, "answer_type": "currency_chf|number|percent|duration|age|date|text|yes_no", "answer_normalized": {"value": <number>, "unit": "<CHF|percent|days|weeks|months|years|age|count>"} or null, "de": {"question": "...", "answer": "...", "answer_aliases": ["..."], "near_miss_answers": ["..."], "evidence": "..."}, "fr": {same keys} or null, "it": {same keys} or null, "temporal": null or {"previous_paragraph": "<paragraph number in the previous version>", "de": {"outdated_answer": "...", "evidence": "..."}, "fr": {...} or null, "it": {...} or null}}
+
+- answer_normalized is required for numeric answers and temporal items with a number, null otherwise.
+- near_miss_answers: plausible wrong answers that a model might give (e.g. the amount for children instead of adults). Empty list if none.
+- Provide "fr" and "it" for every item when the BATCH PARAMETERS say PARALLEL = yes; otherwise null.
+
+BATCH PARAMETERS
+{BATCH_PARAMETERS}
+
+ARTICLES (current version applicable on 2026-10-01; CHANGED articles also show the PREVIOUS version)
+{ARTICLES}
