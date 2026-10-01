@@ -1,0 +1,1430 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Inkraft Pitch</title>
+    <meta
+      name="description"
+      content="Inkraft: a trilingual benchmark for Swiss social and health insurance law. Every gold answer is quoted from fedlex, valid on 1 October 2026."
+    />
+    <meta name="robots" content="noindex" />
+    <link
+      rel="icon"
+      href="../assets/inkraft-favicon.svg"
+      type="image/svg+xml"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --paper: #f6f4ee;
+        --card: #ffffff;
+        --ink: #14202e;
+        --navy: #1e3a5f;
+        --muted: #5b6676;
+        --line: #d9d5ca;
+        --green: #1f8a5b;
+        --green-bg: #e3f1ea;
+        --grey: #a3acb8;
+        --grey-ink: #6b7480;
+        --grey-bg: #eceef1;
+        --red: #c8453a;
+        --red-bg: #f8e4e1;
+        --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+        --sans: "Inter", "Segoe UI", system-ui, sans-serif;
+        --mono: "JetBrains Mono", Consolas, ui-monospace, monospace;
+      }
+      @page {
+        size: 1920px 1080px;
+        margin: 0;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: #3a4350;
+      }
+      body {
+        font: 400 30px/1.4 var(--sans);
+        color: var(--ink);
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      a {
+        color: inherit;
+      }
+      .slide {
+        width: 1920px;
+        height: 1080px;
+        position: relative;
+        overflow: hidden;
+        background: var(--paper);
+        padding: 92px 128px 80px;
+        margin: 0 auto 40px;
+        break-after: page;
+        page-break-after: always;
+      }
+      .slide:last-of-type {
+        break-after: auto;
+        page-break-after: auto;
+      }
+      .slide::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 14px;
+        background: var(--navy);
+      }
+      body.single {
+        background: var(--paper);
+      }
+      body.single .slide {
+        display: none;
+        margin: 0;
+      }
+      body.single .slide.on {
+        display: block;
+      }
+      body.single .slide.s1.on {
+        display: grid;
+      }
+      @media print {
+        html,
+        body {
+          background: none;
+        }
+        .slide {
+          margin: 0;
+        }
+        .ui {
+          display: none !important;
+        }
+      }
+
+      .kicker {
+        font: 600 24px/1.2 var(--mono);
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--navy);
+        margin: 0 0 26px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+      .kicker img {
+        width: 44px;
+        height: 44px;
+      }
+      h1,
+      h2 {
+        font-family: var(--serif);
+        font-weight: 700;
+        color: var(--navy);
+        margin: 0;
+        letter-spacing: -0.01em;
+      }
+      h2 {
+        font-size: 76px;
+        line-height: 1.06;
+        max-width: 1500px;
+      }
+      .lead {
+        font-size: 34px;
+        line-height: 1.4;
+        color: var(--muted);
+        max-width: 1400px;
+        margin: 24px 0 0;
+      }
+      .mono {
+        font-family: var(--mono);
+      }
+      .g {
+        color: var(--green);
+      }
+      .r {
+        color: var(--red);
+      }
+      .tbd {
+        display: inline-block;
+        font: 600 0.8em/1.2 var(--mono);
+        color: var(--navy);
+        background: repeating-linear-gradient(
+          -45deg,
+          #fff6d6,
+          #fff6d6 8px,
+          #fdeeb8 8px,
+          #fdeeb8 16px
+        );
+        border: 2px dashed #c9a227;
+        border-radius: 6px;
+        padding: 2px 10px;
+        white-space: nowrap;
+      }
+      .card {
+        background: var(--card);
+        border: 2px solid var(--line);
+        border-radius: 14px;
+        padding: 30px 34px;
+      }
+      .tag {
+        display: inline-block;
+        font: 700 22px/1 var(--mono);
+        letter-spacing: 0.08em;
+        padding: 9px 14px;
+        border-radius: 6px;
+        color: #fff;
+      }
+      .tag.g {
+        background: var(--green);
+        color: #fff;
+      }
+      .tag.grey {
+        background: var(--grey-ink);
+      }
+      .tag.r {
+        background: var(--red);
+        color: #fff;
+      }
+      .tag.navy {
+        background: var(--navy);
+      }
+      .foot {
+        position: absolute;
+        left: 128px;
+        right: 128px;
+        bottom: 44px;
+        font-size: 24px;
+        color: var(--muted);
+      }
+
+      /* 1 title */
+      .s1 {
+        display: grid;
+        grid-template-columns: 1fr 520px;
+        gap: 80px;
+        align-items: center;
+        padding-top: 80px;
+      }
+      .s1 h1 {
+        font-size: 168px;
+        line-height: 1;
+        letter-spacing: -0.02em;
+      }
+      .s1 .claim {
+        font: 600 64px/1.12 var(--serif);
+        color: var(--ink);
+        margin: 26px 0 0;
+      }
+      .s1 .claim em {
+        font-style: normal;
+        color: var(--green);
+      }
+      .s1 .sub {
+        font-size: 32px;
+        color: var(--muted);
+        margin: 30px 0 0;
+        max-width: 1020px;
+      }
+      .s1 .btns {
+        display: flex;
+        gap: 22px;
+        margin-top: 48px;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 14px;
+        font: 600 28px/1 var(--sans);
+        padding: 22px 30px;
+        border-radius: 10px;
+        text-decoration: none;
+        border: 3px solid var(--navy);
+      }
+      .btn.pri {
+        background: var(--navy);
+        color: #fff;
+      }
+      .btn.sec {
+        color: var(--navy);
+        background: transparent;
+      }
+      .s1 .logo {
+        width: 520px;
+        height: 520px;
+      }
+      .s1 .team {
+        position: absolute;
+        left: 128px;
+        bottom: 56px;
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        font-size: 26px;
+        color: var(--muted);
+      }
+      .s1 .team img {
+        width: 52px;
+        height: 52px;
+      }
+
+      /* 2 problem */
+      .s2 .grid {
+        display: grid;
+        grid-template-columns: 1.15fr 1fr;
+        gap: 64px;
+        margin-top: 52px;
+      }
+      .ask {
+        font: 500 32px/1.35 var(--sans);
+        background: var(--navy);
+        color: #fff;
+        border-radius: 18px 18px 18px 4px;
+        padding: 26px 32px;
+        max-width: 900px;
+      }
+      .ask small {
+        display: block;
+        font: 600 22px/1 var(--mono);
+        letter-spacing: 0.08em;
+        opacity: 0.7;
+        margin-bottom: 12px;
+      }
+      .answers {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 26px;
+        margin-top: 28px;
+      }
+      .ans {
+        border-radius: 14px;
+        padding: 26px 30px;
+        border: 3px solid;
+      }
+      .ans .amt {
+        font: 700 64px/1 var(--serif);
+        margin: 18px 0 14px;
+      }
+      .ans p {
+        margin: 0;
+        font-size: 25px;
+        line-height: 1.35;
+      }
+      .ans.old {
+        border-color: var(--grey);
+        background: var(--grey-bg);
+        color: var(--grey-ink);
+      }
+      .ans.old .amt {
+        text-decoration: line-through;
+        text-decoration-color: var(--red);
+        text-decoration-thickness: 5px;
+      }
+      .ans.now {
+        border-color: var(--green);
+        background: var(--green-bg);
+      }
+      .ans.now .amt {
+        color: var(--green);
+      }
+      .who h3 {
+        font: 600 24px/1 var(--mono);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin: 0 0 22px;
+      }
+      .who ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .who li {
+        font-size: 30px;
+        padding: 20px 0 20px 0;
+        border-top: 2px solid var(--line);
+      }
+      .who li b {
+        color: var(--navy);
+        display: block;
+        font-size: 32px;
+      }
+      .who li span {
+        color: var(--muted);
+        font-size: 26px;
+      }
+      .punch {
+        font: 600 44px/1.2 var(--serif);
+        color: var(--ink);
+        margin: 34px 0 0;
+      }
+
+      /* 3 three languages */
+      .langs {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 28px;
+        margin-top: 50px;
+      }
+      .lang .code {
+        font: 700 26px/1 var(--mono);
+        color: var(--navy);
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+      .lang .code span {
+        font-weight: 500;
+        font-size: 22px;
+        color: var(--muted);
+      }
+      .lang q {
+        display: block;
+        font: 500 31px/1.42 var(--serif);
+        margin: 20px 0 0;
+        quotes: none;
+      }
+      .lang mark {
+        background: var(--green-bg);
+        color: var(--green);
+        font-weight: 700;
+        padding: 0 6px;
+        border-radius: 4px;
+      }
+      .law {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        gap: 36px;
+        align-items: center;
+        border-top: 3px solid var(--navy);
+        padding-top: 32px;
+      }
+      .law .ref {
+        font: 700 30px/1.25 var(--mono);
+        color: var(--navy);
+      }
+      .law q {
+        font: 600 36px/1.3 var(--serif);
+        quotes: none;
+        display: block;
+      }
+      .law p {
+        margin: 10px 0 0;
+        font-size: 28px;
+        color: var(--muted);
+      }
+
+      /* 4 outcomes */
+      .out {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+        margin-top: 50px;
+      }
+      .o {
+        border-radius: 14px;
+        padding: 30px 28px;
+        border: 3px solid;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+      }
+      .o .amt {
+        font: 700 60px/1 var(--serif);
+        margin: 26px 0 18px;
+      }
+      .o p {
+        margin: 0;
+        font-size: 26px;
+        line-height: 1.38;
+      }
+      .o.c {
+        border-color: var(--green);
+      }
+      .o.c .amt {
+        color: var(--green);
+      }
+      .o.s {
+        border-color: var(--grey);
+        background: var(--grey-bg);
+      }
+      .o.s .amt {
+        color: var(--grey-ink);
+      }
+      .o.i {
+        border-color: var(--red);
+      }
+      .o.i .amt {
+        color: var(--red);
+      }
+      .o.n {
+        border-color: var(--line);
+        border-style: dashed;
+        background: transparent;
+      }
+      .o.n .amt {
+        color: var(--navy);
+        font-size: 46px;
+        line-height: 1.1;
+      }
+      .o .grade {
+        margin-top: auto;
+        padding-top: 22px;
+        font: 600 22px/1.3 var(--mono);
+        color: var(--muted);
+      }
+      .s4 .punch {
+        margin-top: 64px;
+        font-size: 56px;
+      }
+
+      /* 5 dataset */
+      .s5 .top {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+        margin-top: 44px;
+      }
+      .tile .n {
+        font: 700 84px/1 var(--serif);
+        color: var(--navy);
+      }
+      .tile .l {
+        font-size: 26px;
+        color: var(--muted);
+        margin-top: 10px;
+        line-height: 1.3;
+      }
+      .s5 .bottom {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 56px;
+        margin-top: 36px;
+      }
+      .bars h3,
+      .split h3 {
+        font: 600 22px/1 var(--mono);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin: 0 0 16px;
+      }
+      .bar {
+        display: grid;
+        grid-template-columns: 100px 1fr 56px;
+        align-items: center;
+        gap: 16px;
+        height: 37px;
+        font-size: 24px;
+      }
+      .bar b {
+        font: 600 24px/1 var(--mono);
+        color: var(--navy);
+      }
+      .bar i {
+        display: block;
+        height: 24px;
+        background: var(--navy);
+        border-radius: 3px;
+      }
+      .bar span {
+        font: 600 24px/1 var(--mono);
+        text-align: right;
+      }
+      .stack {
+        display: flex;
+        height: 56px;
+        border-radius: 8px;
+        overflow: hidden;
+        margin-bottom: 16px;
+      }
+      .stack div {
+        display: flex;
+        align-items: center;
+        padding-left: 14px;
+        color: #fff;
+        font: 700 26px/1 var(--mono);
+      }
+      .legend {
+        font-size: 25px;
+        line-height: 1.55;
+        color: var(--ink);
+      }
+      .legend i {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        border-radius: 3px;
+        margin-right: 10px;
+        vertical-align: -1px;
+      }
+      .proof {
+        margin-top: 26px;
+        border-left: 8px solid var(--green);
+        background: var(--green-bg);
+        padding: 18px 24px;
+        font-size: 26px;
+        line-height: 1.35;
+        border-radius: 0 10px 10px 0;
+      }
+      .proof b {
+        font-family: var(--mono);
+        color: var(--green);
+      }
+
+      /* 6 evaluation */
+      .steps {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        margin-top: 44px;
+      }
+      .step .k {
+        font: 700 24px/1 var(--mono);
+        color: var(--green);
+      }
+      .step h4 {
+        font: 700 32px/1.2 var(--sans);
+        color: var(--navy);
+        margin: 14px 0 10px;
+      }
+      .step p {
+        margin: 0;
+        font-size: 26px;
+        color: var(--muted);
+        line-height: 1.35;
+      }
+      table.res {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 38px;
+        font-size: 28px;
+      }
+      .res th {
+        font: 600 22px/1.2 var(--mono);
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--muted);
+        text-align: left;
+        padding: 0 16px 14px;
+        border-bottom: 3px solid var(--navy);
+      }
+      .res td {
+        padding: 18px 16px;
+        border-bottom: 2px solid var(--line);
+      }
+      .res td:first-child {
+        font-weight: 700;
+        color: var(--navy);
+      }
+
+      /* 7 contamination */
+      .s7 .grid {
+        display: grid;
+        grid-template-columns: 1fr 1.1fr;
+        gap: 64px;
+        margin-top: 48px;
+        align-items: start;
+      }
+      .cat {
+        font-size: 29px;
+        line-height: 1.45;
+      }
+      .cat code {
+        font: 600 26px/1.3 var(--mono);
+        background: #fff;
+        border: 2px solid var(--line);
+        border-radius: 6px;
+        padding: 2px 10px;
+        color: var(--navy);
+      }
+      .cat p {
+        margin: 0 0 22px;
+      }
+      .buckets {
+        display: grid;
+        gap: 18px;
+      }
+      .bk {
+        display: grid;
+        grid-template-columns: 1fr 200px;
+        align-items: center;
+        gap: 20px;
+        padding: 22px 28px;
+        border-radius: 12px;
+        border: 3px solid;
+        background: #fff;
+      }
+      .bk b {
+        display: block;
+        font-size: 30px;
+      }
+      .bk span {
+        font-size: 24px;
+        color: var(--muted);
+      }
+      .bk .v {
+        text-align: right;
+      }
+      .bk.cur {
+        border-color: var(--green);
+      }
+      .bk.old {
+        border-color: var(--grey);
+        background: var(--grey-bg);
+      }
+      .bk.abs {
+        border-color: var(--line);
+        border-style: dashed;
+      }
+      .bk .vh {
+        font: 600 20px/1 var(--mono);
+        color: var(--muted);
+        display: block;
+        margin-bottom: 8px;
+      }
+      .s7 .q {
+        font: 600 40px/1.25 var(--serif);
+        color: var(--ink);
+        margin-top: 40px;
+      }
+
+      /* 8 reproducibility */
+      .s8 .grid {
+        display: grid;
+        grid-template-columns: 1.15fr 1fr;
+        gap: 56px;
+        margin-top: 48px;
+      }
+      .term {
+        background: #13202f;
+        color: #e6edf5;
+        border-radius: 14px;
+        padding: 30px 34px;
+        font: 500 27px/1.55 var(--mono);
+      }
+      .term .p {
+        color: #7fd3a8;
+      }
+      .term .c {
+        color: #95a3b5;
+      }
+      .term .ok {
+        color: #7fd3a8;
+        font-weight: 600;
+      }
+      .term + .term {
+        margin-top: 22px;
+      }
+      .files {
+        font: 500 26px/1.6 var(--mono);
+      }
+      .files div {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        border-bottom: 2px solid var(--line);
+        padding: 10px 0;
+      }
+      .files div span {
+        font-family: var(--sans);
+        color: var(--muted);
+        font-size: 24px;
+      }
+      .lic {
+        margin-top: 26px;
+        font-size: 26px;
+        line-height: 1.5;
+      }
+      .lic b {
+        color: var(--navy);
+      }
+
+      /* 9 close */
+      .s9 {
+        background: var(--navy);
+        color: #fff;
+      }
+      .s9::before {
+        background: var(--green);
+      }
+      .s9 .wrap {
+        display: grid;
+        grid-template-columns: 1fr 420px;
+        gap: 80px;
+        align-items: center;
+        height: 100%;
+      }
+      .s9 .kicker {
+        color: #b9c7d8;
+      }
+      .s9 h2 {
+        color: #fff;
+        font-size: 104px;
+      }
+      .s9 .ask2 {
+        font: 500 40px/1.3 var(--serif);
+        margin: 36px 0 0;
+        color: #dce4ee;
+        max-width: 1100px;
+      }
+      .s9 .links {
+        margin-top: 50px;
+        display: grid;
+        gap: 16px;
+        font-size: 28px;
+      }
+      .s9 .links div {
+        display: grid;
+        grid-template-columns: 220px auto;
+        justify-content: start;
+        gap: 20px;
+        align-items: center;
+      }
+      .conds {
+        margin-top: 34px;
+        font-size: 27px;
+        color: var(--muted);
+        line-height: 1.5;
+      }
+      .conds b {
+        color: var(--navy);
+      }
+      .s9 .links b {
+        font: 600 24px/1 var(--mono);
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #b9c7d8;
+      }
+      .s9 .person {
+        background: #fff;
+        color: var(--ink);
+        border-radius: 18px;
+        padding: 40px 36px;
+        text-align: center;
+      }
+      .s9 .person img {
+        width: 210px;
+        height: 210px;
+      }
+      .s9 .person .nm {
+        font: 700 36px/1.2 var(--serif);
+        color: var(--navy);
+        margin-top: 18px;
+      }
+      .s9 .person .rl {
+        font-size: 26px;
+        color: var(--muted);
+        margin-top: 8px;
+      }
+
+      /* presentation mode */
+      body.present {
+        background: #0e141c;
+        overflow: hidden;
+        height: 100vh;
+      }
+      body.present .slide {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        margin: 0;
+        display: none;
+        transform: translate(-50%, -50%) scale(var(--k, 1));
+      }
+      body.present .slide.on {
+        display: block;
+        animation: enter 0.35s ease both;
+      }
+      body.present .slide.s1.on {
+        display: grid;
+      }
+      @keyframes enter {
+        from {
+          opacity: 0;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        body.present .slide.on {
+          animation: none;
+        }
+      }
+      .ui {
+        display: none;
+      }
+      body.present .ui {
+        display: flex;
+        position: fixed;
+        right: 18px;
+        bottom: 16px;
+        gap: 8px;
+        align-items: center;
+        font: 500 15px/1 var(--mono);
+        color: #c8d2de;
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+      body.present.moved .ui {
+        opacity: 0.9;
+      }
+      body.present.idle .ui {
+        opacity: 0;
+      }
+      .ui button {
+        background: #1f2b3a;
+        color: #fff;
+        border: 1px solid #3a4a5e;
+        border-radius: 6px;
+        font: inherit;
+        padding: 8px 12px;
+        cursor: pointer;
+      }
+      .ui a {
+        color: #c8d2de;
+        margin-right: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 1 TITLE -->
+    <section class="slide s1">
+      <div>
+        <p class="kicker">Hack Apertus 2026 · Track 1B Swiss Voices</p>
+        <h1>Inkraft</h1>
+        <p class="claim">The law is the <em>answer key.</em></p>
+        <p class="sub">
+          A trilingual benchmark (DE · FR · IT) for Swiss social and health
+          insurance law. Every gold answer is quoted from fedlex, valid on
+          1&nbsp;October&nbsp;2026.
+        </p>
+        <div class="btns">
+          <a class="btn pri" href="#">Dataset on Hugging Face →</a>
+          <a class="btn sec" href="#">▶ Watch the 2-minute video</a>
+          <span class="tbd">[TBD links]</span>
+        </div>
+      </div>
+      <img
+        class="logo"
+        src="../assets/inkraft.svg"
+        alt="Inkraft logo: a stamp marks one day on a calendar sheet as in force"
+      />
+      <div class="team">
+        <img src="../assets/apertool.svg" alt="" />
+        Team Apertool · solo builder · Core Task Intelligence
+      </div>
+    </section>
+
+    <!-- 2 PROBLEM -->
+    <section class="slide s2">
+      <p class="kicker">The problem</p>
+      <h2>Same question. Two confident answers.</h2>
+      <div class="grid">
+        <div>
+          <div class="ask">
+            <small>ASKED TO AN AI ASSISTANT</small>
+            How much is the minimum full AHV old-age pension per month?
+          </div>
+          <div class="answers">
+            <div class="ans old">
+              <span class="tag grey">PREVIOUS RULE</span>
+              <div class="amt">CHF 1,225</div>
+              <p>Correct until 31&nbsp;Dec&nbsp;2024.</p>
+            </div>
+            <div class="ans now">
+              <span class="tag g">IN FORCE</span>
+              <div class="amt">CHF 1,260</div>
+              <p>Since 1&nbsp;Jan&nbsp;2025 · Art.&nbsp;34 para.&nbsp;5 AHVG</p>
+            </div>
+          </div>
+          <p class="punch">
+            Social insurance law changes on fixed dates.<br />A model doesn't
+            know which version it learned.
+          </p>
+        </div>
+        <div class="who">
+          <h3>Who asks</h3>
+          <ul>
+            <li>
+              <b>Residents</b
+              ><span
+                >Living in Switzerland means compulsory KVG and AHV cover.</span
+              >
+            </li>
+            <li>
+              <b>Medical practice assistants</b
+              ><span>Franchise, billing, deadlines at the front desk.</span>
+            </li>
+            <li>
+              <b>Municipal AHV branch offices</b
+              ><span
+                >Generalists who answer pension and benefit questions.</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3 INSIGHT -->
+    <section class="slide s3">
+      <p class="kicker">The insight</p>
+      <h2>The answer is already written down. In three languages.</h2>
+      <div class="langs">
+        <div class="card lang">
+          <div class="code">DE <span>AHVG Art. 34 Abs. 5</span></div>
+          <q
+            >«Der Mindestbetrag der vollen Altersrente von
+            <mark>1260&nbsp;Franken</mark> entspricht dem Rentenindex von
+            229,1&nbsp;Punkten.»</q
+          >
+        </div>
+        <div class="card lang">
+          <div class="code">FR <span>LAVS art. 34 al. 5</span></div>
+          <q
+            >«Le montant minimal de la rente de vieillesse complète de
+            <mark>1260&nbsp;francs</mark> correspond à un indice des rentes de
+            229,1&nbsp;points.»</q
+          >
+        </div>
+        <div class="card lang">
+          <div class="code">IT <span>LAVS art. 34 cpv. 5</span></div>
+          <q
+            >«L’importo minimo della rendita completa di vecchiaia di
+            <mark>1260&nbsp;franchi</mark> corrisponde a un indice delle rendite
+            di 229,1&nbsp;punti.»</q
+          >
+        </div>
+      </div>
+      <div class="law">
+        <div class="ref">Art. 14 para. 1<br />PublG</div>
+        <div>
+          <q
+            >«Bei Erlassen sind die drei Fassungen in gleicher Weise
+            verbindlich.»</q
+          >
+          <p>
+            All three language versions of an act are equally binding. So each
+            language gets its gold answer from its own authentic text, never
+            from a translation.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 STALE VS INVENTED -->
+    <section class="slide s4">
+      <p class="kicker">What Inkraft measures</p>
+      <h2>A wrong answer is not always invented.</h2>
+      <div class="out">
+        <div class="o c">
+          <span class="tag g">CORRECT</span>
+          <div class="amt">CHF 1,260</div>
+          <p>
+            The rule in force on the as&#8209;of date, 1&nbsp;Oct&nbsp;2026.
+          </p>
+          <div class="grade">gold, quoted from fedlex</div>
+        </div>
+        <div class="o s">
+          <span class="tag grey">STALE</span>
+          <div class="amt">CHF 1,225</div>
+          <p>
+            Was the law until the last amendment. Inkraft stores the previous
+            rule and its fedlex version.
+          </p>
+          <div class="grade">outdated_answers</div>
+        </div>
+        <div class="o i">
+          <span class="tag r">INVENTED</span>
+          <div class="amt">CHF 1,300</div>
+          <p>Example: an amount in no version of the law. A hallucination.</p>
+          <div class="grade">any other answer</div>
+        </div>
+        <div class="o n">
+          <span class="tag navy">NOT ATTEMPTED</span>
+          <div class="amt">“I'm not sure.”</div>
+          <p>Honest. Scored apart from wrong answers, as in SimpleQA.</p>
+          <div class="grade">abstention</div>
+        </div>
+      </div>
+      <p class="punch">Stale is not invented. Inkraft tells them apart.</p>
+    </section>
+
+    <!-- 5 DATASET -->
+    <section class="slide s5">
+      <p class="kicker">The dataset</p>
+      <h2>Built from the statute book.</h2>
+      <div class="top">
+        <div class="card tile">
+          <div class="n">210</div>
+          <div class="l">core questions in German</div>
+        </div>
+        <div class="card tile">
+          <div class="n">600</div>
+          <div class="l">rows across DE · FR · IT</div>
+        </div>
+        <div class="card tile">
+          <div class="n">195</div>
+          <div class="l">cores in all three languages</div>
+        </div>
+        <div class="card tile">
+          <div class="n">18</div>
+          <div class="l">amended rules with the previous answer stored</div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="bars">
+          <h3>Core questions per federal law</h3>
+          <div class="bar">
+            <b>AHVG</b><i style="width: 100%"></i><span>40</span>
+          </div>
+          <div class="bar">
+            <b>KVG</b><i style="width: 90%"></i><span>36</span>
+          </div>
+          <div class="bar">
+            <b>KVV</b><i style="width: 72.5%"></i><span>29</span>
+          </div>
+          <div class="bar">
+            <b>ATSG</b><i style="width: 67.5%"></i><span>27</span>
+          </div>
+          <div class="bar">
+            <b>UVG</b><i style="width: 67.5%"></i><span>27</span>
+          </div>
+          <div class="bar">
+            <b>IVG</b><i style="width: 62.5%"></i><span>25</span>
+          </div>
+          <div class="bar">
+            <b>ELG</b><i style="width: 40%"></i><span>16</span>
+          </div>
+          <div class="bar">
+            <b>OR</b><i style="width: 25%"></i><span>10</span>
+          </div>
+        </div>
+        <div class="split">
+          <h3>Cited article last amended</h3>
+          <div class="stack">
+            <div style="width: 58.6%; background: var(--navy)">123</div>
+            <div style="width: 28.1%; background: var(--green)">59</div>
+            <div style="width: 13.3%; background: var(--grey-ink)">28</div>
+          </div>
+          <div class="legend">
+            <div><i style="background: var(--navy)"></i>before 2024</div>
+            <div><i style="background: var(--green)"></i>in 2024 or 2025</div>
+            <div><i style="background: var(--grey-ink)"></i>in 2026</div>
+          </div>
+          <div class="proof">
+            <b>600 / 600</b> rows pass the source check: the evidence appears
+            word for word in the cited fedlex paragraph, in the row's own
+            language.
+          </div>
+        </div>
+      </div>
+      <div class="foot">
+        Status 1 Oct 2026: draft v0 before human review. Target for v1.0.0: ≥
+        300 cores, ≥ 30 % hand-written.
+        <span class="tbd">[TBD final counts]</span>
+      </div>
+    </section>
+
+    <!-- 6 EVALUATION -->
+    <section class="slide s6">
+      <p class="kicker">Evaluation</p>
+      <h2>Graded like SimpleQA. Checked by a human.</h2>
+      <div class="steps">
+        <div class="card step">
+          <div class="k">1 · RULES</div>
+          <h4>Numbers and dates first</h4>
+          <p>
+            Amounts, deadlines and dates are extracted and matched against gold
+            and the stale answer.
+          </p>
+        </div>
+        <div class="card step">
+          <div class="k">2 · LLM JUDGE</div>
+          <h4>A different model family</h4>
+          <p>
+            Judge <span class="tbd">[TBD model]</span> grades correct · stale ·
+            near miss · other · not attempted.
+          </p>
+        </div>
+        <div class="card step">
+          <div class="k">3 · HUMAN</div>
+          <h4>20 % blind sample</h4>
+          <p>
+            Graded without seeing the judge. Agreement as Cohen's κ =
+            <span class="tbd">[TBD]</span>
+          </p>
+        </div>
+      </div>
+      <table class="res">
+        <thead>
+          <tr>
+            <th>Apertus 1.5</th>
+            <th>Correct DE · FR · IT</th>
+            <th>Stale share of errors</th>
+            <th>Not attempted</th>
+            <th>Effect of the date in the prompt</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>8B</td>
+            <td><span class="tbd">[TBD]</span></td>
+            <td><span class="tbd">[TBD]</span></td>
+            <td><span class="tbd">[TBD]</span></td>
+            <td><span class="tbd">[TBD]</span></td>
+          </tr>
+          <tr>
+            <td>70B</td>
+            <td><span class="tbd">[TBD]</span></td>
+            <td><span class="tbd">[TBD]</span></td>
+            <td><span class="tbd">[TBD]</span></td>
+            <td><span class="tbd">[TBD]</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="conds">
+        <b>Conditions:</b> as-of date in the system prompt (main) · plain
+        question · law paragraph in the prompt (open book) to separate a
+        knowledge gap from a reading error.<br /><b>Published:</b> every answer,
+        every grade and the human labels.
+      </p>
+    </section>
+
+    <!-- 7 CONTAMINATION -->
+    <section class="slide s7">
+      <p class="kicker">Contamination check</p>
+      <h2>Did Apertus see this law? We check its own training data.</h2>
+      <div class="grid">
+        <div class="cat">
+          <p>
+            Apertus publishes its training catalogue. For v1.5 it lists Swiss
+            legislation:
+          </p>
+          <p><code>Multi_Legal_Pile · switzerland_lexfind</code></p>
+          <p>
+            For every item we look up the cited paragraph in that corpus and
+            check which version of the rule it contains.
+          </p>
+          <p>
+            Leak check: 13-gram overlap of our questions with the corpus =
+            <span class="tbd">[TBD]</span>
+          </p>
+        </div>
+        <div class="buckets">
+          <div class="bk cur">
+            <div>
+              <b>Current rule in training data</b
+              ><span>seen and still valid</span>
+            </div>
+            <div class="v">
+              <span class="vh">ACCURACY</span><span class="tbd">[TBD]</span>
+            </div>
+          </div>
+          <div class="bk old">
+            <div>
+              <b>Previous rule in training data</b
+              ><span>seen, then amended</span>
+            </div>
+            <div class="v">
+              <span class="vh">ACCURACY</span><span class="tbd">[TBD]</span>
+            </div>
+          </div>
+          <div class="bk abs">
+            <div><b>Not in training data</b><span>never seen there</span></div>
+            <div class="v">
+              <span class="vh">ACCURACY</span><span class="tbd">[TBD]</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="q">Seen but not learned, or never seen? Now we can tell.</p>
+    </section>
+
+    <!-- 8 REPRODUCIBILITY -->
+    <section class="slide s8">
+      <p class="kicker">Reproducibility</p>
+      <h2>One command. Every number recomputed.</h2>
+      <div class="grid">
+        <div>
+          <div class="term">
+            <span class="p">$</span> make run<br />
+            <span class="c"># replay: no keys, no GPU</span><br />
+            <span class="c"># recomputes every metric from stored answers</span
+            ><br />
+            <span class="c"># and checks it against expected_results.json</span
+            ><br />
+            <span class="ok">PASS</span>
+          </div>
+          <div class="term">
+            <span class="p">$</span> make run MODE=full \<br />
+            &nbsp;&nbsp;LLM_BASE_URL=… LLM_NAME=…<br />
+            <span class="c"># grades any OpenAI-compatible model</span>
+          </div>
+        </div>
+        <div>
+          <div class="files">
+            <div>test.jsonl <span>questions and gold</span></div>
+            <div>metadata.jsonl <span>fedlex ELI with version date</span></div>
+            <div>responses/ <span>every model answer</span></div>
+            <div>judgements/ <span>every grade</span></div>
+            <div>human_labels/ <span>the 20 % sample</span></div>
+          </div>
+          <div class="lic">
+            <b>Hugging Face:</b> <span class="tbd">[TBD dataset URL]</span
+            ><br />
+            <b>Law text:</b> public domain (Art. 5 URG)<br />
+            <b>Dataset:</b> <span class="tbd">[TBD licence]</span> ·
+            <b>Code:</b> Apache-2.0
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9 TEAM / CLOSE -->
+    <section class="slide s9">
+      <div class="wrap">
+        <div>
+          <p class="kicker">Inkraft · Track 1B Swiss Voices</p>
+          <h2>The law is the answer key.</h2>
+          <p class="ask2">
+            Before a model answers citizens on AHV or KVG, run it on Inkraft:
+            one command tells you how often it is right, stale or inventing.
+          </p>
+          <div class="links">
+            <div>
+              <b>Dataset</b><span class="tbd">[TBD Hugging Face URL]</span>
+            </div>
+            <div><b>Code</b><span class="tbd">[TBD GitHub URL]</span></div>
+            <div>
+              <b>Report</b><span class="tbd">[TBD Apertool_Report.pdf]</span>
+            </div>
+          </div>
+        </div>
+        <div class="person">
+          <img src="../assets/apertool.svg" alt="Apertool logo" />
+          <div class="nm">Team Apertool</div>
+          <div class="rl">Niklas Wichter · solo builder</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="ui">
+      <a href="?all">all slides</a>
+      <button data-go="-1" aria-label="Previous">←</button>
+      <span class="cnt"></span>
+      <button data-go="1" aria-label="Next">→</button>
+      <button data-fs aria-label="Full screen">⛶</button>
+    </div>
+
+    <script>
+      (function () {
+        var q = new URLSearchParams(location.search);
+        var slides = [].slice.call(document.querySelectorAll(".slide"));
+        var one = parseInt(q.get("slide") || "", 10);
+        if (one) {
+          document.body.classList.add("single");
+          if (slides[one - 1]) slides[one - 1].classList.add("on");
+          return;
+        }
+        if (q.has("print") || q.has("all")) return;
+
+        var body = document.body,
+          cur = -1,
+          cnt = document.querySelector(".cnt"),
+          idle;
+        body.classList.add("present");
+        function fit() {
+          body.style.setProperty(
+            "--k",
+            Math.min(innerWidth / 1920, innerHeight / 1080),
+          );
+        }
+        fit();
+        addEventListener("resize", fit);
+        function show(i) {
+          i = Math.max(0, Math.min(slides.length - 1, i));
+          if (i === cur) return;
+          if (cur >= 0) slides[cur].classList.remove("on");
+          cur = i;
+          slides[cur].classList.add("on");
+          cnt.textContent = cur + 1 + " / " + slides.length;
+          history.replaceState(null, "", "#" + (cur + 1));
+        }
+        function go(d) {
+          show(cur + d);
+        }
+        function fs() {
+          if (document.fullscreenElement) document.exitFullscreen();
+          else if (document.documentElement.requestFullscreen)
+            document.documentElement.requestFullscreen();
+        }
+        addEventListener("mousemove", function () {
+          body.classList.add("moved");
+          body.classList.remove("idle");
+          clearTimeout(idle);
+          idle = setTimeout(function () {
+            body.classList.add("idle");
+          }, 2500);
+        });
+        addEventListener("keydown", function (e) {
+          if (e.metaKey || e.ctrlKey || e.altKey) return;
+          var k = e.key;
+          if (
+            k === "ArrowRight" ||
+            k === "PageDown" ||
+            k === " " ||
+            k === "Enter"
+          ) {
+            e.preventDefault();
+            go(1);
+          } else if (k === "ArrowLeft" || k === "PageUp" || k === "Backspace") {
+            e.preventDefault();
+            go(-1);
+          } else if (k === "Home") show(0);
+          else if (k === "End") show(slides.length - 1);
+          else if (k === "f" || k === "F") fs();
+        });
+        document.querySelector(".ui").addEventListener("click", function (e) {
+          var b = e.target.closest("button");
+          if (!b) return;
+          e.stopPropagation();
+          if (b.hasAttribute("data-fs")) fs();
+          else go(+b.dataset.go);
+        });
+        addEventListener("click", function (e) {
+          if (e.button !== 0 || e.target.closest("a,button,.ui")) return;
+          if (String(getSelection())) return;
+          go(e.clientX < innerWidth / 3 ? -1 : 1);
+        });
+        var tx = null;
+        addEventListener(
+          "touchstart",
+          function (e) {
+            tx = e.touches[0].clientX;
+          },
+          { passive: true },
+        );
+        addEventListener("touchend", function (e) {
+          if (tx === null) return;
+          var dx = e.changedTouches[0].clientX - tx;
+          if (Math.abs(dx) > 40) go(dx < 0 ? 1 : -1);
+          tx = null;
+        });
+        var h = parseInt(location.hash.slice(1), 10);
+        show(h ? h - 1 : 0);
+      })();
+    </script>
+  </body>
+</html>

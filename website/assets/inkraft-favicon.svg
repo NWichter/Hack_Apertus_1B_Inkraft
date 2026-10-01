@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="3 9 236 236" width="256" height="256">
+  <title>Inkraft (Favicon)</title>
+  <g id="ink-logo">
+    <g id="ink-sheet-fr">
+      <path d="M57.1 106.1 L148.5 95.7 A12 12 0 0 1 161.8 106.2 L174.3 215.5 A12 12 0 0 1 163.7 228.8 L72.3 239.2 A12 12 0 0 1 59 228.6 L46.6 119.4 A12 12 0 0 1 57.1 106.1 Z" fill="#FFFFFF" stroke="#1E3A5F" stroke-width="12" stroke-linejoin="round"/>
+    </g>
+    <g id="ink-sheet-de">
+      <path d="M90 104 L184 104 A12 12 0 0 1 196 116 L196 226 A12 12 0 0 1 184 238 L90 238 A12 12 0 0 1 78 226 L78 116 A12 12 0 0 1 90 104 Z" fill="#FFFFFF" stroke="#1E3A5F" stroke-width="12" stroke-linejoin="round"/>
+    </g>
+    <g id="ink-lines" fill="none" stroke-linecap="round">
+      <path d="M98 132 H132" stroke="#1E3A5F" stroke-width="14"/>
+    </g>
+    <g id="ink-imprint">
+      <circle id="ink-imprint-ring" cx="146" cy="186" r="34" fill="#FFFFFF" stroke="#1F8A5B" stroke-width="11"/>
+      <path id="ink-imprint-check" d="M130 187 L142 199 L163 175" fill="none" stroke="#1F8A5B" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="ink-stamp">
+      <g id="ink-stamp-knob" fill="#1E3A5F">
+        <ellipse cx="146" cy="24" rx="20" ry="15"/>
+        <rect x="137" y="32" width="18" height="20"/>
+      </g>
+      <g id="ink-stamp-body">
+        <rect x="106" y="48" width="80" height="24" rx="7" fill="#C8453A"/>
+        <rect id="ink-stamp-pad" x="111" y="72" width="70" height="11" rx="2" fill="#1F8A5B"/>
+      </g>
+    </g>
+  </g>
+</svg>

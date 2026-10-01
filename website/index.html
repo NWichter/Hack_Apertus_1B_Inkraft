@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Inkraft · Swiss insurance law, as of today</title>
+    <meta
+      name="description"
+      content="Inkraft is a trilingual benchmark (German, French, Italian) on Swiss social and health insurance law as of 1 October 2026. Every gold answer is quoted from fedlex. It tells correct, stale and invented answers apart."
+    />
+    <meta name="robots" content="noindex" />
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="theme-color"
+      content="#F5F7FA"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#0F1722"
+      media="(prefers-color-scheme: dark)"
+    />
+    <link rel="canonical" href="https://inkraft.skimu.de/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Inkraft" />
+    <meta property="og:title" content="Inkraft · The law is the answer key." />
+    <meta
+      property="og:description"
+      content="A trilingual benchmark on Swiss social and health insurance law as of 1 October 2026. Correct, stale or invented?"
+    />
+    <meta property="og:url" content="https://inkraft.skimu.de/" />
+    <meta property="og:locale" content="en_GB" />
+
+    <link rel="icon" href="assets/inkraft-favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="assets/fonts/inter-latin-wght-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="wrap header-row">
+        <a class="brand" href="./" aria-label="Inkraft, home">
+          <img src="assets/inkraft-favicon.svg" alt="" width="28" height="28" />
+          <span>Inkraft</span>
+        </a>
+        <nav aria-label="Sections">
+          <a href="#problem">Problem</a>
+          <a href="#approach">Approach</a>
+          <a href="#status">Status</a>
+          <a class="nav-wide" href="#material">Pitch &amp; report</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="wrap hero-grid">
+          <div class="hero-text">
+            <p class="eyebrow">Hack Apertus 2026 · Track 1B Swiss Voices</p>
+            <h1>The law is the answer key.</h1>
+            <p class="lead">
+              Inkraft asks a language model short questions on Swiss social and
+              health insurance law, in German, French and Italian, as of
+              <strong>1&nbsp;October&nbsp;2026</strong>. Every gold answer is
+              quoted from the federal statute. Every wrong answer is sorted: was
+              it the rule that applied <em>before</em> an amendment, or was it
+              invented?
+            </p>
+            <div class="cta">
+              <a class="btn" href="#approach">How it works</a>
+              <a class="btn btn-ghost" href="pitch/">View the pitch</a>
+            </div>
+          </div>
+          <div class="hero-logo">
+            <img
+              id="hero-logo"
+              src="assets/inkraft.svg"
+              data-anim="assets/inkraft-anim.svg"
+              alt="Inkraft logo: a stamp marks the front sheet of three stacked versions of a statute as in force."
+              width="256"
+              height="256"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="problem" class="section">
+        <div class="wrap">
+          <h2>One question, two amounts</h2>
+          <p class="section-lead">
+            Swiss social insurance law changes on fixed dates. A model trained
+            on last year's web answers with last year's rule, confidently. For a
+            municipal AHV office, a medical practice or a social service, that
+            is worse than “I don't know”.
+          </p>
+          <div class="compare">
+            <figure class="card">
+              <figcaption class="q">
+                “What is the minimum full AHV old-age pension per month?”
+              </figcaption>
+              <div class="answers">
+                <div class="answer is-current">
+                  <span class="tag tag-current">In force</span>
+                  <span class="amount">CHF 1,260</span>
+                  <span class="when">since 1 January 2025</span>
+                </div>
+                <div class="answer is-stale">
+                  <span class="tag tag-stale">Stale</span>
+                  <span class="amount">CHF 1,225</span>
+                  <span class="when">until 31 December 2024</span>
+                </div>
+              </div>
+              <p class="source">
+                Art. 34 para. 5 AHVG (SR 831.10), consolidated versions of 1
+                January 2024 and 1 January 2025 on fedlex.
+              </p>
+            </figure>
+            <ul class="who">
+              <li>
+                <strong>AHV branch offices</strong> in the municipalities, often
+                run by generalists
+              </li>
+              <li>
+                <strong>Medical practice staff</strong> answering insurance and
+                billing questions
+              </li>
+              <li>
+                <strong>Social services</strong> and the insured themselves
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="approach" class="section alt">
+        <div class="wrap">
+          <h2>How Inkraft measures</h2>
+          <div class="grid4">
+            <article class="card feature">
+              <h3>Gold from the statute</h3>
+              <p>
+                Every answer is anchored to one paragraph of federal law: fedlex
+                ELI with version date and the verbatim quote. No gold answer
+                comes from a language model.
+              </p>
+            </article>
+            <article class="card feature">
+              <h3>Three authentic languages</h3>
+              <p>
+                German, French and Italian versions of federal acts are equally
+                binding. The French and Italian gold answers are taken from
+                those texts, not translated.
+              </p>
+            </article>
+            <article class="card feature">
+              <h3>An as-of date</h3>
+              <p>
+                For provisions amended since 2024 each item also stores the
+                earlier rule. A wrong answer that matches it counts as
+                <em>stale</em>, not as invented.
+              </p>
+            </article>
+            <article class="card feature">
+              <h3>Credit for “I don't know”</h3>
+              <p>
+                SimpleQA-style grading: correct, incorrect or not attempted. A
+                penalised score rewards abstaining over guessing.
+              </p>
+            </article>
+          </div>
+
+          <h3 class="sub">Four outcomes per answer</h3>
+          <ul class="outcomes">
+            <li class="o-correct">
+              <strong>Correct</strong> matches the law in force on 1 October
+              2026
+            </li>
+            <li class="o-stale">
+              <strong>Stale</strong> matches the rule before an amendment
+            </li>
+            <li class="o-invented">
+              <strong>Invented</strong> matches neither
+            </li>
+            <li class="o-na">
+              <strong>Not attempted</strong> the model declines or refers to an
+              office
+            </li>
+          </ul>
+
+          <h3 class="sub">Grading you can check</h3>
+          <ol class="steps">
+            <li>
+              <strong>Rules first.</strong> Numbers, units and refusals are
+              extracted in all three languages.
+            </li>
+            <li>
+              <strong>Then a judge</strong> from a different model family than
+              Apertus, calibrated on constructed answers before use.
+            </li>
+            <li>
+              <strong>Then a human</strong> grades a blind 20&nbsp;% sample; we
+              report Cohen's κ.
+            </li>
+            <li>
+              <strong>Then <code>make run</code></strong> recomputes every
+              number from the stored answers and checks it against the published
+              results.
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="status" class="section">
+        <div class="wrap">
+          <h2>Status</h2>
+          <p class="section-lead">
+            Work in progress until 16 October 2026. Numbers appear here only
+            once they are measured.
+          </p>
+          <div class="status-list">
+            <div class="status-row">
+              <span class="pill pill-done">Done</span>
+              <div>
+                <h3>Evaluation harness</h3>
+                <p>
+                  Package with command line, Docker <code>make run</code> that
+                  verifies its own output, and unit tests.
+                </p>
+              </div>
+            </div>
+            <div class="status-row">
+              <span class="pill pill-progress">In progress</span>
+              <div>
+                <h3>Dataset</h3>
+                <p>
+                  Draft under review: 208 core questions, 594 question–answer
+                  rows, 193 cores in all three languages. Hand-written items and
+                  the frozen version 1.0.0 follow.
+                </p>
+              </div>
+            </div>
+            <div class="status-row">
+              <span class="pill pill-progress">In progress</span>
+              <div>
+                <h3>Exposure check against Apertus training data</h3>
+                <p>
+                  The Swiss legislation in MultiLegalPile is part of the Apertus
+                  1.5 training mix. On the draft, the corpus holds the
+                  <em>old</em> wording of amended provisions and never the
+                  current one. Final numbers after the freeze.
+                </p>
+              </div>
+            </div>
+            <div class="status-row">
+              <span class="pill pill-todo">Not yet measured</span>
+              <div>
+                <h3>Results for Apertus 1.5 8B and 70B</h3>
+                <p>
+                  Correct, stale, invented and not attempted per model and
+                  language. The models run after the freeze.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="material" class="section alt">
+        <div class="wrap">
+          <h2>Pitch, video and report</h2>
+          <div class="grid3">
+            <a class="card link-card" href="pitch/">
+              <h3>Pitch</h3>
+              <p>
+                Nine slides on the problem, the dataset and how it is graded.
+              </p>
+              <span class="more">Open the pitch →</span>
+            </a>
+            <div class="card link-card is-pending">
+              <h3>Video</h3>
+              <p>A two-minute walkthrough.</p>
+              <span class="more">Coming soon</span>
+            </div>
+            <a class="card link-card" href="report.pdf">
+              <h3>Technical report</h3>
+              <p>
+                Draft. Measured values are marked as pending until the runs are
+                done.
+              </p>
+              <span class="more">Download PDF →</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section team">
+        <div class="wrap team-row">
+          <img src="assets/apertool.svg" alt="" width="72" height="72" />
+          <p>
+            Inkraft is one of four tools built by
+            <strong>Team Apertool</strong> on Apertus, Switzerland's fully open
+            language model.
+            <a href="https://apertool.skimu.de/">Meet the team →</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>
+          Inkraft · Team Apertool · Hack Apertus 2026, an independent
+          participant entry. Statute texts: Swiss federal law, not protected by
+          copyright (Art. 5 URG). Not legal advice.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

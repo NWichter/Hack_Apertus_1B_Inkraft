@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <title>Inkraft</title>
+  <g id="ink-logo">
+    <g id="ink-sheet-it">
+      <path d="M49 117.8 L138.7 97.1 A12 12 0 0 1 153.1 106.1 L177.8 213.3 A12 12 0 0 1 168.8 227.7 L79.2 248.3 A12 12 0 0 1 64.8 239.4 L40 132.2 A12 12 0 0 1 49 117.8 Z" fill="#FFFFFF" stroke="#1E3A5F" stroke-width="7" stroke-linejoin="round"/>
+    </g>
+    <g id="ink-sheet-fr">
+      <path d="M63.1 110.1 L154.5 99.7 A12 12 0 0 1 167.8 110.2 L180.3 219.5 A12 12 0 0 1 169.7 232.8 L78.3 243.2 A12 12 0 0 1 65 232.6 L52.6 123.4 A12 12 0 0 1 63.1 110.1 Z" fill="#FFFFFF" stroke="#1E3A5F" stroke-width="7" stroke-linejoin="round"/>
+    </g>
+    <g id="ink-sheet-de">
+      <path d="M90 104 L182 104 A12 12 0 0 1 194 116 L194 226 A12 12 0 0 1 182 238 L90 238 A12 12 0 0 1 78 226 L78 116 A12 12 0 0 1 90 104 Z" fill="#FFFFFF" stroke="#1E3A5F" stroke-width="7" stroke-linejoin="round"/>
+    </g>
+    <g id="ink-lines" fill="none" stroke-linecap="round">
+      <path pathLength="100" d="M96 128 H140" stroke="#1E3A5F" stroke-width="10"/>
+      <path pathLength="100" d="M96 150 H172" stroke="#A3ACB8" stroke-width="8"/>
+      <path pathLength="100" d="M96 172 H120" stroke="#A3ACB8" stroke-width="8"/>
+    </g>
+    <g id="ink-imprint">
+      <circle id="ink-imprint-ring" cx="150" cy="192" r="28" fill="#FFFFFF" stroke="#1F8A5B" stroke-width="7"/>
+      <path id="ink-imprint-check" pathLength="100" d="M137 193 L147 203 L165 182" fill="none" stroke="#1F8A5B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="ink-stamp">
+      <g id="ink-stamp-knob" fill="#1E3A5F">
+        <ellipse cx="150" cy="22" rx="17" ry="13"/>
+        <rect x="143" y="30" width="14" height="20"/>
+      </g>
+      <g id="ink-stamp-body">
+        <rect x="116" y="48" width="68" height="20" rx="6" fill="#C8453A"/>
+        <rect id="ink-stamp-pad" x="120" y="68" width="60" height="9" rx="2" fill="#1F8A5B"/>
+      </g>
+    </g>
+  </g>
+</svg>

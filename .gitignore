@@ -29,3 +29,11 @@ build/
 # Tooling caches
 .ruff_cache/
 .pytest_cache/
+
+# Local tool reports
+.gstack/
+
+# Internal working files of the pitch (stay local)
+website/pitch/NOTIZEN.md
+website/pitch/VIDEO.md
+website/pitch/render.sh
