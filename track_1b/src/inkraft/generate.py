@@ -16,7 +16,7 @@ def response_path(data_dir, model, condition):
     return Path(data_dir) / "responses" / f"{model}__{condition}.jsonl"
 
 
-def run(endpoint, items, condition, out_path, workers=8, max_tokens=None):
+def run(endpoint, items, condition, out_path, workers=3, max_tokens=None):
     out_path = Path(out_path)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     done = {r["id"] for r in read_jsonl(out_path) if r.get("response") is not None}

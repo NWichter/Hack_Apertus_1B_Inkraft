@@ -1,4 +1,5 @@
-"""inkraft command line: build | generate | judge | score | replay | expect | sample-human | label | agreement."""
+"""inkraft command line: build | generate | judge | calibrate | score | replay | expect |
+sample-human | label | agreement | contam."""
 
 import argparse
 import json
@@ -7,7 +8,7 @@ import random
 import sys
 from pathlib import Path
 
-from . import dataset, generate, human, judge, score
+from . import contam, dataset, generate, human, judge, score
 from .client import Endpoint
 from .prompts import CONDITIONS
 
@@ -160,6 +161,20 @@ def cmd_calibrate(args):
         )
 
 
+def cmd_contam(args):
+    corpora = contam.load_corpora(args.corpus)
+    if not corpora:
+        sys.exit(f"no *_legislation_switzerland_lexfind.jsonl.xz in {args.corpus}")
+    rows = contam.check(dataset.load(args.data), corpora)
+    out = Path(args.out or Path(args.data) / "contamination.jsonl")
+    dataset.write_jsonl(out, rows)
+    summ = contam.summary(rows)
+    out.with_suffix(".summary.json").write_text(
+        json.dumps(summ, indent=1) + "\n", encoding="utf-8"
+    )
+    print(json.dumps(summ, indent=1))
+
+
 def _diff(a, b, path=""):
     if isinstance(a, dict) and isinstance(b, dict):
         out = []
@@ -199,7 +214,7 @@ def main(argv=None):
             "--sample", type=int, help="random subset of N cores (all languages)"
         )
         p.add_argument("--seed", type=int, default=20261001)
-        p.add_argument("--workers", type=int, default=4)
+        p.add_argument("--workers", type=int, default=3)
         if name == "generate":
             p.add_argument("--model", help="overrides LLM_NAME")
             p.add_argument("--max-tokens", type=int)
@@ -260,9 +275,20 @@ def main(argv=None):
             / "judge_calibration.jsonl"
         ),
     )
-    c.add_argument("--workers", type=int, default=4)
+    c.add_argument("--workers", type=int, default=3)
     c.add_argument("--out")
     c.set_defaults(fn=cmd_calibrate)
+
+    ct = sub.add_parser(
+        "contam", help="exposure/leak check against MultiLegalPile switzerland_lexfind"
+    )
+    ct.add_argument(
+        "--corpus",
+        required=True,
+        help="folder with <lang>_legislation_switzerland_lexfind.jsonl.xz",
+    )
+    ct.add_argument("--out")
+    ct.set_defaults(fn=cmd_contam)
 
     args = ap.parse_args(argv)
     args.fn(args)
