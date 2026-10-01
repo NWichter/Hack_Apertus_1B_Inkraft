@@ -1,0 +1,278 @@
+{
+ "judge_model": "fixture-judge",
+ "note": "synthetic fixture for the replay self-check; not Apertus results",
+ "results": {
+  "fixture-model__closed_dated": {
+   "overall": {
+    "n": 6,
+    "correct": 0.5,
+    "incorrect": 0.3333,
+    "not_attempted": 0.1667,
+    "cga": 0.6,
+    "f": 0.5455,
+    "hallucination_rate": 0.4,
+    "stale_share_of_errors": 0.5,
+    "score_l1": 0.1667,
+    "score_l3": -0.5,
+    "n_total": 6,
+    "n_ungraded": 0,
+    "grade_source": {
+     "judge": 6
+    },
+    "ci95": {
+     "correct": [
+      0.1667,
+      1.0
+     ],
+     "incorrect": [
+      0.0,
+      0.6708
+     ],
+     "not_attempted": [
+      0.0,
+      0.5
+     ],
+     "cga": [
+      0.1667,
+      1.0
+     ],
+     "f": [
+      0.1667,
+      1.0
+     ],
+     "hallucination_rate": [
+      0.0,
+      0.8333
+     ],
+     "stale_share_of_errors": [
+      0.0,
+      1.0
+     ],
+     "score_l1": [
+      -0.6667,
+      1.0
+     ],
+     "score_l3": [
+      -2.0083,
+      1.0
+     ]
+    }
+   },
+   "lang:de-CH": {
+    "n": 3,
+    "correct": 0.6667,
+    "incorrect": 0.3333,
+    "not_attempted": 0.0,
+    "cga": 0.6667,
+    "f": 0.6667,
+    "hallucination_rate": 0.3333,
+    "stale_share_of_errors": 1.0,
+    "score_l1": 0.3333,
+    "score_l3": -0.3333,
+    "n_total": 3,
+    "n_ungraded": 0,
+    "grade_source": {
+     "judge": 3
+    },
+    "ci95": {
+     "correct": [
+      0.0,
+      1.0
+     ],
+     "incorrect": [
+      0.0,
+      1.0
+     ],
+     "not_attempted": [
+      0.0,
+      0.0
+     ],
+     "cga": [
+      0.0,
+      1.0
+     ],
+     "f": [
+      0.0,
+      1.0
+     ],
+     "hallucination_rate": [
+      0.0,
+      1.0
+     ],
+     "stale_share_of_errors": [
+      0.0,
+      1.0
+     ],
+     "score_l1": [
+      -1.0,
+      1.0
+     ],
+     "score_l3": [
+      -3.0,
+      1.0
+     ]
+    }
+   },
+   "lang:fr-CH": {
+    "n": 3,
+    "correct": 0.3333,
+    "incorrect": 0.3333,
+    "not_attempted": 0.3333,
+    "cga": 0.5,
+    "f": 0.4,
+    "hallucination_rate": 0.5,
+    "stale_share_of_errors": 0.0,
+    "score_l1": 0.0,
+    "score_l3": -0.6667,
+    "n_total": 3,
+    "n_ungraded": 0,
+    "grade_source": {
+     "judge": 3
+    },
+    "ci95": {
+     "correct": [
+      0.0,
+      1.0
+     ],
+     "incorrect": [
+      0.0,
+      1.0
+     ],
+     "not_attempted": [
+      0.0,
+      1.0
+     ],
+     "cga": [
+      0.0,
+      1.0
+     ],
+     "f": [
+      0.0,
+      1.0
+     ],
+     "hallucination_rate": [
+      0.0,
+      1.0
+     ],
+     "stale_share_of_errors": [
+      0.0,
+      0.0
+     ],
+     "score_l1": [
+      -1.0,
+      1.0
+     ],
+     "score_l3": [
+      -3.0,
+      1.0
+     ]
+    }
+   },
+   "temporal_items": {
+    "n": 2,
+    "correct": 0.0,
+    "incorrect": 0.5,
+    "not_attempted": 0.5,
+    "cga": 0.0,
+    "f": 0.0,
+    "hallucination_rate": 1.0,
+    "stale_share_of_errors": 1.0,
+    "score_l1": -0.5,
+    "score_l3": -1.5,
+    "n_total": 2,
+    "n_ungraded": 0,
+    "grade_source": {
+     "judge": 2
+    }
+   },
+   "language_consistency": {
+    "n_cores": 0,
+    "same_grade_all_three": 0.0,
+    "correct_on_parallel_cores": {
+     "de": 0.0,
+     "fr": 0.0,
+     "it": 0.0
+    }
+   },
+   "by_domain": {
+    "ahv": {
+     "n": 2,
+     "correct": 0.0,
+     "incorrect": 0.5,
+     "not_attempted": 0.5,
+     "cga": 0.0,
+     "f": 0.0,
+     "hallucination_rate": 1.0,
+     "stale_share_of_errors": 1.0,
+     "score_l1": -0.5,
+     "score_l3": -1.5,
+     "n_total": 2,
+     "n_ungraded": 0,
+     "grade_source": {
+      "judge": 2
+     }
+    },
+    "kvg_insured": {
+     "n": 4,
+     "correct": 0.75,
+     "incorrect": 0.25,
+     "not_attempted": 0.0,
+     "cga": 0.75,
+     "f": 0.75,
+     "hallucination_rate": 0.25,
+     "stale_share_of_errors": 0.0,
+     "score_l1": 0.5,
+     "score_l3": 0.0,
+     "n_total": 4,
+     "n_ungraded": 0,
+     "grade_source": {
+      "judge": 4
+     }
+    }
+   },
+   "by_question_type": {
+    "numeric": {
+     "n": 4,
+     "correct": 0.75,
+     "incorrect": 0.25,
+     "not_attempted": 0.0,
+     "cga": 0.75,
+     "f": 0.75,
+     "hallucination_rate": 0.25,
+     "stale_share_of_errors": 0.0,
+     "score_l1": 0.5,
+     "score_l3": 0.0,
+     "n_total": 4,
+     "n_ungraded": 0,
+     "grade_source": {
+      "judge": 4
+     }
+    },
+    "temporal": {
+     "n": 2,
+     "correct": 0.0,
+     "incorrect": 0.5,
+     "not_attempted": 0.5,
+     "cga": 0.0,
+     "f": 0.0,
+     "hallucination_rate": 1.0,
+     "stale_share_of_errors": 1.0,
+     "score_l1": -0.5,
+     "score_l3": -1.5,
+     "n_total": 2,
+     "n_ungraded": 0,
+     "grade_source": {
+      "judge": 2
+     }
+    }
+   },
+   "by_rule": {
+    "abstain": 1,
+    "match": 3,
+    "near_miss": 1,
+    "stale": 1
+   },
+   "mean_tokens_out": 12.0
+  }
+ }
+}

@@ -1,0 +1,6 @@
+{"id": "fx-0001-de", "model": "fixture-model", "condition": "closed_dated", "response": "Der Selbstbehalt beträgt höchstens CHF 700 pro Jahr.", "tokens_out": 12, "latency_ms": 100}
+{"id": "fx-0001-fr", "model": "fixture-model", "condition": "closed_dated", "response": "La quote-part annuelle maximale est de 700 francs.", "tokens_out": 12, "latency_ms": 100}
+{"id": "fx-0002-de", "model": "fixture-model", "condition": "closed_dated", "response": "Der Mindestbetrag beträgt 1225 Franken pro Monat.", "tokens_out": 12, "latency_ms": 100}
+{"id": "fx-0002-fr", "model": "fixture-model", "condition": "closed_dated", "response": "Je ne suis pas sûr du montant actuel.", "tokens_out": 12, "latency_ms": 100}
+{"id": "fx-0003-de", "model": "fixture-model", "condition": "closed_dated", "response": "Innert 90 Tagen nach der Wohnsitznahme.", "tokens_out": 12, "latency_ms": 100}
+{"id": "fx-0003-fr", "model": "fixture-model", "condition": "closed_dated", "response": "Dans un délai de six mois.", "tokens_out": 12, "latency_ms": 100}

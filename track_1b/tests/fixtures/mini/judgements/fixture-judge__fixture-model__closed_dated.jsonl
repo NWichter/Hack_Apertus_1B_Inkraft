@@ -1,0 +1,6 @@
+{"id": "fx-0001-de", "judge_model": "fixture-judge", "examinee": "fixture-model", "condition": "closed_dated", "grade": "CORRECT", "incorrect_subtype": null}
+{"id": "fx-0001-fr", "judge_model": "fixture-judge", "examinee": "fixture-model", "condition": "closed_dated", "grade": "CORRECT", "incorrect_subtype": null}
+{"id": "fx-0002-de", "judge_model": "fixture-judge", "examinee": "fixture-model", "condition": "closed_dated", "grade": "INCORRECT", "incorrect_subtype": "STALE"}
+{"id": "fx-0002-fr", "judge_model": "fixture-judge", "examinee": "fixture-model", "condition": "closed_dated", "grade": "NOT_ATTEMPTED", "incorrect_subtype": null}
+{"id": "fx-0003-de", "judge_model": "fixture-judge", "examinee": "fixture-model", "condition": "closed_dated", "grade": "CORRECT", "incorrect_subtype": null}
+{"id": "fx-0003-fr", "judge_model": "fixture-judge", "examinee": "fixture-model", "condition": "closed_dated", "grade": "INCORRECT", "incorrect_subtype": "NEAR_MISS"}
