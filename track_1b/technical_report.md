@@ -1,62 +1,111 @@
-# Technical report — `project name`
+# Technical report — Inkraft
 
-> Three sentence summary: The use case, your dataset, and your key evaluation results.
+> Three sentence summary: Swiss residents, municipal AHV offices, medical practices and social services need exact amounts, deadlines and responsibilities from Swiss social and health insurance law, and a model that states last year's rule is worse than one that says it does not know. Inkraft is a trilingual (German, French, Italian) short-answer benchmark in which every gold answer is quoted from the authentic text of a federal act as of 1 October 2026 and, for amended provisions, the previously valid answer is stored as well, so that wrong answers split into _stale_ and _invented_. On Apertus 1.5 8B and 70B we measure [TBD: correct, stale, invented and not-attempted rates per model and language].
 
-**Track:** Apertus Readiness  - Track 1B  
+**Track:** Apertus Readiness - Track 1B (Swiss Voices, Core Task Intelligence)  
 **Event:** Online  
-**Team:** `team name` — `member`, `member`, `member`  
-**Demo:** `link to video, deployment, or notebook`  
+**Team:** Apertool — Niklas Wichter  
+**Demo:** [TBD: link to the Hugging Face dataset and the video]
 
-----
+---
 
 ### Use of Apertus
 
-- **Model:** `e.g. swiss-ai/Apertus-v1.5-70B`
-- **How it is used:** inference | fine-tuning | evaluation | red-teaming
-- **Where it runs:** `local weights, hosted endpoint, ...`
+- **Model:** swiss-ai/Apertus-v1.5-8B and swiss-ai/Apertus-v1.5-70B [@apertus2025; @swissai2026apertus15]
+- **How it is used:** evaluation
+- **Where it runs:** hosted Hack Apertus endpoint (OpenAI-compatible); any other endpoint via `LLM_BASE_URL`, `LLM_API_KEY`, `LLM_NAME`
 
-----
+---
+
 ## Use Case Description
 
-Why the dataset was collected, the use case that it evaluates and why this use case matters.
+Every person living in Switzerland is insured under the Federal Health Insurance Act (KVG) and the old-age and survivors' insurance (AHV). Questions about deductibles, contribution rates, waiting periods and registration deadlines reach municipal AHV branch offices, front-office staff in medical practices, social services and the insured themselves. Mistakes cost money: a missed switching deadline binds a person to an insurer for another year, a wrong waiting period delays an invalidity insurance (IV) claim. Public administrations already deploy Apertus [@swissai2026apertus15], so the question is not only whether the model knows this law, but whether it knows the law _in force_.
+
+Social insurance law changes on fixed dates. The minimum full AHV old-age pension in Art. 34 para. 5 AHVG was CHF 1,225 in the consolidated version of 1 January 2024 and is CHF 1,260 since the version of 1 January 2025. A model trained on older web text may give the earlier figure with confidence. Language models have source-specific effective knowledge cutoffs [@cheng2024dateddata], legal hallucinations are frequent [@dahl2024legalfictions], and outdated statutory knowledge has been shown for German law [@prior2026oldfriend]. Inkraft therefore separates three kinds of failure: an answer that matches the rule before an amendment (_stale_), an answer that matches no version (_invented_), and an honest refusal (_not attempted_).
 
 ## Dataset Summary
 
-Clear specifications for the dataset. Description of what makes it representative for the use case. Descriptive statistics of the dataset across variables of interest.
+Inkraft targets the federal acts on health insurance (KVG, KVV), old-age, invalidity and supplementary benefits (AHVG, IVG, ELG), accident insurance and the general part of social insurance law (UVG, ATSG), and continued payment of wages in case of illness (Art. 324a OR). Each item is a single-turn question with a short gold answer, accepted variants, _near-miss_ answers (a related but wrong value, e.g. the amount for children instead of adults) and, for amended provisions, the outdated answer. Every item is anchored to one paragraph: fedlex ELI with version date and the verbatim quote in the language of the item. The as-of date is 1 October 2026 for all items.
+
+Table 1 places Inkraft among related benchmarks. SwitzerlandQA [@apertus2025] covers Swiss civics including insurance, but as machine-translated multiple choice without sources. Swiss-Bench SBP-002 and 003 cover FINMA, data protection and contract law [@uenal2026sbp002; @uenal2026sbp003], LEXam covers law exams [@fan2025lexam], and Prior et al. measure outdated knowledge of German statutes [@prior2026oldfriend]. To our knowledge no open benchmark combines Swiss social insurance law, gold answers from three authentic language versions, an as-of date with the previous rule, credit for abstention, and an exposure check against the published training data of the evaluated model.
+
+| Benchmark     | Domain, format                                      | Stale   | Abst.   |
+| ------------- | --------------------------------------------------- | ------- | ------- |
+| SwitzerlandQA | civics incl. insurance; MC                          | no      | no      |
+| Swiss-Bench   | FINMA, nDSG, OR; mixed                              | n. r.   | n. r.   |
+| LEXam         | law exams; open + MC                                | n. r.   | n. r.   |
+| Prior et al.  | German law; temporal QA                             | yes     | n. r.   |
+| **Inkraft**   | **social insurance; short, DE/FR/IT, fedlex quote** | **yes** | **yes** |
+
+: Related benchmarks. Stale: separates outdated from wrong answers. Abst.: credits abstention. n. r.: not reported in the abstract (for SwitzerlandQA: Appendix K of the Apertus report).
+
+Table 2 describes the current draft (v1, under review, before the hand-written items are added). It has 208 German core questions and 594 rows in total; 193 cores exist in all three languages. 16 cores are `temporal` items whose provision was amended since 2024.
+
+| Domain                    | Cores | Question type | Cores |
+| ------------------------- | ----- | ------------- | ----- |
+| Accident insurance / ATSG | 54    | numeric       | 91    |
+| Health insurance, insured | 51    | yes / no      | 51    |
+| IV / EL                   | 41    | procedural    | 47    |
+| AHV                       | 40    | temporal      | 16    |
+| Health insurance, billing | 12    | term          | 3     |
+| Wage during illness (OR)  | 10    |               |       |
+
+: Draft v1, German cores by domain and question type. Final counts after the freeze: [TBD].
+
+The specification targets 300 cores, adds calculation items (`calc`), false-premise items, and the domains EO/ALV and occupational pensions; these are written by hand (Section Data Collection Method).
 
 ## Data Collection Method
 
-Motivation of design choices. Description of the data collection, curation and cleaning methods, the annotation method for ground truth labels and if relevant, instructions provided to annotators for creating the ground truth and annotating LLM responses.
+**Truth comes from the statute, never from a language model.** The pipeline runs fedlex → paragraphs → item drafting → automatic checks → review → freeze (v1.0.0) → evaluation. It fetches the acts from the fedlex SPARQL endpoint in German, French and Italian: the consolidation applicable on 1 October 2026, the one applicable at the end of 2023 for `temporal` items, and every already published future version to flag provisions that will change. Articles are split into paragraphs.
 
-If data was collected from human subjects or contains sensitive or personally identifiable information, the method for obtaining consent must be clearly described.
+Two routes create items. (a) _LLM-drafted, human-reviewed:_ a drafting model receives a single paragraph and proposes a question, answer variants and near misses; the gold answer must occur verbatim (or as a normalised number) in that paragraph, otherwise the draft is rejected automatically. The draft v1 questions were written this way by Claude (Anthropic) and GPT-5.5 (OpenAI, via Codex); every row records `generator`, `generator_model`, `prompt_version` and the date. (b) _Hand-written_ items by the author, at least 30 % of the final set, concentrated on item types that drafting models handle poorly (calculations, false premises, temporal items) [TBD: final share].
+
+French and Italian questions are translations, but their gold answers and evidence come from the authentic French and Italian text of the same paragraph, because all three language versions of federal law are equally binding [@publg2023art14]. Terminology follows the official versions (e.g. _Selbstbehalt / quote-part / aliquota_).
+
+**Automatic checks** (script `validate_items.py`, run on every version): schema and allowed values; the evidence occurs verbatim in the cited paragraph of the version valid on the as-of date; the answer or its normalised number occurs in the evidence; for `temporal` items the outdated answer occurs in the previous version and differs from the current value; duplicate and near-duplicate questions; language and value consistency across DE/FR/IT; Swiss spelling and a PII scan. Draft v1 passes with 0 errors; 56 warnings remain, all reviewed (e.g. provisions that change on 1 January 2027, after the evaluation period).
+
+**Review.** Each item is checked against four questions: does the answer stand in the linked paragraph, is there exactly one defensible short answer, is the question understandable without the article, and do FR/IT match DE. Review v1 removed 2 cores and corrected 7, for example restricting the women's reference age question to cohorts born in 1964 or later because the AHV 21 transitional rules give earlier cohorts an age between 64 and 65. Every change is logged in the item. Exclusion rules: no canton-dependent answers, no facts that are politically open during the evaluation period, no questions with more than one defensible answer.
+
+**Exposure check.** Apertus 1.5 was trained on the Swiss legislation subset `switzerland_lexfind` of MultiLegalPile [@swissai2026transparency; @niklaus2024multilegalpile]. We downloaded the German, French and Italian files at the published revision of 12 January 2024 (16,981 German documents, federal and cantonal law) and checked, per item, whether the verbatim evidence of the current version and, for `temporal` items, of the previous version occurs in that corpus; we also count 13-gram overlaps between questions and the corpus [@brown2020gpt3; @sainz2023contamination]. On draft v1 the current evidence occurs in 427 of 594 rows. For the 48 `temporal` rows the current wording occurs **never**; the previous wording occurs in 24. Apertus has therefore seen the old rule, not the new one, for every amended provision in the draft that the corpus covers. The 31 questions with 13-gram hits reuse statutory phrasing; the questions themselves are new. [TBD: final numbers after the freeze.]
+
+**Consent.** No personal data is collected; case vignettes use roles only. A consent form template for optional native-speaker reviewers is provided [TBD].
 
 ## Dataset Details
 
-All relevant details related to dataset quality, ethics, licensing and legal considerations. 
+The statute texts are not protected by copyright (Art. 5 para. 1 URG) [@urg2025art5]; fedlex linked data is offered for free use [@opendataswiss2026terms]. Questions, answers and metadata are released under CDLA-Permissive-2.0; the licence is stored per item. Pages of admin.ch and ahv-iv.ch were used only to cross-check facts, never as text. The intermediate MultiLegalPile files (CC BY-NC-SA) are analysed locally and not redistributed. The data card follows the Hack Apertus template, Datasheets and Data Cards [@gebru2021datasheets; @pushkarna2022datacards]. A canary GUID in every file lets future model builders exclude the set from training [@srivastava2023bigbench]. Quality figures for the data card: review rejection rate, ambiguity rate of an open-book check, intra-annotator agreement on a 20 % second pass, PII hits [TBD].
 
 ## Evaluation
 
 ### Method
-Evaluation method clearly described.
+
+Grading follows SimpleQA [@wei2024simpleqa]: each answer is CORRECT, INCORRECT or NOT_ATTEMPTED; INCORRECT answers carry the subtype STALE (matches the outdated answer) or NEAR_MISS, otherwise OTHER (_invented_). Reported metrics: correct, incorrect and not-attempted rates; correct given attempted (CGA); the SimpleQA F-score; hallucination rate I/(C+I); share of stale errors; a penalised score C − λ·I with λ = 1 and λ = 3, which rewards abstention over guessing [@kalai2025hallucinate; @wen2025abstention]; language consistency (same grade in DE, FR and IT for a core) [@qi2023crosslingual]; and the open-book gain (accuracy with the cited paragraph in the prompt minus closed-book accuracy), which separates a knowledge gap from a reading gap. All figures carry 95 % percentile bootstrap intervals (1,000 resamples, fixed seed); language differences use paired resampling.
+
+Grading has three stages. (1) A deterministic pre-grade extracts numbers, number words, ordinals and units in all three languages, compares durations in days and detects refusals; it never overrules the judge but serves as a hint and as a check. (2) An LLM judge from a different model family than the examinee grades every answer against gold, variants, outdated and near-miss answers [@zheng2023judging]; self-preference is avoided by construction [@panickssery2024selfpreference]. Before use, the judge must reach at least 95 % on 61 constructed answers with known grades (correct, verbose, hedged, wrong language, stale, near miss, conflicting, refusal). [TBD: judge model and calibration accuracy.] (3) A human grades a stratified 20 % sample of every model × condition blind to the judge's grade; we report raw agreement and Cohen's κ with bootstrap intervals [@cohen1960kappa; @bavaresco2025llmjudges].
 
 ### Evaluation setup and inference parameters
-Setup instructions and parameters for reproducing evaluation results clearly described.
+
+Conditions: `closed_dated` (main): system prompt with the date and the instruction to answer briefly and say when unsure; `closed_plain`: the bare question; `open_book`: as `closed_dated` plus the cited paragraph; `thinking`: as `closed_dated` with Apertus' reasoning mode. Parameters: temperature 0, top-p 1, max. 256 output tokens (3,000 with reasoning), seed 20261001, native chat template via the endpoint. Examinees: Apertus-v1.5-8B and -70B. [TBD: judge model and revision, number of calls, run dates.]
 
 ### Results
-Evaluation results clearly presented.
+
+[TBD after the freeze and the runs. Planned: Table 3 with C, I, NA, CGA, F, hallucination rate and penalised scores per model × language with intervals; Figure 2 with stacked bars correct / stale / near miss / invented / not attempted; Figure 3 with the stale rate with and without the date in the prompt and accuracy per exposure bucket (current wording in the corpus / only old wording / absent); judge–human κ.]
 
 ## Dataset Limitations
 
+Only federal law; cantonal rules (e.g. premium reductions) are excluded. A single annotator who is not a native Swiss speaker reviewed all items; French and Italian questions are machine-translated, although their gold answers come from the authentic texts. Draft questions were written by closed models (Claude, GPT-5.5), disclosed per row; we report accuracy separately for hand-written and drafted items to detect drafting artefacts. The `temporal` bucket is determined per article, so an item can sit in an amended article whose paragraph did not change. The as-of date ages: the set needs a new version after each amendment (e.g. on 1 January 2027). The exposure check covers only the Swiss legislation subset of MultiLegalPile, not web crawls such as Nemotron-CC [@su2025nemotroncc] or FineWeb-2 [@penedo2025fineweb2]. Short answers measure knowledge, not the quality of advice.
+
 ## Lessons Learnt and Recommendations
 
-How you would improve the dataset. What insights the dataset presents on how the model can be improved for your use case.
+For the dataset: yearly updates on 1 January, a cantonal extension, native-speaker review of French and Italian, more `temporal` items. For the model: [TBD from the results; candidates are date awareness in the system prompt, retrieval with a version filter instead of parametric recall [@prior2026oldfriend], and training abstention instead of rewarding guesses [@kalai2025hallucinate]].
+
+A practical lesson from building the grader: number extraction must treat indefinite articles (_un mois_, _eine Rente_), calendar dates, ordinals and units explicitly; a naive extractor counted refusals as wrong answers and accepted "three months" for "three weeks". The calibration set caught these errors before any judge or human grade was produced.
 
 ## Reproducibility
 
-What a judge needs to get your numbers back: hardware, runtime, seeds, and the exact commit. `make run` should do the rest.
+`make run` builds a Docker image (Python 3.12, no GPU, no API keys) and recomputes every reported number from the stored responses and judgements; it compares the result with `data/expected_results.json` and prints PASS or FAIL. `make run MODE=full` evaluates any OpenAI-compatible model given `LLM_*` (and grades with `JUDGE_*`). `make test` runs the unit tests. Seeds: 20261001 (generation, sampling of pilot cores), 20261016 (bootstrap, human sample). [TBD: commit hash, Hugging Face revision, runtime.]
 
 ## License
 
-Creative Commons Attribution 4.0 (CC-BY-4.0). All HackApertus projects are open-sourced.
+Code: Apache-2.0. Dataset (questions, answers, metadata): CDLA-Permissive-2.0. This report: CC-BY-4.0. Statute quotes: not protected by copyright (Art. 5 URG). The judge prompt adapts the SimpleQA grader of OpenAI simple-evals (MIT).
 
 ## References
