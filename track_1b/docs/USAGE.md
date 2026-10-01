@@ -25,16 +25,17 @@ uv run --with pytest python -m pytest -q    # tests
 
 ## Pipeline
 
-| Step              | Command                                                                                            | Output                                                |
-| ----------------- | -------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
-| Split built items | `inkraft build <items.jsonl>`                                                                      | `data/test.jsonl`, `data/metadata.jsonl`              |
-| Query a model     | `inkraft generate --condition closed_dated closed_plain open_book thinking`                        | `data/responses/<model>__<condition>.jsonl`           |
-| Check the judge   | `inkraft calibrate`                                                                                | accuracy on 61 constructed answers; gate 0.95         |
-| Judge             | `inkraft judge`                                                                                    | `data/judgements/<judge>__<model>__<condition>.jsonl` |
-| Score             | `inkraft score --out results.json`                                                                 | metrics with 95 % bootstrap intervals                 |
-| Human check       | `inkraft sample-human`, `inkraft label --annotator <name>`, `inkraft agreement --annotator <name>` | 20 % stratified blind sample, Cohen's κ               |
-| Freeze            | `inkraft expect --judge-model <judge>`                                                             | `data/expected_results.json`                          |
-| Reproduce         | `inkraft replay`                                                                                   | PASS / FAIL                                           |
+| Step              | Command                                                                                            | Output                                                                      |
+| ----------------- | -------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| Split built items | `inkraft build <items.jsonl>`                                                                      | `data/test.jsonl`, `data/metadata.jsonl`                                    |
+| Query a model     | `inkraft generate --condition closed_dated closed_plain open_book thinking`                        | `data/responses/<model>__<condition>.jsonl`                                 |
+| Check the judge   | `inkraft calibrate`                                                                                | accuracy on 61 constructed answers; gate 0.95                               |
+| Judge             | `inkraft judge`                                                                                    | `data/judgements/<judge>__<model>__<condition>.jsonl`                       |
+| Score             | `inkraft score --out results.json`                                                                 | metrics with 95 % bootstrap intervals                                       |
+| Human check       | `inkraft sample-human`, `inkraft label --annotator <name>`, `inkraft agreement --annotator <name>` | 20 % stratified blind sample, Cohen's κ                                     |
+| Exposure check    | `inkraft contam --corpus <dir with *_legislation_switzerland_lexfind.jsonl.xz>`                    | evidence of current / previous version in the corpus; question 13-gram hits |
+| Freeze            | `inkraft expect --judge-model <judge>`                                                             | `data/expected_results.json`                                                |
+| Reproduce         | `inkraft replay`                                                                                   | PASS / FAIL                                                                 |
 
 Environment: `LLM_BASE_URL`, `LLM_API_KEY`, `LLM_NAME` for the examinee; `JUDGE_BASE_URL`,
 `JUDGE_API_KEY`, `JUDGE_NAME` for the judge. Both are OpenAI-compatible chat endpoints.
