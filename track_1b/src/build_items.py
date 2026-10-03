@@ -1,4 +1,4 @@
-"""Expand compact draft items (Claude or Codex output) into full Stichtag draft records.
+"""Expand compact draft items (Claude, Codex or Gemini output) into full Stichtag draft records.
 
 One compact line = one core item with optional fr/it versions. One output line = one language version.
 Source metadata (SR number, version date, ELI URL, paragraph quote) is looked up in the fedlex
@@ -155,6 +155,7 @@ def build(compact, n, args, fx):
                 "mode": "human_written" if args.author == "human" else "llm_drafted",
                 "batch": compact.get("_batch"),
                 "manual_correction": compact.get("_manual_correction"),
+                "attested_by": args.attested_by if args.author == "human" else None,
                 "translation": None
                 if lang == "de"
                 else (
@@ -173,13 +174,23 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--fedlex", required=True)
     ap.add_argument("--out", required=True)
-    ap.add_argument("--author", required=True, choices=["claude", "codex", "human"])
+    ap.add_argument(
+        "--author", required=True, choices=["claude", "codex", "gemini", "human"]
+    )
+    ap.add_argument(
+        "--attested-by",
+        help="required with --author human: name of the person who wrote every item by hand, without an LLM",
+    )
     ap.add_argument("--id-prefix", required=True)
     ap.add_argument("--generator-model", required=True)
     ap.add_argument("--generated-at", required=True)
     ap.add_argument("--prompt-version", required=True)
     ap.add_argument("inputs", nargs="+")
     args = ap.parse_args()
+    if args.author == "human" and not args.attested_by:
+        ap.error("--author human needs --attested-by; LLM or agent output is never 'human'")
+    if args.author == "human" and args.generator_model != "none":
+        ap.error("--author human needs --generator-model none")
     fx = Fedlex(args.fedlex)
     out = []
     n = 0
