@@ -55,9 +55,7 @@ new dataset version; cantonal law.
 | `judgements/`    | judge grades with the rule-based pre-grade                                                                                                                                                                                                                             |
 | `human_labels/`  | blind human labels for a 20 % sample                                                                                                                                                                                                                                   |
 
-Only a `test` split. Draft v1: 208 German cores, 594 rows, 193 cores in all three languages, 16 temporal
-cores. Domains: accident insurance/ATSG 54, health insurance (insured) 51, IV/EL 41, AHV 40, health
-insurance (billing) 12, wage during illness 10. [TBD: final statistics.]
+Only a `test` split. Frozen v1.0.0: **303 German cores**, **879 rows in total**, **288 cores in all three languages (DE, FR, IT)**, **95 human expert handwritten cores (31.35% hand-written share)**, **20 calculation traps (`calc`)**, **20 false-premise traps (`false_premise`)**, 16 temporal cores. Domains: accident insurance/ATSG 56, health insurance (insured) 56, AHV 44, IV/EL 42, EO/ALV 37, occupational pensions & 3a (BVG/BVV3) 24, health insurance (billing) 24, wage during illness (OR) 20. Validated against Fedlex v2: 0 errors, 879/879 clean rows.
 
 ## Dataset Creation
 

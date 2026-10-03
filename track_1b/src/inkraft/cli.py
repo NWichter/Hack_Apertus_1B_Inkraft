@@ -49,8 +49,10 @@ def cmd_judge(args):
     items = _items(args)
     for p in sorted((Path(args.data) / "responses").glob("*.jsonl")):
         model, cond = p.stem.split("__", 1)
-        if args.examinee and model not in args.examinee:
-            continue
+        if args.examinee:
+            candidates = {m.replace("/", "_").replace(":", "_") for m in args.examinee} | set(args.examinee)
+            if model not in candidates:
+                continue
         if args.condition and cond not in args.condition:
             continue
         out = judge.judge_path(args.data, ep.model, model, cond)
@@ -59,7 +61,15 @@ def cmd_judge(args):
 
 
 def cmd_score(args):
-    res = score.score_all(dataset.load(args.data), args.data, args.judge_model)
+    res = score.score_all(
+        dataset.load(args.data),
+        args.data,
+        args.judge_model,
+        cluster_bootstrap=getattr(args, "cluster", False),
+        include_authoring=getattr(args, "breakdowns", False),
+        include_exposure=getattr(args, "breakdowns", False),
+    )
+    deltas = score.compute_deltas(res)
     text = json.dumps(res, ensure_ascii=False, indent=1)
     if args.out:
         Path(args.out).write_text(text + "\n", encoding="utf-8")
@@ -70,6 +80,12 @@ def cmd_score(args):
             f"{key:40s} n={o['n']:4d}/{o['n_total']:4d}  C={o['correct']:.3f}  I={o['incorrect']:.3f}  "
             f"NA={o['not_attempted']:.3f}  CGA={o['cga']:.3f}  F={o['f']:.3f}  src={o['grade_source']}"
         )
+    if deltas:
+        print("\nCondition deltas:")
+        for m, d in deltas.items():
+            print(f"  {m}:")
+            for d_name, d_vals in d.items():
+                print(f"    {d_name}: {d_vals}")
 
 
 def cmd_replay(args):
@@ -226,6 +242,12 @@ def main(argv=None):
     s = sub.add_parser("score")
     s.add_argument("--judge-model", default=os.environ.get("JUDGE_NAME"))
     s.add_argument("--out")
+    s.add_argument("--cluster", action="store_true", help="cluster-bootstrap over core_id")
+    s.add_argument(
+        "--breakdowns",
+        action="store_true",
+        help="include authoring and exposure breakdowns",
+    )
     s.set_defaults(fn=cmd_score)
 
     r = sub.add_parser(

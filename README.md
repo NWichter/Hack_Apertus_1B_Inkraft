@@ -1,60 +1,86 @@
-# Hack Apertus — project template
+# Inkraft — Swiss Legal Temporal & Factual Q&A Benchmark (Track 1B)
 
-Template repository for [Hack Apertus](https://hackapertus.ch/) submissions.
-Every project keeps almost the same layout, so organizers and judges find the
-same things in the same place.
+[![License: Apache-2.0](https://img.shields.io/badge/Code_License-Apache_2.0-blue.svg)](LICENSE)
+[![Data License: CDLA-Permissive-2.0](https://img.shields.io/badge/Data_License-CDLA_Permissive_2.0-green.svg)](https://cdla.dev/permissive-2-0/)
+[![Hack Apertus](https://img.shields.io/badge/Hack_Apertus-2026-red.svg)](https://hackapertus.ch/)
 
-## Select your track
+**Inkraft** is a trilingual factual and temporal benchmark evaluating large language models (specifically the Swiss open-weights Apertus model family) on Swiss federal social and health insurance law (KVG/KVV, AHVG, IVG, ELG, UVG, ATSG, OR) as of **1 October 2026**.
 
-This repository holds one example project per track:
+Every question is anchored in a verified federal law provision ([fedlex.admin.ch](https://www.fedlex.admin.ch/)). Inkraft measures:
+1. **Core Factuality & Hallucination Rate** across German, French, and Italian.
+2. **Temporal Drift (`STALE`)**: Distinguishing genuinely outdated legal knowledge (from training cutoff) vs. invented answers.
+3. **Cross-Lingual Consistency**: Evaluating whether parallel legal questions receive identical answers in all national languages.
+4. **Training Corpus Contamination**: Verbatim and n-gram overlap checks against Swiss legal pretraining corpora (`Multi_Legal_Pile / switzerland_lexfind`).
 
-- `track_1a/`
-- `track_1b/`
-- `track_2a/`
-- `track_2b/`
+Part of the **Apertool** submission suite for [Hack Apertus 2026](https://hackapertus.ch/).
 
-Keep the directory for the track you are competing in **exactly as it is** —
-don't rename it or move its files — and delete the other track directories.
-That directory is your project root. Keep the files and directories as shown
-below.
+---
 
-## The structure
+## 🚀 Quickstart (`make run`)
 
-| Path | What it is |
-| --- | --- |
-| `README.md` | The challenge description and submission requirements for your track |
-| `technical_report.md` | The deeper write-up: architecture, evaluation, limitations |
-| `Makefile` | `make run` must spin up your project |
-| `src/` | Your code |
-| `data/` | Datasets — `track_1a`, `track_2a` and `track_2b` only; max. 100 MB |
-| `findings/` | Issue files — `track_1a` only |
-| `docs/` | Diagrams, notes, longer write-ups |
-
-## Run it
-
-Judges run `make run` from the root of the project, on a clean checkout:
+Judges can run the reproducible benchmark directly via Docker on a clean checkout:
 
 ```bash
 make run
 ```
 
-`make run` is expected to run the project using Docker, since that
-is how the judges will run it.
-- If you used other local open-weight models, include instructions for running the project in your technical report.
-- Use the following environment variables:
+By default, `make run` executes the offline replay validator on the frozen benchmark results, recomputing all metrics and verifying them against `expected_results.json` without requiring live API credentials.
+
+### Live Evaluation (`MODE=full`)
+
+To evaluate a live OpenAI-compatible Apertus endpoint:
+
+```bash
+export LLM_NAME="apertus-v1.5-8b"
+export LLM_BASE_URL="https://your-apertus-endpoint.cscs.ch/v1"
+export LLM_API_KEY="your-api-key"
+
+# Optional judge endpoint (Qwen2.5 / Qwen3 recommended)
+export JUDGE_NAME="Qwen/Qwen2.5-72B-Instruct"
+export JUDGE_BASE_URL="https://api.together.xyz/v1"
+export JUDGE_API_KEY="your-judge-key"
+
+make run MODE=full
 ```
-LLM_NAME — name and version of the model
-LLM_BASE_URL — endpoint base URL
-LLM_API_KEY — your API key
+
+---
+
+## 📦 Benchmark Structure
+
+| Directory | Content |
+| --- | --- |
+| `track_1b/` | Official track root directory (contains `Makefile`, `run.sh`, `technical_report.md`) |
+| `track_1b/src/inkraft/` | Python CLI and evaluation library (`generate`, `judge`, `score`, `human`, `contam`) |
+| `track_1b/data/` | Benchmark dataset (`test.jsonl`, `metadata.jsonl`, `expected_results.json`) |
+| `track_1b/docs/` | Dataset Card, annotation guidelines, and CLI usage documentation |
+| `website/` | Project landing page and interactive report preview |
+
+---
+
+## 🛠 Local CLI Installation
+
+```bash
+cd track_1b
+python -m venv .venv
+source .venv/bin/activate  # on Windows: .venv\Scripts\activate
+pip install -e .
+python -m pytest -q
 ```
 
-## Getting started
+---
 
-1. Click **Use this template** to create your own repository.
-2. Delete the other track directories. Don't rename or restructure yours.
-3. Read its `README.md` and fill in `technical_report.md`.
-4. Make `make run` work from the root of the project, on a clean checkout.
+## 📜 Licenses & Citation
 
-## License
+- **Code:** [Apache-2.0](LICENSE)
+- **Dataset:** [CDLA-Permissive-2.0](https://cdla.dev/permissive-2-0/)
+- **Statutory Source Texts:** Public domain according to Art. 5 Swiss Federal Act on Copyright (URG).
 
-All Hack Apertus projects are open-sourced. Please check our Terms & Conditions for specific licensing details (6. What you build is open source): https://hackapertus.ch/terms-and-conditions
+```bibtex
+@misc{apertool2026inkraft,
+  title={Inkraft: A Trilingual Benchmark for Temporal and Factual Knowledge in Swiss Federal Law},
+  author={Wichter, Niklas and Team Apertool},
+  year={2026},
+  howpublished={\url{https://inkraft.apertool.ch}},
+  note={Hack Apertus 2026 Submission}
+}
+```

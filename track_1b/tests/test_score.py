@@ -63,3 +63,82 @@ def test_redact_key_identifier():
     from inkraft.client import redact
 
     assert redact(b"Rate limit exceeded for api_key: 0a1b2c3d. Limit") == "Rate limit exceeded for api_key: [redacted]. Limit"
+
+
+def test_closed_swiss_prompt():
+    from inkraft.prompts import extra_params, messages
+
+    item = {"lang": "de-CH", "question": "Gilt Art. 12?"}
+    msgs = messages(item, "closed_swiss")
+    assert len(msgs) == 2
+    assert "Schweizer Bundesrecht" in msgs[0]["content"]
+    assert "Oktober" not in msgs[0]["content"]
+    assert msgs[1]["content"] == "Gilt Art. 12?"
+    assert extra_params("closed_swiss") == {
+        "chat_template_kwargs": {"enable_thinking": False}
+    }
+    assert extra_params("closed_dated") == {
+        "chat_template_kwargs": {"enable_thinking": False}
+    }
+    assert extra_params("closed_plain") == {
+        "chat_template_kwargs": {"enable_thinking": False}
+    }
+    assert extra_params("open_book") == {
+        "chat_template_kwargs": {"enable_thinking": False}
+    }
+    assert extra_params("thinking") == {
+        "chat_template_kwargs": {"enable_thinking": True},
+        "max_tokens": 3000,
+    }
+
+
+def test_path_sanitization():
+    from inkraft.generate import response_path
+    from inkraft.judge import judge_path
+
+    p_resp = response_path("data", "meta-llama/Llama-3.1-8B-Instruct", "closed_dated")
+    assert "/" not in p_resp.name and "meta-llama_Llama-3.1-8B-Instruct" in p_resp.name
+
+    p_jd = judge_path(
+        "data",
+        "Qwen/Qwen2.5-72B-Instruct",
+        "swiss-ai/apertus-v1.5-8b",
+        "closed_swiss",
+    )
+    assert "/" not in p_jd.name
+    assert "Qwen_Qwen2.5-72B-Instruct" in p_jd.name
+    assert "swiss-ai_apertus-v1.5-8b" in p_jd.name
+
+
+def test_cluster_bootstrap():
+    rows = [
+        row("CORRECT", core="c1"),
+        row("CORRECT", core="c1"),
+        row("INCORRECT", core="c2"),
+        row("INCORRECT", core="c2"),
+    ]
+    res = summarise(rows, cluster_by_core=True)
+    assert "ci95" in res
+    assert res["ci95"]["correct"] == res["ci95"]["correct"]
+
+
+def test_compute_deltas():
+    from inkraft.score import compute_deltas
+
+    mock_res = {
+        "modelA__closed_dated": {
+            "overall": {"correct": 0.50, "f": 0.50, "stale_share_of_errors": 0.40}
+        },
+        "modelA__closed_swiss": {
+            "overall": {"correct": 0.45, "f": 0.45, "stale_share_of_errors": 0.10}
+        },
+        "modelA__closed_plain": {"overall": {"correct": 0.30, "f": 0.30}},
+        "modelA__open_book": {"overall": {"correct": 0.85, "f": 0.85}},
+    }
+    deltas = compute_deltas(mock_res)
+    assert "modelA" in deltas
+    m_d = deltas["modelA"]
+    assert m_d["open_book_gain"]["delta_correct"] == 0.35
+    assert m_d["date_effect"]["delta_correct"] == 0.05
+    assert m_d["date_effect"]["delta_stale_share"] == 0.30
+    assert m_d["swiss_context_effect"]["delta_correct"] == 0.15

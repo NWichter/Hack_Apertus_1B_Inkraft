@@ -49,8 +49,9 @@ SUBTYPES = {"STALE", "NEAR_MISS", "OTHER"}
 
 
 def judge_path(data_dir, judge_model, model, condition):
-    safe = judge_model.replace("/", "_").replace(":", "_")
-    return Path(data_dir) / "judgements" / f"{safe}__{model}__{condition}.jsonl"
+    safe_judge = judge_model.replace("/", "_").replace(":", "_")
+    safe_model = model.replace("/", "_").replace(":", "_")
+    return Path(data_dir) / "judgements" / f"{safe_judge}__{safe_model}__{condition}.jsonl"
 
 
 def build_prompt(item, response, rule):
@@ -114,6 +115,13 @@ def run(endpoint, items, responses, out_path, workers=4, extra_params=None):
         }
         for attempt in range(3):
             try:
+                chat_kwargs = {
+                    "temperature": 0.0,
+                    "max_tokens": 300,
+                    "chat_template_kwargs": {"enable_thinking": False},
+                }
+                if extra_params:
+                    chat_kwargs.update(extra_params)
                 d = endpoint.chat(
                     [
                         {
@@ -121,9 +129,7 @@ def run(endpoint, items, responses, out_path, workers=4, extra_params=None):
                             "content": build_prompt(item, resp["response"], rule),
                         }
                     ],
-                    temperature=0.0,
-                    max_tokens=300,
-                    **(extra_params or {}),
+                    **chat_kwargs,
                 )
                 raw = d["choices"][0]["message"].get("content")
             except Exception as e:  # noqa: BLE001
@@ -164,8 +170,17 @@ def calibrate(endpoint, rows, workers=4, extra_params=None):
     def one(x):
         rule = pregrade(x["item"], x["response"])
         try:
-            d = endpoint.chat([{"role": "user", "content": build_prompt(x["item"], x["response"], rule)}],
-                              temperature=0.0, max_tokens=300, **(extra_params or {}))
+            chat_kwargs = {
+                "temperature": 0.0,
+                "max_tokens": 300,
+                "chat_template_kwargs": {"enable_thinking": False},
+            }
+            if extra_params:
+                chat_kwargs.update(extra_params)
+            d = endpoint.chat(
+                [{"role": "user", "content": build_prompt(x["item"], x["response"], rule)}],
+                **chat_kwargs,
+            )
             got = parse(d["choices"][0]["message"].get("content"))
         except Exception:  # noqa: BLE001
             got = None

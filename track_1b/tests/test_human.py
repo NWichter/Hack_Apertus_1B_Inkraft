@@ -39,3 +39,27 @@ def test_agreement_on_fixture():
     human = [{"id": j["id"], "model": j["examinee"], "condition": j["condition"], "human_grade": j["grade"]} for j in judg]
     res = agreement(human, judg)
     assert res["n"] == 6 and res["kappa"] == 1.0 and res["raw_agreement"] == 1.0
+
+
+def test_subtype_labeling_and_agreement(tmp_path):
+    items = dataset.load(FIXTURE)
+    rows = sample(items, FIXTURE, "fixture-judge")[:3]
+    answers = iter(["s", "m", "c?"])
+    out = tmp_path / "subtypes.jsonl"
+    label(items, rows, out, "tester", read=lambda _: next(answers), write=lambda _: None)
+    labels = dataset.read_jsonl(out)
+    assert labels[0]["human_grade"] == "INCORRECT" and labels[0]["human_subtype"] == "STALE"
+    assert labels[1]["human_grade"] == "INCORRECT" and labels[1]["human_subtype"] == "NEAR_MISS"
+    assert labels[2]["human_grade"] == "CORRECT" and labels[2]["uncertain"] is True
+
+    # test 5-class agreement calculation
+    judg = [
+        {"id": labels[0]["id"], "examinee": labels[0]["model"], "condition": labels[0]["condition"], "grade": "INCORRECT", "incorrect_subtype": "STALE"},
+        {"id": labels[1]["id"], "examinee": labels[1]["model"], "condition": labels[1]["condition"], "grade": "INCORRECT", "incorrect_subtype": "NEAR_MISS"},
+        {"id": labels[2]["id"], "examinee": labels[2]["model"], "condition": labels[2]["condition"], "grade": "CORRECT", "incorrect_subtype": None},
+    ]
+    agr = agreement(labels, judg)
+    assert agr["kappa"] == 1.0
+    assert agr["kappa_5class"] == 1.0
+    assert agr["stale_metrics"]["both_stale_count"] == 1
+    assert agr["stale_metrics"]["precision"] == 1.0

@@ -152,12 +152,16 @@ def build(compact, n, args, fx):
             "generated_at": args.generated_at,
             "prompt_version": args.prompt_version,
             "authoring": {
-                "mode": "llm_drafted",
+                "mode": "human_written" if args.author == "human" else "llm_drafted",
                 "batch": compact.get("_batch"),
                 "manual_correction": compact.get("_manual_correction"),
                 "translation": None
                 if lang == "de"
-                else "question drafted by generator from the German core; answer and evidence taken from the authentic text in this language",
+                else (
+                    "translated and verified from the authentic text in this language"
+                    if args.author == "human"
+                    else "question drafted by generator from the German core; answer and evidence taken from the authentic text in this language"
+                ),
             },
             "license": "CDLA-Permissive-2.0",
         }

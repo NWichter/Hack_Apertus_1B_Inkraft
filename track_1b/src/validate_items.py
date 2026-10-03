@@ -136,6 +136,8 @@ NUM_WORDS = {
         "siebente": 7,
         "siebenten": 7,
         "achte": 8,
+        "fünftel": 5,
+        "fünfteln": 5,
         "dreissigsten": 30,
         "einunddreissigsten": 31,
     },
@@ -153,6 +155,7 @@ NUM_WORDS = {
         "dix": 10,
         "onze": 11,
         "douze": 12,
+        "quatorze": 14,
         "quinze": 15,
         "vingt": 20,
         "trente": 30,
@@ -166,6 +169,7 @@ NUM_WORDS = {
         "troisième": 3,
         "quatrième": 4,
         "cinquième": 5,
+        "cinquièmes": 5,
         "sixième": 6,
         "dixième": 10,
         "treizième": 13,
@@ -185,6 +189,7 @@ NUM_WORDS = {
         "dieci": 10,
         "undici": 11,
         "dodici": 12,
+        "quattordici": 14,
         "quindici": 15,
         "venti": 20,
         "trenta": 30,
@@ -201,10 +206,13 @@ NUM_WORDS = {
         "terza": 3,
         "quarto": 4,
         "quinto": 5,
+        "quinti": 5,
         "sesto": 6,
         "decimo": 10,
         "tredicesimo": 13,
         "tredicesima": 13,
+        "biennale": 2,
+        "biennali": 2,
     },
 }
 DE_COMPOUND_PREFIX = [
@@ -412,6 +420,13 @@ STOPWORDS = {
         "dei",
         "con",
         "un",
+        "i",
+        "le",
+        "nella",
+        "nelle",
+        "nei",
+        "in",
+        "devono",
     },
 }
 PII_PATTERNS = {
@@ -935,6 +950,25 @@ def check_record(r, src, issues, seen_ids):
                     rid,
                     "Zahl der veralteten Antwort nicht in der Evidenz der Vorfassung",
                 )
+    outdated_norm = {norm_text(o) for o in (r.get("outdated_answers") or []) if o}
+    near_miss_norm = {norm_text(m) for m in (r.get("near_miss_answers") or []) if m}
+    overlap = outdated_norm & near_miss_norm
+    if overlap:
+        issues.add(
+            "ERROR",
+            "overlap.outdated_near_miss",
+            rid,
+            f"Veraltete Antwort und Near-Miss überlappen: {overlap}",
+        )
+    if qt != "yes_no" and at != "yes_no":
+        aliases = r.get("answer_aliases") or []
+        if not aliases and not near_miss_norm and not outdated_norm:
+            issues.add(
+                "WARN",
+                "answer.no_variations",
+                rid,
+                "Weder answer_aliases noch near_miss/outdated angegeben",
+            )
     if r.get("future_change"):
         issues.add(
             "WARN",

@@ -39,30 +39,30 @@ Table 1 places Inkraft among related benchmarks. SwitzerlandQA [@apertus2025] co
 
 : Related benchmarks. Stale: separates outdated from wrong answers. Abst.: credits abstention. n. r.: not reported in the abstract (for SwitzerlandQA: Appendix K of the Apertus report).
 
-Table 2 describes the current draft (v1, under review, before the hand-written items are added). It has 208 German core questions and 594 rows in total; 193 cores exist in all three languages. 16 cores are `temporal` items whose provision was amended since 2024.
+Table 2 describes the frozen dataset (v1.0.0). It comprises **303 German core questions** and **879 rows in total**; 288 cores exist in all three languages (DE, FR, IT). 95 cores (31.35 %) are expert human-written items, covering challenging failure modes (20 calculation items `calc` and 20 false-premise items `false_premise`). 16 cores are `temporal` items whose provision was amended since 2024.
 
-| Domain                    | Cores | Question type | Cores |
-| ------------------------- | ----- | ------------- | ----- |
-| Accident insurance / ATSG | 54    | numeric       | 91    |
-| Health insurance, insured | 51    | yes / no      | 51    |
-| IV / EL                   | 41    | procedural    | 47    |
-| AHV                       | 40    | temporal      | 16    |
-| Health insurance, billing | 12    | term          | 3     |
-| Wage during illness (OR)  | 10    |               |       |
+| Domain                                    | Cores | Question type  | Cores |
+| ----------------------------------------- | ----- | -------------- | ----- |
+| Accident insurance / ATSG                 | 56    | numeric        | 129   |
+| Health insurance, insured                 | 56    | yes / no       | 65    |
+| AHV                                       | 44    | procedural     | 50    |
+| IV / EL                                   | 42    | calc           | 20    |
+| EO / ALV                                  | 37    | false_premise  | 20    |
+| Occupational pensions & 3a (BVG / BVV3)   | 24    | temporal       | 16    |
+| Health insurance, billing                 | 24    | term           | 3     |
+| Wage during illness (OR)                  | 20    | **Total**      | **303** |
 
-: Draft v1, German cores by domain and question type. Final counts after the freeze: [TBD].
-
-The specification targets 300 cores, adds calculation items (`calc`), false-premise items, and the domains EO/ALV and occupational pensions; these are written by hand (Section Data Collection Method).
+: Frozen v1.0.0, German cores by domain and question type (879 total rows across DE, FR, IT). All items verified against Fedlex v2 (0 errors).
 
 ## Data Collection Method
 
 **Truth comes from the statute, never from a language model.** The pipeline runs fedlex → paragraphs → item drafting → automatic checks → review → freeze (v1.0.0) → evaluation. It fetches the acts from the fedlex SPARQL endpoint in German, French and Italian: the consolidation applicable on 1 October 2026, the one applicable at the end of 2023 for `temporal` items, and every already published future version to flag provisions that will change. Articles are split into paragraphs.
 
-Two routes create items. (a) _LLM-drafted, human-reviewed:_ a drafting model receives a single paragraph and proposes a question, answer variants and near misses; the gold answer must occur verbatim (or as a normalised number) in that paragraph, otherwise the draft is rejected automatically. The draft v1 questions were written this way by Claude (Anthropic) and GPT-5.5 (OpenAI, via Codex); every row records `generator`, `generator_model`, `prompt_version` and the date. (b) _Hand-written_ items by the author, at least 30 % of the final set, concentrated on item types that drafting models handle poorly (calculations, false premises, temporal items) [TBD: final share].
+Two routes create items. (a) _LLM-drafted, human-reviewed:_ a drafting model receives a single paragraph and proposes a question, answer variants and near misses; the gold answer must occur verbatim (or as a normalised number) in that paragraph, otherwise the draft is rejected automatically. The draft questions were written this way by Claude (Anthropic) and GPT-5.5 (OpenAI, via Codex); every row records `generator`, `generator_model`, `prompt_version` and the date. (b) _Hand-written_ items by the author, **95 cores (31.35 % of the final 303 cores)**, concentrated on item types that drafting models handle poorly (calculations, false premises, temporal items, EO, ALV, BVG).
 
 French and Italian questions are translations, but their gold answers and evidence come from the authentic French and Italian text of the same paragraph, because all three language versions of federal law are equally binding [@publg2023art14]. Terminology follows the official versions (e.g. _Selbstbehalt / quote-part / aliquota_).
 
-**Automatic checks** (script `validate_items.py`, run on every version): schema and allowed values; the evidence occurs verbatim in the cited paragraph of the version valid on the as-of date; the answer or its normalised number occurs in the evidence; for `temporal` items the outdated answer occurs in the previous version and differs from the current value; duplicate and near-duplicate questions; language and value consistency across DE/FR/IT; Swiss spelling and a PII scan. Draft v1 passes with 0 errors; 56 warnings remain, all reviewed (e.g. provisions that change on 1 January 2027, after the evaluation period).
+**Automatic checks** (script `validate_items.py`, run on every version): schema and allowed values; the evidence occurs verbatim in the cited paragraph of the version valid on the as-of date; the answer or its normalised number occurs in the evidence; for `temporal` items the outdated answer occurs in the previous version and differs from the current value; duplicate and near-duplicate questions; language and value consistency across DE/FR/IT; Swiss spelling and a PII scan. Frozen v1.0.0 passes with **0 errors on 879/879 rows**; 153 warnings remain, all reviewed (mostly future amendments published in the Federal Gazette for 2027+).
 
 **Review.** Each item is checked against four questions: does the answer stand in the linked paragraph, is there exactly one defensible short answer, is the question understandable without the article, and do FR/IT match DE. Review v1 removed 2 cores and corrected 7, for example restricting the women's reference age question to cohorts born in 1964 or later because the AHV 21 transitional rules give earlier cohorts an age between 64 and 65. Every change is logged in the item. Exclusion rules: no canton-dependent answers, no facts that are politically open during the evaluation period, no questions with more than one defensible answer.
 

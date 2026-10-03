@@ -13,7 +13,8 @@ PARAMS = {"temperature": 0.0, "top_p": 1.0, "max_tokens": 256, "seed": 20261001}
 
 
 def response_path(data_dir, model, condition):
-    return Path(data_dir) / "responses" / f"{model}__{condition}.jsonl"
+    safe_model = model.replace("/", "_").replace(":", "_")
+    return Path(data_dir) / "responses" / f"{safe_model}__{condition}.jsonl"
 
 
 def run(endpoint, items, condition, out_path, workers=3, max_tokens=None):

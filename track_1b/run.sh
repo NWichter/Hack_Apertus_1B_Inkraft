@@ -14,6 +14,7 @@ case "$MODE" in
     ;;
   full)
     : "${LLM_BASE_URL:?set LLM_BASE_URL}" "${LLM_API_KEY:?set LLM_API_KEY}" "${LLM_NAME:?set LLM_NAME}"
+    SAFE_LLM_NAME=$(echo "$LLM_NAME" | tr '/:' '__')
     # shellcheck disable=SC2086
     inkraft --data "$DATA" generate --condition ${CONDITIONS:-closed_dated} ${LIMIT:+--limit $LIMIT}
     if [ -n "${JUDGE_BASE_URL:-}" ] && [ -n "${JUDGE_NAME:-}" ]; then
@@ -21,7 +22,7 @@ case "$MODE" in
     else
       echo "JUDGE_* not set: scoring with the rule-based pre-grade only (provisional)."
     fi
-    exec inkraft --data "$DATA" score --out "$DATA/results_${LLM_NAME}.json"
+    exec inkraft --data "$DATA" score --out "$DATA/results_${SAFE_LLM_NAME}.json"
     ;;
   test)
     exec python -m pytest -q /app/tests

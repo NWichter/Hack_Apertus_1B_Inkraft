@@ -80,7 +80,7 @@ def _point(rows):
     }
 
 
-def summarise(rows, boot=True, seed=SEED, n_boot=N_BOOT):
+def summarise(rows, boot=True, seed=SEED, n_boot=N_BOOT, cluster_by_core=False):
     graded = [r for r in rows if r["grade"]]
     out = {
         k: round(v, 4) if isinstance(v, float) else v for k, v in _point(graded).items()
@@ -91,11 +91,25 @@ def summarise(rows, boot=True, seed=SEED, n_boot=N_BOOT):
     if boot and graded:
         rng = random.Random(seed)
         samples = defaultdict(list)
-        for _ in range(n_boot):
-            s = [graded[rng.randrange(len(graded))] for _ in graded]
-            for k, v in _point(s).items():
-                if k != "n":
-                    samples[k].append(v)
+        if cluster_by_core and any("core_id" in r for r in graded):
+            by_core = defaultdict(list)
+            for r in graded:
+                c_key = r.get("core_id") or r.get("id") or str(id(r))
+                by_core[c_key].append(r)
+            core_keys = sorted(by_core.keys())
+            n_cores = len(core_keys)
+            for _ in range(n_boot):
+                sampled = [core_keys[rng.randrange(n_cores)] for _ in range(n_cores)]
+                s = [r for c in sampled for r in by_core[c]]
+                for k, v in _point(s).items():
+                    if k != "n":
+                        samples[k].append(v)
+        else:
+            for _ in range(n_boot):
+                s = [graded[rng.randrange(len(graded))] for _ in graded]
+                for k, v in _point(s).items():
+                    if k != "n":
+                        samples[k].append(v)
         out["ci95"] = {
             k: [round(_pct(v, 2.5), 4), round(_pct(v, 97.5), 4)]
             for k, v in samples.items()
@@ -146,7 +160,48 @@ def breakdown(rows, key):
     }
 
 
-def score_all(items, data_dir, judge_model=None):
+def compute_deltas(results):
+    """Compute condition deltas (open_book gain, date effect, context effect) per model."""
+    models = {k.split("__")[0] for k in results if "__" in k}
+    deltas = {}
+    for m in sorted(models):
+        m_deltas = {}
+        c_dated = results.get(f"{m}__closed_dated", {}).get("overall")
+        c_swiss = results.get(f"{m}__closed_swiss", {}).get("overall")
+        c_plain = results.get(f"{m}__closed_plain", {}).get("overall")
+        c_open = results.get(f"{m}__open_book", {}).get("overall")
+        if c_open and c_dated:
+            m_deltas["open_book_gain"] = {
+                "delta_correct": round(c_open["correct"] - c_dated["correct"], 4),
+                "delta_f": round(c_open["f"] - c_dated["f"], 4),
+            }
+        if c_dated and c_swiss:
+            m_deltas["date_effect"] = {
+                "delta_correct": round(c_dated["correct"] - c_swiss["correct"], 4),
+                "delta_stale_share": round(
+                    c_dated.get("stale_share_of_errors", 0.0)
+                    - c_swiss.get("stale_share_of_errors", 0.0),
+                    4,
+                ),
+            }
+        if c_swiss and c_plain:
+            m_deltas["swiss_context_effect"] = {
+                "delta_correct": round(c_swiss["correct"] - c_plain["correct"], 4),
+                "delta_f": round(c_swiss["f"] - c_plain["f"], 4),
+            }
+        if m_deltas:
+            deltas[m] = m_deltas
+    return deltas
+
+
+def score_all(
+    items,
+    data_dir,
+    judge_model=None,
+    cluster_bootstrap=False,
+    include_authoring=False,
+    include_exposure=False,
+):
     """Score every response file in data/responses; use judgements of judge_model if present."""
     from .judge import judge_path
 
@@ -162,15 +217,22 @@ def score_all(items, data_dir, judge_model=None):
         )
         rows = grade_rows(items, responses, judgements)
         key = f"{model}__{condition}"
-        res = {"overall": summarise(rows)}
+        res = {"overall": summarise(rows, cluster_by_core=cluster_bootstrap)}
         for lang in sorted({r["lang"] for r in rows}):
-            res[f"lang:{lang}"] = summarise([r for r in rows if r["lang"] == lang])
+            res[f"lang:{lang}"] = summarise(
+                [r for r in rows if r["lang"] == lang],
+                cluster_by_core=cluster_bootstrap,
+            )
         temporal = [r for r in rows if r["question_type"] == "temporal"]
         if temporal:
             res["temporal_items"] = summarise(temporal, boot=False)
         res["language_consistency"] = language_consistency(rows)
         res["by_domain"] = breakdown(rows, "domain")
         res["by_question_type"] = breakdown(rows, "question_type")
+        if include_authoring and any(r.get("authoring") for r in rows):
+            res["by_authoring"] = breakdown(rows, "authoring")
+        if include_exposure and any(r.get("exposure") for r in rows):
+            res["by_exposure"] = breakdown(rows, "exposure")
         res["by_rule"] = dict(sorted(_count(r["rule"] for r in rows).items()))
         outs = [r["tokens_out"] for r in rows if r["tokens_out"] is not None]
         res["mean_tokens_out"] = round(sum(outs) / len(outs), 1) if outs else None
