@@ -99,32 +99,36 @@ evaluated model.
   , kind: table
   )
 
-Table 2 describes the current draft (v1, under review, before the
-hand-written items are added). It has 208 German core questions and 594
-rows in total; 193 cores exist in all three languages. 16 cores are
-`temporal` items whose provision was amended since 2024.
+Table 2 describes the current draft (not yet frozen; every row is still
+marked for human review). It comprises #strong[303 German core
+questions] and #strong[879 rows in total]\; 288 cores exist in all three
+languages (DE, FR, IT). All cores are LLM drafts: 105 by Claude, 103 by
+GPT-5.5 (Codex) and 95 by Gemini (gemini-3.8-flash in an Antigravity
+agent); the Gemini cores contain all 20 calculation items (`calc`) and
+all 20 false-premise items (`false_premise`). No item is hand-written
+yet. 16 cores are `temporal` items whose provision was amended since
+\2024.
 
 #figure(
   align(center)[#table(
-    columns: 4,
+    columns: (63.08%, 7.69%, 21.54%, 7.69%),
     align: (auto,auto,auto,auto,),
     table.header([Domain], [Cores], [Question type], [Cores],),
     table.hline(),
-    [Accident insurance / ATSG], [54], [numeric], [91],
-    [Health insurance, insured], [51], [yes / no], [51],
-    [IV / EL], [41], [procedural], [47],
-    [AHV], [40], [temporal], [16],
-    [Health insurance, billing], [12], [term], [3],
-    [Wage during illness (OR)], [10], [], [],
+    [Accident insurance / ATSG], [56], [numeric], [129],
+    [Health insurance, insured], [56], [yes / no], [65],
+    [AHV], [44], [procedural], [50],
+    [IV / EL], [42], [calc], [20],
+    [EO / ALV], [37], [false\_premise], [20],
+    [Occupational pensions & 3a (BVG / BVV3)], [24], [temporal], [16],
+    [Health insurance, billing], [24], [term], [3],
+    [Wage during illness (OR)], [20], [#strong[Total]], [#strong[303]],
   )]
-  , caption: [Draft v1, German cores by domain and question type. Final
-  counts after the freeze: \[TBD\].]
+  , caption: [Draft (not frozen), German cores by domain and question
+  type (879 total rows across DE, FR, IT). Automatic checks against
+  fedlex: 0 errors.]
   , kind: table
   )
-
-The specification targets 300 cores, adds calculation items (`calc`),
-false-premise items, and the domains EO/ALV and occupational pensions;
-these are written by hand (Section Data Collection Method).
 
 = Data Collection Method
 <data-collection-method>
@@ -136,16 +140,18 @@ applicable on 1 October 2026, the one applicable at the end of 2023 for
 `temporal` items, and every already published future version to flag
 provisions that will change. Articles are split into paragraphs.
 
-Two routes create items. (a) #emph[LLM-drafted, human-reviewed:] a
+Two routes create items. (a) #emph[LLM-drafted, then human-reviewed:] a
 drafting model receives a single paragraph and proposes a question,
 answer variants and near misses; the gold answer must occur verbatim (or
 as a normalised number) in that paragraph, otherwise the draft is
-rejected automatically. The draft v1 questions were written this way by
-Claude (Anthropic) and GPT-5.5 (OpenAI, via Codex); every row records
-`generator`, `generator_model`, `prompt_version` and the date. (b)
-#emph[Hand-written] items by the author, at least 30 % of the final set,
-concentrated on item types that drafting models handle poorly
-(calculations, false premises, temporal items) \[TBD: final share\].
+rejected automatically. The draft questions were written this way by
+Claude (Anthropic) and GPT-5.5 (OpenAI, via Codex); a third batch of 95
+cores (calculations, false premises, EO, ALV, BVG) was drafted by Gemini
+(Google) inside an Antigravity agent that wrote the items into Python
+scripts. Every row records `generator`, `generator_model`,
+`prompt_version` and the date. (b) #emph[Hand-written] items by the
+author are planned (target ≥ 30 % of the final set) but do not exist
+yet; the hand-written share of the current draft is 0 %.
 
 French and Italian questions are translations, but their gold answers
 and evidence come from the authentic French and Italian text of the same
@@ -158,22 +164,25 @@ version): schema and allowed values; the evidence occurs verbatim in the
 cited paragraph of the version valid on the as-of date; the answer or
 its normalised number occurs in the evidence; for `temporal` items the
 outdated answer occurs in the previous version and differs from the
-current value; duplicate and near-duplicate questions; language and
-value consistency across DE/FR/IT; Swiss spelling and a PII scan. Draft
-v1 passes with 0 errors; 56 warnings remain, all reviewed
-(e.g.~provisions that change on 1 January 2027, after the evaluation
-period).
+current value; a near-miss value that occurs in an earlier stored
+version but not in the current one is rejected (it belongs to the
+outdated answers); duplicate and near-duplicate questions; language and
+value consistency across DE/FR/IT; Swiss spelling and a PII scan. The
+current draft passes with #strong[0 errors on 879 rows]\; 153 warnings
+remain (mostly future amendments published in the Federal Gazette for
+2027+).
 
 #strong[Review.] Each item is checked against four questions: does the
 answer stand in the linked paragraph, is there exactly one defensible
 short answer, is the question understandable without the article, and do
-FR/IT match DE. Review v1 removed 2 cores and corrected 7, for example
-restricting the women's reference age question to cohorts born in 1964
-or later because the AHV 21 transitional rules give earlier cohorts an
-age between 64 and 65. Every change is logged in the item. Exclusion
-rules: no canton-dependent answers, no facts that are politically open
-during the evaluation period, no questions with more than one defensible
-answer.
+FR/IT match DE. Review v1 removed 2 cores and corrected 7; review v2
+corrected 8 more (e.g.~outdated amounts listed as near misses) and left
+one circular item open. Review v1 included, for example, restricting the
+women's reference age question to cohorts born in 1964 or later because
+the AHV 21 transitional rules give earlier cohorts an age between 64 and
+\65. Every change is logged in the item. Exclusion rules: no
+canton-dependent answers, no facts that are politically open during the
+evaluation period, no questions with more than one defensible answer.
 
 #strong[Exposure check.] Apertus 1.5 was trained on the Swiss
 legislation subset `switzerland_lexfind` of MultiLegalPile
@@ -183,13 +192,15 @@ German, French and Italian files at the published revision of 12 January
 per item, whether the verbatim evidence of the current version and, for
 `temporal` items, of the previous version occurs in that corpus; we also
 count 13-gram overlaps between questions and the corpus
-@brown2020gpt3@sainz2023contamination. On draft v1 the current evidence
-occurs in 427 of 594 rows. For the 48 `temporal` rows the current
-wording occurs #strong[never]\; the previous wording occurs in 24.
-Apertus has therefore seen the old rule, not the new one, for every
-amended provision in the draft that the corpus covers. The 31 questions
-with 13-gram hits reuse statutory phrasing; the questions themselves are
-new. \[TBD: final numbers after the freeze.\]
+@brown2020gpt3@sainz2023contamination. On the current draft (879 rows,
+recomputed on 2026-10-04) the current evidence occurs in 602 rows, only
+the previous wording in 26, neither in 232; 19 evidences are too short
+to search. For the 48 `temporal` rows the current wording occurs
+#strong[never]\; the previous wording occurs in 24. Apertus has
+therefore seen the old rule, not the new one, for every amended
+provision in the draft that the corpus covers. The 52 questions with
+13-gram hits reuse statutory phrasing; the questions themselves are new.
+\[TBD: recompute after the freeze.\]
 
 #strong[Consent.] No personal data is collected; case vignettes use
 roles only. A consent form template for optional native-speaker
@@ -267,16 +278,17 @@ in the corpus / only old wording / absent); judge--human κ.\]
 = Dataset Limitations
 <dataset-limitations>
 Only federal law; cantonal rules (e.g.~premium reductions) are excluded.
-A single annotator who is not a native Swiss speaker reviewed all items;
-French and Italian questions are machine-translated, although their gold
-answers come from the authentic texts. Draft questions were written by
-closed models (Claude, GPT-5.5), disclosed per row; we report accuracy
-separately for hand-written and drafted items to detect drafting
-artefacts. The `temporal` bucket is determined per article, so an item
-can sit in an amended article whose paragraph did not change. The as-of
-date ages: the set needs a new version after each amendment (e.g.~on 1
-January 2027). The exposure check covers only the Swiss legislation
-subset of MultiLegalPile, not web crawls such as Nemotron-CC
+A single annotator who is not a native Swiss speaker will review all
+items; French and Italian questions are machine-translated, although
+their gold answers come from the authentic texts. All questions so far
+were drafted by closed models (Claude, GPT-5.5, Gemini), disclosed per
+row, and human review is still pending; once hand-written items exist we
+report accuracy separately for hand-written and drafted items to detect
+drafting artefacts. The `temporal` bucket is determined per article, so
+an item can sit in an amended article whose paragraph did not change.
+The as-of date ages: the set needs a new version after each amendment
+(e.g.~on 1 January 2027). The exposure check covers only the Swiss
+legislation subset of MultiLegalPile, not web crawls such as Nemotron-CC
 @su2025nemotroncc or FineWeb-2 @penedo2025fineweb2. Short answers
 measure knowledge, not the quality of advice.
 

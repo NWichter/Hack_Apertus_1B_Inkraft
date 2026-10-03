@@ -20,7 +20,7 @@
       content="#0F1722"
       media="(prefers-color-scheme: dark)"
     />
-    <link rel="canonical" href="https://inkraft.skimu.de/" />
+    <link rel="canonical" href="https://inkraft.apertool.ch/" />
 
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Inkraft" />
@@ -29,7 +29,7 @@
       property="og:description"
       content="A trilingual benchmark on Swiss social and health insurance law as of 1 October 2026. Correct, stale or invented?"
     />
-    <meta property="og:url" content="https://inkraft.skimu.de/" />
+    <meta property="og:url" content="https://inkraft.apertool.ch/" />
     <meta property="og:locale" content="en_GB" />
 
     <link rel="icon" href="assets/inkraft-favicon.svg" type="image/svg+xml" />
@@ -242,9 +242,12 @@
               <div>
                 <h3>Dataset</h3>
                 <p>
-                  Draft under review: 208 core questions, 594 question–answer
-                  rows, 193 cores in all three languages. Hand-written items and
-                  the frozen version 1.0.0 follow.
+                  Draft, not frozen: 303 German core questions, 879
+                  question–answer rows in German, French and Italian. All cores
+                  are LLM drafts (105 Claude, 103 GPT-5.5 via Codex, 95 Gemini
+                  3.8 Flash via Antigravity); none is hand-written yet. Every
+                  row passes the automatic checks against fedlex and still
+                  awaits human review.
                 </p>
               </div>
             </div>
@@ -254,9 +257,10 @@
                 <h3>Exposure check against Apertus training data</h3>
                 <p>
                   The Swiss legislation in MultiLegalPile is part of the Apertus
-                  1.5 training mix. On the draft, the corpus holds the
-                  <em>old</em> wording of amended provisions and never the
-                  current one. Final numbers after the freeze.
+                  1.5 training mix. On the draft (879 rows), the corpus holds
+                  the current wording for 602 rows. For the 48 rows on amended
+                  provisions it holds the <em>old</em> wording 24 times and the
+                  current one never. Final numbers after the freeze.
                 </p>
               </div>
             </div>
@@ -309,7 +313,7 @@
             Inkraft is one of four tools built by
             <strong>Team Apertool</strong> on Apertus, Switzerland's fully open
             language model.
-            <a href="https://apertool.skimu.de/">Meet the team →</a>
+            <a href="https://apertool.ch/">Meet the team →</a>
           </p>
         </div>
       </section>

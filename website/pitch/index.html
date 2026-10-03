@@ -526,8 +526,8 @@
         grid-template-columns: 100px 1fr 56px;
         align-items: center;
         gap: 16px;
-        height: 37px;
-        font-size: 24px;
+        height: 26px;
+        font-size: 22px;
       }
       .bar b {
         font: 600 24px/1 var(--mono);
@@ -535,7 +535,7 @@
       }
       .bar i {
         display: block;
-        height: 24px;
+        height: 18px;
         background: var(--navy);
         border-radius: 3px;
       }
@@ -1067,56 +1067,68 @@
       <h2>Built from the statute book.</h2>
       <div class="top">
         <div class="card tile">
-          <div class="n">210</div>
+          <div class="n">303</div>
           <div class="l">core questions in German</div>
         </div>
         <div class="card tile">
-          <div class="n">600</div>
+          <div class="n">879</div>
           <div class="l">rows across DE · FR · IT</div>
         </div>
         <div class="card tile">
-          <div class="n">195</div>
+          <div class="n">288</div>
           <div class="l">cores in all three languages</div>
         </div>
         <div class="card tile">
-          <div class="n">18</div>
-          <div class="l">amended rules with the previous answer stored</div>
+          <div class="n">16</div>
+          <div class="l">temporal items with the previous answer stored</div>
         </div>
       </div>
       <div class="bottom">
         <div class="bars">
           <h3>Core questions per federal law</h3>
           <div class="bar">
-            <b>AHVG</b><i style="width: 100%"></i><span>40</span>
+            <b>KVG</b><i style="width: 100%"></i><span>47</span>
           </div>
           <div class="bar">
-            <b>KVG</b><i style="width: 90%"></i><span>36</span>
+            <b>AHVG</b><i style="width: 93.6%"></i><span>44</span>
           </div>
           <div class="bar">
-            <b>KVV</b><i style="width: 72.5%"></i><span>29</span>
+            <b>KVV</b><i style="width: 70.2%"></i><span>33</span>
           </div>
           <div class="bar">
-            <b>ATSG</b><i style="width: 67.5%"></i><span>27</span>
+            <b>UVG</b><i style="width: 61.7%"></i><span>29</span>
           </div>
           <div class="bar">
-            <b>UVG</b><i style="width: 67.5%"></i><span>27</span>
+            <b>ATSG</b><i style="width: 57.4%"></i><span>27</span>
           </div>
           <div class="bar">
-            <b>IVG</b><i style="width: 62.5%"></i><span>25</span>
+            <b>EOG</b><i style="width: 57.4%"></i><span>27</span>
           </div>
           <div class="bar">
-            <b>ELG</b><i style="width: 40%"></i><span>16</span>
+            <b>IVG</b><i style="width: 55.3%"></i><span>26</span>
           </div>
           <div class="bar">
-            <b>OR</b><i style="width: 25%"></i><span>10</span>
+            <b>BVG</b><i style="width: 44.7%"></i><span>21</span>
+          </div>
+          <div class="bar">
+            <b>OR</b><i style="width: 42.6%"></i><span>20</span>
+          </div>
+          <div class="bar">
+            <b>ELG</b><i style="width: 34%"></i><span>16</span>
+          </div>
+          <div class="bar">
+            <b>AVIG</b><i style="width: 21.3%"></i><span>10</span>
+          </div>
+          <div class="bar">
+            <b>BVV3</b><i style="width: 6.4%"></i><span>3</span>
           </div>
         </div>
         <div class="split">
           <h3>Cited article last amended</h3>
           <div class="stack">
-            <div style="width: 58.6%; background: var(--navy)">123</div>
-            <div style="width: 28.1%; background: var(--green)">59</div>
-            <div style="width: 13.3%; background: var(--grey-ink)">28</div>
+            <div style="width: 51.8%; background: var(--navy)">157</div>
+            <div style="width: 32%; background: var(--green)">97</div>
+            <div style="width: 16.2%; background: var(--grey-ink)">49</div>
           </div>
           <div class="legend">
             <div><i style="background: var(--navy)"></i>before 2024</div>
@@ -1124,15 +1136,16 @@
             <div><i style="background: var(--grey-ink)"></i>in 2026</div>
           </div>
           <div class="proof">
-            <b>600 / 600</b> rows pass the source check: the evidence appears
+            <b>879 / 879</b> rows pass the source check: the evidence appears
             word for word in the cited fedlex paragraph, in the row's own
             language.
           </div>
         </div>
       </div>
       <div class="foot">
-        Status 1 Oct 2026: draft v0 before human review. Target for v1.0.0: ≥
-        300 cores, ≥ 30 % hand-written.
+        Status 4 Oct 2026: draft, not frozen. All cores are LLM drafts (105
+        Claude, 103 GPT-5.5 via Codex, 95 Gemini 3.8 Flash via Antigravity);
+        0 % hand-written, human review pending.
         <span class="tbd">[TBD final counts]</span>
       </div>
     </section>
@@ -1218,15 +1231,15 @@
             check which version of the rule it contains.
           </p>
           <p>
-            Leak check: 13-gram overlap of our questions with the corpus =
-            <span class="tbd">[TBD]</span>
+            Leak check: 52 of 879 questions share a 13-gram with the corpus
+            (statutory phrasing; the questions are new).
           </p>
         </div>
         <div class="buckets">
           <div class="bk cur">
             <div>
               <b>Current rule in training data</b
-              ><span>seen and still valid</span>
+              ><span>seen and still valid · 602 rows</span>
             </div>
             <div class="v">
               <span class="vh">ACCURACY</span><span class="tbd">[TBD]</span>
@@ -1235,14 +1248,14 @@
           <div class="bk old">
             <div>
               <b>Previous rule in training data</b
-              ><span>seen, then amended</span>
+              ><span>seen, then amended · 26 rows</span>
             </div>
             <div class="v">
               <span class="vh">ACCURACY</span><span class="tbd">[TBD]</span>
             </div>
           </div>
           <div class="bk abs">
-            <div><b>Not in training data</b><span>never seen there</span></div>
+            <div><b>Not in training data</b><span>never seen there · 232 rows</span></div>
             <div class="v">
               <span class="vh">ACCURACY</span><span class="tbd">[TBD]</span>
             </div>
