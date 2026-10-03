@@ -38,6 +38,7 @@ META_FIELDS = [
     "generated_at",
     "prompt_version",
     "authoring",
+    "review_notes",
     "license",
 ]
 

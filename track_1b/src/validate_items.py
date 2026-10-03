@@ -46,7 +46,7 @@ ANSWER_TYPES = {
     "text",
     "yes_no",
 }
-AUTHORS = {"claude", "codex", "human"}
+AUTHORS = {"claude", "codex", "gemini", "human"}
 YES_NO = {"de": {"ja", "nein"}, "fr": {"oui", "non"}, "it": {"sì", "si", "no"}}
 REQUIRED = [
     "id",
@@ -642,6 +642,29 @@ class Sources:
                 self._cache[key] = {x["article_id"]: x for x in d["articles"]}
         return self._cache[key].get(article_id)
 
+    def earlier_articles(self, act, article_id, lang):
+        """(version_date, article) for every stored version older than the current one."""
+        a = self.acts.get(act)
+        if not a:
+            return []
+        cur = next((v for v in a["versions"] if v["role"] == "current"), None)
+        out = []
+        for v in a["versions"]:
+            if v["role"] not in {"previous", "intermediate"} or lang not in v["files"]:
+                continue
+            if cur and v["version_date"] >= cur["version_date"]:
+                continue
+            key = (act, lang, "v" + v["version_date"])
+            if key not in self._cache:
+                d = json.loads(
+                    (self.root / v["files"][lang]["path"]).read_text(encoding="utf-8")
+                )
+                self._cache[key] = {x["article_id"]: x for x in d["articles"]}
+            art = self._cache[key].get(article_id)
+            if art:
+                out.append((v["version_date"], art))
+        return out
+
 
 class Issues:
     def __init__(self):
@@ -697,6 +720,13 @@ def check_record(r, src, issues, seen_ids):
             "format.status",
             rid,
             "status muss draft und needs_human_review true sein",
+        )
+    if r.get("author") == "human" and not (r.get("authoring") or {}).get("attested_by"):
+        issues.add(
+            "ERROR",
+            "format.human_unattested",
+            rid,
+            "author human ohne authoring.attested_by (wer hat das Item von Hand geschrieben?)",
         )
     if r.get("generator") != r.get("author"):
         issues.add("ERROR", "format.generator", rid, "generator und author weichen ab")
@@ -960,6 +990,20 @@ def check_record(r, src, issues, seen_ids):
             rid,
             f"Veraltete Antwort und Near-Miss überlappen: {overlap}",
         )
+    cur_nums = extract_numbers(art["text"], lang)
+    if an and isinstance(an.get("value"), (int, float)):
+        cur_nums.add(float(an["value"]))
+    earlier = src.earlier_articles(s.get("act"), s.get("article_id"), lang)
+    for m in r.get("near_miss_answers") or []:
+        for n in sorted(extract_numbers(m, lang) - cur_nums):
+            hits = [d for d, a_old in earlier if n in extract_numbers(a_old["text"], lang)]
+            if hits:
+                issues.add(
+                    "ERROR",
+                    "near_miss.earlier_version",
+                    rid,
+                    f"Near-Miss {m!r}: Wert {n:g} steht in der Fassung vom {hits[0]}, nicht in der geltenden; gehört nach outdated_answers",
+                )
     if qt != "yes_no" and at != "yes_no":
         aliases = r.get("answer_aliases") or []
         if not aliases and not near_miss_norm and not outdated_norm:
@@ -1103,7 +1147,12 @@ def write_report(
     for r in records:
         by_core_langs[r["core_id"]].add(LANGS.get(r.get("lang")))
     parallel = sum(1 for langs in by_core_langs.values() if {"de", "fr", "it"} <= langs)
-    human = sum(1 for r in de if r.get("author") == "human")
+    human = sum(
+        1
+        for r in de
+        if r.get("author") == "human"
+        and (r.get("authoring") or {}).get("mode") == "human_written"
+    )
     errors = [i for i in issues.items if i["level"] == "ERROR"]
     warns = [i for i in issues.items if i["level"] == "WARN"]
     err_ids = {i["id"] for i in errors}
@@ -1123,7 +1172,7 @@ def write_report(
     )
     share = human / max(len(de), 1)
     out.append(
-        f"- Handgeschriebener Anteil: **{human}/{len(de)} = {share:.0%}** (Minimum {min_human_share:.0%} des fertigen Datensatzes; die handgeschriebenen Items fehlen noch)"
+        f"- Handgeschriebener Anteil: **{human}/{len(de)} = {share:.0%}** (Ziel {min_human_share:.0%} des fertigen Datensatzes; zählt nur `author: human` mit `authoring.mode: human_written`)"
     )
     out.append(
         f"- Fehler (ERROR): **{len(errors)}** in {len(err_ids)} Zeilen/Kernen; Warnungen (WARN): **{len(warns)}**"
@@ -1144,6 +1193,9 @@ def write_report(
     )
     out.append(
         "| Veraltet (`temporal`) | Artikel seit 2024 geändert; veraltete Antwort vorhanden; deren Evidenz steht wörtlich in der Vorfassung; alter Wert ≠ neuer Wert |"
+    )
+    out.append(
+        "| Near-Miss vs. frühere Fassungen | Zahl eines Near-Miss steht in einer gespeicherten früheren Fassung des Artikels, aber nicht in der geltenden → Fehler (gehört nach `outdated_answers`) |"
     )
     out.append(
         "| Duplikate | gleiche DE-Frage (Fehler), ähnliche DE-Fragen ab Ratio 0,85 (Warnung), gleicher Fakt = gleicher Absatz + gleicher Wert (Warnung) |"

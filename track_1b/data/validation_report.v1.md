@@ -1,13 +1,13 @@
 # Validierungsbericht Stichtag (Entwürfe)
 
-Erzeugt: 2026-10-03T11:45:38 mit `validate_items.py`  
+Erzeugt: 2026-10-04T00:31:11 mit `validate_items.py`  
 Eingaben: `merged.v1.jsonl`
 
 ## Zusammenfassung
 
 - Kern-Items (DE): **303** von Ziel 300; Zeilen gesamt (alle Sprachen): **879**
 - Kerne mit DE+FR+IT: **288** (Minimum 150) → erfüllt
-- Handgeschriebener Anteil: **95/303 = 31%** (Minimum 30% des fertigen Datensatzes; die handgeschriebenen Items fehlen noch)
+- Handgeschriebener Anteil: **0/303 = 0%** (Ziel 30% des fertigen Datensatzes; zählt nur `author: human` mit `authoring.mode: human_written`)
 - Fehler (ERROR): **0** in 0 Zeilen/Kernen; Warnungen (WARN): **153**
 - Zeilen ohne Fehler: **879** von 879
 
@@ -19,6 +19,7 @@ Eingaben: `merged.v1.jsonl`
 | Evidenz | `source.evidence` steht wörtlich (Leerraum normalisiert) im zitierten Absatz der Fassung vom Stichtag in der Sprache des Items; `source.quote` = Absatztext |
 | Antwort im Artikel | Zahlen: `answer_normalized.value` steht in Antwort und Evidenz (Ziffern, Tausender-Leerzeichen, Dezimalkomma, Zahlwörter DE/FR/IT); Text: Antwort (ohne führende Artikel/Präpositionen) steht wörtlich in der Evidenz; Ja/Nein: erlaubte Form |
 | Veraltet (`temporal`) | Artikel seit 2024 geändert; veraltete Antwort vorhanden; deren Evidenz steht wörtlich in der Vorfassung; alter Wert ≠ neuer Wert |
+| Near-Miss vs. frühere Fassungen | Zahl eines Near-Miss steht in einer gespeicherten früheren Fassung des Artikels, aber nicht in der geltenden → Fehler (gehört nach `outdated_answers`) |
 | Duplikate | gleiche DE-Frage (Fehler), ähnliche DE-Fragen ab Ratio 0,85 (Warnung), gleicher Fakt = gleicher Absatz + gleicher Wert (Warnung) |
 | Sprachkonsistenz | Sprache der Frage (Stoppwörter), gleicher Typ/Wert/Absatz je Kern, Ja/Nein gleich in allen Sprachen, ELI-URL in Item-Sprache |
 | Stil/PII | kein ß in de-CH, keine Artikelnummer in der Frage, Fragezeichen, AHV-Nr./IBAN/Telefon/E-Mail |
@@ -44,7 +45,7 @@ Eingaben: `merged.v1.jsonl`
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | claude | 20 | 13 | 0 | 0 | 0 | 8 | 0 | 12 | 19 | 15 | 5 | 13 | 105 |
 | codex | 20 | 14 | 0 | 0 | 0 | 8 | 0 | 13 | 15 | 14 | 5 | 14 | 103 |
-| human | 4 | 0 | 10 | 21 | 3 | 0 | 27 | 1 | 13 | 4 | 10 | 2 | 95 |
+| gemini | 4 | 0 | 10 | 21 | 3 | 0 | 27 | 1 | 13 | 4 | 10 | 2 | 95 |
 
 ### Autor × Fragetyp
 
@@ -52,7 +53,7 @@ Eingaben: `merged.v1.jsonl`
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | claude | 0 | 0 | 52 | 18 | 9 | 3 | 23 | 105 |
 | codex | 0 | 0 | 39 | 29 | 7 | 0 | 28 | 103 |
-| human | 20 | 20 | 38 | 3 | 0 | 0 | 14 | 95 |
+| gemini | 20 | 20 | 38 | 3 | 0 | 0 | 14 | 95 |
 
 ### Bereich (`domain`)
 
@@ -92,7 +93,7 @@ Eingaben: `merged.v1.jsonl`
 | --- | ---: | ---: | ---: | ---: |
 | claude | 105 | 90 | 90 | 285 |
 | codex | 103 | 103 | 103 | 309 |
-| human | 95 | 95 | 95 | 285 |
+| gemini | 95 | 95 | 95 | 285 |
 
 ## Alle Befunde
 
@@ -143,18 +144,84 @@ Eingaben: `merged.v1.jsonl`
 | WARN | answer.number_literal_only | cx-0101-fr | Zahl 80 nicht als Ziffer/Zahlwort erkannt, Antwort 'les quatre cinquièmes' steht aber wörtlich in der Evidenz |
 | WARN | answer.number_literal_only | cx-0101-it | Zahl 80 nicht als Ziffer/Zahlwort erkannt, Antwort 'i quattro quinti' steht aber wörtlich in der Evidenz |
 | WARN | answer.number_literal_only | cx-0104-fr | Zahl 16 nicht als Ziffer/Zahlwort erkannt, Antwort 'seize semaines' steht aber wörtlich in der Evidenz |
+| WARN | dup.near_question | ag-0077-de | Sehr ähnlich zu ag-0078-de (Ratio 0.92) |
 | WARN | dup.near_question | cl-0021-de | Sehr ähnlich zu cl-0022-de (Ratio 0.95) |
 | WARN | dup.near_question | cl-0029-de | Sehr ähnlich zu cl-0030-de (Ratio 0.94) |
-| WARN | dup.near_question | cl-0030-de | Sehr ähnlich zu hw-0026-de (Ratio 0.90) |
+| WARN | dup.near_question | cl-0030-de | Sehr ähnlich zu ag-0026-de (Ratio 0.90) |
 | WARN | dup.near_question | cl-0071-de | Sehr ähnlich zu cl-0072-de (Ratio 0.91) |
 | WARN | dup.near_question | cx-0044-de | Sehr ähnlich zu cx-0061-de (Ratio 0.88) |
 | WARN | dup.near_question | cx-0071-de | Sehr ähnlich zu cx-0072-de (Ratio 0.91) |
-| WARN | dup.near_question | hw-0077-de | Sehr ähnlich zu hw-0078-de (Ratio 0.92) |
-| WARN | dup.same_fact | cl-0022-de | Gleicher Fakt (KVV art_103 Abs. 2, Wert 350) auch in: hw-0003-de |
-| WARN | dup.same_fact | cl-0033-de | Gleicher Fakt (KVV art_59 Abs. 2, Wert 2) auch in: hw-0090-de |
-| WARN | dup.same_fact | cl-0101-de | Gleicher Fakt (OR art_324_a Abs. 2, Wert 3) auch in: hw-0092-de |
-| WARN | dup.same_fact | cl-0102-de | Gleicher Fakt (OR art_324_a Abs. 1, Wert 3) auch in: hw-0091-de |
-| WARN | dup.same_fact | hw-0008-de | Gleicher Fakt (EOG art_16_f Abs. 1, Wert 220) auch in: hw-0047-de |
+| WARN | dup.same_fact | ag-0008-de | Gleicher Fakt (EOG art_16_f Abs. 1, Wert 220) auch in: ag-0047-de |
+| WARN | dup.same_fact | cl-0022-de | Gleicher Fakt (KVV art_103 Abs. 2, Wert 350) auch in: ag-0003-de |
+| WARN | dup.same_fact | cl-0033-de | Gleicher Fakt (KVV art_59 Abs. 2, Wert 2) auch in: ag-0090-de |
+| WARN | dup.same_fact | cl-0101-de | Gleicher Fakt (OR art_324_a Abs. 2, Wert 3) auch in: ag-0092-de |
+| WARN | dup.same_fact | cl-0102-de | Gleicher Fakt (OR art_324_a Abs. 1, Wert 3) auch in: ag-0091-de |
+| WARN | source.future_change | ag-0008-de | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0008-fr | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0008-it | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0009-de | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0009-fr | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0009-it | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0018-de | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0018-fr | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0018-it | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0019-de | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0019-fr | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0019-it | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0027-de | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0027-fr | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0027-it | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0029-de | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0029-fr | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0029-it | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0034-de | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0034-fr | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0034-it | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0037-de | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0037-fr | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0037-it | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0042-de | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0042-fr | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0042-it | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0044-de | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0044-fr | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0044-it | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0045-de | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0045-fr | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0045-it | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0047-de | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0047-fr | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0047-it | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0048-de | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0048-fr | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0048-it | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0049-de | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0049-fr | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0049-it | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0051-de | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0051-fr | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0051-it | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0052-de | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0052-fr | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0052-it | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0053-de | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0053-fr | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0053-it | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0054-de | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0054-fr | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0054-it | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0055-de | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0055-fr | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0055-it | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0056-de | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0056-fr | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0056-it | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0094-de | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0094-fr | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0094-it | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0095-de | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0095-fr | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
+| WARN | source.future_change | ag-0095-it | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
 | WARN | source.future_change | cl-0071-de | Artikel ändert sich nach dem Stichtag: 2027-01-01, 2028-01-01, 2029-01-01 |
 | WARN | source.future_change | cl-0071-fr | Artikel ändert sich nach dem Stichtag: 2027-01-01, 2028-01-01, 2029-01-01 |
 | WARN | source.future_change | cl-0071-it | Artikel ändert sich nach dem Stichtag: 2027-01-01, 2028-01-01, 2029-01-01 |
@@ -185,69 +252,3 @@ Eingaben: `merged.v1.jsonl`
 | WARN | source.future_change | cx-0105-de | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
 | WARN | source.future_change | cx-0105-fr | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
 | WARN | source.future_change | cx-0105-it | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0008-de | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0008-fr | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0008-it | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0009-de | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0009-fr | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0009-it | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0018-de | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0018-fr | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0018-it | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0019-de | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0019-fr | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0019-it | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0027-de | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0027-fr | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0027-it | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0029-de | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0029-fr | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0029-it | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0034-de | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0034-fr | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0034-it | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0037-de | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0037-fr | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0037-it | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0042-de | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0042-fr | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0042-it | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0044-de | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0044-fr | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0044-it | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0045-de | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0045-fr | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0045-it | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0047-de | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0047-fr | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0047-it | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0048-de | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0048-fr | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0048-it | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0049-de | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0049-fr | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0049-it | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0051-de | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0051-fr | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0051-it | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0052-de | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0052-fr | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0052-it | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0053-de | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0053-fr | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0053-it | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0054-de | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0054-fr | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0054-it | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0055-de | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0055-fr | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0055-it | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0056-de | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0056-fr | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0056-it | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0094-de | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0094-fr | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0094-it | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0095-de | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0095-fr | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
-| WARN | source.future_change | hw-0095-it | Artikel ändert sich nach dem Stichtag: 2027-07-01 |
