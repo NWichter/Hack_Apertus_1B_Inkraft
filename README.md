@@ -24,7 +24,7 @@ Judges can run the reproducible benchmark directly via Docker on a clean checkou
 make run
 ```
 
-By default, `make run` executes the offline replay validator on the frozen benchmark results, recomputing all metrics and verifying them against `expected_results.json` without requiring live API credentials.
+By default, `make run` executes the offline replay check without API credentials. The dataset is not frozen yet and no model has been evaluated, so `data/` holds no `expected_results.json`; until then the replay runs on the bundled 6-row test fixture (`track_1b/tests/fixtures/mini`) and only shows that scoring is reproducible.
 
 ### Live Evaluation (`MODE=full`)
 
@@ -51,7 +51,7 @@ make run MODE=full
 | --- | --- |
 | `track_1b/` | Official track root directory (contains `Makefile`, `run.sh`, `technical_report.md`) |
 | `track_1b/src/inkraft/` | Python CLI and evaluation library (`generate`, `judge`, `score`, `human`, `contam`) |
-| `track_1b/data/` | Benchmark dataset (`test.jsonl`, `metadata.jsonl`, `expected_results.json`) |
+| `track_1b/data/` | Benchmark draft (`test.jsonl`, `metadata.jsonl`); 303 LLM-drafted cores, human review pending, not frozen |
 | `track_1b/docs/` | Dataset Card, annotation guidelines, and CLI usage documentation |
 | `website/` | Project landing page and interactive report preview |
 

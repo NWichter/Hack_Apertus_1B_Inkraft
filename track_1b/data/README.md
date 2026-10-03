@@ -1,6 +1,15 @@
 # data/
 
-Filled at the dataset freeze (v1.0.0). Until then `make run` checks itself on `tests/fixtures/mini`.
+Current state: draft, not frozen. 303 German cores / 879 rows, all drafted by LLMs (`cl-` Claude, `cx-` GPT-5.5 via Codex, `ag-` Gemini via an Antigravity agent), every row `status: draft`, `needs_human_review: true`. No responses, judgements or `expected_results.json` yet, so `make run` checks itself on `tests/fixtures/mini`.
+
+```
+merged.v1.jsonl                              all rows with every field (source of test.jsonl + metadata.jsonl, `inkraft build`)
+antigravity.compact.jsonl / .expanded.jsonl  original Gemini drafts of the ag- cores before review v2 (formerly handwritten.*; mislabelled as human until 2026-10-03)
+review_v2.json                               review decisions applied with src/apply_review.py
+validation_report.v1.md                      output of src/validate_items.py on merged.v1.jsonl
+```
+
+Planned after the freeze:
 
 ```
 test.jsonl                                   evaluation items (question, gold answer, variants, outdated and near-miss answers)

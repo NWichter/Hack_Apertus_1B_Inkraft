@@ -25,3 +25,6 @@ build/
 .DS_Store
 .idea/
 .vscode/
+
+# Local scratch scripts (absolute local paths, not part of the benchmark)
+scratch/
