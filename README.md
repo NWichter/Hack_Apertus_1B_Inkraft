@@ -1,7 +1,8 @@
 # Inkraft — Swiss Legal Temporal & Factual Q&A Benchmark (Track 1B)
 
 [![License: Apache-2.0](https://img.shields.io/badge/Code_License-Apache_2.0-blue.svg)](LICENSE)
-[![Data License: CDLA-Permissive-2.0](https://img.shields.io/badge/Data_License-CDLA_Permissive_2.0-green.svg)](https://cdla.dev/permissive-2-0/)
+[![Data License: CDLA-Permissive-2.0](https://img.shields.io/badge/Data_License-CDLA_Permissive_2.0-green.svg)](track_1b/data/LICENSE)
+[![Docs License: CC-BY-4.0](https://img.shields.io/badge/Docs_License-CC_BY_4.0-lightgrey.svg)](LICENSE-docs)
 [![Hack Apertus](https://img.shields.io/badge/Hack_Apertus-2026-red.svg)](https://hackapertus.ch/)
 
 **Inkraft** is a trilingual factual and temporal benchmark evaluating large language models (specifically the Swiss open-weights Apertus model family) on Swiss federal social and health insurance law (KVG/KVV, AHVG, IVG, ELG, UVG, ATSG, OR) as of **1 October 2026**.
@@ -69,11 +70,24 @@ python -m pytest -q
 
 ---
 
-## 📜 Licenses & Citation
+## 📜 License
 
-- **Code:** [Apache-2.0](LICENSE)
-- **Dataset:** [CDLA-Permissive-2.0](https://cdla.dev/permissive-2-0/)
-- **Statutory Source Texts:** Public domain according to Art. 5 Swiss Federal Act on Copyright (URG).
+Licensed as required by the Hack Apertus [Terms & Conditions](https://hackapertus.ch/terms-and-conditions) (§ 6, "What you build is open source"):
+
+| Part | License | File |
+| --- | --- | --- |
+| Code (`track_1b/src/`, `track_1b/tests/`, build and run scripts, website code) | Apache-2.0 | [`LICENSE`](LICENSE) |
+| Documentation and technical report (`README.md`, `track_1b/docs/`, `track_1b/technical_report.md`, `track_1b/report/`, `Apertool_Report.pdf`) | CC-BY-4.0 | [`LICENSE-docs`](LICENSE-docs) |
+| Submitted dataset (`track_1b/data/`: questions, answers, metadata; licence stored per item in `metadata.jsonl`) | CDLA-Permissive-2.0 | [`track_1b/data/LICENSE`](track_1b/data/LICENSE) |
+
+Third-party material keeps its own licence and is not relicensed:
+
+- **Swiss federal statute text** quoted from [fedlex.admin.ch](https://www.fedlex.admin.ch/) (`source.quote` in each item): not protected by copyright (Art. 5 para. 1 lit. a URG, SR 231.1); marked per item as `source.license: public-domain-ch-urg-art5`.
+- **MultiLegalPile** (CC BY-NC-SA): used only locally for the exposure check, not redistributed.
+- **SimpleQA grader** of [openai/simple-evals](https://github.com/openai/simple-evals) (MIT): the judge prompt adapts its grading rules.
+- **Inter** font in `website/assets/fonts/` (SIL Open Font License 1.1, see `LICENSE-Inter.txt`).
+
+## 📖 Citation
 
 ```bibtex
 @misc{apertool2026inkraft,

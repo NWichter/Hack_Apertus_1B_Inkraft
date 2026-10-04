@@ -1,5 +1,7 @@
 # data/
 
+License: CDLA-Permissive-2.0 (see [`LICENSE`](LICENSE)) for our questions, answers and metadata, stored per item in the `license` field. Quoted federal statute text (`source.quote`) is public domain under Art. 5 para. 1 lit. a URG (`source.license: public-domain-ch-urg-art5`) and is not relicensed.
+
 Current state: draft, not frozen. 303 German cores / 879 rows, all drafted by LLMs (`cl-` Claude, `cx-` GPT-5.5 via Codex, `ag-` Gemini via an Antigravity agent), every row `status: draft`, `needs_human_review: true`. No responses, judgements or `expected_results.json` yet, so `make run` checks itself on `tests/fixtures/mini`.
 
 ```

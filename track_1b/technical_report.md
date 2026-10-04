@@ -106,6 +106,6 @@ A practical lesson from building the grader: number extraction must treat indefi
 
 ## License
 
-Code: Apache-2.0. Dataset (questions, answers, metadata): CDLA-Permissive-2.0. This report: CC-BY-4.0. Statute quotes: not protected by copyright (Art. 5 URG). The judge prompt adapts the SimpleQA grader of OpenAI simple-evals (MIT).
+This report and the documentation: CC-BY-4.0. Code: Apache-2.0. Dataset (questions, answers, metadata): CDLA-Permissive-2.0, licence stored per item in `metadata.jsonl`. Statute quotes: not protected by copyright (Art. 5 URG). The judge prompt adapts the SimpleQA grader of OpenAI simple-evals (MIT).
 
 ## References
