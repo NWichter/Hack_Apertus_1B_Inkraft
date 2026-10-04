@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inkraft-Prüfung</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">Inkraft-Prüfung <span class="muted" id="datasetInfo">kein Datensatz geladen</span></div>
+  <nav class="modes" role="tablist">
+    <button class="mode" data-mode="review" role="tab">Prüfen</button>
+    <button class="mode" data-mode="handwritten" role="tab">Handschrift</button>
+    <button class="mode" data-mode="blind" role="tab">Blind-Stichprobe</button>
+  </nav>
+  <div class="progress" title="Fortschritt">
+    <div class="bar"><div id="progressBar"></div></div>
+    <span id="progressText">0 / 0</span>
+  </div>
+  <div class="actions">
+    <label class="btn" title="JSONL-Dateien laden: Datensatz, Prüfprotokoll, Stichprobe, Labels">Dateien laden
+      <input type="file" id="fileInput" multiple accept=".jsonl,.json,.txt" hidden>
+    </label>
+    <div class="menu">
+      <button class="btn" id="exportBtn" aria-haspopup="true">Export ▾</button>
+      <div class="menu-list" id="exportMenu" hidden>
+        <button data-export="all">Alles exportieren</button>
+        <button data-export="log">review_log.jsonl</button>
+        <button data-export="decisions">review_decisions.json (für apply_review.py)</button>
+        <button data-export="reviewed">metadata.reviewed.jsonl</button>
+        <button data-export="handwritten">handwritten.jsonl</button>
+        <button data-export="labels">labels_&lt;annotator&gt;.jsonl</button>
+        <button data-export="summary">pruefung_zusammenfassung.md</button>
+        <hr>
+        <button data-export="clearData">Geladenen Datensatz entfernen</button>
+        <button data-export="reset" class="danger">Alle Prüfdaten im Browser löschen …</button>
+      </div>
+    </div>
+    <button class="btn icon" id="helpBtn" title="Tastenkürzel (H)">?</button>
+    <button class="btn icon" id="themeBtn" title="Hell/Dunkel">◐</button>
+  </div>
+</header>
+
+<div id="notice" class="notice" hidden></div>
+
+<main id="app">
+  <section id="dropzone" class="dropzone">
+    <h1>Datensatz laden</h1>
+    <p>JSONL-Dateien hierher ziehen oder <label class="link">auswählen<input type="file" id="fileInput2" multiple accept=".jsonl,.json,.txt" hidden></label>.</p>
+    <ul>
+      <li><code>merged.v1.jsonl</code> allein <em>oder</em> <code>test.jsonl</code> + <code>metadata.jsonl</code> zusammen (werden über <code>id</code> zusammengeführt)</li>
+      <li>oder ein Review-Paket (JSONL wie <code>merged.v1.jsonl</code>, Zeilen mit <code>review_hint</code>): Reihenfolge, Blöcke und Vorschläge kommen dann aus dem Paket</li>
+      <li>optional: ein früheres <code>review_log.jsonl</code> zum Weitermachen, <code>handwritten.jsonl</code>, <code>labels_*.jsonl</code></li>
+      <li>für die Blind-Stichprobe: <code>human_labels/sample_20pct.jsonl</code> (oder Antwortdateien aus <code>responses/</code>)</li>
+    </ul>
+    <p class="muted" id="fedlexStatus"></p>
+  </section>
+  <div id="view" hidden></div>
+</main>
+
+<div id="help" class="overlay" hidden>
+  <div class="dialog">
+    <h2>Tastenkürzel</h2>
+    <div class="cols">
+      <div>
+        <h3>Prüfen</h3>
+        <table>
+          <tr><td><kbd>A</kbd></td><td>✓ korrekt</td></tr>
+          <tr><td><kbd>K</kbd></td><td>✎ korrigieren (Felder werden editierbar)</td></tr>
+          <tr><td><kbd>Strg</kbd>+<kbd>Enter</kbd></td><td>Korrektur / Verwerfen bestätigen</td></tr>
+          <tr><td><kbd>V</kbd></td><td>✗ verwerfen (<kbd>1</kbd>–<kbd>9</kbd> Grund)</td></tr>
+          <tr><td><kbd>S</kbd></td><td>? später</td></tr>
+          <tr><td><kbd>P</kbd></td><td>Vorschlag aus dem Review-Paket übernehmen</td></tr>
+          <tr><td><kbd>Esc</kbd></td><td>abbrechen</td></tr>
+          <tr><td><kbd>→</kbd> / <kbd>←</kbd></td><td>nächster / vorheriger Kern</td></tr>
+          <tr><td><kbd>N</kbd></td><td>nächster offener Kern</td></tr>
+          <tr><td><kbd>T</kbd></td><td>ganze Artikel ein-/ausblenden</td></tr>
+          <tr><td><kbd>/</kbd></td><td>Suche</td></tr>
+          <tr><td><kbd>G</kbd></td><td>Sprung zu ID</td></tr>
+          <tr><td><kbd>Strg</kbd>+<kbd>Z</kbd></td><td>Entscheidung dieses Kerns zurücknehmen</td></tr>
+        </table>
+      </div>
+      <div>
+        <h3>Blind-Stichprobe</h3>
+        <table>
+          <tr><td><kbd>C</kbd></td><td>CORRECT</td></tr>
+          <tr><td><kbd>I</kbd></td><td>INCORRECT (Untertyp OTHER)</td></tr>
+          <tr><td><kbd>S</kbd> / <kbd>M</kbd> / <kbd>O</kbd></td><td>INCORRECT: STALE / NEAR_MISS / OTHER</td></tr>
+          <tr><td><kbd>N</kbd></td><td>NOT_ATTEMPTED</td></tr>
+          <tr><td><kbd>?</kbd></td><td>unsicher umschalten (vor der Note)</td></tr>
+          <tr><td><kbd>→</kbd> / <kbd>←</kbd></td><td>vor / zurück</td></tr>
+        </table>
+        <h3>Allgemein</h3>
+        <table>
+          <tr><td><kbd>H</kbd></td><td>diese Hilfe</td></tr>
+          <tr><td><kbd>1</kbd>/<kbd>2</kbd>/<kbd>3</kbd> mit <kbd>Alt</kbd></td><td>Modus Prüfen / Handschrift / Blind</td></tr>
+        </table>
+      </div>
+    </div>
+    <p class="muted">Gespeichert wird automatisch im Browser. Exportieren nicht vergessen – der Browser-Speicher ist kein Archiv.</p>
+    <button class="btn" data-close>Schließen</button>
+  </div>
+</div>
+
+<script src="fedlex_texte.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
