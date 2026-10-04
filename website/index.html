@@ -6,7 +6,7 @@
     <title>Inkraft · Swiss insurance law, as of today</title>
     <meta
       name="description"
-      content="Inkraft is a trilingual benchmark (German, French, Italian) on Swiss social and health insurance law as of 1 October 2026. Every gold answer is quoted from fedlex. It tells correct, stale and invented answers apart."
+      content="Inkraft is a trilingual benchmark (German, French, Italian) on Swiss social and health insurance law as of 1 October 2026. Every gold answer rests on a verbatim fedlex quote. It tells correct, stale and invented answers apart."
     />
     <meta name="robots" content="noindex" />
     <meta name="color-scheme" content="light dark" />
@@ -70,8 +70,8 @@
             <p class="lead">
               Inkraft asks a language model short questions on Swiss social and
               health insurance law, in German, French and Italian, as of
-              <strong>1&nbsp;October&nbsp;2026</strong>. Every gold answer is
-              quoted from the federal statute. Every wrong answer is sorted: was
+              <strong>1&nbsp;October&nbsp;2026</strong>. Every gold answer rests
+              on a verbatim quote from the federal statute. Every wrong answer is sorted: was
               it the rule that applied <em>before</em> an amendment, or was it
               invented?
             </p>
@@ -149,8 +149,8 @@
               <h3>Gold from the statute</h3>
               <p>
                 Every answer is anchored to one paragraph of federal law: fedlex
-                ELI with version date and the verbatim quote. No gold answer
-                comes from a language model.
+                ELI with version date and the verbatim quote. The answer stands
+                in that quote or follows from it by a recorded calculation.
               </p>
             </article>
             <article class="card feature">
@@ -203,17 +203,17 @@
               extracted in all three languages.
             </li>
             <li>
-              <strong>Then a judge</strong> from a different model family than
-              Apertus, calibrated on constructed answers before use.
+              <strong>Then a judge</strong> (planned) from a different model
+              family than Apertus, calibrated on constructed answers before use.
             </li>
             <li>
-              <strong>Then a human</strong> grades a blind 20&nbsp;% sample; we
-              report Cohen's κ.
+              <strong>Then a human</strong> (planned) grades a blind 20&nbsp;%
+              sample; we report Cohen's κ.
             </li>
             <li>
-              <strong>Then <code>make run</code></strong> recomputes every
-              number from the stored answers and checks it against the published
-              results.
+              <strong>Then <code>make run</code></strong> replays the scoring.
+              Today it checks a 6-row test set; after the freeze it recomputes
+              every number from the stored answers.
             </li>
           </ol>
         </div>

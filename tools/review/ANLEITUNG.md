@@ -225,4 +225,4 @@ des laufenden Blocks, dann Bestand fertig prüfen (Option A).
 4. **Läufe** (dein Go): `sh scripts/run_after_freeze.sh` → Judge-Kalibrierung (Schranke 0,95), Apertus 8B/70B `closed_dated`,
    Ablation DE 8B, Judge, Score, `expected_results.json`, Stichprobe `data/human_labels/sample_20pct.jsonl`.
 5. **20-%-Stichprobe** (du, ≈ 2 h): Modus Blind-Stichprobe, `test.jsonl` + `sample_20pct.jsonl` laden, Export `labels_niklas.jsonl`.
-6. **HF** (dein Go): `python src/hf_release.py card --repo <owner/name>`, dann `upload --repo … --go --public`.
+6. **HF** (dein Go): `python src/hf_release.py card --repo NWichter/inkraft`, dann `upload --repo NWichter/inkraft --go --public` (der Name ist im Pitch bereits verlinkt).

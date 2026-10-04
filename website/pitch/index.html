@@ -916,14 +916,14 @@
         <p class="claim">The law is the <em>answer key.</em></p>
         <p class="sub">
           A trilingual benchmark (DE · FR · IT) for Swiss social and health
-          insurance law. Every gold answer is quoted from fedlex, valid on
-          1&nbsp;October&nbsp;2026.
+          insurance law. Every gold answer rests on evidence quoted word for
+          word from fedlex, valid on 1&nbsp;October&nbsp;2026.
         </p>
         <div class="btns">
           <a class="btn pri" href="../report.pdf">Technical report (PDF) →</a>
           <a class="btn sec" href="../">Project page →</a>
           <a class="btn sec" href="../#video">▶ 2-min video</a>
-          <span class="tbd">Dataset on Hugging Face: with v1.0.0</span>
+          <a class="btn sec" href="https://huggingface.co/datasets/NWichter/inkraft">Dataset on Hugging Face →</a>
         </div>
       </div>
       <img
@@ -1163,7 +1163,7 @@
     <!-- 6 EVALUATION -->
     <section class="slide s6">
       <p class="kicker">Evaluation</p>
-      <h2>Graded like SimpleQA. Checked by a human.</h2>
+      <h2>Graded like SimpleQA. Human check planned.</h2>
       <div class="steps">
         <div class="card step">
           <div class="k">1 · RULES</div>
@@ -1182,7 +1182,7 @@
           </p>
         </div>
         <div class="card step">
-          <div class="k">3 · HUMAN</div>
+          <div class="k">3 · HUMAN <span class="tbd">(planned)</span></div>
           <h4>20 % blind sample</h4>
           <p>
             Graded without seeing the judge. Agreement as Cohen's κ,
@@ -1210,7 +1210,7 @@
           </tr>
           <tr>
             <td>70B</td>
-            <td>55 · 53 · 48 %</td>
+            <td>54 · 53 · 48 %</td>
             <td>5 / 48 · 16 / 48</td>
             <td>0.5 %</td>
             <td>±0 pts (p = 1.0)</td>
@@ -1222,15 +1222,15 @@
         <b>Overall correct</b> without / with the date: 8B 34 % / 35 %, 70B 52 % / 52 %. Table: with the date.<br />
         <b>Conditions:</b> as-of date in the system prompt (main) · plain
         question · law paragraph in the prompt (open book) to separate a
-        knowledge gap from a reading error.<br /><b>Published:</b> every answer,
-        every grade and the human labels.
+        knowledge gap from a reading error.<br /><b>To be published with v1.0.0:</b>
+        every answer, every grade and the human labels.
       </p>
     </section>
 
     <!-- 7 CONTAMINATION -->
     <section class="slide s7">
       <p class="kicker">Contamination check</p>
-      <h2>Did Apertus see this law? We check its own training data.</h2>
+      <h2>Did Apertus see this law? We check its legal training corpus.</h2>
       <div class="grid">
         <div class="cat">
           <p>
@@ -1250,7 +1250,7 @@
         <div class="buckets">
           <div class="bk cur">
             <div>
-              <b>Current rule in training data</b
+              <b>Current rule in that corpus</b
               ><span>seen and still valid · 602 rows</span>
             </div>
             <div class="v">
@@ -1259,7 +1259,7 @@
           </div>
           <div class="bk old">
             <div>
-              <b>Previous rule in training data</b
+              <b>Previous rule in that corpus</b
               ><span>seen, then amended · 26 rows</span>
             </div>
             <div class="v">
@@ -1267,29 +1267,29 @@
             </div>
           </div>
           <div class="bk abs">
-            <div><b>Not in training data</b><span>never seen there · 232 rows</span></div>
+            <div><b>Not in that corpus</b><span>not found there · 232 rows</span></div>
             <div class="v">
               <span class="vh">70B, PRELIM.</span>43 %
             </div>
           </div>
         </div>
       </div>
-      <p class="q">Seen but not learned, or never seen? Now we can tell.</p>
+      <p class="q">In the corpus but not learned, or not in it? Now we can tell.</p>
     </section>
 
     <!-- 8 REPRODUCIBILITY -->
     <section class="slide s8">
       <p class="kicker">Reproducibility</p>
-      <h2>One command. Every number recomputed.</h2>
+      <h2>One command. Scoring replayed.</h2>
       <div class="grid">
         <div>
           <div class="term">
             <span class="p">Replay</span> · no keys, no GPU<br />
-            <span class="c">recomputes every metric from stored answers</span
+            <span class="c">today: a 6-row test set, checked against its</span
             ><br />
-            <span class="c">and checks it against expected_results.json</span
-            ><br />
-            <span class="ok">PASS</span>
+            <span class="c">stored expected results</span>
+            <span class="ok">PASS</span><br />
+            <span class="c">after the freeze: every stored answer of v1.0.0</span>
           </div>
           <div class="term">
             <span class="p">Full mode</span><br />
@@ -1301,13 +1301,12 @@
           <div class="files">
             <div>test.jsonl <span>questions and gold</span></div>
             <div>metadata.jsonl <span>fedlex ELI with version date</span></div>
-            <div>responses/ <span>every model answer</span></div>
-            <div>judgements/ <span>every grade</span></div>
-            <div>human_labels/ <span>the 20 % sample</span></div>
+            <div>responses/ <span>every model answer · with v1.0.0</span></div>
+            <div>judgements/ <span>every grade · with v1.0.0</span></div>
+            <div>human_labels/ <span>20 % sample · planned</span></div>
           </div>
           <div class="lic">
-            <b>Hugging Face:</b> <span class="tbd">with v1.0.0</span
-            ><br />
+            <b>Hugging Face:</b> huggingface.co/datasets/NWichter/inkraft<br />
             <b>Law text:</b> public domain (Art. 5 URG)<br />
             <b>Dataset:</b> CDLA-Permissive-2.0 · <b>Code:</b> Apache-2.0<br />
             <b>Report and docs:</b> CC-BY-4.0
@@ -1328,7 +1327,7 @@
           </p>
           <div class="links">
             <div>
-              <b>Dataset</b><span class="tbd">Hugging Face, with v1.0.0</span>
+              <b>Dataset</b><span>huggingface.co/datasets/NWichter/inkraft</span>
             </div>
             <div><b>Code</b><span>github.com/NWichter/Hack_Apertus_1B_Inkraft</span></div>
             <div>
