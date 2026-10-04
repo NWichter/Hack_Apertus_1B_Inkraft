@@ -1,0 +1,32 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"KVG\", \"article_id\": \"art_64_a\", \"paragraph\": \"2\", \"domain\": \"kvg_insured\", \"question_type\": \"numeric\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"number\", \"answer_normalized\": {\"value\": 2, \"unit\": \"count\"}, \"de\": {\"question\": \"Wie oft darf eine versicherte Person in der obligatorischen Krankenversicherung in einem Kalenderjahr höchstens für eigene Ausstände betrieben werden?\", \"answer\": \"2\", \"answer_aliases\": [\"zwei\", \"zwei Mal\", \"2 Mal\"], \"near_miss_answers\": [\"1\", \"3\", \"4\", \"5\"], \"evidence\": \"Eine Person darf in einem Kalenderjahr höchstens je zwei Mal für eigene Ausstände und für Ausstände eines Kindes betrieben werden.\"}, \"fr\": {\"question\": \"Combien de fois au maximum un assuré peut-il être poursuivi au cours d’une année civile pour ses propres arriérés dans l’assurance-maladie obligatoire ?\", \"answer\": \"2\", \"answer_aliases\": [\"deux\", \"deux fois\"], \"near_miss_answers\": [\"1\", \"3\", \"4\", \"5\"], \"evidence\": \"Il peut poursuivre un assuré au maximum deux fois au cours d’une année civile pour ses propres arriérés et deux fois pour ceux d’un enfant.\"}, \"it\": {\"question\": \"Quante volte al massimo un assicurato può essere perseguito nel corso di un anno civile per i propri arretrati nell’assicurazione-malattia obbligatoria?\", \"answer\": \"2\", \"answer_aliases\": [\"due\", \"due volte\"], \"near_miss_answers\": [\"1\", \"3\", \"4\", \"5\"], \"evidence\": \"Un assicurato può essere perseguito al massimo due volte nel corso di un anno civile per i propri arretrati e due volte per quelli di un figlio.\"}, \"temporal\": null}",
+ "reasoning_chars": 11777,
+ "usage": {
+  "prompt_tokens": 1698,
+  "completion_tokens": 3305,
+  "total_tokens": 5003,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 3032,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 54.5,
+ "attempts": 1
+}

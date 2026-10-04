@@ -1,0 +1,32 @@
+{
+ "model": "nvidia/nemotron-3-super-120b-a12b:free",
+ "requested_model": "nvidia/nemotron-3-super-120b-a12b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\":\"KVG\",\"article_id\":\"art_64_a\",\"paragraph\":\"5\",\"domain\":\"kvg_insured\",\"question_type\":\"procedural\",\"register\":\"lay\",\"difficulty_prior\":2,\"answer_type\":\"text\",\"answer_normalized\":null,\"de\":{\"question\":\"Wann kann die versicherte Person den Versicherer in Abweichung von Absatz 6 wieder wechseln?\",\"answer\":\"In diesen Fällen\",\"answer_aliases\":[\"In diesen Fällen\"],\"near_miss_answers\":[\"In allen Fällen\",\"Nur bei vollständiger Zahlung\"],\"evidence\":\"In diesen Fällen kann die versicherte Person den Versicherer in Abweichung von Absatz 6 wieder wechseln.\"},\"fr\":{\"question\":\"Quand l’assuré peut-il de nouveau changer d’assureur en dérogation à l’al. 6 ?\",\"answer\":\"Dans ce cas\",\"answer_aliases\":[\"Dans ce cas\"],\"near_miss_answers\":[\"Dans tous les cas\",\"Uniquement après paiement complet\"],\"evidence\":\"Dans ce cas, l’assuré peut de nouveau changer d’assureur en dérogation à l’al. 6.\"},\"it\":{\"question\":\"Quando l’assicurato può di nuovo cambiare assicuratore in deroga al capoverso 6 ?\",\"answer\":\"In questo caso\",\"answer_aliases\":[\"In questo caso\"],\"near_miss_answers\":[\"In tutti i casi\",\"Solo dopo pagamento completo\"],\"evidence\":\"In questo caso l’assicurato può di nuovo cambiare assicuratore in deroga al capoverso 6.\"},\"temporal\":null}",
+ "reasoning_chars": 13183,
+ "usage": {
+  "prompt_tokens": 1496,
+  "completion_tokens": 3436,
+  "total_tokens": 4932,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 3088,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 18.9,
+ "attempts": 1
+}

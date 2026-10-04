@@ -1,0 +1,56 @@
+[
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "nms-0015-de",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "ERROR",
+  "code": "temporal.prev_evidence",
+  "id": "nms-0015-fr",
+  "msg": "Evidenz der veralteten Antwort steht nicht in der Vorfassung"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "nms-0015-fr",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "ERROR",
+  "code": "temporal.prev_evidence",
+  "id": "nms-0015-it",
+  "msg": "Evidenz der veralteten Antwort steht nicht in der Vorfassung"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "nms-0015-it",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "style.long_answer",
+  "id": "nms-0016-de",
+  "msg": "Antwort lang (121 Zeichen)"
+ },
+ {
+  "level": "WARN",
+  "code": "style.long_answer",
+  "id": "nms-0016-fr",
+  "msg": "Antwort lang (121 Zeichen)"
+ },
+ {
+  "level": "WARN",
+  "code": "style.long_answer",
+  "id": "nms-0016-it",
+  "msg": "Antwort lang (126 Zeichen)"
+ },
+ {
+  "level": "ERROR",
+  "code": "lang.question",
+  "id": "nms-0018-de",
+  "msg": "Frage wirkt wie 'it', erwartet 'de' {'de': 2, 'fr': 0, 'it': 3}"
+ }
+]

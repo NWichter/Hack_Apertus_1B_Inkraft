@@ -1,0 +1,32 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"AHVG\", \"article_id\": \"art_43_bis\", \"paragraph\": \"1\", \"domain\": \"ahv\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Welche Altersrentenbezüger haben Anspruch auf eine Hilflosenentschädigung?\", \"answer\": \"Personen, die ihre ganze Altersrente beziehen\", \"answer_aliases\": [\"die ihre ganze Altersrente beziehen\", \"Bezieher der vollen Altersrente\"], \"near_miss_answers\": [\"Bezüger von Ergänzungsleistungen\", \"Personen, die eine halbe Altersrente beziehen\", \"Bezüger von Hinterlassenenrenten\"], \"evidence\": \"Personen, die ihre ganze Altersrente beziehen\"}, \"fr\": {\"question\": \"Quels bénéficiaires de rentes de vieillesse ont droit à l'allocation pour impotent?\", \"answer\": \"les personnes qui perçoivent la totalité de leur rente de vieillesse\", \"answer_aliases\": [\"ceux qui perçoivent la totalité de leur rente de vieillesse\", \"bénéficiaires de la pleine rente de vieillesse\"], \"near_miss_answers\": [\"bénéficiaires de prestations complémentaires\", \"personnes percevant une rente de vieillesse anticipée\", \"bénéficiaires de rentes de survivants\"], \"evidence\": \"les personnes qui perçoivent la totalité de leur rente de vieillesse\"}, \"it\": {\"question\": \"Quali beneficiari di rendite di vecchiaia hanno diritto all'assegno per grandi invalidi?\", \"answer\": \"chi percepisce la totalità della rendita di vecchiaia\", \"answer_aliases\": [\"coloro che percepiscono la totalità della rendita di vecchiaia\", \"percettori della piena rendita di vecchiaia\"], \"near_miss_answers\": [\"beneficiari di prestazioni complementari\", \"persone che percepiscono una rendita di vecchiaia anticipata\", \"beneficiari di rendite di superstiti\"], \"evidence\": \"chi percepisce la totalità della rendita di vecchiaia\"}, \"temporal\": {\"previous_paragraph\": \"1\", \"de\": {\"outdated_answer\": \"Bezüger von Altersrenten\", \"evidence\": \"Bezüger von Altersrenten oder Ergänzungsleistungen mit Wohnsitz und gewöhnlichem Aufenthalt (Art. 13 ATSG) in der Schweiz, die in schwerem, mittlerem oder leichtem Grad hilflos (Art. 9 ATSG) sind.\"}, \"fr\": {\"outdated_answer\": \"bénéficiaires de rentes de vieillesse\", \"evidence\": \"Ont droit à l’allocation pour impotent les bénéficiaires de rentes de vieillesse ou de prestations complémentaires qui ont leur domicile et leur résidence habituelle (art. 13 LPGA) en Suisse et qui présentent une impotence (art. 9 LPGA) grave, moyenne ou faible.\"}, \"it\": {\"outdated_answer\": \"beneficiari di rendite di vecchiaia\", \"evidence\": \"Hanno diritto all’assegno per grandi invalidi i beneficiari di rendite di vecchiaia o di prestazioni complementari con domicilio e dimora abituale (art. 13 LPGA) in Svizzera, che presentano un’invalidità (art. 9 LPGA) di grado elevato, medio o lieve.\"}}}",
+ "reasoning_chars": 19322,
+ "usage": {
+  "prompt_tokens": 1576,
+  "completion_tokens": 5986,
+  "total_tokens": 7562,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 4926,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 109.2,
+ "attempts": 1
+}

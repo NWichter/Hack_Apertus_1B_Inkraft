@@ -1,0 +1,32 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"BVG\", \"article_id\": \"art_61\", \"paragraph\": \"3\", \"domain\": \"bvg_3a\", \"question_type\": \"yes_no\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"yes_no\", \"answer_normalized\": null, \"de\": {\"question\": \"Dürfen in der beruflichen Vorsorge Mitglieder der Aufsichtsbehörde aus dem kantonalen Departement stammen, das mit Fragen der beruflichen Vorsorge betraut ist?\", \"answer\": \"Nein\", \"answer_aliases\": [\"Nein\"], \"near_miss_answers\": [\"Ja\"], \"evidence\": \"Ihre Mitglieder dürfen nicht aus dem kantonalen Departement stammen, das mit Fragen der beruflichen Vorsorge betraut ist.\"}, \"fr\": {\"question\": \"Dans la prévoyance professionnelle, les membres de l'autorité de surveillance peuvent-ils provenir du département cantonal chargé des questions relatives à la prévoyance professionnelle ?\", \"answer\": \"Non\", \"answer_aliases\": [\"Non\"], \"near_miss_answers\": [\"Oui\"], \"evidence\": \"Ses membres ne peuvent être issus du département cantonal chargé des questions relatives à la prévoyance professionnelle.\"}, \"it\": {\"question\": \"Nella previdenza professionale, i membri dell'autorità di vigilanza possono far parte del dipartimento cantonale preposto alle questioni relative alla previdenza professionale ?\", \"answer\": \"No\", \"answer_aliases\": [\"No\"], \"near_miss_answers\": [\"Sì\"], \"evidence\": \"I suoi membri non possono far parte del dipartimento cantonale preposto alle questioni relative alla previdenza professionale.\"}, \"temporal\": null}",
+ "reasoning_chars": 9189,
+ "usage": {
+  "prompt_tokens": 1355,
+  "completion_tokens": 2607,
+  "total_tokens": 3962,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2341,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 31.1,
+ "attempts": 1
+}

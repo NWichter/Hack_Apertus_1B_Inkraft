@@ -1,0 +1,32 @@
+{
+ "model": "nvidia/nemotron-3-super-120b-a12b:free",
+ "requested_model": "nvidia/nemotron-3-super-120b-a12b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"OR\", \"article_id\": \"art_329_g\", \"paragraph\": \"1\", \"domain\": \"eo_alv\", \"question_type\": \"temporal\", \"register\": \"lay\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Wer hat neben dem rechtlichen Vater ebenfalls Anspruch auf den zweiwöchigen Urlaub des anderen Elternteils?\", \"answer\": \"die Arbeitnehmerin, die im Zeitpunkt der Geburt des Kindes der rechtliche andere Elternteil ist\", \"answer_aliases\": [], \"near_miss_answers\": [\"die Arbeitnehmerin, die im Zeitpunkt der Geburt des Kindes der rechtliche andere Elternteil ist und Anspruch auf drei Wochen hat\"], \"evidence\": \"die Arbeitnehmerin, die im Zeitpunkt der Geburt des Kindes der rechtliche andere Elternteil ist\"}, \"fr\": {\"question\": \"Qui, outre le père légal, a également droit au congé de deux semaines de l’autre parent?\", \"answer\": \"la travailleuse, si elle est l’autre parent légal au moment de la naissance de l’enfant\", \"answer_aliases\": [], \"near_miss_answers\": [\"la travailleuse, si elle est l’autre parent légal au moment de la naissance de l’enfant et a droit à trois semaines de congé\"], \"evidence\": \"la travailleuse, si elle est l’autre parent légal au moment de la naissance de l’enfant\"}, \"it\": {\"question\": \"Chi, oltre al padre legale, ha inoltre diritto al congedo di deux settimane dell’altro genitore?\", \"answer\": \"la lavoratrice che è l’altro genitore legale al momento della nascita del figlio\", \"answer_aliases\": [], \"near_miss_answers\": [\"la lavoratrice che è l’altro genitore legale al momento della nascita del figlio e ha diritto a tre settimane di congedo\"], \"evidence\": \"la lavoratrice che è l’altro genitore legale al momento della nascita del figlio\"}, \"temporal\": {\"previous_paragraph\": \"1\", \"de\": {\"outdated_answer\": \"Der Arbeitnehmer, der im Zeitpunkt der Geburt eines Kindes dessen rechtlicher Vater ist oder dies innerhalb der folgenden sechs Monate wird\", \"evidence\": \"Der Arbeitnehmer, der im Zeitpunkt der Geburt eines Kindes dessen rechtlicher Vater ist oder dies innerhalb der folgenden sechs Monate wird\"}, \"fr\": {\"outdated_answer\": \"le travailleur, s’il est le père légal au moment de la naissance de l’enfant ou s’il le devient au cours des six mois qui suivent\", \"evidence\": \"le travailleur, s’il est le père légal au moment de la naissance de l’enfant ou s’il le devient au cours des six mois qui suivent\"}, \"it\": {\"outdated_answer\": \"il lavoratore che è il padre legale al momento della nascita del figlio o lo diventa nei sei mesi seguenti\", \"evidence\": \"il lavoratore che è il padre legale al momento della nascita del figlio o lo diventa nei sei mesi seguenti\"}}}",
+ "reasoning_chars": 8872,
+ "usage": {
+  "prompt_tokens": 1390,
+  "completion_tokens": 2581,
+  "total_tokens": 3971,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 1929,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 72.7,
+ "attempts": 1
+}

@@ -1,0 +1,32 @@
+{
+ "model": "nvidia/nemotron-3-super-120b-a12b:free",
+ "requested_model": "nvidia/nemotron-3-super-120b-a12b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\":\"BVG\",\"article_id\":\"art_46\",\"paragraph\":\"1\",\"domain\":\"bvg_3a\",\"question_type\":\"temporal\",\"register\":\"lay\",\"difficulty_prior\":2,\"answer_type\":\"number\",\"answer_normalized\":{\"value\":22680,\"unit\":\"CHF\"},\"de\":{\"question\":\"Wie hoch muss der gesamte Jahreslohn eines nicht obligatorisch versicherten Arbeitnehmers, der bei mehreren Arbeitgebern beschäftigt ist, mindestens sein, um sich freiwillig bei der Auffangeinrichtung oder bei der Vorsorgeeinrichtung eines seiner Arbeitgeber versichern zu lassen?\",\"answer\":\"22 680 Franken\",\"answer_aliases\":[\"CHF 22680\",\"22'680 Franken\"],\"near_miss_answers\":[\"22 500 Franken\",\"22 800 Franken\"],\"evidence\":\"22 680 Franken\"},\"fr\":{\"question\":\"Quel doit être le salaire annuel total d'un salarié non obligatoirement assuré au service de plusieurs employeurs pour pouvoir s'assurer facultativement auprès de l'institution supplétive ou de l'institution de prévoyance liée à l'un de ses employeurs?\",\"answer\":\"22 680 francs\",\"answer_aliases\":[\"CHF 22680\",\"22'680 francs\"],\"near_miss_answers\":[\"22 500 francs\",\"22 800 francs\"],\"evidence\":\"22 680 francs\"},\"it\":{\"question\":\"Qual deve essere il salario annuo totale di un lavoratore non obbligatoriamente assicurato al servizio di vari datori di lavoro per poter stipulare un'assicurazione facoltativa presso l'istituto collettore o presso l'istituto di previdenza affiliato a uno dei suoi datori di lavoro?\",\"answer\":\"22 680 franchi\",\"answer_aliases\":[\"CHF 22680\",\"22'680 franchi\"],\"near_miss_answers\":[\"22 500 franchi\",\"22 800 franchi\"],\"evidence\":\"22 680 franchi\"},\"temporal\":{\"previous_paragraph\":\"1\",\"de\":{\"outdated_answer\":\"22 050 Franken\",\"evidence\":\"22 050 Franken\"},\"fr\":{\"outdated_answer\":\"22 050 francs\",\"evidence\":\"22 050 francs\"},\"it\":{\"outdated_answer\":\"22 050 franchi\",\"evidence\":\"22 050 franchi\"}}}",
+ "reasoning_chars": 9463,
+ "usage": {
+  "prompt_tokens": 1596,
+  "completion_tokens": 3220,
+  "total_tokens": 4816,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2650,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 19.5,
+ "attempts": 1
+}

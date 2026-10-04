@@ -1,0 +1,32 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"BVG\", \"article_id\": \"art_46\", \"paragraph\": \"1\", \"domain\": \"bvg_3a\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"currency_chf\", \"answer_normalized\": {\"value\": 22680, \"unit\": \"CHF\"}, \"de\": {\"question\": \"Ab welchem gesamten Jahreslohn kann sich ein nicht obligatorisch versicherter Arbeitnehmer, der im Dienste mehrerer Arbeitgeber steht, freiwillig versichern lassen?\", \"answer\": \"22 680 Franken\", \"answer_aliases\": [\"CHF 22680\", \"22'680 Franken\", \"22680 Franken\"], \"near_miss_answers\": [\"22 000 Franken\", \"23 000 Franken\", \"21 680 Franken\"], \"evidence\": \"dessen gesamter Jahreslohn 22 680 Franken übersteigt\"}, \"fr\": {\"question\": \"À partir de quel salaire annuel total un salarié non obligatoirement assuré, au service de plusieurs employeurs, peut-il s'assurer à titre facultatif ?\", \"answer\": \"22 680 francs\", \"answer_aliases\": [\"CHF 22680\", \"22'680 francs\", \"22680 francs\"], \"near_miss_answers\": [\"22 000 francs\", \"23 000 francs\", \"21 680 francs\"], \"evidence\": \"dont le salaire annuel total dépasse 22 680 francs\"}, \"it\": {\"question\": \"A partire da quale salario complessivo annuo un lavoratore non assicurato obbligatoriamente, al servizio di vari datori di lavoro, può farsi assicurare facoltativamente?\", \"answer\": \"22 680 franchi\", \"answer_aliases\": [\"CHF 22680\", \"22'680 franchi\", \"22680 franchi\"], \"near_miss_answers\": [\"22 000 franchi\", \"23 000 franchi\", \"21 680 franchi\"], \"evidence\": \"il cui salario complessivo supera i 22 680 franchi\"}, \"temporal\": {\"previous_paragraph\": \"1\", \"de\": {\"outdated_answer\": \"22 050 Franken\", \"evidence\": \"dessen gesamter Jahreslohn 22 050 Franken übersteigt\"}, \"fr\": {\"outdated_answer\": \"22 050 francs\", \"evidence\": \"dont le salaire annuel total dépasse 22 050 francs\"}, \"it\": {\"outdated_answer\": \"22 050 franchi\", \"evidence\": \"il cui salario complessivo supera i 22 050 franchi\"}}}",
+ "reasoning_chars": 2165,
+ "usage": {
+  "prompt_tokens": 1596,
+  "completion_tokens": 1243,
+  "total_tokens": 2839,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 552,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 20.3,
+ "attempts": 1
+}

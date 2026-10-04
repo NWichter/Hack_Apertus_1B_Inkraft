@@ -1,0 +1,32 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"KVG\", \"article_id\": \"art_64_a\", \"paragraph\": \"5\", \"domain\": \"kvg_insured\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Was geschieht mit den Forderungen, wenn der Kanton zusätzlich fünf Prozent der Forderungen übernimmt, die der Versicherer ihm bekannt gegeben hat?\", \"answer\": \"tritt der Versicherer ihm diese Forderungen ab\", \"answer_aliases\": [\"Der Versicherer tritt die Forderungen an den Kanton ab\", \"Abtretung der Forderungen an den Kanton\"], \"near_miss_answers\": [\"Der Kanton informiert die versicherte Person über die Abtretung\", \"Die versicherte Person kann den Versicherer wechseln\"], \"evidence\": \"tritt der Versicherer ihm diese Forderungen ab\"}, \"fr\": {\"question\": \"Que se passe-t-il pour les créances si le canton prend en charge 5 % supplémentaires des créances annoncées par l'assureur ?\", \"answer\": \"l’assureur lui cède ces créances\", \"answer_aliases\": [\"L’assureur cède les créances au canton\", \"Cession des créances au canton\"], \"near_miss_answers\": [\"Le canton informe l’assuré de la cession\", \"L’assuré peut de nouveau changer d’assureur\"], \"evidence\": \"l’assureur lui cède ces créances\"}, \"it\": {\"question\": \"Cosa accade ai crediti se il Cantone assume un ulteriore 5 per cento dei crediti comunicati dall’assicuratore?\", \"answer\": \"l’assicuratore gli cede questi crediti\", \"answer_aliases\": [\"L’assicuratore cede i crediti al Cantone\", \"Cessione dei crediti al Cantone\"], \"near_miss_answers\": [\"Il Cantone informa l’assicurato della cessione\", \"L’assicurato può di nuovo cambiare assicuratore\"], \"evidence\": \"l’assicuratore gli cede questi crediti\"}, \"temporal\": {\"previous_paragraph\": \"5\", \"de\": {\"outdated_answer\": \"Der Versicherer bewahrt die Verlustscheine und die gleichwertigen Rechtstitel bis zur vollständigen Bezahlung der ausstehenden Forderungen auf.\", \"evidence\": \"Der Versicherer bewahrt die Verlustscheine und die gleichwertigen Rechtstitel bis zur vollständigen Bezahlung der ausstehenden Forderungen auf.\"}, \"fr\": {\"outdated_answer\": \"L’assureur conserve les actes de défaut de biens et les titres équivalents jusqu’au paiement intégral des créances arriérées.\", \"evidence\": \"L’assureur conserve les actes de défaut de biens et les titres équivalents jusqu’au paiement intégral des créances arriérées.\"}, \"it\": {\"outdated_answer\": \"L’assicuratore conserva gli attestati di carenza di beni e i titoli equivalenti sino al pagamento integrale dei crediti in arretrato.\", \"evidence\": \"L’assicuratore conserva gli attestati di carenza di beni e i titoli equivalenti sino al pagamento integrale dei crediti in arretrato.\"}}}",
+ "reasoning_chars": 29643,
+ "usage": {
+  "prompt_tokens": 1496,
+  "completion_tokens": 7616,
+  "total_tokens": 9112,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 7592,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 120.5,
+ "attempts": 1
+}

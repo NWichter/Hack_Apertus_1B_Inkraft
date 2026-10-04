@@ -1,0 +1,32 @@
+{
+ "model": "nvidia/nemotron-3-super-120b-a12b:free",
+ "requested_model": "nvidia/nemotron-3-super-120b-a12b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\":\"EOG\",\"article_id\":\"art_27\",\"paragraph\":\"2\",\"domain\":\"eo_alv\",\"question_type\":\"temporal\",\"register\":\"lay\",\"difficulty_prior\":2,\"answer_type\":\"currency_chf\",\"answer_normalized\":{\"value\":25,\"unit\":\"CHF\"},\"de\":{\"question\":\"Wie hoch ist der höchstmögliche Mindestbeitrag für Nichterwerbstätige im Erwerbsersatzgesetz?\",\"answer\":\"25 Franken\",\"answer_aliases\":[\"25 CHF\"],\"near_miss_answers\":[\"26 Franken\"],\"evidence\":\"Der Mindestbeitrag beträgt höchstens 25 Franken im Jahr.\"},\"fr\":{\"question\":\"Quel est le montant maximal de la cotisation minimale pour les assurés n'exerçant aucune activité lucrative dans la Loi sur le remplacement des gains?\",\"answer\":\"25 francs\",\"answer_aliases\":[\"25 CHF\"],\"near_miss_answers\":[\"26 francs\"],\"evidence\":\"La cotisation minimale ne peut être supérieure à 25 francs par an.\"},\"it\":{\"question\":\"Qual è l'importo massimo del contributo minimo per gli assicurati che non esercitano un'attività lucrativa nella Legge sul guadagno di sostituzione?\",\"answer\":\"25 franchi\",\"answer_aliases\":[\"25 CHF\"],\"near_miss_answers\":[\"26 franchi\"],\"evidence\":\"Il contributo minimo non può eccedere 25 franchi all’anno.\"},\"temporal\":{\"previous_paragraph\":\"2\",\"de\":{\"outdated_answer\":\"24 Franken\",\"evidence\":\"Der Mindestbeitrag beträgt höchstens 24 Franken im Jahr.\"},\"fr\":{\"outdated_answer\":\"24 francs\",\"evidence\":\"La cotisation minimale ne peut être supérieure à 24 francs par an.\"},\"it\":{\"outdated_answer\":\"24 franchi\",\"evidence\":\"Il contributo minimo non può eccedere 24 franchi all’anno.\"}}}",
+ "reasoning_chars": 10108,
+ "usage": {
+  "prompt_tokens": 2374,
+  "completion_tokens": 3095,
+  "total_tokens": 5469,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2664,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 21.6,
+ "attempts": 1
+}

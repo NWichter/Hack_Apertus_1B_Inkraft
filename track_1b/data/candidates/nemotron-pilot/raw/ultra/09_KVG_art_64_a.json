@@ -1,0 +1,32 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"KVG\", \"article_id\": \"art_64_a\", \"paragraph\": \"7\", \"domain\": \"kvg_insured\", \"question_type\": \"procedural\", \"register\": \"lay\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"In der obligatorischen Krankenversicherung: Wann liegt eine Notfallbehandlung vor?\", \"answer\": \"Wenn die Behandlung nicht aufgeschoben werden kann.\", \"answer_aliases\": [\"Wenn die Behandlung nicht aufgeschoben werden kann\", \"Behandlung nicht aufschiebbar\"], \"near_miss_answers\": [\"Wenn die versicherte Person ihre Prämien nicht bezahlt\", \"Wenn der Kanton eine Liste führt\", \"Wenn der Versicherer die Kostenübernahme aufschiebt\"], \"evidence\": \"Eine Notfallbehandlung liegt vor, wenn die Behandlung nicht aufgeschoben werden kann.\"}, \"fr\": {\"question\": \"Dans l'assurance-maladie obligatoire : quand une prestation relève-t-elle de la médecine d'urgence ?\", \"answer\": \"Lorsqu'elle ne peut pas être repoussée.\", \"answer_aliases\": [\"Lorsqu'elle ne peut pas être repoussée\", \"Ne peut pas être repoussée\"], \"near_miss_answers\": [\"Lorsque l'assuré ne paie pas ses primes\", \"Lorsque le canton tient une liste\", \"Lorsque l'assureur suspend la prise en charge\"], \"evidence\": \"Une prestation relevant de la médecine d’urgence consiste en une prestation qui ne peut pas être repoussée.\"}, \"it\": {\"question\": \"Nell'assicurazione malattie obbligatoria: quando si considera urgenza medica?\", \"answer\": \"Quando un trattamento non può essere differito.\", \"answer_aliases\": [\"Quando un trattamento non può essere differito\", \"Trattamento non differibile\"], \"near_miss_answers\": [\"Quando l'assicurato non paga i premi\", \"Quando il Cantone tiene un elenco\", \"Quando l'assicuratore sospende l'assunzione dei costi\"], \"evidence\": \"Vi è urgenza medica quando un trattamento non può essere differito.\"}, \"temporal\": null}",
+ "reasoning_chars": 20386,
+ "usage": {
+  "prompt_tokens": 1963,
+  "completion_tokens": 5738,
+  "total_tokens": 7701,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 5213,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 81.5,
+ "attempts": 1
+}

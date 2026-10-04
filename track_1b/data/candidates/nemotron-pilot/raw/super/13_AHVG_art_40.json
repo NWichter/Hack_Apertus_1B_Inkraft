@@ -1,0 +1,32 @@
+{
+ "model": "nvidia/nemotron-3-super-120b-a12b:free",
+ "requested_model": "nvidia/nemotron-3-super-120b-a12b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\":\"AHVG\",\"article_id\":\"art_40\",\"paragraph\":\"2\",\"domain\":\"ahv\",\"question_type\":\"temporal\",\"register\":\"lay\",\"difficulty_prior\":2,\"answer_type\":\"text\",\"answer_normalized\":null,\"de\":{\"question\":\"Was können Personen, die einen Anteil der Rente vorbezogen haben, tun?\",\"answer\":\"einmal die Erhöhung des Anteils verlangen\",\"answer_aliases\":[],\"near_miss_answers\":[\"die Erhöhung mehrmals verlangen\",\"die Erhöhung nicht verlangen\"],\"evidence\":\"Personen, die einen Anteil der Rente vorbezogen haben, können einmal die Erhöhung des Anteils verlangen.\"},\"fr\":{\"question\":\"Que peuvent faire les personnes qui perçoivent un pourcentage de la rente de manière anticipée ?\",\"answer\":\"demander une fois l’augmentation de ce pourcentage\",\"answer_aliases\":[],\"near_miss_answers\":[\"demander plusieurs fois l’augmentation de ce pourcentage\",\"ne pas demander l’augmentation de ce pourcentage\"],\"evidence\":\"Les personnes qui perçoivent un pourcentage de la rente de manière anticipée peuvent demander une fois l’augmentation de ce pourcentage.\"},\"it\":{\"question\":\"Cosa possono fare le persone che hanno anticipato la riscossione di una percentuale della rendita ?\",\"answer\":\"chiedere, una sola volta, l’aumento di tale percentuale\",\"answer_aliases\":[],\"near_miss_answers\":[\"chiedere più volte l’aumento di tale percentuale\",\"non chiedere l’aumento di tale percentuale\"],\"evidence\":\"Chi ha anticipato la riscossione di una percentuale della rendita può chiedere, una sola volta, l’aumento di tale percentuale.\"},\"temporal\":{\"previous_paragraph\":\"2\",\"de\":{\"outdated_answer\":\"Die vorbezogene Altersrente sowie die Witwen‑, Witwer- und Waisenrente werden gekürzt.\",\"evidence\":\"Die vorbezogene Altersrente sowie die Witwen‑, Witwer- und Waisenrente werden gekürzt.\"},\"fr\":{\"outdated_answer\":\"La rente de vieillesse anticipée, la rente de veuf et de veuve et la rente d’orphelin sont réduites.\",\"evidence\":\"La rente de vieillesse anticipée, la rente de veuf et de veuve et la rente d’orphelin sont réduites.\"},\"it\":{\"outdated_answer\":\"La rendita di vecchiaia anticipata, la rendita vedovile e la rendita per orfani sono ridotte.\",\"evidence\":\"La rendita di vecchiaia anticipata, la rendita vedovile e la rendita per orfani sono ridotte.\"}}}",
+ "reasoning_chars": 13361,
+ "usage": {
+  "prompt_tokens": 1282,
+  "completion_tokens": 3699,
+  "total_tokens": 4981,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 3107,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 22.4,
+ "attempts": 1
+}

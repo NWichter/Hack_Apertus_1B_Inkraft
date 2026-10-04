@@ -1,0 +1,32 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"AHVG\", \"article_id\": \"art_39\", \"paragraph\": \"2\", \"domain\": \"ahv\", \"question_type\": \"temporal\", \"register\": \"lay\", \"difficulty_prior\": 2, \"answer_type\": \"yes_no\", \"answer_normalized\": null, \"de\": {\"question\": \"Wird der aufgeschobene Rentenanteil in der Alters- und Hinterlassenenversicherung erhöht?\", \"answer\": \"Nein\", \"answer_aliases\": [\"Nein\"], \"near_miss_answers\": [\"Ja, automatisch\", \"Ja, auf Antrag\"], \"evidence\": \"Die Erhöhung des aufgeschobenen Anteils ist ausgeschlossen.\"}, \"fr\": {\"question\": \"Le pourcentage de rente ajourné est-il augmenté dans l'assurance-vieillesse et survivants?\", \"answer\": \"Non\", \"answer_aliases\": [\"Non\"], \"near_miss_answers\": [\"Oui, automatiquement\", \"Oui, sur demande\"], \"evidence\": \"L’augmentation du pourcentage de l’ajournement est exclue.\"}, \"it\": {\"question\": \"La percentuale di rendita differita viene aumentata nell'assicurazione per la vecchiaia e i superstiti?\", \"answer\": \"No\", \"answer_aliases\": [\"No\"], \"near_miss_answers\": [\"Sì, automaticamente\", \"Sì, su domanda\"], \"evidence\": \"L’aumento della percentuale è escluso.\"}, \"temporal\": {\"previous_paragraph\": \"2\", \"de\": {\"outdated_answer\": \"Ja\", \"evidence\": \"wird um den versicherungstechnischen Gegenwert der nicht bezogenen Leistung erhöht\"}, \"fr\": {\"outdated_answer\": \"Oui\", \"evidence\": \"sont augmentées de la contre-valeur actuarielle de la prestation non touchée\"}, \"it\": {\"outdated_answer\": \"Sì\", \"evidence\": \"sono aumentate del controvalore attuariale della prestazione non ricevuta\"}}}",
+ "reasoning_chars": 22298,
+ "usage": {
+  "prompt_tokens": 1309,
+  "completion_tokens": 5865,
+  "total_tokens": 7174,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 5696,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 112.5,
+ "attempts": 1
+}

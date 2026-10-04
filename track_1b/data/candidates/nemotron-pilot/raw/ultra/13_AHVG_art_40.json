@@ -1,0 +1,32 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"AHVG\", \"article_id\": \"art_40\", \"paragraph\": \"2\", \"domain\": \"ahv\", \"question_type\": \"temporal\", \"register\": \"lay\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Was können Personen, die einen Anteil ihrer Altersrente vorbezogen haben, einmalig verlangen?\", \"answer\": \"die Erhöhung des Anteils\", \"answer_aliases\": [\"Erhöhung des Anteils\", \"die Erhöhung des Rentenanteils\", \"Anteils-Erhöhung\"], \"near_miss_answers\": [\"Herabsetzung des Anteils\", \"Widerruf des Vorbezugs\", \"volle Altersrente beantragen\", \"Rentenanteil reduzieren\"], \"evidence\": \"Personen, die einen Anteil der Rente vorbezogen haben, können einmal die Erhöhung des Anteils verlangen.\"}, \"fr\": {\"question\": \"Que peuvent demander une seule fois les personnes qui perçoivent un pourcentage de leur rente de vieillesse de manière anticipée ?\", \"answer\": \"l'augmentation de ce pourcentage\", \"answer_aliases\": [\"l'augmentation du pourcentage\", \"augmenter ce pourcentage\", \"l'augmentation du taux\"], \"near_miss_answers\": [\"la réduction de ce pourcentage\", \"la révocation de l'anticipation\", \"le versement de la rente complète\", \"la diminution du pourcentage\"], \"evidence\": \"Les personnes qui perçoivent un pourcentage de la rente de manière anticipée peuvent demander une fois l'augmentation de ce pourcentage.\"}, \"it\": {\"question\": \"Cosa possono richiedere una sola volta le persone che hanno anticipato la riscossione di una percentuale della loro rendita di vecchiaia ?\", \"answer\": \"l'aumento di tale percentuale\", \"answer_aliases\": [\"l'aumento della percentuale\", \"aumentare la percentuale\", \"l'incremento della percentuale\"], \"near_miss_answers\": [\"la riduzione di tale percentuale\", \"la revoca dell'anticipo\", \"la richiesta della rendita intera\", \"la diminuzione della percentuale\"], \"evidence\": \"Chi ha anticipato la riscossione di una percentuale della rendita può chiedere, una sola volta, l'aumento di tale percentuale.\"}, \"temporal\": {\"previous_paragraph\": \"2\", \"de\": {\"outdated_answer\": \"Die vorbezogene Altersrente wird gekürzt\", \"evidence\": \"Die vorbezogene Altersrente sowie die Witwen‑, Witwer- und Waisenrente werden gekürzt.\"}, \"fr\": {\"outdated_answer\": \"La rente de vieillesse anticipée est réduite\", \"evidence\": \"La rente de vieillesse anticipée, la rente de veuf et de veuve et la rente d'orphelin sont réduites.\"}, \"it\": {\"outdated_answer\": \"La rendita di vecchiaia anticipata è ridotta\", \"evidence\": \"La rendita di vecchiaia anticipata, la rendita vedovile e la rendita per orfani sono ridotte.\"}}}",
+ "reasoning_chars": 11059,
+ "usage": {
+  "prompt_tokens": 1282,
+  "completion_tokens": 3374,
+  "total_tokens": 4656,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2822,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 41.8,
+ "attempts": 1
+}

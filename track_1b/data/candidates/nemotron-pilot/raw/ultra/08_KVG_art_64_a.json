@@ -1,0 +1,32 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"KVG\", \"article_id\": \"art_64_a\", \"paragraph\": \"6\", \"domain\": \"kvg_insured\", \"question_type\": \"yes_no\", \"register\": \"lay\", \"difficulty_prior\": 2, \"answer_type\": \"yes_no\", \"answer_normalized\": null, \"de\": {\"question\": \"Dürfen Versicherte, die nur Ausstände für ihre Kinder haben, den Versicherer wechseln?\", \"answer\": \"Ja\", \"answer_aliases\": [\"Ja.\"], \"near_miss_answers\": [\"Nein\"], \"evidence\": \"Versicherte, die nur Ausstände für ihre Kinder haben, dürfen den Versicherer trotzdem wechseln.\"}, \"fr\": {\"question\": \"Les assurés qui n'ont des arriérés que pour leurs enfants peuvent-ils changer d'assureur ?\", \"answer\": \"Oui\", \"answer_aliases\": [\"Oui.\"], \"near_miss_answers\": [\"Non\"], \"evidence\": \"Les assurés qui n'ont des arriérés que pour leurs enfants peuvent changer d'assureur.\"}, \"it\": {\"question\": \"Gli assicurati i cui arretrati concernono soltanto i loro figli possono cambiare assicuratore?\", \"answer\": \"Sì\", \"answer_aliases\": [\"Sì.\"], \"near_miss_answers\": [\"No\"], \"evidence\": \"Gli assicurati i cui arretrati concernono soltanto i loro figli possono cambiare assicuratore.\"}, \"temporal\": null}",
+ "reasoning_chars": 10670,
+ "usage": {
+  "prompt_tokens": 1624,
+  "completion_tokens": 2929,
+  "total_tokens": 4553,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2725,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 45.1,
+ "attempts": 1
+}

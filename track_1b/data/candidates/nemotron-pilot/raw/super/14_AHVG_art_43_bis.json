@@ -1,0 +1,32 @@
+{
+ "model": "nvidia/nemotron-3-super-120b-a12b:free",
+ "requested_model": "nvidia/nemotron-3-super-120b-a12b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\":\"AHVG\",\"article_id\":\"art_43_bis\",\"paragraph\":\"1\",\"domain\":\"ahv\",\"question_type\":\"temporal\",\"register\":\"lay\",\"difficulty_prior\":2,\"answer_type\":\"text\",\"answer_normalized\":null,\"de\":{\"question\":\"Welche Personen haben Anspruch auf eine Hilflosenentschädigung, wenn sie eine Altersrente beziehen?\",\"answer\":\"Personen, die ihre ganze Altersrente beziehen\",\"answer_aliases\":[\"Personen, die ihre ganze Altersrente beziehen,\"],\"near_miss_answers\":[\"Bezüger von Ergänzungsleistungen\"],\"evidence\":\"Personen, die ihre ganze Altersrente beziehen\"},\"fr\":{\"question\":\"Quelles personnes ont droit à l’allocation pour impotent lorsqu’elles perçoivent une rente de vieillesse?\",\"answer\":\"les personnes qui perçoivent la totalité de leur rente de vieillesse\",\"answer_aliases\":[],\"near_miss_answers\":[\"les bénéficiaires de prestations complémentaires\"],\"evidence\":\"les personnes qui perçoivent la totalité de leur rente de vieillesse\"},\"it\":{\"question\":\"Quali persone hanno diritto all’assegno per grandi invalidi quando percepiscono una rendita di vecchiaia?\",\"answer\":\"chi percepisce la totalità della rendita di vecchiaia\",\"answer_aliases\":[\"chi percepisce la totalità della rendita di vecchiaia,\"],\"near_miss_answers\":[\"chi è beneficiario di prestazioni complementari\"],\"evidence\":\"chi percepisce la totalità della rendita di vecchiaia\"},\"temporal\":{\"previous_paragraph\":\"1\",\"de\":{\"outdated_answer\":\"Bezüger von Altersrenten\",\"evidence\":\"Bezüger von Altersrenten\"},\"fr\":{\"outdated_answer\":\"les bénéficiaires de rentes de vieillesse\",\"evidence\":\"les bénéficiaires de rentes de vieillesse\"},\"it\":{\"outdated_answer\":\"i beneficiari di rendite di vecchiaia\",\"evidence\":\"i beneficiari di rendite di vecchiaia\"}}}",
+ "reasoning_chars": 19528,
+ "usage": {
+  "prompt_tokens": 1576,
+  "completion_tokens": 5243,
+  "total_tokens": 6819,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 4791,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 30.3,
+ "attempts": 1
+}

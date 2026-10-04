@@ -1,0 +1,20 @@
+1 EOG art_27 ok 21.6 s
+2 BVG art_46 ok 19.5 s
+3 BVV2 art_3_a ok 15.1 s
+4 KVV art_65_c ok 17.3 s
+5 AVIG art_35 ok 10.2 s
+6 KVG art_64_a ok 19.7 s
+7 KVG art_64_a ok 18.9 s
+8 KVG art_64_a ok 52.8 s
+9 KVG art_64_a ok 57.9 s
+10 KVG art_25_a ok 21.4 s
+11 KVG art_6_a ok 24.1 s
+12 AHVG art_39 ok 98.6 s
+13 AHVG art_40 ok 22.4 s
+14 AHVG art_43_bis ok 30.3 s
+15 IVG art_30 PARSE FAIL 42.7 s
+16 OR art_329_g ok 72.7 s
+17 BVG art_61 ok 17.2 s
+18 BVV2 art_53 ok 15.3 s
+19 BVV3 art_5 ok 17.9 s
+18/19 cores, 54 rows

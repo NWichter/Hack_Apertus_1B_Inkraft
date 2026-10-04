@@ -1,0 +1,135 @@
+[
+ {
+  "core_id": "nmu-0001",
+  "verdict": "accept_minor",
+  "reason": "Correct temporal item (24 -> 25 CHF). Use the statutory term 'Erwerbsersatzordnung (EO)'; drop near miss '0,5 Prozent' (different unit).",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmu-0002",
+  "verdict": "accept_minor",
+  "reason": "Correct temporal item. 'Ab welchem' vs. statute 'übersteigt': rephrase to 'Welchen Jahreslohn muss ... übersteigen'.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmu-0003",
+  "verdict": "revise",
+  "reason": "Question states the current threshold 22 680 (itself changed from 22 050) and so leaks the version; near miss '3780' equals the gold. Remove the threshold from the question, replace the near miss.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmu-0004",
+  "verdict": "accept",
+  "reason": "Correct temporal item (30 -> 40 percent), all conditions in the question, long but unambiguous.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmu-0005",
+  "verdict": "accept_minor",
+  "reason": "Correct temporal item (6 -> 12 periods). Answer '12' should carry the unit ('12 Abrechnungsperioden').",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmu-0006",
+  "verdict": "accept",
+  "reason": "New rule (max. two debt enforcements per year); no outdated answer possible, numeric type correct.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmu-0007",
+  "verdict": "revise",
+  "reason": "Outdated answer is a different rule, not an answer to the question; question contains the trigger. Rewrite as numeric: share the canton must take over (5 percent).",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmu-0008",
+  "verdict": "accept",
+  "reason": "New rule, yes/no with the deciding condition in the question.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmu-0009",
+  "verdict": "accept_minor",
+  "reason": "Definition item is answerable; near misses are implausible, replace them.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmu-0010",
+  "verdict": "reject",
+  "reason": "Circular: the question already contains the answer ('ohne ärztliche Anordnung').",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmu-0011",
+  "verdict": "revise",
+  "reason": "Answer is a list of states; grading brittle. Rewrite as yes/no on the United Kingdom (the actual change).",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmu-0012",
+  "verdict": "reject",
+  "reason": "Legally wrong reading: Art. 39 para. 2 AHVG excludes raising the deferred SHARE; the deferred pension itself is still increased (para. 3). Gold 'Nein' would be false.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmu-0013",
+  "verdict": "revise",
+  "reason": "Outdated answer ('wird gekürzt') does not answer the question; make it a non-temporal procedural item.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmu-0014",
+  "verdict": "accept",
+  "reason": "Valid temporal rule change (whole pension required instead of any old-age pension incl. early withdrawal); EL recipients excluded by the question wording.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmu-0015",
+  "verdict": "revise",
+  "reason": "Answer too long (validator error answer.not_in_evidence); outdated answer is an invented paraphrase. Shorten to yes/no with the deciding condition.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmu-0016",
+  "verdict": "revise",
+  "reason": "Asks for a name; outdated answer also listed as near miss (validator error); IT answer wrong ('congedo di due settimane'). Rewrite as yes/no on the entitlement of the female legal other parent.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmu-0017",
+  "verdict": "accept",
+  "reason": "New rule, clear yes/no.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmu-0018",
+  "verdict": "accept",
+  "reason": "Valid temporal item: previously prohibited ('unzulässig'), now up to 1 percent.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmu-0019",
+  "verdict": "accept_minor",
+  "reason": "Clear yes/no; alias typo 'Nei' to remove.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ }
+]

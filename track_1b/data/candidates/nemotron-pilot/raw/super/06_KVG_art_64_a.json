@@ -1,0 +1,32 @@
+{
+ "model": "nvidia/nemotron-3-super-120b-a12b:free",
+ "requested_model": "nvidia/nemotron-3-super-120b-a12b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\":\"KVG\",\"article_id\":\"art_64_a\",\"paragraph\":\"2\",\"domain\":\"kvg_insured\",\"question_type\":\"numeric\",\"register\":\"lay\",\"difficulty_prior\":2,\"answer_type\":\"number\",\"answer_normalized\":{\"value\":2,\"unit\":\"count\"},\"de\":{\"question\":\"Wie oft darf eine Person in der obligatorischen Krankenversicherung in einem Kalenderjahr höchstens für eigene Ausstände betrieben werden?\",\"answer\":\"zwei Mal\",\"answer_aliases\":[\"2 Mal\",\"2-mal\"],\"near_miss_answers\":[\"ein Mal\",\"drei Mal\"],\"evidence\":\"je zwei Mal\"},\"fr\":{\"question\":\"Combien de fois au maximum un assuré peut-il être poursuivi en une année civile pour ses propres arriérés dans l'assurance maladie obligatoire ?\",\"answer\":\"deux fois\",\"answer_aliases\":[\"2 fois\",\"2‑fois\"],\"near_miss_answers\":[\"une fois\",\"trois fois\"],\"evidence\":\"deux fois\"},\"it\":{\"question\":\"Quante volte al massimo un assicurato può essere perseguito in un anno civile per i propri arretrati nell'assicurazione obbligatoria di malattia ?\",\"answer\":\"due volte\",\"answer_aliases\":[\"2 volte\",\"2‑volte\"],\"near_miss_answers\":[\"una volta\",\"tre volte\"],\"evidence\":\"due volte\"},\"temporal\":null}",
+ "reasoning_chars": 9448,
+ "usage": {
+  "prompt_tokens": 1698,
+  "completion_tokens": 2565,
+  "total_tokens": 4263,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2268,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 19.7,
+ "attempts": 1
+}

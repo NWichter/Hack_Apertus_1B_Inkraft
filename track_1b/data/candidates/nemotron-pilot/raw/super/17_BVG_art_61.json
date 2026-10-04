@@ -1,0 +1,32 @@
+{
+ "model": "nvidia/nemotron-3-super-120b-a12b:free",
+ "requested_model": "nvidia/nemotron-3-super-120b-a12b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\":\"BVG\",\"article_id\":\"art_61\",\"paragraph\":\"3\",\"domain\":\"bvg_3a\",\"question_type\":\"procedural\",\"register\":\"professional\",\"difficulty_prior\":2,\"answer_type\":\"text\",\"answer_normalized\":null,\"de\":{\"question\":\"Welche Einschränkung gilt für die Mitglieder der Aufsichtsbehörde in der beruflichen Vorsorge hinsichtlich ihrer Herkunft aus dem kantonalen Departement?\",\"answer\":\"Ihre Mitglieder dürfen nicht aus dem kantonalen Departement stammen, das mit Fragen der beruflichen Vorsorge betraut ist.\",\"answer_aliases\":[\"Ihre Mitglieder dürfen nicht aus dem kantonalen Departement stammen, das mit Fragen der beruflichen Vorsorge betraut ist\"],\"near_miss_answers\":[\"Ihre Mitglieder dürfen aus dem kantonalen Departement stammen, das mit Fragen der beruflichen Vorsorge betraut ist\"],\"evidence\":\"Ihre Mitglieder dürfen nicht aus dem kantonalen Departement stammen, das mit Fragen der beruflichen Vorsorge betraut ist.\"},\"fr\":{\"question\":\"Quelle restriction s'applique aux membres de l'autorité de surveillance en prévoyance professionnelle concernant leur origine du département cantonal?\",\"answer\":\"Ses membres ne peuvent être issus du département cantonal chargé des questions relatives à la prévoyance professionnelle.\",\"answer_aliases\":[\"Ses membres ne peuvent être issus du département cantonal chargé des questions relatives à la prévoyance professionnelle\"],\"near_miss_answers\":[\"Ses membres peuvent être issus du département cantonal chargé des questions relatives à la prévoyance professionnelle\"],\"evidence\":\"Ses membres ne peuvent être issus du département cantonal chargé des questions relatives à la prévoyance professionnelle.\"},\"it\":{\"question\":\"Quale restrizione si applica ai membri dell'autorità di vigilanza nella previdenza professionale riguardo alla loro provenienza dal dipartimento cantonale?\",\"answer\":\"I suoi membri non possono far parte del dipartimento cantonale preposto alle questioni relative alla previdenza professionale.\",\"answer_aliases\":[\"I suoi membri non possono far parte del dipartimento cantonale preposto alle questioni relative alla previdenza professionale\"],\"near_miss_answers\":[\"I suoi membri possono far parte del dipartimento cantonale preposto alle questioni relative alla previdenza professionale\"],\"evidence\":\"I suoi membri non possono far parte del dipartimento cantonale preposto alle questioni relative alla previdenza professionale.\"},\"temporal\":null}",
+ "reasoning_chars": 12119,
+ "usage": {
+  "prompt_tokens": 1355,
+  "completion_tokens": 3163,
+  "total_tokens": 4518,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2629,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 17.2,
+ "attempts": 1
+}

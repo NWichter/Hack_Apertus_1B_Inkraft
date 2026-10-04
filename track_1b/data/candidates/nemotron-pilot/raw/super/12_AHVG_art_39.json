@@ -1,0 +1,32 @@
+{
+ "model": "nvidia/nemotron-3-super-120b-a12b:free",
+ "requested_model": "nvidia/nemotron-3-super-120b-a12b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\":\"AHVG\",\"article_id\":\"art_39\",\"paragraph\":\"2\",\"domain\":\"ahv\",\"question_type\":\"temporal\",\"register\":\"lay\",\"difficulty_prior\":2,\"answer_type\":\"text\",\"answer_normalized\":null,\"de\":{\"question\":\"Ist eine Erhöhung des aufgeschobenen Anteils der Rente möglich?\",\"answer\":\"Die Erhöhung des aufgeschobenen Anteils ist ausgeschlossen.\",\"answer_aliases\":[],\"near_miss_answers\":[\"Die Erhöhung des aufgeschobenen Anteils ist erlaubt.\"],\"evidence\":\"Die Erhöhung des aufgeschobenen Anteils ist ausgeschlossen.\"},\"fr\":{\"question\":\"Est-il possible d'augmenter le pourcentage de l'ajournement?\",\"answer\":\"L’augmentation du pourcentage de l’ajournement est exclue.\",\"answer_aliases\":[],\"near_miss_answers\":[\"L’augmentation du pourcentage de l’ajournement est autorisée.\"],\"evidence\":\"L’augmentation du pourcentage de l’ajournement est exclue.\"},\"it\":{\"question\":\"È possibile aumentare la percentuale?\",\"answer\":\"L’aumento della percentuale è escluso.\",\"answer_aliases\":[],\"near_miss_answers\":[\"L’aumento della percentuale è consentito.\"],\"evidence\":\"L’aumento della percentuale è escluso.\"},\"temporal\":{\"previous_paragraph\":\"2\",\"de\":{\"outdated_answer\":\"Die aufgeschobene Altersrente und die sie allenfalls ablösende Hinterlassenenrente wird um den versicherungstechnischen Gegenwert der nicht bezogenen Leistung erhöht.\",\"evidence\":\"Die aufgeschobene Altersrente und die sie allenfalls ablösende Hinterlassenenrente wird um den versicherungstechnischen Gegenwert der nicht bezogenen Leistung erhöht.\"},\"fr\":{\"outdated_answer\":\"La rente de vieillesse ajournée et, le cas échéant, la rente de survivant qui lui succède sont augmentées de la contre-valeur actuarielle de la prestation non touchée.\",\"evidence\":\"La rente de vieillesse ajournée et, le cas échéant, la rente de survivant qui lui succède sont augmentées de la contre-valeur actuarielle de la prestation non touchée.\"},\"it\":{\"outdated_answer\":\"La rendita di vecchiaia rinviata e, se del caso, la rendita per superstite a essa succedente, sono aumentate del controvalore attuariale della prestazione non ricevuta.\",\"evidence\":\"La rendita di vecchiaia rinviata e, se del caso, la rendita per superstite a essa succedente, sono aumentate del controvalore attuariale della prestazione non ricevuta.\"}}}",
+ "reasoning_chars": 13810,
+ "usage": {
+  "prompt_tokens": 1309,
+  "completion_tokens": 3813,
+  "total_tokens": 5122,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 3216,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 98.6,
+ "attempts": 1
+}

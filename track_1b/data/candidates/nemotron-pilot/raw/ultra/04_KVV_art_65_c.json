@@ -1,0 +1,32 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"KVV\", \"article_id\": \"art_65_c\", \"paragraph\": \"2\", \"domain\": \"kvg_billing\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"percent\", \"answer_normalized\": {\"value\": 40, \"unit\": \"percent\"}, \"de\": {\"question\": \"Welcher minimale Preisabschlag in Prozent muss ein Generikum gegenüber dem Originalpräparat aufweisen, um bei der Aufnahme in die Spezialitätenliste als wirtschaftlich zu gelten, wenn das Schweizer Marktvolumen des Originalpräparats und seines Co-Marketing-Arzneimittels in den drei Jahren vor Patentablauf im Durchschnitt zwischen 4 und 8 Millionen Franken pro Jahr lag?\", \"answer\": \"40 Prozent\", \"answer_aliases\": [\"40%\", \"40 %\"], \"near_miss_answers\": [\"20 Prozent\", \"50 Prozent\", \"60 Prozent\", \"70 Prozent\"], \"evidence\": \"b. mindestens 40 Prozent tiefer ist, sofern das Schweizer Marktvolumen des Originalpräparates und von dessen Co-Marketing-Arzneimittel während drei Jahren vor Patentablauf im Durchschnitt pro Jahr zwischen 4 Millionen und 8 Millionen Franken liegt;\"}, \"fr\": {\"question\": \"Quel rabais minimal en pourcentage un générique doit-il présenter par rapport à la préparation originale pour être considéré comme économique lors de son admission dans la liste des spécialités, lorsque le volume de marché suisse de la préparation originale et de son médicament en co-marketing se situait en moyenne entre 4 et 8 millions de francs par an durant les trois années précédant l'échéance du brevet ?\", \"answer\": \"40 %\", \"answer_aliases\": [\"40 pour cent\", \"40%\"], \"near_miss_answers\": [\"20 %\", \"50 %\", \"60 %\", \"70 %\"], \"evidence\": \"b. d'au moins 40 %, lorsque le volume de marché en Suisse de la préparation originale et de son médicament en co-marketing se situe entre 4 et 8 millions de francs par an en moyenne durant les trois années précédant l'échéance du brevet;\"}, \"it\": {\"question\": \"Quale riduzione minima di prezzo in percentuale deve avere un generico rispetto al preparato originale per essere considerato economico ai fini dell'ammissione nell'elenco delle specialità, quando il volume di mercato svizzero del preparato originale e del relativo medicamento in co-marketing si situava in media tra 4 e 8 milioni di franchi all'anno nei tre anni precedenti la scadenza della protezione del brevetto?\", \"answer\": \"40 per cento\", \"answer_aliases\": [\"40%\", \"40 per cento\"], \"near_miss_answers\": [\"20 per cento\", \"50 per cento\", \"60 per cento\", \"70 per cento\"], \"evidence\": \"b. è inferiore almeno del 40 per cento, nella misura in cui nei tre anni precedenti la scadenza della protezione del brevetto il volume di mercato svizzero del preparato originale e del relativo medicamento in co-marketing si situa in media tra 4 e 8 milioni di franchi all'anno;\"}, \"temporal\": {\"previous_paragraph\": \"2\", \"de\": {\"outdated_answer\": \"30 Prozent\", \"evidence\": \"b. mindestens 30 Prozent tiefer ist, sofern das Schweizer Marktvolumen des Originalpräparates und von dessen Co-Marketing-Arzneimittel während drei Jahren vor Patentablauf im Durchschnitt pro Jahr zwischen 4 Millionen und 8 Millionen Franken liegt;\"}, \"fr\": {\"outdated_answer\": \"30 %\", \"evidence\": \"b. d'au moins 30 %, lorsque le volume de marché en Suisse de la préparation originale et de son médicament en co-marketing se situe entre 4 et 8 millions de francs par an en moyenne durant les trois années précédant l'échéance du brevet;\"}, \"it\": {\"outdated_answer\": \"30 per cento\", \"evidence\": \"b. è inferiore almeno del 30 per cento, nella misura in cui nei tre anni precedenti la scadenza della protezione del brevetto il volume di mercato svizzero del preparato originale e del relativo medicamento in co-marketing si situa in media tra 4 e 8 milioni di franchi all'anno;\"}}}",
+ "reasoning_chars": 6608,
+ "usage": {
+  "prompt_tokens": 3143,
+  "completion_tokens": 2645,
+  "total_tokens": 5788,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 1686,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 27.0,
+ "attempts": 1
+}

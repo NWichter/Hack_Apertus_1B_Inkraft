@@ -1,0 +1,32 @@
+{
+ "model": "nvidia/nemotron-3-super-120b-a12b:free",
+ "requested_model": "nvidia/nemotron-3-super-120b-a12b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\":\"IVG\",\"article_id\":\"art_30\",\"paragraph\":\"\",\"domain\":\"iv_el\",\"question_type\":\"temporal\",\"register\":\"professional\",\"difficulty_prior\":2,\"answer_type\":\"text\",\"answer_normalized\":null,\"de\":{\"question\":\"In der Invalidenversicherung, unter welcher Voraussetzung erlischt der Rentenanspruch nicht, obwohl eine ganze Altersrente vorbezogen wurde?\",\"answer\":\"ausser die Altersrente wurde nach der Anmeldung bei der Invalidenversicherung und vor der Zusprache einer Invalidenrente vorbezogen\",\"answer_aliases\":[],\"near_miss_answers\":[\"mit dem Vorbezug einer ganzen Altersrente nach Artikel 40 Absatz 1 AHVG\",\"mit der Entstehung des Anspruchs auf eine Altersrente bei Erreichen des Referenzalters nach Artikel 21 Absatz 1 AHVG\",\"mit dem Tod der anspruchsberechtigten Person\"],\"evidence\":\"ausser die Altersrente wurde nach der Anmeldung bei der Invalidenversicherung und vor der Zusprache einer Invalidenrente vorbezogen\"},\"fr\":{\"question\":\"Dans l'assurance-invalidité, sous quelle condition le droit à la rente ne s'éteint-il pas, bien que la totalité de la rente de vieillesse ait été perçue de manière anticipée?\",\"answer\":\"sauf si la rente de vieillesse a été anticipée après l’inscription à l’assurance-invalidité et avant l’octroi d’une rente d’invalidité\",\"answer_aliases\":[],\"near_miss_answers\":[\"dès qu’il perçoit la totalité de sa rente de vieillesse de manière anticipée en vertu de l’art. 40, al. 1, LAVS\",\"dès qu’il peut prétendre à la rente de vieillesse lorsqu’il a atteint l’âge de référence fixé à l’art. 21, al. 1, LAVS\",\"s’il décède\"],\"evidence\":\"sauf si la rente de vieillesse a été anticipée après l’ins",
+ "reasoning_chars": 30761,
+ "usage": {
+  "prompt_tokens": 1544,
+  "completion_tokens": 8000,
+  "total_tokens": 9544,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 7545,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 42.7,
+ "attempts": 1
+}

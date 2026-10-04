@@ -1,0 +1,32 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"KVG\", \"article_id\": \"art_25_a\", \"paragraph\": \"3\", \"domain\": \"kvg_billing\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Was bestimmt der Bundesrat in der obligatorischen Krankenversicherung über Pflegeleistungen, die ohne ärztliche Anordnung erbracht werden dürfen?\", \"answer\": \"welche Pflegeleistungen ohne Anordnung oder Auftrag eines Arztes oder einer Ärztin erbracht werden können\", \"answer_aliases\": [\"welche Pflegeleistungen ohne ärztliche Anordnung erbracht werden können\", \"Pflegeleistungen ohne Anordnung oder Auftrag eines Arztes\"], \"near_miss_answers\": [\"die Pflegeleistungen, die auf Anordnung oder im Auftrag eines Arztes oder einer Ärztin erbracht werden können\"], \"evidence\": \"Er bestimmt, welche Pflegeleistungen ohne Anordnung oder Auftrag eines Arztes oder einer Ärztin erbracht werden können.\"}, \"fr\": {\"question\": \"Qu'est-ce que le Conseil fédéral détermine dans l'assurance-maladie obligatoire concernant les soins qui peuvent être fournis sans prescription médicale?\", \"answer\": \"quels soins peuvent être fournis sans prescription ni mandat médical\", \"answer_aliases\": [\"les soins sans prescription ni mandat médical\", \"soins fournis sans prescription médicale\"], \"near_miss_answers\": [\"les soins qui peuvent être fournis sur prescription ou sur mandat médical\"], \"evidence\": \"Il définit quels soins peuvent être fournis sans prescription ni mandat médical.\"}, \"it\": {\"question\": \"Cosa determina il Consiglio federale nell'assicurazione malattia obbligatoria riguardo alle cure che possono essere prestate senza prescrizione medica?\", \"answer\": \"le cure che possono essere prestate in assenza di una prescrizione o indicazione di un medico\", \"answer_aliases\": [\"cure senza prescrizione o indicazione medica\", \"cure prestate in assenza di prescrizione\"], \"near_miss_answers\": [\"le cure che possono essere prestate previa prescrizione o indicazione di un medico\"], \"evidence\": \"Designa inoltre le cure che possono essere prestate in assenza di una prescrizione o indicazione di un medico.\"}, \"temporal\": {\"previous_paragraph\": \"3\", \"de\": {\"outdated_answer\": \"das Verfahren der Bedarfsermittlung\", \"evidence\": \"Der Bundesrat bezeichnet die Pflegeleistungen und regelt das Verfahren der Bedarfsermittlung.\"}, \"fr\": {\"outdated_answer\": \"la procédure d'évaluation des soins requis\", \"evidence\": \"Le Conseil fédéral désigne les soins et fixe la procédure d'évaluation des soins requis.\"}, \"it\": {\"outdated_answer\": \"la procedura di accertamento del bisogno\", \"evidence\": \"Il Consiglio federale designa le cure e disciplina la procedura di accertamento del bisogno.\"}}}",
+ "reasoning_chars": 19216,
+ "usage": {
+  "prompt_tokens": 1247,
+  "completion_tokens": 4994,
+  "total_tokens": 6241,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 4897,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 74.9,
+ "attempts": 1
+}

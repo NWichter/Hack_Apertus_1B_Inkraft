@@ -1,0 +1,134 @@
+[
+ {
+  "level": "WARN",
+  "code": "evidence.apostrophe",
+  "id": "nmu-0001-it",
+  "msg": "Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+ },
+ {
+  "level": "WARN",
+  "code": "evidence.apostrophe",
+  "id": "nmu-0004-fr",
+  "msg": "Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+ },
+ {
+  "level": "WARN",
+  "code": "evidence.apostrophe",
+  "id": "nmu-0004-it",
+  "msg": "Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+ },
+ {
+  "level": "WARN",
+  "code": "evidence.apostrophe",
+  "id": "nmu-0008-fr",
+  "msg": "Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.alias_only",
+  "id": "nmu-0009-fr",
+  "msg": "Antwort \"Lorsqu'elle ne peut pas être repoussée.\" nicht wörtlich, aber ein Alias"
+ },
+ {
+  "level": "WARN",
+  "code": "evidence.apostrophe",
+  "id": "nmu-0013-fr",
+  "msg": "Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+ },
+ {
+  "level": "WARN",
+  "code": "evidence.apostrophe",
+  "id": "nmu-0013-it",
+  "msg": "Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+ },
+ {
+  "level": "WARN",
+  "code": "style.long_answer",
+  "id": "nmu-0015-de",
+  "msg": "Antwort lang (130 Zeichen)"
+ },
+ {
+  "level": "ERROR",
+  "code": "answer.not_in_evidence",
+  "id": "nmu-0015-de",
+  "msg": "Antwort 'Wenn die Altersrente nach der Anmeldung bei der Invalidenversicherung und vor der Zusprache einer Invalidenrente vorbezogen wurde.' steht nicht wörtlich in der Evidenz"
+ },
+ {
+  "level": "WARN",
+  "code": "style.long_answer",
+  "id": "nmu-0015-fr",
+  "msg": "Antwort lang (130 Zeichen)"
+ },
+ {
+  "level": "WARN",
+  "code": "evidence.apostrophe",
+  "id": "nmu-0015-fr",
+  "msg": "Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+ },
+ {
+  "level": "WARN",
+  "code": "style.long_answer",
+  "id": "nmu-0015-it",
+  "msg": "Antwort lang (147 Zeichen)"
+ },
+ {
+  "level": "WARN",
+  "code": "evidence.apostrophe",
+  "id": "nmu-0015-it",
+  "msg": "Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+ },
+ {
+  "level": "ERROR",
+  "code": "overlap.outdated_near_miss",
+  "id": "nmu-0016-de",
+  "msg": "Veraltete Antwort und Near-Miss überlappen: {'vaterschaftsurlaub'}"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "nmu-0016-de",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "evidence.apostrophe",
+  "id": "nmu-0016-fr",
+  "msg": "Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+ },
+ {
+  "level": "ERROR",
+  "code": "overlap.outdated_near_miss",
+  "id": "nmu-0016-fr",
+  "msg": "Veraltete Antwort und Near-Miss überlappen: {'congé de paternité'}"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "nmu-0016-fr",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "ERROR",
+  "code": "overlap.outdated_near_miss",
+  "id": "nmu-0016-it",
+  "msg": "Veraltete Antwort und Near-Miss überlappen: {'congedo di paternità'}"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "nmu-0016-it",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "evidence.apostrophe",
+  "id": "nmu-0018-fr",
+  "msg": "Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+ },
+ {
+  "level": "WARN",
+  "code": "evidence.apostrophe",
+  "id": "nmu-0018-it",
+  "msg": "Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+ }
+]

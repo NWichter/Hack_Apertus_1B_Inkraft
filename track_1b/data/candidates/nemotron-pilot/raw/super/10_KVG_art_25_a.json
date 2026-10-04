@@ -1,0 +1,32 @@
+{
+ "model": "nvidia/nemotron-3-super-120b-a12b:free",
+ "requested_model": "nvidia/nemotron-3-super-120b-a12b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\":\"KVG\",\"article_id\":\"art_25_a\",\"paragraph\":\"3\",\"domain\":\"kvg_care\",\"question_type\":\"procedural\",\"register\":\"lay\",\"difficulty_prior\":2,\"answer_type\":\"text\",\"answer_normalized\":null,\"de\":{\"question\":\"Welche Pflegeleistungen bestimmt der Bundesrat, die ohne Anordnung oder Auftrag eines Arztes oder einer Ärztin erbracht werden können?\",\"answer\":\"welche Pflegeleistungen ohne Anordnung oder Auftrag eines Arztes oder einer Ärztin erbracht werden können\",\"answer_aliases\":[],\"near_miss_answers\":[\"welche Pflegeleistungen mit Anordnung oder Auftrag eines Arztes oder einer Ärztin erbracht werden können\"],\"evidence\":\"Er bestimmt, welche Pflegeleistungen ohne Anordnung oder Auftrag eines Arztes oder einer Ärztin erbracht werden können.\"},\"fr\":{\"question\":\"Quels soins le Conseil fédéral définit-il comme pouvant être fournis sans prescription ni mandat médical ?\",\"answer\":\"quels soins peuvent être fournis sans prescription ni mandat médical\",\"answer_aliases\":[],\"near_miss_answers\":[\"quels soins peuvent être fournis avec prescription ou mandat médical\"],\"evidence\":\"Il définit quels soins peuvent être fournis sans prescription ni mandat médical.\"},\"it\":{\"question\":\"Quali cure il Consiglio federale designa come prestabili in assenza di una prescrizione o indicazione di un medico?\",\"answer\":\"le cure che possono essere prestate in assenza di una prescrizione o indicazione di un medico\",\"answer_aliases\":[],\"near_miss_answers\":[\"le cure che possono essere prestate con prescrizione o indicazione di un medico\"],\"evidence\":\"Designa inoltre le cure che possono essere prestate in assenza di una prescrizione o indicazione di un medico.\"},\"temporal\":null}",
+ "reasoning_chars": 12357,
+ "usage": {
+  "prompt_tokens": 1247,
+  "completion_tokens": 3181,
+  "total_tokens": 4428,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2787,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 21.4,
+ "attempts": 1
+}

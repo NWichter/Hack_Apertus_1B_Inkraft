@@ -1,0 +1,32 @@
+{
+ "model": "nvidia/nemotron-3-super-120b-a12b:free",
+ "requested_model": "nvidia/nemotron-3-super-120b-a12b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\":\"BVV2\",\"article_id\":\"art_3_a\",\"paragraph\":\"1\",\"domain\":\"bvg_3a\",\"question_type\":\"temporal\",\"register\":\"professional\",\"difficulty_prior\":2,\"answer_type\":\"currency_chf\",\"answer_normalized\":{\"value\":3780,\"unit\":\"CHF\"},\"de\":{\"question\":\"In der beruflichen Vorsorge, wie hoch ist der mindestens zu versichernde Betrag für Personen mit einem AHV-Lohn über 22 680 Franken?\",\"answer\":\"3780 Franken\",\"answer_aliases\":[\"CHF 3780\",\"3'780 Franken\"],\"near_miss_answers\":[\"3800 Franken\",\"3760 Franken\"],\"evidence\":\"3780 Franken\"},\"fr\":{\"question\":\"Dans la prévoyance professionnelle, quel est le montant minimal à assurer pour les personnes ayant un salaire AVS supérieur à 22 680 francs?\",\"answer\":\"3780 francs\",\"answer_aliases\":[\"CHF 3780\",\"3'780 francs\"],\"near_miss_answers\":[\"3800 francs\",\"3760 francs\"],\"evidence\":\"3780 francs\"},\"it\":{\"question\":\"Nella previdenza professionale, qual è l'importo minimo da assicurare per le persone con un salario determinante AVS superiore a 22 680 franchi?\",\"answer\":\"3780 franchi\",\"answer_aliases\":[\"CHF 3780\",\"3'780 franchi\"],\"near_miss_answers\":[\"3800 franchi\",\"3760 franchi\"],\"evidence\":\"3780 franchi\"},\"temporal\":{\"previous_paragraph\":\"1\",\"de\":{\"outdated_answer\":\"3675 Franken\",\"evidence\":\"3675 Franken\"},\"fr\":{\"outdated_answer\":\"3675 francs\",\"evidence\":\"3675 francs\"},\"it\":{\"outdated_answer\":\"3675 franchi\",\"evidence\":\"3675 franchi\"}}}",
+ "reasoning_chars": 9376,
+ "usage": {
+  "prompt_tokens": 1457,
+  "completion_tokens": 3043,
+  "total_tokens": 4500,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2587,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 15.1,
+ "attempts": 1
+}

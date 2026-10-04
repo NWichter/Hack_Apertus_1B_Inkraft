@@ -1,0 +1,32 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"IVG\", \"article_id\": \"art_30\", \"paragraph\": \"\", \"domain\": \"iv_el\", \"question_type\": \"temporal\", \"register\": \"lay\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Wann erlischt der IV-Rentenanspruch bei Vorbezug einer ganzen Altersrente nicht, obwohl die Altersrente vorbezogen wurde?\", \"answer\": \"Wenn die Altersrente nach der Anmeldung bei der Invalidenversicherung und vor der Zusprache einer Invalidenrente vorbezogen wurde.\", \"answer_aliases\": [\"Nach IV-Anmeldung und vor IV-Rentenzusprechung vorbezogen\", \"Nach Anmeldung bei der IV und vor Zusprache einer IV-Rente vorbezogen\"], \"near_miss_answers\": [\"Wenn die Altersrente vor der Anmeldung bei der IV vorbezogen wurde\", \"Wenn die Altersrente nach der Zusprache der IV-Rente vorbezogen wurde\", \"Bei teilweisem Vorbezug der Altersrente\"], \"evidence\": \"ausser die Altersrente wurde nach der Anmeldung bei der Invalidenversicherung und vor der Zusprache einer Invalidenrente vorbezogen\"}, \"fr\": {\"question\": \"Dans quel cas le droit à la rente d'invalidité ne s'éteint-il pas malgré l'anticipation de la totalité de la rente de vieillesse ?\", \"answer\": \"Si la rente de vieillesse a été anticipée après l'inscription à l'assurance-invalidité et avant l'octroi d'une rente d'invalidité.\", \"answer_aliases\": [\"Après inscription à l'AI et avant octroi d'une rente d'invalidité\", \"Après l'inscription à l'assurance-invalidité et avant l'octroi d'une rente d'invalidité\"], \"near_miss_answers\": [\"Si la rente de vieillesse a été anticipée avant l'inscription à l'assurance-invalidité\", \"Si la rente de vieillesse a été anticipée après l'octroi d'une rente d'invalidité\", \"En cas d'anticipation partielle de la rente de vieillesse\"], \"evidence\": \"sauf si la rente de vieillesse a été anticipée après l'inscription à l'assurance-invalidité et avant l'octroi d'une rente d'invalidité\"}, \"it\": {\"question\": \"In quale caso il diritto alla rendita d'invalidità non si estingue nonostante l'anticipazione della totalità della rendita di vecchiaia?\", \"answer\": \"Se l'anticipazione è avvenuta dopo la richiesta di prestazioni dell'assicurazione invalidità e prima della concessione di una rendita d'invalidità.\", \"answer_aliases\": [\"Dopo la richiesta di prestazioni dell'AI e prima della concessione di una rendita d'invalidità\", \"Dopo la richiesta all'assicurazione invalidità e prima della concessione della rendita d'invalidità\"], \"near_miss_answers\": [\"Se l'anticipazione è avvenuta prima della richiesta di prestazioni dell'assicurazione invalidità\", \"Se l'anticipazione è avvenuta dopo la concessione di una rendita d'invalidità\", \"In caso di anticipazione parziale della rendita di vecchiaia\"], \"evidence\": \"salvo se l'anticipazione è avvenuta dopo la richiesta di prestazioni dell'assicurazione invalidità e prima della concessione di una rendita d'invalidità\"}, \"temporal\": {\"previous_paragraph\": \"Der Rentenanspruch erlischt mit der Entstehung des Anspruchs auf eine Altersrente der Alters- und Hinterlassenenversicherung oder mit dem Tod des Berechtigten.\", \"de\": {\"outdated_answer\": \"Keine Ausnahme; der Rentenanspruch erlischt mit der Entstehung des Anspruchs auf eine Altersrente der Alters- und Hinterlassenenversicherung.\", \"evidence\": \"Der Rentenanspruch erlischt mit der Entstehung des Anspruchs auf eine Altersrente der Alters- und Hinterlassenenversicherung oder mit dem Tod des Berechtigten.\"}, \"fr\": {\"outdated_answer\": \"Aucune exception; l'assuré cesse d'avoir droit à la rente d'invalidité dès qu'il peut prétendre la rente de vieillesse de l'AVS.\", \"evidence\": \"L'assuré cesse d'avoir droit à la rente d'invalidité dès qu'il peut prétendre la rente de vieillesse de l'AVS ou s'il décède.\"}, \"it\": {\"outdated_answer\": \"Nessuna eccezione; il diritto alla rendita si estingue con l'inizio del diritto a una rendita di vecchiaia dell'AVS.\", \"evidence\": \"Il diritto alla rendita si estingue con l'inizio del diritto a una rendita di vecchiaia dell'AVS o con la morte dell'avente diritto.\"}}}",
+ "reasoning_chars": 20422,
+ "usage": {
+  "prompt_tokens": 1544,
+  "completion_tokens": 6120,
+  "total_tokens": 7664,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 5231,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 77.8,
+ "attempts": 1
+}

@@ -1,0 +1,34 @@
+You draft ONE evaluation item for "Inkraft", a closed-book short-answer benchmark about Swiss social and health insurance law with the reference date 2026-10-01. A human reviewer checks every item afterwards. The ground truth is the Swiss federal statute text given below, never your own knowledge.
+
+The paragraph below was CHANGED: the CURRENT version (in force on 2026-10-01) differs from the PREVIOUS version. The item must test exactly what changed, so that a model which only knows the previous version gives a wrong (outdated) answer.
+
+HARD RULES
+1. The answer must be stated literally in the CURRENT paragraph. Copy an "evidence" span verbatim (character for character, including spaces and punctuation) from the current paragraph. The evidence must contain the answer: the same number, or the answer words. Max. 250 characters.
+2. One question = one short, unambiguous answer. No question may have two defensible answers. Name the insurance branch or law context in plain words (e.g. "in der beruflichen Vorsorge", "in der obligatorischen Krankenpflegeversicherung"). Never mention article numbers or the date of the change in the question.
+3. If the PREVIOUS paragraph states a different value or the opposite rule, use question_type "temporal" and give the outdated answer from the PREVIOUS paragraph with a verbatim evidence span from the PREVIOUS paragraph. If the previous paragraph simply did not contain the rule, use "numeric", "yes_no" or "procedural" and set "temporal" to null.
+4. Do not invent facts. No cantonal facts, nothing the text leaves to the Federal Council or to cantons.
+5. German uses Swiss spelling: "ss" instead of "ß", amounts as "CHF 300" or "300 Franken". No personal names, no real persons; vignettes use roles only ("eine 45-jährige Arbeitnehmerin").
+6. French and Italian: translate the German question faithfully, but take answer and evidence from the French/Italian text of the same paragraph (equally authentic). Use the term of the authentic text.
+7. Answers: numbers as digits ("3780 Franken", "40 Prozent"); yes/no answers exactly "Ja"/"Nein" (FR "Oui"/"Non", IT "Sì"/"No") and the question must contain the condition that decides the answer.
+8. answer_aliases: other correct spellings of the same answer (e.g. "CHF 3780", "3'780 Franken"). near_miss_answers: plausible wrong answers that are NOT the outdated value (e.g. a neighbouring threshold of the same paragraph). Never put the outdated value into near_miss_answers.
+
+OUTPUT
+Return exactly one JSON object on one line, no Markdown fences, no commentary:
+{"act": "{ACT}", "article_id": "{ARTICLE_ID}", "paragraph": "{PARAGRAPH}", "domain": "{DOMAIN}", "question_type": "temporal|numeric|yes_no|procedural", "register": "lay|professional", "difficulty_prior": 1|2|3, "answer_type": "currency_chf|number|percent|duration|age|date|text|yes_no", "answer_normalized": {"value": <number>, "unit": "<CHF|percent|days|weeks|months|years|age|count>"} or null, "de": {"question": "...", "answer": "...", "answer_aliases": ["..."], "near_miss_answers": ["..."], "evidence": "..."}, "fr": {same keys}, "it": {same keys}, "temporal": null or {"previous_paragraph": "{PARAGRAPH}", "de": {"outdated_answer": "...", "evidence": "..."}, "fr": {"outdated_answer": "...", "evidence": "..."}, "it": {"outdated_answer": "...", "evidence": "..."}}}
+
+answer_normalized is required for numeric answers, null for text and yes/no answers.
+DIFFICULTY_PRIOR: 1 = core fact known to most practitioners, 2 = detail, 3 = rare detail or exception.
+REGISTER: "lay" (how an insured person would ask) or "professional" (how a clerk would ask).
+
+ACT: {ACT} ({TITLE_DE})
+ARTICLE: {ARTICLE_ID}, paragraph "{PARAGRAPH}"
+
+CURRENT version {CUR_DATE}
+DE: {CUR_DE}
+FR: {CUR_FR}
+IT: {CUR_IT}
+
+PREVIOUS version {PREV_DATE}
+DE: {PREV_DE}
+FR: {PREV_FR}
+IT: {PREV_IT}

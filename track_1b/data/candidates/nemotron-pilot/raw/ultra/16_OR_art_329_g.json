@@ -1,0 +1,32 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"OR\", \"article_id\": \"art_329_g\", \"paragraph\": \"1\", \"domain\": \"eo_alv\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Unter welcher Bezeichnung wird der zweiwöchige Freistellungsanspruch für den anderen Elternteil im Obligationenrecht geführt?\", \"answer\": \"Urlaub des andern Elternteils\", \"answer_aliases\": [\"Urlaub des andern Elternteils\"], \"near_miss_answers\": [\"Vaterschaftsurlaub\", \"Mutterschaftsurlaub\", \"Elternurlaub\", \"Betreuungsurlaub\"], \"evidence\": \"Anspruch auf den Urlaub des andern Elternteils von zwei Wochen hat:\"}, \"fr\": {\"question\": \"Sous quelle dénomination le droit à un congé de deux semaines pour l'autre parent figure-t-il dans le Code des obligations?\", \"answer\": \"congé de l'autre parent\", \"answer_aliases\": [\"congé de l'autre parent\"], \"near_miss_answers\": [\"congé de paternité\", \"congé de maternité\", \"congé parental\"], \"evidence\": \"Ont droit au congé de l'autre parent de deux semaines:\"}, \"it\": {\"question\": \"Con quale denominazione è indicato il diritto a un congedo di due settimane per l'altro genitore nel Codice delle obbligazioni?\", \"answer\": \"congedo di due settimane\", \"answer_aliases\": [\"congedo di due settimane\"], \"near_miss_answers\": [\"congedo di paternità\", \"congedo di maternità\", \"congedo parentale\"], \"evidence\": \"Ha diritto a un congedo di due settimane:\"}, \"temporal\": {\"previous_paragraph\": \"1\", \"de\": {\"outdated_answer\": \"Vaterschaftsurlaub\", \"evidence\": \"hat Anspruch auf einen Vaterschaftsurlaub von zwei Wochen\"}, \"fr\": {\"outdated_answer\": \"congé de paternité\", \"evidence\": \"En cas de paternité, le travailleur a droit à un congé de deux semaines\"}, \"it\": {\"outdated_answer\": \"congedo di paternità\", \"evidence\": \"ha diritto a un congedo di paternità di due settimane\"}}}",
+ "reasoning_chars": 20060,
+ "usage": {
+  "prompt_tokens": 1390,
+  "completion_tokens": 5303,
+  "total_tokens": 6693,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 5115,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 64.9,
+ "attempts": 1
+}

@@ -1,0 +1,21 @@
+[
+ {"act": "EOG", "article_id": "art_27", "paragraph": "2", "domain": "eo_alv", "change_kind": "amount"},
+ {"act": "BVG", "article_id": "art_46", "paragraph": "1", "domain": "bvg_3a", "change_kind": "amount"},
+ {"act": "BVV2", "article_id": "art_3_a", "paragraph": "1", "domain": "bvg_3a", "change_kind": "amount"},
+ {"act": "KVV", "article_id": "art_65_c", "paragraph": "2", "domain": "kvg_billing", "change_kind": "rate"},
+ {"act": "AVIG", "article_id": "art_35", "paragraph": "2", "domain": "eo_alv", "change_kind": "period"},
+ {"act": "KVG", "article_id": "art_64_a", "paragraph": "2", "domain": "kvg_insured", "change_kind": "rule_new"},
+ {"act": "KVG", "article_id": "art_64_a", "paragraph": "5", "domain": "kvg_insured", "change_kind": "rule_changed"},
+ {"act": "KVG", "article_id": "art_64_a", "paragraph": "6", "domain": "kvg_insured", "change_kind": "rule_new"},
+ {"act": "KVG", "article_id": "art_64_a", "paragraph": "7", "domain": "kvg_insured", "change_kind": "rule_new"},
+ {"act": "KVG", "article_id": "art_25_a", "paragraph": "3", "domain": "kvg_billing", "change_kind": "rule_new"},
+ {"act": "KVG", "article_id": "art_6_a", "paragraph": "1", "domain": "kvg_insured", "change_kind": "scope_extended"},
+ {"act": "AHVG", "article_id": "art_39", "paragraph": "2", "domain": "ahv", "change_kind": "rule_changed"},
+ {"act": "AHVG", "article_id": "art_40", "paragraph": "2", "domain": "ahv", "change_kind": "rule_changed"},
+ {"act": "AHVG", "article_id": "art_43_bis", "paragraph": "1", "domain": "ahv", "change_kind": "rule_changed"},
+ {"act": "IVG", "article_id": "art_30", "paragraph": "", "domain": "iv_el", "change_kind": "rule_changed"},
+ {"act": "OR", "article_id": "art_329_g", "paragraph": "1", "domain": "eo_alv", "change_kind": "scope_extended"},
+ {"act": "BVG", "article_id": "art_61", "paragraph": "3", "domain": "bvg_3a", "change_kind": "rule_new"},
+ {"act": "BVV2", "article_id": "art_53", "paragraph": "6", "domain": "bvg_3a", "change_kind": "rule_changed"},
+ {"act": "BVV3", "article_id": "art_5", "paragraph": "3", "domain": "bvg_3a", "change_kind": "rule_new"}
+]

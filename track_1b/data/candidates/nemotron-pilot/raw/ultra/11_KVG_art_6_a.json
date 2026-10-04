@@ -1,0 +1,32 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"KVG\", \"article_id\": \"art_6_a\", \"paragraph\": \"1\", \"domain\": \"kvg_insured\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"In welchen Staaten wohnende Personen müssen die Kantone in der obligatorischen Krankenversicherung über die Versicherungspflicht informieren?\", \"answer\": \"Mitgliedstaat der Europäischen Union, in Island, in Norwegen oder im Vereinigten Königreich\", \"answer_aliases\": [\"EU-Mitgliedstaaten, Island, Norwegen, Vereinigtes Königreich\", \"Mitgliedstaaten der EU, Island, Norwegen, UK\"], \"near_miss_answers\": [\"Mitgliedstaat der Europäischen Union, in Island, in Norwegen, in Liechtenstein\", \"Mitgliedstaaten der EU, Island, Norwegen, Vereinigtes Königreich, Schweiz\"], \"evidence\": \"in einem Mitgliedstaat der Europäischen Union, in Island, in Norwegen oder im Vereinigten Königreich wohnen\"}, \"fr\": {\"question\": \"Dans quels États les personnes résidant doivent-elles être informées par les cantons sur l'obligation de s'assurer dans l'assurance-maladie obligatoire?\", \"answer\": \"État membre de l’Union européenne, en Islande, en Norvège ou au Royaume-Uni\", \"answer_aliases\": [\"États membres de l'UE, Islande, Norvège, Royaume-Uni\", \"État membre de l'UE, Islande, Norvège, UK\"], \"near_miss_answers\": [\"État membre de l’Union européenne, en Islande, en Norvège, au Liechtenstein\", \"États membres de l'UE, Islande, Norvège, Royaume-Uni, Suisse\"], \"evidence\": \"dans un État membre de l’Union européenne, en Islande, en Norvège ou au Royaume-Uni\"}, \"it\": {\"question\": \"In quali Stati le persone residenti devono essere informate dai Cantoni sull'obbligo di assicurazione nell'assicurazione malattia obbligatoria?\", \"answer\": \"uno Stato membro dell’Unione europea, in Islanda, in Norvegia o nel Regno Unito\", \"answer_aliases\": [\"Stati membri dell'UE, Islanda, Norvegia, Regno Unito\", \"Stato membro dell'UE, Islanda, Norvegia, UK\"], \"near_miss_answers\": [\"uno Stato membro dell’Unione europea, in Islanda, in Norvegia, nel Liechtenstein\", \"Stati membri dell'UE, Islanda, Norvegia, Regno Unito, Svizzera\"], \"evidence\": \"in uno Stato membro dell’Unione europea, in Islanda, in Norvegia o nel Regno Unito\"}, \"temporal\": {\"previous_paragraph\": \"1\", \"de\": {\"outdated_answer\": \"Mitgliedstaat der Europäischen Union, in Island oder in Norwegen\", \"evidence\": \"in einem Mitgliedstaat der Europäischen Union, in Island oder in Norwegen wohnen\"}, \"fr\": {\"outdated_answer\": \"État membre de l’Union européenne, en Islande ou en Norvège\", \"evidence\": \"dans un État membre de l’Union européenne, en Islande ou en Norvège\"}, \"it\": {\"outdated_answer\": \"uno Stato membro dell’Unione europea, in Islanda o in Norvegia\", \"evidence\": \"in uno Stato membro dell’Unione europea, in Islanda o in Norvegia\"}}}",
+ "reasoning_chars": 9859,
+ "usage": {
+  "prompt_tokens": 2008,
+  "completion_tokens": 2989,
+  "total_tokens": 4997,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2515,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 51.2,
+ "attempts": 1
+}

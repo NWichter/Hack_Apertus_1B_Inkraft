@@ -1,0 +1,32 @@
+{
+ "model": "nvidia/nemotron-3-super-120b-a12b:free",
+ "requested_model": "nvidia/nemotron-3-super-120b-a12b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\":\"KVV\",\"article_id\":\"art_65_c\",\"paragraph\":\"2\",\"domain\":\"kvg_billing\",\"question_type\":\"temporal\",\"register\":\"professional\",\"difficulty_prior\":2,\"answer_type\":\"percent\",\"answer_normalized\":{\"value\":40,\"unit\":\"percent\"},\"de\":{\"question\":\"Wie tief muss der Fabrikabgabepreis eines Generikums gegenüber dem Originalpräparat mindestens sein, wenn das Schweizer Marktvolumen des Originalpräparates und seines Co‑Marketing‑Arzneimittels zwischen 4 und 8 Millionen Franken pro Jahr liegt?\",\"answer\":\"mindestens 40 Prozent tiefer\",\"answer_aliases\":[\"40 Prozent\",\"40 %\"],\"near_miss_answers\":[\"mindestens 20 Prozent tiefer\",\"mindestens 50 Prozent tiefer\"],\"evidence\":\"mindestens 40 Prozent tiefer\"},\"fr\":{\"question\":\"De quel pourcentage le prix de fabrique d’un générique doit-il être au moins inférieur à celui du médicament original lorsque le volume de marché suisse du médicament original et de son médicament en co‑marketing se situe entre 4 et 8 millions de francs par an?\",\"answer\":\"d’au moins 40 %\",\"answer_aliases\":[\"40 %\",\"40 pour cent\"],\"near_miss_answers\":[\"d’au moins 20 %\",\"d’au moins 50 %\"],\"evidence\":\"d’au moins 40 %\"},\"it\":{\"question\":\"Di quanto deve essere almeno inferiore il prezzo di fabbrica di un generico rispetto al medicinale originale quando il volume di mercato svizzero del medicinale originale e del relativo medicamento in co‑marketing si situa tra 4 e 8 milioni di franchi all’anno?\",\"answer\":\"almeno del 40 per cento\",\"answer_aliases\":[\"40 per cento\",\"40 %\"],\"near_miss_answers\":[\"almeno del 20 per cento\",\"almeno del 50 per cento\"],\"evidence\":\"almeno del 40 per cento\"},\"temporal\":{\"previous_paragraph\":\"2\",\"de\":{\"outdated_answer\":\"mindestens 30 Prozent tiefer\",\"evidence\":\"mindestens 30 Prozent tiefer\"},\"fr\":{\"outdated_answer\":\"d’au moins 30 %\",\"evidence\":\"d’au moins 30 %\"},\"it\":{\"outdated_answer\":\"almeno del 30 per cento\",\"evidence\":\"almeno del 30 per cento\"}}}",
+ "reasoning_chars": 11685,
+ "usage": {
+  "prompt_tokens": 3143,
+  "completion_tokens": 3713,
+  "total_tokens": 6856,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 3179,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 17.3,
+ "attempts": 1
+}
