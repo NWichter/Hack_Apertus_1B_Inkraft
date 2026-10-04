@@ -76,15 +76,18 @@ answers, credit for abstention, and an exposure check against the training data 
 **Source data.** Federal acts AHVG, IVG, ELG, KVG, KVV, UVG, ATSG and OR (plus EOG, AVIG, BVG, BVV 2,
 BVV 3 for the `ag-` items) from the fedlex SPARQL endpoint and filestore: version applicable on the
 as-of date, version applicable at the end of 2023, and published future versions. Script
-`src/fetch_fedlex.py`; SHA-256 of every source file in the manifest.
+`src/fetch_fedlex.py`, retrieved 2026-10-01; URLs and SHA-256 of every source file in
+`data/sources/fedlex_manifest.v2.json`. Every `source.version_date` and `temporal.previous_version_date` of
+the 879 rows occurs in that manifest. BVV 2 was fetched but no current item cites it.
 
-**Producers.** The Swiss federal legislator (statute text); the curator (questions, review); drafting
-models for part of the questions (see below).
+**Producers.** The Swiss federal legislator (statute text); drafting models for all current questions
+(see below); the curator (choice of provisions and acts, review, which is still pending).
 
 **Annotation process.** See `docs/annotation_guidelines.md`. Automatic checks (`src/validate_items.py`):
 schema, evidence verbatim in the cited paragraph, answer in evidence, outdated answer in the previous
 version, duplicates, language consistency, PII scan. Review decisions are logged per item
-(`src/apply_review.py`). Draft v1: 0 errors; review v1 removed 2 cores and corrected 7; review v2 (`data/review_v2.json`) corrected 8 cores and marked `cx-0063` as open. Near misses that were valid under an earlier stored version are rejected by the validator and belong in `outdated_answers`. [TBD: rejection
+(`src/apply_review.py`, field `authoring.manual_correction`). The corrections of review v1 and v2 were proposed
+by claude-opus-5-5 (`manual_correction[].by`) and are not yet confirmed by the curator. Draft v1: 0 errors; review v1 removed 2 cores and corrected 7; review v2 (`data/review_v2.json`) corrected 8 cores and marked `cx-0063` as open. Near misses that were valid under an earlier stored version are rejected by the validator and belong in `outdated_answers`. [TBD: rejection
 rate, ambiguity rate, intra-annotator agreement, PII hits.]
 
 **AI use.** All 303 cores are LLM drafts: Claude (claude-opus-5-5) and GPT-5.5 (via Codex CLI) drafted
@@ -106,6 +109,16 @@ version found in 602 rows, only the previous wording in 26, neither in 232, too 
 the 48 `temporal` rows the current wording was never found, the previous wording in 24. 52 questions have
 13-gram overlaps. Question 13-gram overlaps reflect statutory phrasing, not leaked items. Not scanned:
 web crawls (Nemotron-CC, FineWeb-2).
+
+## Sources and provenance
+
+| Source | Version | Licence | Why it is used | Shipped? |
+| --- | --- | --- | --- | --- |
+| Swiss federal acts on fedlex (`https://fedlex.data.admin.ch`, SPARQL endpoint + filestore) | consolidated versions per act, retrieved 2026-10-01, see `data/sources/fedlex_manifest.v2.json` | not protected by copyright (Art. 5 para. 1 lit. a URG), `source.license: public-domain-ch-urg-art5` | authentic DE/FR/IT wording is the gold standard for every answer; earlier versions give the outdated answers | yes: quoted paragraph and ELI URL per row |
+| MultiLegalPile, subsets `{de,fr,it}/legislation/switzerland_lexfind` (`https://huggingface.co/datasets/joelniklaus/Multi_Legal_Pile`; Niklaus et al., ACL 2024) | revision `911e1d214162fd11d2c78d3f1428cbfcbe07782c` (2024-01-12) | CC BY-NC-SA 4.0 (dataset card) | listed as Apertus 1.5 pre-training data in `swiss-ai/apertus-data-transparency`; used only for the exposure check | no: analysed locally, neither the corpus nor per-row hits are redistributed |
+| Drafting models (claude-opus-5-5, GPT-5.5 via Codex CLI 0.155.1, gemini-3.8-flash via Antigravity) | per row in `generator_model`, `generated_at`, `prompt_version` | output; no third-party dataset | drafted the questions (see AI use) | yes, as the questions |
+
+No other dataset is included. Apertus outputs are never part of the items.
 
 ## Bias, Risks and Limitations
 

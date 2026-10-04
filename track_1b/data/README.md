@@ -9,6 +9,7 @@ merged.v1.jsonl                              all rows with every field (source o
 antigravity.compact.jsonl / .expanded.jsonl  original Gemini drafts of the ag- cores before review v2 (formerly handwritten.*; mislabelled as human until 2026-10-03)
 review_v2.json                               review decisions applied with src/apply_review.py
 validation_report.v1.md                      output of src/validate_items.py on merged.v1.jsonl
+sources/fedlex_manifest.v2.json              fedlex retrieval of 2026-10-01 (src/fetch_fedlex.py): ELI and HTML URLs, SHA-256 per act, version and language
 ```
 
 Planned after the freeze:
