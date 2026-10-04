@@ -1,119 +1,110 @@
 WEBVTT
 
 1
-00:00:00.300 --> 00:00:05.419
-How much is the minimum
-full AHV pension per month?
-
-2
-00:00:05.419 --> 00:00:10.437
-Ask an AI assistant,
-and you might hear CHF 1,225.
-
-3
-00:00:10.987 --> 00:00:16.057
-That was the law until the end of 2024.
-
-4
-00:00:16.057 --> 00:00:21.517
-Since January 2025, it has been CHF 1,260.
-
-5
-00:00:22.217 --> 00:00:27.213
+00:00:01.000 --> 00:00:05.996
 This is Inkraft: a benchmark
 for Swiss social insurance law.
 
+2
+00:00:06.696 --> 00:00:11.815
+How much is the minimum
+full AHV pension per month?
+
+3
+00:00:11.815 --> 00:00:16.833
+Ask an AI assistant,
+and you might hear CHF 1,225.
+
+4
+00:00:17.383 --> 00:00:22.453
+That was the law until the end of 2024.
+
+5
+00:00:22.453 --> 00:00:27.913
+Since January 2025, it has been CHF 1,260.
+
 6
-00:00:27.913 --> 00:00:31.803
+00:00:28.613 --> 00:00:32.503
 The answer is already written down,
 on fedlex.
 
 7
-00:00:31.803 --> 00:00:35.900
+00:00:32.503 --> 00:00:36.600
 And German,
 French and Italian are equally binding.
 
 8
-00:00:35.900 --> 00:00:41.516
+00:00:36.600 --> 00:00:42.216
 So each language gets its gold
 answer from its own authentic text,
 
 9
-00:00:41.516 --> 00:00:43.643
+00:00:42.216 --> 00:00:44.343
 not from a translation.
 
 10
-00:00:44.343 --> 00:00:48.715
+00:00:45.043 --> 00:00:49.415
 Inkraft stores the rule
 in force on 1 October 2026,
 
 11
-00:00:48.715 --> 00:00:50.858
+00:00:49.415 --> 00:00:51.558
 and the rule it replaced.
 
 12
-00:00:50.858 --> 00:00:55.230
+00:00:51.558 --> 00:00:55.930
 So we can tell a stale
 answer from an invented one.
 
 13
-00:00:55.230 --> 00:01:00.288
+00:00:55.930 --> 00:01:00.988
 And saying “I'm not sure”
 is scored apart from being wrong.
 
 14
-00:01:00.988 --> 00:01:06.793
+00:01:01.688 --> 00:01:07.493
 The first draft has 303 core questions
 in German, French and Italian.
 
 15
-00:01:06.793 --> 00:01:10.392
+00:01:07.493 --> 00:01:11.092
 Every row links to the exact
 version of the law.
 
 16
-00:01:10.392 --> 00:01:12.391
+00:01:11.092 --> 00:01:13.091
 Human review is still pending.
 
 17
-00:01:13.091 --> 00:01:18.970
+00:01:13.791 --> 00:01:19.670
 Preliminary results, on the unreviewed
 draft and graded by rules only:
 
 18
-00:01:18.970 --> 00:01:24.640
+00:01:19.670 --> 00:01:25.340
 on rules changed since 2024, Apertus
 answers just 6–10 % correctly,
 
 19
-00:01:24.640 --> 00:01:27.434
+00:01:25.340 --> 00:01:28.134
 even with the date in the prompt.
 
 20
-00:01:27.434 --> 00:01:32.512
+00:01:28.134 --> 00:01:33.212
 We also search the legal corpus
 that Apertus was trained on:
 
 21
-00:01:32.512 --> 00:01:37.044
+00:01:33.212 --> 00:01:37.744
 does it contain this paragraph,
 and in which version?
 
 22
-00:01:37.744 --> 00:01:42.055
-One command recomputes every number,
-without keys.
-
-23
-00:01:42.055 --> 00:01:44.879
-Another one grades any new model.
-
-24
-00:01:45.579 --> 00:01:50.225
+00:01:38.444 --> 00:01:43.090
 Before a model answers questions
 from citizens, test it on the law.
 
-25
-00:01:51.025 --> 00:01:54.973
+23
+00:01:43.890 --> 00:01:47.838
 Inkraft.
 Because the law is the answer key.
