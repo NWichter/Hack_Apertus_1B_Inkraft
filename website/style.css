@@ -585,6 +585,15 @@ h3 {
   color: var(--stamp);
 }
 
+/* Video */
+#video video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
+  margin-top: 24px;
+}
+
 /* Material */
 .link-card {
   display: flex;
@@ -610,15 +619,6 @@ h3 {
 a.link-card:hover {
   transform: translateY(-2px);
   border-color: var(--ink);
-}
-
-.link-card.is-pending {
-  opacity: 0.75;
-  box-shadow: none;
-}
-
-.link-card.is-pending .more {
-  color: var(--muted);
 }
 
 /* Team + footer */

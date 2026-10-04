@@ -283,6 +283,30 @@
         </div>
       </section>
 
+      <section id="video" class="section">
+        <div class="wrap">
+          <h2>Demo video</h2>
+          <p class="section-lead">A two-minute walkthrough of Inkraft.</p>
+          <video
+            controls
+            preload="metadata"
+            playsinline
+            poster="media/poster.jpg"
+            width="1280"
+            height="720"
+          >
+            <source src="media/video.mp4" type="video/mp4" />
+            <track
+              kind="subtitles"
+              srclang="en"
+              label="English"
+              src="media/video.vtt"
+              default
+            />
+          </video>
+        </div>
+      </section>
+
       <section id="material" class="section alt">
         <div class="wrap">
           <h2>Pitch, video and report</h2>
@@ -294,11 +318,11 @@
               </p>
               <span class="more">Open the pitch →</span>
             </a>
-            <div class="card link-card is-pending">
+            <a class="card link-card" href="#video">
               <h3>Video</h3>
               <p>A two-minute walkthrough.</p>
-              <span class="more">Coming soon</span>
-            </div>
+              <span class="more">Watch the video →</span>
+            </a>
             <a class="card link-card" href="report.pdf">
               <h3>Technical report</h3>
               <p>

@@ -1,0 +1,119 @@
+WEBVTT
+
+1
+00:00:00.300 --> 00:00:05.419
+How much is the minimum
+full AHV pension per month?
+
+2
+00:00:05.419 --> 00:00:10.437
+Ask an AI assistant,
+and you might hear CHF 1,225.
+
+3
+00:00:10.987 --> 00:00:16.057
+That was the law until the end of 2024.
+
+4
+00:00:16.057 --> 00:00:21.517
+Since January 2025, it has been CHF 1,260.
+
+5
+00:00:22.217 --> 00:00:27.213
+This is Inkraft: a benchmark
+for Swiss social insurance law.
+
+6
+00:00:27.913 --> 00:00:31.803
+The answer is already written down,
+on fedlex.
+
+7
+00:00:31.803 --> 00:00:35.900
+And German,
+French and Italian are equally binding.
+
+8
+00:00:35.900 --> 00:00:41.516
+So each language gets its gold
+answer from its own authentic text,
+
+9
+00:00:41.516 --> 00:00:43.643
+not from a translation.
+
+10
+00:00:44.343 --> 00:00:48.715
+Inkraft stores the rule
+in force on 1 October 2026,
+
+11
+00:00:48.715 --> 00:00:50.858
+and the rule it replaced.
+
+12
+00:00:50.858 --> 00:00:55.230
+So we can tell a stale
+answer from an invented one.
+
+13
+00:00:55.230 --> 00:01:00.288
+And saying “I'm not sure”
+is scored apart from being wrong.
+
+14
+00:01:00.988 --> 00:01:06.793
+The first draft has 303 core questions
+in German, French and Italian.
+
+15
+00:01:06.793 --> 00:01:10.392
+Every row links to the exact
+version of the law.
+
+16
+00:01:10.392 --> 00:01:12.391
+Human review is still pending.
+
+17
+00:01:13.091 --> 00:01:18.970
+Preliminary results, on the unreviewed
+draft and graded by rules only:
+
+18
+00:01:18.970 --> 00:01:24.640
+on rules changed since 2024, Apertus
+answers just 6–10 % correctly,
+
+19
+00:01:24.640 --> 00:01:27.434
+even with the date in the prompt.
+
+20
+00:01:27.434 --> 00:01:32.512
+We also search the legal corpus
+that Apertus was trained on:
+
+21
+00:01:32.512 --> 00:01:37.044
+does it contain this paragraph,
+and in which version?
+
+22
+00:01:37.744 --> 00:01:42.055
+One command recomputes every number,
+without keys.
+
+23
+00:01:42.055 --> 00:01:44.879
+Another one grades any new model.
+
+24
+00:01:45.579 --> 00:01:50.225
+Before a model answers questions
+from citizens, test it on the law.
+
+25
+00:01:51.025 --> 00:01:54.973
+Inkraft.
+Because the law is the answer key.
