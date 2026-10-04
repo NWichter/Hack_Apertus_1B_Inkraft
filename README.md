@@ -54,7 +54,13 @@ make run MODE=full
 | `track_1b/src/inkraft/` | Python CLI and evaluation library (`generate`, `judge`, `score`, `human`, `contam`) |
 | `track_1b/data/` | Benchmark draft (`test.jsonl`, `metadata.jsonl`); 303 LLM-drafted cores, human review pending, not frozen |
 | `track_1b/docs/` | Dataset Card, annotation guidelines, and CLI usage documentation |
+| `track_1b/src/*.py` | Dataset construction: `fetch_fedlex.py` (sources), `make_batches.py` / `build_items.py` / `assemble.py` (drafting), `validate_items.py`, `apply_review.py`, `find_changes.py` (version diff and sentence-level change check), `calibration_pilot.py` |
+| `track_1b/report/` | Report build (`build.sh`, `build.ps1`), figure script and the aggregates of the preliminary run |
 | `website/` | Project landing page and interactive report preview |
+
+### Preliminary results (unreviewed draft)
+
+One run on the unreviewed draft (879 rows, 2026-10-04), graded only by the rule-based pre-grade (no judge, no human check): Apertus 1.5 70B answers 52 % of rows correctly, 8B 35 %. On the 48 rows whose rule changed since 2024 only 6–10 % are correct, a date in the prompt does not help, and accuracy differs by exposure bucket (70B: 57 % with the current wording in the training corpus, 19 % with only the previous wording). Details and intervals in the technical report; final results follow on v1.0.0.
 
 ---
 

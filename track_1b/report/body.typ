@@ -7,15 +7,17 @@ know. Inkraft is a trilingual (German, French, Italian) short-answer
 benchmark in which every gold answer is quoted from the authentic text
 of a federal act as of 1 October 2026 and, for amended provisions, the
 previously valid answer is stored as well, so that wrong answers split
-into #emph[stale] and #emph[invented]. On Apertus 1.5 8B and 70B we
-measure \[TBD: correct, stale, invented and not-attempted rates per
-model and language\].
+into #emph[stale] and #emph[invented]. Preliminary results on the
+unreviewed draft (rule-based grading only): Apertus 1.5 70B answers 52~%
+and 8B 35~% of rows correctly, but only 6--10~% of the questions on
+rules changed since 2024, and a date in the prompt does not help.
 ]
 
 #strong[Track:] Apertus Readiness - Track 1B (Swiss Voices, Core Task
 Intelligence) \ #strong[Event:] Online \ #strong[Team:] Apertool ---
-Niklas Wichter \ #strong[Demo:] \[TBD: link to the Hugging Face dataset
-and the video\]
+Niklas Wichter \ #strong[Demo:] project page
+https:/\/inkraft.apertool.ch; Hugging Face dataset and video planned
+with v1.0.0 (by 2026-10-15)
 
 #divider()
 
@@ -150,8 +152,8 @@ cores (calculations, false premises, EO, ALV, BVG) was drafted by Gemini
 (Google) inside an Antigravity agent that wrote the items into Python
 scripts. Every row records `generator`, `generator_model`,
 `prompt_version` and the date. (b) #emph[Hand-written] items by the
-author are planned (target ≥ 30 % of the final set) but do not exist
-yet; the hand-written share of the current draft is 0 %.
+author are planned (target ≥ 30~% of the final set) but do not exist
+yet; the hand-written share of the current draft is 0~%.
 
 French and Italian questions are translations, but their gold answers
 and evidence come from the authentic French and Italian text of the same
@@ -200,11 +202,11 @@ to search. For the 48 `temporal` rows the current wording occurs
 therefore seen the old rule, not the new one, for every amended
 provision in the draft that the corpus covers. The 52 questions with
 13-gram hits reuse statutory phrasing; the questions themselves are new.
-\[TBD: recompute after the freeze.\]
+The check is recomputed on v1.0.0.
 
 #strong[Consent.] No personal data is collected; case vignettes use
 roles only. A consent form template for optional native-speaker
-reviewers is provided \[TBD\].
+reviewers is provided (`docs/consent_form_template.md`).
 
 = Dataset Details
 <dataset-details>
@@ -218,9 +220,10 @@ locally and not redistributed. The data card follows the Hack Apertus
 template, Datasheets and Data Cards
 @gebru2021datasheets@pushkarna2022datacards. A canary GUID in every file
 lets future model builders exclude the set from training
-@srivastava2023bigbench. Quality figures for the data card: review
-rejection rate, ambiguity rate of an open-book check, intra-annotator
-agreement on a 20 % second pass, PII hits \[TBD\].
+@srivastava2023bigbench. Quality figures in the data card: validator
+errors and warnings, PII hits (0) and the corrections of reviews v1 and
+v2; the human-review rejection rate per generator and the ambiguity rate
+are planned, not yet available, and follow with v1.0.0.
 
 = Evaluation
 <evaluation>
@@ -237,7 +240,7 @@ guessing @kalai2025hallucinate@wen2025abstention\; language consistency
 (same grade in DE, FR and IT for a core) @qi2023crosslingual\; and the
 open-book gain (accuracy with the cited paragraph in the prompt minus
 closed-book accuracy), which separates a knowledge gap from a reading
-gap. All figures carry 95 % percentile bootstrap intervals (1,000
+gap. All figures carry 95~% percentile bootstrap intervals (1,000
 resamples, fixed seed); language differences use paired resampling.
 
 Grading has three stages. (1) A deterministic pre-grade extracts
@@ -248,32 +251,90 @@ different model family than the examinee grades every answer against
 gold, variants, outdated and near-miss answers @zheng2023judging\;
 self-preference is avoided by construction
 @panickssery2024selfpreference. Before use, the judge must reach at
-least 95 % on 61 constructed answers with known grades (correct,
+least 95~% on 61 constructed answers with known grades (correct,
 verbose, hedged, wrong language, stale, near miss, conflicting,
-refusal). \[TBD: judge model and calibration accuracy.\] (3) A human
-grades a stratified 20 % sample of every model × condition blind to the
-judge's grade; we report raw agreement and Cohen's κ with bootstrap
-intervals @cohen1960kappa@bavaresco2025llmjudges.
+refusal). Planned judge: Qwen3-235B, a family different from all
+examinees and drafting models; its calibration accuracy is reported with
+v1.0.0. (3) A human grades a stratified 20~% sample of every model ×
+condition blind to the judge's grade; we report raw agreement and
+Cohen's κ with bootstrap intervals
+@cohen1960kappa@bavaresco2025llmjudges.
 
 == Evaluation setup and inference parameters
 <evaluation-setup-and-inference-parameters>
-Conditions: `closed_dated` (main): system prompt with the date and the
-instruction to answer briefly and say when unsure; `closed_plain`: the
-bare question; `open_book`: as `closed_dated` plus the cited paragraph;
-`thinking`: as `closed_dated` with Apertus' reasoning mode. Parameters:
-temperature 0, top-p 1, max. 256 output tokens (3,000 with reasoning),
-seed 20261001, native chat template via the endpoint. Examinees:
-Apertus-v1.5-8B and -70B. \[TBD: judge model and revision, number of
-calls, run dates.\]
+Conditions: `closed_dated` (main): system prompt on Swiss federal law
+with the date and the instruction to answer briefly and say when unsure;
+`closed_swiss`: the same prompt without the date (date effect);
+`closed_plain`: the bare question (context effect); `open_book`: as
+`closed_dated` plus the cited paragraph; `thinking`: as `closed_dated`
+with Apertus' reasoning mode. Parameters: temperature 0, top-p 1, max.
+256 output tokens (3,000 with reasoning), seed 20261001, native chat
+template via the endpoint. Examinees: Apertus-v1.5-8B and -70B on the
+hosted Hack Apertus endpoint. Preliminary run: 2026-10-04,
+`closed_swiss` and `closed_dated`, 3,516 answers (3,748 HTTP calls
+including retries, 0 failures). Final runs on v1.0.0 are planned for
+2026-10-12/13.
 
-== Results
-<results>
-\[TBD after the freeze and the runs. Planned: Table 3 with C, I, NA,
-CGA, F, hallucination rate and penalised scores per model × language
-with intervals; Figure 2 with stacked bars correct / stale / near miss /
-invented / not attempted; Figure 3 with the stale rate with and without
-the date in the prompt and accuracy per exposure bucket (current wording
-in the corpus / only old wording / absent); judge--human κ.\]
+== Preliminary results (unreviewed draft, rule-based grading only)
+<preliminary-results-unreviewed-draft-rule-based-grading-only>
+#quote(block: true)[
+#strong[Preliminary.] One run on the unreviewed draft (879 rows,
+2026-10-04), graded only by the deterministic pre-grade, without the LLM
+judge and without human review. 21--25~% of the answers stay undecided
+(mostly procedural items), so correct rates are lower bounds; some wrong
+answers may come from wrong gold answers in the draft. No item was
+selected, changed or removed on these outcomes. Final results follow on
+v1.0.0 with the judge and the 20~% human sample.
+]
+
+#figure(
+  align(center)[#table(
+    columns: 4,
+    align: (auto,auto,auto,auto,),
+    table.header([Rows (`closed_dated`)], [n], [8B], [70B],),
+    table.hline(),
+    [All rows], [879], [35 (32--38)], [52 (49--55)],
+    [Stable before 2024], [451], [39 (35--44)], [56 (51--60)],
+    [Changed since 2024 (temporal)], [48], [6 (2--17)], [10 (5--22)],
+    [Current wording in corpus], [602], [38 (34--42)], [57 (53--61)],
+    [No wording found], [232], [31 (25--37)], [43 (37--49)],
+    [Only previous wording], [26], [12 (4--29)], [19 (9--38)],
+  )]
+  , caption: [Preliminary correct rates in % with 95~% Wilson intervals;
+  the last three rows are the exposure buckets. `closed_swiss` (same
+  prompt without the date) differs by at most 2.2 points per row, except
+  3.8 points (one row of 26) for the 70B on the only-previous-wording
+  bucket.]
+  , kind: table
+  )
+
+#figure(image("/report/fig_preliminary.svg", width: 100.0%, alt: "Preliminary correct rates per group and model (closed_dated), with 95 % Wilson intervals."),
+  caption: [
+    Preliminary correct rates per group and model (`closed_dated`), with
+    95~% Wilson intervals.
+  ]
+)
+
+Three findings hold for both models. #strong[\(1) Changed rules are
+rarely known.] On the 48 rows whose rule changed since 2024, only
+6--10~% of the answers are correct, against 39--56~% on stable rules;
+the 70B gives the earlier rule in 16 of the 48 rows, the 8B in 6.
+#strong[\(2) The date in the prompt does not help.] Adding "today is 1
+October 2026" changes the correct rate by +0.8 points for the 8B (paired
+exact McNemar test, p = 0.35) and by ±0 for the 70B (p = 1.0); only the
+8B's not-attempted rate falls by 1.7 points (p = 0.006). #strong[\(3)
+Accuracy differs by exposure bucket:] the 70B is correct in 57~% of the
+rows whose current wording occurs in its training corpus, in 43~% where
+no wording is found and in 19~% where only the previous wording occurs.
+This is an association, not a causal effect: bucket, act and change date
+are confounded. Across all rows the 70B is 17 points ahead of the 8B
+(paired, 95~% CI 13--21, equally in DE, FR and IT); the 8B abstains more
+often (56--71 rows against 3--4).
+
+Planned for v1.0.0: a full results table with C, I, NA, CGA, F,
+hallucination rate and penalised scores per model × language with
+intervals; stacked bars correct / stale / near miss / other / not
+attempted; judge--human κ.
 
 = Dataset Limitations
 <dataset-limitations>
@@ -285,10 +346,12 @@ were drafted by closed models (Claude, GPT-5.5, Gemini), disclosed per
 row, and human review is still pending; once hand-written items exist we
 report accuracy separately for hand-written and drafted items to detect
 drafting artefacts. The `temporal` bucket is determined per article, so
-an item can sit in an amended article whose paragraph did not change.
-The as-of date ages: the set needs a new version after each amendment
-(e.g.~on 1 January 2027). The exposure check covers only the Swiss
-legislation subset of MultiLegalPile, not web crawls such as Nemotron-CC
+an item can sit in an amended article whose paragraph did not change:
+only 39 of the 146 `changed_*` cores cite a sentence that changed, and
+only 19 carry an outdated answer (`src/find_changes.py`). The as-of date
+ages: the set needs a new version after each amendment (e.g.~on 1
+January 2027). The exposure check covers only the Swiss legislation
+subset of MultiLegalPile, not web crawls such as Nemotron-CC
 @su2025nemotroncc or FineWeb-2 @penedo2025fineweb2. Short answers
 measure knowledge, not the quality of advice.
 
@@ -296,10 +359,11 @@ measure knowledge, not the quality of advice.
 <lessons-learnt-and-recommendations>
 For the dataset: yearly updates on 1 January, a cantonal extension,
 native-speaker review of French and Italian, more `temporal` items. For
-the model: \[TBD from the results; candidates are date awareness in the
-system prompt, retrieval with a version filter instead of parametric
-recall @prior2026oldfriend, and training abstention instead of rewarding
-guesses @kalai2025hallucinate\].
+the model (from the preliminary run): a date in the system prompt does
+not make Apertus more current, so the fix has to come from data or
+retrieval: a refreshed legislation corpus, retrieval with a version
+filter instead of parametric recall @prior2026oldfriend, and training
+abstention instead of rewarding guesses @kalai2025hallucinate.
 
 A practical lesson from building the grader: number extraction must
 treat indefinite articles (#emph[un mois], #emph[eine Rente]), calendar
@@ -316,8 +380,10 @@ judgements; it compares the result with `data/expected_results.json` and
 prints PASS or FAIL. `make run MODE=full` evaluates any
 OpenAI-compatible model given `LLM_*` (and grades with `JUDGE_*`).
 `make test` runs the unit tests. Seeds: 20261001 (generation, sampling
-of pilot cores), 20261016 (bootstrap, human sample). \[TBD: commit hash,
-Hugging Face revision, runtime.\]
+of pilot cores), 20261016 (bootstrap, human sample). The commit and
+Hugging Face revision of v1.0.0 will be listed here at the freeze. The
+replay needs no GPU and no keys; on a clean checkout it finishes within
+a few minutes including the image build.
 
 = License
 <license>
