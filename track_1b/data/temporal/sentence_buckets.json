@@ -1,0 +1,2840 @@
+{
+ "cl-0001": {
+  "act": "KVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0002": {
+  "act": "KVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0003": {
+  "act": "KVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cl-0004": {
+  "act": "KVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0005": {
+  "act": "KVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0006": {
+  "act": "KVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0007": {
+  "act": "KVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cl-0008": {
+  "act": "KVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cl-0009": {
+  "act": "KVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0010": {
+  "act": "KVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cl-0011": {
+  "act": "KVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0012": {
+  "act": "KVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0013": {
+  "act": "KVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0014": {
+  "act": "KVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0015": {
+  "act": "KVG",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "term"
+ },
+ "cl-0016": {
+  "act": "KVG",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cl-0017": {
+  "act": "KVG",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cl-0018": {
+  "act": "KVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cl-0019": {
+  "act": "KVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cl-0020": {
+  "act": "KVV",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0021": {
+  "act": "KVV",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0022": {
+  "act": "KVV",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0023": {
+  "act": "KVV",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cl-0024": {
+  "act": "KVV",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0025": {
+  "act": "KVV",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cl-0026": {
+  "act": "KVV",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0027": {
+  "act": "KVV",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cl-0028": {
+  "act": "KVV",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "changed_2026",
+  "evidence_since": "2026-01-01",
+  "evidence_missing_in": [
+   "2025-07-01",
+   "2025-06-01",
+   "2025-01-01",
+   "2024-10-01",
+   "2024-07-01",
+   "2024-02-01",
+   "2024-01-01",
+   "2023-09-01"
+  ],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cl-0029": {
+  "act": "KVV",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0030": {
+  "act": "KVV",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0031": {
+  "act": "KVV",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cl-0032": {
+  "act": "KVV",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cl-0033": {
+  "act": "KVV",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0034": {
+  "act": "KVV",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cl-0035": {
+  "act": "AHVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "changed_2024_2025",
+  "evidence_since": "2024-01-01",
+  "evidence_missing_in": [
+   "2023-09-01"
+  ],
+  "has_outdated_answers": true,
+  "question_type": "temporal"
+ },
+ "cl-0036": {
+  "act": "AHVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "changed_2024_2025",
+  "evidence_since": "2024-01-01",
+  "evidence_missing_in": [
+   "2023-09-01"
+  ],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cl-0037": {
+  "act": "AHVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "changed_2024_2025",
+  "evidence_since": "2025-01-01",
+  "evidence_missing_in": [
+   "2024-01-01",
+   "2023-09-01"
+  ],
+  "has_outdated_answers": true,
+  "question_type": "temporal"
+ },
+ "cl-0038": {
+  "act": "AHVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0039": {
+  "act": "AHVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0040": {
+  "act": "AHVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0041": {
+  "act": "AHVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "changed_2024_2025",
+  "evidence_since": "2025-01-01",
+  "evidence_missing_in": [
+   "2024-01-01",
+   "2023-09-01"
+  ],
+  "has_outdated_answers": true,
+  "question_type": "temporal"
+ },
+ "cl-0042": {
+  "act": "AHVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0043": {
+  "act": "AHVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0044": {
+  "act": "AHVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0045": {
+  "act": "AHVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "changed_2024_2025",
+  "evidence_since": "2025-01-01",
+  "evidence_missing_in": [
+   "2024-01-01",
+   "2023-09-01"
+  ],
+  "has_outdated_answers": true,
+  "question_type": "temporal"
+ },
+ "cl-0046": {
+  "act": "AHVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cl-0047": {
+  "act": "AHVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "changed_2024_2025",
+  "evidence_since": "2024-01-01",
+  "evidence_missing_in": [
+   "2023-09-01"
+  ],
+  "has_outdated_answers": true,
+  "question_type": "temporal"
+ },
+ "cl-0048": {
+  "act": "AHVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0049": {
+  "act": "AHVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cl-0050": {
+  "act": "AHVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cl-0051": {
+  "act": "AHVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "changed_2024_2025",
+  "evidence_since": "2024-01-01",
+  "evidence_missing_in": [
+   "2023-09-01"
+  ],
+  "has_outdated_answers": true,
+  "question_type": "temporal"
+ },
+ "cl-0052": {
+  "act": "AHVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cl-0053": {
+  "act": "AHVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cl-0054": {
+  "act": "AHVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "changed_2024_2025",
+  "evidence_since": "2024-01-01",
+  "evidence_missing_in": [
+   "2023-09-01"
+  ],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cl-0055": {
+  "act": "IVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0056": {
+  "act": "IVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "changed_2024_2025",
+  "evidence_since": "2025-01-01",
+  "evidence_missing_in": [
+   "2024-01-01",
+   "2023-01-01"
+  ],
+  "has_outdated_answers": true,
+  "question_type": "temporal"
+ },
+ "cl-0057": {
+  "act": "IVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0058": {
+  "act": "IVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0059": {
+  "act": "IVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0060": {
+  "act": "IVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0061": {
+  "act": "IVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0062": {
+  "act": "IVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cl-0063": {
+  "act": "IVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0064": {
+  "act": "IVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0065": {
+  "act": "IVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cl-0066": {
+  "act": "IVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0067": {
+  "act": "ELG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0068": {
+  "act": "ELG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0069": {
+  "act": "ELG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0070": {
+  "act": "ELG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0071": {
+  "act": "ELG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "changed_2024_2025",
+  "evidence_since": "2025-01-01",
+  "evidence_missing_in": [
+   "2024-01-01",
+   "2023-01-01"
+  ],
+  "has_outdated_answers": true,
+  "question_type": "temporal"
+ },
+ "cl-0072": {
+  "act": "ELG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "changed_2024_2025",
+  "evidence_since": "2025-01-01",
+  "evidence_missing_in": [
+   "2024-01-01",
+   "2023-01-01"
+  ],
+  "has_outdated_answers": true,
+  "question_type": "temporal"
+ },
+ "cl-0073": {
+  "act": "ELG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cl-0074": {
+  "act": "ELG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0075": {
+  "act": "UVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0076": {
+  "act": "UVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0077": {
+  "act": "UVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cl-0078": {
+  "act": "UVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cl-0079": {
+  "act": "UVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cl-0080": {
+  "act": "UVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cl-0081": {
+  "act": "UVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0082": {
+  "act": "UVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cl-0083": {
+  "act": "UVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0084": {
+  "act": "UVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cl-0085": {
+  "act": "UVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cl-0086": {
+  "act": "UVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0087": {
+  "act": "UVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cl-0088": {
+  "act": "ATSG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0089": {
+  "act": "ATSG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0090": {
+  "act": "ATSG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0091": {
+  "act": "ATSG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cl-0092": {
+  "act": "ATSG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0093": {
+  "act": "ATSG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cl-0094": {
+  "act": "ATSG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cl-0095": {
+  "act": "ATSG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0096": {
+  "act": "ATSG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cl-0097": {
+  "act": "ATSG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cl-0098": {
+  "act": "ATSG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0099": {
+  "act": "ATSG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "term"
+ },
+ "cl-0100": {
+  "act": "ATSG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "term"
+ },
+ "cl-0101": {
+  "act": "OR",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0102": {
+  "act": "OR",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cl-0103": {
+  "act": "OR",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cl-0104": {
+  "act": "OR",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cl-0105": {
+  "act": "OR",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cx-0001": {
+  "act": "KVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cx-0002": {
+  "act": "KVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cx-0003": {
+  "act": "KVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cx-0004": {
+  "act": "KVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cx-0005": {
+  "act": "KVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cx-0006": {
+  "act": "KVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cx-0007": {
+  "act": "KVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cx-0008": {
+  "act": "KVG",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "changed_2026",
+  "evidence_since": "2026-01-01",
+  "evidence_missing_in": [
+   "2025-07-01",
+   "2025-01-01",
+   "2024-10-01",
+   "2024-07-01",
+   "2024-03-01",
+   "2024-01-01",
+   "2023-09-01"
+  ],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cx-0009": {
+  "act": "KVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cx-0010": {
+  "act": "KVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cx-0011": {
+  "act": "KVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cx-0012": {
+  "act": "KVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cx-0013": {
+  "act": "KVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cx-0014": {
+  "act": "KVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cx-0015": {
+  "act": "KVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cx-0018": {
+  "act": "KVV",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cx-0019": {
+  "act": "KVV",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cx-0020": {
+  "act": "KVV",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cx-0021": {
+  "act": "KVV",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cx-0022": {
+  "act": "KVV",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cx-0023": {
+  "act": "KVV",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cx-0024": {
+  "act": "KVV",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cx-0025": {
+  "act": "KVV",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cx-0026": {
+  "act": "KVV",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cx-0027": {
+  "act": "KVV",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cx-0028": {
+  "act": "KVV",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cx-0029": {
+  "act": "KVV",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cx-0030": {
+  "act": "KVV",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cx-0031": {
+  "act": "KVV",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cx-0032": {
+  "act": "AHVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cx-0033": {
+  "act": "AHVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "changed_2024_2025",
+  "evidence_since": "2025-01-01",
+  "evidence_missing_in": [
+   "2024-01-01",
+   "2023-09-01"
+  ],
+  "has_outdated_answers": true,
+  "question_type": "numeric"
+ },
+ "cx-0034": {
+  "act": "AHVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cx-0035": {
+  "act": "AHVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cx-0036": {
+  "act": "AHVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cx-0037": {
+  "act": "AHVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cx-0038": {
+  "act": "AHVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cx-0039": {
+  "act": "AHVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cx-0040": {
+  "act": "AHVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cx-0041": {
+  "act": "AHVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cx-0042": {
+  "act": "AHVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cx-0043": {
+  "act": "AHVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cx-0044": {
+  "act": "AHVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cx-0045": {
+  "act": "AHVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cx-0046": {
+  "act": "AHVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cx-0047": {
+  "act": "AHVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "changed_2024_2025",
+  "evidence_since": "2025-01-01",
+  "evidence_missing_in": [
+   "2024-01-01",
+   "2023-09-01"
+  ],
+  "has_outdated_answers": true,
+  "question_type": "temporal"
+ },
+ "cx-0048": {
+  "act": "AHVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "changed_2024_2025",
+  "evidence_since": "2024-01-01",
+  "evidence_missing_in": [
+   "2023-09-01"
+  ],
+  "has_outdated_answers": true,
+  "question_type": "temporal"
+ },
+ "cx-0049": {
+  "act": "AHVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "changed_2024_2025",
+  "evidence_since": "2024-01-01",
+  "evidence_missing_in": [
+   "2023-09-01"
+  ],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cx-0050": {
+  "act": "AHVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "changed_2024_2025",
+  "evidence_since": "2024-01-01",
+  "evidence_missing_in": [
+   "2023-09-01"
+  ],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cx-0051": {
+  "act": "AHVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "changed_2024_2025",
+  "evidence_since": "2024-01-01",
+  "evidence_missing_in": [
+   "2023-09-01"
+  ],
+  "has_outdated_answers": true,
+  "question_type": "temporal"
+ },
+ "cx-0052": {
+  "act": "IVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cx-0053": {
+  "act": "IVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cx-0054": {
+  "act": "IVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cx-0055": {
+  "act": "IVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cx-0056": {
+  "act": "IVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cx-0057": {
+  "act": "IVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cx-0058": {
+  "act": "IVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cx-0059": {
+  "act": "IVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cx-0060": {
+  "act": "IVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cx-0061": {
+  "act": "IVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cx-0062": {
+  "act": "IVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cx-0063": {
+  "act": "IVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "changed_2024_2025",
+  "evidence_since": "2024-01-01",
+  "evidence_missing_in": [
+   "2023-01-01"
+  ],
+  "has_outdated_answers": true,
+  "question_type": "temporal"
+ },
+ "cx-0064": {
+  "act": "IVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "changed_2024_2025",
+  "evidence_since": "2024-01-01",
+  "evidence_missing_in": [
+   "2023-01-01"
+  ],
+  "has_outdated_answers": true,
+  "question_type": "temporal"
+ },
+ "cx-0065": {
+  "act": "ELG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cx-0066": {
+  "act": "ELG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cx-0067": {
+  "act": "ELG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cx-0068": {
+  "act": "ELG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cx-0069": {
+  "act": "ELG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cx-0070": {
+  "act": "ELG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cx-0071": {
+  "act": "ELG",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "changed_2024_2025",
+  "evidence_since": "2025-01-01",
+  "evidence_missing_in": [
+   "2024-01-01",
+   "2023-01-01"
+  ],
+  "has_outdated_answers": true,
+  "question_type": "temporal"
+ },
+ "cx-0072": {
+  "act": "ELG",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "changed_2024_2025",
+  "evidence_since": "2025-01-01",
+  "evidence_missing_in": [
+   "2024-01-01",
+   "2023-01-01"
+  ],
+  "has_outdated_answers": true,
+  "question_type": "temporal"
+ },
+ "cx-0073": {
+  "act": "UVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cx-0074": {
+  "act": "UVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cx-0075": {
+  "act": "UVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cx-0076": {
+  "act": "UVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cx-0077": {
+  "act": "UVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cx-0078": {
+  "act": "UVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cx-0079": {
+  "act": "UVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cx-0080": {
+  "act": "UVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cx-0081": {
+  "act": "UVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cx-0082": {
+  "act": "UVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cx-0083": {
+  "act": "UVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cx-0084": {
+  "act": "UVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cx-0085": {
+  "act": "UVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cx-0086": {
+  "act": "UVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cx-0087": {
+  "act": "ATSG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cx-0088": {
+  "act": "ATSG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cx-0089": {
+  "act": "ATSG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cx-0090": {
+  "act": "ATSG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cx-0091": {
+  "act": "ATSG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cx-0092": {
+  "act": "ATSG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cx-0093": {
+  "act": "ATSG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cx-0094": {
+  "act": "ATSG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cx-0095": {
+  "act": "ATSG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cx-0096": {
+  "act": "ATSG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cx-0097": {
+  "act": "ATSG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cx-0098": {
+  "act": "ATSG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cx-0099": {
+  "act": "ATSG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cx-0100": {
+  "act": "ATSG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cx-0101": {
+  "act": "OR",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cx-0102": {
+  "act": "OR",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "cx-0103": {
+  "act": "OR",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "cx-0104": {
+  "act": "OR",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "cx-0105": {
+  "act": "OR",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "ag-0001": {
+  "act": "KVV",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "calc"
+ },
+ "ag-0002": {
+  "act": "KVV",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "calc"
+ },
+ "ag-0003": {
+  "act": "KVV",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "calc"
+ },
+ "ag-0004": {
+  "act": "KVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "calc"
+ },
+ "ag-0005": {
+  "act": "AHVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "calc"
+ },
+ "ag-0006": {
+  "act": "AHVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "calc"
+ },
+ "ag-0007": {
+  "act": "EOG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "calc"
+ },
+ "ag-0008": {
+  "act": "EOG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "calc"
+ },
+ "ag-0009": {
+  "act": "EOG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "calc"
+ },
+ "ag-0010": {
+  "act": "AVIG",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "calc"
+ },
+ "ag-0011": {
+  "act": "AVIG",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "calc"
+ },
+ "ag-0012": {
+  "act": "UVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "calc"
+ },
+ "ag-0013": {
+  "act": "OR",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "calc"
+ },
+ "ag-0014": {
+  "act": "BVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "calc"
+ },
+ "ag-0015": {
+  "act": "BVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "calc"
+ },
+ "ag-0016": {
+  "act": "BVV3",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "calc"
+ },
+ "ag-0017": {
+  "act": "BVV3",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "calc"
+ },
+ "ag-0018": {
+  "act": "EOG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "calc"
+ },
+ "ag-0019": {
+  "act": "EOG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "calc"
+ },
+ "ag-0020": {
+  "act": "BVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "changed_2024_2025",
+  "evidence_since": "2025-01-01",
+  "evidence_missing_in": [
+   "2024-07-01",
+   "2024-01-01",
+   "2023-09-26"
+  ],
+  "has_outdated_answers": true,
+  "question_type": "calc"
+ },
+ "ag-0021": {
+  "act": "BVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "changed_2024_2025",
+  "evidence_since": "2024-01-01",
+  "evidence_missing_in": [
+   "2023-09-26"
+  ],
+  "has_outdated_answers": false,
+  "question_type": "false_premise"
+ },
+ "ag-0022": {
+  "act": "AHVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "changed_2024_2025",
+  "evidence_since": "2024-01-01",
+  "evidence_missing_in": [
+   "2023-09-01"
+  ],
+  "has_outdated_answers": false,
+  "question_type": "false_premise"
+ },
+ "ag-0023": {
+  "act": "OR",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "false_premise"
+ },
+ "ag-0024": {
+  "act": "AVIG",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "false_premise"
+ },
+ "ag-0025": {
+  "act": "IVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "false_premise"
+ },
+ "ag-0026": {
+  "act": "KVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "false_premise"
+ },
+ "ag-0027": {
+  "act": "EOG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "false_premise"
+ },
+ "ag-0028": {
+  "act": "OR",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "false_premise"
+ },
+ "ag-0029": {
+  "act": "OR",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "false_premise"
+ },
+ "ag-0030": {
+  "act": "AHVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "false_premise"
+ },
+ "ag-0031": {
+  "act": "BVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "changed_2024_2025",
+  "evidence_since": "2025-01-01",
+  "evidence_missing_in": [
+   "2024-07-01",
+   "2024-01-01",
+   "2023-09-26"
+  ],
+  "has_outdated_answers": false,
+  "question_type": "false_premise"
+ },
+ "ag-0032": {
+  "act": "BVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "changed_2024_2025",
+  "evidence_since": "2025-01-01",
+  "evidence_missing_in": [
+   "2024-07-01",
+   "2024-01-01",
+   "2023-09-26"
+  ],
+  "has_outdated_answers": false,
+  "question_type": "false_premise"
+ },
+ "ag-0033": {
+  "act": "OR",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "false_premise"
+ },
+ "ag-0034": {
+  "act": "EOG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "false_premise"
+ },
+ "ag-0035": {
+  "act": "UVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "false_premise"
+ },
+ "ag-0036": {
+  "act": "KVG",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "false_premise"
+ },
+ "ag-0037": {
+  "act": "EOG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "changed_2024_2025",
+  "evidence_since": "2024-01-01",
+  "evidence_missing_in": [
+   "2023-01-01"
+  ],
+  "has_outdated_answers": false,
+  "question_type": "false_premise"
+ },
+ "ag-0038": {
+  "act": "BVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "false_premise"
+ },
+ "ag-0039": {
+  "act": "AVIG",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "false_premise"
+ },
+ "ag-0040": {
+  "act": "KVG",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "false_premise"
+ },
+ "ag-0041": {
+  "act": "EOG",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "ag-0042": {
+  "act": "EOG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "ag-0043": {
+  "act": "EOG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "ag-0044": {
+  "act": "EOG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "ag-0045": {
+  "act": "EOG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "ag-0046": {
+  "act": "EOG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "ag-0047": {
+  "act": "EOG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "ag-0048": {
+  "act": "EOG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "ag-0049": {
+  "act": "EOG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "ag-0050": {
+  "act": "EOG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "changed_2024_2025",
+  "evidence_since": "2024-01-01",
+  "evidence_missing_in": [
+   "2023-01-01"
+  ],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "ag-0051": {
+  "act": "EOG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "changed_2024_2025",
+  "evidence_since": "2024-01-01",
+  "evidence_missing_in": [
+   "2023-01-01"
+  ],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "ag-0052": {
+  "act": "EOG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "changed_2024_2025",
+  "evidence_since": "2024-01-01",
+  "evidence_missing_in": [
+   "2023-01-01"
+  ],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "ag-0053": {
+  "act": "EOG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "ag-0054": {
+  "act": "EOG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "ag-0055": {
+  "act": "EOG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "ag-0056": {
+  "act": "EOG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "ag-0057": {
+  "act": "EOG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "ag-0058": {
+  "act": "EOG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "ag-0059": {
+  "act": "EOG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "ag-0060": {
+  "act": "AVIG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "ag-0061": {
+  "act": "AVIG",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "ag-0062": {
+  "act": "AVIG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "ag-0063": {
+  "act": "AVIG",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "ag-0064": {
+  "act": "AVIG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "ag-0065": {
+  "act": "AVIG",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "ag-0066": {
+  "act": "BVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "changed_2024_2025",
+  "evidence_since": "2025-01-01",
+  "evidence_missing_in": [
+   "2024-07-01",
+   "2024-01-01",
+   "2023-09-26"
+  ],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "ag-0067": {
+  "act": "BVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "ag-0068": {
+  "act": "BVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "ag-0069": {
+  "act": "BVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "changed_2024_2025",
+  "evidence_since": "2025-01-01",
+  "evidence_missing_in": [
+   "2024-07-01",
+   "2024-01-01",
+   "2023-09-26"
+  ],
+  "has_outdated_answers": true,
+  "question_type": "numeric"
+ },
+ "ag-0070": {
+  "act": "BVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "changed_2024_2025",
+  "evidence_since": "2024-01-01",
+  "evidence_missing_in": [
+   "2023-09-26"
+  ],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "ag-0071": {
+  "act": "BVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "changed_2024_2025",
+  "evidence_since": "2024-01-01",
+  "evidence_missing_in": [
+   "2023-09-26"
+  ],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "ag-0072": {
+  "act": "BVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "changed_2024_2025",
+  "evidence_since": "2024-01-01",
+  "evidence_missing_in": [
+   "2023-09-26"
+  ],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "ag-0073": {
+  "act": "BVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "changed_2024_2025",
+  "evidence_since": "2024-01-01",
+  "evidence_missing_in": [
+   "2023-09-26"
+  ],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "ag-0074": {
+  "act": "BVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "ag-0075": {
+  "act": "BVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "ag-0076": {
+  "act": "BVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "ag-0077": {
+  "act": "BVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "ag-0078": {
+  "act": "BVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "ag-0079": {
+  "act": "BVG",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "changed_2024_2025",
+  "evidence_since": "2024-01-01",
+  "evidence_missing_in": [
+   "2023-09-26"
+  ],
+  "has_outdated_answers": false,
+  "question_type": "procedural"
+ },
+ "ag-0080": {
+  "act": "BVV3",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "ag-0081": {
+  "act": "KVG",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "ag-0082": {
+  "act": "KVG",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "ag-0083": {
+  "act": "KVG",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "ag-0084": {
+  "act": "KVG",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "ag-0085": {
+  "act": "KVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "ag-0086": {
+  "act": "KVG",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "ag-0087": {
+  "act": "KVG",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "ag-0088": {
+  "act": "KVG",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "ag-0089": {
+  "act": "KVG",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "ag-0090": {
+  "act": "KVV",
+  "article_bucket": "changed_2026",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "ag-0091": {
+  "act": "OR",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "ag-0092": {
+  "act": "OR",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "ag-0093": {
+  "act": "OR",
+  "article_bucket": "stable_pre2024",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ },
+ "ag-0094": {
+  "act": "OR",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "numeric"
+ },
+ "ag-0095": {
+  "act": "OR",
+  "article_bucket": "changed_2024_2025",
+  "sentence_bucket": "stable_pre2024",
+  "evidence_since": null,
+  "evidence_missing_in": [],
+  "has_outdated_answers": false,
+  "question_type": "yes_no"
+ }
+}

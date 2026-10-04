@@ -1,0 +1,36 @@
+sentence-level stability against the previous version (bucket, status):
+  changed_2024_2025    evidence_changed       35
+  changed_2024_2025    evidence_in_previous   62
+  changed_2026         evidence_changed       4
+  changed_2026         evidence_in_previous   45
+  stable_pre2024       evidence_in_previous   157
+cores whose evidence sentence changed: 39 (with outdated answers: 19)
+article bucket -> sentence bucket (all earlier versions):
+  changed_2024_2025    -> changed_2024_2025    35
+  changed_2024_2025    -> stable_pre2024       62
+  changed_2026         -> changed_2024_2025    2
+  changed_2026         -> changed_2026         2
+  changed_2026         -> stable_pre2024       45
+  stable_pre2024       -> stable_pre2024       157
+cores with changed evidence sentence: 39 (with outdated answers: 19)
+diff pool (kind: paragraphs / uncovered):
+  new_paragraph       411 /  408
+  removed_paragraph   112 /  112
+  text_change         465 /  439
+  value_change        215 /  185
+uncovered amount/rate/period changes: 15
+  KVV art_65_c 2  old [('30', 'Proz')]  new [('40', 'Proz')]
+  EOG art_27 2  old [('24', 'Fran')]  new [('25', 'Fran')]
+  BVG art_46 1  old [('22050', 'Fran')]  new [('22680', 'Fran')]
+  BVV2 art_3_a 1  old [('22050', 'Fran'), ('3675', 'Fran')]  new [('22680', 'Fran'), ('3780', 'Fran')]
+  AHVV art_6_quater 1  old [('1400', 'Fran')]  new []
+  AHVV art_19   old [('2300', 'Fran')]  new [('2500', 'Fran')]
+  AHVV art_21 1  old [('58800', 'Fran'), ('9800', 'Fran')]  new [('10100', 'Fran'), ('60500', 'Fran')]
+  AHVV art_21 2  old [('9800', 'Fran')]  new [('10100', 'Fran')]
+  AHVV art_28 1  old [('422', 'Fran')]  new [('435', 'Fran')]
+  AHVV art_34_d 1  old [('2300', 'Fran')]  new [('2500', 'Fran')]
+  IVV art_1_bis 2  old [('3400', 'Fran')]  new [('3500', 'Fran')]
+  IVV art_39_f 1  old [('34.30', 'Fran')]  new [('35.30', 'Fran')]
+  IVV art_39_f 2  old [('51.50', 'Fran')]  new [('52.95', 'Fran')]
+  IVV art_39_f 3  old [('164.35', 'Fran')]  new [('169.10', 'Fran')]
+  ELV art_16_a 3  old [('3060', 'Fran')]  new [('3480', 'Fran')]

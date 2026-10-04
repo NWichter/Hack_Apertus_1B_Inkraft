@@ -1,0 +1,2123 @@
+[
+ {
+  "core_id": "cl-0001",
+  "act": "KVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0002",
+  "act": "KVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0003",
+  "act": "KVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0004",
+  "act": "KVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0005",
+  "act": "KVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0006",
+  "act": "KVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0007",
+  "act": "KVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0008",
+  "act": "KVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0009",
+  "act": "KVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0010",
+  "act": "KVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0011",
+  "act": "KVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0012",
+  "act": "KVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0013",
+  "act": "KVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0014",
+  "act": "KVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0015",
+  "act": "KVG",
+  "bucket": "changed_2026",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0016",
+  "act": "KVG",
+  "bucket": "changed_2026",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0017",
+  "act": "KVG",
+  "bucket": "changed_2026",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0018",
+  "act": "KVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0019",
+  "act": "KVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0020",
+  "act": "KVV",
+  "bucket": "changed_2026",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0021",
+  "act": "KVV",
+  "bucket": "changed_2026",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0022",
+  "act": "KVV",
+  "bucket": "changed_2026",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0023",
+  "act": "KVV",
+  "bucket": "changed_2026",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0024",
+  "act": "KVV",
+  "bucket": "changed_2026",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0025",
+  "act": "KVV",
+  "bucket": "changed_2026",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0026",
+  "act": "KVV",
+  "bucket": "changed_2026",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0027",
+  "act": "KVV",
+  "bucket": "changed_2026",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0028",
+  "act": "KVV",
+  "bucket": "changed_2026",
+  "status": "evidence_changed",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0029",
+  "act": "KVV",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0030",
+  "act": "KVV",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0031",
+  "act": "KVV",
+  "bucket": "changed_2026",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0032",
+  "act": "KVV",
+  "bucket": "changed_2026",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0033",
+  "act": "KVV",
+  "bucket": "changed_2026",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0034",
+  "act": "KVV",
+  "bucket": "changed_2026",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0035",
+  "act": "AHVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_changed",
+  "has_outdated_answers": true
+ },
+ {
+  "core_id": "cl-0036",
+  "act": "AHVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_changed",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0037",
+  "act": "AHVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_changed",
+  "has_outdated_answers": true
+ },
+ {
+  "core_id": "cl-0038",
+  "act": "AHVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0039",
+  "act": "AHVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0040",
+  "act": "AHVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0041",
+  "act": "AHVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_changed",
+  "has_outdated_answers": true
+ },
+ {
+  "core_id": "cl-0042",
+  "act": "AHVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0043",
+  "act": "AHVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0044",
+  "act": "AHVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0045",
+  "act": "AHVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_changed",
+  "has_outdated_answers": true
+ },
+ {
+  "core_id": "cl-0046",
+  "act": "AHVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0047",
+  "act": "AHVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_changed",
+  "has_outdated_answers": true
+ },
+ {
+  "core_id": "cl-0048",
+  "act": "AHVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0049",
+  "act": "AHVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0050",
+  "act": "AHVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0051",
+  "act": "AHVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_changed",
+  "has_outdated_answers": true
+ },
+ {
+  "core_id": "cl-0052",
+  "act": "AHVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0053",
+  "act": "AHVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0054",
+  "act": "AHVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_changed",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0055",
+  "act": "IVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0056",
+  "act": "IVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_changed",
+  "has_outdated_answers": true
+ },
+ {
+  "core_id": "cl-0057",
+  "act": "IVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0058",
+  "act": "IVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0059",
+  "act": "IVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0060",
+  "act": "IVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0061",
+  "act": "IVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0062",
+  "act": "IVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0063",
+  "act": "IVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0064",
+  "act": "IVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0065",
+  "act": "IVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0066",
+  "act": "IVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0067",
+  "act": "ELG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0068",
+  "act": "ELG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0069",
+  "act": "ELG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0070",
+  "act": "ELG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0071",
+  "act": "ELG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_changed",
+  "has_outdated_answers": true
+ },
+ {
+  "core_id": "cl-0072",
+  "act": "ELG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_changed",
+  "has_outdated_answers": true
+ },
+ {
+  "core_id": "cl-0073",
+  "act": "ELG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0074",
+  "act": "ELG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0075",
+  "act": "UVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0076",
+  "act": "UVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0077",
+  "act": "UVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0078",
+  "act": "UVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0079",
+  "act": "UVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0080",
+  "act": "UVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0081",
+  "act": "UVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0082",
+  "act": "UVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0083",
+  "act": "UVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0084",
+  "act": "UVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0085",
+  "act": "UVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0086",
+  "act": "UVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0087",
+  "act": "UVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0088",
+  "act": "ATSG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0089",
+  "act": "ATSG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0090",
+  "act": "ATSG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0091",
+  "act": "ATSG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0092",
+  "act": "ATSG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0093",
+  "act": "ATSG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0094",
+  "act": "ATSG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0095",
+  "act": "ATSG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0096",
+  "act": "ATSG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0097",
+  "act": "ATSG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0098",
+  "act": "ATSG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0099",
+  "act": "ATSG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0100",
+  "act": "ATSG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0101",
+  "act": "OR",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0102",
+  "act": "OR",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0103",
+  "act": "OR",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0104",
+  "act": "OR",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cl-0105",
+  "act": "OR",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0001",
+  "act": "KVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0002",
+  "act": "KVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0003",
+  "act": "KVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0004",
+  "act": "KVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0005",
+  "act": "KVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0006",
+  "act": "KVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0007",
+  "act": "KVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0008",
+  "act": "KVG",
+  "bucket": "changed_2026",
+  "status": "evidence_changed",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0009",
+  "act": "KVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0010",
+  "act": "KVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0011",
+  "act": "KVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0012",
+  "act": "KVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0013",
+  "act": "KVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0014",
+  "act": "KVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0015",
+  "act": "KVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0018",
+  "act": "KVV",
+  "bucket": "changed_2026",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0019",
+  "act": "KVV",
+  "bucket": "changed_2026",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0020",
+  "act": "KVV",
+  "bucket": "changed_2026",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0021",
+  "act": "KVV",
+  "bucket": "changed_2026",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0022",
+  "act": "KVV",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0023",
+  "act": "KVV",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0024",
+  "act": "KVV",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0025",
+  "act": "KVV",
+  "bucket": "changed_2026",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0026",
+  "act": "KVV",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0027",
+  "act": "KVV",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0028",
+  "act": "KVV",
+  "bucket": "changed_2026",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0029",
+  "act": "KVV",
+  "bucket": "changed_2026",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0030",
+  "act": "KVV",
+  "bucket": "changed_2026",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0031",
+  "act": "KVV",
+  "bucket": "changed_2026",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0032",
+  "act": "AHVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0033",
+  "act": "AHVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_changed",
+  "has_outdated_answers": true
+ },
+ {
+  "core_id": "cx-0034",
+  "act": "AHVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0035",
+  "act": "AHVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0036",
+  "act": "AHVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0037",
+  "act": "AHVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0038",
+  "act": "AHVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0039",
+  "act": "AHVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0040",
+  "act": "AHVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0041",
+  "act": "AHVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0042",
+  "act": "AHVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0043",
+  "act": "AHVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0044",
+  "act": "AHVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0045",
+  "act": "AHVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0046",
+  "act": "AHVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0047",
+  "act": "AHVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_changed",
+  "has_outdated_answers": true
+ },
+ {
+  "core_id": "cx-0048",
+  "act": "AHVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_changed",
+  "has_outdated_answers": true
+ },
+ {
+  "core_id": "cx-0049",
+  "act": "AHVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_changed",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0050",
+  "act": "AHVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_changed",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0051",
+  "act": "AHVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_changed",
+  "has_outdated_answers": true
+ },
+ {
+  "core_id": "cx-0052",
+  "act": "IVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0053",
+  "act": "IVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0054",
+  "act": "IVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0055",
+  "act": "IVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0056",
+  "act": "IVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0057",
+  "act": "IVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0058",
+  "act": "IVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0059",
+  "act": "IVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0060",
+  "act": "IVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0061",
+  "act": "IVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0062",
+  "act": "IVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0063",
+  "act": "IVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_changed",
+  "has_outdated_answers": true
+ },
+ {
+  "core_id": "cx-0064",
+  "act": "IVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_changed",
+  "has_outdated_answers": true
+ },
+ {
+  "core_id": "cx-0065",
+  "act": "ELG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0066",
+  "act": "ELG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0067",
+  "act": "ELG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0068",
+  "act": "ELG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0069",
+  "act": "ELG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0070",
+  "act": "ELG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0071",
+  "act": "ELG",
+  "bucket": "changed_2026",
+  "status": "evidence_changed",
+  "has_outdated_answers": true
+ },
+ {
+  "core_id": "cx-0072",
+  "act": "ELG",
+  "bucket": "changed_2026",
+  "status": "evidence_changed",
+  "has_outdated_answers": true
+ },
+ {
+  "core_id": "cx-0073",
+  "act": "UVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0074",
+  "act": "UVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0075",
+  "act": "UVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0076",
+  "act": "UVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0077",
+  "act": "UVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0078",
+  "act": "UVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0079",
+  "act": "UVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0080",
+  "act": "UVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0081",
+  "act": "UVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0082",
+  "act": "UVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0083",
+  "act": "UVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0084",
+  "act": "UVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0085",
+  "act": "UVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0086",
+  "act": "UVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0087",
+  "act": "ATSG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0088",
+  "act": "ATSG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0089",
+  "act": "ATSG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0090",
+  "act": "ATSG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0091",
+  "act": "ATSG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0092",
+  "act": "ATSG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0093",
+  "act": "ATSG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0094",
+  "act": "ATSG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0095",
+  "act": "ATSG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0096",
+  "act": "ATSG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0097",
+  "act": "ATSG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0098",
+  "act": "ATSG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0099",
+  "act": "ATSG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0100",
+  "act": "ATSG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0101",
+  "act": "OR",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0102",
+  "act": "OR",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0103",
+  "act": "OR",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0104",
+  "act": "OR",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "cx-0105",
+  "act": "OR",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0001",
+  "act": "KVV",
+  "bucket": "changed_2026",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0002",
+  "act": "KVV",
+  "bucket": "changed_2026",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0003",
+  "act": "KVV",
+  "bucket": "changed_2026",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0004",
+  "act": "KVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0005",
+  "act": "AHVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0006",
+  "act": "AHVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0007",
+  "act": "EOG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0008",
+  "act": "EOG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0009",
+  "act": "EOG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0010",
+  "act": "AVIG",
+  "bucket": "changed_2026",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0011",
+  "act": "AVIG",
+  "bucket": "changed_2026",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0012",
+  "act": "UVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0013",
+  "act": "OR",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0014",
+  "act": "BVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0015",
+  "act": "BVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0016",
+  "act": "BVV3",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0017",
+  "act": "BVV3",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0018",
+  "act": "EOG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0019",
+  "act": "EOG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0020",
+  "act": "BVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_changed",
+  "has_outdated_answers": true
+ },
+ {
+  "core_id": "ag-0021",
+  "act": "BVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_changed",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0022",
+  "act": "AHVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_changed",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0023",
+  "act": "OR",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0024",
+  "act": "AVIG",
+  "bucket": "changed_2026",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0025",
+  "act": "IVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0026",
+  "act": "KVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0027",
+  "act": "EOG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0028",
+  "act": "OR",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0029",
+  "act": "OR",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0030",
+  "act": "AHVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0031",
+  "act": "BVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_changed",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0032",
+  "act": "BVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_changed",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0033",
+  "act": "OR",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0034",
+  "act": "EOG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0035",
+  "act": "UVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0036",
+  "act": "KVG",
+  "bucket": "changed_2026",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0037",
+  "act": "EOG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_changed",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0038",
+  "act": "BVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0039",
+  "act": "AVIG",
+  "bucket": "changed_2026",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0040",
+  "act": "KVG",
+  "bucket": "changed_2026",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0041",
+  "act": "EOG",
+  "bucket": "changed_2026",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0042",
+  "act": "EOG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0043",
+  "act": "EOG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0044",
+  "act": "EOG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0045",
+  "act": "EOG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0046",
+  "act": "EOG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0047",
+  "act": "EOG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0048",
+  "act": "EOG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0049",
+  "act": "EOG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0050",
+  "act": "EOG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_changed",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0051",
+  "act": "EOG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_changed",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0052",
+  "act": "EOG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_changed",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0053",
+  "act": "EOG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0054",
+  "act": "EOG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0055",
+  "act": "EOG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0056",
+  "act": "EOG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0057",
+  "act": "EOG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0058",
+  "act": "EOG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0059",
+  "act": "EOG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0060",
+  "act": "AVIG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0061",
+  "act": "AVIG",
+  "bucket": "changed_2026",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0062",
+  "act": "AVIG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0063",
+  "act": "AVIG",
+  "bucket": "changed_2026",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0064",
+  "act": "AVIG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0065",
+  "act": "AVIG",
+  "bucket": "changed_2026",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0066",
+  "act": "BVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_changed",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0067",
+  "act": "BVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0068",
+  "act": "BVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0069",
+  "act": "BVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_changed",
+  "has_outdated_answers": true
+ },
+ {
+  "core_id": "ag-0070",
+  "act": "BVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_changed",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0071",
+  "act": "BVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_changed",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0072",
+  "act": "BVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_changed",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0073",
+  "act": "BVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_changed",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0074",
+  "act": "BVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0075",
+  "act": "BVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0076",
+  "act": "BVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0077",
+  "act": "BVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0078",
+  "act": "BVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0079",
+  "act": "BVG",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_changed",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0080",
+  "act": "BVV3",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0081",
+  "act": "KVG",
+  "bucket": "changed_2026",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0082",
+  "act": "KVG",
+  "bucket": "changed_2026",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0083",
+  "act": "KVG",
+  "bucket": "changed_2026",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0084",
+  "act": "KVG",
+  "bucket": "changed_2026",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0085",
+  "act": "KVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0086",
+  "act": "KVG",
+  "bucket": "changed_2026",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0087",
+  "act": "KVG",
+  "bucket": "changed_2026",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0088",
+  "act": "KVG",
+  "bucket": "changed_2026",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0089",
+  "act": "KVG",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0090",
+  "act": "KVV",
+  "bucket": "changed_2026",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0091",
+  "act": "OR",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0092",
+  "act": "OR",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0093",
+  "act": "OR",
+  "bucket": "stable_pre2024",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0094",
+  "act": "OR",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ },
+ {
+  "core_id": "ag-0095",
+  "act": "OR",
+  "bucket": "changed_2024_2025",
+  "status": "evidence_in_previous",
+  "has_outdated_answers": false
+ }
+]

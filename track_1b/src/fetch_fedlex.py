@@ -38,6 +38,10 @@ ACTS = {
     "831.40": "BVG",
     "831.441.1": "BVV2",
     "831.461.3": "BVV3",
+    "831.101": "AHVV",
+    "831.201": "IVV",
+    "831.301": "ELV",
+    "837.02": "AVIV",
 }
 
 QUERY = """
@@ -179,13 +183,22 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", required=True)
     ap.add_argument("--cache", required=True)
+    ap.add_argument(
+        "--acts",
+        help="comma-separated abbreviations to fetch (default: all); with an existing manifest.json the other acts are kept",
+    )
     args = ap.parse_args()
     out = Path(args.out)
     cache = Path(args.cache)
     out.mkdir(parents=True, exist_ok=True)
     cache.mkdir(parents=True, exist_ok=True)
 
-    rows = sparql_csv(QUERY % ",".join(f'"{sr}"' for sr in ACTS))
+    wanted = set(args.acts.split(",")) if args.acts else set(ACTS.values())
+    unknown = wanted - set(ACTS.values())
+    if unknown:
+        ap.error(f"unknown acts: {sorted(unknown)}")
+    acts = {sr: abbr for sr, abbr in ACTS.items() if abbr in wanted}
+    rows = sparql_csv(QUERY % ",".join(f'"{sr}"' for sr in acts))
     by_act = {}
     for r in rows:
         lang = LANGS[r["lang"].rsplit("/", 1)[-1]]
@@ -209,7 +222,7 @@ def main():
         "acts": [],
     }
 
-    for sr, abbr in ACTS.items():
+    for sr, abbr in acts.items():
         info = by_act[sr]
         dates = sorted(info["versions"])
         current = max(d for d in dates if d <= AS_OF)
@@ -309,6 +322,16 @@ def main():
             )
         manifest["acts"].append(act_entry)
 
+    old_path = out / "manifest.json"
+    if args.acts and old_path.exists():
+        old = json.loads(old_path.read_text(encoding="utf-8"))
+        kept = [a for a in old["acts"] if a["abbr"] not in wanted]
+        manifest["acts"] = kept + manifest["acts"]
+        manifest["retrieved_at_per_act"] = {
+            **old.get("retrieved_at_per_act", {}),
+            **{a["abbr"]: old["retrieved_at"] for a in kept if a["abbr"] not in old.get("retrieved_at_per_act", {})},
+            **{abbr: manifest["retrieved_at"] for abbr in acts.values()},
+        }
     (out / "manifest.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=1), encoding="utf-8"
     )

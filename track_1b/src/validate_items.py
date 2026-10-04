@@ -46,7 +46,19 @@ ANSWER_TYPES = {
     "text",
     "yes_no",
 }
-AUTHORS = {"claude", "codex", "gemini", "human"}
+AUTHORS = {"claude", "codex", "gemini", "nemotron", "human"}
+FROZEN = {"value": False}
+THRESHOLD_WORDS = {
+    "de": ["mehr als", "übersteig", "höchstens", "mindestens", "weniger als", "bis zu"],
+    "fr": ["plus de", "dépass", "au plus", "au moins", "moins de", "jusqu"],
+    "it": ["più di", "supera", "al massimo", "almeno", "meno di", "fino a"],
+}
+DISCRETION = re.compile(r"\b(Bundesrat|Departement|Reglement|Kantone? (?:kann|können|bestimm|regel))", re.I)
+CONTENT_STOP = {
+    "de": {"der", "die", "das", "des", "dem", "den", "ein", "eine", "einen", "einer", "und", "oder", "nach", "für", "von", "vom", "zur", "zum", "mit", "bei", "auf", "aus", "wird", "werden", "ist", "sind", "nicht", "sich", "wenn", "dass", "wie", "welche", "welcher", "welches", "wann", "was", "wer"},
+    "fr": {"le", "la", "les", "des", "du", "de", "un", "une", "et", "ou", "pour", "par", "avec", "est", "sont", "qui", "que", "quel", "quelle", "quels", "quelles", "dans", "sur", "aux", "pas"},
+    "it": {"il", "lo", "la", "le", "gli", "dei", "del", "della", "di", "un", "una", "e", "o", "per", "con", "è", "sono", "che", "quale", "quali", "nel", "nella", "su", "non"},
+}
 YES_NO = {"de": {"ja", "nein"}, "fr": {"oui", "non"}, "it": {"sì", "si", "no"}}
 REQUIRED = [
     "id",
@@ -642,6 +654,20 @@ class Sources:
                 self._cache[key] = {x["article_id"]: x for x in d["articles"]}
         return self._cache[key].get(article_id)
 
+    def article_at(self, act, article_id, lang, version_date):
+        """Article in the stored version with this date (any role); None if not stored."""
+        a = self.acts.get(act)
+        if not a or not version_date:
+            return None
+        v = next((v for v in a["versions"] if v["version_date"] == version_date), None)
+        if not v or lang not in v["files"]:
+            return None
+        key = (act, lang, "v" + version_date)
+        if key not in self._cache:
+            d = json.loads((self.root / v["files"][lang]["path"]).read_text(encoding="utf-8"))
+            self._cache[key] = {x["article_id"]: x for x in d["articles"]}
+        return self._cache[key].get(article_id)
+
     def earlier_articles(self, act, article_id, lang):
         """(version_date, article) for every stored version older than the current one."""
         a = self.acts.get(act)
@@ -672,6 +698,50 @@ class Issues:
 
     def add(self, level, code, rec_id, msg):
         self.items.append({"level": level, "code": code, "id": rec_id, "msg": msg})
+
+
+def content_words(text, lang):
+    return {
+        w
+        for w in re.findall(r"[^\W\d_]{4,}", norm_text(text))
+        if w not in CONTENT_STOP.get(lang, set())
+    }
+
+
+def check_leaks(r, lang, q, a, issues):
+    """Questions that give the answer away (number, words) and threshold words lost in the answer."""
+    rid = r.get("id")
+    qt, at = r.get("question_type"), r.get("answer_type")
+    if qt in ("yes_no", "false_premise", "calc") or at == "yes_no":
+        return
+    an = r.get("answer_normalized")
+    if isinstance(an, dict) and isinstance(an.get("value"), (int, float)):
+        if float(an["value"]) in extract_numbers(q, lang) and an["value"] not in (0, 1):
+            issues.add(
+                "WARN",
+                "question.contains_answer_number",
+                rid,
+                f"Die Zahl der Antwort ({an['value']:g}) steht in der Frage",
+            )
+    aw = content_words(r.get("answer_core") or a, lang) if at == "text" else set()
+    if aw and len(aw & content_words(q, lang)) / len(aw) >= 0.6:
+        issues.add(
+            "WARN",
+            "question.answer_overlap",
+            rid,
+            f"Antwortwörter stehen in der Frage: {sorted(aw & content_words(q, lang))}",
+        )
+    ev = norm_text((r.get("source") or {}).get("evidence") or "")
+    variants = [norm_text(x) for x in [a, *(r.get("answer_aliases") or [])]]
+    for w in THRESHOLD_WORDS.get(lang, []):
+        if w in ev and not any(w in v for v in variants) and w not in norm_text(q):
+            issues.add(
+                "WARN",
+                "answer.threshold_word",
+                rid,
+                f"Evidenz enthält {w.strip()!r}, Frage und Antwort nicht: Schwelle prüfen",
+            )
+            break
 
 
 def check_record(r, src, issues, seen_ids):
@@ -714,7 +784,15 @@ def check_record(r, src, issues, seen_ids):
         issues.add(
             "ERROR", "format.difficulty", rid, "difficulty_prior muss 1, 2 oder 3 sein"
         )
-    if r.get("status") != "draft" or r.get("needs_human_review") is not True:
+    if FROZEN["value"]:
+        if r.get("status") != "reviewed" or r.get("needs_human_review") is not False:
+            issues.add(
+                "ERROR",
+                "format.status",
+                rid,
+                "im Freeze muss status reviewed und needs_human_review false sein",
+            )
+    elif r.get("status") != "draft" or r.get("needs_human_review") is not True:
         issues.add(
             "ERROR",
             "format.status",
@@ -744,6 +822,7 @@ def check_record(r, src, issues, seen_ids):
         issues.add(
             "WARN", "style.article_in_question", rid, "Frage nennt eine Artikelnummer"
         )
+    check_leaks(r, lang, q, a, issues)
     for name, pat in PII_PATTERNS.items():
         if pat.search(q) or pat.search(a):
             issues.add("ERROR", f"pii.{name}", rid, f"Mögliche Personendaten ({name})")
@@ -946,8 +1025,19 @@ def check_record(r, src, issues, seen_ids):
                 rid,
                 "Artikel seit 2024 unverändert, aber Typ temporal",
             )
-        prev_art = src.article(s.get("act"), s.get("article_id"), lang, "previous")
+        prev_art = src.article_at(
+            s.get("act"), s.get("article_id"), lang, t.get("previous_version_date")
+        ) or src.article(s.get("act"), s.get("article_id"), lang, "previous")
         pev = t.get("previous_evidence") or ""
+        for ov in t.get("outdated_versions") or []:
+            ov_art = src.article_at(s.get("act"), s.get("article_id"), lang, ov.get("version_date"))
+            if not ov_art or norm_text(ov.get("evidence") or "") not in norm_text(ov_art["text"]):
+                issues.add(
+                    "ERROR",
+                    "temporal.version_evidence",
+                    rid,
+                    f"Evidenz der veralteten Antwort {ov.get('outdated_answer')!r} steht nicht in der Fassung {ov.get('version_date')}",
+                )
         if not prev_art:
             issues.add(
                 "ERROR",
@@ -980,6 +1070,24 @@ def check_record(r, src, issues, seen_ids):
                     rid,
                     "Zahl der veralteten Antwort nicht in der Evidenz der Vorfassung",
                 )
+    if r.get("outdated_answers") and art:
+        ev_raw = norm_text(s.get("evidence") or "")
+        earlier = src.earlier_articles(s.get("act"), s.get("article_id"), lang)
+        if earlier and ev_raw and all(ev_raw in norm_text(a_old["text"]) for _, a_old in earlier):
+            issues.add(
+                "WARN",
+                "temporal.evidence_unchanged",
+                rid,
+                "veraltete Antwort angegeben, aber der Belegsatz steht unverändert in allen früheren Fassungen",
+            )
+    quote = s.get("quote") or ""
+    if DISCRETION.search(quote) and qt != "yes_no":
+        issues.add(
+            "WARN",
+            "source.discretion",
+            rid,
+            "Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist",
+        )
     outdated_norm = {norm_text(o) for o in (r.get("outdated_answers") or []) if o}
     near_miss_norm = {norm_text(m) for m in (r.get("near_miss_answers") or []) if m}
     overlap = outdated_norm & near_miss_norm
@@ -1357,8 +1465,14 @@ def main():
     ap.add_argument("--target-total", type=int, default=300)
     ap.add_argument("--min-parallel", type=int, default=150)
     ap.add_argument("--min-human-share", type=float, default=0.30)
+    ap.add_argument(
+        "--frozen",
+        action="store_true",
+        help="frozen release: rows must be status reviewed and needs_human_review false",
+    )
     ap.add_argument("inputs", nargs="+")
     args = ap.parse_args()
+    FROZEN["value"] = args.frozen
     src = Sources(args.fedlex)
     records = []
     issues = Issues()
