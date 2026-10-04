@@ -910,9 +910,9 @@
           1&nbsp;October&nbsp;2026.
         </p>
         <div class="btns">
-          <a class="btn pri" href="#">Dataset on Hugging Face →</a>
-          <a class="btn sec" href="#">▶ Watch the 2-minute video</a>
-          <span class="tbd">[TBD links]</span>
+          <a class="btn pri" href="../report.pdf">Technical report (PDF) →</a>
+          <a class="btn sec" href="../">Project page →</a>
+          <span class="tbd">Dataset on Hugging Face and video: with v1.0.0</span>
         </div>
       </div>
       <img
@@ -1146,7 +1146,7 @@
         Status 4 Oct 2026: draft, not frozen. All cores are LLM drafts (105
         Claude, 103 GPT-5.5 via Codex, 95 Gemini 3.8 Flash via Antigravity);
         0 % hand-written, human review pending.
-        <span class="tbd">[TBD final counts]</span>
+        <span class="tbd">Final counts with v1.0.0 (freeze planned 12 Oct)</span>
       </div>
     </section>
 
@@ -1167,7 +1167,7 @@
           <div class="k">2 · LLM JUDGE</div>
           <h4>A different model family</h4>
           <p>
-            Judge <span class="tbd">[TBD model]</span> grades correct · stale ·
+            Judge Qwen3-235B <span class="tbd">(planned)</span> grades correct · stale ·
             near miss · other · not attempted.
           </p>
         </div>
@@ -1175,17 +1175,17 @@
           <div class="k">3 · HUMAN</div>
           <h4>20 % blind sample</h4>
           <p>
-            Graded without seeing the judge. Agreement as Cohen's κ =
-            <span class="tbd">[TBD]</span>
+            Graded without seeing the judge. Agreement as Cohen's κ,
+            <span class="tbd">reported with v1.0.0</span>
           </p>
         </div>
       </div>
       <table class="res">
         <thead>
           <tr>
-            <th>Apertus 1.5</th>
+            <th>Apertus 1.5 <span class="tbd">preliminary*</span></th>
             <th>Correct DE · FR · IT</th>
-            <th>Stale share of errors</th>
+            <th>Rule changed since 2024: correct · old rule given</th>
             <th>Not attempted</th>
             <th>Effect of the date in the prompt</th>
           </tr>
@@ -1193,21 +1193,22 @@
         <tbody>
           <tr>
             <td>8B</td>
-            <td><span class="tbd">[TBD]</span></td>
-            <td><span class="tbd">[TBD]</span></td>
-            <td><span class="tbd">[TBD]</span></td>
-            <td><span class="tbd">[TBD]</span></td>
+            <td>36 · 35 · 33 %</td>
+            <td>3 / 48 · 6 / 48</td>
+            <td>6.4 %</td>
+            <td>+0.8 pts (p = 0.35)</td>
           </tr>
           <tr>
             <td>70B</td>
-            <td><span class="tbd">[TBD]</span></td>
-            <td><span class="tbd">[TBD]</span></td>
-            <td><span class="tbd">[TBD]</span></td>
-            <td><span class="tbd">[TBD]</span></td>
+            <td>55 · 53 · 48 %</td>
+            <td>5 / 48 · 16 / 48</td>
+            <td>0.5 %</td>
+            <td>±0 pts (p = 1.0)</td>
           </tr>
         </tbody>
       </table>
       <p class="conds">
+        <span class="tbd">* Preliminary: unreviewed draft (879 rows), rule-based grading only, no judge, 21–25 % undecided; final results after the freeze.</span><br />
         <b>Conditions:</b> as-of date in the system prompt (main) · plain
         question · law paragraph in the prompt (open book) to separate a
         knowledge gap from a reading error.<br /><b>Published:</b> every answer,
@@ -1242,7 +1243,7 @@
               ><span>seen and still valid · 602 rows</span>
             </div>
             <div class="v">
-              <span class="vh">ACCURACY</span><span class="tbd">[TBD]</span>
+              <span class="vh">70B, PRELIM.</span>57 %
             </div>
           </div>
           <div class="bk old">
@@ -1251,13 +1252,13 @@
               ><span>seen, then amended · 26 rows</span>
             </div>
             <div class="v">
-              <span class="vh">ACCURACY</span><span class="tbd">[TBD]</span>
+              <span class="vh">70B, PRELIM.</span>19 %
             </div>
           </div>
           <div class="bk abs">
             <div><b>Not in training data</b><span>never seen there · 232 rows</span></div>
             <div class="v">
-              <span class="vh">ACCURACY</span><span class="tbd">[TBD]</span>
+              <span class="vh">70B, PRELIM.</span>43 %
             </div>
           </div>
         </div>
@@ -1295,7 +1296,7 @@
             <div>human_labels/ <span>the 20 % sample</span></div>
           </div>
           <div class="lic">
-            <b>Hugging Face:</b> <span class="tbd">[TBD dataset URL]</span
+            <b>Hugging Face:</b> <span class="tbd">with v1.0.0</span
             ><br />
             <b>Law text:</b> public domain (Art. 5 URG)<br />
             <b>Dataset:</b> CDLA-Permissive-2.0 · <b>Code:</b> Apache-2.0<br />
@@ -1317,11 +1318,11 @@
           </p>
           <div class="links">
             <div>
-              <b>Dataset</b><span class="tbd">[TBD Hugging Face URL]</span>
+              <b>Dataset</b><span class="tbd">Hugging Face, with v1.0.0</span>
             </div>
-            <div><b>Code</b><span class="tbd">[TBD GitHub URL]</span></div>
+            <div><b>Code</b><span>github.com/NWichter/Hack_Apertus_1B_Inkraft</span></div>
             <div>
-              <b>Report</b><span class="tbd">[TBD Apertool_Report.pdf]</span>
+              <b>Report</b><span>inkraft.apertool.ch/report.pdf</span>
             </div>
           </div>
         </div>
