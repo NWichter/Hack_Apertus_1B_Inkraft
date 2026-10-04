@@ -1,0 +1,79 @@
+{
+ "version": "review-v3-cx0063 (2026-10-04)",
+ "reviewer": "claude-opus-5-5 (rewrite decided by Niklas Wichter on 2026-10-04; wording to be confirmed in the human review)",
+ "decisions": [
+  {
+   "core_id": "cx-0063",
+   "action": "patch",
+   "reason": "Decision N3: the question named the condition that is also the answer ('wenn ... vorbezieht' -> 'sobald ... vorbezieht'), so it was circular. Rewritten as an open question about the latest end of the entitlement (Art. 10 para. 3 IVG): gold = until the advance drawing of a whole old-age pension, at the latest the end of the month in which the reference age is reached; outdated = any pension advance or the retirement age (version 2023-01-01).",
+   "all": {
+    "difficulty_prior": 2,
+    "review_notes": [
+     {
+      "review": "review-v2 (2026-10-04)",
+      "note": "OPEN (decision N3, Niklas): the question already contains the answer condition ('wenn ... vorbezieht' -> 'sobald ... vorbezieht'), so the item is circular. Not changed silently; rewrite or drop before the freeze."
+     },
+     {
+      "review": "review-v3-cx0063 (2026-10-04)",
+      "note": "N3 resolved by Niklas (2026-10-04): rewrite instead of keeping it open. New open question on the latest end of the entitlement; to be confirmed in the human review."
+     }
+    ]
+   },
+   "de": {
+    "question": "Bis wann besteht in der IV längstens Anspruch auf Eingliederungsmassnahmen?",
+    "answer": "bis zum Vorbezug einer ganzen Altersrente, spätestens bis Ende des Monats, in dem das Referenzalter erreicht wird",
+    "answer_core": "Referenzalter",
+    "answer_aliases": [
+     "spätestens bis Ende des Monats, in dem die versicherte Person das Referenzalter erreicht",
+     "längstens bis Ende des Monats, in dem das Referenzalter erreicht wird",
+     "bis zum Erreichen des Referenzalters, bei Vorbezug einer ganzen Altersrente bis zum Vorbezug"
+    ],
+    "near_miss_answers": [
+     "bis Ende des Jahres, in dem das Referenzalter erreicht wird"
+    ],
+    "outdated_answers": [
+     "bis Ende des Monats, in dem vom Rentenvorbezug Gebrauch gemacht oder das Rentenalter erreicht wird",
+     "spätestens am Ende des Monats, in welchem die versicherte Person vom Rentenvorbezug nach Artikel 40 Absatz 1 AHVG Gebrauch macht oder in welchem sie das Rentenalter erreicht"
+    ],
+    "source.evidence": "sobald die versicherte Person eine ganze Altersrente nach Artikel 40 Absatz 1 AHVG vorbezieht, spätestens aber am Ende des Monats, in dem sie das Referenzalter nach Artikel 21 Absatz 1 AHVG erreicht",
+    "temporal.previous_evidence": "spätestens am Ende des Monats, in welchem die versicherte Person vom Rentenvorbezug nach Artikel 40 Absatz 1 AHVG Gebrauch macht oder in welchem sie das Rentenalter erreicht"
+   },
+   "fr": {
+    "question": "Jusqu’à quand le droit aux mesures de réadaptation de l’AI existe-t-il au plus tard?",
+    "answer": "jusqu’à la perception anticipée de la totalité de la rente de vieillesse, mais au plus tard jusqu’à la fin du mois au cours duquel l’assuré atteint l’âge de référence",
+    "answer_core": "l’âge de référence",
+    "answer_aliases": [
+     "au plus tard à la fin du mois au cours duquel l’assuré atteint l’âge de référence",
+     "jusqu’à l’âge de référence, ou jusqu’à la perception anticipée de la totalité de la rente de vieillesse"
+    ],
+    "near_miss_answers": [
+     "jusqu’à la fin de l’année au cours de laquelle l’assuré atteint l’âge de référence"
+    ],
+    "outdated_answers": [
+     "jusqu’à la fin du mois pendant lequel l’assuré a fait usage de son droit de percevoir une rente anticipée ou a atteint l’âge de la retraite",
+     "au plus tard à la fin du mois pendant lequel l’assuré a fait usage de son droit de percevoir une rente anticipée, conformément à l’art. 40, al. 1, LAVS, ou à la fin du mois au cours duquel il a atteint l’âge de la retraite"
+    ],
+    "source.evidence": "dès que l’assuré perçoit de manière anticipée la totalité de sa rente de vieillesse en vertu de l’art. 40, al. 1, LAVS, mais au plus tard à la fin du mois au cours duquel il atteint l’âge de référence fixé à l’art. 21, al. 1, LAVS",
+    "temporal.previous_evidence": "au plus tard à la fin du mois pendant lequel l’assuré a fait usage de son droit de percevoir une rente anticipée, conformément à l’art. 40, al. 1, LAVS, ou à la fin du mois au cours duquel il a atteint l’âge de la retraite"
+   },
+   "it": {
+    "question": "Fino a quando sussiste al massimo il diritto ai provvedimenti d’integrazione dell’AI?",
+    "answer": "fino alla riscossione anticipata della totalità della rendita di vecchiaia, ma al più tardi fino alla fine del mese in cui l’assicurato raggiunge l’età di riferimento",
+    "answer_core": "l’età di riferimento",
+    "answer_aliases": [
+     "al più tardi alla fine del mese in cui l’assicurato raggiunge l’età di riferimento",
+     "fino all’età di riferimento, o fino alla riscossione anticipata della totalità della rendita di vecchiaia"
+    ],
+    "near_miss_answers": [
+     "fino alla fine dell’anno in cui l’assicurato raggiunge l’età di riferimento"
+    ],
+    "outdated_answers": [
+     "fino alla fine del mese in cui l’assicurato si avvale del diritto di ottenere una rendita anticipata o raggiunge l’età del pensionamento",
+     "al più tardi alla fine del mese in cui l’assicurato si avvale del diritto di ottenere una rendita anticipata, conformemente all’articolo 40 capoverso 1 LAVS, o alla fine del mese in cui raggiunge l’età del pensionamento"
+    ],
+    "source.evidence": "nel momento in cui l’assicurato anticipa la riscossione della totalità della rendita di vecchiaia in virtù dell’articolo 40 capoverso 1 LAVS, ma al più tardi alla fine del mese in cui raggiunge l’età di riferimento secondo l’articolo 21 capoverso 1 LAVS",
+    "temporal.previous_evidence": "al più tardi alla fine del mese in cui l’assicurato si avvale del diritto di ottenere una rendita anticipata, conformemente all’articolo 40 capoverso 1 LAVS, o alla fine del mese in cui raggiunge l’età del pensionamento"
+   }
+  }
+ ]
+}
