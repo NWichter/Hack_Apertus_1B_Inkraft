@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"KVV\", \"article_id\": \"art_30_a\", \"paragraph\": \"7\", \"domain\": \"kvg_billing\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"In der obligatorischen Krankenpflegeversicherung: Auf welche Bestimmung wird für die analoge Anwendung verwiesen, wenn Daten nach Artikel 30 KVV mit anderen Datenquellen verknüpft werden, um Qualitätsindikatoren zu gewinnen?\", \"answer\": \"2. Kapitel 6. Abschnitt der Bundesstatistikverordnung vom 30. April 2025\", \"answer_aliases\": [\"Kapitel 2, Abschnitt 6 der Bundesstatistikverordnung vom 30. April 2025\", \"Bundesstatistikverordnung vom 30. April 2025, 2. Kapitel 6. Abschnitt\"], \"near_miss_answers\": [\"Bestimmungen über die Verknüpfung von Daten im Auftrag Dritter\", \"Artikel 30 KVV\", \"Bundesstatistikverordnung vom 30. April 2025\"], \"evidence\": \"Das 2. Kapitel 6. Abschnitt der Bundesstatistikverordnung vom 30. April 2025 ist mit Ausnahme der Bestimmungen über die Verknüpfung von Daten im Auftrag Dritter sinngemäss anwendbar.\"}, \"fr\": {\"question\": \"Dans l'assurance-maladie obligatoire : à quelle disposition est-on renvoyé pour l'application par analogie lorsque des données visées à l'art. 30 RVS sont appariées à d'autres sources de données pour produire des indicateurs de qualité?\", \"answer\": \"chapitre 2, section 6, de l’ordonnance du 30 avril 2025 sur la statistique fédérale\", \"answer_aliases\": [\"chapitre 2, section 6 de l'ordonnance du 30 avril 2025 sur la statistique fédérale\", \"ordonnance du 30 avril 2025 sur la statistique fédérale, chapitre 2 section 6\"], \"near_miss_answers\": [\"dispositions réglant l'appariement de données sur mandat de tiers\", \"art. 30 RVS\", \"ordonnance du 30 avril 2025 sur la statistique fédérale\"], \"evidence\": \"Le chapitre 2, section 6, de l’ordonnance du 30 avril 2025 sur la statistique fédérale s’applique par analogie.\"}, \"it\": {\"question\": \"Nell'assicurazione malattie obbligatoria: a quale disposizione si rinvia per l'applicazione per analogia quando i dati di cui all'articolo 30 OAMal sono collegati con altre fonti di dati per produrre indicatori di qualità?\", \"answer\": \"capitolo 2 sezione 6 dell’ordinanza del 30 aprile 2025 sulla statistica federale\", \"answer_aliases\": [\"capitolo 2, sezione 6 dell'ordinanza del 30 aprile 2025 sulla statistica federale\", \"ordinanza del 30 aprile 2025 sulla statistica federale, capitolo 2 sezione 6\"], \"near_miss_answers\": [\"disposizioni sul collegamento di dati su mandato di terzi\", \"articolo 30 OAMal\", \"ordinanza del 30 aprile 2025 sulla statistica federale\"], \"evidence\": \"Il capitolo 2 sezione 6 dell’ordinanza del 30 aprile 2025 sulla statistica federale è applicabile per analogia.\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2025-01-01\", \"paragraph\": \"7\", \"de\": {\"outdated_answer\": \"Artikel 13h–13n der Statistikerhebungsverordnung vom 30. Juni 1993\", \"evidence\": \"Die Artikel 13h–13n der Statistikerhebungsverordnung vom 30. Juni 1993 mit Ausnahme der Bestimmungen über die Verknüpfung von Daten im Auftrag Dritter sind sinngemäss anwendbar.\"}, \"fr\": {\"outdated_answer\": \"art. 13h à 13n de l’ordonnance du 30 juin 1993 sur les relevés statistiques\", \"evidence\": \"Les art. 13h à 13n de l’ordonnance du 30 juin 1993 sur les relevés statistiques s’appliquent par analogie, à l’exception des dispositions réglant l’appariement de données sur mandat de tiers.\"}, \"it\": {\"outdated_answer\": \"articoli 13h–13n dell’ordinanza del 30 giugno 1993 sulle rilevazioni statistiche\", \"evidence\": \"Gli articoli 13h–13n dell’ordinanza del 30 giugno 1993 sulle rilevazioni statistiche, a eccezione delle disposizioni sul collegamento di dati su mandato di terzi, sono applicabili per analogia.\"}}]}}",
+ "reasoning_chars": 18421,
+ "usage": {
+  "prompt_tokens": 1905,
+  "completion_tokens": 6188,
+  "total_tokens": 8093,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 4679,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 123.5,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

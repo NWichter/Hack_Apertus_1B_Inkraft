@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"KVV\", \"article_id\": \"art_28\", \"paragraph\": \"6\", \"domain\": \"kvg_billing\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Welche Buchstaben von Artikel 21 Absatz 2 KVG sind für die Datenverknüpfung zur Aufwandminderung massgebend?\", \"answer\": \"a–e\", \"answer_aliases\": [\"a-e\", \"a bis e\"], \"near_miss_answers\": [\"a–c\", \"a–d\", \"b–e\"], \"evidence\": \"Artikel 21 Absatz 2 Buchstaben a–e KVG\"}, \"fr\": {\"question\": \"Quelles lettres de l'article 21, alinéa 2, LAMal déterminent le champ des tâches pour l'appariement des données visant à réduire les coûts?\", \"answer\": \"a–e\", \"answer_aliases\": [\"a-e\", \"a à e\"], \"near_miss_answers\": [\"a–c\", \"a–d\", \"b–e\"], \"evidence\": \"art. 21, al. 2, let. a à e, LAMal\"}, \"it\": {\"question\": \"Quali lettere dell'articolo 21, capoverso 2, LAMal determinano l'ambito dei compiti per il collegamento dei dati volto a ridurre l'aggravio?\", \"answer\": \"a–e\", \"answer_aliases\": [\"a-e\", \"a e\", \"lettere a–e\"], \"near_miss_answers\": [\"a–c\", \"a–d\", \"b–e\"], \"evidence\": \"articolo 21 capoverso 2 lettere a–e LAMal\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2025-07-01\", \"paragraph\": \"6\", \"de\": {\"outdated_answer\": \"a–c\", \"evidence\": \"Artikel 21 Absatz 2 Buchstaben a–c KVG\"}, \"fr\": {\"outdated_answer\": \"a–c\", \"evidence\": \"art. 21, al. 2, let. a à c, LAMal\"}, \"it\": {\"outdated_answer\": \"a–c\", \"evidence\": \"articolo 21 capoverso 2 lettere a–c LAMal\"}}]}}",
+ "reasoning_chars": 14683,
+ "usage": {
+  "prompt_tokens": 2070,
+  "completion_tokens": 4926,
+  "total_tokens": 6996,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 3812,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 90.4,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

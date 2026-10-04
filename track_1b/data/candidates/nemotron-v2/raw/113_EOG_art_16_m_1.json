@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"EOG\", \"article_id\": \"art_16_m\", \"paragraph\": \"1\", \"domain\": \"eo_alv\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 1, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Welche Entschädigung schliesst den Bezug von Taggeldern der Arbeitslosenversicherung, der Invalidenversicherung, der Unfallversicherung, der Militärversicherung und der Entschädigung nach den Artikeln 9 und 10 aus?\", \"answer\": \"Entschädigung des andern Elternteils\", \"answer_aliases\": [\"Entschädigung des andern Elternteils\", \"Entschädigung des anderen Elternteils\", \"Andern-Elternteils-Entschädigung\"], \"near_miss_answers\": [\"Mutterschaftsentschädigung\", \"Betreuungsentschädigung\", \"Adoptionsentschädigung\"], \"evidence\": \"Die Entschädigung des andern Elternteils schliesst den Bezug der folgenden Taggelder aus:\"}, \"fr\": {\"question\": \"Quelle allocation exclut le versement des indemnités journalières de l'assurance-chômage, de l'assurance-invalidité, de l'assurance-accidents, de l'assurance militaire et du régime des allocations au sens des articles 9 et 10 ?\", \"answer\": \"Allocation à l'autre parent\", \"answer_aliases\": [\"Allocation à l'autre parent\", \"Allocation pour l'autre parent\"], \"near_miss_answers\": [\"Allocation de maternité\", \"Allocation d'adoption\", \"Allocation de prise en charge\"], \"evidence\": \"L'allocation à l'autre parent exclut le versement des indemnités journalières:\"}, \"it\": {\"question\": \"Quale indennità esclude il versamento delle indennità giornaliere dell'assicurazione contro la disoccupazione, dell'assicurazione per l'invalidità, dell'assicurazione contro gli infortuni, dell'assicurazione militare e delle indennità di cui agli articoli 9 e 10?\", \"answer\": \"Indennità per l'altro genitore\", \"answer_aliases\": [\"Indennità per l'altro genitore\", \"Indennità per l'altro genitore\"], \"near_miss_answers\": [\"Indennità di maternità\", \"Indennità di adozione\", \"Indennità di cura\"], \"evidence\": \"L'indennità per l'altro genitore esclude il versamento delle seguenti altre indennità giornaliere:\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-01-01\", \"paragraph\": \"1\", \"de\": {\"outdated_answer\": \"Vaterschaftsentschädigung\", \"evidence\": \"Die Vaterschaftsentschädigung schliesst den Bezug der folgenden Taggelder aus:\"}, \"fr\": {\"outdated_answer\": \"Allocation de paternité\", \"evidence\": \"L'allocation de paternité exclut le versement des indemnités journalières:\"}, \"it\": {\"outdated_answer\": \"Indennità di paternità\", \"evidence\": \"L'indennità di paternità esclude il versamento delle seguenti altre indennità giornaliere:\"}}]}}",
+ "reasoning_chars": 7806,
+ "usage": {
+  "prompt_tokens": 1904,
+  "completion_tokens": 2808,
+  "total_tokens": 4712,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 1992,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 50.2,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"KVV\", \"article_id\": \"art_50_c\", \"paragraph\": \"\", \"domain\": \"kvg_billing\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"date\", \"answer_normalized\": null, \"de\": {\"question\": \"Auf welches Datum datiert das massgebende Weiterbildungsprogramm «Fachärztin oder Facharzt für Psychiatrie und Psychotherapie» für die Kategorie A, B oder C in der obligatorischen Krankenversicherung?\", \"answer\": \"1. Januar 2024\", \"answer_aliases\": [\"01.01.2024\", \"1.1.2024\"], \"near_miss_answers\": [\"1. Juli 2006\", \"20. Dezember 2018\"], \"evidence\": \"Weiterbildungsprogramm «Fachärztin oder Facharzt für Psychiatrie und Psychotherapie» vom 1. Januar 2024\"}, \"fr\": {\"question\": \"À quelle date remonte le programme de formation postgraduée déterminant «Spécialiste en psychiatrie et psychothérapie» pour les catégories A, B ou C dans l'assurance-maladie obligatoire?\", \"answer\": \"1er janvier 2024\", \"answer_aliases\": [\"01.01.2024\", \"1.1.2024\"], \"near_miss_answers\": [\"1er juillet 2006\", \"20 décembre 2018\"], \"evidence\": \"programme de formation postgraduée «Spécialiste en psychiatrie et psychothérapie» du 1er janvier 2024\"}, \"it\": {\"question\": \"A quale data risale il programma di perfezionamento professionale determinante «Specialista in psichiatria e psicoterapia» per le categorie A, B o C nell'assicurazione malattie obbligatoria?\", \"answer\": \"1° gennaio 2024\", \"answer_aliases\": [\"01.01.2024\", \"1.1.2024\"], \"near_miss_answers\": [\"1° luglio 2006\", \"20 dicembre 2018\"], \"evidence\": \"programma di perfezionamento professionale «Specialista in psichiatria e psicoterapia» del 1° gennaio 2024\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2024-02-01\", \"paragraph\": \"\", \"de\": {\"outdated_answer\": \"1. Juli 2009\", \"evidence\": \"Weiterbildungsprogramm «Facharzt für Psychiatrie und Psychotherapie» vom 1. Juli 2009 in der Fassung vom 15. Dezember 2016\"}, \"fr\": {\"outdated_answer\": \"1er juillet 2009\", \"evidence\": \"programme de formation postgraduée «Spécialiste en psychiatrie et psychothérapie» du 1er juillet 2009, dans la version du 15 décembre 2016\"}, \"it\": {\"outdated_answer\": \"1° luglio 2009\", \"evidence\": \"programma di perfezionamento professionale «Specialista in psichiatria e psicoterapia» del 1° luglio 2009 nella versione del 15 dicembre 2016\"}}]}}",
+ "reasoning_chars": 14776,
+ "usage": {
+  "prompt_tokens": 3370,
+  "completion_tokens": 5113,
+  "total_tokens": 8483,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 3770,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 116.3,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

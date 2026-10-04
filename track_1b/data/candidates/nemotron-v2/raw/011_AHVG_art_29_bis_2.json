@@ -1,0 +1,38 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"AHVG\", \"article_id\": \"art_29_bis\", \"paragraph\": \"2\", \"domain\": \"ahv\", \"question_type\": \"procedural\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Welche Gutschriften werden neben Beitragsjahren und Erwerbseinkommen für die Rentenberechnung berücksichtigt?\", \"answer\": \"Erziehungs- oder Betreuungsgutschriften\", \"answer_aliases\": [\"Erziehungs- oder Betreuungsgutschriften der rentenberechtigten Person\", \"Erziehungs- oder Betreuungsgutschriften zwischen dem 1. Januar nach Vollendung des 20. Altersjahres und dem 31. Dezember vor Eintritt des Versicherungsfalles\"], \"near_miss_answers\": [\"Beitragsjahre\", \"Erwerbseinkommen\", \"Erziehungsgutschriften\"], \"evidence\": \"Erziehungs- oder Betreuungsgutschriften der rentenberechtigten Person zwischen dem 1. Januar nach Vollendung des 20. Altersjahres und dem 31. Dezember vor Eintritt des Versicherungsfalles (Referenzalter oder Tod) berücksichtigt.\"}, \"fr\": {\"question\": \"Outre les années de cotisation et les revenus d’activité lucrative, quelles bonifications entrent dans le calcul de la rente ?\", \"answer\": \"bonifications pour tâches éducatives ou pour tâches d’assistance\", \"answer_aliases\": [\"bonifications pour tâches éducatives ou pour tâches d’assistance de l’ayant droit\", \"bonifications pour tâches éducatives ou pour tâches d’assistance entre le 1er janvier qui suit la date à laquelle l’ayant droit a eu 20 ans révolus et le 31 décembre qui précède la réalisation du risque assuré\"], \"near_miss_answers\": [\"années de cotisation\", \"revenus d’activité lucrative\", \"bonifications pour tâches éducatives\"], \"evidence\": \"les bonifications pour tâches éducatives ou pour tâches d’assistance entre le 1er janvier qui suit la date à laquelle l’ayant droit a eu 20 ans révolus et le 31 décembre qui précède la réalisation du risque assuré (âge de référence ou décès).\"}, \"it\": {\"question\": \"Oltre agli anni di contribuzione e ai redditi da attività lucrativa, quali accrediti concorrono al calcolo della rendita?\", \"answer\": \"accrediti per compiti educativi o per compiti assistenziali\", \"answer_aliases\": [\"accrediti per compiti educativi o per compiti assistenziali dell’avente diritto\", \"accrediti per compiti educativi o per compiti assistenziali, totalizzati tra il 1° gennaio dell’anno successivo a quello in cui l’avente diritto ha compiuto i 20 anni e il 31 dicembre che precede l’insorgere dell’evento assicurato\"], \"near_miss_answers\": [\"anni di contribuzione\", \"redditi da attività lucrativa\", \"accrediti per compiti educativi\"], \"evidence\": \"gli accrediti per compiti educativi o per compiti assistenziali, totalizzati tra il 1° gennaio dell’anno successivo a quello in cui l’avente diritto ha compiuto i 20 anni e il 31 dicembre che precede l’insorgere dell’evento assicurato (raggiungimento dell’età di riferimento o decesso).\"}, \"temporal\": null}",
+ "reasoning_chars": 21439,
+ "usage": {
+  "prompt_tokens": 1892,
+  "completion_tokens": 6382,
+  "total_tokens": 8274,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 5509,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 184.3,
+ "attempts": 1,
+ "generated_at": "2026-10-04",
+ "settings": {
+  "max_tokens": 24000,
+  "reasoning_effort": "medium",
+  "temperature": 0.3
+ }
+}

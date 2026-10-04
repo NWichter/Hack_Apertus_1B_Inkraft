@@ -1,0 +1,38 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"AVIV\", \"article_id\": \"art_6\", \"paragraph\": \"1ter\", \"domain\": \"eo_alv\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 3, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Mit welchem Wort endet die Vorschrift über die Teilnahme an einem Berufspraktikum während der Wartezeit in der obligatorischen Arbeitslosenversicherung?\", \"answer\": \"teilnehmen\", \"answer_aliases\": [\"teilnehmen.\", \"teilnehmen\"], \"near_miss_answers\": [\"Wartezeit\", \"Berufspraktikum\", \"AVIG\"], \"evidence\": \"teilnehmen.\"}, \"fr\": {\"question\": \"Par quel mot se termine la disposition relative à la participation à un stage professionnel pendant le délai d’attente dans l’assurance-chômage obligatoire?\", \"answer\": \"attente\", \"answer_aliases\": [\"attente.\", \"attente\"], \"near_miss_answers\": [\"délai\", \"stage\", \"LACI\"], \"evidence\": \"attente.\"}, \"it\": {\"question\": \"Con quale parola termina la disposizione sulla partecipazione a un periodo di pratica professionale durante il periodo di attesa nell’assicurazione contro la disoccupazione obbligatoria?\", \"answer\": \"attesa\", \"answer_aliases\": [\"attesa.\", \"attesa\"], \"near_miss_answers\": [\"periodo\", \"pratica\", \"LADI\"], \"evidence\": \"attesa.\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2025-11-01\", \"paragraph\": \"1ter\", \"de\": {\"outdated_answer\": \"übersteigt\", \"evidence\": \"übersteigt.\"}, \"fr\": {\"outdated_answer\": \"Suisse\", \"evidence\": \"Suisse.\"}, \"it\": {\"outdated_answer\": \"cento\", \"evidence\": \"cento.\"}}]}}",
+ "reasoning_chars": 93415,
+ "usage": {
+  "prompt_tokens": 1786,
+  "completion_tokens": 23355,
+  "total_tokens": 25141,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 23690,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 600.4,
+ "attempts": 1,
+ "generated_at": "2026-10-04",
+ "settings": {
+  "max_tokens": 24000,
+  "reasoning_effort": "medium",
+  "temperature": 0.3
+ }
+}

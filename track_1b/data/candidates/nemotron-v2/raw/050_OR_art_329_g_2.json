@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"OR\", \"article_id\": \"art_329_g\", \"paragraph\": \"2\", \"domain\": \"or_illness\", \"question_type\": \"yes_no\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"yes_no\", \"answer_normalized\": null, \"de\": {\"question\": \"Wird die Frist für den Bezug des Urlaubs nach Artikel 329g während des Urlaubs nach Artikel 329gbis stillgestellt?\", \"answer\": \"Ja\", \"answer_aliases\": [\"Ja\", \"Ja.\"], \"near_miss_answers\": [\"Nein\"], \"evidence\": \"Diese Frist steht während des Urlaubs nach Artikel 329gbis still.\"}, \"fr\": {\"question\": \"Le délai pour prendre le congé au sens de l'article 329g est-il suspendu pendant le congé au sens de l'article 329gbis ?\", \"answer\": \"Oui\", \"answer_aliases\": [\"Oui\", \"Oui.\"], \"near_miss_answers\": [\"Non\"], \"evidence\": \"Ce délai est suspendu pendant le congé au sens de l’art. 329gbis.\"}, \"it\": {\"question\": \"Il termine per fruire del congedo secondo l'articolo 329g è sospeso durante il congedo secondo l'articolo 329gbis ?\", \"answer\": \"Sì\", \"answer_aliases\": [\"Sì\", \"Sì.\"], \"near_miss_answers\": [\"No\"], \"evidence\": \"Tale termine è sospeso durante il congedo secondo l’articolo 329gbis.\"}, \"temporal\": null}",
+ "reasoning_chars": 20086,
+ "usage": {
+  "prompt_tokens": 1617,
+  "completion_tokens": 5583,
+  "total_tokens": 7200,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 5099,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 153.3,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

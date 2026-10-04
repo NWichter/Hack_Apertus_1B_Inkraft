@@ -1,0 +1,29 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "content": "{\"rewrite\": true, \"question_type\": \"procedural\", \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Wer muss in der Grundversicherung die Prämien übernehmen, damit kein Prämienzuschlag erhoben wird?\", \"answer\": \"eine Sozialhilfebehörde\", \"answer_aliases\": [\"Sozialhilfebehörde\", \"die Sozialhilfebehörde\"], \"near_miss_answers\": [\"Versicherer\", \"Versicherte\", \"Gemeinde\"], \"evidence\": \"Wenn eine Sozialhilfebehörde für die Prämien aufkommt, wird kein Prämienzuschlag erhoben.\"}, \"fr\": {\"question\": \"Qui doit prendre en charge les primes dans l’assurance de base pour qu’aucun supplément ne soit perçu?\", \"answer\": \"l’autorité compétente d’aide sociale\", \"answer_aliases\": [\"autorité compétente d’aide sociale\", \"autorité d’aide sociale\"], \"near_miss_answers\": [\"l’assureur\", \"le service social\", \"la commune\"], \"evidence\": \"Il n’est pas perçu de supplément lorsque les primes sont prises en charge par l’autorité compétente d’aide sociale.\"}, \"it\": {\"question\": \"Chi deve assumere i premi nell’assicurazione di base perché non sia riscosso alcun supplemento?\", \"answer\": \"un’autorità d’assistenza sociale\", \"answer_aliases\": [\"autorità d’assistenza sociale\", \"l’autorità d’assistenza sociale\"], \"near_miss_answers\": [\"l’assicuratore\", \"il servizio sociale\", \"il comune\"], \"evidence\": \"Non è riscosso alcun supplemento se i premi sono assunti da un’autorità d’assistenza sociale.\"}}",
+ "usage": {
+  "prompt_tokens": 1120,
+  "completion_tokens": 7234,
+  "total_tokens": 8354,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 6618,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 182.6,
+ "generated_at": "2026-10-04"
+}

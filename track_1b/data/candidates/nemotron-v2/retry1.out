@@ -1,0 +1,23 @@
+ 12 AHVG art_5 3 ok
+ 11 AHVG art_29_bis 2 ok
+ 23 ELG art_11 3 ok
+ 17 BVV2 art_60_a 3 ok
+ 25 AHVG art_29_bis 5 ok
+ 28 AHVG art_29_sexies 3 ok
+ 34 AVIV art_27 3 ok
+ 35 AVIV art_30  ok
+ 44 KVG art_53 1 ok
+ 46 KVV art_71 4 ok
+ 48 UVG art_22  ok
+ 36 AVIV art_6 1ter ok
+ 49 AVIV art_10_d 2 ok
+ 52 AHVG art_24_b  ok
+ 54 KVV art_106_c 1 ok
+ 51 UVG art_31 4 ok
+ 55 AVIG art_37  ok
+ 59 AHVV art_54_bis 2 ok
+ 64 KVV art_22 3 ok
+ 65 AHVV art_34_d 2 ok
+ 68 AHVV art_53 1 ok
+ 69 AHVV art_99 5 ok
+regenerated [11, 12, 17, 23, 25, 28, 34, 35, 36, 44, 46, 48, 49, 51, 52, 54, 55, 59, 64, 65, 68, 69]; rebuild with --build-only

@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"BVV2\", \"article_id\": \"art_1\", \"paragraph\": \"3\", \"domain\": \"bvg_3a\", \"question_type\": \"procedural\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Was wird bei der Bewertung der Angemessenheit eines Vorsorgeplans nicht berücksichtigt?\", \"answer\": \"die 13. Altersrente\", \"answer_aliases\": [\"13. Altersrente\", \"die 13. Altersrente (Art. 34ter AHVG)\"], \"near_miss_answers\": [\"Altersleistungen aus der beruflichen Vorsorge\", \"AHV-Rente\", \"die ordentliche Altersrente\"], \"evidence\": \"Die 13. Altersrente nach Artikel 34ter des Bundesgesetzes vom 20. Dezember 1946 über die Alters- und Hinterlassenenversicherung (AHVG) wird bei der Bewertung der Angemessenheit eines Vorsorgeplans nicht berücksichtigt.\"}, \"fr\": {\"question\": \"Qu'est-ce qui n'est pas pris en compte lors de l'évaluation de l'adéquation d'un plan de prévoyance ?\", \"answer\": \"la 13e rente de vieillesse\", \"answer_aliases\": [\"13e rente de vieillesse\", \"la 13e rente de vieillesse (art. 34ter LAVS)\"], \"near_miss_answers\": [\"prestations de vieillesse de la prévoyance professionnelle\", \"rente AVS\", \"rente de vieillesse ordinaire\"], \"evidence\": \"La 13e rente de vieillesse visée à l’art. 34ter de la loi fédérale du 20 décembre 1946 sur l’assurance-vieillesse et survivants (LAVS) n’est pas prise en compte dans l’évaluation de l’adéquation d’un plan de prévoyance.\"}, \"it\": {\"question\": \"Cosa non viene preso in considerazione per valutare l'adeguatezza di un piano di previdenza?\", \"answer\": \"la 13a mensilità della rendita di vecchiaia\", \"answer_aliases\": [\"13a mensilità della rendita di vecchiaia\", \"la 13a mensilità (art. 34ter LAVS)\"], \"near_miss_answers\": [\"prestazioni di vecchiaia della previdenza professionale\", \"rendita AVS\", \"rendita di vecchiaia ordinaria\"], \"evidence\": \"La 13a mensilità della rendita di vecchiaia di cui all’articolo 34ter della legge federale del 20 dicembre 1946 sull’assicurazione per la vecchiaia e per i superstiti (LAVS) non è presa in considerazione per valutare l’adeguatezza di un piano di previdenza.\"}, \"temporal\": null}",
+ "reasoning_chars": 14959,
+ "usage": {
+  "prompt_tokens": 2146,
+  "completion_tokens": 4725,
+  "total_tokens": 6871,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 3810,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 150.4,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

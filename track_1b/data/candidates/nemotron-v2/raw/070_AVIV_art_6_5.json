@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"AVIV\", \"article_id\": \"art_6\", \"paragraph\": \"5\", \"domain\": \"eo_alv\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"In der Arbeitslosenversicherung: Welche Art von Tagen muss je Kontrollperiode nicht mehr als fünf betragen, damit die Wartezeit nach Absatz 4 entfällt?\", \"answer\": \"Tage kontrollierter Arbeitslosigkeit\", \"answer_aliases\": [\"kontrollierter Arbeitslosigkeit\", \"fünf Tage kontrollierter Arbeitslosigkeit\"], \"near_miss_answers\": [\"zwei Monate\", \"ein Jahr\", \"wirtschaftliche Gründe\"], \"evidence\": \"wenn je Kontrollperiode nicht mehr als fünf Tage kontrollierter Arbeitslosigkeit ausgewiesen werden\"}, \"fr\": {\"question\": \"Dans l'assurance-chômage: quel type de jours ne doit pas dépasser cinq par période de contrôle pour que le délai d’attente de l’alinéa 4 devienne caduc?\", \"answer\": \"jours de chômage contrôlé\", \"answer_aliases\": [\"chômage contrôlé\", \"cinq jours de chômage contrôlé\"], \"near_miss_answers\": [\"deux mois\", \"un an\", \"motifs d’ordre économique\"], \"evidence\": \"lorsque l’assuré ne justifie pas de plus de cinq jours de chômage contrôlé par période de contrôle\"}, \"it\": {\"question\": \"Nell'assicurazione contro la disoccupazione: quale tipo di giorni non deve superare i cinque per periodo di controllo affinché il periodo di attesa del capoverso 4 non debba essere compiuto?\", \"answer\": \"giorni di disoccupazione controllata\", \"answer_aliases\": [\"disoccupazione controllata\", \"cinque giorni di disoccupazione controllata\"], \"near_miss_answers\": [\"due mesi\", \"un anno\", \"motivi economici\"], \"evidence\": \"se, per un periodo di controllo, l’assicurato non effettua più di cinque giorni di disoccupazione controllata\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2025-11-01\", \"paragraph\": \"5\", \"de\": {\"outdated_answer\": \"Arbeitstage\", \"evidence\": \"wenn je Kontrollperiode insgesamt nicht mehr als fünf Arbeitstage nachgewiesen werden\"}, \"fr\": {\"outdated_answer\": \"jours de travail\", \"evidence\": \"lorsque l’assuré ne justifie pas de plus de cinq jours de travail par période de contrôle\"}, \"it\": {\"outdated_answer\": \"giorni di lavoro\", \"evidence\": \"se, per un periodo di controllo, l’assicurato non comprova più di cinque giorni di lavoro\"}}]}}",
+ "reasoning_chars": 14786,
+ "usage": {
+  "prompt_tokens": 2043,
+  "completion_tokens": 4280,
+  "total_tokens": 6323,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 3811,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 131.7,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

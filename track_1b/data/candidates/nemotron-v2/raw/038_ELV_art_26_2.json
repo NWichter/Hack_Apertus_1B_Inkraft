@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"ELV\", \"article_id\": \"art_26\", \"paragraph\": \"2\", \"domain\": \"iv_el\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Auf welcher Stadt/Land-Typologie basiert die Einteilung der übrigen Gemeinden in die zwei Mietzinsregionen?\", \"answer\": \"2020\", \"answer_aliases\": [\"2020\", \"2'020\"], \"near_miss_answers\": [\"2019\", \"2021\"], \"evidence\": \"Stadt/Land-Typologie 2020\"}, \"fr\": {\"question\": \"Sur quelle typologie urbain-rural repose la répartition des autres communes dans les deux régions de loyer?\", \"answer\": \"2020\", \"answer_aliases\": [\"2020\", \"2'020\"], \"near_miss_answers\": [\"2019\", \"2021\"], \"evidence\": \"typologie urbain-rural 2020\"}, \"it\": {\"question\": \"Su quale tipologia urbano-rurale si basa la ripartizione dei rimanenti Comuni tra le altre due regioni d'affitto?\", \"answer\": \"2020\", \"answer_aliases\": [\"2020\", \"2'020\"], \"near_miss_answers\": [\"2019\", \"2021\"], \"evidence\": \"tipologia urbano-rurale 2020\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2024-04-03\", \"paragraph\": \"2\", \"de\": {\"outdated_answer\": \"2012\", \"evidence\": \"Stadt/Land-Typologie 2012\"}, \"fr\": {\"outdated_answer\": \"2012\", \"evidence\": \"typologie urbain-rural 2012\"}, \"it\": {\"outdated_answer\": \"2012\", \"evidence\": \"tipologia urbano-rurale 2012\"}}]}}",
+ "reasoning_chars": 8982,
+ "usage": {
+  "prompt_tokens": 1808,
+  "completion_tokens": 3015,
+  "total_tokens": 4823,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2270,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 124.9,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

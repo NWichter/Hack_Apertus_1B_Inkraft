@@ -1,0 +1,29 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "content": "{\"rewrite\": true, \"question_type\": \"procedural\", \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Was muss eine versicherte Person in der obligatorischen Krankenpflegeversicherung bei nicht entschuldbarer Verspätung entrichten?\", \"answer\": \"Prämienzuschlag\", \"answer_aliases\": [\"Zuschlag\", \"einen Prämienzuschlag\"], \"near_miss_answers\": [\"Prämie\", \"Beitrag\", \"Kostenbeteiligung\"], \"evidence\": \"Bei nicht entschuldbarer Verspätung entrichtet die versicherte Person einen Prämienzuschlag.\"}, \"fr\": {\"question\": \"Que doit verser un assuré dans l’assurance obligatoire des soins en cas de retard non excusable?\", \"answer\": \"supplément de prime\", \"answer_aliases\": [\"supplément\", \"un supplément de prime\"], \"near_miss_answers\": [\"prime\", \"cotisation\", \"participation\"], \"evidence\": \"L’assuré doit verser un supplément de prime si le retard n’est pas excusable.\"}, \"it\": {\"question\": \"Cosa deve pagare un assicurato nell’assicurazione obbligatoria delle cure medico-sanitarie in caso di ritardo non giustificabile?\", \"answer\": \"supplemento di premio\", \"answer_aliases\": [\"supplemento\", \"un supplemento di premio\"], \"near_miss_answers\": [\"premio\", \"contributo\", \"quota\"], \"evidence\": \"L’assicurato deve pagare un supplemento di premio se il ritardo non è giustificabile.\"}}",
+ "usage": {
+  "prompt_tokens": 1407,
+  "completion_tokens": 4277,
+  "total_tokens": 5684,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 3697,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 129.7,
+ "generated_at": "2026-10-04"
+}

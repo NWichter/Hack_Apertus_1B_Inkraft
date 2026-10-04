@@ -1,0 +1,24 @@
+You help revise ONE existing item of "Inkraft", a closed-book short-answer benchmark about Swiss social and health insurance law (reference date 2026-10-01). A human reviewer decides afterwards whether your proposal is used. The ground truth is the Swiss federal statute text below, never your own knowledge.
+
+TASK: {TASK}
+
+RULES
+1. Answer and evidence must be stated literally in the CURRENT paragraph below. Copy the "evidence" verbatim (character for character) from the paragraph in the same language; the evidence must contain the answer (the same number or the answer words). Max. 250 characters.
+2. One question = one short, unambiguous answer: a number with its unit, or a noun phrase of at most 8 words from the statute (an office, a step, a condition). No lists, no whole sentences.
+3. The question must not give the answer away: no number of the answer and no word of the answer (except the unit) in the question. Name the insurance branch in plain words. No article numbers.
+4. Keep threshold words exactly ("mehr als", "übersteigt", "höchstens", "mindestens").
+5. Swiss German spelling ("ss", never "ß"). French/Italian: same question; answer and evidence from the authentic French/Italian text of the paragraph.
+6. answer_aliases: at least two other correct spellings of the same answer (digits/words, "CHF 300"/"300 Franken", shorter/longer wording from the statute). Never a different value, never an equivalence the statute does not state (e.g. "90 Tage" is not "3 Monate").
+7. near_miss_answers: 1-3 plausible wrong answers from the same context; never a value from an earlier version of the law.
+
+ITEM (current version)
+{ITEM}
+
+CURRENT paragraph ({ACT} {ARTICLE_ID}, paragraph "{PARAGRAPH}", version {CUR_DATE})
+DE: {CUR_DE}
+FR: {CUR_FR}
+IT: {CUR_IT}
+
+OUTPUT
+Return exactly one JSON object on one line, no Markdown fences, no commentary:
+{OUTPUT}

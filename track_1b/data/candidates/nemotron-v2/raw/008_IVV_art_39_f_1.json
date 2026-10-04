@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"IVV\", \"article_id\": \"art_39_f\", \"paragraph\": \"1\", \"domain\": \"iv_el\", \"question_type\": \"temporal\", \"register\": \"lay\", \"difficulty_prior\": 1, \"answer_type\": \"currency_chf\", \"answer_normalized\": {\"value\": 35.3, \"unit\": \"CHF\"}, \"de\": {\"question\": \"Wie hoch ist der Assistenzbeitrag pro Stunde in der Invalidenversicherung?\", \"answer\": \"35.30 Franken\", \"answer_aliases\": [\"CHF 35.30\", \"35.30 CHF\", \"35 Franken 30 Rappen\"], \"near_miss_answers\": [\"35 Franken\", \"36 Franken\", \"35.50 Franken\"], \"evidence\": \"Der Assistenzbeitrag beträgt 35.30 Franken pro Stunde.\"}, \"fr\": {\"question\": \"À combien s'élève la contribution d’assistance par heure dans l'assurance-invalidité?\", \"answer\": \"35 fr. 30\", \"answer_aliases\": [\"CHF 35.30\", \"35 francs 30 centimes\", \"35.30 francs\"], \"near_miss_answers\": [\"35 francs\", \"36 francs\", \"35.50 francs\"], \"evidence\": \"La contribution d’assistance se monte à 35 fr. 30 par heure.\"}, \"it\": {\"question\": \"A quanto ammonta il contributo per l’assistenza all’ora nell'assicurazione per l'invalidità?\", \"answer\": \"35.30 franchi\", \"answer_aliases\": [\"CHF 35.30\", \"35 franchi 30 centesimi\", \"35.30 franchi\"], \"near_miss_answers\": [\"35 franchi\", \"36 franchi\", \"35.50 franchi\"], \"evidence\": \"Il contributo per l’assistenza ammonta a 35.30 franchi all’ora.\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2024-01-01\", \"paragraph\": \"1\", \"de\": {\"outdated_answer\": \"34.30 Franken\", \"evidence\": \"Der Assistenzbeitrag beträgt 34.30 Franken pro Stunde.\"}, \"fr\": {\"outdated_answer\": \"34 fr. 30\", \"evidence\": \"La contribution d’assistance se monte à 34 fr. 30 par heure.\"}, \"it\": {\"outdated_answer\": \"34.30 franchi\", \"evidence\": \"Il contributo per l’assistenza ammonta a 34.30 franchi all’ora.\"}}]}}",
+ "reasoning_chars": 6680,
+ "usage": {
+  "prompt_tokens": 1547,
+  "completion_tokens": 2719,
+  "total_tokens": 4266,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 1702,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 93.3,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

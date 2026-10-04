@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"BVG\", \"article_id\": \"art_47_a\", \"paragraph\": \"4\", \"domain\": \"bvg_3a\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Wie wird das Alter bezeichnet, bei dessen Erreichen die Versicherung nach dem Ausscheiden aus der obligatorischen Versicherung nach Vollendung des 58. Altersjahres in der beruflichen Vorsorge endet?\", \"answer\": \"reglementarisches Referenzalter\", \"answer_aliases\": [\"Referenzalter\", \"reglementarisches Referenzalter\", \"das reglementarische Referenzalter\"], \"near_miss_answers\": [\"reglementarisches Rentenalter\", \"gesetzliches Referenzalter\", \"Vollendung des 58. Altersjahres\"], \"evidence\": \"des reglementarischen Referenzalters\"}, \"fr\": {\"question\": \"Comment est désigné l’âge auquel l’assurance prend fin lors de la sortie de l’assurance obligatoire après l’accomplissement de la 58e année d’âge dans la prévoyance professionnelle ?\", \"answer\": \"l’âge de référence réglementaire\", \"answer_aliases\": [\"âge de référence réglementaire\", \"âge de référence\", \"de référence réglementaire\"], \"near_miss_answers\": [\"âge réglementaire de la retraite\", \"âge légal de référence\", \"58e année d’âge\"], \"evidence\": \"l’âge de référence réglementaire\"}, \"it\": {\"question\": \"Come viene denominata l’età al cui raggiungimento l’assicurazione termina in caso di uscita dall’assicurazione obbligatoria dopo il compimento del 58° anno d’età nella previdenza professionale?\", \"answer\": \"l’età di riferimento regolamentare\", \"answer_aliases\": [\"età di riferimento regolamentare\", \"età di riferimento\", \"di riferimento regolamentare\"], \"near_miss_answers\": [\"età regolamentare di pensionamento\", \"età legale di riferimento\", \"compimento del 58° anno d’età\"], \"evidence\": \"l’età di riferimento regolamentare\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-09-26\", \"paragraph\": \"4\", \"de\": {\"outdated_answer\": \"des reglementarischen ordentlichen Rentenalters\", \"evidence\": \"bei Erreichen des reglementarischen ordentlichen Rentenalters\"}, \"fr\": {\"outdated_answer\": \"l’âge ordinaire réglementaire de la retraite\", \"evidence\": \"l’âge ordinaire réglementaire de la retraite\"}, \"it\": {\"outdated_answer\": \"l’età ordinaria regolamentare di pensionamento\", \"evidence\": \"l’età ordinaria regolamentare di pensionamento\"}}]}}",
+ "reasoning_chars": 32436,
+ "usage": {
+  "prompt_tokens": 2164,
+  "completion_tokens": 8740,
+  "total_tokens": 10904,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 8337,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 213.1,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

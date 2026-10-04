@@ -1,0 +1,38 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"AHVV\", \"article_id\": \"art_34_d\", \"paragraph\": \"2\", \"domain\": \"ahv\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"In der AHV: Welche Arbeitgeberkategorie folgt in der Liste der obligatorisch beitragspflichtigen Arbeitgeber im künstlerischen Bereich direkt auf \\\"Orchestern\\\"?\", \"answer\": \"Chören\", \"answer_aliases\": [\"Chören\", \"Chören\"], \"near_miss_answers\": [\"Radio und Fernsehen\", \"Museen\", \"Designunternehmen\"], \"evidence\": \"Orchestern, Chören, Phono- und Audiovisionsproduzenten\"}, \"fr\": {\"question\": \"Dans l'AHV: Quelle catégorie d'employeurs figure dans la liste des employeurs du secteur artistique soumis à l'obligation de cotisation immédiatement après \\\"orchestres\\\"?\", \"answer\": \"chœurs\", \"answer_aliases\": [\"chœurs\", \"chœurs\"], \"near_miss_answers\": [\"radios et télévisions\", \"musées\", \"entreprises de design\"], \"evidence\": \"orchestres, des chœurs, des producteurs\"}, \"it\": {\"question\": \"Nell'AVS: Quale categoria di datori di lavoro figura nell'elenco dei datori di lavoro del settore artistico soggetti all'obbligo di versamento dei contributi immediatamente dopo \\\"orchestre\\\"?\", \"answer\": \"cori\", \"answer_aliases\": [\"cori\", \"cori\"], \"near_miss_answers\": [\"emittenti radiofoniche e televisive\", \"musei\", \"imprese di design\"], \"evidence\": \"orchestre, cori, produttori\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2025-01-01\", \"paragraph\": \"2\", \"de\": {\"outdated_answer\": \"Phono- und Audiovisionsproduzenten\", \"evidence\": \"Orchestern, Phono- und Audiovisionsproduzenten\"}, \"fr\": {\"outdated_answer\": \"producteurs dans le domaine phonographique et audiovisuel\", \"evidence\": \"orchestres, des producteurs dans le domaine phonographique et audiovisuel\"}, \"it\": {\"outdated_answer\": \"produttori di supporti audio o audiovisivi\", \"evidence\": \"orchestre, produttori di supporti audio o audiovisivi\"}}]}}",
+ "reasoning_chars": 38115,
+ "usage": {
+  "prompt_tokens": 2448,
+  "completion_tokens": 10068,
+  "total_tokens": 12516,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 9710,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 149.3,
+ "attempts": 1,
+ "generated_at": "2026-10-04",
+ "settings": {
+  "max_tokens": 24000,
+  "reasoning_effort": "medium",
+  "temperature": 0.3
+ }
+}

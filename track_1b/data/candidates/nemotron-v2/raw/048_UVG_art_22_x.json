@@ -1,0 +1,38 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"UVG\", \"article_id\": \"art_22\", \"paragraph\": \"\", \"domain\": \"uvg_atsg\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Spätestens ab Erreichen welches Alters kann die Rente in der Unfallversicherung nicht mehr revidiert werden?\", \"answer\": \"Referenzalters\", \"answer_aliases\": [\"Referenzalter\", \"Referenzalters nach Artikel 21 Absatz 1 AHVG\"], \"near_miss_answers\": [\"Referenzalter nach Artikel 40 AHVG\", \"ordentliches Referenzalter\", \"AHV-Referenzalter\"], \"evidence\": \"spätestens jedoch ab Erreichen des Referenzalters nach Artikel 21 Absatz 1 AHVG\"}, \"fr\": {\"question\": \"Au plus tard à partir de quel âge la rente dans l'assurance-accidents ne peut-elle plus être révisée ?\", \"answer\": \"âge de référence\", \"answer_aliases\": [\"âge de référence selon l'art. 21 al. 1 LAVS\", \"âge de référence LAVS\"], \"near_miss_answers\": [\"âge de référence selon l'art. 40 LAVS\", \"âge de la retraite ordinaire\", \"âge AVS\"], \"evidence\": \"mais au plus tard lorsqu'il atteint l'âge de référence fixé à l'art. 21, al. 1, LAVS\"}, \"it\": {\"question\": \"Al più tardi a partire da quale età la rendita nell'assicurazione contro gli infortuni non può più essere riveduta ?\", \"answer\": \"età di riferimento\", \"answer_aliases\": [\"età di riferimento secondo l'articolo 21 capoverso 1 LAVS\", \"età di riferimento LAVS\"], \"near_miss_answers\": [\"età di riferimento secondo l'articolo 40 LAVS\", \"età di pensionamento ordinaria\", \"età AVS\"], \"evidence\": \"ma al più tardi dal momento in cui lo stesso raggiunge l'età di riferimento secondo l'articolo 21 capoverso 1 LAVS\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-09-01\", \"paragraph\": \"\", \"de\": {\"outdated_answer\": \"Rentenalters\", \"evidence\": \"spätestens jedoch ab Erreichen des Rentenalters nach Artikel 21 des Bundesgesetzes vom 20. Dezember 1946 über die Alters- und Hinterlassenenversicherung\"}, \"fr\": {\"outdated_answer\": \"âge de la retraite\", \"evidence\": \"mais au plus tard lorsqu'il atteint l'âge de la retraite fixé à l'art. 21 de la loi fédérale du 20 décembre 1946 sur l'assurance-vieillesse et survivants\"}, \"it\": {\"outdated_answer\": \"età di pensionamento\", \"evidence\": \"ma al più tardi dal momento in cui lo stesso raggiunge l'età di pensionamento secondo l'articolo 21 della legge federale del 20 dicembre 1946 sull'assicurazione per la vecchiaia e per i superstiti\"}}]}}",
+ "reasoning_chars": 16741,
+ "usage": {
+  "prompt_tokens": 2085,
+  "completion_tokens": 5190,
+  "total_tokens": 7275,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 4268,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 96.5,
+ "attempts": 1,
+ "generated_at": "2026-10-04",
+ "settings": {
+  "max_tokens": 24000,
+  "reasoning_effort": "medium",
+  "temperature": 0.3
+ }
+}

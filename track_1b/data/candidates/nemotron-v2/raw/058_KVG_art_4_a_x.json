@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"KVG\", \"article_id\": \"art_4_a\", \"paragraph\": \"\", \"domain\": \"kvg_insured\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"In der obligatorischen Krankenpflegeversicherung: Wie lautet der letzte Staat in der Aufzählung der Wohnortstaaten für versicherungspflichtige Familienangehörige, die zusammen mit der versicherungspflichtigen Person beim selben Versicherer versichert sind?\", \"answer\": \"Vereinigtes Königreich\", \"answer_aliases\": [\"Vereinigtes Königreich\", \"im Vereinigten Königreich\"], \"near_miss_answers\": [\"Island\", \"Mitgliedstaat der Europäischen Union\", \"Europäische Union\"], \"evidence\": \"im Vereinigten Königreich\"}, \"fr\": {\"question\": \"Dans l'assurance-maladie obligatoire: quel est le dernier État énuméré parmi les États de résidence pour les membres de la famille tenus de s'assurer, qui sont assurés auprès du même assureur que la personne tenue de s'assurer?\", \"answer\": \"Royaume-Uni\", \"answer_aliases\": [\"Royaume-Uni\", \"au Royaume-Uni\"], \"near_miss_answers\": [\"Islande\", \"État membre de l'Union européenne\", \"Union européenne\"], \"evidence\": \"au Royaume-Uni\"}, \"it\": {\"question\": \"Nell'assicurazione obbligatoria delle cure medico-sanitarie: qual è l'ultimo Stato nell'elenco degli Stati di residenza per i familiari tenuti ad assicurarsi, che sono assicurati presso lo stesso assicuratore della persona tenuta ad assicurarsi?\", \"answer\": \"Regno Unito\", \"answer_aliases\": [\"Regno Unito\", \"nel Regno Unito\"], \"near_miss_answers\": [\"Islanda\", \"Stato membro dell'Unione europea\", \"Unione europea\"], \"evidence\": \"nel Regno Unito\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2024-01-01\", \"paragraph\": \"\", \"de\": {\"outdated_answer\": \"Norwegen\", \"evidence\": \"in Norwegen\"}, \"fr\": {\"outdated_answer\": \"Norvège\", \"evidence\": \"en Norvège\"}, \"it\": {\"outdated_answer\": \"Norvegia\", \"evidence\": \"in Norvegia\"}}]}}",
+ "reasoning_chars": 20390,
+ "usage": {
+  "prompt_tokens": 2537,
+  "completion_tokens": 5472,
+  "total_tokens": 8009,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 5180,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 99.1,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

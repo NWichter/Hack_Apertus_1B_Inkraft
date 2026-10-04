@@ -1,0 +1,29 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "content": "{\"rewrite\": true, \"question_type\": \"procedural\", \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"In der AHV, in welchem Zeitraum werden keine Kinderrenten ausgerichtet?\", \"answer\": \"Während der Dauer des Rentenvorbezugs\", \"answer_aliases\": [\"Dauer des Rentenvorbezugs\", \"Rentenvorbezugs\"], \"near_miss_answers\": [\"die Karenzzeit\", \"der Rentenbeginn\", \"das Erreichen des Rentenalters\"], \"evidence\": \"Während der Dauer des Rentenvorbezugs werden keine Kinderrenten ausgerichtet.\"}, \"fr\": {\"question\": \"Dans l'AVS, durant quelle période aucune rente pour enfant n’est-elle octroyée?\", \"answer\": \"la durée du versement anticipé de la rente\", \"answer_aliases\": [\"durée du versement anticipé de la rente\", \"versement anticipé de la rente\"], \"near_miss_answers\": [\"la période de carence\", \"l'âge de la retraite\", \"la période de cotisation\"], \"evidence\": \"Aucune rente pour enfant n’est octroyée pendant la durée du versement anticipé de la rente.\"}, \"it\": {\"question\": \"Nell'AVS, quando non sono versate rendite per figli?\", \"answer\": \"Durante il periodo di riscossione anticipata della rendita\", \"answer_aliases\": [\"periodo di riscossione anticipata della rendita\", \"riscossione anticipata della rendita\"], \"near_miss_answers\": [\"il periodo di attesa\", \"il pensionamento\", \"l'età pensionabile\"], \"evidence\": \"Durante il periodo di riscossione anticipata della rendita non sono versate rendite per figli.\"}}",
+ "usage": {
+  "prompt_tokens": 1040,
+  "completion_tokens": 11710,
+  "total_tokens": 12750,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 11255,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 218.9,
+ "generated_at": "2026-10-04"
+}

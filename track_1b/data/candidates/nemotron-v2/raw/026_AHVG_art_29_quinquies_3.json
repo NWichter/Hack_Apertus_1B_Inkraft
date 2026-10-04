@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\":\"AHVG\",\"article_id\":\"art_29_quinquies\",\"paragraph\":\"3\",\"domain\":\"ahv\",\"question_type\":\"temporal\",\"register\":\"professional\",\"difficulty_prior\":2,\"answer_type\":\"text\",\"answer_normalized\":null,\"de\":{\"question\":\"Welche Voraussetzung muss für die Einkommensteilung bei beiden Ehegatten erfüllt sein?\",\"answer\":\"das Referenzalter erreicht haben\",\"answer_aliases\":[\"Referenzalter erreicht haben\",\"beide Ehegatten das Referenzalter erreicht haben\"],\"near_miss_answers\":[\"Anspruch auf eine Rente der Invalidenversicherung haben\",\"Auflösung der Ehe durch Scheidung\",\"verwitwete Person das Referenzalter erreicht\"],\"evidence\":\"wenn beide Ehegatten das Referenzalter erreicht haben\"},\"fr\":{\"question\":\"Quelle condition doit être remplie pour la répartition des revenus chez les deux conjoints ?\",\"answer\":\"ont atteint l’âge de référence\",\"answer_aliases\":[\"les deux conjoints ont atteint l’âge de référence\",\"deux conjoints ont atteint l’âge de référence\"],\"near_miss_answers\":[\"ont droit à une rente de l’assurance-invalidité\",\"le mariage est dissous par le divorce\",\"la veuve ou le veuf atteint l’âge de référence\"],\"evidence\":\"les deux conjoints ont atteint l’âge de référence\"},\"it\":{\"question\":\"Quale presupposto deve essere soddisfatto per la ripartizione dei redditi presso entrambi i coniugi?\",\"answer\":\"hanno raggiunto l’età di riferimento\",\"answer_aliases\":[\"entrambi i coniugi hanno raggiunto l’età di riferimento\",\"coniugi hanno raggiunto l’età di riferimento\"],\"near_miss_answers\":[\"hanno diritto a una rendita dell’assicurazione per l’invalidità\",\"il matrimonio è sciolto mediante divorzio\",\"la vedova o il vedovo raggiunge l’età di riferimento\"],\"evidence\":\"entrambi i coniugi hanno raggiunto l’età di riferimento\"},\"temporal\":{\"versions\":[{\"version_date\":\"2023-09-01\",\"paragraph\":\"3\",\"de\":{\"outdated_answer\":\"rentenberechtigt sind\",\"evidence\":\"wenn beide Ehegatten rentenberechtigt sind\"},\"fr\":{\"outdated_answer\":\"ont droit à la rente\",\"evidence\":\"les deux conjoints ont droit à la rente\"},\"it\":{\"outdated_answer\":\"hanno diritto alla rendita\",\"evidence\":\"entrambi i coniugi hanno diritto alla rendita\"}}]}}",
+ "reasoning_chars": 33191,
+ "usage": {
+  "prompt_tokens": 2112,
+  "completion_tokens": 8825,
+  "total_tokens": 10937,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 8647,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 275.7,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

@@ -1,0 +1,29 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "content": "{\"rewrite\": true, \"question_type\": \"procedural\", \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Was müssen Leistungserbringer in der obligatorischen Krankenpflegeversicherung auf der Rechnung codiert aufführen?\", \"answer\": \"Diagnosen und Prozeduren\", \"answer_aliases\": [\"die Diagnosen und Prozeduren\", \"Diagnosen und Prozeduren\"], \"near_miss_answers\": [\"Klassifikationen\", \"schweizerische Fassungen\", \"Daten\"], \"evidence\": \"Die Leistungserbringer haben auf der Rechnung nach Absatz 3 die Diagnosen und Prozeduren nach den Klassifikationen in den jeweiligen vom zuständigen Departement herausgegebenen schweizerischen Fassungen codiert aufzuführen.\"}, \"fr\": {\"question\": \"Que doivent faire figurer les fournisseurs de prestations dans l'assurance-maladie obligatoire dans la facture sous forme codée?\", \"answer\": \"les diagnostics et les procédures\", \"answer_aliases\": [\"les diagnostics et les procédures\", \"diagnostics et procédures\"], \"near_miss_answers\": [\"classifications\", \"édition suisse\", \"données\"], \"evidence\": \"Les fournisseurs de prestations doivent faire figurer dans la facture au sens de l’al. 3 les diagnostics et les procédures sous forme codée\"}, \"it\": {\"question\": \"Cosa devono indicare i fornitori di prestazioni nell'assicurazione malattie obbligatoria nella fattura in forma codificata?\", \"answer\": \"le diagnosi e le procedure\", \"answer_aliases\": [\"le diagnosi e le procedure\", \"diagnosi e procedure\"], \"near_miss_answers\": [\"classificazioni\", \"edizione svizzera\", \"dati\"], \"evidence\": \"I fornitori di prestazioni devono indicare nella fattura di cui al capoverso 3 le diagnosi e le procedure in forma codificata\"}}",
+ "usage": {
+  "prompt_tokens": 1376,
+  "completion_tokens": 4847,
+  "total_tokens": 6223,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 4573,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 95.3,
+ "generated_at": "2026-10-04"
+}

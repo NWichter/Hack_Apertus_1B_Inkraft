@@ -1,0 +1,29 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "content": "{\"rewrite\": true, \"question_type\": \"procedural\", \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Was ist für die Anmeldung von Leistungsansprüchen in der obligatorischen Krankenpflegeversicherung nicht nötig?\", \"answer\": \"ein Formular\", \"answer_aliases\": [\"Formular\", \"ein Formular\"], \"near_miss_answers\": [\"Antrag\", \"Gesuch\", \"schriftliche Anmeldung\"], \"evidence\": \"ist für die Anmeldung von Leistungsansprüchen kein Formular nötig\"}, \"fr\": {\"question\": \"Qu'est-ce qui n'est pas nécessaire pour faire valoir le droit aux prestations de l'assurance obligatoire des soins?\", \"answer\": \"une formule\", \"answer_aliases\": [\"formule\", \"une formule\"], \"near_miss_answers\": [\"demande\", \"requête\", \"déclaration écrite\"], \"evidence\": \"aucune formule n’est nécessaire pour faire valoir le droit aux prestations\"}, \"it\": {\"question\": \"Cosa non è necessario per rivendicare il diritto alle prestazioni dell’assicurazione obbligatoria delle cure medico-sanitarie?\", \"answer\": \"un formulario\", \"answer_aliases\": [\"formulario\", \"un formulario\"], \"near_miss_answers\": [\"domanda\", \"richiesta\", \"denuncia scritta\"], \"evidence\": \"per rivendicare il diritto alle prestazioni non è necessario alcun formulario\"}}",
+ "usage": {
+  "prompt_tokens": 1085,
+  "completion_tokens": 2781,
+  "total_tokens": 3866,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2440,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 142.2,
+ "generated_at": "2026-10-04"
+}

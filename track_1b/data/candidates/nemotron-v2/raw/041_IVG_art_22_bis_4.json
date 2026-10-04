@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"IVG\", \"article_id\": \"art_22_bis\", \"paragraph\": \"4\", \"domain\": \"iv_el\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Welches Alter ist massgebend für den spätesten Erlöschenszeitpunkt des Anspruchs?\", \"answer\": \"das Referenzalter nach Artikel 21 Absatz 1 AHVG\", \"answer_aliases\": [\"Referenzalter nach Artikel 21 AHVG\", \"das Referenzalter nach Art. 21 Abs. 1 AHVG\"], \"near_miss_answers\": [\"das Referenzalter nach Artikel 40 AHVG\", \"das Alter bei Vorbezug der Altersrente\", \"das ordentliche Referenzalter\"], \"evidence\": \"spätestens aber am Ende des Monats, in dem sie das Referenzalter nach Artikel 21 Absatz 1 AHVG erreicht.\"}, \"fr\": {\"question\": \"Quel âge est déterminant pour le moment au plus tard où le droit s’éteint?\", \"answer\": \"l’âge de référence fixé à l’art. 21\", \"answer_aliases\": [\"l’âge de référence selon l’art. 21 LAVS\", \"âge de référence art. 21 LAVS\"], \"near_miss_answers\": [\"l’âge de référence selon l’art. 40 LAVS\", \"l’âge pour la rente anticipée\", \"l’âge ordinaire de la retraite\"], \"evidence\": \"mais au plus tard à la fin du mois au cours duquel il atteint l’âge de référence fixé à l’art. 21, al. 1, LAVS.\"}, \"it\": {\"question\": \"Quale età è determinante per il momento al più tardi in cui il diritto si estingue?\", \"answer\": \"l’età di riferimento secondo l’articolo 21\", \"answer_aliases\": [\"età di riferimento art. 21 LAVS\", \"l’età di riferimento secondo l’art. 21 cpv. 1 LAVS\"], \"near_miss_answers\": [\"l’età di riferimento secondo l’articolo 40 LAVS\", \"l’età per il godimento anticipato della rendita\", \"l’età ordinaria di riferimento\"], \"evidence\": \"ma al più tardi alla fine del mese in cui raggiunge l’età di riferimento secondo l’articolo 21 capoverso 1 LAVS.\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-01-01\", \"paragraph\": \"4\", \"de\": {\"outdated_answer\": \"das Rentenalter\", \"evidence\": \"oder in dem das Rentenalter erreicht wird.\"}, \"fr\": {\"outdated_answer\": \"l’âge de la retraite\", \"evidence\": \"ou a atteint l’âge de la retraite.\"}, \"it\": {\"outdated_answer\": \"l’età di pensionamento\", \"evidence\": \"o in cui raggiunge l’età di pensionamento.\"}}]}}",
+ "reasoning_chars": 18979,
+ "usage": {
+  "prompt_tokens": 1826,
+  "completion_tokens": 6184,
+  "total_tokens": 8010,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 4925,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 215.6,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

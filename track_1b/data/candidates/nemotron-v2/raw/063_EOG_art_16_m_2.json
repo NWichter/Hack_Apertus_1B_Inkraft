@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"EOG\", \"article_id\": \"art_16_m\", \"paragraph\": \"2\", \"domain\": \"eo_alv\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"In der Erwerbsersatzversicherung: Welche Entschädigung muss mindestens dem bisher bezogenen Taggeld entsprechen, wenn vor ihrem Beginn ein Anspruch auf ein Taggeld nach den aufgeführten Gesetzen bestand?\", \"answer\": \"Entschädigung des andern Elternteils\", \"answer_aliases\": [\"die Entschädigung des andern Elternteils\", \"Entschädigung des anderen Elternteils\"], \"near_miss_answers\": [\"Mutterschaftsentschädigung\", \"Adoptionsentschädigung\", \"Betreuungsentschädigung\"], \"evidence\": \"so entspricht die Entschädigung des andern Elternteils mindestens dem bisher bezogenen Taggeld\"}, \"fr\": {\"question\": \"Dans l'assurance perte de gain: quelle allocation doit correspondre au moins à l'indemnité journalière perçue jusqu'alors, si un droit à une indemnité journalière selon les lois énumérées existait avant son début?\", \"answer\": \"allocation à l’autre parent\", \"answer_aliases\": [\"l’allocation à l’autre parent\", \"allocation pour l’autre parent\"], \"near_miss_answers\": [\"allocation de maternité\", \"allocation d'adoption\", \"allocation de garde\"], \"evidence\": \"du droit à l’allocation à l’autre parent, le montant de cette allocation s’élève au moins\"}, \"it\": {\"question\": \"Nell'assicurazione per perdita di guadagno: quale indennità deve corrispondere almeno all'indennità giornaliera percepita finora, se prima del suo inizio vi era un diritto a un'indennità giornaliera secondo le leggi elencate?\", \"answer\": \"indennità per l’altro genitore\", \"answer_aliases\": [\"l’indennità per l’altro genitore\", \"indennità per l'altro genitore\"], \"near_miss_answers\": [\"indennità di maternità\", \"indennità d'adozione\", \"indennità di cura\"], \"evidence\": \"l’indennità per l’altro genitore corrisponde almeno all’indennità giornaliera versata precedentemente\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-01-01\", \"paragraph\": \"2\", \"de\": {\"outdated_answer\": \"Vaterschaftsentschädigung\", \"evidence\": \"so entspricht die Vaterschaftsentschädigung mindestens dem bisher bezogenen Taggeld:\"}, \"fr\": {\"outdated_answer\": \"allocation de paternité\", \"evidence\": \"du droit à l’allocation de paternité, le montant de l’allocation s’élève au moins\"}, \"it\": {\"outdated_answer\": \"indennità di paternità\", \"evidence\": \"l’indennità di paternità corrisponde almeno all’indennità giornaliera versata precedentemente\"}}]}}",
+ "reasoning_chars": 18051,
+ "usage": {
+  "prompt_tokens": 2435,
+  "completion_tokens": 5378,
+  "total_tokens": 7813,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 4705,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 112.6,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

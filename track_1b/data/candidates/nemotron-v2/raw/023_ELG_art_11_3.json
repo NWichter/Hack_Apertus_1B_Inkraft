@@ -1,0 +1,38 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"ELG\", \"article_id\": \"art_11\", \"paragraph\": \"3\", \"domain\": \"iv_el\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Was ist die letzte in Artikel 11 Absatz 3 ELG aufgeführte nicht anrechenbare Einnahme?\", \"answer\": \"die 13. Altersrente nach Artikel 34ter AHVG\", \"answer_aliases\": [\"13. Altersrente nach Artikel 34ter AHVG\", \"die 13. Altersrente nach Art. 34ter AHVG\"], \"near_miss_answers\": [\"der Rentenzuschlag nach Artikel 34bis AHVG\", \"Assistenzbeiträge der AHV oder der IV\", \"Beiträge der obligatorischen Krankenpflegeversicherung an die Pflegeleistungen in einem Heim\"], \"evidence\": \"i. die 13. Altersrente nach Artikel 34ter AHVG.\"}, \"fr\": {\"question\": \"Quelle est la dernière prestation non prise en compte énumérée à l'article 11, alinéa 3, LPC?\", \"answer\": \"la 13e rente de vieillesse visée à l'art. 34ter LAVS\", \"answer_aliases\": [\"13e rente de vieillesse visée à l'art. 34ter LAVS\", \"la 13e rente de vieillesse selon l'art. 34ter LAVS\"], \"near_miss_answers\": [\"le supplément de rente selon l'art. 34bis LAVS\", \"la contribution d’assistance versée par l’AVS ou par l’AI\", \"les contributions de l’assurance obligatoire des soins aux coûts des soins dispensés dans un home\"], \"evidence\": \"i. la 13e rente de vieillesse visée à l’art. 34ter LAVS.\"}, \"it\": {\"question\": \"Qual è l'ultima prestazione non computata elencata all'articolo 11, capoverso 3, LPC?\", \"answer\": \"la 13a mensilità della rendita di vecchiaia secondo l’articolo 34ter LAVS\", \"answer_aliases\": [\"13a mensilità della rendita di vecchiaia secondo l'articolo 34ter LAVS\", \"la 13a mensilità della rendita di vecchiaia ex art. 34ter LAVS\"], \"near_miss_answers\": [\"il supplemento di rendita secondo l’articolo 34bis LAVS\", \"i contributi per l’assistenza versati dall’AVS o dall’AI\", \"i contributi dell’assicurazione obbligatoria delle cure medico-sanitarie alle cure dispensate in un istituto\"], \"evidence\": \"i. la 13a mensilità della rendita di vecchiaia secondo l’articolo 34ter LAVS.\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2025-01-01\", \"paragraph\": \"3\", \"de\": {\"outdated_answer\": \"der Rentenzuschlag nach Artikel 34bis AHVG\", \"evidence\": \"h. der Rentenzuschlag nach Artikel 34bis AHVG.\"}, \"fr\": {\"outdated_answer\": \"le supplément de rente selon l’art. 34bis LAVS\", \"evidence\": \"h. le supplément de rente selon l’art. 34bis LAVS.\"}, \"it\": {\"outdated_answer\": \"il supplemento di rendita secondo l’articolo 34bis LAVS\", \"evidence\": \"h. il supplemento di rendita secondo l’articolo 34bis LAVS.\"}}, {\"version_date\": \"2023-01-01\", \"paragraph\": \"3\", \"de\": {\"outdated_answer\": \"Beiträge der obligatorischen Krankenpflegeversicherung an die Pflegeleistungen in einem Heim, wenn in der Tagestaxe keine Pflegekosten nach dem KVG berücksichtigt werden\", \"evidence\": \"g. Beiträge der obligatorischen Krankenpflegeversicherung an die Pflegeleistungen in einem Heim, wenn in der Tagestaxe keine Pflegekosten nach dem KVG berücksichtigt werden.\"}, \"fr\": {\"outdated_answer\": \"les contributions de l’assurance obligatoire des soins aux coûts des soins dispensés dans un home, lorsque la taxe journalière ne comprend pas les coûts des soins au sens de la LAMal\", \"evidence\": \"g. les contributions de l’assurance obligatoire des soins aux coûts des soins dispensés dans un home, lorsque la taxe journalière ne comprend pas les coûts des soins au sens de la LAMal.\"}, \"it\": {\"outdated_answer\": \"i contributi dell’assicurazione obbligatoria delle cure medico-sanitarie alle cure dispensate in un istituto, se nella tassa giornaliera non sono presi in considerazione i costi delle cure ai sensi della LAMal\", \"evidence\": \"g. i contributi dell’assicurazione obbligatoria delle cure medico-sanitarie alle cure dispensate in un istituto, se nella tassa giornaliera non sono presi in considerazione i costi delle cure ai sensi della LAMal.\"}}]}}",
+ "reasoning_chars": 17205,
+ "usage": {
+  "prompt_tokens": 3057,
+  "completion_tokens": 6031,
+  "total_tokens": 9088,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 4381,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 188.4,
+ "attempts": 1,
+ "generated_at": "2026-10-04",
+ "settings": {
+  "max_tokens": 24000,
+  "reasoning_effort": "medium",
+  "temperature": 0.3
+ }
+}

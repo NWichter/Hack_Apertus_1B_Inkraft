@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"AHVG\", \"article_id\": \"art_35\", \"paragraph\": \"3\", \"domain\": \"ahv\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Wie lautet die letzte Fallgruppe, die das Gesetz in der AHV für die Bundesratsregelung der Kürzungsdetails bei Ehepaarrenten nennt?\", \"answer\": \"bei Bezug lediglich eines Teils der Rente\", \"answer_aliases\": [\"Bezug lediglich eines Teils der Rente\", \"lediglich eines Teils der Rente\"], \"near_miss_answers\": [\"bei Versicherten mit unvollständiger Beitragsdauer\", \"im Verhältnis ihrer Anteile\", \"die Einzelheiten\"], \"evidence\": \"sowie bei Bezug lediglich eines Teils der Rente.\"}, \"fr\": {\"question\": \"Quelle est la dernière catégorie de cas que la loi mentionne dans l'AVS pour la réglementation par le Conseil fédéral des détails de la réduction dans le cas des rentes de couple?\", \"answer\": \"qui ne perçoivent qu’un pourcentage de leur rente\", \"answer_aliases\": [\"ne perçoivent qu’un pourcentage de leur rente\", \"perçoivent qu’un pourcentage de leur rente\"], \"near_miss_answers\": [\"aux assurés dont la durée de cotisation est incomplète\", \"en proportion de leur quote-part\", \"les modalités\"], \"evidence\": \"ou qui ne perçoivent qu’un pourcentage de leur rente.\"}, \"it\": {\"question\": \"Qual è l'ultima categoria di casi che la legge menziona nell'AVS per la regolamentazione da parte del Consiglio federale dei dettagli della riduzione per le rendite di coppia?\", \"answer\": \"che percepiscono soltanto una percentuale della rendita\", \"answer_aliases\": [\"percepiscono soltanto una percentuale della rendita\", \"soltanto una percentuale della rendita\"], \"near_miss_answers\": [\"agli assicurati con durata di contribuzione incompleta\", \"in proporzione alla loro quota-parte\", \"i dettagli\"], \"evidence\": \"o che percepiscono soltanto una percentuale della rendita.\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-09-01\", \"paragraph\": \"3\", \"de\": {\"outdated_answer\": \"bei Versicherten mit unvollständiger Beitragsdauer\", \"evidence\": \"insbesondere die Kürzung der beiden Renten bei Versicherten mit unvollständiger Beitragsdauer.\"}, \"fr\": {\"outdated_answer\": \"aux assurés dont la durée de cotisation est incomplète\", \"evidence\": \"notamment la réduction des deux rentes allouées aux assurés dont la durée de cotisation est incomplète.\"}, \"it\": {\"outdated_answer\": \"agli assicurati con durata di contribuzione incompleta\", \"evidence\": \"in particolare la riduzione delle due rendite assegnate agli assicurati con durata di contribuzione incompleta.\"}}]}}",
+ "reasoning_chars": 27408,
+ "usage": {
+  "prompt_tokens": 1815,
+  "completion_tokens": 7187,
+  "total_tokens": 9002,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 6990,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 142.9,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

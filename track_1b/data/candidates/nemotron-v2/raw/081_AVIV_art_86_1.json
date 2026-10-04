@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"AVIV\", \"article_id\": \"art_86\", \"paragraph\": \"1\", \"domain\": \"eo_alv\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Wie wird die Stelle bezeichnet, die die Vergütungen in der Regel zusammen mit dem Taggeld auszahlt?\", \"answer\": \"Arbeitslosenkasse\", \"answer_aliases\": [\"die Arbeitslosenkasse\", \"Arbeitslosenkasse\"], \"near_miss_answers\": [\"Ausgleichskasse\", \"Krankenkasse\", \"IV-Stelle\"], \"evidence\": \"Die Arbeitslosenkasse zahlt die Vergütungen\"}, \"fr\": {\"question\": \"Comment est désignée l'instance qui verse les remboursements en règle générale avec les indemnités journalières ?\", \"answer\": \"caisse de chômage\", \"answer_aliases\": [\"la caisse de chômage\", \"caisse de chômage\"], \"near_miss_answers\": [\"caisse de compensation\", \"caisse maladie\", \"office AI\"], \"evidence\": \"la caisse de chômage rembourse l’assuré\"}, \"it\": {\"question\": \"Come è denominato l'ente che, di regola, rimborsa le spese unitamente alle indennità giornaliere?\", \"answer\": \"cassa di disoccupazione\", \"answer_aliases\": [\"la cassa di disoccupazione\", \"cassa di disoccupazione\"], \"near_miss_answers\": [\"cassa di compensazione\", \"cassa malattia\", \"ufficio AI\"], \"evidence\": \"La cassa di disoccupazione rimborsa l’assicurato\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2025-11-01\", \"paragraph\": \"1\", \"de\": {\"outdated_answer\": \"Kasse\", \"evidence\": \"Die Kasse zahlt die Vergütungen\"}, \"fr\": {\"outdated_answer\": \"caisse\", \"evidence\": \"la caisse rembourse l’assuré\"}, \"it\": {\"outdated_answer\": \"cassa\", \"evidence\": \"La cassa rimborsa l’assicurato\"}}]}}",
+ "reasoning_chars": 8022,
+ "usage": {
+  "prompt_tokens": 2203,
+  "completion_tokens": 2629,
+  "total_tokens": 4832,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2046,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 71.2,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"IVV\", \"article_id\": \"art_1_bis\", \"paragraph\": \"2\", \"domain\": \"iv_el\", \"question_type\": \"temporal\", \"register\": \"lay\", \"difficulty_prior\": 1, \"answer_type\": \"currency_chf\", \"answer_normalized\": {\"value\": 70, \"unit\": \"CHF\"}, \"de\": {\"question\": \"Wie hoch ist der Mindestbeitrag, den Nichterwerbstätige in der Invalidenversicherung jährlich entrichten müssen?\", \"answer\": \"70 Franken\", \"answer_aliases\": [\"CHF 70\", \"70 CHF\"], \"near_miss_answers\": [\"3500 Franken\"], \"evidence\": \"Nichterwerbstätige entrichten einen Beitrag von 70–3500 Franken im Jahr.\"}, \"fr\": {\"question\": \"Quel est le montant minimal de la cotisation que les personnes sans activité lucrative doivent verser chaque année dans l'assurance-invalidité ?\", \"answer\": \"70 francs\", \"answer_aliases\": [\"CHF 70\", \"70 CHF\"], \"near_miss_answers\": [\"3500 francs\"], \"evidence\": \"Les personnes sans activité lucrative acquittent une cotisation de 70 à 3500 francs par an.\"}, \"it\": {\"question\": \"Qual è il contributo minimo che le persone senza attività lucrativa devono versare annualmente nell'assicurazione per l'invalidità?\", \"answer\": \"70 franchi\", \"answer_aliases\": [\"CHF 70\", \"70 CHF\"], \"near_miss_answers\": [\"3500 franchi\"], \"evidence\": \"Le persone che non esercitano un’attività lucrativa versano un contributo da 70 a 3500 franchi annui.\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2024-01-01\", \"paragraph\": \"2\", \"de\": {\"outdated_answer\": \"68 Franken\", \"evidence\": \"Nichterwerbstätige entrichten einen Beitrag von 68–3400 Franken im Jahr.\"}, \"fr\": {\"outdated_answer\": \"68 francs\", \"evidence\": \"Les personnes sans activité lucrative acquittent une cotisation de 68 à 3400 francs par an.\"}, \"it\": {\"outdated_answer\": \"68 franchi\", \"evidence\": \"Le persone che non esercitano un’attività lucrativa versano un contributo da 68 a 3400 franchi annui.\"}}]}}",
+ "reasoning_chars": 11203,
+ "usage": {
+  "prompt_tokens": 1699,
+  "completion_tokens": 3842,
+  "total_tokens": 5541,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2864,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 115.8,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

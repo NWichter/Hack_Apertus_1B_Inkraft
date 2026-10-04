@@ -1,0 +1,29 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "content": "{\"rewrite\": true, \"question_type\": \"procedural\", \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Wer kann in der obligatorischen Krankenpflegeversicherung die Sistierung der Unfalldeckung beantragen?\", \"answer\": \"die versicherte Person\", \"answer_aliases\": [\"Versicherte Person\", \"die Versicherte\", \"versicherte Person\"], \"near_miss_answers\": [\"der Versicherer\", \"der Arbeitgeber\", \"die Krankenkasse\"], \"evidence\": \"Der Versicherer veranlasst das Ruhen auf Antrag der versicherten Person\"}, \"fr\": {\"question\": \"Qui peut demander la suspension de la couverture des accidents dans l’assurance obligatoire des soins?\", \"answer\": \"l’assuré\", \"answer_aliases\": [\"l'assuré\", \"assuré\", \"l’assuré\"], \"near_miss_answers\": [\"l’assureur\", \"l’employeur\", \"la caisse maladie\"], \"evidence\": \"L’assureur procède à la suspension lorsque l’assuré lui en fait la demande\"}, \"it\": {\"question\": \"Chi può richiedere la sospensione della copertura degli infortuni nell’assicurazione obbligatoria delle cure medico-sanitarie?\", \"answer\": \"l’assicurato\", \"answer_aliases\": [\"l'assicurato\", \"assicurato\", \"l’assicurato\"], \"near_miss_answers\": [\"l’assicuratore\", \"il datore di lavoro\", \"la cassa malattia\"], \"evidence\": \"L’assicuratore procede alla sospensione su richiesta dell’assicurato\"}}",
+ "usage": {
+  "prompt_tokens": 1305,
+  "completion_tokens": 3789,
+  "total_tokens": 5094,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 3376,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 173.2,
+ "generated_at": "2026-10-04"
+}

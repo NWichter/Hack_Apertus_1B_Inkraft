@@ -1,0 +1,38 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"AVIV\", \"article_id\": \"art_78\", \"paragraph\": \"\", \"domain\": \"eo_alv\", \"question_type\": \"procedural\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Welcher Verweis steht in der Vorschrift über die Zusammenarbeit der Arbeitslosenkassen in der Arbeitslosenversicherung?\", \"answer\": \"Art. 53 AVIG\", \"answer_aliases\": [\"Artikel 53 AVIG\", \"(Art. 53 AVIG)\"], \"near_miss_answers\": [\"Art. 52 AVIG\", \"Art. 54 AVIG\", \"Art. 53 AVIV\"], \"evidence\": \"(Art. 53 AVIG)\"}, \"fr\": {\"question\": \"Quel renvoi figure dans la disposition sur la collaboration des caisses de chômage dans l'assurance-chômage ?\", \"answer\": \"art. 53 LACI\", \"answer_aliases\": [\"article 53 LACI\", \"(art. 53 LACI)\"], \"near_miss_answers\": [\"art. 52 LACI\", \"art. 54 LACI\", \"art. 53 LAVI\"], \"evidence\": \"(art. 53 LACI)\"}, \"it\": {\"question\": \"A quale rinvio fa riferimento la disposizione sulla collaborazione delle casse di disoccupazione nell'assicurazione contro la disoccupazione ?\", \"answer\": \"art. 53 LADI\", \"answer_aliases\": [\"articolo 53 LADI\", \"(art. 53 LADI)\"], \"near_miss_answers\": [\"art. 52 LADI\", \"art. 54 LADI\", \"art. 53 LAVI\"], \"evidence\": \"(art. 53 LADI)\"}, \"temporal\": null}",
+ "reasoning_chars": 29368,
+ "usage": {
+  "prompt_tokens": 1567,
+  "completion_tokens": 7845,
+  "total_tokens": 9412,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 7457,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 235.3,
+ "attempts": 1,
+ "generated_at": "2026-10-04",
+ "settings": {
+  "max_tokens": 24000,
+  "reasoning_effort": "medium",
+  "temperature": 0.3
+ }
+}

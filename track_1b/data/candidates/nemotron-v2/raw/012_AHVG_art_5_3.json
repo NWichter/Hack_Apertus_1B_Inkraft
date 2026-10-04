@@ -1,0 +1,38 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"AHVG\", \"article_id\": \"art_5\", \"paragraph\": \"3\", \"domain\": \"ahv\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Nach Erreichen welchen Alters gilt für mitarbeitende Familienglieder wieder nur der Barlohn als massgebender Lohn?\", \"answer\": \"Referenzalter nach Artikel 21 Absatz 1\", \"answer_aliases\": [\"Referenzalter nach Art. 21 Abs. 1\", \"das Referenzalter nach Artikel 21 Absatz 1\"], \"near_miss_answers\": [\"20. Altersjahr\", \"Artikel 21 Absatz 1\"], \"evidence\": \"Referenzalter nach Artikel 21 Absatz 1\"}, \"fr\": {\"question\": \"Après avoir atteint quel âge le seul salaire déterminant pour les membres de la famille travaillant dans l’entreprise familiale redevient-il le salaire en espèces ?\", \"answer\": \"âge de référence fixé à l’art. 21, al. 1\", \"answer_aliases\": [\"âge de référence selon l’art. 21, al. 1\", \"l’âge de référence fixé à l’art. 21, al. 1\"], \"near_miss_answers\": [\"20 ans révolus\", \"art. 21, al. 1\"], \"evidence\": \"âge de référence fixé à l’art. 21, al. 1\"}, \"it\": {\"question\": \"Dopo aver raggiunto quale età il salario determinante per i familiari che lavorano nell’azienda di famiglia torna a essere soltanto quello versato in contanti?\", \"answer\": \"età di riferimento secondo l’articolo 21 capoverso 1\", \"answer_aliases\": [\"età di riferimento secondo l’art. 21 cpv. 1\", \"l’età di riferimento secondo l’articolo 21 capoverso 1\"], \"near_miss_answers\": [\"20 anni\", \"articolo 21 capoverso 1\"], \"evidence\": \"età di riferimento secondo l’articolo 21 capoverso 1\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-09-01\", \"paragraph\": \"3\", \"de\": {\"outdated_answer\": \"Frauen das 64. und Männer das 65. Altersjahr vollendet haben\", \"evidence\": \"Frauen das 64. und Männer das 65. Altersjahr vollendet haben\"}, \"fr\": {\"outdated_answer\": \"les femmes atteignent l’âge de 64 ans, les hommes l’âge de 65 ans\", \"evidence\": \"les femmes atteignent l’âge de 64 ans, les hommes l’âge de 65 ans\"}, \"it\": {\"outdated_answer\": \"le donne compiono i 64 anni, gli uomini i 65 anni\", \"evidence\": \"le donne compiono i 64 anni, gli uomini i 65 anni\"}}]}}",
+ "reasoning_chars": 16357,
+ "usage": {
+  "prompt_tokens": 1916,
+  "completion_tokens": 5182,
+  "total_tokens": 7098,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 4180,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 136.1,
+ "attempts": 1,
+ "generated_at": "2026-10-04",
+ "settings": {
+  "max_tokens": 24000,
+  "reasoning_effort": "medium",
+  "temperature": 0.3
+ }
+}

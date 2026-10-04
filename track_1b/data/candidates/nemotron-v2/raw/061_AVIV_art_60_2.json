@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"AVIV\", \"article_id\": \"art_60\", \"paragraph\": \"2\", \"domain\": \"eo_alv\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Welche Bezeichnung führt die von der Arbeitgeberin bei Kurzarbeit zu wählende Stelle im aktuellen Verordnungstext?\", \"answer\": \"Arbeitslosenkasse\", \"answer_aliases\": [\"die Arbeitslosenkasse\", \"eine Arbeitslosenkasse\"], \"near_miss_answers\": [\"bisherige Arbeitslosenkasse\", \"zuständige Arbeitslosenkasse\", \"Arbeitslosenkasse des Betriebs\"], \"evidence\": \"eine Arbeitslosenkasse bezeichnet\"}, \"fr\": {\"question\": \"Quel terme désigne l'organisme que l'employeur doit choisir en cas de réduction de l'horaire de travail, dans la version en vigueur?\", \"answer\": \"caisse de chômage\", \"answer_aliases\": [\"la caisse de chômage\", \"une caisse de chômage\"], \"near_miss_answers\": [\"ancienne caisse de chômage\", \"caisse de chômage compétente\", \"caisse de chômage territoriale\"], \"evidence\": \"une caisse de chômage\"}, \"it\": {\"question\": \"Quale denominazione ha l'ente che il datore di lavoro deve indicare per il lavoro ridotto, nel testo vigente?\", \"answer\": \"cassa di disoccupazione\", \"answer_aliases\": [\"la cassa di disoccupazione\", \"una cassa di disoccupazione\"], \"near_miss_answers\": [\"cassa di disoccupazione precedente\", \"cassa di disoccupazione competente\", \"cassa di disoccupazione territoriale\"], \"evidence\": \"una cassa di disoccupazione\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2025-11-01\", \"paragraph\": \"2\", \"de\": {\"outdated_answer\": \"Kasse\", \"evidence\": \"eine Kasse bezeichnet\"}, \"fr\": {\"outdated_answer\": \"caisse\", \"evidence\": \"une caisse\"}, \"it\": {\"outdated_answer\": \"cassa\", \"evidence\": \"una cassa\"}}]}}",
+ "reasoning_chars": 26699,
+ "usage": {
+  "prompt_tokens": 2134,
+  "completion_tokens": 7560,
+  "total_tokens": 9694,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 6807,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 218.8,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

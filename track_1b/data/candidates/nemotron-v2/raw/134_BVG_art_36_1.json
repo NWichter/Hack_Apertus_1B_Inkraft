@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"BVG\", \"article_id\": \"art_36\", \"paragraph\": \"1\", \"domain\": \"bvg_3a\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Bis zu welchem Alter werden Hinterlassenen- und Invalidenrenten in der beruflichen Vorsorge nach einer Laufzeit von mehr als drei Jahren der Preisentwicklung angepasst?\", \"answer\": \"Referenzalter\", \"answer_aliases\": [\"Referenzalter\", \"das Referenzalter\"], \"near_miss_answers\": [\"Rentenalter\", \"Pensionsalter\", \"Altersgrenze\"], \"evidence\": \"bis zum Erreichen des Referenzalters\"}, \"fr\": {\"question\": \"Jusqu'à quel âge les rentes de survivants et les rentes d'invalidité dans la prévoyance professionnelle sont-elles adaptées à l'évolution des prix après une durée de plus de trois ans ?\", \"answer\": \"âge de référence\", \"answer_aliases\": [\"âge de référence\", \"l'âge de référence\"], \"near_miss_answers\": [\"âge de la retraite\", \"âge de pension\", \"limite d'âge\"], \"evidence\": \"jusqu’à l’âge de référence\"}, \"it\": {\"question\": \"Fino a che età le rendite per i superstiti e d'invalidità nella previdenza professionale sono adeguate all'evoluzione dei prezzi dopo una durata di più di tre anni ?\", \"answer\": \"età di riferimento\", \"answer_aliases\": [\"età di riferimento\", \"l'età di riferimento\"], \"near_miss_answers\": [\"età di pensionamento\", \"età pensionabile\", \"limite d'età\"], \"evidence\": \"fino al compimento dell’età di riferimento\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-09-26\", \"paragraph\": \"1\", \"de\": {\"outdated_answer\": \"ordentliches Rentenalter\", \"evidence\": \"bis zum Erreichen des ordentlichen Rentenalters\"}, \"fr\": {\"outdated_answer\": \"âge ordinaire de la retraite\", \"evidence\": \"jusqu’à l’âge ordinaire de la retraite\"}, \"it\": {\"outdated_answer\": \"età ordinaria di pensionamento\", \"evidence\": \"fino al compimento dell’età ordinaria di pensionamento\"}}]}}",
+ "reasoning_chars": 7885,
+ "usage": {
+  "prompt_tokens": 1733,
+  "completion_tokens": 2561,
+  "total_tokens": 4294,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2023,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 59.4,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

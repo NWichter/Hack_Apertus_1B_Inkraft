@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"EOG\", \"article_id\": \"art_16_j\", \"paragraph\": \"3\", \"domain\": \"eo_alv\", \"question_type\": \"temporal\", \"register\": \"lay\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Bei der Betreuungsgutschrift: wessen Tod bewirkt das Ende des Anspruchs nebst dem Tod des Kindes?\", \"answer\": \"der andere Elternteil\", \"answer_aliases\": [\"der andere Elternteil stirbt\", \"andere Elternteil\"], \"near_miss_answers\": [\"das Kind\", \"die Rahmenfrist\", \"die Taggelder\"], \"evidence\": \"wenn der andere Elternteil stirbt\"}, \"fr\": {\"question\": \"Dans l'allocation pour tâches de garde: quel décès, outre celui de l'enfant, entraîne l'extinction du droit?\", \"answer\": \"l’autre parent\", \"answer_aliases\": [\"l’autre parent décède\", \"autre parent\"], \"near_miss_answers\": [\"l'enfant\", \"le délai-cadre\", \"les indemnités journalières\"], \"evidence\": \"si l’autre parent décède\"}, \"it\": {\"question\": \"Nell'indennità per compiti di cura: la morte di chi, oltre a quella del figlio, fa estinguere il diritto?\", \"answer\": \"l’altro genitore\", \"answer_aliases\": [\"l’altro genitore muore\", \"altro genitore\"], \"near_miss_answers\": [\"il figlio\", \"il termine quadro\", \"le indennità giornaliere\"], \"evidence\": \"se l’altro genitore muore\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-01-01\", \"paragraph\": \"3\", \"de\": {\"outdated_answer\": \"der Vater\", \"evidence\": \"wenn der Vater stirbt\"}, \"fr\": {\"outdated_answer\": \"le père\", \"evidence\": \"si le père décède\"}, \"it\": {\"outdated_answer\": \"il padre\", \"evidence\": \"se il padre muore\"}}]}}",
+ "reasoning_chars": 20666,
+ "usage": {
+  "prompt_tokens": 1848,
+  "completion_tokens": 5990,
+  "total_tokens": 7838,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 5308,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 169.4,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

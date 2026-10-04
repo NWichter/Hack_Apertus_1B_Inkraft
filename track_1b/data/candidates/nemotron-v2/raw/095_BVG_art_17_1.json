@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"BVG\", \"article_id\": \"art_17\", \"paragraph\": \"1\", \"domain\": \"bvg_3a\", \"question_type\": \"procedural\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Nach welchen Regeln wird die Kinderrente berechnet?\", \"answer\": \"die gleichen Berechnungsregeln wie für die Altersrente\", \"answer_aliases\": [\"gleiche Berechnungsregeln wie für die Altersrente\", \"die Berechnungsregeln der Altersrente\"], \"near_miss_answers\": [\"die gleichen Berechnungsregeln wie für die Waisenrente\", \"andere Berechnungsregeln als für die Altersrente\", \"Berechnungsregeln der Waisenrente\"], \"evidence\": \"Für die Kinderrente gelten die gleichen Berechnungsregeln wie für die Altersrente.\"}, \"fr\": {\"question\": \"Selon quelles règles la rente pour enfant est-elle calculée ?\", \"answer\": \"les mêmes règles que la rente de vieillesse\", \"answer_aliases\": [\"mêmes règles que la rente de vieillesse\", \"les règles de la rente de vieillesse\"], \"near_miss_answers\": [\"les mêmes règles que la rente d'orphelin\", \"d'autres règles que la rente de vieillesse\", \"règles de la rente d'orphelin\"], \"evidence\": \"La rente pour enfant est calculée selon les mêmes règles que la rente de vieillesse.\"}, \"it\": {\"question\": \"Secondo quali regole viene calcolata la rendita per i figli?\", \"answer\": \"le norme applicabili alla rendita di vecchiaia\", \"answer_aliases\": [\"norme applicabili alla rendita di vecchiaia\", \"secondo le norme applicabili alla rendita di vecchiaia\"], \"near_miss_answers\": [\"le stesse norme della rendita per orfani\", \"altre norme della rendita di vecchiaia\", \"norme della rendita per orfani\"], \"evidence\": \"La rendita per i figli è calcolata secondo le norme applicabili alla rendita di vecchiaia.\"}, \"temporal\": null}",
+ "reasoning_chars": 10528,
+ "usage": {
+  "prompt_tokens": 1855,
+  "completion_tokens": 3282,
+  "total_tokens": 5137,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2690,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 81.5,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

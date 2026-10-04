@@ -1,0 +1,29 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "content": "{\"rewrite\": true, \"question_type\": \"procedural\", \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Wann entfällt der Anspruch auf die Entschädigung für eine Hilflosigkeit leichten Grades?\", \"answer\": \"bei einem Aufenthalt im Heim\", \"answer_aliases\": [\"Aufenthalt im Heim\", \"im Heim\"], \"near_miss_answers\": [\"bei einem Spitalaufenthalt\", \"bei einer Pflege zu Hause\", \"bei einem Aufenthalt zu Hause\"], \"evidence\": \"Der Anspruch auf die Entschädigung für eine Hilflosigkeit leichten Grades entfällt bei einem Aufenthalt im Heim.\"}, \"fr\": {\"question\": \"Quand le droit à l’allocation pour une impotence faible est-il supprimé?\", \"answer\": \"lors d’un séjour dans un home\", \"answer_aliases\": [\"séjour dans un home\", \"dans un home\"], \"near_miss_answers\": [\"lors d’un séjour à l’hôpital\", \"lors de soins à domicile\", \"lors d’un séjour à la maison\"], \"evidence\": \"Le droit à une allocation pour une impotence faible est supprimé lors d’un séjour dans un home.\"}, \"it\": {\"question\": \"Quando decade il diritto all’assegno per una grande invalidità di grado lieve?\", \"answer\": \"in caso di soggiorno in istituto\", \"answer_aliases\": [\"soggiorno in istituto\", \"in istituto\"], \"near_miss_answers\": [\"in caso di soggiorno in ospedale\", \"in caso di cure a domicilio\", \"in caso di soggiorno a casa\"], \"evidence\": \"Il diritto all’assegno per una grande invalidità di grado lieve decade in caso di soggiorno in istituto.\"}}",
+ "usage": {
+  "prompt_tokens": 1124,
+  "completion_tokens": 3337,
+  "total_tokens": 4461,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2793,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 128.4,
+ "generated_at": "2026-10-04"
+}

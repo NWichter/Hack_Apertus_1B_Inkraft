@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"OR\", \"article_id\": \"art_329_b\", \"paragraph\": \"3\", \"domain\": \"or_illness\", \"question_type\": \"temporal\", \"register\": \"lay\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Welcher Anspruch nach Artikel 329g verhindert eine Ferienkürzung?\", \"answer\": \"Urlaub des andern Elternteils\", \"answer_aliases\": [\"den Urlaub des andern Elternteils\", \"den Urlaub des andern Elternteils nach Artikel 329g\"], \"near_miss_answers\": [\"Mutterschaftsurlaub\", \"Betreuungsurlaub\", \"Adoptionsurlaub\"], \"evidence\": \"den Urlaub des andern Elternteils nach Artikel 329g\"}, \"fr\": {\"question\": \"Quel droit au titre de l’art. 329g empêche la réduction des vacances?\", \"answer\": \"congé de l’autre parent\", \"answer_aliases\": [\"le congé de l’autre parent\", \"le congé de l’autre parent au sens de l’art. 329g\"], \"near_miss_answers\": [\"congé de maternité\", \"congé de prise en charge\", \"congé d’adoption\"], \"evidence\": \"le congé de l’autre parent au sens de l’art. 329g\"}, \"it\": {\"question\": \"Quale diritto ai sensi dell’articolo 329g impedisce la riduzione delle ferie?\", \"answer\": \"congedo per l’altro genitore\", \"answer_aliases\": [\"il congedo per l’altro genitore\", \"un congedo per l’altro genitore ai sensi dell’articolo 329g\"], \"near_miss_answers\": [\"congedo di maternità\", \"congedo di assistenza\", \"congedo di adozione\"], \"evidence\": \"un congedo per l’altro genitore ai sensi dell’articolo 329g\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-09-01\", \"paragraph\": \"3\", \"de\": {\"outdated_answer\": \"Vaterschaftsurlaub\", \"evidence\": \"einen Vaterschaftsurlaub nach Artikel 329g\"}, \"fr\": {\"outdated_answer\": \"congé de paternité\", \"evidence\": \"un congé de paternité au sens de l’art. 329g\"}, \"it\": {\"outdated_answer\": \"congedo di paternità\", \"evidence\": \"un congedo di paternità ai sensi dell’articolo 329g\"}}]}}",
+ "reasoning_chars": 20263,
+ "usage": {
+  "prompt_tokens": 2418,
+  "completion_tokens": 6456,
+  "total_tokens": 8874,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 5230,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 186.3,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

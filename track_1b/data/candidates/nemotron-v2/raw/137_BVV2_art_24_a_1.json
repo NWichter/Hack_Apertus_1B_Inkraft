@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"BVV2\", \"article_id\": \"art_24_a\", \"paragraph\": \"1\", \"domain\": \"bvg_3a\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Bei Erreichen welches Alters darf die Vorsorgeeinrichtung ihre Invalidenleistungen nur noch kürzen, wenn diese mit Leistungen nach UVG, MVG oder vergleichbaren ausländischen Leistungen zusammentreffen?\", \"answer\": \"Referenzalter\", \"answer_aliases\": [\"Referenzalter\", \"das Referenzalter\"], \"near_miss_answers\": [\"Rentenalter\"], \"evidence\": \"Hat die versicherte Person das Referenzalter erreicht, so darf die Vorsorgeeinrichtung ihre Leistungen nur kürzen, wenn diese zusammentreffen mit:\"}, \"fr\": {\"question\": \"À partir de quel âge l'institution de prévoyance ne peut-elle réduire ses prestations d'invalidité que si celles-ci sont en concours avec des prestations LAA, LAM ou étrangères comparables?\", \"answer\": \"âge de référence\", \"answer_aliases\": [\"âge de référence\", \"l’âge de référence\"], \"near_miss_answers\": [\"âge de la retraite\"], \"evidence\": \"Si l’assuré a atteint l’âge de référence, l’institution de prévoyance ne peut réduire ses prestations que si celles-ci sont en concours avec:\"}, \"it\": {\"question\": \"A partire da quale età l'istituto di previdenza può ridurre le sue prestazioni d'invalidità solo in caso di concorso con prestazioni LAINF, LAM o estere analoghe?\", \"answer\": \"età di riferimento\", \"answer_aliases\": [\"età di riferimento\", \"l’età di riferimento\"], \"near_miss_answers\": [\"età di pensionamento\"], \"evidence\": \"Se l’assicurato ha raggiunto l’età di riferimento, l’istituto di previdenza può ridurre le sue prestazioni solo in caso di concorso di queste ultime con:\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-01-01\", \"paragraph\": \"1\", \"de\": {\"outdated_answer\": \"ordentliches Rentenalter\", \"evidence\": \"Hat die versicherte Person das ordentliche Rentenalter erreicht, so darf die Vorsorgeeinrichtung ihre Leistungen nur kürzen, wenn diese zusammentreffen mit:\"}, \"fr\": {\"outdated_answer\": \"âge ordinaire de la retraite\", \"evidence\": \"Si l’assuré a atteint l’âge ordinaire de la retraite, l’institution de prévoyance ne peut réduire ses prestations que si celles-ci sont en concours avec:\"}, \"it\": {\"outdated_answer\": \"età ordinaria di pensionamento\", \"evidence\": \"Se l’assicurato ha raggiunto l’età ordinaria di pensionamento, l’istituto di previdenza può ridurre le sue prestazioni solo in caso di concorso di queste ultime con:\"}}]}}",
+ "reasoning_chars": 8290,
+ "usage": {
+  "prompt_tokens": 2095,
+  "completion_tokens": 2703,
+  "total_tokens": 4798,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2120,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 84.1,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

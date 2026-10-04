@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"AVIV\", \"article_id\": \"art_41_b\", \"paragraph\": \"1\", \"domain\": \"eo_alv\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Welcher AHV-Altersbegriff ist massgebend für den Vierjahreszeitraum vor Erreichen des Alters bei zusätzlichen Taggeldern in der Arbeitslosenversicherung?\", \"answer\": \"Referenzalter nach Artikel 21 Absatz 1 AHVG\", \"answer_aliases\": [\"Referenzalter gemäss Art. 21 Abs. 1 AHVG\", \"Referenzalter nach AHV-Artikel 21 Absatz 1\"], \"near_miss_answers\": [\"ordentliches AHV-Rentenalter\", \"Rentenalter nach AHV\", \"AHV-Rentenalter\"], \"evidence\": \"Referenzalters nach Artikel 21 Absatz 1 AHVG\"}, \"fr\": {\"question\": \"Quel concept d’âge de l’AVS détermine la période de quatre ans précédant le seuil pour le droit aux indemnités journalières supplémentaires dans l’assurance-chômage ?\", \"answer\": \"âge de référence fixé à l’art. 21, al. 1, LAVS\", \"answer_aliases\": [\"âge de référence selon art. 21 al. 1 LAVS\", \"âge de référence de l’AVS à l’art. 21 al. 1\"], \"near_miss_answers\": [\"âge donnant droit à une rente ordinaire AVS\", \"âge de la rente AVS\", \"âge ordinaire AVS\"], \"evidence\": \"âge de référence fixé à l’art. 21, al. 1, LAVS\"}, \"it\": {\"question\": \"Quale concetto di età dell’AVS determina il periodo di quattro anni prima della soglia per il diritto alle indennità giornaliere supplementari nell’assicurazione contro la disoccupazione?\", \"answer\": \"età di riferimento secondo l’articolo 21 capoverso 1 LAVS\", \"answer_aliases\": [\"età di riferimento ai sensi dell’art. 21 cpv. 1 LAVS\", \"età di riferimento dell’AVS art. 21 cpv. 1\"], \"near_miss_answers\": [\"età ordinaria che dà diritto alla rendita AVS\", \"età di diritto alla rendita AVS\", \"età AVS ordinaria\"], \"evidence\": \"età di riferimento secondo l’articolo 21 capoverso 1 LAVS\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-09-01\", \"paragraph\": \"1\", \"de\": {\"outdated_answer\": \"ordentliches AHV-Rentenalter\", \"evidence\": \"ordentlichen AHV-Rentenalters\"}, \"fr\": {\"outdated_answer\": \"âge donnant droit à une rente ordinaire AVS\", \"evidence\": \"âge donnant droit à une rente ordinaire AVS\"}, \"it\": {\"outdated_answer\": \"età ordinaria che dà diritto alla rendita AVS\", \"evidence\": \"età ordinaria che dà diritto alla rendita AVS\"}}]}}",
+ "reasoning_chars": 24079,
+ "usage": {
+  "prompt_tokens": 1853,
+  "completion_tokens": 7287,
+  "total_tokens": 9140,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 6216,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 175.0,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

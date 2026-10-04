@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"AHVG\", \"article_id\": \"art_29_septies\", \"paragraph\": \"6\", \"domain\": \"ahv\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Bis wann erstreckt sich der Teilungszeitraum für Betreuungsgutschriften bei verheirateten Personen?\", \"answer\": \"31. Dezember vor dem Tag, an dem der erste Ehegatte das Referenzalter erreicht\", \"answer_aliases\": [\"vor dem Tag, an dem der erste Ehegatte das Referenzalter erreicht\", \"dem 31. Dezember vor dem Tag, an dem der erste Ehegatte das Referenzalter erreicht\"], \"near_miss_answers\": [\"1. Januar nach Vollendung des 20. Altersjahres\", \"31. Dezember vor der Eheschließung\", \"31. Dezember des Jahres der Scheidung\"], \"evidence\": \"dem 31. Dezember vor dem Tag, an dem der erste Ehegatte das Referenzalter erreicht\"}, \"fr\": {\"question\": \"Jusqu'à quelle date s'étend la période de répartition des bonifications pour tâches d'assistance entre époux?\", \"answer\": \"le 31 décembre précédant le jour où le premier des conjoints atteint l'âge de référence\", \"answer_aliases\": [\"le 31 décembre précédant le jour où le premier des conjoints atteint l'âge de référence\", \"précédant le jour où le premier des conjoints atteint l'âge de référence\"], \"near_miss_answers\": [\"1er janvier suivant l'accomplissement de 20 ans révolus\", \"31 décembre avant le mariage\", \"31 décembre de l'année du divorce\"], \"evidence\": \"le 31 décembre précédant le jour où le premier des conjoints atteint l'âge de référence\"}, \"it\": {\"question\": \"Fino a che data si estende il periodo di ripartizione degli accrediti per compiti assistenziali tra coniugi?\", \"answer\": \"il 31 dicembre che precede il raggiungimento dell'età di riferimento da parte del coniuge più anziano\", \"answer_aliases\": [\"il 31 dicembre che precede il raggiungimento dell'età di riferimento da parte del coniuge più anziano\", \"che precede il raggiungimento dell'età di riferimento da parte del coniuge più anziano\"], \"near_miss_answers\": [\"1° gennaio successivo al compimento dei 20 anni\", \"31 dicembre prima del matrimonio\", \"31 dicembre dell'anno del divorzio\"], \"evidence\": \"il 31 dicembre che precede il raggiungimento dell'età di riferimento da parte del coniuge più anziano\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-09-01\", \"paragraph\": \"6\", \"de\": {\"outdated_answer\": \"31. Dezember vor Eintritt des Versicherungsfalles beim Ehegatten, welcher zuerst rentenberechtigt wird\", \"evidence\": \"dem 31. Dezember vor Eintritt des Versicherungsfalles beim Ehegatten, welcher zuerst rentenberechtigt wird\"}, \"fr\": {\"outdated_answer\": \"31 décembre qui précède la réalisation de l'événement assuré pour le conjoint qui, le premier, a droit à la rente\", \"evidence\": \"le 31 décembre qui précède la réalisation de l'événement assuré pour le conjoint qui, le premier, a droit à la rente\"}, \"it\": {\"outdated_answer\": \"31 dicembre che precede l'insorgere dell'evento assicurato per il coniuge che ha per primo diritto alla rendita\", \"evidence\": \"il 31 dicembre che precede l'insorgere dell'evento assicurato per il coniuge che ha per primo diritto alla rendita\"}}]}}",
+ "reasoning_chars": 21039,
+ "usage": {
+  "prompt_tokens": 1995,
+  "completion_tokens": 6421,
+  "total_tokens": 8416,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 5360,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 209.5,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

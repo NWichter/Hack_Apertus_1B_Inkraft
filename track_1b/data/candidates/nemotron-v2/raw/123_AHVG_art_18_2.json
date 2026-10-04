@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"AHVG\", \"article_id\": \"art_18\", \"paragraph\": \"2\", \"domain\": \"ahv\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Wie werden in der AHV die völkerrechtlichen Verträge bezeichnet, die von der Wohnsitzpflicht für ausländische Rentenberechtigte abweichen können?\", \"answer\": \"internationale Abkommen\", \"answer_aliases\": [\"abweichende internationale Abkommen\", \"internationale Abkommen\"], \"near_miss_answers\": [\"bundesrechtliche Vorschriften\", \"Rechtsstellung der Flüchtlinge\", \"Staatenlose\"], \"evidence\": \"abweichende internationale Abkommen, insbesondere mit Staaten, deren Gesetzgebung den Schweizer Bürgern und ihren Hinterlassenen Vorteile bietet, die denjenigen dieses Gesetzes ungefähr gleichwertig sind.\"}, \"fr\": {\"question\": \"Comment sont désignés dans l'AVS les traités internationaux qui peuvent déroger à l'obligation de domicile pour les bénéficiaires de rente étrangers ?\", \"answer\": \"conventions internationales\", \"answer_aliases\": [\"conventions internationales contraires\", \"conventions internationales\"], \"near_miss_answers\": [\"dispositions spéciales de droit fédéral\", \"statut des réfugiés\", \"apatrides\"], \"evidence\": \"conventions internationales contraires, conclues en particulier avec des États dont la législation accorde aux ressortissants suisses et à leurs survivants des avantages à peu près équivalents à ceux de la présente loi.\"}, \"it\": {\"question\": \"Come sono denominati nell'AVS i trattati internazionali che possono derogare all'obbligo di domicilio per i beneficiari di rendita stranieri?\", \"answer\": \"convenzioni internazionali\", \"answer_aliases\": [\"convenzioni internazionali contrarie\", \"convenzioni internazionali\"], \"near_miss_answers\": [\"disposizioni speciali di diritto federale\", \"statuto dei rifugiati\", \"apolidi\"], \"evidence\": \"convenzioni internazionali contrarie, in particolare quelle concluse con Stati la cui legislazione accorda ai cittadini svizzeri e ai loro superstiti vantaggi pressappoco equivalenti a quelli della presente legge.\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-09-01\", \"paragraph\": \"2\", \"de\": {\"outdated_answer\": \"zwischenstaatliche Vereinbarungen\", \"evidence\": \"abweichende zwischenstaatliche Vereinbarungen, insbesondere mit Staaten, deren Gesetzgebung den Schweizer Bürgern und ihren Hinterlassenen Vorteile bietet, die denjenigen dieses Gesetzes ungefähr gleichwertig sind.\"}, \"fr\": {\"outdated_answer\": \"conventions internationales\", \"evidence\": \"conventions internationales contraires, conclues en particulier avec des États dont la législation accorde aux ressortissants suisses et à leurs survivants des avantages à peu près équivalents à ceux de la présente loi.\"}, \"it\": {\"outdated_answer\": \"convenzioni internazionali\", \"evidence\": \"convenzioni internazionali contrarie, in particolare quelle concluse con Stati la cui legislazione accorda ai cittadini svizzeri e ai loro superstiti vantaggi pressappoco equivalenti a quelli della presente legge.\"}}]}}",
+ "reasoning_chars": 31471,
+ "usage": {
+  "prompt_tokens": 2286,
+  "completion_tokens": 7827,
+  "total_tokens": 10113,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 8001,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 197.5,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

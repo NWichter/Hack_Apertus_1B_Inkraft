@@ -1,0 +1,29 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "content": "{\"rewrite\": true, \"question_type\": \"procedural\", \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"In der Unfallversicherung: Welche stationäre Einrichtung kann der Versicherte frei wählen?\", \"answer\": \"Spital\", \"answer_aliases\": [\"das Spital\", \"Spital\"], \"near_miss_answers\": [\"Arzt\", \"Zahnarzt\", \"Apotheke\"], \"evidence\": \"Der Versicherte kann den Arzt, den Zahnarzt, den Chiropraktor, die Apotheke, das Spital und die Kuranstalt frei wählen.\"}, \"fr\": {\"question\": \"Dans l’assurance-accidents: quel établissement hospitalier l’assuré peut-il choisir librement?\", \"answer\": \"l’hôpital\", \"answer_aliases\": [\"l’hôpital\", \"hôpital\"], \"near_miss_answers\": [\"médecin\", \"dentiste\", \"pharmacie\"], \"evidence\": \"L’assuré peut choisir librement son médecin, son dentiste, son chiropraticien, sa pharmacie et l’hôpital ou l’établissement de cure dans lequel il veut se faire soigner.\"}, \"it\": {\"question\": \"Nell’assicurazione contro gli infortuni: quale struttura ospedaliera può scegliere liberamente l’assicurato?\", \"answer\": \"l’ospedale\", \"answer_aliases\": [\"l’ospedale\", \"ospedale\"], \"near_miss_answers\": [\"medico\", \"dentista\", \"farmacia\"], \"evidence\": \"L’assicurato può scegliere liberamente il medico, il dentista, il chiropratico, la farmacia, l’ospedale e la casa di cura.\"}}",
+ "usage": {
+  "prompt_tokens": 1142,
+  "completion_tokens": 4148,
+  "total_tokens": 5290,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 3751,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 66.9,
+ "generated_at": "2026-10-04"
+}

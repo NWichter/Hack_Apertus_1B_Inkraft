@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"ELV\", \"article_id\": \"art_16_a\", \"paragraph\": \"3\", \"domain\": \"iv_el\", \"question_type\": \"temporal\", \"register\": \"lay\", \"difficulty_prior\": 1, \"answer_type\": \"currency_chf\", \"answer_normalized\": {\"value\": 3480, \"unit\": \"CHF\"}, \"de\": {\"question\": \"Wie hoch ist die jährliche Pauschale für Nebenkosten bei den Ergänzungsleistungen zur AHV und IV?\", \"answer\": \"3480 Franken\", \"answer_aliases\": [\"CHF 3480\", \"3'480 Franken\", \"dreitausendvierhundertachtzig Franken\"], \"near_miss_answers\": [\"3000 Franken\", \"3500 Franken\", \"4000 Franken\"], \"evidence\": \"Die Pauschale beträgt pro Jahr 3480 Franken.\"}, \"fr\": {\"question\": \"Quel est le montant annuel du forfait pour frais accessoires dans le cadre des prestations complémentaires à l'AVS et à l'AI?\", \"answer\": \"3480 francs\", \"answer_aliases\": [\"CHF 3480\", \"3'480 francs\", \"trois mille quatre cent quatre-vingts francs\"], \"near_miss_answers\": [\"3000 francs\", \"3500 francs\", \"4000 francs\"], \"evidence\": \"Le montant du forfait s’élève à 3480 francs par année.\"}, \"it\": {\"question\": \"A quanto ammonta il forfait annuo per le spese accessorie nelle prestazioni complementari all'AVS e all'AI?\", \"answer\": \"3480 franchi\", \"answer_aliases\": [\"CHF 3480\", \"3'480 franchi\", \"tremilaquattrocentoottanta franchi\"], \"near_miss_answers\": [\"3000 franchi\", \"3500 franchi\", \"4000 franchi\"], \"evidence\": \"L’importo annuo del forfait è di 3480 franchi.\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2024-04-03\", \"paragraph\": \"3\", \"de\": {\"outdated_answer\": \"3060 Franken\", \"evidence\": \"Die Pauschale beträgt pro Jahr 3060 Franken.\"}, \"fr\": {\"outdated_answer\": \"3060 francs\", \"evidence\": \"Le montant du forfait s’élève à 3060 francs par année.\"}, \"it\": {\"outdated_answer\": \"3060 franchi\", \"evidence\": \"L’importo annuo del forfait è di 3060 franchi.\"}}]}}",
+ "reasoning_chars": 8458,
+ "usage": {
+  "prompt_tokens": 1547,
+  "completion_tokens": 3040,
+  "total_tokens": 4587,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2151,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 101.3,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

@@ -1,0 +1,38 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"KVV\", \"article_id\": \"art_22\", \"paragraph\": \"3\", \"domain\": \"kvg_billing\", \"question_type\": \"procedural\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Welchen Streitgegenstand regelt Buchstabe d für die gemeinsame Einrichtung?\", \"answer\": \"die Aufteilung des kantonalen Anteils auf die Kantone\", \"answer_aliases\": [\"Aufteilung des kantonalen Anteils auf die Kantone\", \"die Aufteilung des kantonalen Anteils\", \"Aufteilung des kantonalen Anteils\"], \"near_miss_answers\": [\"die Umverteilung von Reserven\", \"die Beiträge der Versicherer zur Finanzierung des Insolvenzfonds\", \"Auszahlungen aus dem Insolvenzfonds\"], \"evidence\": \"d. die Aufteilung des kantonalen Anteils auf die Kantone nach Artikel 19a.\"}, \"fr\": {\"question\": \"Quel objet de litige règle la lettre d pour l'institution commune ?\", \"answer\": \"la répartition de la part cantonale entre les cantons\", \"answer_aliases\": [\"répartition de la part cantonale entre les cantons\", \"la répartition de la part cantonale\", \"répartition de la part cantonale\"], \"near_miss_answers\": [\"la redistribution des réserves\", \"les contributions des assureurs au financement du fonds d'insolvabilité\", \"les versements issus du fonds d'insolvabilité\"], \"evidence\": \"d. la répartition de la part cantonale entre les cantons au sens de l'art. 19a.\"}, \"it\": {\"question\": \"Quale oggetto di controversia regola la lettera d per l'istituzione comune?\", \"answer\": \"la ripartizione tra i Cantoni della quotaparte cantonale\", \"answer_aliases\": [\"ripartizione tra i Cantoni della quotaparte cantonale\", \"la ripartizione tra i Cantoni\", \"ripartizione tra i Cantoni della quotaparte cantonale\"], \"near_miss_answers\": [\"la ridistribuzione delle riserve\", \"i contributi degli assicuratori per il finanziamento del fondo per i casi d'insolvenza\", \"i pagamenti effettuati attingendo dal fondo per i casi d'insolvenza\"], \"evidence\": \"d. alla ripartizione tra i Cantoni della quotaparte cantonale secondo l'articolo 19a.\"}, \"temporal\": null}",
+ "reasoning_chars": 27039,
+ "usage": {
+  "prompt_tokens": 2507,
+  "completion_tokens": 7473,
+  "total_tokens": 9980,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 6861,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 271.4,
+ "attempts": 1,
+ "generated_at": "2026-10-04",
+ "settings": {
+  "max_tokens": 24000,
+  "reasoning_effort": "medium",
+  "temperature": 0.3
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"AHVG\", \"article_id\": \"art_24_b\", \"paragraph\": \"\", \"domain\": \"ahv\", \"question_type\": \"procedural\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Was wird in der AHV bei der Vergleichsrechnung von Witwen- oder Witwerrente und Altersrente zur jährlichen Altersrente angerechnet?\", \"answer\": \"die 13. Altersrente und der Rentenzuschlag\", \"answer_aliases\": [\"13. Altersrente nach Art. 34ter und Rentenzuschlag nach Art. 34bis\", \"13. Altersrente sowie Rentenzuschlag\", \"die 13. Altersrente und gegebenenfalls der Rentenzuschlag\"], \"near_miss_answers\": [\"nur die höhere Rente\", \"die jährliche Altersrente\", \"die Witwenrente\"], \"evidence\": \"Bei der Vergleichsrechnung werden die 13. Altersrente nach Artikel 34ter und gegebenenfalls der Rentenzuschlag nach Artikel 34bis an die jährliche Altersrente angerechnet.\"}, \"fr\": {\"question\": \"Qu'est-ce qui est pris en compte dans la rente de vieillesse annuelle lors du calcul comparatif entre la rente de veuve ou de veuf et la rente de vieillesse en vertu de l'AHV?\", \"answer\": \"la 13e rente de vieillesse et le supplément de rente\", \"answer_aliases\": [\"13e rente de vieillesse visée à l'art. 34ter et supplément de rente visé à l'art. 34bis\", \"13e rente de vieillesse ainsi que le supplément de rente\", \"la 13e rente de vieillesse et, le cas échéant, le supplément de rente\"], \"near_miss_answers\": [\"seule la rente la plus élevée\", \"la rente de vieillesse annuelle\", \"la rente de veuve ou de veuf\"], \"evidence\": \"Pour ce calcul comparatif, la 13e rente de vieillesse visée à l’art. 34ter et, le cas échéant, le supplément de rente visé l’art. 34bis sont pris en compte dans la rente de vieillesse annuelle.\"}, \"it\": {\"question\": \"Cosa viene computato nella rendita di vecchiaia annua nel calcolo comparativo tra rendita per superstiti e rendita di vecchiaia nell'AHV?\", \"answer\": \"la 13a mensilità della rendita di vecchiaia e il supplemento di rendita\", \"answer_aliases\": [\"13a mensilità della rendita di vecchiaia ai sensi dell'art. 34ter e supplemento di rendita ai sensi dell'art. 34bis\", \"13a mensilità della rendita di vecchiaia nonché il supplemento di rendita\", \"la 13a mensilità della rendita di vecchiaia e, se del caso, il supplemento di rendita\"], \"near_miss_answers\": [\"soltanto la rendita più elevata\", \"la rendita di vecchiaia annua\", \"la rendita per superstiti\"], \"evidence\": \"Per il calcolo comparativo, la 13a mensilità della rendita di vecchiaia di cui all’articolo 34ter e, se del caso, il supplemento di rendita di cui all’articolo 34bis sono computati nella rendita di vecchiaia annua.\"}, \"temporal\": null}",
+ "reasoning_chars": 12912,
+ "usage": {
+  "prompt_tokens": 1931,
+  "completion_tokens": 4264,
+  "total_tokens": 6195,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 3265,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 101.5,
+ "attempts": 1,
+ "generated_at": "2026-10-04",
+ "settings": {
+  "max_tokens": 24000,
+  "reasoning_effort": "medium",
+  "temperature": 0.3
+ }
+}

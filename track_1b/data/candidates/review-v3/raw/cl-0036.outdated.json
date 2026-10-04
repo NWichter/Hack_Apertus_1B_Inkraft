@@ -1,0 +1,29 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "content": "{\"outdated\": true, \"version_date\": \"2023-09-01\", \"paragraph\": \"2\", \"de\": {\"outdated_answer\": \"am ersten Tag des Monats, welcher der Vollendung des gemäss Absatz 1 massgebenden Altersjahres folgt\", \"evidence\": \"Der Anspruch auf die Altersrente entsteht am ersten Tag des Monats, welcher der Vollendung des gemäss Absatz 1 massgebenden Altersjahres folgt.\"}, \"fr\": {\"outdated_answer\": \"le premier jour du mois suivant celui où a été atteint l’âge prescrit à l’al. 1\", \"evidence\": \"Le droit à une rente de vieillesse prend naissance le premier jour du mois suivant celui où a été atteint l’âge prescrit à l’al. 1.\"}, \"it\": {\"outdated_answer\": \"il primo giorno del mese successivo a quello in cui è stata compiuta l’età stabilita nel capoverso 1\", \"evidence\": \"Il diritto alla rendita di vecchiaia nasce il primo giorno del mese successivo a quello in cui è stata compiuta l’età stabilita nel capoverso 1.\"}}",
+ "usage": {
+  "prompt_tokens": 1377,
+  "completion_tokens": 1016,
+  "total_tokens": 2393,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 778,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 29.8,
+ "generated_at": "2026-10-04"
+}

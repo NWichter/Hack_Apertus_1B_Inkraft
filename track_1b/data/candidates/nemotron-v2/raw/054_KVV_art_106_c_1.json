@@ -1,0 +1,38 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"KVV\", \"article_id\": \"art_106_c\", \"paragraph\": \"1\", \"domain\": \"kvg_billing\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Welche zusätzlichen Angaben übermittelt der Versicherer dem Kanton in der obligatorischen Krankenpflegeversicherung?\", \"answer\": \"die genehmigte Prämie sowie den Ausgleichsbetrag\", \"answer_aliases\": [\"die genehmigte Prämie sowie den Ausgleichsbetrag nach Artikel 26 Absatz 4 der Krankenversicherungsaufsichtsverordnung vom 18. November 2015 (KVAV)\", \"genehmigte Prämie und Ausgleichsbetrag\"], \"near_miss_answers\": [\"ob er die Meldung einer bei ihm versicherten Person zuordnen kann\", \"die genehmigte Prämie\", \"den Ausgleichsbetrag\"], \"evidence\": \"Er teilt dem Kanton ausserdem die genehmigte Prämie sowie den Ausgleichsbetrag nach Artikel 26 Absatz 4 der Krankenversicherungsaufsichtsverordnung vom 18. November 2015 (KVAV) mit.\"}, \"fr\": {\"question\": \"Quelles informations supplémentaires l'assureur transmet-il au canton dans l'assurance-maladie obligatoire ?\", \"answer\": \"le montant de la prime approuvée et celui du versement de compensation\", \"answer_aliases\": [\"le montant de la prime approuvée et celui du versement de compensation visé à l’art. 26, al. 4, de l’ordonnance du 18 novembre 2015 sur la surveillance de l’assurance-maladie (OSAMal)\", \"la prime approuvée et le versement de compensation\"], \"near_miss_answers\": [\"s’il peut rattacher l’annonce à une personne assurée chez lui\", \"le montant de la prime approuvée\", \"celui du versement de compensation\"], \"evidence\": \"Il lui communique en outre le montant de la prime approuvée et celui du versement de compensation visé à l’art. 26, al. 4, de l’ordonnance du 18 novembre 2015 sur la surveillance de l’assurance-maladie (OSAMal).\"}, \"it\": {\"question\": \"Quali informazioni aggiuntive l'assicuratore comunica al Cantone nell'assicurazione malattie obbligatoria?\", \"answer\": \"il premio approvato e l’importo di compensazione\", \"answer_aliases\": [\"il premio approvato e l’importo di compensazione secondo l’articolo 26 capoverso 4 dell’ordinanza del 18 novembre 2015 sulla vigilanza sull’assicurazione malattie (OVAMal)\", \"premio approvato e importo di compensazione\"], \"near_miss_answers\": [\"se può collegare la notifica a un proprio assicurato\", \"il premio approvato\", \"l’importo di compensazione\"], \"evidence\": \"Comunica inoltre al Cantone il premio approvato e l’importo di compensazione secondo l’articolo 26 capoverso 4 dell’ordinanza del 18 novembre 2015 sulla vigilanza sull’assicurazione malattie (OVAMal).\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2024-10-01\", \"paragraph\": \"1\", \"de\": {\"outdated_answer\": \"Keine zusätzlichen Angaben vorgesehen\", \"evidence\": \"Der Versicherer teilt dem Kanton mit, ob er die Meldung einer bei ihm versicherten Person zuordnen kann.\"}, \"fr\": {\"outdated_answer\": \"Aucune information supplémentaire prévue\", \"evidence\": \"L’assureur communique au canton s’il peut attribuer l’annonce à une personne assurée chez lui.\"}, \"it\": {\"outdated_answer\": \"Nessuna informazione aggiuntiva prevista\", \"evidence\": \"L’assicuratore comunica al Cantone se può attribuire la notifica a un proprio assicurato.\"}}, {\"version_date\": \"2026-01-01\", \"paragraph\": \"1\", \"de\": {\"outdated_answer\": \"die genehmigte Prämie sowie den Ausgleichsbetrag nach Artikel 26 Absatz 4 der Krankenversicherungsaufsichtsverordnung vom 18. November 2015\", \"evidence\": \"Er teilt dem Kanton ausserdem die genehmigte Prämie sowie den Ausgleichsbetrag nach Artikel 26 Absatz 4 der Krankenversicherungsaufsichtsverordnung vom 18. November 2015 mit.\"}, \"fr\": {\"outdated_answer\": \"le montant de la prime approuvée et celui du versement de compensation visé à l’art. 26, al. 4, de l’ordonnance du 18 novembre 2015 sur la surveillance de l’assurance-maladie\", \"evidence\": \"Il lui communique en outre le montant de la prime approuvée et celui du versement de compensation visé à l’art. 26, al. 4, de l’ordonnance du 18 novembre 2015 sur la surveillance de l’assurance-maladie.\"}, \"it\": {\"outdated_answer\": \"il premio approvato e l’importo di compensazione secondo l’articolo 26 capoverso 4 dell’ordinanza del 18 novembre 2015 sulla vigilanza sull’assicurazione malattie\", \"evidence\": \"Comunica inoltre al Cantone il premio approvato e l’importo di compensazione secondo l’articolo 26 capoverso 4 dell’ordinanza del 18 novembre 2015 sulla vigilanza sull’assicurazione malattie.\"}}]}}",
+ "reasoning_chars": 27720,
+ "usage": {
+  "prompt_tokens": 2029,
+  "completion_tokens": 9093,
+  "total_tokens": 11122,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 7089,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 188.9,
+ "attempts": 1,
+ "generated_at": "2026-10-04",
+ "settings": {
+  "max_tokens": 24000,
+  "reasoning_effort": "medium",
+  "temperature": 0.3
+ }
+}

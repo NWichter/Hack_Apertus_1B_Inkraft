@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"AHVG\", \"article_id\": \"art_39\", \"paragraph\": \"3\", \"domain\": \"ahv\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Wodurch wird die aufgeschobene Altersrente beziehungsweise der Anteil davon erhöht?\", \"answer\": \"versicherungsmathematischen Gegenwert der aufgeschobenen Leistungen\", \"answer_aliases\": [\"versicherungsmathematischer Gegenwert der aufgeschobenen Leistungen\", \"den versicherungsmathematischen Gegenwert der aufgeschobenen Leistungen\", \"Gegenwert der aufgeschobenen Leistungen\"], \"near_miss_answers\": [\"versicherungstechnischen Gegenwert der aufgeschobenen Leistungen\", \"versicherungsmathematischen Gegenwert der nicht bezogenen Leistungen\"], \"evidence\": \"wird um den versicherungsmathematischen Gegenwert der aufgeschobenen Leistungen erhöht\"}, \"fr\": {\"question\": \"Par quoi la rente de vieillesse ajournée ou le pourcentage de celle-ci est-elle augmentée?\", \"answer\": \"contre-valeur actuarielle des prestations ajournées\", \"answer_aliases\": [\"la contre-valeur actuarielle des prestations ajournées\", \"contre-valeur actuarielle\", \"contre-valeur actuarielle des prestations ajournées\"], \"near_miss_answers\": [\"contre-valeur technique des prestations ajournées\", \"contre-valeur actuarielle de la prestation ajournée\"], \"evidence\": \"sont augmentés de la contre-valeur actuarielle des prestations ajournées\"}, \"it\": {\"question\": \"Di che cosa è aumentata la rendita di vecchiaia differita o la percentuale di rendita differita?\", \"answer\": \"controvalore attuariale delle prestazioni differite\", \"answer_aliases\": [\"il controvalore attuariale delle prestazioni differite\", \"controvalore attuariale\", \"controvalore attuariale delle prestazioni differite\"], \"near_miss_answers\": [\"controvalore tecnico delle prestazioni differite\", \"controvalore attuariale della prestazione differita\"], \"evidence\": \"è aumentata del controvalore attuariale delle prestazioni differite\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2025-01-01\", \"paragraph\": \"2\", \"de\": {\"outdated_answer\": \"Erhöhung ausgeschlossen\", \"evidence\": \"Die Erhöhung des aufgeschobenen Anteils ist ausgeschlossen.\"}, \"fr\": {\"outdated_answer\": \"augmentation exclue\", \"evidence\": \"L’augmentation du pourcentage de l’ajournement est exclue.\"}, \"it\": {\"outdated_answer\": \"aumento escluso\", \"evidence\": \"L’aumento della percentuale è escluso.\"}}, {\"version_date\": \"2023-09-01\", \"paragraph\": \"2\", \"de\": {\"outdated_answer\": \"versicherungstechnischen Gegenwert der nicht bezogenen Leistung\", \"evidence\": \"wird um den versicherungstechnischen Gegenwert der nicht bezogenen Leistung erhöht\"}, \"fr\": {\"outdated_answer\": \"contre-valeur actuarielle de la prestation non touchée\", \"evidence\": \"sont augmentées de la contre-valeur actuarielle de la prestation non touchée\"}, \"it\": {\"outdated_answer\": \"controvalore attuariale della prestazione non ricevuta\", \"evidence\": \"sono aumentate del controvalore attuariale della prestazione non ricevuta\"}}]}}",
+ "reasoning_chars": 22605,
+ "usage": {
+  "prompt_tokens": 1818,
+  "completion_tokens": 6476,
+  "total_tokens": 8294,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 5744,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 165.6,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

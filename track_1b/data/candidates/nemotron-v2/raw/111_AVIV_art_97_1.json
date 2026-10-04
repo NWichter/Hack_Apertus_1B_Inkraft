@@ -1,0 +1,38 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"AVIV\", \"article_id\": \"art_97\", \"paragraph\": \"1\", \"domain\": \"eo_alv\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Welche Art von Kapitalkosten wird in der Aufzählung der anrechenbaren Kosten für die Durchführung von Beschäftigungsmassnahmen genannt?\", \"answer\": \"Fremdkapital\", \"answer_aliases\": [\"Fremdkapital\", \"Fremdkapital\"], \"near_miss_answers\": [\"Eigenkapital\", \"Projektierungskosten\", \"Raumkosten\"], \"evidence\": \"die erforderlichen Projektierungs‑, Fremdkapital- und Raumkosten.\"}, \"fr\": {\"question\": \"Quel type de frais de capital figure dans l'énumération des frais à prendre en compte pour l'organisation d'une mesure d'emploi?\", \"answer\": \"capital étranger\", \"answer_aliases\": [\"capital étranger\", \"capital étranger\"], \"near_miss_answers\": [\"capital propre\", \"frais de projet\", \"frais de locaux\"], \"evidence\": \"les frais nécessaires de projet, de capital étranger et de locaux.\"}, \"it\": {\"question\": \"Quale tipo di spese di capitale è menzionato nell'elenco delle spese computabili per l'esecuzione di provvedimenti di occupazione?\", \"answer\": \"capitale di terzi\", \"answer_aliases\": [\"capitale di terzi\", \"capitale di terzi\"], \"near_miss_answers\": [\"capitale proprio\", \"spese di progettazione\", \"spese per locali\"], \"evidence\": \"le spese necessarie per la progettazione, per il capitale di terzi e per i locali.\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2025-11-01\", \"paragraph\": \"1\", \"de\": {\"outdated_answer\": \"Kapital\", \"evidence\": \"die erforderlichen Projektierungs‑, Kapital- und Raumkosten.\"}, \"fr\": {\"outdated_answer\": \"capital investi\", \"evidence\": \"les frais nécessaires de projet, de capital investi et de locaux.\"}, \"it\": {\"outdated_answer\": \"capitale investito\", \"evidence\": \"le spese necessarie per la progettazione, per il capitale investito e per i locali.\"}}]}}",
+ "reasoning_chars": 14186,
+ "usage": {
+  "prompt_tokens": 2277,
+  "completion_tokens": 4455,
+  "total_tokens": 6732,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 3612,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 99.7,
+ "attempts": 1,
+ "generated_at": "2026-10-04",
+ "settings": {
+  "max_tokens": 24000,
+  "reasoning_effort": "medium",
+  "temperature": 0.3
+ }
+}

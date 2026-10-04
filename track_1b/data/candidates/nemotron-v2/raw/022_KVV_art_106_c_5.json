@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"KVV\", \"article_id\": \"art_106_c\", \"paragraph\": \"5\", \"domain\": \"kvg_billing\", \"question_type\": \"procedural\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Unter welchem gesetzlichen Vorbehalt darf der Versicherer in der obligatorischen Krankenpflegeversicherung seine restlichen Prämienforderungen und anderen fälligen Forderungen mit kantonalen Beiträgen verrechnen?\", \"answer\": \"Artikel 105k Absatz 5\", \"answer_aliases\": [\"Art. 105k Abs. 5\", \"Artikel 105k Absatz 5\"], \"near_miss_answers\": [\"Artikel 105k Absatz 4\", \"Artikel 106c Absatz 5\", \"Artikel 105 Absatz 5\"], \"evidence\": \"unter Vorbehalt von Artikel 105k Absatz 5 mit folgenden Beiträgen verrechnen\"}, \"fr\": {\"question\": \"Sous quelle réserve légale l'assureur peut-il, dans l'assurance obligatoire des soins, compenser ses créances de primes restantes et ses autres créances échues avec les contributions cantonales?\", \"answer\": \"l'art. 105k, al. 5\", \"answer_aliases\": [\"art. 105k, al. 5\", \"article 105k, alinéa 5\"], \"near_miss_answers\": [\"art. 105k, al. 4\", \"art. 106c, al. 5\", \"art. 105, al. 5\"], \"evidence\": \"sous réserve de l'art. 105k, al. 5, avec\"}, \"it\": {\"question\": \"Sotto quale riserva legale l'assicuratore può, nell'assicurazione obbligatoria delle cure medico-sanitarie, compensare i suoi crediti residui relativi ai premi e altri crediti scaduti con i contributi cantonali?\", \"answer\": \"l'articolo 105k capoverso 5\", \"answer_aliases\": [\"art. 105k cpv. 5\", \"articolo 105k capoverso 5\"], \"near_miss_answers\": [\"art. 105k cpv. 4\", \"art. 106c cpv. 5\", \"art. 105 cpv. 5\"], \"evidence\": \"fatto salvo l'articolo 105k capoverso 5, attraverso\"}, \"temporal\": null}",
+ "reasoning_chars": 22466,
+ "usage": {
+  "prompt_tokens": 2421,
+  "completion_tokens": 6401,
+  "total_tokens": 8822,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 5718,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 181.7,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

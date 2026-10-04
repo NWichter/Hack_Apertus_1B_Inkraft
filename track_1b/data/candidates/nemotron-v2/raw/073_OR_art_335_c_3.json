@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"OR\", \"article_id\": \"art_335_c\", \"paragraph\": \"3\", \"domain\": \"or_illness\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Welche Voraussetzung verlängert die Kündigungsfrist bei einer Arbeitgeberkündigung?\", \"answer\": \"Urlaub des andern Elternteils\", \"answer_aliases\": [\"Urlaub des andern Elternteils nach Artikel 329g\", \"Urlaub des andern Elternteils (Art. 329g)\"], \"near_miss_answers\": [\"noch nicht bezogene Urlaubstage\", \"Mutterschaftsurlaub\", \"Urlaubsanspruch\"], \"evidence\": \"Urlaub des andern Elternteils nach Artikel 329g\"}, \"fr\": {\"question\": \"Quelle condition prolonge le délai de résiliation quand l’employeur résilie ?\", \"answer\": \"congé de l’autre parent\", \"answer_aliases\": [\"congé de l’autre parent au sens de l’art. 329g\", \"congé de l’autre parent (art. 329g)\"], \"near_miss_answers\": [\"jours de congé non pris\", \"congé de maternité\", \"droit au congé\"], \"evidence\": \"congé de l’autre parent au sens de l’art. 329g\"}, \"it\": {\"question\": \"Quale presupposto prolunga il termine di disdetta in caso di disdetta da parte del datore di lavoro?\", \"answer\": \"congedo per l’altro genitore\", \"answer_aliases\": [\"congedo per l’altro genitore ai sensi dell’articolo 329g\", \"congedo per l’altro genitore (art. 329g)\"], \"near_miss_answers\": [\"giorni di congedo non fruiti\", \"congedo di maternità\", \"diritto al congedo\"], \"evidence\": \"congedo per l’altro genitore ai sensi dell’articolo 329g\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-09-01\", \"paragraph\": \"3\", \"de\": {\"outdated_answer\": \"Vaterschaftsurlaub\", \"evidence\": \"Vaterschaftsurlaub im Sinne von Artikel 329g\"}, \"fr\": {\"outdated_answer\": \"congé de paternité\", \"evidence\": \"congé de paternité au sens de l’art. 329g\"}, \"it\": {\"outdated_answer\": \"congedo di paternità\", \"evidence\": \"congedo di paternità ai sensi dell’articolo 329g\"}}]}}",
+ "reasoning_chars": 16666,
+ "usage": {
+  "prompt_tokens": 1843,
+  "completion_tokens": 5269,
+  "total_tokens": 7112,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 4278,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 135.7,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

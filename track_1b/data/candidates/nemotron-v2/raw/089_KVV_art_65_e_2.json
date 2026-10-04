@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"KVV\", \"article_id\": \"art_65_e\", \"paragraph\": \"2\", \"domain\": \"kvg_billing\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"yes_no\", \"answer_normalized\": null, \"de\": {\"question\": \"Ist der therapeutische Quervergleich ausschliesslich auf patentabgelaufene Originalpräparate beschränkt?\", \"answer\": \"Nein\", \"answer_aliases\": [], \"near_miss_answers\": [\"Ja\"], \"evidence\": \"Für den Vergleich werden, sofern vorhanden, auch Präparate mit bekanntem Wirkstoff, die nicht als Generika in der Spezialitätenliste aufgeführt sind, sowie Nachfolgepräparate ohne therapeutischen Fortschritt berücksichtigt.\"}, \"fr\": {\"question\": \"La comparaison thérapeutique est-elle exclusivement limitée aux préparations originales dont le brevet est échu ?\", \"answer\": \"Non\", \"answer_aliases\": [], \"near_miss_answers\": [\"Oui\"], \"evidence\": \"Si elles sont disponibles, les préparations contenant une substance active connue mais ne figurant pas comme générique dans la liste des spécialités ou les préparations succédant à une préparation originale n’ayant pas démontré de progrès thérapeutique sont également prises en compte.\"}, \"it\": {\"question\": \"Il confronto terapeutico trasversale è limitato esclusivamente a preparati originali il cui brevetto è scaduto?\", \"answer\": \"No\", \"answer_aliases\": [], \"near_miss_answers\": [\"Sì\"], \"evidence\": \"Se esistono, per il confronto sono presi in considerazione anche preparati con principio attivo noto che non figurano come generici nell’elenco delle specialità nonché preparati successori che non comportano alcun progresso terapeutico.\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-09-01\", \"paragraph\": \"2\", \"de\": {\"outdated_answer\": \"Ja\", \"evidence\": \"ausschliesslich mit patentabgelaufenen Originalpräparaten durchgeführt.\"}, \"fr\": {\"outdated_answer\": \"Oui\", \"evidence\": \"se fonde exclusivement sur des préparations originales dont le brevet est échu.\"}, \"it\": {\"outdated_answer\": \"Sì\", \"evidence\": \"si basa esclusivamente su preparati originali il cui brevetto è scaduto.\"}}]}}",
+ "reasoning_chars": 21069,
+ "usage": {
+  "prompt_tokens": 1969,
+  "completion_tokens": 5642,
+  "total_tokens": 7611,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 5398,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 149.5,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

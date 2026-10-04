@@ -1,0 +1,38 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"KVG\", \"article_id\": \"art_53\", \"paragraph\": \"1\", \"domain\": \"kvg_billing\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Welcher Artikel folgt in der Aufzählung von Artikel 53 Absatz 1 in der obligatorischen Krankenpflegeversicherung direkt auf Artikel 46 Absatz 4?\", \"answer\": \"46a Absatz 2\", \"answer_aliases\": [\"Artikel 46a Absatz 2\", \"46a Abs. 2\"], \"near_miss_answers\": [\"47b Absatz 2\", \"51\", \"39\"], \"evidence\": \"46 Absatz 4, 46a Absatz 2\"}, \"fr\": {\"question\": \"Quel article suit directement l'article 46, alinéa 4, dans l'énumération de l'article 53, alinéa 1, dans l'assurance-maladie obligatoire ?\", \"answer\": \"46a, al. 2\", \"answer_aliases\": [\"article 46a, alinéa 2\", \"46a al. 2\"], \"near_miss_answers\": [\"47b, al. 2\", \"51\", \"39\"], \"evidence\": \"46, al. 4, 46a, al. 2\"}, \"it\": {\"question\": \"Quale articolo segue direttamente l'articolo 46 capoverso 4 nell'elenco dell'articolo 53 capoverso 1 nell'assicurazione malattie obbligatoria?\", \"answer\": \"46a capoverso 2\", \"answer_aliases\": [\"articolo 46a capoverso 2\", \"46a cpv. 2\"], \"near_miss_answers\": [\"47b capoverso 2\", \"51\", \"39\"], \"evidence\": \"46 capoverso 4, 46a capoverso 2\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2025-07-01\", \"paragraph\": \"1\", \"de\": {\"outdated_answer\": \"47\", \"evidence\": \"46 Absatz 4, 47\"}, \"fr\": {\"outdated_answer\": \"47\", \"evidence\": \"46, al. 4, 47\"}, \"it\": {\"outdated_answer\": \"47\", \"evidence\": \"46 capoverso 4, 47\"}}]}}",
+ "reasoning_chars": 32021,
+ "usage": {
+  "prompt_tokens": 1897,
+  "completion_tokens": 9767,
+  "total_tokens": 11664,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 8117,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 221.8,
+ "attempts": 1,
+ "generated_at": "2026-10-04",
+ "settings": {
+  "max_tokens": 24000,
+  "reasoning_effort": "medium",
+  "temperature": 0.3
+ }
+}

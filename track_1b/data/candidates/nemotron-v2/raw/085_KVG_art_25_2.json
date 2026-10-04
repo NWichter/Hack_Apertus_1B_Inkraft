@@ -1,0 +1,38 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"KVG\", \"article_id\": \"art_25\", \"paragraph\": \"2\", \"domain\": \"kvg_billing\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Wo müssen Pflegeleistungen erbracht werden, damit sie in der obligatorischen Krankenversicherung gedeckt sind?\", \"answer\": \"im Rahmen einer stationären Behandlung\", \"answer_aliases\": [\"im Rahmen einer stationären Behandlung\", \"stationäre Behandlung\", \"einer stationären Behandlung\"], \"near_miss_answers\": [\"ambulant\", \"in einem Pflegeheim\", \"bei Entbindung in einem Geburtshaus\"], \"evidence\": \"Pflegeleistungen, die im Rahmen einer stationären Behandlung erbracht werden\"}, \"fr\": {\"question\": \"Dans quelle situation les soins infirmiers doivent-ils être dispensés pour être couverts par l'assurance-maladie obligatoire?\", \"answer\": \"dans le cadre d'un traitement hospitalier\", \"answer_aliases\": [\"dans le cadre d'un traitement hospitalier\", \"traitement hospitalier\", \"cadre d'un traitement hospitalier\"], \"near_miss_answers\": [\"en milieu hospitalier\", \"dans un établissement médico-social\", \"dans une maison de naissance\"], \"evidence\": \"soins dispensés dans le cadre d'un traitement hospitalier\"}, \"it\": {\"question\": \"In quale contesto devono essere erogate le cure infermieristiche per essere coperte dall'assicurazione malattia obbligatoria?\", \"answer\": \"nell'ambito di una cura ospedaliera\", \"answer_aliases\": [\"nell'ambito di una cura ospedaliera\", \"cura ospedaliera\", \"ambito di una cura ospedaliera\"], \"near_miss_answers\": [\"in una casa di cura\", \"ambulatoriali\", \"in una casa per partorienti\"], \"evidence\": \"cure dispensate nell'ambito di una cura ospedaliera\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2024-03-01\", \"paragraph\": \"2\", \"de\": {\"outdated_answer\": \"in einem Spital\", \"evidence\": \"Pflegeleistungen, die in einem Spital durchgeführt werden\"}, \"fr\": {\"outdated_answer\": \"dans un hôpital\", \"evidence\": \"soins dispensés dans un hôpital\"}, \"it\": {\"outdated_answer\": \"in ospedale\", \"evidence\": \"cure in ospedale dispensate\"}}]}}",
+ "reasoning_chars": 36888,
+ "usage": {
+  "prompt_tokens": 3934,
+  "completion_tokens": 10476,
+  "total_tokens": 14410,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 9354,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 273.8,
+ "attempts": 1,
+ "generated_at": "2026-10-04",
+ "settings": {
+  "max_tokens": 24000,
+  "reasoning_effort": "medium",
+  "temperature": 0.3
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"AHVV\", \"article_id\": \"art_54_bis\", \"paragraph\": \"2\", \"domain\": \"ahv\", \"question_type\": \"temporal\", \"register\": \"lay\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Welche Renten werden in Absatz 2 nicht gekürzt, wenn sie zusammen mit der Rente des Vaters oder der Rente der Mutter die Summe nicht überschreiten?\", \"answer\": \"Kinder- oder Waisenrenten\", \"answer_aliases\": [\"Kinder- oder Waisenrenten\", \"Kinder- oder Waisenrenten werden nicht gekürzt\"], \"near_miss_answers\": [\"Altersrenten\", \"Rente des Vaters\", \"Rente der Mutter\"], \"evidence\": \"Kinder- oder Waisenrenten werden nicht gekürzt\"}, \"fr\": {\"question\": \"Quelles rentes ne sont pas réduites au sens de l'alinéa 2, lorsqu'elles ne dépassent pas la somme ajoutée à la rente du père ou de la mère?\", \"answer\": \"Les rentes pour enfants et les rentes d'orphelins\", \"answer_aliases\": [\"Les rentes pour enfants et les rentes d'orphelins\", \"rentes pour enfants et rentes d'orphelins\"], \"near_miss_answers\": [\"rentes de vieillesse\", \"rente du père\", \"rente de la mère\"], \"evidence\": \"Les rentes pour enfants et les rentes d'orphelins ne sont pas réduites\"}, \"it\": {\"question\": \"Quali rendite non sono ridotte secondo il capoverso 2, quando non superano la somma addizionata alla rendita del padre o della madre?\", \"answer\": \"Le rendite per i figli o le rendite per orfani\", \"answer_aliases\": [\"Le rendite per i figli o le rendite per orfani\", \"rendite per i figli o rendite per orfani\"], \"near_miss_answers\": [\"rendite di vecchiaia\", \"rendita del padre\", \"rendita della madre\"], \"evidence\": \"Le rendite per i figli o le rendite per orfani non sono ridotte\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-09-01\", \"paragraph\": \"2\", \"de\": {\"outdated_answer\": \"Sie\", \"evidence\": \"Sie werden nicht gekürzt\"}, \"fr\": {\"outdated_answer\": \"Elles\", \"evidence\": \"Elles ne sont pas réduites\"}, \"it\": {\"outdated_answer\": \"Esse\", \"evidence\": \"Esse non sono ridotte\"}}]}}",
+ "reasoning_chars": 32930,
+ "usage": {
+  "prompt_tokens": 2125,
+  "completion_tokens": 9207,
+  "total_tokens": 11332,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 8399,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 221.6,
+ "attempts": 1,
+ "generated_at": "2026-10-04",
+ "settings": {
+  "max_tokens": 24000,
+  "reasoning_effort": "medium",
+  "temperature": 0.3
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"AHVV\", \"article_id\": \"art_53\", \"paragraph\": \"1\", \"domain\": \"ahv\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Was setzt das BSV in der Alters- und Hinterlassenenversicherung fest?\", \"answer\": \"Vorschriften zur Berechnung der Renten und verbindliche Rententabellen\", \"answer_aliases\": [\"Berechnungsvorschriften und verbindliche Rententabellen\", \"Vorschriften zur Rentenberechnung und verbindliche Rententabellen\"], \"near_miss_answers\": [\"verbindliche Rententabellen\", \"Vorschriften zur Berechnung der Renten\", \"Rententabellen\"], \"evidence\": \"Das BSV erlässt Vorschriften zur Berechnung der Renten und stellt verbindliche Rententabellen auf.\"}, \"fr\": {\"question\": \"Que fixe l'OFAS dans l'assurance-vieillesse et survivants?\", \"answer\": \"prescriptions de calcul et tables de rentes\", \"answer_aliases\": [\"prescriptions de calcul des rentes et tables de rentes\", \"prescriptions pour le calcul des rentes et tables de rentes\"], \"near_miss_answers\": [\"tables de rentes d’usage obligatoire\", \"prescriptions de calcul des rentes\", \"échelonnement des rentes\"], \"evidence\": \"L’OFAS édicte des prescriptions de calcul des rentes et établit des tables de rentes dont l’usage est obligatoire.\"}, \"it\": {\"question\": \"Cosa stabilisce l'UFAS nell'assicurazione per la vecchiaia e i superstiti?\", \"answer\": \"prescrizioni per il calcolo delle rendite e tavole\", \"answer_aliases\": [\"prescrizioni per il calcolo delle rendite e tavole delle rendite\", \"prescrizioni di calcolo delle rendite e tavole\"], \"near_miss_answers\": [\"tavole delle rendite d’uso obbligatorio\", \"prescrizioni per il calcolo delle rendite\", \"digradazione delle rendite\"], \"evidence\": \"L’UFAS emana prescrizioni per il calcolo delle rendite e stabilisce tavole delle rendite d’uso obbligatorio.\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-09-01\", \"paragraph\": \"1\", \"de\": {\"outdated_answer\": \"verbindliche Rententabellen\", \"evidence\": \"Das Bundesamt stellt verbindliche Rententabellen auf.\"}, \"fr\": {\"outdated_answer\": \"tables de rentes d’usage obligatoire\", \"evidence\": \"L’OFAS établit des tables de rentes dont l’usage est obligatoire.\"}, \"it\": {\"outdated_answer\": \"tavole delle rendite d’uso obbligatorio\", \"evidence\": \"L’Ufficio federale stabilisce tavole delle rendite d’uso obbligatorio.\"}}]}}",
+ "reasoning_chars": 31733,
+ "usage": {
+  "prompt_tokens": 1815,
+  "completion_tokens": 8709,
+  "total_tokens": 10524,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 8050,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 201.2,
+ "attempts": 1,
+ "generated_at": "2026-10-04",
+ "settings": {
+  "max_tokens": 24000,
+  "reasoning_effort": "medium",
+  "temperature": 0.3
+ }
+}

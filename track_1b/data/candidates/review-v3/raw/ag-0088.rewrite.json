@@ -1,0 +1,29 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "content": "{\"rewrite\": true, \"question_type\": \"procedural\", \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"In der obligatorischen Krankenversicherung: Was muss der Leistungserbringer dem Schuldner der Vergütung weitergeben?\", \"answer\": \"direkte oder indirekte Vergünstigungen\", \"answer_aliases\": [\"direkte oder indirekte Vergünstigungen\", \"direkte/indirekte Vergünstigungen\", \"Vergünstigungen (direkt oder indirekt)\"], \"near_miss_answers\": [\"nur direkte Vergünstigungen\", \"nur indirekte Vergünstigungen\", \"Vergünstigungen von Dritten\"], \"evidence\": \"Der Leistungserbringer muss dem Schuldner der Vergütung die direkten oder indirekten Vergünstigungen weitergeben\"}, \"fr\": {\"question\": \"Dans l'assurance-maladie obligatoire : Qu'est-ce que le fournisseur de prestations doit répercuter sur le débiteur de la rémunération ?\", \"answer\": \"les avantages directs ou indirects\", \"answer_aliases\": [\"les avantages directs ou indirects\", \"avantages directs ou indirects\", \"avantages (directs ou indirects)\"], \"near_miss_answers\": [\"avantages directs seulement\", \"avantages indirects seulement\", \"remises sur médicaments\"], \"evidence\": \"Le fournisseur de prestations doit répercuter sur le débiteur de la rémunération les avantages directs ou indirects qu’il perçoit\"}, \"it\": {\"question\": \"Nell'assicurazione malattie obbligatoria: Cosa deve il fornitore di prestazioni fare usufruire al debitore della rimunerazione?\", \"answer\": \"sconti diretti o indiretti\", \"answer_aliases\": [\"sconti diretti o indiretti\", \"sconti diretti/indiretti\", \"sconti (diretti o indiretti)\"], \"near_miss_answers\": [\"sconti diretti soltanto\", \"sconti indiretti soltanto\", \"sconti sui medicamenti\"], \"evidence\": \"Il fornitore di prestazioni deve fare usufruire il debitore della rimunerazione di sconti diretti o indiretti che ha ottenuti\"}}",
+ "usage": {
+  "prompt_tokens": 1328,
+  "completion_tokens": 4724,
+  "total_tokens": 6052,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 4394,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 163.2,
+ "generated_at": "2026-10-04"
+}

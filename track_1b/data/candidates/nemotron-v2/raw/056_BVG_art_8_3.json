@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"BVG\", \"article_id\": \"art_8\", \"paragraph\": \"3\", \"domain\": \"bvg_3a\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Welche Nummern im Obligationenrecht regeln den Urlaub für den zweiten Elternteil?\", \"answer\": \"Artikeln 329g und 329gbis OR\", \"answer_aliases\": [\"Artikeln 329g und 329gbis OR\", \"329g und 329gbis OR\", \"den Artikeln 329g und 329gbis OR\"], \"near_miss_answers\": [\"Artikel 329f OR\", \"Artikel 329i OR\", \"Artikel 329j OR\"], \"evidence\": \"ein Urlaub des andern Elternteils nach den Artikeln 329g und 329gbis OR\"}, \"fr\": {\"question\": \"Quels numéros du Code des obligations régissent le congé pour le second parent ?\", \"answer\": \"art. 329g et 329gbis CO\", \"answer_aliases\": [\"art. 329g et 329gbis CO\", \"des art. 329g et 329gbis CO\", \"329g et 329gbis CO\"], \"near_miss_answers\": [\"art. 329f CO\", \"art. 329i CO\", \"art. 329j CO\"], \"evidence\": \"du congé de l'autre parent au sens des art. 329g et 329gbis CO\"}, \"it\": {\"question\": \"Quali numeri del Codice delle obbligazioni disciplinano il congedo per l'altro genitore ?\", \"answer\": \"articoli 329g e 329gbis CO\", \"answer_aliases\": [\"articoli 329g e 329gbis CO\", \"gli articoli 329g e 329gbis CO\", \"329g e 329gbis CO\"], \"near_miss_answers\": [\"articolo 329f CO\", \"articolo 329i CO\", \"articolo 329j CO\"], \"evidence\": \"del congedo per l'altro genitore giusta gli articoli 329g e 329gbis CO\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-09-26\", \"paragraph\": \"3\", \"de\": {\"outdated_answer\": \"Artikel 329g OR\", \"evidence\": \"ein Vaterschaftsurlaub nach Artikel 329g OR\"}, \"fr\": {\"outdated_answer\": \"art. 329g CO\", \"evidence\": \"du congé de paternité prévu à l'art. 329g CO\"}, \"it\": {\"outdated_answer\": \"articolo 329g CO\", \"evidence\": \"del congedo di paternità giusta l'articolo 329g CO\"}}]}}",
+ "reasoning_chars": 23914,
+ "usage": {
+  "prompt_tokens": 2501,
+  "completion_tokens": 8490,
+  "total_tokens": 10991,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 6093,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 261.4,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

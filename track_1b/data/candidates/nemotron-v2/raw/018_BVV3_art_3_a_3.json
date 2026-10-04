@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"BVV3\", \"article_id\": \"art_3_a\", \"paragraph\": \"3\", \"domain\": \"bvg_3a\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Bis zu welchem Alter sind die Übertragung von Vorsorgekapital und der Einkauf in der Säule 3a grundsätzlich zulässig?\", \"answer\": \"Referenzalter\", \"answer_aliases\": [\"Referenzalter\", \"Referenzalters\"], \"near_miss_answers\": [\"fünf Jahre nach dem Referenzalter\"], \"evidence\": \"bis zum Erreichen des Referenzalters\"}, \"fr\": {\"question\": \"Jusqu'à quel âge le transfert du capital de prévoyance et le rachat dans le pilier 3a sont-ils en principe admis?\", \"answer\": \"âge de référence\", \"answer_aliases\": [\"âge de référence\", \"l'âge de référence\"], \"near_miss_answers\": [\"cinq ans après l'âge de référence\"], \"evidence\": \"jusqu’à l’âge de référence\"}, \"it\": {\"question\": \"Fino a che età il trasferimento del capitale di previdenza e il riscatto nel pilastro 3a sono in principio ammessi?\", \"answer\": \"età di riferimento\", \"answer_aliases\": [\"età di riferimento\", \"l'età di riferimento\"], \"near_miss_answers\": [\"cinque anni dopo l'età di riferimento\"], \"evidence\": \"fino al raggiungimento dell’età di riferimento\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2021-01-01\", \"paragraph\": \"3\", \"de\": {\"outdated_answer\": \"ordentliches Rentenalter der AHV\", \"evidence\": \"bis zum Erreichen des ordentlichen Rentenalters der AHV (Art. 21 Abs. 1 AHVG)\"}, \"fr\": {\"outdated_answer\": \"âge ordinaire de la retraite au sens de l'art. 21, al. 1, LAVS\", \"evidence\": \"jusqu’à l’âge ordinaire de la retraite au sens de l’art. 21, al. 1, LAVS\"}, \"it\": {\"outdated_answer\": \"età ordinaria di pensionamento secondo l'articolo 21 capoverso 1 LAVS\", \"evidence\": \"fino all’età ordinaria di pensionamento secondo l’articolo 21 capoverso 1 LAVS\"}}]}}",
+ "reasoning_chars": 15769,
+ "usage": {
+  "prompt_tokens": 1990,
+  "completion_tokens": 4662,
+  "total_tokens": 6652,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 4032,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 292.6,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

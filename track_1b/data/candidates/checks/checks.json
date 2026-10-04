@@ -1,0 +1,4518 @@
+{
+ "nmu-0001": {
+  "core_id": "nmu-0001",
+  "act": "EOG",
+  "article_id": "art_27",
+  "paragraph": "2",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "amount",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "evidence.apostrophe",
+   "source.discretion"
+  ],
+  "messages": [
+   "WARN source.discretion nmu-0001-de: Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist",
+   "WARN evidence.apostrophe nmu-0001-it: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmu-0002": {
+  "core_id": "nmu-0002",
+  "act": "BVG",
+  "article_id": "art_46",
+  "paragraph": "1",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "amount",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "answer.threshold_word",
+   "source.discretion"
+  ],
+  "messages": [
+   "WARN answer.threshold_word nmu-0002-de: Evidenz enthält 'übersteig', Frage und Antwort nicht: Schwelle prüfen",
+   "WARN source.discretion nmu-0002-de: Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist",
+   "WARN answer.threshold_word nmu-0002-fr: Evidenz enthält 'dépass', Frage und Antwort nicht: Schwelle prüfen",
+   "WARN answer.threshold_word nmu-0002-it: Evidenz enthält 'supera', Frage und Antwort nicht: Schwelle prüfen"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_stale_pair_warn"
+ },
+ "nmu-0003": {
+  "core_id": "nmu-0003",
+  "act": "BVV2",
+  "article_id": "art_3_a",
+  "paragraph": "1",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "amount",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "answer.threshold_word"
+  ],
+  "messages": [
+   "WARN answer.threshold_word nmu-0003-fr: Evidenz enthält 'au moins', Frage und Antwort nicht: Schwelle prüfen",
+   "WARN answer.threshold_word nmu-0003-it: Evidenz enthält 'almeno', Frage und Antwort nicht: Schwelle prüfen"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_stale_pair_warn"
+ },
+ "nmu-0004": {
+  "core_id": "nmu-0004",
+  "act": "KVV",
+  "article_id": "art_65_c",
+  "paragraph": "2",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rate",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "answer.threshold_word",
+   "evidence.apostrophe"
+  ],
+  "messages": [
+   "WARN answer.threshold_word nmu-0004-de: Evidenz enthält 'mindestens', Frage und Antwort nicht: Schwelle prüfen",
+   "WARN answer.threshold_word nmu-0004-fr: Evidenz enthält 'au moins', Frage und Antwort nicht: Schwelle prüfen",
+   "WARN evidence.apostrophe nmu-0004-fr: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)",
+   "WARN answer.threshold_word nmu-0004-it: Evidenz enthält 'almeno', Frage und Antwort nicht: Schwelle prüfen",
+   "WARN evidence.apostrophe nmu-0004-it: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_stale_pair_warn"
+ },
+ "nmu-0005": {
+  "core_id": "nmu-0005",
+  "act": "AVIG",
+  "article_id": "art_35",
+  "paragraph": "2",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "period",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "answer.threshold_word",
+   "source.discretion",
+   "temporal.evidence_unchanged"
+  ],
+  "messages": [
+   "WARN temporal.evidence_unchanged nmu-0005-de: veraltete Antwort angegeben, aber der Belegsatz steht unverändert in allen früheren Fassungen",
+   "WARN source.discretion nmu-0005-de: Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist",
+   "WARN answer.threshold_word nmu-0005-fr: Evidenz enthält 'au plus', Frage und Antwort nicht: Schwelle prüfen"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_stale_pair_warn"
+ },
+ "nmu-0006": {
+  "core_id": "nmu-0006",
+  "act": "KVG",
+  "article_id": "art_64_a",
+  "paragraph": "2",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "numeric",
+  "change_kind": "rule_new",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "source.discretion"
+  ],
+  "messages": [
+   "WARN source.discretion nmu-0006-de: Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": null,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_no_stale_pair"
+ },
+ "nmu-0007": {
+  "core_id": "nmu-0007",
+  "act": "KVG",
+  "article_id": "art_64_a",
+  "paragraph": "5",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "question.answer_overlap"
+  ],
+  "messages": [
+   "WARN question.answer_overlap nmu-0007-fr: Antwortwörter stehen in der Frage: ['assureur', 'créances']"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_stale_pair_warn"
+ },
+ "nmu-0008": {
+  "core_id": "nmu-0008",
+  "act": "KVG",
+  "article_id": "art_64_a",
+  "paragraph": "6",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "yes_no",
+  "change_kind": "rule_new",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "evidence.apostrophe"
+  ],
+  "messages": [
+   "WARN evidence.apostrophe nmu-0008-fr: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": null,
+  "stale_pair": false,
+  "yes_no": true,
+  "provenance_ok": true,
+  "tier": "B_no_stale_pair"
+ },
+ "nmu-0009": {
+  "core_id": "nmu-0009",
+  "act": "KVG",
+  "article_id": "art_64_a",
+  "paragraph": "7",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "procedural",
+  "change_kind": "rule_new",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "answer.alias_only",
+   "source.discretion"
+  ],
+  "messages": [
+   "WARN source.discretion nmu-0009-de: Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist",
+   "WARN answer.alias_only nmu-0009-fr: Antwort \"Lorsqu'elle ne peut pas être repoussée.\" nicht wörtlich, aber ein Alias"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": null,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_no_stale_pair"
+ },
+ "nmu-0010": {
+  "core_id": "nmu-0010",
+  "act": "KVG",
+  "article_id": "art_25_a",
+  "paragraph": "3",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_new",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "question.answer_overlap",
+   "source.discretion"
+  ],
+  "messages": [
+   "WARN source.discretion nmu-0010-de: Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist",
+   "WARN question.answer_overlap nmu-0010-fr: Antwortwörter stehen in der Frage: ['fournis', 'peuvent', 'prescription', 'sans', 'soins', 'être']",
+   "WARN question.answer_overlap nmu-0010-it: Antwortwörter stehen in der Frage: ['cure', 'essere', 'possono', 'prescrizione', 'prestate']"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_stale_pair_warn"
+ },
+ "nmu-0011": {
+  "core_id": "nmu-0011",
+  "act": "KVG",
+  "article_id": "art_6_a",
+  "paragraph": "1",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "scope_extended",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmu-0012": {
+  "core_id": "nmu-0012",
+  "act": "AHVG",
+  "article_id": "art_39",
+  "paragraph": "2",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": true,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmu-0013": {
+  "core_id": "nmu-0013",
+  "act": "AHVG",
+  "article_id": "art_40",
+  "paragraph": "2",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "evidence.apostrophe"
+  ],
+  "messages": [
+   "WARN evidence.apostrophe nmu-0013-fr: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)",
+   "WARN evidence.apostrophe nmu-0013-it: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmu-0014": {
+  "core_id": "nmu-0014",
+  "act": "AHVG",
+  "article_id": "art_43_bis",
+  "paragraph": "1",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmu-0015": {
+  "core_id": "nmu-0015",
+  "act": "IVG",
+  "article_id": "art_30",
+  "paragraph": "",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [
+   "answer.not_in_evidence"
+  ],
+  "warnings": [
+   "evidence.apostrophe",
+   "style.long_answer"
+  ],
+  "messages": [
+   "WARN style.long_answer nmu-0015-de: Antwort lang (130 Zeichen)",
+   "ERROR answer.not_in_evidence nmu-0015-de: Antwort 'Wenn die Altersrente nach der Anmeldung bei der Invalidenversicherung und vor der Zusprache einer Invalidenrente vorbezogen wurde.' steht nicht wörtlich in der Evidenz",
+   "WARN style.long_answer nmu-0015-fr: Antwort lang (130 Zeichen)",
+   "WARN evidence.apostrophe nmu-0015-fr: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)",
+   "WARN style.long_answer nmu-0015-it: Antwort lang (147 Zeichen)",
+   "WARN evidence.apostrophe nmu-0015-it: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "D_errors"
+ },
+ "nmu-0016": {
+  "core_id": "nmu-0016",
+  "act": "OR",
+  "article_id": "art_329_g",
+  "paragraph": "1",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "scope_extended",
+  "bucket": "changed_2024_2025",
+  "errors": [
+   "overlap.outdated_near_miss"
+  ],
+  "warnings": [
+   "evidence.apostrophe",
+   "question.answer_overlap",
+   "source.future_change"
+  ],
+  "messages": [
+   "ERROR overlap.outdated_near_miss nmu-0016-de: Veraltete Antwort und Near-Miss überlappen: {'vaterschaftsurlaub'}",
+   "WARN source.future_change nmu-0016-de: Artikel ändert sich nach dem Stichtag: 2027-07-01",
+   "WARN question.answer_overlap nmu-0016-fr: Antwortwörter stehen in der Frage: ['autre', 'congé', 'parent']",
+   "WARN evidence.apostrophe nmu-0016-fr: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)",
+   "ERROR overlap.outdated_near_miss nmu-0016-fr: Veraltete Antwort und Near-Miss überlappen: {'congé de paternité'}",
+   "WARN source.future_change nmu-0016-fr: Artikel ändert sich nach dem Stichtag: 2027-07-01",
+   "WARN question.answer_overlap nmu-0016-it: Antwortwörter stehen in der Frage: ['congedo', 'settimane']",
+   "ERROR overlap.outdated_near_miss nmu-0016-it: Veraltete Antwort und Near-Miss überlappen: {'congedo di paternità'}",
+   "WARN source.future_change nmu-0016-it: Artikel ändert sich nach dem Stichtag: 2027-07-01"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "D_errors"
+ },
+ "nmu-0017": {
+  "core_id": "nmu-0017",
+  "act": "BVG",
+  "article_id": "art_61",
+  "paragraph": "3",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "yes_no",
+  "change_kind": "rule_new",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": null,
+  "stale_pair": false,
+  "yes_no": true,
+  "provenance_ok": true,
+  "tier": "B_no_stale_pair"
+ },
+ "nmu-0018": {
+  "core_id": "nmu-0018",
+  "act": "BVV2",
+  "article_id": "art_53",
+  "paragraph": "6",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2026",
+  "errors": [],
+  "warnings": [
+   "answer.threshold_word",
+   "evidence.apostrophe"
+  ],
+  "messages": [
+   "WARN answer.threshold_word nmu-0018-fr: Evidenz enthält 'au plus', Frage und Antwort nicht: Schwelle prüfen",
+   "WARN evidence.apostrophe nmu-0018-fr: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)",
+   "WARN answer.threshold_word nmu-0018-it: Evidenz enthält 'al massimo', Frage und Antwort nicht: Schwelle prüfen",
+   "WARN evidence.apostrophe nmu-0018-it: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_stale_pair_warn"
+ },
+ "nmu-0019": {
+  "core_id": "nmu-0019",
+  "act": "BVV3",
+  "article_id": "art_5",
+  "paragraph": "3",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "yes_no",
+  "change_kind": "rule_new",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": null,
+  "stale_pair": false,
+  "yes_no": true,
+  "provenance_ok": true,
+  "tier": "B_no_stale_pair"
+ },
+ "nmv-0001": {
+  "core_id": "nmv-0001",
+  "act": "AHVV",
+  "article_id": "art_19",
+  "paragraph": "",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "amount",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "answer.threshold_word"
+  ],
+  "messages": [
+   "WARN answer.threshold_word nmv-0001-de: Evidenz enthält 'übersteig', Frage und Antwort nicht: Schwelle prüfen",
+   "WARN answer.threshold_word nmv-0001-it: Evidenz enthält 'supera', Frage und Antwort nicht: Schwelle prüfen"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_stale_pair_warn"
+ },
+ "nmv-0002": {
+  "core_id": "nmv-0002",
+  "act": "AHVV",
+  "article_id": "art_21",
+  "paragraph": "1",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "amount",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "answer.threshold_word"
+  ],
+  "messages": [
+   "WARN answer.threshold_word nmv-0002-de: Evidenz enthält 'weniger als', Frage und Antwort nicht: Schwelle prüfen",
+   "WARN answer.threshold_word nmv-0002-fr: Evidenz enthält 'au moins', Frage und Antwort nicht: Schwelle prüfen",
+   "WARN answer.threshold_word nmv-0002-it: Evidenz enthält 'almeno', Frage und Antwort nicht: Schwelle prüfen"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_stale_pair_warn"
+ },
+ "nmv-0003": {
+  "core_id": "nmv-0003",
+  "act": "AHVV",
+  "article_id": "art_21",
+  "paragraph": "2",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "amount",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "answer.threshold_word",
+   "style.article_in_question"
+  ],
+  "messages": [
+   "WARN style.article_in_question nmv-0003-de: Frage nennt eine Artikelnummer",
+   "WARN answer.threshold_word nmv-0003-de: Evidenz enthält 'weniger als', Frage und Antwort nicht: Schwelle prüfen",
+   "WARN style.article_in_question nmv-0003-fr: Frage nennt eine Artikelnummer",
+   "WARN style.article_in_question nmv-0003-it: Frage nennt eine Artikelnummer"
+  ],
+  "duplicate_of": [
+   "nmv-0002"
+  ],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "C_duplicate"
+ },
+ "nmv-0004": {
+  "core_id": "nmv-0004",
+  "act": "AHVV",
+  "article_id": "art_28",
+  "paragraph": "1",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "amount",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0005": {
+  "core_id": "nmv-0005",
+  "act": "AHVV",
+  "article_id": "art_34_d",
+  "paragraph": "1",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "amount",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0006": {
+  "core_id": "nmv-0006",
+  "act": "ELV",
+  "article_id": "art_16_a",
+  "paragraph": "3",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "amount",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0007": {
+  "core_id": "nmv-0007",
+  "act": "IVV",
+  "article_id": "art_1_bis",
+  "paragraph": "2",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "amount",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0008": {
+  "core_id": "nmv-0008",
+  "act": "IVV",
+  "article_id": "art_39_f",
+  "paragraph": "1",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "amount",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "answer.number_literal_only"
+  ],
+  "messages": [
+   "WARN answer.number_literal_only nmv-0008-fr: Zahl 35.3 nicht als Ziffer/Zahlwort erkannt, Antwort '35 fr. 30' steht aber wörtlich in der Evidenz"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_stale_pair_warn"
+ },
+ "nmv-0009": {
+  "core_id": "nmv-0009",
+  "act": "IVV",
+  "article_id": "art_39_f",
+  "paragraph": "2",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "amount",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "answer.number_literal_only",
+   "style.article_in_question"
+  ],
+  "messages": [
+   "WARN style.article_in_question nmv-0009-de: Frage nennt eine Artikelnummer",
+   "WARN style.article_in_question nmv-0009-fr: Frage nennt eine Artikelnummer",
+   "WARN answer.number_literal_only nmv-0009-fr: Zahl 52.95 nicht als Ziffer/Zahlwort erkannt, Antwort '52 fr. 95 par heure' steht aber wörtlich in der Evidenz",
+   "WARN style.article_in_question nmv-0009-it: Frage nennt eine Artikelnummer"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_stale_pair_warn"
+ },
+ "nmv-0010": {
+  "core_id": "nmv-0010",
+  "act": "AHVG",
+  "article_id": "art_103",
+  "paragraph": "",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "amount",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0011": {
+  "core_id": "nmv-0011",
+  "act": "AHVG",
+  "article_id": "art_29_bis",
+  "paragraph": "2",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "procedural",
+  "change_kind": "value",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": null,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_no_stale_pair"
+ },
+ "nmv-0012": {
+  "core_id": "nmv-0012",
+  "act": "AHVG",
+  "article_id": "art_5",
+  "paragraph": "3",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "value",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0013": {
+  "core_id": "nmv-0013",
+  "act": "AHVV",
+  "article_id": "art_16",
+  "paragraph": "2",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "procedural",
+  "change_kind": "value",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": null,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_no_stale_pair"
+ },
+ "nmv-0014": {
+  "core_id": "nmv-0014",
+  "act": "AHVV",
+  "article_id": "art_52_b",
+  "paragraph": "1",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "procedural",
+  "change_kind": "value",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": null,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_no_stale_pair"
+ },
+ "nmv-0015": {
+  "core_id": "nmv-0015",
+  "act": "AHVV",
+  "article_id": "art_60",
+  "paragraph": "1",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "value",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0016": {
+  "core_id": "nmv-0016",
+  "act": "BVV2",
+  "article_id": "art_1",
+  "paragraph": "3",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "procedural",
+  "change_kind": "value",
+  "bucket": "changed_2026",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": null,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_no_stale_pair"
+ },
+ "nmv-0017": {
+  "core_id": "nmv-0017",
+  "act": "BVV2",
+  "article_id": "art_60_a",
+  "paragraph": "3",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "procedural",
+  "change_kind": "value",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "evidence.apostrophe"
+  ],
+  "messages": [
+   "WARN evidence.apostrophe nmv-0017-fr: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": null,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_no_stale_pair"
+ },
+ "nmv-0018": {
+  "core_id": "nmv-0018",
+  "act": "BVV3",
+  "article_id": "art_3_a",
+  "paragraph": "3",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "value",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0019": {
+  "core_id": "nmv-0019",
+  "act": "IVV",
+  "article_id": "art_26_bis",
+  "paragraph": "3",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "value",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "style.article_in_question"
+  ],
+  "messages": [
+   "WARN style.article_in_question nmv-0019-de: Frage nennt eine Artikelnummer",
+   "WARN style.article_in_question nmv-0019-fr: Frage nennt eine Artikelnummer",
+   "WARN style.article_in_question nmv-0019-it: Frage nennt eine Artikelnummer"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_stale_pair_warn"
+ },
+ "nmv-0020": {
+  "core_id": "nmv-0020",
+  "act": "KVV",
+  "article_id": "art_105_k",
+  "paragraph": "4",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "value",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "answer.alias_only",
+   "question.answer_overlap",
+   "style.article_in_question"
+  ],
+  "messages": [
+   "WARN style.article_in_question nmv-0020-de: Frage nennt eine Artikelnummer",
+   "WARN question.answer_overlap nmv-0020-de: Antwortwörter stehen in der Frage: ['absatz']",
+   "WARN style.article_in_question nmv-0020-fr: Frage nennt eine Artikelnummer",
+   "WARN question.answer_overlap nmv-0020-fr: Antwortwörter stehen in der Frage: ['alinéa']",
+   "WARN answer.alias_only nmv-0020-fr: Antwort 'alinéa 4' nicht wörtlich, aber ein Alias",
+   "WARN style.article_in_question nmv-0020-it: Frage nennt eine Artikelnummer",
+   "WARN question.answer_overlap nmv-0020-it: Antwortwörter stehen in der Frage: ['capoverso']"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_stale_pair_warn"
+ },
+ "nmv-0021": {
+  "core_id": "nmv-0021",
+  "act": "KVV",
+  "article_id": "art_105_k",
+  "paragraph": "5",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "value",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "style.article_in_question"
+  ],
+  "messages": [
+   "WARN style.article_in_question nmv-0021-de: Frage nennt eine Artikelnummer",
+   "WARN style.article_in_question nmv-0021-fr: Frage nennt eine Artikelnummer",
+   "WARN style.article_in_question nmv-0021-it: Frage nennt eine Artikelnummer"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_stale_pair_warn"
+ },
+ "nmv-0022": {
+  "core_id": "nmv-0022",
+  "act": "KVV",
+  "article_id": "art_106_c",
+  "paragraph": "5",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "procedural",
+  "change_kind": "value",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "evidence.apostrophe"
+  ],
+  "messages": [
+   "WARN evidence.apostrophe nmv-0022-fr: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)",
+   "WARN evidence.apostrophe nmv-0022-it: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": null,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_no_stale_pair"
+ },
+ "nmv-0023": {
+  "core_id": "nmv-0023",
+  "act": "ELG",
+  "article_id": "art_11",
+  "paragraph": "3",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "value",
+  "bucket": "changed_2026",
+  "errors": [],
+  "warnings": [
+   "source.future_change",
+   "style.article_in_question"
+  ],
+  "messages": [
+   "WARN style.article_in_question nmv-0023-de: Frage nennt eine Artikelnummer",
+   "WARN source.future_change nmv-0023-de: Artikel ändert sich nach dem Stichtag: 2027-01-01, 2028-01-01, 2029-01-01",
+   "WARN style.article_in_question nmv-0023-fr: Frage nennt eine Artikelnummer",
+   "WARN source.future_change nmv-0023-fr: Artikel ändert sich nach dem Stichtag: 2027-01-01, 2028-01-01, 2029-01-01",
+   "WARN style.article_in_question nmv-0023-it: Frage nennt eine Artikelnummer",
+   "WARN source.future_change nmv-0023-it: Artikel ändert sich nach dem Stichtag: 2027-01-01, 2028-01-01, 2029-01-01"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_stale_pair_warn"
+ },
+ "nmv-0024": {
+  "core_id": "nmv-0024",
+  "act": "BVV2",
+  "article_id": "art_12",
+  "paragraph": "",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "text",
+  "change_kind": "value",
+  "bucket": "changed_2026",
+  "errors": [
+   "format.question_type"
+  ],
+  "warnings": [
+   "style.article_in_question"
+  ],
+  "messages": [
+   "ERROR format.question_type nmv-0024-de: Ungültiger Wert question_type='text'",
+   "WARN style.article_in_question nmv-0024-de: Frage nennt eine Artikelnummer",
+   "ERROR format.question_type nmv-0024-fr: Ungültiger Wert question_type='text'",
+   "WARN style.article_in_question nmv-0024-fr: Frage nennt eine Artikelnummer",
+   "ERROR format.question_type nmv-0024-it: Ungültiger Wert question_type='text'",
+   "WARN style.article_in_question nmv-0024-it: Frage nennt eine Artikelnummer"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": null,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "D_errors"
+ },
+ "nmv-0025": {
+  "core_id": "nmv-0025",
+  "act": "AHVG",
+  "article_id": "art_29_bis",
+  "paragraph": "5",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "source.discretion"
+  ],
+  "messages": [
+   "WARN source.discretion nmv-0025-de: Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0026": {
+  "core_id": "nmv-0026",
+  "act": "AHVG",
+  "article_id": "art_29_quinquies",
+  "paragraph": "3",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0027": {
+  "core_id": "nmv-0027",
+  "act": "AHVG",
+  "article_id": "art_29_septies",
+  "paragraph": "6",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "evidence.apostrophe"
+  ],
+  "messages": [
+   "WARN evidence.apostrophe nmv-0027-fr: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)",
+   "WARN evidence.apostrophe nmv-0027-it: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": false,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_no_stale_pair"
+ },
+ "nmv-0028": {
+  "core_id": "nmv-0028",
+  "act": "AHVG",
+  "article_id": "art_29_sexies",
+  "paragraph": "3",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0029": {
+  "core_id": "nmv-0029",
+  "act": "AHVG",
+  "article_id": "art_64",
+  "paragraph": "2bis",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "answer.threshold_word",
+   "evidence.apostrophe",
+   "source.discretion"
+  ],
+  "messages": [
+   "WARN source.discretion nmv-0029-de: Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist",
+   "WARN answer.threshold_word nmv-0029-fr: Evidenz enthält 'jusqu', Frage und Antwort nicht: Schwelle prüfen",
+   "WARN evidence.apostrophe nmv-0029-fr: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)",
+   "WARN evidence.apostrophe nmv-0029-it: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": false,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "C_no_stale_pair_warn"
+ },
+ "nmv-0030": {
+  "core_id": "nmv-0030",
+  "act": "AHVG",
+  "article_id": "art_91",
+  "paragraph": "2",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "value",
+  "bucket": "stable_pre2024",
+  "errors": [
+   "temporal.not_changed"
+  ],
+  "warnings": [
+   "temporal.evidence_unchanged"
+  ],
+  "messages": [
+   "ERROR temporal.not_changed nmv-0030-de: Artikel seit 2024 unverändert, aber Typ temporal",
+   "WARN temporal.evidence_unchanged nmv-0030-de: veraltete Antwort angegeben, aber der Belegsatz steht unverändert in allen früheren Fassungen",
+   "ERROR temporal.not_changed nmv-0030-fr: Artikel seit 2024 unverändert, aber Typ temporal",
+   "WARN temporal.evidence_unchanged nmv-0030-fr: veraltete Antwort angegeben, aber der Belegsatz steht unverändert in allen früheren Fassungen",
+   "ERROR temporal.not_changed nmv-0030-it: Artikel seit 2024 unverändert, aber Typ temporal",
+   "WARN temporal.evidence_unchanged nmv-0030-it: veraltete Antwort angegeben, aber der Belegsatz steht unverändert in allen früheren Fassungen"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": false,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "D_errors"
+ },
+ "nmv-0031": {
+  "core_id": "nmv-0031",
+  "act": "AHVV",
+  "article_id": "art_161",
+  "paragraph": "4",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "value",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "question.answer_overlap"
+  ],
+  "messages": [
+   "WARN question.answer_overlap nmv-0031-de: Antwortwörter stehen in der Frage: ['absätze']",
+   "WARN question.answer_overlap nmv-0031-it: Antwortwörter stehen in der Frage: ['capoversi']"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_stale_pair_warn"
+ },
+ "nmv-0032": {
+  "core_id": "nmv-0032",
+  "act": "AVIG",
+  "article_id": "art_8",
+  "paragraph": "1",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0033": {
+  "core_id": "nmv-0033",
+  "act": "AVIV",
+  "article_id": "art_27",
+  "paragraph": "3",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2026",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0034": {
+  "core_id": "nmv-0034",
+  "act": "AVIV",
+  "article_id": "art_30",
+  "paragraph": "",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "value",
+  "bucket": "changed_2026",
+  "errors": [],
+  "warnings": [
+   "question.answer_overlap",
+   "style.article_in_question"
+  ],
+  "messages": [
+   "WARN style.article_in_question nmv-0034-de: Frage nennt eine Artikelnummer",
+   "WARN question.answer_overlap nmv-0034-de: Antwortwörter stehen in der Frage: ['avig']",
+   "WARN style.article_in_question nmv-0034-fr: Frage nennt eine Artikelnummer",
+   "WARN question.answer_overlap nmv-0034-fr: Antwortwörter stehen in der Frage: ['laci']",
+   "WARN style.article_in_question nmv-0034-it: Frage nennt eine Artikelnummer",
+   "WARN question.answer_overlap nmv-0034-it: Antwortwörter stehen in der Frage: ['ladi']"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_stale_pair_warn"
+ },
+ "nmv-0035": {
+  "core_id": "nmv-0035",
+  "act": "AVIV",
+  "article_id": "art_6",
+  "paragraph": "1ter",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "value",
+  "bucket": "stable_pre2024",
+  "errors": [
+   "temporal.not_changed"
+  ],
+  "warnings": [
+   "question.answer_overlap",
+   "temporal.evidence_unchanged"
+  ],
+  "messages": [
+   "ERROR temporal.not_changed nmv-0035-de: Artikel seit 2024 unverändert, aber Typ temporal",
+   "WARN temporal.evidence_unchanged nmv-0035-de: veraltete Antwort angegeben, aber der Belegsatz steht unverändert in allen früheren Fassungen",
+   "WARN question.answer_overlap nmv-0035-fr: Antwortwörter stehen in der Frage: ['attente']",
+   "WARN question.answer_overlap nmv-0035-it: Antwortwörter stehen in der Frage: ['attesa']"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": false,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "D_errors"
+ },
+ "nmv-0036": {
+  "core_id": "nmv-0036",
+  "act": "ELV",
+  "article_id": "art_26",
+  "paragraph": "1",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "value",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0037": {
+  "core_id": "nmv-0037",
+  "act": "ELV",
+  "article_id": "art_26",
+  "paragraph": "2",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "value",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0038": {
+  "core_id": "nmv-0038",
+  "act": "EOG",
+  "article_id": "art_16_i",
+  "paragraph": "3",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "source.discretion"
+  ],
+  "messages": [
+   "WARN source.discretion nmv-0038-de: Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0039": {
+  "core_id": "nmv-0039",
+  "act": "EOG",
+  "article_id": "art_20_a",
+  "paragraph": "1",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "value",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "answer.inflected",
+   "question.answer_overlap"
+  ],
+  "messages": [
+   "WARN answer.inflected nmv-0039-de: Antwort 'Artikel 46 Absatz 2 und 49–53 BZG' nur flektiert/umgestellt in der Evidenz",
+   "WARN question.answer_overlap nmv-0039-fr: Antwortwörter stehen in der Frage: ['lppci']",
+   "WARN question.answer_overlap nmv-0039-it: Antwortwörter stehen in der Frage: ['articoli', 'lppc']"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_stale_pair_warn"
+ },
+ "nmv-0040": {
+  "core_id": "nmv-0040",
+  "act": "IVG",
+  "article_id": "art_22_bis",
+  "paragraph": "4",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0041": {
+  "core_id": "nmv-0041",
+  "act": "KVG",
+  "article_id": "art_25_a",
+  "paragraph": "1",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "evidence.apostrophe"
+  ],
+  "messages": [
+   "WARN evidence.apostrophe nmv-0041-fr: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": false,
+  "stale_pair": false,
+  "yes_no": true,
+  "provenance_ok": true,
+  "tier": "B_no_stale_pair"
+ },
+ "nmv-0042": {
+  "core_id": "nmv-0042",
+  "act": "KVG",
+  "article_id": "art_52",
+  "paragraph": "3",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "value",
+  "bucket": "changed_2026",
+  "errors": [],
+  "warnings": [
+   "evidence.apostrophe",
+   "question.answer_overlap"
+  ],
+  "messages": [
+   "WARN question.answer_overlap nmv-0042-de: Antwortwörter stehen in der Frage: ['artikel']",
+   "WARN evidence.apostrophe nmv-0042-fr: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)",
+   "WARN question.answer_overlap nmv-0042-it: Antwortwörter stehen in der Frage: ['articolo']",
+   "WARN evidence.apostrophe nmv-0042-it: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_stale_pair_warn"
+ },
+ "nmv-0043": {
+  "core_id": "nmv-0043",
+  "act": "KVG",
+  "article_id": "art_53",
+  "paragraph": "1",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "value",
+  "bucket": "changed_2026",
+  "errors": [],
+  "warnings": [
+   "question.answer_overlap",
+   "style.article_in_question"
+  ],
+  "messages": [
+   "WARN style.article_in_question nmv-0043-de: Frage nennt eine Artikelnummer",
+   "WARN question.answer_overlap nmv-0043-de: Antwortwörter stehen in der Frage: ['absatz']",
+   "WARN style.article_in_question nmv-0043-fr: Frage nennt eine Artikelnummer",
+   "WARN style.article_in_question nmv-0043-it: Frage nennt eine Artikelnummer",
+   "WARN question.answer_overlap nmv-0043-it: Antwortwörter stehen in der Frage: ['capoverso']"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_stale_pair_warn"
+ },
+ "nmv-0044": {
+  "core_id": "nmv-0044",
+  "act": "KVV",
+  "article_id": "art_30_a",
+  "paragraph": "7",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "value",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "style.article_in_question"
+  ],
+  "messages": [
+   "WARN style.article_in_question nmv-0044-de: Frage nennt eine Artikelnummer",
+   "WARN style.article_in_question nmv-0044-fr: Frage nennt eine Artikelnummer",
+   "WARN style.article_in_question nmv-0044-it: Frage nennt eine Artikelnummer"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_stale_pair_warn"
+ },
+ "nmv-0045": {
+  "core_id": "nmv-0045",
+  "act": "KVV",
+  "article_id": "art_71",
+  "paragraph": "4",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "value",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0046": {
+  "core_id": "nmv-0046",
+  "act": "OR",
+  "article_id": "art_362",
+  "paragraph": "1",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "stable_pre2024",
+  "errors": [
+   "temporal.not_changed"
+  ],
+  "warnings": [
+   "answer.inflected",
+   "temporal.evidence_unchanged"
+  ],
+  "messages": [
+   "WARN answer.inflected nmv-0046-de: Antwort 'darf nicht abgewichen werden' nur flektiert/umgestellt in der Evidenz",
+   "ERROR temporal.not_changed nmv-0046-de: Artikel seit 2024 unverändert, aber Typ temporal",
+   "WARN temporal.evidence_unchanged nmv-0046-de: veraltete Antwort angegeben, aber der Belegsatz steht unverändert in allen früheren Fassungen",
+   "ERROR temporal.not_changed nmv-0046-fr: Artikel seit 2024 unverändert, aber Typ temporal",
+   "WARN temporal.evidence_unchanged nmv-0046-fr: veraltete Antwort angegeben, aber der Belegsatz steht unverändert in allen früheren Fassungen",
+   "ERROR temporal.not_changed nmv-0046-it: Artikel seit 2024 unverändert, aber Typ temporal",
+   "WARN temporal.evidence_unchanged nmv-0046-it: veraltete Antwort angegeben, aber der Belegsatz steht unverändert in allen früheren Fassungen"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": false,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "D_errors"
+ },
+ "nmv-0047": {
+  "core_id": "nmv-0047",
+  "act": "UVG",
+  "article_id": "art_22",
+  "paragraph": "",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "evidence.apostrophe"
+  ],
+  "messages": [
+   "WARN evidence.apostrophe nmv-0047-fr: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)",
+   "WARN evidence.apostrophe nmv-0047-it: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": false,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_no_stale_pair"
+ },
+ "nmv-0048": {
+  "core_id": "nmv-0048",
+  "act": "AVIV",
+  "article_id": "art_10_d",
+  "paragraph": "2",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "answer.inflected"
+  ],
+  "messages": [
+   "WARN answer.inflected nmv-0048-de: Antwort 'Referenzalter nach Artikel 21 Absatz 1 AHVG' nur flektiert/umgestellt in der Evidenz",
+   "WARN answer.inflected nmv-0048-fr: Antwort \"âge de référence fixé à l'art. 21, al. 1, LAVS\" nur flektiert/umgestellt in der Evidenz",
+   "WARN answer.inflected nmv-0048-it: Antwort \"età di riferimento secondo l'articolo 21 capoverso 1 LAVS\" nur flektiert/umgestellt in der Evidenz"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_stale_pair_warn"
+ },
+ "nmv-0049": {
+  "core_id": "nmv-0049",
+  "act": "OR",
+  "article_id": "art_329_g",
+  "paragraph": "2",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "yes_no",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "source.future_change",
+   "style.article_in_question"
+  ],
+  "messages": [
+   "WARN style.article_in_question nmv-0049-de: Frage nennt eine Artikelnummer",
+   "WARN source.future_change nmv-0049-de: Artikel ändert sich nach dem Stichtag: 2027-07-01",
+   "WARN style.article_in_question nmv-0049-fr: Frage nennt eine Artikelnummer",
+   "WARN source.future_change nmv-0049-fr: Artikel ändert sich nach dem Stichtag: 2027-07-01",
+   "WARN style.article_in_question nmv-0049-it: Frage nennt eine Artikelnummer",
+   "WARN source.future_change nmv-0049-it: Artikel ändert sich nach dem Stichtag: 2027-07-01"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": null,
+  "stale_pair": false,
+  "yes_no": true,
+  "provenance_ok": true,
+  "tier": "C_no_stale_pair_warn"
+ },
+ "nmv-0050": {
+  "core_id": "nmv-0050",
+  "act": "UVG",
+  "article_id": "art_31",
+  "paragraph": "4",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "procedural",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "evidence.apostrophe"
+  ],
+  "messages": [
+   "WARN evidence.apostrophe nmv-0050-fr: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": null,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_no_stale_pair"
+ },
+ "nmv-0051": {
+  "core_id": "nmv-0051",
+  "act": "AHVG",
+  "article_id": "art_24_b",
+  "paragraph": "",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "procedural",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2026",
+  "errors": [],
+  "warnings": [
+   "answer.inflected",
+   "question.answer_overlap"
+  ],
+  "messages": [
+   "WARN answer.inflected nmv-0051-de: Antwort 'die 13. Altersrente und der Rentenzuschlag' nur flektiert/umgestellt in der Evidenz",
+   "WARN question.answer_overlap nmv-0051-fr: Antwortwörter stehen in der Frage: ['rente', 'vieillesse']",
+   "WARN answer.inflected nmv-0051-fr: Antwort 'la 13e rente de vieillesse et le supplément de rente' nur flektiert/umgestellt in der Evidenz",
+   "WARN answer.inflected nmv-0051-it: Antwort 'la 13a mensilità della rendita di vecchiaia e il supplemento di rendita' nur flektiert/umgestellt in der Evidenz"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": null,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "C_no_stale_pair_warn"
+ },
+ "nmv-0052": {
+  "core_id": "nmv-0052",
+  "act": "IVG",
+  "article_id": "art_42_septies",
+  "paragraph": "3",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0053": {
+  "core_id": "nmv-0053",
+  "act": "KVV",
+  "article_id": "art_106_c",
+  "paragraph": "1",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2026",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0054": {
+  "core_id": "nmv-0054",
+  "act": "AVIG",
+  "article_id": "art_37",
+  "paragraph": "",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "procedural",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": null,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_no_stale_pair"
+ },
+ "nmv-0055": {
+  "core_id": "nmv-0055",
+  "act": "BVG",
+  "article_id": "art_8",
+  "paragraph": "3",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "evidence.apostrophe"
+  ],
+  "messages": [
+   "WARN evidence.apostrophe nmv-0055-fr: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)",
+   "WARN evidence.apostrophe nmv-0055-it: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": false,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_no_stale_pair"
+ },
+ "nmv-0056": {
+  "core_id": "nmv-0056",
+  "act": "OR",
+  "article_id": "art_329_b",
+  "paragraph": "3",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "style.article_in_question"
+  ],
+  "messages": [
+   "WARN style.article_in_question nmv-0056-de: Frage nennt eine Artikelnummer",
+   "WARN style.article_in_question nmv-0056-fr: Frage nennt eine Artikelnummer",
+   "WARN style.article_in_question nmv-0056-it: Frage nennt eine Artikelnummer"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_stale_pair_warn"
+ },
+ "nmv-0057": {
+  "core_id": "nmv-0057",
+  "act": "KVG",
+  "article_id": "art_4_a",
+  "paragraph": "",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "answer.alias_only"
+  ],
+  "messages": [
+   "WARN answer.alias_only nmv-0057-de: Antwort 'Vereinigtes Königreich' nicht wörtlich, aber ein Alias"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0058": {
+  "core_id": "nmv-0058",
+  "act": "AHVV",
+  "article_id": "art_54_bis",
+  "paragraph": "2",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "evidence.apostrophe"
+  ],
+  "messages": [
+   "WARN evidence.apostrophe nmv-0058-fr: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0059": {
+  "core_id": "nmv-0059",
+  "act": "AHVG",
+  "article_id": "art_39",
+  "paragraph": "4",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "procedural",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "source.discretion"
+  ],
+  "messages": [
+   "WARN source.discretion nmv-0059-de: Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": null,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_no_stale_pair"
+ },
+ "nmv-0060": {
+  "core_id": "nmv-0060",
+  "act": "AVIV",
+  "article_id": "art_60",
+  "paragraph": "2",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2026",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0061": {
+  "core_id": "nmv-0061",
+  "act": "ELG",
+  "article_id": "art_23",
+  "paragraph": "1",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [
+   "evidence.not_in_article"
+  ],
+  "warnings": [],
+  "messages": [
+   "ERROR evidence.not_in_article nmv-0061-fr: Evidenz steht nicht wörtlich im zitierten Artikel",
+   "ERROR evidence.not_in_article nmv-0061-it: Evidenz steht nicht wörtlich im zitierten Artikel"
+  ],
+  "duplicate_of": [],
+  "quote_ok": false,
+  "outdated_in_earlier_version": true,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "D_errors"
+ },
+ "nmv-0062": {
+  "core_id": "nmv-0062",
+  "act": "EOG",
+  "article_id": "art_16_m",
+  "paragraph": "2",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "source.future_change"
+  ],
+  "messages": [
+   "WARN source.future_change nmv-0062-de: Artikel ändert sich nach dem Stichtag: 2027-07-01",
+   "WARN source.future_change nmv-0062-fr: Artikel ändert sich nach dem Stichtag: 2027-07-01",
+   "WARN source.future_change nmv-0062-it: Artikel ändert sich nach dem Stichtag: 2027-07-01"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0063": {
+  "core_id": "nmv-0063",
+  "act": "KVV",
+  "article_id": "art_22",
+  "paragraph": "3",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "procedural",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "evidence.apostrophe"
+  ],
+  "messages": [
+   "WARN evidence.apostrophe nmv-0063-fr: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)",
+   "WARN evidence.apostrophe nmv-0063-it: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": null,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_no_stale_pair"
+ },
+ "nmv-0064": {
+  "core_id": "nmv-0064",
+  "act": "AHVV",
+  "article_id": "art_34_d",
+  "paragraph": "2",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2026",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0065": {
+  "core_id": "nmv-0065",
+  "act": "AHVV",
+  "article_id": "art_142",
+  "paragraph": "2",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "question.answer_overlap"
+  ],
+  "messages": [
+   "WARN question.answer_overlap nmv-0065-fr: Antwortwörter stehen in der Frage: ['lavs']"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_stale_pair_warn"
+ },
+ "nmv-0066": {
+  "core_id": "nmv-0066",
+  "act": "AHVV",
+  "article_id": "art_53",
+  "paragraph": "1",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "answer.inflected"
+  ],
+  "messages": [
+   "WARN answer.inflected nmv-0066-de: Antwort 'Vorschriften zur Berechnung der Renten und verbindliche Rententabellen' nur flektiert/umgestellt in der Evidenz",
+   "WARN answer.inflected nmv-0066-fr: Antwort 'prescriptions de calcul et tables de rentes' nur flektiert/umgestellt in der Evidenz",
+   "WARN answer.inflected nmv-0066-it: Antwort 'prescrizioni per il calcolo delle rendite e tavole' nur flektiert/umgestellt in der Evidenz"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_stale_pair_warn"
+ },
+ "nmv-0067": {
+  "core_id": "nmv-0067",
+  "act": "AHVV",
+  "article_id": "art_99",
+  "paragraph": "5",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "style.long_answer",
+   "temporal.evidence_unchanged"
+  ],
+  "messages": [
+   "WARN style.long_answer nmv-0067-de: Antwort lang (171 Zeichen)",
+   "WARN temporal.evidence_unchanged nmv-0067-de: veraltete Antwort angegeben, aber der Belegsatz steht unverändert in allen früheren Fassungen",
+   "WARN style.long_answer nmv-0067-fr: Antwort lang (188 Zeichen)",
+   "WARN temporal.evidence_unchanged nmv-0067-fr: veraltete Antwort angegeben, aber der Belegsatz steht unverändert in allen früheren Fassungen",
+   "WARN style.long_answer nmv-0067-it: Antwort lang (198 Zeichen)",
+   "WARN temporal.evidence_unchanged nmv-0067-it: veraltete Antwort angegeben, aber der Belegsatz steht unverändert in allen früheren Fassungen"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_stale_pair_warn"
+ },
+ "nmv-0068": {
+  "core_id": "nmv-0068",
+  "act": "AVIV",
+  "article_id": "art_6",
+  "paragraph": "5",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2026",
+  "errors": [],
+  "warnings": [
+   "answer.threshold_word",
+   "question.answer_overlap"
+  ],
+  "messages": [
+   "WARN question.answer_overlap nmv-0068-fr: Antwortwörter stehen in der Frage: ['chômage', 'jours']",
+   "WARN answer.threshold_word nmv-0068-fr: Evidenz enthält 'plus de', Frage und Antwort nicht: Schwelle prüfen",
+   "WARN question.answer_overlap nmv-0068-it: Antwortwörter stehen in der Frage: ['disoccupazione', 'giorni']",
+   "WARN answer.threshold_word nmv-0068-it: Evidenz enthält 'più di', Frage und Antwort nicht: Schwelle prüfen"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_stale_pair_warn"
+ },
+ "nmv-0069": {
+  "core_id": "nmv-0069",
+  "act": "BVV2",
+  "article_id": "art_14",
+  "paragraph": "1",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "evidence.apostrophe"
+  ],
+  "messages": [
+   "WARN evidence.apostrophe nmv-0069-fr: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)",
+   "WARN evidence.apostrophe nmv-0069-it: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": false,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_no_stale_pair"
+ },
+ "nmv-0070": {
+  "core_id": "nmv-0070",
+  "act": "EOG",
+  "article_id": "art_16_j",
+  "paragraph": "3",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "source.future_change"
+  ],
+  "messages": [
+   "WARN source.future_change nmv-0070-de: Artikel ändert sich nach dem Stichtag: 2027-07-01",
+   "WARN source.future_change nmv-0070-fr: Artikel ändert sich nach dem Stichtag: 2027-07-01",
+   "WARN source.future_change nmv-0070-it: Artikel ändert sich nach dem Stichtag: 2027-07-01"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0071": {
+  "core_id": "nmv-0071",
+  "act": "OR",
+  "article_id": "art_335_c",
+  "paragraph": "3",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0072": {
+  "core_id": "nmv-0072",
+  "act": "ELV",
+  "article_id": "art_25",
+  "paragraph": "1",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "procedural",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": null,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_no_stale_pair"
+ },
+ "nmv-0073": {
+  "core_id": "nmv-0073",
+  "act": "KVG",
+  "article_id": "art_21",
+  "paragraph": "2",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "procedural",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2026",
+  "errors": [],
+  "warnings": [
+   "source.discretion"
+  ],
+  "messages": [
+   "WARN source.discretion nmv-0073-de: Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": null,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_no_stale_pair"
+ },
+ "nmv-0074": {
+  "core_id": "nmv-0074",
+  "act": "AHVG",
+  "article_id": "art_18",
+  "paragraph": "3",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [
+   "temporal.not_changed"
+  ],
+  "warnings": [
+   "evidence.apostrophe",
+   "source.discretion",
+   "temporal.evidence_unchanged"
+  ],
+  "messages": [
+   "WARN source.discretion nmv-0074-de: Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist",
+   "WARN evidence.apostrophe nmv-0074-fr: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)",
+   "WARN temporal.evidence_unchanged nmv-0074-fr: veraltete Antwort angegeben, aber der Belegsatz steht unverändert in allen früheren Fassungen",
+   "ERROR temporal.not_changed nmv-0074-it: Artikel seit 2024 unverändert, aber Typ temporal",
+   "WARN temporal.evidence_unchanged nmv-0074-it: veraltete Antwort angegeben, aber der Belegsatz steht unverändert in allen früheren Fassungen"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": false,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "D_errors"
+ },
+ "nmv-0075": {
+  "core_id": "nmv-0075",
+  "act": "AHVG",
+  "article_id": "art_35",
+  "paragraph": "3",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "source.discretion"
+  ],
+  "messages": [
+   "WARN source.discretion nmv-0075-de: Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0076": {
+  "core_id": "nmv-0076",
+  "act": "AHVG",
+  "article_id": "art_39",
+  "paragraph": "3",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0077": {
+  "core_id": "nmv-0077",
+  "act": "AHVV",
+  "article_id": "art_55_ter",
+  "paragraph": "4",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "procedural",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": null,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_no_stale_pair"
+ },
+ "nmv-0078": {
+  "core_id": "nmv-0078",
+  "act": "AVIV",
+  "article_id": "art_30",
+  "paragraph": "3",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "stable_pre2024",
+  "errors": [
+   "temporal.not_changed"
+  ],
+  "warnings": [
+   "temporal.evidence_unchanged"
+  ],
+  "messages": [
+   "ERROR temporal.not_changed nmv-0078-de: Artikel seit 2024 unverändert, aber Typ temporal",
+   "WARN temporal.evidence_unchanged nmv-0078-de: veraltete Antwort angegeben, aber der Belegsatz steht unverändert in allen früheren Fassungen",
+   "ERROR temporal.not_changed nmv-0078-fr: Artikel seit 2024 unverändert, aber Typ temporal",
+   "WARN temporal.evidence_unchanged nmv-0078-fr: veraltete Antwort angegeben, aber der Belegsatz steht unverändert in allen früheren Fassungen",
+   "ERROR temporal.not_changed nmv-0078-it: Artikel seit 2024 unverändert, aber Typ temporal",
+   "WARN temporal.evidence_unchanged nmv-0078-it: veraltete Antwort angegeben, aber der Belegsatz steht unverändert in allen früheren Fassungen"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": false,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "D_errors"
+ },
+ "nmv-0079": {
+  "core_id": "nmv-0079",
+  "act": "AVIV",
+  "article_id": "art_86",
+  "paragraph": "1",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2026",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0080": {
+  "core_id": "nmv-0080",
+  "act": "BVG",
+  "article_id": "art_52_e",
+  "paragraph": "1bis",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "procedural",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "source.discretion"
+  ],
+  "messages": [
+   "WARN source.discretion nmv-0080-de: Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": null,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_no_stale_pair"
+ },
+ "nmv-0081": {
+  "core_id": "nmv-0081",
+  "act": "BVG",
+  "article_id": "art_79_b",
+  "paragraph": "2",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "procedural",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "answer.inflected",
+   "answer.threshold_word",
+   "evidence.apostrophe",
+   "source.discretion"
+  ],
+  "messages": [
+   "WARN answer.threshold_word nmv-0081-de: Evidenz enthält 'bis zu', Frage und Antwort nicht: Schwelle prüfen",
+   "WARN answer.inflected nmv-0081-de: Antwort 'Personen, die eine Leistung der beruflichen Vorsorge beziehen' nur flektiert/umgestellt in der Evidenz",
+   "WARN source.discretion nmv-0081-de: Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist",
+   "WARN evidence.apostrophe nmv-0081-fr: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)",
+   "WARN answer.inflected nmv-0081-fr: Antwort 'personnes qui perçoivent une prestation de la prévoyance professionnelle' nur flektiert/umgestellt in der Evidenz",
+   "WARN answer.threshold_word nmv-0081-it: Evidenz enthält 'fino a', Frage und Antwort nicht: Schwelle prüfen",
+   "WARN answer.inflected nmv-0081-it: Antwort 'persone che ricevono prestazioni della previdenza professionale' nur flektiert/umgestellt in der Evidenz"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": null,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "C_no_stale_pair_warn"
+ },
+ "nmv-0082": {
+  "core_id": "nmv-0082",
+  "act": "ELV",
+  "article_id": "art_15_a",
+  "paragraph": "",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [
+   "evidence.not_in_article"
+  ],
+  "warnings": [],
+  "messages": [
+   "ERROR evidence.not_in_article nmv-0082-it: Evidenz steht nicht wörtlich im zitierten Artikel"
+  ],
+  "duplicate_of": [],
+  "quote_ok": false,
+  "outdated_in_earlier_version": true,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "D_errors"
+ },
+ "nmv-0083": {
+  "core_id": "nmv-0083",
+  "act": "KVG",
+  "article_id": "art_25",
+  "paragraph": "2",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "evidence.apostrophe",
+   "source.discretion"
+  ],
+  "messages": [
+   "WARN source.discretion nmv-0083-de: Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist",
+   "WARN evidence.apostrophe nmv-0083-fr: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)",
+   "WARN evidence.apostrophe nmv-0083-it: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0084": {
+  "core_id": "nmv-0084",
+  "act": "KVG",
+  "article_id": "art_56",
+  "paragraph": "5",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "procedural",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2026",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": null,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_no_stale_pair"
+ },
+ "nmv-0085": {
+  "core_id": "nmv-0085",
+  "act": "KVV",
+  "article_id": "art_28",
+  "paragraph": "6",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2026",
+  "errors": [],
+  "warnings": [
+   "answer.alias_only",
+   "style.article_in_question"
+  ],
+  "messages": [
+   "WARN style.article_in_question nmv-0085-de: Frage nennt eine Artikelnummer",
+   "WARN style.article_in_question nmv-0085-fr: Frage nennt eine Artikelnummer",
+   "WARN answer.alias_only nmv-0085-fr: Antwort 'a–e' nicht wörtlich, aber ein Alias",
+   "WARN style.article_in_question nmv-0085-it: Frage nennt eine Artikelnummer"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_stale_pair_warn"
+ },
+ "nmv-0086": {
+  "core_id": "nmv-0086",
+  "act": "KVV",
+  "article_id": "art_65_d",
+  "paragraph": "3",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0087": {
+  "core_id": "nmv-0087",
+  "act": "KVV",
+  "article_id": "art_65_e",
+  "paragraph": "2",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": true,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0088": {
+  "core_id": "nmv-0088",
+  "act": "ELV",
+  "article_id": "art_25",
+  "paragraph": "2",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "procedural",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "evidence.apostrophe",
+   "style.article_in_question"
+  ],
+  "messages": [
+   "WARN style.article_in_question nmv-0088-de: Frage nennt eine Artikelnummer",
+   "WARN style.article_in_question nmv-0088-fr: Frage nennt eine Artikelnummer",
+   "WARN evidence.apostrophe nmv-0088-fr: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)",
+   "WARN style.article_in_question nmv-0088-it: Frage nennt eine Artikelnummer",
+   "WARN evidence.apostrophe nmv-0088-it: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": null,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "C_no_stale_pair_warn"
+ },
+ "nmv-0089": {
+  "core_id": "nmv-0089",
+  "act": "KVV",
+  "article_id": "art_71_a",
+  "paragraph": "1",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": false,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_no_stale_pair"
+ },
+ "nmv-0090": {
+  "core_id": "nmv-0090",
+  "act": "AHVG",
+  "article_id": "art_29_quinquies",
+  "paragraph": "4",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "evidence.apostrophe",
+   "style.article_in_question"
+  ],
+  "messages": [
+   "WARN style.article_in_question nmv-0090-de: Frage nennt eine Artikelnummer",
+   "WARN style.article_in_question nmv-0090-fr: Frage nennt eine Artikelnummer",
+   "WARN style.article_in_question nmv-0090-it: Frage nennt eine Artikelnummer",
+   "WARN evidence.apostrophe nmv-0090-it: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": true,
+  "provenance_ok": true,
+  "tier": "B_stale_pair_warn"
+ },
+ "nmv-0091": {
+  "core_id": "nmv-0091",
+  "act": "AVIG",
+  "article_id": "art_66",
+  "paragraph": "2bis",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "stable_pre2024",
+  "errors": [
+   "temporal.not_changed",
+   "temporal.same_value"
+  ],
+  "warnings": [
+   "temporal.evidence_unchanged"
+  ],
+  "messages": [
+   "ERROR temporal.not_changed nmv-0091-de: Artikel seit 2024 unverändert, aber Typ temporal",
+   "ERROR temporal.same_value nmv-0091-de: Veraltete Antwort hat denselben Wert wie die aktuelle",
+   "WARN temporal.evidence_unchanged nmv-0091-de: veraltete Antwort angegeben, aber der Belegsatz steht unverändert in allen früheren Fassungen",
+   "ERROR temporal.not_changed nmv-0091-fr: Artikel seit 2024 unverändert, aber Typ temporal",
+   "ERROR temporal.same_value nmv-0091-fr: Veraltete Antwort hat denselben Wert wie die aktuelle",
+   "WARN temporal.evidence_unchanged nmv-0091-fr: veraltete Antwort angegeben, aber der Belegsatz steht unverändert in allen früheren Fassungen",
+   "ERROR temporal.not_changed nmv-0091-it: Artikel seit 2024 unverändert, aber Typ temporal",
+   "ERROR temporal.same_value nmv-0091-it: Veraltete Antwort hat denselben Wert wie die aktuelle",
+   "WARN temporal.evidence_unchanged nmv-0091-it: veraltete Antwort angegeben, aber der Belegsatz steht unverändert in allen früheren Fassungen"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": false,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "D_errors"
+ },
+ "nmv-0092": {
+  "core_id": "nmv-0092",
+  "act": "AVIV",
+  "article_id": "art_41_b",
+  "paragraph": "1",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "answer.inflected"
+  ],
+  "messages": [
+   "WARN answer.inflected nmv-0092-de: Antwort 'Referenzalter nach Artikel 21 Absatz 1 AHVG' nur flektiert/umgestellt in der Evidenz"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_stale_pair_warn"
+ },
+ "nmv-0093": {
+  "core_id": "nmv-0093",
+  "act": "BVG",
+  "article_id": "art_17",
+  "paragraph": "1",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "procedural",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": null,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_no_stale_pair"
+ },
+ "nmv-0094": {
+  "core_id": "nmv-0094",
+  "act": "BVV2",
+  "article_id": "art_24_a",
+  "paragraph": "2",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "evidence.apostrophe"
+  ],
+  "messages": [
+   "WARN evidence.apostrophe nmv-0094-fr: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)",
+   "WARN evidence.apostrophe nmv-0094-it: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": false,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_no_stale_pair"
+ },
+ "nmv-0095": {
+  "core_id": "nmv-0095",
+  "act": "EOG",
+  "article_id": "art_16_k",
+  "paragraph": "3",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [
+   "temporal.not_changed"
+  ],
+  "warnings": [
+   "evidence.apostrophe",
+   "source.future_change",
+   "temporal.evidence_unchanged"
+  ],
+  "messages": [
+   "WARN source.future_change nmv-0095-de: Artikel ändert sich nach dem Stichtag: 2027-07-01",
+   "WARN evidence.apostrophe nmv-0095-fr: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)",
+   "WARN source.future_change nmv-0095-fr: Artikel ändert sich nach dem Stichtag: 2027-07-01",
+   "ERROR temporal.not_changed nmv-0095-it: Artikel seit 2024 unverändert, aber Typ temporal",
+   "WARN temporal.evidence_unchanged nmv-0095-it: veraltete Antwort angegeben, aber der Belegsatz steht unverändert in allen früheren Fassungen",
+   "WARN source.future_change nmv-0095-it: Artikel ändert sich nach dem Stichtag: 2027-07-01"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": false,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "D_errors"
+ },
+ "nmv-0096": {
+  "core_id": "nmv-0096",
+  "act": "EOG",
+  "article_id": "art_16_k",
+  "paragraph": "4",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [
+   "temporal.not_changed"
+  ],
+  "warnings": [
+   "source.future_change",
+   "temporal.evidence_unchanged"
+  ],
+  "messages": [
+   "WARN source.future_change nmv-0096-de: Artikel ändert sich nach dem Stichtag: 2027-07-01",
+   "ERROR temporal.not_changed nmv-0096-fr: Artikel seit 2024 unverändert, aber Typ temporal",
+   "WARN temporal.evidence_unchanged nmv-0096-fr: veraltete Antwort angegeben, aber der Belegsatz steht unverändert in allen früheren Fassungen",
+   "WARN source.future_change nmv-0096-fr: Artikel ändert sich nach dem Stichtag: 2027-07-01",
+   "ERROR temporal.not_changed nmv-0096-it: Artikel seit 2024 unverändert, aber Typ temporal",
+   "WARN temporal.evidence_unchanged nmv-0096-it: veraltete Antwort angegeben, aber der Belegsatz steht unverändert in allen früheren Fassungen",
+   "WARN source.future_change nmv-0096-it: Artikel ändert sich nach dem Stichtag: 2027-07-01"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": false,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "D_errors"
+ },
+ "nmv-0097": {
+  "core_id": "nmv-0097",
+  "act": "KVG",
+  "article_id": "art_25_a",
+  "paragraph": "2",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "answer.inflected",
+   "evidence.apostrophe"
+  ],
+  "messages": [
+   "WARN answer.inflected nmv-0097-de: Antwort 'ein Arzt oder eine Ärztin und eine Pflegefachperson' nur flektiert/umgestellt in der Evidenz",
+   "WARN evidence.apostrophe nmv-0097-fr: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": false,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "C_no_stale_pair_warn"
+ },
+ "nmv-0098": {
+  "core_id": "nmv-0098",
+  "act": "KVV",
+  "article_id": "art_50_c",
+  "paragraph": "",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0099": {
+  "core_id": "nmv-0099",
+  "act": "AHVG",
+  "article_id": "art_58",
+  "paragraph": "2",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "answer.inflected"
+  ],
+  "messages": [
+   "WARN answer.inflected nmv-0099-de: Antwort 'Personen, die der Ausgleichskasse als Versicherte oder Arbeitgeber angeschlossen sind' nur flektiert/umgestellt in der Evidenz"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_stale_pair_warn"
+ },
+ "nmv-0100": {
+  "core_id": "nmv-0100",
+  "act": "AHVG",
+  "article_id": "art_12",
+  "paragraph": "3",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [
+   "temporal.not_changed"
+  ],
+  "warnings": [
+   "evidence.apostrophe",
+   "temporal.evidence_unchanged"
+  ],
+  "messages": [
+   "WARN evidence.apostrophe nmv-0100-fr: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)",
+   "WARN temporal.evidence_unchanged nmv-0100-fr: veraltete Antwort angegeben, aber der Belegsatz steht unverändert in allen früheren Fassungen",
+   "ERROR temporal.not_changed nmv-0100-it: Artikel seit 2024 unverändert, aber Typ temporal",
+   "WARN temporal.evidence_unchanged nmv-0100-it: veraltete Antwort angegeben, aber der Belegsatz steht unverändert in allen früheren Fassungen"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": false,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "D_errors"
+ },
+ "nmv-0101": {
+  "core_id": "nmv-0101",
+  "act": "AHVV",
+  "article_id": "art_174",
+  "paragraph": "1bis",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [
+   "temporal.not_changed"
+  ],
+  "warnings": [
+   "temporal.evidence_unchanged"
+  ],
+  "messages": [
+   "ERROR temporal.not_changed nmv-0101-it: Artikel seit 2024 unverändert, aber Typ temporal",
+   "WARN temporal.evidence_unchanged nmv-0101-it: veraltete Antwort angegeben, aber der Belegsatz steht unverändert in allen früheren Fassungen"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": false,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "D_errors"
+ },
+ "nmv-0102": {
+  "core_id": "nmv-0102",
+  "act": "AHVV",
+  "article_id": "art_222",
+  "paragraph": "3",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "answer.inflected",
+   "evidence.apostrophe"
+  ],
+  "messages": [
+   "WARN answer.inflected nmv-0102-de: Antwort 'Referenzalter nach Artikel 21 Absatz 1 AHVG' nur flektiert/umgestellt in der Evidenz",
+   "WARN evidence.apostrophe nmv-0102-fr: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)",
+   "WARN evidence.apostrophe nmv-0102-it: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": false,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "C_no_stale_pair_warn"
+ },
+ "nmv-0103": {
+  "core_id": "nmv-0103",
+  "act": "AVIG",
+  "article_id": "art_27",
+  "paragraph": "3",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "source.discretion"
+  ],
+  "messages": [
+   "WARN source.discretion nmv-0103-de: Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0104": {
+  "core_id": "nmv-0104",
+  "act": "AVIG",
+  "article_id": "art_27",
+  "paragraph": "5",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": null,
+  "change_kind": "rule_changed",
+  "bucket": "stable_pre2024",
+  "errors": [
+   "answer.not_in_evidence",
+   "evidence.not_in_article",
+   "format.answer_type",
+   "format.difficulty",
+   "format.question_type",
+   "format.register"
+  ],
+  "warnings": [
+   "answer.no_variations",
+   "evidence.apostrophe",
+   "style.question_mark"
+  ],
+  "messages": [
+   "ERROR format.question_type nmv-0104-de: Ungültiger Wert question_type=None",
+   "ERROR format.answer_type nmv-0104-de: Ungültiger Wert answer_type=None",
+   "ERROR format.register nmv-0104-de: Ungültiges register=None",
+   "ERROR format.difficulty nmv-0104-de: difficulty_prior muss 1, 2 oder 3 sein",
+   "WARN style.question_mark nmv-0104-de: Frage endet nicht mit '?'",
+   "ERROR evidence.not_in_article nmv-0104-de: Evidenz steht nicht wörtlich im zitierten Artikel",
+   "ERROR answer.not_in_evidence nmv-0104-de: Antwort '' steht nicht wörtlich in der Evidenz",
+   "WARN answer.no_variations nmv-0104-de: Weder answer_aliases noch near_miss/outdated angegeben",
+   "ERROR format.question_type nmv-0104-fr: Ungültiger Wert question_type=None",
+   "ERROR format.answer_type nmv-0104-fr: Ungültiger Wert answer_type=None",
+   "ERROR format.register nmv-0104-fr: Ungültiges register=None",
+   "ERROR format.difficulty nmv-0104-fr: difficulty_prior muss 1, 2 oder 3 sein"
+  ],
+  "duplicate_of": [],
+  "quote_ok": false,
+  "outdated_in_earlier_version": null,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "D_errors"
+ },
+ "nmv-0105": {
+  "core_id": "nmv-0105",
+  "act": "AVIV",
+  "article_id": "art_122",
+  "paragraph": "2",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2026",
+  "errors": [],
+  "warnings": [
+   "evidence.apostrophe",
+   "temporal.evidence_unchanged"
+  ],
+  "messages": [
+   "WARN evidence.apostrophe nmv-0105-fr: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)",
+   "WARN temporal.evidence_unchanged nmv-0105-fr: veraltete Antwort angegeben, aber der Belegsatz steht unverändert in allen früheren Fassungen",
+   "WARN evidence.apostrophe nmv-0105-it: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": false,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "C_no_stale_pair_warn"
+ },
+ "nmv-0106": {
+  "core_id": "nmv-0106",
+  "act": "AVIV",
+  "article_id": "art_78",
+  "paragraph": "",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "procedural",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2026",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": null,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_no_stale_pair"
+ },
+ "nmv-0107": {
+  "core_id": "nmv-0107",
+  "act": "AVIV",
+  "article_id": "art_88",
+  "paragraph": "1",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2026",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0108": {
+  "core_id": "nmv-0108",
+  "act": "AVIV",
+  "article_id": "art_95",
+  "paragraph": "2",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2026",
+  "errors": [],
+  "warnings": [
+   "evidence.apostrophe"
+  ],
+  "messages": [
+   "WARN evidence.apostrophe nmv-0108-fr: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": false,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_no_stale_pair"
+ },
+ "nmv-0109": {
+  "core_id": "nmv-0109",
+  "act": "AVIV",
+  "article_id": "art_97",
+  "paragraph": "1",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2026",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0110": {
+  "core_id": "nmv-0110",
+  "act": "BVV3",
+  "article_id": "art_7",
+  "paragraph": "3",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0111": {
+  "core_id": "nmv-0111",
+  "act": "EOG",
+  "article_id": "art_16_m",
+  "paragraph": "1",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "evidence.apostrophe",
+   "source.future_change"
+  ],
+  "messages": [
+   "WARN source.future_change nmv-0111-de: Artikel ändert sich nach dem Stichtag: 2027-07-01",
+   "WARN evidence.apostrophe nmv-0111-fr: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)",
+   "WARN source.future_change nmv-0111-fr: Artikel ändert sich nach dem Stichtag: 2027-07-01",
+   "WARN evidence.apostrophe nmv-0111-it: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)",
+   "WARN source.future_change nmv-0111-it: Artikel ändert sich nach dem Stichtag: 2027-07-01"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": false,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_no_stale_pair"
+ },
+ "nmv-0112": {
+  "core_id": "nmv-0112",
+  "act": "EOG",
+  "article_id": "art_1_a",
+  "paragraph": "4bis",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "question.answer_overlap"
+  ],
+  "messages": [
+   "WARN question.answer_overlap nmv-0112-fr: Antwortwörter stehen in der Frage: ['assurance', 'rente', 'vieillesse']"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_stale_pair_warn"
+ },
+ "nmv-0113": {
+  "core_id": "nmv-0113",
+  "act": "IVG",
+  "article_id": "art_74",
+  "paragraph": "2",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0114": {
+  "core_id": "nmv-0114",
+  "act": "KVG",
+  "article_id": "art_18",
+  "paragraph": "2quater",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "answer.alias_only",
+   "style.article_in_question"
+  ],
+  "messages": [
+   "WARN style.article_in_question nmv-0114-de: Frage nennt eine Artikelnummer",
+   "WARN answer.alias_only nmv-0114-de: Antwort 'Vereinigtes Königreich' nicht wörtlich, aber ein Alias",
+   "WARN style.article_in_question nmv-0114-fr: Frage nennt eine Artikelnummer",
+   "WARN style.article_in_question nmv-0114-it: Frage nennt eine Artikelnummer"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_stale_pair_warn"
+ },
+ "nmv-0115": {
+  "core_id": "nmv-0115",
+  "act": "KVG",
+  "article_id": "art_41",
+  "paragraph": "2ter",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "answer.inflected",
+   "source.discretion"
+  ],
+  "messages": [
+   "WARN answer.inflected nmv-0115-de: Antwort 'Mitgliedstaat der Europäischen Union, Island, Norwegen, Vereinigtes Königreich' nur flektiert/umgestellt in der Evidenz",
+   "WARN source.discretion nmv-0115-de: Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist",
+   "WARN answer.inflected nmv-0115-fr: Antwort \"État membre de l'Union européenne, Islande, Norvège, Royaume-Uni\" nur flektiert/umgestellt in der Evidenz",
+   "WARN answer.inflected nmv-0115-it: Antwort \"Stato membro dell'Unione europea, Islanda, Norvegia, Regno Unito\" nur flektiert/umgestellt in der Evidenz"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_stale_pair_warn"
+ },
+ "nmv-0116": {
+  "core_id": "nmv-0116",
+  "act": "KVG",
+  "article_id": "art_49_a",
+  "paragraph": "3bis",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "answer.alias_only"
+  ],
+  "messages": [
+   "WARN answer.alias_only nmv-0116-de: Antwort 'Mitgliedstaat der Europäischen Union, Island, Norwegen, Vereinigtes Königreich' nicht wörtlich, aber ein Alias",
+   "WARN answer.alias_only nmv-0116-fr: Antwort 'État membre de l’Union européenne, Islande, Norvège, Royaume-Uni' nicht wörtlich, aber ein Alias",
+   "WARN answer.alias_only nmv-0116-it: Antwort 'Stato membro dell’Unione europea, Islanda, Norvegia, Regno Unito' nicht wörtlich, aber ein Alias"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0117": {
+  "core_id": "nmv-0117",
+  "act": "KVG",
+  "article_id": "art_65_a",
+  "paragraph": "",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "answer.inflected",
+   "dup.near_question",
+   "style.question_mark"
+  ],
+  "messages": [
+   "WARN style.question_mark nmv-0117-de: Frage endet nicht mit '?'",
+   "WARN answer.inflected nmv-0117-de: Antwort 'Vereinigtes Königreich' nur flektiert/umgestellt in der Evidenz",
+   "WARN style.question_mark nmv-0117-fr: Frage endet nicht mit '?'",
+   "WARN style.question_mark nmv-0117-it: Frage endet nicht mit '?'",
+   "WARN dup.near_question nmv-0117-de: Sehr ähnlich zu nmv-0118-de (Ratio 0.91)"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_stale_pair_warn"
+ },
+ "nmv-0118": {
+  "core_id": "nmv-0118",
+  "act": "KVG",
+  "article_id": "art_66_a",
+  "paragraph": "1",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "answer.alias_only",
+   "dup.near_question"
+  ],
+  "messages": [
+   "WARN answer.alias_only nmv-0118-de: Antwort 'Vereinigtes Königreich' nicht wörtlich, aber ein Alias",
+   "WARN dup.near_question nmv-0117-de: Sehr ähnlich zu nmv-0118-de (Ratio 0.91)"
+  ],
+  "duplicate_of": [
+   "nmv-0117"
+  ],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "C_duplicate"
+ },
+ "nmv-0119": {
+  "core_id": "nmv-0119",
+  "act": "KVV",
+  "article_id": "art_28",
+  "paragraph": "9",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "procedural",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": null,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_no_stale_pair"
+ },
+ "nmv-0120": {
+  "core_id": "nmv-0120",
+  "act": "KVV",
+  "article_id": "art_94",
+  "paragraph": "2",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "evidence.apostrophe"
+  ],
+  "messages": [
+   "WARN evidence.apostrophe nmv-0120-it: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": false,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_no_stale_pair"
+ },
+ "nmv-0121": {
+  "core_id": "nmv-0121",
+  "act": "AHVG",
+  "article_id": "art_18",
+  "paragraph": "2",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [
+   "temporal.not_changed"
+  ],
+  "warnings": [
+   "temporal.evidence_unchanged"
+  ],
+  "messages": [
+   "ERROR temporal.not_changed nmv-0121-fr: Artikel seit 2024 unverändert, aber Typ temporal",
+   "WARN temporal.evidence_unchanged nmv-0121-fr: veraltete Antwort angegeben, aber der Belegsatz steht unverändert in allen früheren Fassungen",
+   "ERROR temporal.not_changed nmv-0121-it: Artikel seit 2024 unverändert, aber Typ temporal",
+   "WARN temporal.evidence_unchanged nmv-0121-it: veraltete Antwort angegeben, aber der Belegsatz steht unverändert in allen früheren Fassungen"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": false,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "D_errors"
+ },
+ "nmv-0122": {
+  "core_id": "nmv-0122",
+  "act": "ELG",
+  "article_id": "art_5",
+  "paragraph": "3",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [
+   "temporal.prev_evidence",
+   "temporal.version_evidence"
+  ],
+  "warnings": [
+   "evidence.apostrophe",
+   "style.article_in_question"
+  ],
+  "messages": [
+   "WARN style.article_in_question nmv-0122-de: Frage nennt eine Artikelnummer",
+   "ERROR temporal.version_evidence nmv-0122-de: Evidenz der veralteten Antwort 'ordentliches Rentenalter' steht nicht in der Fassung 2023-01-01",
+   "ERROR temporal.prev_evidence nmv-0122-de: Evidenz der veralteten Antwort steht nicht in der Vorfassung",
+   "WARN style.article_in_question nmv-0122-fr: Frage nennt eine Artikelnummer",
+   "WARN evidence.apostrophe nmv-0122-fr: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)",
+   "WARN style.article_in_question nmv-0122-it: Frage nennt eine Artikelnummer",
+   "WARN evidence.apostrophe nmv-0122-it: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": false,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "D_errors"
+ },
+ "nmv-0123": {
+  "core_id": "nmv-0123",
+  "act": "AHVG",
+  "article_id": "art_63",
+  "paragraph": "3",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "source.discretion"
+  ],
+  "messages": [
+   "WARN source.discretion nmv-0123-de: Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0124": {
+  "core_id": "nmv-0124",
+  "act": "AHVV",
+  "article_id": "art_125",
+  "paragraph": "",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "evidence.apostrophe",
+   "temporal.evidence_unchanged"
+  ],
+  "messages": [
+   "WARN evidence.apostrophe nmv-0124-fr: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)",
+   "WARN temporal.evidence_unchanged nmv-0124-fr: veraltete Antwort angegeben, aber der Belegsatz steht unverändert in allen früheren Fassungen",
+   "WARN evidence.apostrophe nmv-0124-it: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": false,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "C_no_stale_pair_warn"
+ },
+ "nmv-0125": {
+  "core_id": "nmv-0125",
+  "act": "AHVV",
+  "article_id": "art_137",
+  "paragraph": "",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [
+   "temporal.not_changed"
+  ],
+  "warnings": [
+   "temporal.evidence_unchanged"
+  ],
+  "messages": [
+   "ERROR temporal.not_changed nmv-0125-fr: Artikel seit 2024 unverändert, aber Typ temporal",
+   "WARN temporal.evidence_unchanged nmv-0125-fr: veraltete Antwort angegeben, aber der Belegsatz steht unverändert in allen früheren Fassungen",
+   "ERROR temporal.not_changed nmv-0125-it: Artikel seit 2024 unverändert, aber Typ temporal",
+   "WARN temporal.evidence_unchanged nmv-0125-it: veraltete Antwort angegeben, aber der Belegsatz steht unverändert in allen früheren Fassungen"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": false,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "D_errors"
+ },
+ "nmv-0126": {
+  "core_id": "nmv-0126",
+  "act": "AHVV",
+  "article_id": "art_161",
+  "paragraph": "2",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "answer.alias_only",
+   "evidence.apostrophe"
+  ],
+  "messages": [
+   "WARN evidence.apostrophe nmv-0126-fr: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)",
+   "WARN answer.alias_only nmv-0126-fr: Antwort 'avoir la compétence de prendre des décisions' nicht wörtlich, aber ein Alias",
+   "WARN evidence.apostrophe nmv-0126-it: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)",
+   "WARN answer.alias_only nmv-0126-it: Antwort 'emanare decisioni autonomamente' nicht wörtlich, aber ein Alias"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": false,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_no_stale_pair"
+ },
+ "nmv-0127": {
+  "core_id": "nmv-0127",
+  "act": "AHVV",
+  "article_id": "art_180",
+  "paragraph": "2",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "evidence.apostrophe",
+   "style.article_in_question"
+  ],
+  "messages": [
+   "WARN style.article_in_question nmv-0127-de: Frage nennt eine Artikelnummer",
+   "WARN style.article_in_question nmv-0127-fr: Frage nennt eine Artikelnummer",
+   "WARN evidence.apostrophe nmv-0127-fr: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)",
+   "WARN style.article_in_question nmv-0127-it: Frage nennt eine Artikelnummer",
+   "WARN evidence.apostrophe nmv-0127-it: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_stale_pair_warn"
+ },
+ "nmv-0128": {
+  "core_id": "nmv-0128",
+  "act": "BVG",
+  "article_id": "art_10",
+  "paragraph": "2",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0129": {
+  "core_id": "nmv-0129",
+  "act": "BVG",
+  "article_id": "art_24",
+  "paragraph": "3",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [
+   "temporal.not_changed"
+  ],
+  "warnings": [
+   "temporal.evidence_unchanged"
+  ],
+  "messages": [
+   "ERROR temporal.not_changed nmv-0129-it: Artikel seit 2024 unverändert, aber Typ temporal",
+   "WARN temporal.evidence_unchanged nmv-0129-it: veraltete Antwort angegeben, aber der Belegsatz steht unverändert in allen früheren Fassungen"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": false,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "D_errors"
+ },
+ "nmv-0130": {
+  "core_id": "nmv-0130",
+  "act": "BVG",
+  "article_id": "art_33_a",
+  "paragraph": "2",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "answer.alias_only",
+   "evidence.apostrophe",
+   "source.discretion"
+  ],
+  "messages": [
+   "WARN answer.alias_only nmv-0130-de: Antwort 'reglementarisches Referenzalter' nicht wörtlich, aber ein Alias",
+   "WARN source.discretion nmv-0130-de: Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist",
+   "WARN evidence.apostrophe nmv-0130-fr: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)",
+   "WARN evidence.apostrophe nmv-0130-it: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": false,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_no_stale_pair"
+ },
+ "nmv-0131": {
+  "core_id": "nmv-0131",
+  "act": "BVG",
+  "article_id": "art_34_a",
+  "paragraph": "4",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "evidence.apostrophe"
+  ],
+  "messages": [
+   "WARN evidence.apostrophe nmv-0131-fr: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)",
+   "WARN evidence.apostrophe nmv-0131-it: Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": false,
+  "stale_pair": false,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "B_no_stale_pair"
+ },
+ "nmv-0132": {
+  "core_id": "nmv-0132",
+  "act": "BVG",
+  "article_id": "art_36",
+  "paragraph": "1",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "source.discretion"
+  ],
+  "messages": [
+   "WARN source.discretion nmv-0132-de: Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0133": {
+  "core_id": "nmv-0133",
+  "act": "BVG",
+  "article_id": "art_41",
+  "paragraph": "3",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0134": {
+  "core_id": "nmv-0134",
+  "act": "BVG",
+  "article_id": "art_47_a",
+  "paragraph": "4",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "answer.alias_only",
+   "source.discretion"
+  ],
+  "messages": [
+   "WARN answer.alias_only nmv-0134-de: Antwort 'reglementarisches Referenzalter' nicht wörtlich, aber ein Alias",
+   "WARN source.discretion nmv-0134-de: Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0135": {
+  "core_id": "nmv-0135",
+  "act": "BVV2",
+  "article_id": "art_24_a",
+  "paragraph": "1",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [],
+  "messages": [],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0136": {
+  "core_id": "nmv-0136",
+  "act": "BVV2",
+  "article_id": "art_26_a",
+  "paragraph": "1",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "answer.alias_only",
+   "source.discretion"
+  ],
+  "messages": [
+   "WARN answer.alias_only nmv-0136-de: Antwort 'reglementarisches Referenzalter' nicht wörtlich, aber ein Alias",
+   "WARN source.discretion nmv-0136-de: Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ },
+ "nmv-0137": {
+  "core_id": "nmv-0137",
+  "act": "BVV2",
+  "article_id": "art_26_b",
+  "paragraph": "1",
+  "langs": [
+   "de",
+   "fr",
+   "it"
+  ],
+  "question_type": "temporal",
+  "change_kind": "rule_changed",
+  "bucket": "changed_2024_2025",
+  "errors": [],
+  "warnings": [
+   "answer.alias_only",
+   "source.discretion"
+  ],
+  "messages": [
+   "WARN answer.alias_only nmv-0137-de: Antwort 'reglementarisches Referenzalter' nicht wörtlich, aber ein Alias",
+   "WARN source.discretion nmv-0137-de: Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist"
+  ],
+  "duplicate_of": [],
+  "quote_ok": true,
+  "outdated_in_earlier_version": true,
+  "stale_pair": true,
+  "yes_no": false,
+  "provenance_ok": true,
+  "tier": "A_stale_pair"
+ }
+}

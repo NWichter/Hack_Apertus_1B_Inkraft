@@ -1,0 +1,38 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"AHVG\", \"article_id\": \"art_29_bis\", \"paragraph\": \"5\", \"domain\": \"ahv\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Für welche letzte aufgeführte Kategorie regelt der Bundesrat die Anrechnung?\", \"answer\": \"der nach dem Referenzalter zurückgelegten Beitragszeiten\", \"answer_aliases\": [\"nach dem Referenzalter zurückgelegten Beitragszeiten\", \"der nach dem Referenzalter zurückgelegten Beitragszeiten\"], \"near_miss_answers\": [\"der Beitragsmonate im Jahr der Entstehung des Rentenanspruchs\", \"der Beitragszeiten vor dem 1. Januar nach Vollendung des 20. Altersjahres\"], \"evidence\": \"d. der nach dem Referenzalter zurückgelegten Beitragszeiten\"}, \"fr\": {\"question\": \"Pour quelle dernière catégorie énumérée le Conseil fédéral règle-t-il la prise en compte?\", \"answer\": \"des périodes de cotisation accomplies après l’âge de référence\", \"answer_aliases\": [\"périodes de cotisation accomplies après l’âge de référence\", \"des périodes de cotisation accomplies après l’âge de référence\"], \"near_miss_answers\": [\"des mois de cotisation accomplis pendant l’année de l’ouverture du droit à la rente\", \"des périodes de cotisation précédant le 1er janvier qui suit la date à laquelle l’assuré a eu 20 ans révolus\"], \"evidence\": \"d. des périodes de cotisation accomplies après l’âge de référence\"}, \"it\": {\"question\": \"Per quale ultima categoria elencata il Consiglio federale disciplina il computo?\", \"answer\": \"dei periodi di contribuzione totalizzati dopo il raggiungimento dell’età di riferimento\", \"answer_aliases\": [\"periodi di contribuzione totalizzati dopo il raggiungimento dell’età di riferimento\", \"dei periodi di contribuzione totalizzati dopo il raggiungimento dell’età di riferimento\"], \"near_miss_answers\": [\"dei mesi di contribuzione trascorsi durante l’anno di inizio del diritto alla rendita\", \"dei periodi di contribuzione precedenti il 1° gennaio dell’anno successivo a quello in cui l’avente diritto ha compiuto i 20 anni\"], \"evidence\": \"d. dei periodi di contribuzione totalizzati dopo il raggiungimento dell’età di riferimento\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-09-01\", \"paragraph\": \"2\", \"de\": {\"outdated_answer\": \"der Zusatzjahre\", \"evidence\": \"sowie der Zusatzjahre\"}, \"fr\": {\"outdated_answer\": \"des années complémentaires\", \"evidence\": \"et des années complémentaires\"}, \"it\": {\"outdated_answer\": \"degli anni concessi in più\", \"evidence\": \"e degli anni concessi in più\"}}]}}",
+ "reasoning_chars": 34095,
+ "usage": {
+  "prompt_tokens": 2178,
+  "completion_tokens": 9396,
+  "total_tokens": 11574,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 8710,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 247.5,
+ "attempts": 1,
+ "generated_at": "2026-10-04",
+ "settings": {
+  "max_tokens": 24000,
+  "reasoning_effort": "medium",
+  "temperature": 0.3
+ }
+}

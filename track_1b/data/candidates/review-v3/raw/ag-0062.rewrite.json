@@ -1,0 +1,29 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "content": "{\"rewrite\": true, \"question_type\": \"procedural\", \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Was muss ein Arbeitsloser in der Arbeitslosenversicherung neben der Bereitschaft zur Annahme zumutbarer Arbeit noch tun, um als vermittlungsfähig zu gelten?\", \"answer\": \"an Eingliederungsmassnahmen teilzunehmen\", \"answer_aliases\": [\"an Eingliederungsmassnahmen teilnehmen\", \"Eingliederungsmassnahmen teilzunehmen\"], \"near_miss_answers\": [\"eine zumutbare Arbeit anzunehmen\", \"bereit, in der Lage und berechtigt zu sein\", \"keine Massnahmen zu besuchen\"], \"evidence\": \"Der Arbeitslose ist vermittlungsfähig, wenn er bereit, in der Lage und berechtigt ist, eine zumutbare Arbeit anzunehmen und an Eingliederungsmassnahmen teilzunehmen.\"}, \"fr\": {\"question\": \"Quelle condition supplémentaire le chômeur doit-il remplir dans l'assurance-chômage, outre l'acceptation d'un travail convenable, pour être apte au placement?\", \"answer\": \"participer à des mesures d’intégration\", \"answer_aliases\": [\"participer à des mesures d'integration\", \"mesures d’intégration\"], \"near_miss_answers\": [\"accepter un travail convenable\", \"être en mesure et en droit de le faire\", \"refuser les mesures d’intégration\"], \"evidence\": \"Est réputé apte à être placé le chômeur qui est disposé à accepter un travail convenable et à participer à des mesures d’intégration et qui est en mesure et en droit de le faire.\"}, \"it\": {\"question\": \"Cosa deve fare il disoccupato nell'assicurazione contro la disoccupazione, oltre ad accettare un'occupazione adeguata, per essere idoneo al collocamento?\", \"answer\": \"partecipare a provvedimenti di reintegrazione\", \"answer_aliases\": [\"a partecipare a provvedimenti di reintegrazione\", \"provvedimenti di reintegrazione\"], \"near_miss_answers\": [\"accettare un’occupazione adeguata\", \"essere disposto, capace e autorizzato\", \"non partecipare a provvedimenti di reintegrazione\"], \"evidence\": \"Il disoccupato è idoneo al collocamento se è disposto, capace e autorizzato ad accettare un’occupazione adeguata e a partecipare a provvedimenti di reintegrazione.\"}}",
+ "usage": {
+  "prompt_tokens": 1227,
+  "completion_tokens": 5104,
+  "total_tokens": 6331,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 4459,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 110.1,
+ "generated_at": "2026-10-04"
+}

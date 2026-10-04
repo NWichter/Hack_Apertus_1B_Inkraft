@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"AHVV\", \"article_id\": \"art_55_ter\", \"paragraph\": \"4\", \"domain\": \"ahv\", \"question_type\": \"procedural\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"In der AHV: Welche Bedingung muss erfüllt sein, damit die Summe aller Erhöhungsbeträge den Erhöhungsbetrag zur Altersrente nicht übersteigen darf?\", \"answer\": \"zusätzlich zur Altersrente Kinderrenten oder Zusatzrenten gewährt\", \"answer_aliases\": [\"Kinderrenten oder Zusatzrenten zusätzlich zur Altersrente\", \"bei Gewährung von Kinderrenten oder Zusatzrenten zur Altersrente\"], \"near_miss_answers\": [\"den maximalen Erhöhungsbetrag\", \"den Betrag der Kinderrente\", \"den Betrag der Zusatzrente\"], \"evidence\": \"Werden zusätzlich zur Altersrente Kinderrenten oder Zusatzrenten gewährt, so darf die Summe aller Erhöhungsbeträge den Erhöhungsbetrag zur Altersrente nicht übersteigen.\"}, \"fr\": {\"question\": \"Dans l'AVS: Quelle condition doit être remplie pour que la somme de tous les montants de l'augmentation ne doive pas dépasser le montant de l'augmentation de la rente de vieillesse?\", \"answer\": \"des rentes pour enfant ou des rentes complémentaires sont accordées en plus de la rente de vieillesse\", \"answer_aliases\": [\"rentes pour enfant ou rentes complémentaires en plus de la rente de vieillesse\", \"lorsque des rentes pour enfant ou complémentaires sont accordées avec la rente de vieillesse\"], \"near_miss_answers\": [\"le montant maximal de l'augmentation\", \"le montant de la rente pour enfant\", \"le montant de la rente complémentaire\"], \"evidence\": \"Si des rentes pour enfant ou des rentes complémentaires sont accordées en plus de la rente de vieillesse, la somme de tous les montants de l’augmentation ne doit pas dépasser le montant de l’augmentation de la rente de vieillesse.\"}, \"it\": {\"question\": \"Nell'AVS: Quale condizione deve essere adempiuta affinché la somma di tutti gli importi degli aumenti non possa superare l'importo dell'aumento della rendita di vecchiaia?\", \"answer\": \"oltre alla rendita di vecchiaia sono accordate anche rendite per i figli o rendite completive\", \"answer_aliases\": [\"rendite per i figli o rendite completive oltre alla rendita di vecchiaia\", \"quando sono concesse rendite per i figli o completive con la rendita di vecchiaia\"], \"near_miss_answers\": [\"l'importo massimo dell'aumento\", \"l'importo della rendita per i figli\", \"l'importo della rendita completiva\"], \"evidence\": \"Se oltre alla rendita di vecchiaia sono accordate anche rendite per i figli o rendite completive, la somma di tutti gli importi degli aumenti non può superare l’importo dell’aumento della rendita di vecchiaia.\"}, \"temporal\": null}",
+ "reasoning_chars": 20576,
+ "usage": {
+  "prompt_tokens": 1676,
+  "completion_tokens": 5795,
+  "total_tokens": 7471,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 5273,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 154.4,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

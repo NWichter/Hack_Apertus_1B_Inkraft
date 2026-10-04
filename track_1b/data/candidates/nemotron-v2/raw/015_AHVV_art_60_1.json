@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"AHVV\", \"article_id\": \"art_60\", \"paragraph\": \"1\", \"domain\": \"ahv\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Auf welcher Artikelgrundlage erfolgt die Vorausberechnung in der AHV?\", \"answer\": \"Artikel 50–56quater\", \"answer_aliases\": [\"Art. 50–56quater\", \"Artikel 50 bis 56quater\"], \"near_miss_answers\": [\"Artikel 50–56ter\", \"Artikel 50–57\", \"Artikel 50–56\"], \"evidence\": \"Die Vorausberechnung erfolgt auf der Grundlage der Artikel 50–56quater.\"}, \"fr\": {\"question\": \"Sur quelle base d'articles le calcul anticipé est-il effectué dans l'AVS?\", \"answer\": \"art. 50 à 56quater\", \"answer_aliases\": [\"articles 50 à 56quater\", \"art. 50–56quater\"], \"near_miss_answers\": [\"art. 50 à 56ter\", \"art. 50 à 57\", \"art. 50 à 56\"], \"evidence\": \"Le calcul anticipé est effectué en se fondant sur les art. 50 à 56quater.\"}, \"it\": {\"question\": \"Su quale base di articoli viene effettuato il calcolo anticipato nell'AVS?\", \"answer\": \"articoli 50–56quater\", \"answer_aliases\": [\"art. 50–56quater\", \"articoli 50 a 56quater\"], \"near_miss_answers\": [\"articoli 50–56ter\", \"articoli 50–57\", \"articoli 50–56\"], \"evidence\": \"Il calcolo anticipato è effettuato conformemente agli articoli 50–56quater.\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2024-01-01\", \"paragraph\": \"1\", \"de\": {\"outdated_answer\": \"Artikel 50–56ter\", \"evidence\": \"Die Vorausberechnung erfolgt auf der Grundlage der Artikel 50–56ter.\"}, \"fr\": {\"outdated_answer\": \"art. 50 à 56ter\", \"evidence\": \"Le calcul anticipé est effectué en se fondant sur les art. 50 à 56ter.\"}, \"it\": {\"outdated_answer\": \"articoli 50–56ter\", \"evidence\": \"Il calcolo anticipato è effettuato conformemente agli articoli 50–56ter.\"}}, {\"version_date\": \"2023-09-01\", \"paragraph\": \"1\", \"de\": {\"outdated_answer\": \"Artikel 50–57\", \"evidence\": \"Die Vorausberechnung erfolgt grundsätzlich nach den Artikeln 50–57.\"}, \"fr\": {\"outdated_answer\": \"art. 50 à 57\", \"evidence\": \"Le calcul anticipé est en principe effectué selon les art. 50 à 57.\"}, \"it\": {\"outdated_answer\": \"articoli 50–57\", \"evidence\": \"Di massima, il calcolo anticipato è effettuato conformemente agli articoli 50–57.\"}}]}}",
+ "reasoning_chars": 2352,
+ "usage": {
+  "prompt_tokens": 2243,
+  "completion_tokens": 1466,
+  "total_tokens": 3709,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 608,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 40.3,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

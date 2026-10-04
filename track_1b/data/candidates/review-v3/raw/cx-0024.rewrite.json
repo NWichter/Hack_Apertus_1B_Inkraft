@@ -1,0 +1,29 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "content": "{\"rewrite\": true, \"question_type\": \"procedural\", \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Mit welchem Selbstbehalt darf die Bonusversicherung nicht in Verbindung angeboten werden?\", \"answer\": \"wählbare Franchise\", \"answer_aliases\": [\"wählbare Franchise nach Artikel 93\", \"wählbare Franchise (Art. 93)\"], \"near_miss_answers\": [\"ordentliche Franchise\", \"Standardfranchise\", \"Franchise nach Artikel 92\"], \"evidence\": \"Die Bonusversicherung darf nicht in Verbindung mit einer wählbaren Franchise nach Artikel 93 angeboten werden.\"}, \"fr\": {\"question\": \"Avec quel type de quote-part l’assurance avec bonus ne peut-elle pas être pratiquée en relation?\", \"answer\": \"franchise à option\", \"answer_aliases\": [\"franchise à option au sens de l’art. 93\", \"franchise à option (art. 93)\"], \"near_miss_answers\": [\"franchise ordinaire\", \"franchise standard\", \"franchise selon l’art. 92\"], \"evidence\": \"L’assurance avec bonus ne peut être pratiquée en relation avec une franchise à option au sens de l’art. 93.\"}, \"it\": {\"question\": \"Con quale tipo di quota a carico l’assicurazione con bonus non può essere offerta in combinazione?\", \"answer\": \"franchigie opzionali\", \"answer_aliases\": [\"franchigie opzionali ai sensi dell’articolo 93\", \"franchigie opzionali (art. 93)\"], \"near_miss_answers\": [\"franchigie ordinarie\", \"franchigie standard\", \"franchigie secondo l’articolo 92\"], \"evidence\": \"L’assicurazione con bonus non può essere offerta in combinazione con franchigie opzionali ai sensi dell’articolo 93.\"}}",
+ "usage": {
+  "prompt_tokens": 1082,
+  "completion_tokens": 4829,
+  "total_tokens": 5911,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 4249,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 125.1,
+ "generated_at": "2026-10-04"
+}

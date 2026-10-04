@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"AHVV\", \"article_id\": \"art_34_d\", \"paragraph\": \"1\", \"domain\": \"ahv\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"currency_chf\", \"answer_normalized\": {\"value\": 2500, \"unit\": \"CHF\"}, \"de\": {\"question\": \"Welcher Betrag in Franken darf der massgebende Lohn je Arbeitgeber im Kalenderjahr nicht übersteigen, damit in der AHV Beiträge nur auf Verlangen des Versicherten erhoben werden?\", \"answer\": \"2500 Franken\", \"answer_aliases\": [\"CHF 2500\", \"2'500 Franken\"], \"near_miss_answers\": [\"3000 Franken\", \"2000 Franken\"], \"evidence\": \"2500 Franken\"}, \"fr\": {\"question\": \"Quel montant en francs le salaire déterminant ne doit-il pas dépasser par employeur et par année civile pour que, dans l'AVS, les cotisations ne soient perçues qu'à la demande de l'assuré?\", \"answer\": \"2500 francs\", \"answer_aliases\": [\"CHF 2500\", \"2'500 francs\"], \"near_miss_answers\": [\"3000 francs\", \"2000 francs\"], \"evidence\": \"2500 francs\"}, \"it\": {\"question\": \"Quale importo in franchi il salario determinante non deve superare per datore di lavoro e per anno civile affinché, nell'AVS, i contributi siano riscossi solo su richiesta dell'assicurato?\", \"answer\": \"2500 franchi\", \"answer_aliases\": [\"CHF 2500\", \"2'500 franchi\"], \"near_miss_answers\": [\"3000 franchi\", \"2000 franchi\"], \"evidence\": \"2500 franchi\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2024-01-01\", \"paragraph\": \"1\", \"de\": {\"outdated_answer\": \"2300 Franken\", \"evidence\": \"2300 Franken\"}, \"fr\": {\"outdated_answer\": \"2300 francs\", \"evidence\": \"2300 francs\"}, \"it\": {\"outdated_answer\": \"2300 franchi\", \"evidence\": \"2300 franchi\"}}]}}",
+ "reasoning_chars": 12514,
+ "usage": {
+  "prompt_tokens": 1687,
+  "completion_tokens": 3967,
+  "total_tokens": 5654,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 3176,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 91.2,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

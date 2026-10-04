@@ -1,0 +1,29 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "content": "{\"fr\": {\"answer_aliases\": [\"caisse de compensation cantonale\", \"la caisse de compensation cantonale\"]}, \"it\": {\"answer_aliases\": [\"cassa cantonale di compensazione\", \"la cassa cantonale di compensazione\"]}}",
+ "usage": {
+  "prompt_tokens": 1036,
+  "completion_tokens": 6786,
+  "total_tokens": 7822,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 7261,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 213.8,
+ "generated_at": "2026-10-04"
+}

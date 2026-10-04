@@ -1,0 +1,38 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"AVIV\", \"article_id\": \"art_30\", \"paragraph\": \"3\", \"domain\": \"eo_alv\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Was geschieht mit der Bescheinigung in Kantonen, die eine direkte Übermittlung an die kantonale Steuerbehörde vorsehen?\", \"answer\": \"der versicherten Person zuhanden der Steuerbehörden\", \"answer_aliases\": [\"der versicherten Person\", \"zuhanden der Steuerbehörden\"], \"near_miss_answers\": [\"die Arbeitslosenkasse\", \"die erhaltenen Leistungen\", \"die Steuerbehörden\"], \"evidence\": \"Die Arbeitslosenkasse stellt der versicherten Person zuhanden der Steuerbehörden eine Bescheinigung über die erhaltenen Leistungen aus.\"}, \"fr\": {\"question\": \"Que devient l’attestation dans les cantons qui prévoient une transmission directe à l’autorité fiscale cantonale ?\", \"answer\": \"à l’assuré à l’intention des autorités fiscales\", \"answer_aliases\": [\"à l’assuré\", \"à l’intention des autorités fiscales\"], \"near_miss_answers\": [\"la caisse de chômage\", \"les prestations reçues\", \"les autorités fiscales\"], \"evidence\": \"La caisse de chômage remet à l’assuré à l’intention des autorités fiscales une attestation faisant état des prestations reçues.\"}, \"it\": {\"question\": \"Cosa accade all’attestato nei Cantoni che prevedono una trasmissione diretta all’autorità fiscale cantonale ?\", \"answer\": \"all’assicurato, a destinazione delle autorità fiscali\", \"answer_aliases\": [\"all’assicurato\", \"a destinazione delle autorità fiscali\"], \"near_miss_answers\": [\"la cassa di disoccupazione\", \"le prestazioni ricevute\", \"le autorità fiscali\"], \"evidence\": \"La cassa di disoccupazione consegna all’assicurato, a destinazione delle autorità fiscali, un attestato concernente le prestazioni ricevute.\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2025-11-01\", \"paragraph\": \"3\", \"de\": {\"outdated_answer\": \"der kantonalen Steuerbehörde\", \"evidence\": \"In Kantonen, die eine direkte Übermittlung dieser Bescheinigung vorsehen, wird sie der kantonalen Steuerbehörde elektronisch übermittelt (Art. 97a Abs. 1 Bst. cbis und Abs. 8 AVIG).\"}, \"fr\": {\"outdated_answer\": \"à l’autorité fiscale cantonale\", \"evidence\": \"Dans les cantons qui en prévoient la possibilité, l’attestation est transmise directement par voie électronique à l’autorité fiscale cantonale (art. 97a, al. 1, let. cbis, et 8, LACI).\"}, \"it\": {\"outdated_answer\": \"alle autorità fiscali cantonali\", \"evidence\": \"Nei Cantoni che ne prevedono la possibilità, l’attestato è trasmesso alle autorità fiscali cantonali direttamente per via elettronica (art. 97a cpv. 1 lett. cbis e cpv. 8 LADI).\"}}]}}",
+ "reasoning_chars": 59363,
+ "usage": {
+  "prompt_tokens": 1814,
+  "completion_tokens": 14669,
+  "total_tokens": 16483,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 15213,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 421.2,
+ "attempts": 1,
+ "generated_at": "2026-10-04",
+ "settings": {
+  "max_tokens": 24000,
+  "reasoning_effort": "medium",
+  "temperature": 0.3
+ }
+}

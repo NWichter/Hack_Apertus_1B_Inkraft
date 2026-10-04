@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"AHVG\", \"article_id\": \"art_12\", \"paragraph\": \"3\", \"domain\": \"ahv\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Was bleibt in der AHV hinsichtlich der Beitragspflicht von Arbeitgebern vorbehalten?\", \"answer\": \"internationale Abkommen und völkerrechtliche Übung\", \"answer_aliases\": [\"internationale Abkommen\", \"völkerrechtliche Übung\"], \"near_miss_answers\": [\"Unterstellung unter die Beitragspflicht\", \"Befreiung von der Beitragspflicht\", \"Betriebsstätte in der Schweiz\"], \"evidence\": \"internationale Abkommen und völkerrechtliche Übung\"}, \"fr\": {\"question\": \"Qu'est-ce qui est réservé dans l'AVS concernant l'obligation de payer des cotisations des employeurs ?\", \"answer\": \"conventions internationales et l'usage établi par le droit international public\", \"answer_aliases\": [\"conventions internationales\", \"usage établi par le droit international public\"], \"near_miss_answers\": [\"assujettissement à l'obligation de payer des cotisations\", \"exemption de l'obligation de payer des cotisations\", \"établissement stable en Suisse\"], \"evidence\": \"conventions internationales et l'usage établi par le droit international public\"}, \"it\": {\"question\": \"Cosa è riservato nell'AVS per quanto riguarda l'obbligo di pagare i contributi dei datori di lavoro ?\", \"answer\": \"convenzioni internazionali e le consuetudini stabilite dal diritto internazionale\", \"answer_aliases\": [\"convenzioni internazionali\", \"consuetudini stabilite dal diritto internazionale\"], \"near_miss_answers\": [\"assoggettamento all'obbligo di pagare i contributi\", \"esenzione dall'obbligo di pagare i contributi\", \"stabilimento d'impresa in Svizzera\"], \"evidence\": \"convenzioni internazionali e le consuetudini stabilite dal diritto internazionale\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-09-01\", \"paragraph\": \"3\", \"de\": {\"outdated_answer\": \"zwischenstaatliche Vereinbarungen und völkerrechtliche Übung\", \"evidence\": \"zwischenstaatliche Vereinbarungen und völkerrechtliche Übung\"}, \"fr\": {\"outdated_answer\": \"conventions internationales et l'usage établi par le droit international public\", \"evidence\": \"conventions internationales et l'usage établi par le droit international public\"}, \"it\": {\"outdated_answer\": \"convenzioni internazionali e le consuetudini stabilite dal diritto internazionale\", \"evidence\": \"convenzioni internazionali e le consuetudini stabilite dal diritto internazionale\"}}]}}",
+ "reasoning_chars": 20147,
+ "usage": {
+  "prompt_tokens": 1891,
+  "completion_tokens": 5180,
+  "total_tokens": 7071,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 5122,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 117.1,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

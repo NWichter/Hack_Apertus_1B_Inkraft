@@ -1,0 +1,38 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"AHVG\", \"article_id\": \"art_58\", \"paragraph\": \"2\", \"domain\": \"ahv\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Wer kann in der AHV zum Vorstandsmitglied einer Ausgleichskasse gewählt werden?\", \"answer\": \"Personen, die der Ausgleichskasse als Versicherte oder Arbeitgeber angeschlossen sind\", \"answer_aliases\": [\"Personen, die der Ausgleichskasse angeschlossen sind\", \"Versicherte oder Arbeitgeber der Ausgleichskasse\"], \"near_miss_answers\": [\"Vertreter der Gründerverbände\", \"Vertreter von Arbeitnehmerorganisationen\", \"der Präsident\"], \"evidence\": \"Zu Vorstandsmitgliedern dürfen nur Personen gewählt werden, die der Ausgleichskasse als Versicherte oder Arbeitgeber angeschlossen sind.\"}, \"fr\": {\"question\": \"Qui peut être élu membre du comité de direction d'une caisse de compensation dans l'AVS ?\", \"answer\": \"personnes qui sont affiliées à la caisse en qualité d’assurés ou d’employeurs\", \"answer_aliases\": [\"personnes affiliées à la caisse\", \"assurés ou employeurs de la caisse\"], \"near_miss_answers\": [\"représentants des associations fondatrices\", \"représentants des associations d’employés ou d’ouvriers\", \"le président\"], \"evidence\": \"Seules les personnes qui sont affiliées à la caisse en qualité d’assurés ou d’employeurs peuvent être nommées membres du comité de direction.\"}, \"it\": {\"question\": \"Chi può essere eletto membro del comitato direttivo di una cassa di compensazione nell'AVS?\", \"answer\": \"persone affiliate alla cassa di compensazione in qualità di assicurati o di datori di lavoro\", \"answer_aliases\": [\"persone affiliate alla cassa\", \"assicurati o datori di lavoro della cassa\"], \"near_miss_answers\": [\"rappresentanti delle associazioni fondatrici\", \"rappresentanti delle organizzazioni di impiegati od operai\", \"il presidente\"], \"evidence\": \"Possono essere nominate membri del comitato direttivo soltanto persone affiliate alla cassa di compensazione in qualità di assicurati o di datori di lavoro.\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-09-01\", \"paragraph\": \"2\", \"de\": {\"outdated_answer\": \"Schweizer Bürger, welche der betreffenden Ausgleichskasse als Versicherte oder Arbeitgeber angeschlossen sind\", \"evidence\": \"Zu Vorstandsmitgliedern dürfen nur Schweizer Bürger gewählt werden, welche der betreffenden Ausgleichskasse als Versicherte oder Arbeitgeber angeschlossen sind.\"}, \"fr\": {\"outdated_answer\": \"ressortissants suisses qui appartiennent à la caisse en qualité d’assurés ou d’employeurs\", \"evidence\": \"Ne peuvent être choisis comme membres du comité de direction que des ressortissants suisses qui appartiennent à la caisse en qualité d’assurés ou d’employeurs.\"}, \"it\": {\"outdated_answer\": \"cittadini svizzeri affiliati alla rispettiva cassa di compensazione in qualità di assicurati o di datori di lavoro\", \"evidence\": \"Possono essere nominati membri del comitato direttivo soltanto cittadini svizzeri, affiliati alla rispettiva cassa di compensazione in qualità di assicurati o di datori di lavoro.\"}}]}}",
+ "reasoning_chars": 24220,
+ "usage": {
+  "prompt_tokens": 2441,
+  "completion_tokens": 6553,
+  "total_tokens": 8994,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 6155,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 186.7,
+ "attempts": 1,
+ "generated_at": "2026-10-04",
+ "settings": {
+  "max_tokens": 24000,
+  "reasoning_effort": "medium",
+  "temperature": 0.3
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"AHVG\", \"article_id\": \"art_18\", \"paragraph\": \"3\", \"domain\": \"ahv\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Welchen Begriff verwendet das Gesetz für die völkerrechtliche Vereinbarung mit dem Heimatstaat, deren Fehlen Voraussetzung für die Beitragsrückvergütung an im Ausland wohnhafte Ausländer ist?\", \"answer\": \"internationales Abkommen\", \"answer_aliases\": [\"ein internationales Abkommen\", \"das internationale Abkommen\"], \"near_miss_answers\": [\"Rückvergütung\", \"Beiträge\", \"Ausmass\"], \"evidence\": \"kein internationales Abkommen besteht\"}, \"fr\": {\"question\": \"Quel terme la loi utilise-t-elle pour désigner l'accord international avec l'État d'origine, dont l'absence est une condition pour le remboursement des cotisations aux étrangers domiciliés à l'étranger ?\", \"answer\": \"convention\", \"answer_aliases\": [\"une convention\", \"la convention\"], \"near_miss_answers\": [\"remboursement\", \"cotisations\", \"Conseil fédéral\"], \"evidence\": \"aucune convention n'a été conclue\"}, \"it\": {\"question\": \"Quale termine utilizza la legge per indicare l'accordo internazionale con lo Stato d'origine, la cui mancanza è presupposto per il rimborso dei contributi agli stranieri domiciliati all'estero?\", \"answer\": \"convenzione internazionale\", \"answer_aliases\": [\"una convenzione internazionale\", \"la convenzione internazionale\"], \"near_miss_answers\": [\"rimborso\", \"contributi\", \"Consiglio federale\"], \"evidence\": \"convenzione internazionale\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-09-01\", \"paragraph\": \"3\", \"de\": {\"outdated_answer\": \"zwischenstaatliche Vereinbarung\", \"evidence\": \"keine zwischenstaatliche Vereinbarung besteht\"}, \"fr\": {\"outdated_answer\": \"convention\", \"evidence\": \"aucune convention n'a été conclue\"}, \"it\": {\"outdated_answer\": \"convenzione internazionale\", \"evidence\": \"convenzione internazionale\"}}]}}",
+ "reasoning_chars": 25874,
+ "usage": {
+  "prompt_tokens": 1946,
+  "completion_tokens": 6708,
+  "total_tokens": 8654,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 6607,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 182.4,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

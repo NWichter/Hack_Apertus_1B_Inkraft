@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"BVG\", \"article_id\": \"art_41\", \"paragraph\": \"3\", \"domain\": \"bvg_3a\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Welcher Begriff bezeichnet in der beruflichen Vorsorge das Alter, ab dem die zehnjährige Frist für die Überweisung von Freizügigkeitsguthaben an den Sicherheitsfonds beginnt?\", \"answer\": \"Referenzalter\", \"answer_aliases\": [\"Referenzalter (Art. 13)\", \"Referenzalter gemäß Art. 13\"], \"near_miss_answers\": [\"Rentenalter\", \"Pensionierungsalter\", \"AHV-Alter\"], \"evidence\": \"Referenzalter (Art. 13)\"}, \"fr\": {\"question\": \"Quel terme désigne, dans la prévoyance professionnelle, l’âge à partir duquel le délai de dix ans pour le transfert des avoirs de libre passage au fonds de garantie commence à courir?\", \"answer\": \"âge de référence\", \"answer_aliases\": [\"âge de référence selon l’art. 13\", \"âge de référence (art. 13)\"], \"near_miss_answers\": [\"âge de la retraite\", \"âge AVS\", \"âge de pension\"], \"evidence\": \"âge de référence selon l’art. 13\"}, \"it\": {\"question\": \"Quale termine indica, nella previdenza professionale, l’età a partire dalla quale inizia a decorrere il termine di dieci anni per il trasferimento degli averi di libero passaggio al fondo di garanzia?\", \"answer\": \"età di riferimento\", \"answer_aliases\": [\"età di riferimento (art. 13)\", \"età di riferimento secondo l’art. 13\"], \"near_miss_answers\": [\"età di pensionamento\", \"età AVS\", \"età di riferimento ordinaria\"], \"evidence\": \"età di riferimento (art. 13)\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-09-26\", \"paragraph\": \"3\", \"de\": {\"outdated_answer\": \"ordentliches Rücktrittsalter\", \"evidence\": \"ordentlichen Rücktrittsalter (Art. 13)\"}, \"fr\": {\"outdated_answer\": \"âge ordinaire de la retraite\", \"evidence\": \"âge ordinaire de la retraite selon l’art. 13\"}, \"it\": {\"outdated_answer\": \"età ordinaria di pensionamento\", \"evidence\": \"età ordinaria di pensionamento (art. 13)\"}}]}}",
+ "reasoning_chars": 11960,
+ "usage": {
+  "prompt_tokens": 1979,
+  "completion_tokens": 3812,
+  "total_tokens": 5791,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 3046,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 131.5,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

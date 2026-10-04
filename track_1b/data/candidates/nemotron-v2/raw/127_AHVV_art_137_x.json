@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"AHVV\", \"article_id\": \"art_137\", \"paragraph\": \"\", \"domain\": \"ahv\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Für welche Erwerbseinkommen wird das individuelle Konto in der AHV geführt?\", \"answer\": \"für die ihr Beiträge entrichtet worden sind\", \"answer_aliases\": [\"für die Beiträge entrichtet worden sind\", \"Beiträge entrichtet worden sind\"], \"near_miss_answers\": [\"unter der Nummer der versicherten Person\", \"über die Erwerbseinkommen\", \"ein individuelles Konto führen\"], \"evidence\": \"für die ihr Beiträge entrichtet worden sind\"}, \"fr\": {\"question\": \"Pour quels revenus d'activité lucrative le compte individuel est-il tenu dans l'AVS?\", \"answer\": \"pour lesquels les cotisations lui ont été versées\", \"answer_aliases\": [\"pour lesquels les cotisations ont été versées\", \"pour lesquels des cotisations ont été versées\"], \"near_miss_answers\": [\"sous le numéro AVS\", \"des revenus d'activités lucratives\", \"un compte individuel tenir\"], \"evidence\": \"pour lesquels les cotisations lui ont été versées\"}, \"it\": {\"question\": \"Per quali redditi da attività lucrativa viene tenuto il conto individuale nell'AVS?\", \"answer\": \"sui quali le sono stati versati contributi\", \"answer_aliases\": [\"sui quali sono stati versati contributi\", \"per i quali sono stati versati contributi\"], \"near_miss_answers\": [\"sotto il numero AVS\", \"dei redditi da attività lucrativa\", \"un conto individuale tenere\"], \"evidence\": \"sui quali le sono stati versati contributi\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-09-01\", \"paragraph\": \"\", \"de\": {\"outdated_answer\": \"bis zur Entstehung des Anspruchs auf eine Altersrente\", \"evidence\": \"für die ihr bis zur Entstehung des Anspruchs auf eine Altersrente die Beiträge entrichtet worden sind\"}, \"fr\": {\"outdated_answer\": \"jusqu'à l'ouverture du droit à une rente de vieillesse\", \"evidence\": \"pour lesquels les cotisations lui ont été versées jusqu'à l'ouverture du droit à une rente de vieillesse\"}, \"it\": {\"outdated_answer\": \"fino all'insorgenza del diritto a una rendita di vecchiaia\", \"evidence\": \"sui quali le sono stati versati contributi fino all'insorgenza del diritto a una rendita di vecchiaia\"}}]}}",
+ "reasoning_chars": 19684,
+ "usage": {
+  "prompt_tokens": 1694,
+  "completion_tokens": 5394,
+  "total_tokens": 7088,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 5049,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 161.7,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

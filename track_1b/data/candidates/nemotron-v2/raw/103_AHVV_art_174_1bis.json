@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"AHVV\", \"article_id\": \"art_174\", \"paragraph\": \"1bis\", \"domain\": \"ahv\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Wie wird die Stelle bezeichnet, die der ZAS die Daten der Arbeitslosenversicherung bis am 31. März des der Abrechnungsperiode folgenden Jahres liefert?\", \"answer\": \"Staatssekretariat für Wirtschaft (SECO)\", \"answer_aliases\": [\"Staatssekretariat für Wirtschaft\", \"vom Staatssekretariat für Wirtschaft (SECO)\"], \"near_miss_answers\": [\"Ausgleichskassen\", \"ZAS\", \"Zentrale Ausgleichsstelle\"], \"evidence\": \"vom Staatssekretariat für Wirtschaft (SECO)\"}, \"fr\": {\"question\": \"Sous quelle désignation l'office qui fournit les données de l'assurance-chômage à la CdC jusqu'au 31 mars de l'année suivant la période de décompte est-il mentionné dans la loi?\", \"answer\": \"Secrétariat d'État à l'économie (SECO)\", \"answer_aliases\": [\"Secrétariat d'État à l'économie\", \"par le Secrétariat d'État à l'économie (SECO)\"], \"near_miss_answers\": [\"caisses de compensation\", \"CdC\", \"Caisse de compensation\"], \"evidence\": \"par le Secrétariat d’État à l’économie (SECO)\"}, \"it\": {\"question\": \"Come viene denominato l'ufficio che fornisce all'UCC i dati dell'assicurazione contro la disoccupazione entro il 31 marzo dell'anno successivo al periodo di conteggio?\", \"answer\": \"Segreteria di Stato dell'economia (SECO)\", \"answer_aliases\": [\"Segreteria di Stato dell'economia\", \"dalla Segreteria di Stato dell'economia (SECO)\"], \"near_miss_answers\": [\"casse di compensazione\", \"UCC\", \"Segreteria di Stato\"], \"evidence\": \"dalla Segreteria di Stato dell’economia (SECO)\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-09-01\", \"paragraph\": \"1bis\", \"de\": {\"outdated_answer\": \"SECO\", \"evidence\": \"vom SECO\"}, \"fr\": {\"outdated_answer\": \"SECO\", \"evidence\": \"par le SECO\"}, \"it\": {\"outdated_answer\": \"Segreteria di Stato dell'economia (SECO)\", \"evidence\": \"dalla Segreteria di Stato dell’economia (SECO)\"}}]}}",
+ "reasoning_chars": 30940,
+ "usage": {
+  "prompt_tokens": 2051,
+  "completion_tokens": 8456,
+  "total_tokens": 10507,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 7925,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 197.2,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

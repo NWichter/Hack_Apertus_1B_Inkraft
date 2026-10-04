@@ -1,0 +1,2669 @@
+{
+ "cl-0021": {
+  "action": "drop",
+  "kind": "cluster",
+  "summary": "Klumpen: 4 Kerne auf KVV art_103 Abs. 2 (Ziel: höchstens 2 je Absatz). Behalten: ag-0002, ag-0003"
+ },
+ "cl-0022": {
+  "action": "drop",
+  "kind": "cluster",
+  "summary": "Klumpen: 4 Kerne auf KVV art_103 Abs. 2 (Ziel: höchstens 2 je Absatz). Behalten: ag-0002, ag-0003"
+ },
+ "cl-0102": {
+  "action": "drop",
+  "kind": "cluster",
+  "summary": "Klumpen: 3 Kerne auf OR art_324_a Abs. 1 (Ziel: höchstens 2 je Absatz). Behalten: ag-0023, ag-0091"
+ },
+ "cx-0034": {
+  "action": "drop",
+  "kind": "cluster",
+  "summary": "Klumpen: 3 Kerne auf AHVG art_3 Abs. 1bis (Ziel: höchstens 2 je Absatz). Behalten: ag-0022, cx-0048"
+ },
+ "cx-0103": {
+  "action": "drop",
+  "kind": "cluster",
+  "summary": "Klumpen: 3 Kerne auf OR art_324_b Abs. 1 (Ziel: höchstens 2 je Absatz). Behalten: ag-0013, cx-0101"
+ },
+ "cx-0104": {
+  "action": "drop",
+  "kind": "cluster",
+  "summary": "Klumpen: 3 Kerne auf OR art_336_c Abs. 1 (Ziel: höchstens 2 je Absatz). Behalten: ag-0029, ag-0094"
+ },
+ "ag-0021": {
+  "action": "drop",
+  "kind": "cluster",
+  "summary": "Klumpen: 4 Kerne auf BVG art_14 Abs. 2 (Ziel: höchstens 2 je Absatz). Behalten: ag-0014, ag-0015"
+ },
+ "ag-0073": {
+  "action": "drop",
+  "kind": "cluster",
+  "summary": "Klumpen: 4 Kerne auf BVG art_14 Abs. 2 (Ziel: höchstens 2 je Absatz). Behalten: ag-0014, ag-0015"
+ },
+ "ag-0080": {
+  "action": "drop",
+  "kind": "cluster",
+  "summary": "Klumpen: 3 Kerne auf BVV3 art_7 Abs. 1 (Ziel: höchstens 2 je Absatz). Behalten: ag-0016, ag-0017"
+ },
+ "ag-0066": {
+  "action": "drop",
+  "kind": "cluster",
+  "summary": "Klumpen: 4 Kerne auf BVG art_2 Abs. 1 (Ziel: höchstens 2 je Absatz). Behalten: ag-0031, ag-0032"
+ },
+ "ag-0067": {
+  "action": "drop",
+  "kind": "cluster",
+  "summary": "Klumpen: 4 Kerne auf BVG art_2 Abs. 1 (Ziel: höchstens 2 je Absatz). Behalten: ag-0031, ag-0032"
+ },
+ "cl-0030": {
+  "action": "drop",
+  "kind": "duplicate",
+  "summary": "Fast-Duplikat (dup.near_question) von cl-0029; behalten wird der Kern ohne Ja/Nein bzw. mit Altantwort."
+ },
+ "cl-0072": {
+  "action": "drop",
+  "kind": "duplicate",
+  "summary": "Fast-Duplikat (dup.near_question) von cl-0071; behalten wird der Kern ohne Ja/Nein bzw. mit Altantwort."
+ },
+ "cx-0061": {
+  "action": "drop",
+  "kind": "duplicate",
+  "summary": "Fast-Duplikat (dup.near_question) von cx-0044; behalten wird der Kern ohne Ja/Nein bzw. mit Altantwort."
+ },
+ "cx-0072": {
+  "action": "drop",
+  "kind": "duplicate",
+  "summary": "Fast-Duplikat (dup.near_question) von cx-0071; behalten wird der Kern ohne Ja/Nein bzw. mit Altantwort."
+ },
+ "ag-0078": {
+  "action": "drop",
+  "kind": "duplicate",
+  "summary": "Fast-Duplikat (dup.near_question) von ag-0077; behalten wird der Kern ohne Ja/Nein bzw. mit Altantwort."
+ },
+ "cl-0033": {
+  "action": "drop",
+  "kind": "duplicate",
+  "summary": "Fast-Duplikat (dup.same_fact) von ag-0090; behalten wird der Kern ohne Ja/Nein bzw. mit Altantwort."
+ },
+ "cl-0101": {
+  "action": "drop",
+  "kind": "duplicate",
+  "summary": "Fast-Duplikat (dup.same_fact) von ag-0092; behalten wird der Kern ohne Ja/Nein bzw. mit Altantwort."
+ },
+ "ag-0047": {
+  "action": "drop",
+  "kind": "duplicate",
+  "summary": "Fast-Duplikat (dup.same_fact) von ag-0008; behalten wird der Kern ohne Ja/Nein bzw. mit Altantwort."
+ },
+ "ag-0022": {
+  "action": "keep",
+  "kind": "outdated_none",
+  "summary": "Keine Altantwort möglich: The earlier version (2023-09-01) does not address early drawing of old-age pension (Vorbezug/Antizipation); it only states that contribution obligation for non-employed persons ends at age 64 for women and 65 for men. The current question specifically asks whether early pension drawing ends the obligation, which is not answered in the earlier text.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  }
+ },
+ "ag-0031": {
+  "action": "keep",
+  "kind": "outdated_none",
+  "summary": "Keine Altantwort möglich: The earlier version does not answer the question about self-employed persons; it only defines mandatory insurance for employees with a different income threshold.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  }
+ },
+ "ag-0032": {
+  "action": "patch",
+  "kind": "outdated",
+  "summary": "Altantwort aus der Fassung 2024-07-01 ergänzen (STALE-Paar)",
+  "all": {
+   "temporal.previous_version_date": "2024-07-01",
+   "temporal.previous_paragraph": "1"
+  },
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "de": {
+   "outdated_answers": [
+    "Nein, der Lohn erreicht die Eintrittsschwelle nicht: Erforderlich ist ein Jahreslohn von mehr als 22 050 Franken."
+   ],
+   "temporal.previous_evidence": "Arbeitnehmer, die das 17. Altersjahr überschritten haben und bei einem Arbeitgeber einen Jahreslohn von mehr als 22 050 Franken beziehen (Art. 7), unterstehen der obligatorischen Versicherung."
+  },
+  "fr": {
+   "outdated_answers": [
+    "Non, le salaire n'atteint pas le seuil d'accès: L'obligation exige un salaire annuel supérieur à 22 050 francs."
+   ],
+   "temporal.previous_evidence": "Sont soumis à l’assurance obligatoire les salariés qui ont plus de 17 ans et reçoivent d’un même employeur un salaire annuel supérieur à 22 050 francs (art. 7)."
+  },
+  "it": {
+   "outdated_answers": [
+    "No, il salario non raggiunge la soglia d'entrata: L'obbligo presuppone un salario annuo di oltre 22 050 franchi."
+   ],
+   "temporal.previous_evidence": "I lavoratori che hanno più di 17 anni e riscuotono da un datore di lavoro un salario annuo di oltre 22 050 franchi (art. 7) sottostanno all’assicurazione obbligatoria."
+  }
+ },
+ "ag-0037": {
+  "action": "keep",
+  "kind": "outdated_none",
+  "summary": "Keine Altantwort möglich: The earlier version (2023-01-01) only addresses paternity compensation (Vaterschaftsentschädigung) and does not mention the other parent's compensation (Entschädigung des andern Elternteils). The current question refers to the two-week leave of the other parent, which is a separate benefit not covered in the earlier text.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  }
+ },
+ "ag-0041": {
+  "action": "patch",
+  "kind": "yes_no_rewrite",
+  "summary": "Ja/Nein-Frage in offene Frage umbauen (Ja/Nein-Anteil ≤ 15 %)",
+  "all": {
+   "question_type": "procedural",
+   "answer_type": "text",
+   "answer_normalized": null
+  },
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "de": {
+   "question": "Im Erwerbsersatz: Was haben Personen, die in der schweizerischen Armee Dienst leisten, für jeden besoldeten Diensttag?",
+   "answer": "Anspruch auf eine Entschädigung",
+   "answer_aliases": [
+    "Anspruch auf Entschädigung",
+    "Entschädigungsanspruch"
+   ],
+   "near_miss_answers": [
+    "Kein Anspruch",
+    "Anspruch nur für freiwilligen Dienst",
+    "Anspruch nur für Rotkreuzdienst"
+   ],
+   "source.evidence": "Personen, die in der schweizerischen Armee oder im Rotkreuzdienst Dienst leisten, haben für jeden besoldeten Diensttag Anspruch auf eine Entschädigung."
+  },
+  "fr": {
+   "question": "Dans l'assurance perte de gain: Quel droit ont les personnes qui effectuent un service dans l'armée suisse pour chaque jour de solde?",
+   "answer": "droit à une allocation",
+   "answer_aliases": [
+    "droit à allocation",
+    "allocation"
+   ],
+   "near_miss_answers": [
+    "pas de droit",
+    "droit seulement pour volontaires",
+    "droit seulement pour service Croix-Rouge"
+   ],
+   "source.evidence": "Les personnes qui effectuent un service dans l’armée suisse ou dans le Service de la Croix-Rouge ont droit à une allocation pour chaque jour de solde."
+  },
+  "it": {
+   "question": "Nell'indennità per perdita di guadagno: Quale diritto hanno le persone che prestano servizio nell'esercito svizzero per ogni giorno di soldo?",
+   "answer": "diritto a un’indennità",
+   "answer_aliases": [
+    "diritto a indennità",
+    "indennità"
+   ],
+   "near_miss_answers": [
+    "nessun diritto",
+    "diritto solo per servizio volontario",
+    "diritto solo per servizio Croce Rossa"
+   ],
+   "source.evidence": "Le persone che prestano servizio nell’esercito svizzero o nel servizio della Croce Rossa hanno diritto a un’indennità per ogni giorno di soldo."
+  }
+ },
+ "ag-0048": {
+  "action": "keep",
+  "kind": "yes_no_kept",
+  "summary": "Ja/Nein bleibt: ...",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  }
+ },
+ "ag-0050": {
+  "action": "keep",
+  "kind": "outdated_none",
+  "summary": "Keine Altantwort möglich: The earlier version (2023-01-01) refers to 'der Mann' becoming 'rechtlicher Vater' within six months, while the current version refers to 'die Person' becoming 'rechtlicher anderer Elternteil' within six months. The timeframe is identical (6 months), so there is no different answer; only the wording/terms changed.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  }
+ },
+ "ag-0051": {
+  "action": "keep",
+  "kind": "outdated_none",
+  "summary": "Keine Altantwort möglich: The earlier version (2023-01-01) regulates Vaterschaftsentschädigung (paternity compensation) with a six-month Rahmenfrist, while the current question asks about Entschädigung des andern Elternteils (compensation for the other parent), a different benefit introduced later. The earlier text does not answer the same question.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  }
+ },
+ "ag-0052": {
+  "action": "keep",
+  "kind": "outdated_none",
+  "summary": "Keine Altantwort möglich: The earlier version refers to 'Vater' (father) while the current question asks about 'der andere Elternteil' (the other parent); the subject term changed.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  }
+ },
+ "ag-0062": {
+  "action": "patch",
+  "kind": "yes_no_rewrite",
+  "summary": "Ja/Nein-Frage in offene Frage umbauen (Ja/Nein-Anteil ≤ 15 %)",
+  "all": {
+   "question_type": "procedural",
+   "answer_type": "text",
+   "answer_normalized": null
+  },
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "de": {
+   "question": "Was muss ein Arbeitsloser in der Arbeitslosenversicherung neben der Bereitschaft zur Annahme zumutbarer Arbeit noch tun, um als vermittlungsfähig zu gelten?",
+   "answer": "an Eingliederungsmassnahmen teilzunehmen",
+   "answer_aliases": [
+    "an Eingliederungsmassnahmen teilnehmen",
+    "Eingliederungsmassnahmen teilzunehmen"
+   ],
+   "near_miss_answers": [
+    "eine zumutbare Arbeit anzunehmen",
+    "bereit, in der Lage und berechtigt zu sein",
+    "keine Massnahmen zu besuchen"
+   ],
+   "source.evidence": "Der Arbeitslose ist vermittlungsfähig, wenn er bereit, in der Lage und berechtigt ist, eine zumutbare Arbeit anzunehmen und an Eingliederungsmassnahmen teilzunehmen."
+  },
+  "fr": {
+   "question": "Quelle condition supplémentaire le chômeur doit-il remplir dans l'assurance-chômage, outre l'acceptation d'un travail convenable, pour être apte au placement?",
+   "answer": "participer à des mesures d’intégration",
+   "answer_aliases": [
+    "participer à des mesures d'integration",
+    "mesures d’intégration"
+   ],
+   "near_miss_answers": [
+    "accepter un travail convenable",
+    "être en mesure et en droit de le faire",
+    "refuser les mesures d’intégration"
+   ],
+   "source.evidence": "Est réputé apte à être placé le chômeur qui est disposé à accepter un travail convenable et à participer à des mesures d’intégration et qui est en mesure et en droit de le faire."
+  },
+  "it": {
+   "question": "Cosa deve fare il disoccupato nell'assicurazione contro la disoccupazione, oltre ad accettare un'occupazione adeguata, per essere idoneo al collocamento?",
+   "answer": "partecipare a provvedimenti di reintegrazione",
+   "answer_aliases": [
+    "a partecipare a provvedimenti di reintegrazione",
+    "provvedimenti di reintegrazione"
+   ],
+   "near_miss_answers": [
+    "accettare un’occupazione adeguata",
+    "essere disposto, capace e autorizzato",
+    "non partecipare a provvedimenti di reintegrazione"
+   ],
+   "source.evidence": "Il disoccupato è idoneo al collocamento se è disposto, capace e autorizzato ad accettare un’occupazione adeguata e a partecipare a provvedimenti di reintegrazione."
+  }
+ },
+ "ag-0070": {
+  "action": "keep",
+  "kind": "yes_no_kept",
+  "summary": "Ja/Nein bleibt: The paragraph only contains a single phrasing for the referenced provision (Artikel 21 Absatz 1 AHVG), making it impossible to provide at least two distinct answer aliases from the statute text as required for an open short-answer item.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  }
+ },
+ "ag-0071": {
+  "action": "keep",
+  "kind": "outdated_none",
+  "summary": "Keine Altantwort möglich: The earlier version (2023-09-26) does not address early withdrawal (Vorbezug) of old-age benefits; it only sets standard retirement ages (65 for men, 62 for women) and allows pension fund regulations to link entitlement to the end of gainful employment. The current question asks for the minimum age for early withdrawal (63 years) under Art. 13 para. 2 BVG, a provision not present in the earlier version.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  }
+ },
+ "ag-0072": {
+  "action": "keep",
+  "kind": "outdated_none",
+  "summary": "Keine Altantwort möglich: The earlier version (2023-09-26) only states the standard retirement ages for men (65) and women (62) and does not contain any provision on deferring old-age benefits up to age 70. The question about the maximum deferral age is not answered in that version.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  }
+ },
+ "ag-0079": {
+  "action": "keep",
+  "kind": "outdated_none",
+  "summary": "Keine Altantwort möglich: The earlier version (2023-09-26) provides the same answer 'ein Viertel' / 'le quart' / 'un quarto' as the current version. Only the referenced article numbers changed (Art. 13 und 13a vs Art. 13–13b), but the substantive answer regarding the fraction of old-age capital remains identical.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  }
+ },
+ "ag-0081": {
+  "action": "patch",
+  "kind": "yes_no_rewrite",
+  "summary": "Ja/Nein-Frage in offene Frage umbauen (Ja/Nein-Anteil ≤ 15 %)",
+  "all": {
+   "question_type": "procedural",
+   "answer_type": "text",
+   "answer_normalized": null
+  },
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "de": {
+   "question": "Was steht Versicherten im System des Tiers garant gegenüber dem Versicherer zu?",
+   "answer": "Anspruch auf Rückerstattung",
+   "answer_aliases": [
+    "Rückerstattung",
+    "Anspruch auf Rückerstattung (System des Tiers garant)"
+   ],
+   "near_miss_answers": [
+    "Anspruch auf Vergütung",
+    "Anspruch auf Abtretung",
+    "Anspruch auf Leistung"
+   ],
+   "source.evidence": "Die Versicherten haben in diesem Fall gegenüber dem Versicherer einen Anspruch auf Rückerstattung"
+  },
+  "fr": {
+   "question": "Qu’obtient l’assuré de son assureur dans le système du tiers garant?",
+   "answer": "le droit d’être remboursé",
+   "answer_aliases": [
+    "le remboursement",
+    "le droit d’être remboursé par son assureur"
+   ],
+   "near_miss_answers": [
+    "droit à la rémunération",
+    "droit de cession",
+    "droit à la prestation"
+   ],
+   "source.evidence": "L’assuré a, dans ce cas, le droit d’être remboursé par son assureur"
+  },
+  "it": {
+   "question": "Cosa può ottenere l’assicurato dal suo assicuratore nel sistema del terzo garante?",
+   "answer": "diritto di essere rimborsato",
+   "answer_aliases": [
+    "il rimborso",
+    "diritto di essere rimborsato dal suo assicuratore"
+   ],
+   "near_miss_answers": [
+    "diritto alla rimunerazione",
+    "diritto di cessione",
+    "diritto alla prestazione"
+   ],
+   "source.evidence": "l’assicurato ha diritto di essere rimborsato dal suo assicuratore"
+  }
+ },
+ "ag-0082": {
+  "action": "keep",
+  "kind": "yes_no_kept",
+  "summary": "Ja/Nein bleibt: ...",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  }
+ },
+ "ag-0083": {
+  "action": "patch",
+  "kind": "yes_no_rewrite",
+  "summary": "Ja/Nein-Frage in offene Frage umbauen (Ja/Nein-Anteil ≤ 15 %)",
+  "all": {
+   "question_type": "procedural",
+   "answer_type": "text",
+   "answer_normalized": null
+  },
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "de": {
+   "question": "In der obligatorischen Krankenversicherung: Was muss der Leistungserbringer im System des Tiers payant der versicherten Person unaufgefordert übermitteln?",
+   "answer": "eine Kopie der Rechnung",
+   "answer_aliases": [
+    "Kopie der Rechnung",
+    "Rechnungskopie"
+   ],
+   "near_miss_answers": [
+    "die Rechnung",
+    "eine Bestätigung",
+    "keine Kopie"
+   ],
+   "source.evidence": "Im System des Tiers payant muss der Leistungserbringer der versicherten Person unaufgefordert eine Kopie der Rechnung übermitteln, die an den Versicherer geht."
+  },
+  "fr": {
+   "question": "Dans l'assurance-maladie obligatoire: Que doit transmettre le fournisseur de prestations à l'assuré sans demande préalable dans le système du tiers payant?",
+   "answer": "une copie de la facture",
+   "answer_aliases": [
+    "copie de la facture",
+    "la copie de la facture"
+   ],
+   "near_miss_answers": [
+    "la facture",
+    "une attestation",
+    "rien"
+   ],
+   "source.evidence": "Dans le système du tiers payant, le fournisseur de prestations est tenu de transmettre à l’assuré une copie de la facture qui est adressée à l’assureur sans que l’assuré n’ait à le demander."
+  },
+  "it": {
+   "question": "Nell'assicurazione malattie obbligatoria: Cosa deve trasmettere il fornitore di prestazioni all'assicurato senza richiesta nel sistema del terzo pagante?",
+   "answer": "una copia della fattura",
+   "answer_aliases": [
+    "copia della fattura",
+    "la copia della fattura"
+   ],
+   "near_miss_answers": [
+    "la fattura",
+    "un attestato",
+    "nulla"
+   ],
+   "source.evidence": "Nel sistema del terzo pagante il fornitore di prestazioni trasmette all’assicurato, senza che questi debba farne richiesta, una copia della fattura inviata all’assicuratore."
+  }
+ },
+ "ag-0084": {
+  "action": "patch",
+  "kind": "yes_no_rewrite",
+  "summary": "Ja/Nein-Frage in offene Frage umbauen (Ja/Nein-Anteil ≤ 15 %)",
+  "all": {
+   "question_type": "procedural",
+   "answer_type": "text",
+   "answer_normalized": null
+  },
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "de": {
+   "question": "Was müssen Leistungserbringer in der obligatorischen Krankenpflegeversicherung auf der Rechnung codiert aufführen?",
+   "answer": "Diagnosen und Prozeduren",
+   "answer_aliases": [
+    "die Diagnosen und Prozeduren",
+    "Diagnosen und Prozeduren"
+   ],
+   "near_miss_answers": [
+    "Klassifikationen",
+    "schweizerische Fassungen",
+    "Daten"
+   ],
+   "source.evidence": "Die Leistungserbringer haben auf der Rechnung nach Absatz 3 die Diagnosen und Prozeduren nach den Klassifikationen in den jeweiligen vom zuständigen Departement herausgegebenen schweizerischen Fassungen codiert aufzuführen."
+  },
+  "fr": {
+   "question": "Que doivent faire figurer les fournisseurs de prestations dans l'assurance-maladie obligatoire dans la facture sous forme codée?",
+   "answer": "les diagnostics et les procédures",
+   "answer_aliases": [
+    "les diagnostics et les procédures",
+    "diagnostics et procédures"
+   ],
+   "near_miss_answers": [
+    "classifications",
+    "édition suisse",
+    "données"
+   ],
+   "source.evidence": "Les fournisseurs de prestations doivent faire figurer dans la facture au sens de l’al. 3 les diagnostics et les procédures sous forme codée"
+  },
+  "it": {
+   "question": "Cosa devono indicare i fornitori di prestazioni nell'assicurazione malattie obbligatoria nella fattura in forma codificata?",
+   "answer": "le diagnosi e le procedure",
+   "answer_aliases": [
+    "le diagnosi e le procedure",
+    "diagnosi e procedure"
+   ],
+   "near_miss_answers": [
+    "classificazioni",
+    "edizione svizzera",
+    "dati"
+   ],
+   "source.evidence": "I fornitori di prestazioni devono indicare nella fattura di cui al capoverso 3 le diagnosi e le procedure in forma codificata"
+  }
+ },
+ "ag-0085": {
+  "action": "keep",
+  "kind": "yes_no_kept",
+  "summary": "Ja/Nein bleibt: ...",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  }
+ },
+ "ag-0086": {
+  "action": "keep",
+  "kind": "yes_no_kept",
+  "summary": "Ja/Nein bleibt: The paragraph states a qualitative legal principle (limiting services to the measure that lies in the interest of the insured and is required for the treatment purpose) without any specific numeric, temporal, monetary, or other short factual element. An open short-answer question testing the same rule would require an answer longer than 8 words or would only capture a partial aspect of the conjunctive rule.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  }
+ },
+ "ag-0087": {
+  "action": "patch",
+  "kind": "yes_no_rewrite",
+  "summary": "Ja/Nein-Frage in offene Frage umbauen (Ja/Nein-Anteil ≤ 15 %)",
+  "all": {
+   "question_type": "procedural",
+   "answer_type": "text",
+   "answer_normalized": null
+  },
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "de": {
+   "question": "In der obligatorischen Krankenversicherung: Was kann für Leistungen, die über das erforderliche Mass hinausgehen, verweigert werden?",
+   "answer": "die Vergütung",
+   "answer_aliases": [
+    "Vergütung",
+    "die Vergütung"
+   ],
+   "near_miss_answers": [
+    "die Rückforderung",
+    "der Versicherer",
+    "die versicherte Person"
+   ],
+   "source.evidence": "Für Leistungen, die über dieses Mass hinausgehen, kann die Vergütung verweigert werden."
+  },
+  "fr": {
+   "question": "Dans l'assurance-maladie obligatoire: quelle rémunération peut être refusée pour les prestations dépassant la mesure requise?",
+   "answer": "la rémunération",
+   "answer_aliases": [
+    "rémunération",
+    "la rémunération"
+   ],
+   "near_miss_answers": [
+    "la restitution",
+    "l'assureur",
+    "l'assuré"
+   ],
+   "source.evidence": "La rémunération des prestations qui dépassent cette limite peut être refusée."
+  },
+  "it": {
+   "question": "Nell'assicurazione malattie obbligatoria: cosa può essere rifiutato per le prestazioni che superano la misura necessaria?",
+   "answer": "la rimunerazione",
+   "answer_aliases": [
+    "rimunerazione",
+    "la rimunerazione"
+   ],
+   "near_miss_answers": [
+    "la restituzione",
+    "l'assicuratore",
+    "l'assicurato"
+   ],
+   "source.evidence": "La rimunerazione può essere rifiutata per le prestazioni eccedenti questo limite."
+  }
+ },
+ "ag-0088": {
+  "action": "patch",
+  "kind": "yes_no_rewrite",
+  "summary": "Ja/Nein-Frage in offene Frage umbauen (Ja/Nein-Anteil ≤ 15 %)",
+  "all": {
+   "question_type": "procedural",
+   "answer_type": "text",
+   "answer_normalized": null
+  },
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "de": {
+   "question": "In der obligatorischen Krankenversicherung: Was muss der Leistungserbringer dem Schuldner der Vergütung weitergeben?",
+   "answer": "direkte oder indirekte Vergünstigungen",
+   "answer_aliases": [
+    "direkte oder indirekte Vergünstigungen",
+    "direkte/indirekte Vergünstigungen",
+    "Vergünstigungen (direkt oder indirekt)"
+   ],
+   "near_miss_answers": [
+    "nur direkte Vergünstigungen",
+    "nur indirekte Vergünstigungen",
+    "Vergünstigungen von Dritten"
+   ],
+   "source.evidence": "Der Leistungserbringer muss dem Schuldner der Vergütung die direkten oder indirekten Vergünstigungen weitergeben"
+  },
+  "fr": {
+   "question": "Dans l'assurance-maladie obligatoire : Qu'est-ce que le fournisseur de prestations doit répercuter sur le débiteur de la rémunération ?",
+   "answer": "les avantages directs ou indirects",
+   "answer_aliases": [
+    "les avantages directs ou indirects",
+    "avantages directs ou indirects",
+    "avantages (directs ou indirects)"
+   ],
+   "near_miss_answers": [
+    "avantages directs seulement",
+    "avantages indirects seulement",
+    "remises sur médicaments"
+   ],
+   "source.evidence": "Le fournisseur de prestations doit répercuter sur le débiteur de la rémunération les avantages directs ou indirects qu’il perçoit"
+  },
+  "it": {
+   "question": "Nell'assicurazione malattie obbligatoria: Cosa deve il fornitore di prestazioni fare usufruire al debitore della rimunerazione?",
+   "answer": "sconti diretti o indiretti",
+   "answer_aliases": [
+    "sconti diretti o indiretti",
+    "sconti diretti/indiretti",
+    "sconti (diretti o indiretti)"
+   ],
+   "near_miss_answers": [
+    "sconti diretti soltanto",
+    "sconti indiretti soltanto",
+    "sconti sui medicamenti"
+   ],
+   "source.evidence": "Il fornitore di prestazioni deve fare usufruire il debitore della rimunerazione di sconti diretti o indiretti che ha ottenuti"
+  }
+ },
+ "ag-0093": {
+  "action": "keep",
+  "kind": "yes_no_kept",
+  "summary": "Ja/Nein bleibt: The paragraph only states a qualitative rule ('entsprechende Verlängerung' / 'prolongé d’autant' / 'prolungato di un periodo equivalente') without a specific numeric value or a distinct noun phrase that can serve as a short answer in all three languages without overlapping with the question wording. In French and Italian the statute uses verbal constructions, not noun phrases, making a compliant open question impossible under the given constraints.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  }
+ },
+ "ag-0095": {
+  "action": "keep",
+  "kind": "yes_no_kept",
+  "summary": "Ja/Nein bleibt: The rule tested (termination during a protection period is void) is expressed in the statute only with the adjective 'nichtig' (DE), 'nul' (FR), 'nulla' (IT). No noun phrase of at most 8 words from the statute captures this consequence, and the required answer_aliases (at least two other literal spellings) cannot be formed from the statute text for this rule.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  }
+ },
+ "cl-0003": {
+  "action": "patch",
+  "kind": "yes_no_rewrite",
+  "summary": "Ja/Nein-Frage in offene Frage umbauen (Ja/Nein-Anteil ≤ 15 %)",
+  "all": {
+   "question_type": "procedural",
+   "answer_type": "text",
+   "answer_normalized": null
+  },
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "de": {
+   "question": "Was muss eine versicherte Person in der obligatorischen Krankenpflegeversicherung bei nicht entschuldbarer Verspätung entrichten?",
+   "answer": "Prämienzuschlag",
+   "answer_aliases": [
+    "Zuschlag",
+    "einen Prämienzuschlag"
+   ],
+   "near_miss_answers": [
+    "Prämie",
+    "Beitrag",
+    "Kostenbeteiligung"
+   ],
+   "source.evidence": "Bei nicht entschuldbarer Verspätung entrichtet die versicherte Person einen Prämienzuschlag."
+  },
+  "fr": {
+   "question": "Que doit verser un assuré dans l’assurance obligatoire des soins en cas de retard non excusable?",
+   "answer": "supplément de prime",
+   "answer_aliases": [
+    "supplément",
+    "un supplément de prime"
+   ],
+   "near_miss_answers": [
+    "prime",
+    "cotisation",
+    "participation"
+   ],
+   "source.evidence": "L’assuré doit verser un supplément de prime si le retard n’est pas excusable."
+  },
+  "it": {
+   "question": "Cosa deve pagare un assicurato nell’assicurazione obbligatoria delle cure medico-sanitarie in caso di ritardo non giustificabile?",
+   "answer": "supplemento di premio",
+   "answer_aliases": [
+    "supplemento",
+    "un supplemento di premio"
+   ],
+   "near_miss_answers": [
+    "premio",
+    "contributo",
+    "quota"
+   ],
+   "source.evidence": "L’assicurato deve pagare un supplemento di premio se il ritardo non è giustificabile."
+  }
+ },
+ "cl-0007": {
+  "action": "keep",
+  "kind": "yes_no_kept",
+  "summary": "Ja/Nein bleibt: The paragraph (KVG Art. 7 para. 5) contains the rule that the insurance relationship ends only after the new insurer has notified the old one of uninterrupted coverage. This condition is expressed as a full subordinate clause ('wenn ihm der neue Versicherer mitgeteilt hat, dass die betreffende Person bei ihm ohne Unterbrechung des Versicherungsschutzes versichert ist') and does not yield a short noun phrase (≤8 words) from the statute that can serve as a literal answer to an open question without overlapping key terms (e.g., 'Versicherer', 'Mitteilung', 'versichert') in the question. Other short literal answers in the paragraph (e.g., 'der bisherige Versicherer', 'den Schaden, insbesondere die Prämiendifferenz') pertain to different rules (duty to inform, liability for omitted notification), not the termination rule tested by the yes/no item. Therefore, no open short-answer question testing the same rule with a short literal answer is possible.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  }
+ },
+ "cl-0008": {
+  "action": "keep",
+  "kind": "yes_no_kept",
+  "summary": "Ja/Nein bleibt: ...",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  }
+ },
+ "cl-0010": {
+  "action": "keep",
+  "kind": "yes_no_kept",
+  "summary": "Ja/Nein bleibt: The franchise rule for children yields only the literal answer 'keine Franchise' (DE), 'aucune franchise' (FR), 'nessuna franchigia' (IT), which lacks at least two distinct alternative spellings in the statute, so an open question meeting all criteria cannot be formed.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  }
+ },
+ "cl-0016": {
+  "action": "patch",
+  "kind": "variants",
+  "summary": "Antwortvarianten ergänzen",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "fr": {
+   "answer_aliases": [
+    "fournisseur de prestations",
+    "le fournisseur"
+   ]
+  },
+  "it": {
+   "answer_aliases": [
+    "fornitore di prestazioni",
+    "il fornitore"
+   ]
+  }
+ },
+ "cl-0017": {
+  "action": "patch",
+  "kind": "yes_no_rewrite",
+  "summary": "Ja/Nein-Frage in offene Frage umbauen (Ja/Nein-Anteil ≤ 15 %)",
+  "all": {
+   "question_type": "procedural",
+   "answer_type": "text",
+   "answer_normalized": null
+  },
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "de": {
+   "question": "Was ist für die Anmeldung von Leistungsansprüchen in der obligatorischen Krankenpflegeversicherung nicht nötig?",
+   "answer": "ein Formular",
+   "answer_aliases": [
+    "Formular",
+    "ein Formular"
+   ],
+   "near_miss_answers": [
+    "Antrag",
+    "Gesuch",
+    "schriftliche Anmeldung"
+   ],
+   "source.evidence": "ist für die Anmeldung von Leistungsansprüchen kein Formular nötig"
+  },
+  "fr": {
+   "question": "Qu'est-ce qui n'est pas nécessaire pour faire valoir le droit aux prestations de l'assurance obligatoire des soins?",
+   "answer": "une formule",
+   "answer_aliases": [
+    "formule",
+    "une formule"
+   ],
+   "near_miss_answers": [
+    "demande",
+    "requête",
+    "déclaration écrite"
+   ],
+   "source.evidence": "aucune formule n’est nécessaire pour faire valoir le droit aux prestations"
+  },
+  "it": {
+   "question": "Cosa non è necessario per rivendicare il diritto alle prestazioni dell’assicurazione obbligatoria delle cure medico-sanitarie?",
+   "answer": "un formulario",
+   "answer_aliases": [
+    "formulario",
+    "un formulario"
+   ],
+   "near_miss_answers": [
+    "domanda",
+    "richiesta",
+    "denuncia scritta"
+   ],
+   "source.evidence": "per rivendicare il diritto alle prestazioni non è necessario alcun formulario"
+  }
+ },
+ "cl-0019": {
+  "action": "keep",
+  "kind": "yes_no_kept",
+  "summary": "Ja/Nein bleibt: ...",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  }
+ },
+ "cl-0023": {
+  "action": "patch",
+  "kind": "variants",
+  "summary": "Antwortvarianten ergänzen",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "fr": {
+   "answer_aliases": [
+    "date du traitement",
+    "la date de traitement"
+   ]
+  },
+  "it": {
+   "answer_aliases": [
+    "data della cura",
+    "la data di cura"
+   ]
+  }
+ },
+ "cl-0025": {
+  "action": "keep",
+  "kind": "yes_no_kept",
+  "summary": "Ja/Nein bleibt: ...",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  }
+ },
+ "cl-0027": {
+  "action": "keep",
+  "kind": "yes_no_kept",
+  "summary": "Ja/Nein bleibt: The paragraph lists two distinct exceptions (Austrittstag and Urlaubstage) for when the daily contribution is not due. An open question asking for the day(s) would either require a list (not allowed) or be ambiguous because there are two correct answers. No other short literal answer (number, noun phrase) from the paragraph tests the same rule unambiguously.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  }
+ },
+ "cl-0028": {
+  "action": "keep",
+  "kind": "yes_no_kept",
+  "summary": "Ja/Nein bleibt: ...",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  }
+ },
+ "cl-0032": {
+  "action": "patch",
+  "kind": "yes_no_rewrite",
+  "summary": "Ja/Nein-Frage in offene Frage umbauen (Ja/Nein-Anteil ≤ 15 %)",
+  "all": {
+   "question_type": "procedural",
+   "answer_type": "text",
+   "answer_normalized": null
+  },
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "de": {
+   "question": "Wer muss in der Grundversicherung die Prämien übernehmen, damit kein Prämienzuschlag erhoben wird?",
+   "answer": "eine Sozialhilfebehörde",
+   "answer_aliases": [
+    "Sozialhilfebehörde",
+    "die Sozialhilfebehörde"
+   ],
+   "near_miss_answers": [
+    "Versicherer",
+    "Versicherte",
+    "Gemeinde"
+   ],
+   "source.evidence": "Wenn eine Sozialhilfebehörde für die Prämien aufkommt, wird kein Prämienzuschlag erhoben."
+  },
+  "fr": {
+   "question": "Qui doit prendre en charge les primes dans l’assurance de base pour qu’aucun supplément ne soit perçu?",
+   "answer": "l’autorité compétente d’aide sociale",
+   "answer_aliases": [
+    "autorité compétente d’aide sociale",
+    "autorité d’aide sociale"
+   ],
+   "near_miss_answers": [
+    "l’assureur",
+    "le service social",
+    "la commune"
+   ],
+   "source.evidence": "Il n’est pas perçu de supplément lorsque les primes sont prises en charge par l’autorité compétente d’aide sociale."
+  },
+  "it": {
+   "question": "Chi deve assumere i premi nell’assicurazione di base perché non sia riscosso alcun supplemento?",
+   "answer": "un’autorità d’assistenza sociale",
+   "answer_aliases": [
+    "autorità d’assistenza sociale",
+    "l’autorità d’assistenza sociale"
+   ],
+   "near_miss_answers": [
+    "l’assicuratore",
+    "il servizio sociale",
+    "il comune"
+   ],
+   "source.evidence": "Non è riscosso alcun supplemento se i premi sono assunti da un’autorità d’assistenza sociale."
+  }
+ },
+ "cl-0034": {
+  "action": "patch",
+  "kind": "variants",
+  "summary": "Antwortvarianten ergänzen",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "fr": {
+   "answer_aliases": [
+    "le laboratoire effectuant les analyses",
+    "le laboratoire"
+   ]
+  },
+  "it": {
+   "answer_aliases": [
+    "il laboratorio esecutore dell'analisi",
+    "il laboratorio"
+   ]
+  }
+ },
+ "cl-0036": {
+  "action": "patch",
+  "kind": "outdated+variants",
+  "summary": "Altantwort aus der Fassung 2023-09-01 ergänzen (STALE-Paar); Antwortvarianten ergänzen",
+  "all": {
+   "temporal.previous_version_date": "2023-09-01",
+   "temporal.previous_paragraph": "2"
+  },
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "de": {
+   "outdated_answers": [
+    "am ersten Tag des Monats, welcher der Vollendung des gemäss Absatz 1 massgebenden Altersjahres folgt"
+   ],
+   "temporal.previous_evidence": "Der Anspruch auf die Altersrente entsteht am ersten Tag des Monats, welcher der Vollendung des gemäss Absatz 1 massgebenden Altersjahres folgt."
+  },
+  "fr": {
+   "outdated_answers": [
+    "le premier jour du mois suivant celui où a été atteint l’âge prescrit à l’al. 1"
+   ],
+   "temporal.previous_evidence": "Le droit à une rente de vieillesse prend naissance le premier jour du mois suivant celui où a été atteint l’âge prescrit à l’al. 1.",
+   "answer_aliases": [
+    "le 1er jour du mois qui suit celui au cours duquel l’assuré atteint l’âge de référence",
+    "le premier jour du mois suivant celui où l’assuré atteint l’âge de référence"
+   ]
+  },
+  "it": {
+   "outdated_answers": [
+    "il primo giorno del mese successivo a quello in cui è stata compiuta l’età stabilita nel capoverso 1"
+   ],
+   "temporal.previous_evidence": "Il diritto alla rendita di vecchiaia nasce il primo giorno del mese successivo a quello in cui è stata compiuta l’età stabilita nel capoverso 1.",
+   "answer_aliases": [
+    "il 1° giorno del mese successivo al raggiungimento dell’età di riferimento",
+    "il primo giorno del mese che segue il raggiungimento dell’età di riferimento"
+   ]
+  }
+ },
+ "cl-0038": {
+  "action": "patch",
+  "kind": "variants",
+  "summary": "Antwortvarianten ergänzen",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "fr": {
+   "answer_aliases": [
+    "cinquante fois",
+    "50 fois la cotisation minimale"
+   ]
+  },
+  "it": {
+   "answer_aliases": [
+    "cinquanta volte",
+    "50 volte il contributo minimo"
+   ]
+  }
+ },
+ "cl-0049": {
+  "action": "patch",
+  "kind": "yes_no_rewrite",
+  "summary": "Ja/Nein-Frage in offene Frage umbauen (Ja/Nein-Anteil ≤ 15 %)",
+  "all": {
+   "question_type": "procedural",
+   "answer_type": "text",
+   "answer_normalized": null
+  },
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "de": {
+   "question": "Wann entfällt der Anspruch auf die Entschädigung für eine Hilflosigkeit leichten Grades?",
+   "answer": "bei einem Aufenthalt im Heim",
+   "answer_aliases": [
+    "Aufenthalt im Heim",
+    "im Heim"
+   ],
+   "near_miss_answers": [
+    "bei einem Spitalaufenthalt",
+    "bei einer Pflege zu Hause",
+    "bei einem Aufenthalt zu Hause"
+   ],
+   "source.evidence": "Der Anspruch auf die Entschädigung für eine Hilflosigkeit leichten Grades entfällt bei einem Aufenthalt im Heim."
+  },
+  "fr": {
+   "question": "Quand le droit à l’allocation pour une impotence faible est-il supprimé?",
+   "answer": "lors d’un séjour dans un home",
+   "answer_aliases": [
+    "séjour dans un home",
+    "dans un home"
+   ],
+   "near_miss_answers": [
+    "lors d’un séjour à l’hôpital",
+    "lors de soins à domicile",
+    "lors d’un séjour à la maison"
+   ],
+   "source.evidence": "Le droit à une allocation pour une impotence faible est supprimé lors d’un séjour dans un home."
+  },
+  "it": {
+   "question": "Quando decade il diritto all’assegno per una grande invalidità di grado lieve?",
+   "answer": "in caso di soggiorno in istituto",
+   "answer_aliases": [
+    "soggiorno in istituto",
+    "in istituto"
+   ],
+   "near_miss_answers": [
+    "in caso di soggiorno in ospedale",
+    "in caso di cure a domicilio",
+    "in caso di soggiorno a casa"
+   ],
+   "source.evidence": "Il diritto all’assegno per una grande invalidità di grado lieve decade in caso di soggiorno in istituto."
+  }
+ },
+ "cl-0052": {
+  "action": "patch",
+  "kind": "variants",
+  "summary": "Antwortvarianten ergänzen",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "fr": {
+   "answer_aliases": [
+    "caisse de compensation cantonale",
+    "la caisse de compensation cantonale"
+   ]
+  },
+  "it": {
+   "answer_aliases": [
+    "cassa cantonale di compensazione",
+    "la cassa cantonale di compensazione"
+   ]
+  }
+ },
+ "cl-0054": {
+  "action": "patch",
+  "kind": "outdated",
+  "summary": "Altantwort aus der Fassung 2023-09-01 ergänzen (STALE-Paar)",
+  "all": {
+   "temporal.previous_version_date": "2023-09-01",
+   "temporal.previous_paragraph": "Art. 64a"
+  },
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "de": {
+   "outdated_answers": [
+    "die Ausgleichskasse, welcher die Auszahlung der Rente des Ehegatten obliegt, der das Rentenalter zuerst erreicht hat"
+   ],
+   "temporal.previous_evidence": "die Ausgleichskasse, welcher die Auszahlung der Rente des Ehegatten obliegt, der das Rentenalter zuerst erreicht hat"
+  }
+ },
+ "cl-0062": {
+  "action": "patch",
+  "kind": "yes_no_rewrite",
+  "summary": "Ja/Nein-Frage in offene Frage umbauen (Ja/Nein-Anteil ≤ 15 %)",
+  "all": {
+   "question_type": "procedural",
+   "answer_type": "text",
+   "answer_normalized": null
+  },
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "de": {
+   "question": "Was kann die versicherte Person in der Invalidenversicherung beanspruchen, solange der Rentenanspruch nicht entsteht?",
+   "answer": "Taggeld nach Artikel 22",
+   "answer_aliases": [
+    "Taggeld nach Art. 22",
+    "ein Taggeld nach Artikel 22"
+   ],
+   "near_miss_answers": [
+    "Taggeld nach Artikel 21",
+    "Taggeld nach Artikel 23",
+    "Verletztenentschädigung"
+   ],
+   "source.evidence": "Der Anspruch entsteht nicht, solange die versicherte Person ein Taggeld nach Artikel 22 beanspruchen kann."
+  },
+  "fr": {
+   "question": "Quelle prestation l’assuré peut-il faire valoir dans l’assurance-invalidité tant que le droit à une rente ne prend pas naissance?",
+   "answer": "une indemnité journalière au sens de l’art. 22",
+   "answer_aliases": [
+    "une indemnité journalière au sens de l’article 22",
+    "indemnité journalière au sens de l’art. 22"
+   ],
+   "near_miss_answers": [
+    "indemnité journalière au sens de l’art. 21",
+    "indemnité journalière au sens de l’art. 23",
+    "allocation pour impotent"
+   ],
+   "source.evidence": "Le droit ne prend pas naissance tant que l’assuré peut faire valoir son droit à une indemnité journalière au sens de l’art. 22."
+  },
+  "it": {
+   "question": "Quale prestazione può pretendere l’assicurato nell’assicurazione invalidità finché il diritto a una rendita non nasce?",
+   "answer": "un’indennità giornaliera ai sensi dell’articolo 22",
+   "answer_aliases": [
+    "un’indennità giornaliera ai sensi dell’art. 22",
+    "indennità giornaliera ai sensi dell’articolo 22"
+   ],
+   "near_miss_answers": [
+    "indennità giornaliera ai sensi dell’articolo 21",
+    "indennità giornaliera ai sensi dell’articolo 23",
+    "indennità per impotente"
+   ],
+   "source.evidence": "Il diritto non nasce finché l’assicurato può pretendere un’indennità giornaliera ai sensi dell’articolo 22."
+  }
+ },
+ "cl-0073": {
+  "action": "patch",
+  "kind": "variants",
+  "summary": "Antwortvarianten ergänzen",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "fr": {
+   "answer_aliases": [
+    "au premier jour du mois au cours duquel la demande est déposée",
+    "le 1er jour du mois où la demande est déposée"
+   ]
+  },
+  "it": {
+   "answer_aliases": [
+    "al primo giorno del mese in cui è stata presentata la domanda",
+    "il 1° giorno del mese in cui è stata presentata la domanda"
+   ]
+  }
+ },
+ "cl-0078": {
+  "action": "keep",
+  "kind": "yes_no_kept",
+  "summary": "Ja/Nein bleibt: The paragraph only states a conditional suspension with two alternative conditions (military insurance or foreign mandatory accident insurance); no single short literal answer (number, noun phrase) can be extracted for an open question without ambiguity or listing.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  }
+ },
+ "cl-0079": {
+  "action": "keep",
+  "kind": "yes_no_kept",
+  "summary": "Ja/Nein bleibt: ...",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  }
+ },
+ "cl-0080": {
+  "action": "keep",
+  "kind": "yes_no_kept",
+  "summary": "Ja/Nein bleibt: ...",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  }
+ },
+ "cl-0082": {
+  "action": "keep",
+  "kind": "yes_no_kept",
+  "summary": "Ja/Nein bleibt: ...",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  }
+ },
+ "cl-0084": {
+  "action": "patch",
+  "kind": "variants",
+  "summary": "Antwortvarianten ergänzen",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "fr": {
+   "answer_aliases": [
+    "son employeur ou l'assureur",
+    "employeur ou assureur"
+   ]
+  },
+  "it": {
+   "answer_aliases": [
+    "al datore di lavoro o all'assicuratore",
+    "datore di lavoro o assicuratore"
+   ]
+  }
+ },
+ "cl-0087": {
+  "action": "keep",
+  "kind": "yes_no_kept",
+  "summary": "Ja/Nein bleibt: The paragraph only lists categories of mandatorily insured persons; any open question targeting a specific category would require a single noun phrase answer (e.g., 'Lernende') for which the statute provides no alternative spellings or equivalent wording to satisfy the answer_aliases requirement (at least two other correct spellings).",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  }
+ },
+ "cl-0091": {
+  "action": "keep",
+  "kind": "yes_no_kept",
+  "summary": "Ja/Nein bleibt: The paragraph does not contain a single noun phrase of ≤8 words that captures the combined condition (good faith and undue hardship) for the exception to the repayment obligation; any open question would either give away the answer or require a multi-part answer not present as a literal substring.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  }
+ },
+ "cl-0093": {
+  "action": "patch",
+  "kind": "yes_no_rewrite",
+  "summary": "Ja/Nein-Frage in offene Frage umbauen (Ja/Nein-Anteil ≤ 15 %)",
+  "all": {
+   "question_type": "procedural",
+   "answer_type": "text",
+   "answer_normalized": null
+  },
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "de": {
+   "question": "Wer ist für die Beratung über Rechte und Pflichten in der Sozialversicherung zuständig?",
+   "answer": "die Versicherungsträger",
+   "answer_aliases": [
+    "Versicherungsträger",
+    "die Versicherungsträger"
+   ],
+   "near_miss_answers": [
+    "Bundesrat",
+    "Versicherte",
+    "Kantone"
+   ],
+   "source.evidence": "Dafür zuständig sind die Versicherungsträger, denen gegenüber die Rechte geltend zu machen oder die Pflichten zu erfüllen sind."
+  },
+  "fr": {
+   "question": "Qui est compétent pour le conseil sur les droits et obligations en matière d'assurances sociales?",
+   "answer": "les assureurs",
+   "answer_aliases": [
+    "assureurs",
+    "les assureurs"
+   ],
+   "near_miss_answers": [
+    "Conseil fédéral",
+    "assurés",
+    "cantons"
+   ],
+   "source.evidence": "Sont compétents pour cela les assureurs à l’égard desquels les intéressés doivent faire valoir leurs droits ou remplir leurs obligations."
+  },
+  "it": {
+   "question": "Chi è competente per la consulenza sui diritti e obblighi in materia di assicurazioni sociali?",
+   "answer": "gli assicuratori",
+   "answer_aliases": [
+    "assicuratori",
+    "gli assicuratori"
+   ],
+   "near_miss_answers": [
+    "Consiglio federale",
+    "assicurati",
+    "cantoni"
+   ],
+   "source.evidence": "Sono competenti in materia gli assicuratori nei confronti dei quali gli interessati devono far valere i loro diritti o adempiere i loro obblighi."
+  }
+ },
+ "cl-0094": {
+  "action": "patch",
+  "kind": "yes_no_rewrite",
+  "summary": "Ja/Nein-Frage in offene Frage umbauen (Ja/Nein-Anteil ≤ 15 %)",
+  "all": {
+   "question_type": "procedural",
+   "answer_type": "text",
+   "answer_normalized": null
+  },
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "de": {
+   "question": "Bei wem kann eine Anmeldung eingereicht werden, damit die Frist gewahrt bleibt?",
+   "answer": "unzuständigen Stelle",
+   "answer_aliases": [
+    "unzuständige Stelle",
+    "einer unzuständigen Stelle"
+   ],
+   "near_miss_answers": [
+    "zuständigen Stelle",
+    "Post",
+    "Formgerechtigkeit"
+   ],
+   "source.evidence": "bei einer unzuständigen Stelle eingereicht"
+  }
+ },
+ "cl-0097": {
+  "action": "keep",
+  "kind": "yes_no_kept",
+  "summary": "Ja/Nein bleibt: ...",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  }
+ },
+ "cl-0103": {
+  "action": "keep",
+  "kind": "yes_no_kept",
+  "summary": "Ja/Nein bleibt: The paragraph consists of a single sentence without any quantifiable fact (number, period, amount). Any open question (e.g., 'Wer?', 'Was?', 'Unter welcher Bedingung?') yields an answer that is a short noun phrase from the statute, but such phrases do not have at least two distinct alternative spellings (shorter/longer wording) within the same paragraph, violating the answer_aliases requirement.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  }
+ },
+ "cl-0105": {
+  "action": "patch",
+  "kind": "yes_no_rewrite",
+  "summary": "Ja/Nein-Frage in offene Frage umbauen (Ja/Nein-Anteil ≤ 15 %)",
+  "all": {
+   "question_type": "procedural",
+   "answer_type": "text",
+   "answer_normalized": null
+  },
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "de": {
+   "question": "Welche Voraussetzung muss eine abweichende Regelung der Lohnfortzahlung für den Arbeitnehmer erfüllen?",
+   "answer": "mindestens gleichwertig",
+   "answer_aliases": [
+    "gleichwertig",
+    "mindestens gleichwertig ist"
+   ],
+   "near_miss_answers": [
+    "schriftliche Abrede",
+    "Normalarbeitsvertrag",
+    "Gesamtarbeitsvertrag"
+   ],
+   "source.evidence": "wenn sie für den Arbeitnehmer mindestens gleichwertig ist"
+  }
+ },
+ "cx-0007": {
+  "action": "keep",
+  "kind": "yes_no_kept",
+  "summary": "Ja/Nein bleibt: The paragraph only states a conditional rule ('sobald die Unfalldeckung nach dem UVG ganz oder teilweise aufhört') without any numeric value, duration, or noun phrase of ≤8 words that could serve as a short literal answer; an open question would require a full clause as answer.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  }
+ },
+ "cx-0008": {
+  "action": "keep",
+  "kind": "yes_no_kept",
+  "summary": "Ja/Nein bleibt: ...",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  }
+ },
+ "cx-0009": {
+  "action": "patch",
+  "kind": "yes_no_rewrite",
+  "summary": "Ja/Nein-Frage in offene Frage umbauen (Ja/Nein-Anteil ≤ 15 %)",
+  "all": {
+   "question_type": "procedural",
+   "answer_type": "text",
+   "answer_normalized": null
+  },
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "de": {
+   "question": "Bei welchen Stellen darf die Kostenbeteiligung bei besonderen Versicherungsformen nicht versichert werden?",
+   "answer": "Krankenkasse und private Versicherungseinrichtung",
+   "answer_aliases": [
+    "bei einer Krankenkasse noch bei einer privaten Versicherungseinrichtung",
+    "Krankenkasse, private Versicherungseinrichtung"
+   ],
+   "near_miss_answers": [
+    "Vereine, Stiftungen oder andere Institutionen",
+    "Krankenkasse",
+    "private Versicherungseinrichtung"
+   ],
+   "source.evidence": "dürfen weder bei einer Krankenkasse noch bei einer privaten Versicherungseinrichtung versichert werden"
+  },
+  "fr": {
+   "question": "Auprès de quelles entités la participation aux coûts ne peut-elle pas être assurée dans les formes particulières d’assurance?",
+   "answer": "caisse-maladie et institution d’assurance privée",
+   "answer_aliases": [
+    "ni par une caisse-maladie ni par une institution d’assurance privée",
+    "caisse-maladie, institution d’assurance privée"
+   ],
+   "near_miss_answers": [
+    "associations, fondations ou autres institutions",
+    "caisse-maladie",
+    "institution d’assurance privée"
+   ],
+   "source.evidence": "ne peuvent être assurées ni par une caisse-maladie ni par une institution d’assurance privée"
+  },
+  "it": {
+   "question": "Presso quali enti non può essere assicurata la partecipazione ai costi nelle forme particolari d’assicurazione?",
+   "answer": "cassa malati e istituto d’assicurazione privato",
+   "answer_aliases": [
+    "né presso una cassa malati né presso un istituto d’assicurazione privato",
+    "cassa malati, istituto d’assicurazione privato"
+   ],
+   "near_miss_answers": [
+    "associazioni, fondazioni o altre istituzioni",
+    "cassa malati",
+    "istituto d’assicurazione privato"
+   ],
+   "source.evidence": "non possono essere assicurate né presso una cassa malati né presso un istituto d’assicurazione privato"
+  }
+ },
+ "cx-0010": {
+  "action": "keep",
+  "kind": "yes_no_kept",
+  "summary": "Ja/Nein bleibt: The paragraph only states a prohibition without a specific extractable entity (number, date, office, etc.) that would allow an open short-answer question with a literal answer and at least two distinct answer aliases from the statute text.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  }
+ },
+ "cx-0011": {
+  "action": "keep",
+  "kind": "yes_no_kept",
+  "summary": "Ja/Nein bleibt: ...",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  }
+ },
+ "cx-0012": {
+  "action": "patch",
+  "kind": "yes_no_rewrite",
+  "summary": "Ja/Nein-Frage in offene Frage umbauen (Ja/Nein-Anteil ≤ 15 %)",
+  "all": {
+   "question_type": "procedural",
+   "answer_type": "text",
+   "answer_normalized": null
+  },
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "de": {
+   "question": "Wer kann in der obligatorischen Krankenpflegeversicherung die Sistierung der Unfalldeckung beantragen?",
+   "answer": "die versicherte Person",
+   "answer_aliases": [
+    "Versicherte Person",
+    "die Versicherte",
+    "versicherte Person"
+   ],
+   "near_miss_answers": [
+    "der Versicherer",
+    "der Arbeitgeber",
+    "die Krankenkasse"
+   ],
+   "source.evidence": "Der Versicherer veranlasst das Ruhen auf Antrag der versicherten Person"
+  },
+  "fr": {
+   "question": "Qui peut demander la suspension de la couverture des accidents dans l’assurance obligatoire des soins?",
+   "answer": "l’assuré",
+   "answer_aliases": [
+    "l'assuré",
+    "assuré",
+    "l’assuré"
+   ],
+   "near_miss_answers": [
+    "l’assureur",
+    "l’employeur",
+    "la caisse maladie"
+   ],
+   "source.evidence": "L’assureur procède à la suspension lorsque l’assuré lui en fait la demande"
+  },
+  "it": {
+   "question": "Chi può richiedere la sospensione della copertura degli infortuni nell’assicurazione obbligatoria delle cure medico-sanitarie?",
+   "answer": "l’assicurato",
+   "answer_aliases": [
+    "l'assicurato",
+    "assicurato",
+    "l’assicurato"
+   ],
+   "near_miss_answers": [
+    "l’assicuratore",
+    "il datore di lavoro",
+    "la cassa malattia"
+   ],
+   "source.evidence": "L’assicuratore procede alla sospensione su richiesta dell’assicurato"
+  }
+ },
+ "cx-0013": {
+  "action": "keep",
+  "kind": "yes_no_kept",
+  "summary": "Ja/Nein bleibt: ...",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  }
+ },
+ "cx-0024": {
+  "action": "patch",
+  "kind": "yes_no_rewrite",
+  "summary": "Ja/Nein-Frage in offene Frage umbauen (Ja/Nein-Anteil ≤ 15 %)",
+  "all": {
+   "question_type": "procedural",
+   "answer_type": "text",
+   "answer_normalized": null
+  },
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "de": {
+   "question": "Mit welchem Selbstbehalt darf die Bonusversicherung nicht in Verbindung angeboten werden?",
+   "answer": "wählbare Franchise",
+   "answer_aliases": [
+    "wählbare Franchise nach Artikel 93",
+    "wählbare Franchise (Art. 93)"
+   ],
+   "near_miss_answers": [
+    "ordentliche Franchise",
+    "Standardfranchise",
+    "Franchise nach Artikel 92"
+   ],
+   "source.evidence": "Die Bonusversicherung darf nicht in Verbindung mit einer wählbaren Franchise nach Artikel 93 angeboten werden."
+  },
+  "fr": {
+   "question": "Avec quel type de quote-part l’assurance avec bonus ne peut-elle pas être pratiquée en relation?",
+   "answer": "franchise à option",
+   "answer_aliases": [
+    "franchise à option au sens de l’art. 93",
+    "franchise à option (art. 93)"
+   ],
+   "near_miss_answers": [
+    "franchise ordinaire",
+    "franchise standard",
+    "franchise selon l’art. 92"
+   ],
+   "source.evidence": "L’assurance avec bonus ne peut être pratiquée en relation avec une franchise à option au sens de l’art. 93."
+  },
+  "it": {
+   "question": "Con quale tipo di quota a carico l’assicurazione con bonus non può essere offerta in combinazione?",
+   "answer": "franchigie opzionali",
+   "answer_aliases": [
+    "franchigie opzionali ai sensi dell’articolo 93",
+    "franchigie opzionali (art. 93)"
+   ],
+   "near_miss_answers": [
+    "franchigie ordinarie",
+    "franchigie standard",
+    "franchigie secondo l’articolo 92"
+   ],
+   "source.evidence": "L’assicurazione con bonus non può essere offerta in combinazione con franchigie opzionali ai sensi dell’articolo 93."
+  }
+ },
+ "cx-0025": {
+  "action": "patch",
+  "kind": "yes_no_rewrite",
+  "summary": "Ja/Nein-Frage in offene Frage umbauen (Ja/Nein-Anteil ≤ 15 %)",
+  "all": {
+   "question_type": "procedural",
+   "answer_type": "text",
+   "answer_normalized": null
+  },
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "de": {
+   "question": "Wem steht die Bonusversicherung in der obligatorischen Krankenpflegeversicherung offen?",
+   "answer": "sämtlichen Versicherten",
+   "answer_aliases": [
+    "sämtliche Versicherte",
+    "SÄMTLICHEN VERSICHERTEN"
+   ],
+   "near_miss_answers": [
+    "Versicherte der ordentlichen Versicherung",
+    "Versicherte zum Jahresbeginn"
+   ],
+   "source.evidence": "steht sämtlichen Versicherten offen"
+  },
+  "fr": {
+   "question": "Qui peut adhérer à l’assurance avec bonus dans l’assurance obligatoire des soins ?",
+   "answer": "Tous les assurés",
+   "answer_aliases": [
+    "tous les assurés",
+    "TOUS LES ASSURÉS"
+   ],
+   "near_miss_answers": [
+    "Assurés de l’assurance ordinaire",
+    "Assurés au début de l’année civile"
+   ],
+   "source.evidence": "Tous les assurés peuvent adhérer à l’assurance avec bonus"
+  },
+  "it": {
+   "question": "Chi può aderire all’assicurazione con bonus nell’assicurazione obbligatoria delle cure medico-sanitarie ?",
+   "answer": "Tutti gli assicurati",
+   "answer_aliases": [
+    "tutti gli assicurati",
+    "TUTTI GLI ASSICURATI"
+   ],
+   "near_miss_answers": [
+    "Assicurati dell’assicurazione ordinaria",
+    "Assicurati all’inizio dell’anno civile"
+   ],
+   "source.evidence": "Tutti gli assicurati possono aderire all’assicurazione con bonus"
+  }
+ },
+ "cx-0027": {
+  "action": "patch",
+  "kind": "yes_no_rewrite",
+  "summary": "Ja/Nein-Frage in offene Frage umbauen (Ja/Nein-Anteil ≤ 15 %)",
+  "all": {
+   "question_type": "procedural",
+   "answer_type": "text",
+   "answer_normalized": null
+  },
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "de": {
+   "question": "Was ist den Versicherungen nach Absatz 1 verboten?",
+   "answer": "die obligatorische Teilnahme an Programmen zur grenzüberschreitenden Zusammenarbeit",
+   "answer_aliases": [
+    "obligatorische Teilnahme an Programmen zur grenzüberschreitenden Zusammenarbeit",
+    "Die obligatorische Teilnahme an Programmen zur grenzüberschreitenden Zusammenarbeit"
+   ],
+   "near_miss_answers": [
+    "die freiwillige Teilnahme an Programmen zur grenzüberschreitenden Zusammenarbeit",
+    "die obligatorische Teilnahme an Programmen zur innerstaatlichen Zusammenarbeit",
+    "die obligatorische Teilnahme an Programmen zur grenzüberschreitenden Kooperation"
+   ],
+   "source.evidence": "dürfen nicht die obligatorische Teilnahme an Programmen zur grenzüberschreitenden Zusammenarbeit vorsehen"
+  },
+  "fr": {
+   "question": "Quel est l'interdiction pour les assureurs mentionnés à l'alinéa 1?",
+   "answer": "obligation de participer aux programmes de coopération transfrontalière",
+   "answer_aliases": [
+    "une obligation de participer aux programmes de coopération transfrontalière",
+    "Obligation de participer aux programmes de coopération transfrontalière"
+   ],
+   "near_miss_answers": [
+    "une obligation volontaire de participer aux programmes de coopération transfrontalière",
+    "une obligation de participer aux programmes de coopération nationale",
+    "une obligation de participer aux programmes de coopération transfrontalière obligatoire"
+   ],
+   "source.evidence": "ne peuvent prévoir une obligation de participer aux programmes de coopération transfrontalière"
+  },
+  "it": {
+   "question": "Quale divieto vige per le assicurazioni del capoverso 1?",
+   "answer": "l’obbligo di partecipazione a programmi di cooperazione transfrontaliera",
+   "answer_aliases": [
+    "obbligo di partecipazione a programmi di cooperazione transfrontaliera",
+    "L’obbligo di partecipazione a programmi di cooperazione transfrontaliera"
+   ],
+   "near_miss_answers": [
+    "l’obbligo di partecipazione volontaria a programmi di cooperazione transfrontaliera",
+    "l’obbligo di partecipazione a programmi di cooperazione nazionale",
+    "l’obbligo di partecipazione a programmi di cooperazione transfrontaliera obbligatoria"
+   ],
+   "source.evidence": "non possono prevedere l’obbligo di partecipazione a programmi di cooperazione transfrontaliera"
+  }
+ },
+ "cx-0028": {
+  "action": "keep",
+  "kind": "yes_no_kept",
+  "summary": "Ja/Nein bleibt: The paragraph only provides the adverbial answer 'jederzeit'/'à tout moment'/'in ogni momento' and a legal reference 'Artikel 97 Absatz 2' as short literal answers. Neither has alternative spellings in the statute text to satisfy the required answer_aliases (at least two other correct spellings).",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  }
+ },
+ "cx-0043": {
+  "action": "patch",
+  "kind": "yes_no_rewrite",
+  "summary": "Ja/Nein-Frage in offene Frage umbauen (Ja/Nein-Anteil ≤ 15 %)",
+  "all": {
+   "question_type": "procedural",
+   "answer_type": "text",
+   "answer_normalized": null
+  },
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "de": {
+   "question": "Unter welcher Voraussetzung sind Angehörige einer ausländischen staatlichen Alters- und Hinterlassenenversicherung von der AHV-Pflicht befreit?",
+   "answer": "eine nicht zumutbare Doppelbelastung",
+   "answer_aliases": [
+    "nicht zumutbare Doppelbelastung",
+    "eine nicht zumutbare Doppelbelastung bedeuten würde"
+   ],
+   "near_miss_answers": [
+    "Privilegien und Immunitäten gemäss Völkerrecht",
+    "verhältnismässig kurze Zeit",
+    "Beitragspflicht des Arbeitgebers"
+   ],
+   "source.evidence": "Personen, die einer ausländischen staatlichen Alters- und Hinterlassenenversicherung angehören, sofern der Einbezug in die Versicherung für sie eine nicht zumutbare Doppelbelastung bedeuten würde"
+  },
+  "fr": {
+   "question": "Sous quelle condition les personnes affiliées à une institution officielle étrangère d’assurance-vieillesse et survivants sont-elles exemptées de l’AVS?",
+   "answer": "un cumul de charges trop lourdes",
+   "answer_aliases": [
+    "cumul de charges trop lourdes",
+    "un cumul de charges trop lourdes constituerait"
+   ],
+   "near_miss_answers": [
+    "privilèges et immunités",
+    "période relativement courte",
+    "employeur non tenu de payer des cotisations"
+   ],
+   "source.evidence": "les personnes affiliées à une institution officielle étrangère d’assurance-vieillesse et survivants si l’assujettissement à la présente loi constituait pour elles un cumul de charges trop lourdes"
+  },
+  "it": {
+   "question": "A quale condizione le persone che partecipano ad un’assicurazione statale estera per la vecchiaia e per i superstiti sono esentate dall’AVS?",
+   "answer": "doppio onere che non si potrebbe equamente imporre",
+   "answer_aliases": [
+    "doppio onere che non si potrebbe equamente imporre",
+    "un doppio onere che non si potrebbe equamente imporre"
+   ],
+   "near_miss_answers": [
+    "immunità e privilegi",
+    "periodo relativamente breve",
+    "datore di lavoro non tenuto a pagare contributi"
+   ],
+   "source.evidence": "le persone che partecipano ad un’assicurazione statale estera per la vecchiaia e per i superstiti, se l’assoggettamento all’assicurazione giusta la presente legge costituisce per esse un doppio onere che non si potrebbe equamente imporre"
+  }
+ },
+ "cx-0044": {
+  "action": "patch",
+  "kind": "yes_no_rewrite",
+  "summary": "Ja/Nein-Frage in offene Frage umbauen (Ja/Nein-Anteil ≤ 15 %)",
+  "all": {
+   "question_type": "procedural",
+   "answer_type": "text",
+   "answer_normalized": null
+  },
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "de": {
+   "question": "In der AHV: Welche Ausnahme gilt für Pflegekinder, die nach Entstehung des Anspruchs auf Altersrente in Pflege genommen wurden?",
+   "answer": "Kinder des andern Ehegatten",
+   "answer_aliases": [
+    "Kinder des anderen Ehegatten",
+    "Kinder des andern Ehegatten"
+   ],
+   "near_miss_answers": [
+    "Kinder des eigenen Ehegatten",
+    "Pflegekinder vor Rentenbeginn",
+    "Kinder des anderen Elternteils"
+   ],
+   "source.evidence": "es sei denn, es handle sich um Kinder des andern Ehegatten."
+  },
+  "fr": {
+   "question": "Dans l'AVS: Quelle exception s'applique aux enfants recueillis après l'ouverture du droit à une rente de vieillesse?",
+   "answer": "enfants de l'autre conjoint",
+   "answer_aliases": [
+    "enfants de l'autre conjoint",
+    "enfants de l'autre conjoint"
+   ],
+   "near_miss_answers": [
+    "enfants du propre conjoint",
+    "enfants recueillis avant la rente",
+    "enfants de l'autre parent"
+   ],
+   "source.evidence": "sauf s'il s'agit des enfants de l'autre conjoint."
+  },
+  "it": {
+   "question": "Nell'AVS: Quale eccezione vale per i figli elettivi affiliati dopo il sorgere del diritto a una rendita di vecchiaia?",
+   "answer": "figli dell'altro coniuge",
+   "answer_aliases": [
+    "figli dell'altro coniuge",
+    "figli dell'altro coniuge"
+   ],
+   "near_miss_answers": [
+    "figli del proprio coniuge",
+    "figli affiliati prima della rendita",
+    "figli dell'altro genitore"
+   ],
+   "source.evidence": "salvo qualora si tratti di figli dell'altro coniuge."
+  }
+ },
+ "cx-0045": {
+  "action": "patch",
+  "kind": "yes_no_rewrite",
+  "summary": "Ja/Nein-Frage in offene Frage umbauen (Ja/Nein-Anteil ≤ 15 %)",
+  "all": {
+   "question_type": "procedural",
+   "answer_type": "text",
+   "answer_normalized": null
+  },
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "de": {
+   "question": "In der AHV: Was entfällt bei Ehepaaren, deren gemeinsamer Haushalt richterlich aufgehoben wurde?",
+   "answer": "Die Kürzung",
+   "answer_aliases": [
+    "Kürzung",
+    "Die Kürzung."
+   ],
+   "near_miss_answers": [
+    "Der gemeinsame Haushalt",
+    "Die Ehepaare",
+    "Die richterliche Aufhebung"
+   ],
+   "source.evidence": "Die Kürzung entfällt bei Ehepaaren, deren gemeinsamer Haushalt richterlich aufgehoben wurde."
+  },
+  "fr": {
+   "question": "Dans l'AVS: Que n'est pas prévu pour les époux dont le ménage commun a été dissous judiciairement?",
+   "answer": "Aucune réduction des rentes",
+   "answer_aliases": [
+    "Réduction des rentes",
+    "Aucune réduction"
+   ],
+   "near_miss_answers": [
+    "Le ménage commun",
+    "Les époux",
+    "La décision judiciaire"
+   ],
+   "source.evidence": "Aucune réduction des rentes n’est prévue au détriment des époux qui ne vivent plus en ménage commun suite à une décision judiciaire."
+  },
+  "it": {
+   "question": "Nell'AVS: Cosa non è previsto per i coniugi che non vivono più in comunione domestica in seguito a una decisione giudiziaria?",
+   "answer": "Nessuna riduzione",
+   "answer_aliases": [
+    "Riduzione",
+    "Nessuna riduzione."
+   ],
+   "near_miss_answers": [
+    "La comunione domestica",
+    "I coniugi",
+    "La decisione giudiziaria"
+   ],
+   "source.evidence": "Non è prevista nessuna riduzione a scapito dei coniugi che non vivono più in comunione domestica in seguito ad una decisione giudiziaria."
+  }
+ },
+ "cx-0046": {
+  "action": "patch",
+  "kind": "yes_no_rewrite",
+  "summary": "Ja/Nein-Frage in offene Frage umbauen (Ja/Nein-Anteil ≤ 15 %)",
+  "all": {
+   "question_type": "procedural",
+   "answer_type": "text",
+   "answer_normalized": null
+  },
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "de": {
+   "question": "In der AHV, in welchem Zeitraum werden keine Kinderrenten ausgerichtet?",
+   "answer": "Während der Dauer des Rentenvorbezugs",
+   "answer_aliases": [
+    "Dauer des Rentenvorbezugs",
+    "Rentenvorbezugs"
+   ],
+   "near_miss_answers": [
+    "die Karenzzeit",
+    "der Rentenbeginn",
+    "das Erreichen des Rentenalters"
+   ],
+   "source.evidence": "Während der Dauer des Rentenvorbezugs werden keine Kinderrenten ausgerichtet."
+  },
+  "fr": {
+   "question": "Dans l'AVS, durant quelle période aucune rente pour enfant n’est-elle octroyée?",
+   "answer": "la durée du versement anticipé de la rente",
+   "answer_aliases": [
+    "durée du versement anticipé de la rente",
+    "versement anticipé de la rente"
+   ],
+   "near_miss_answers": [
+    "la période de carence",
+    "l'âge de la retraite",
+    "la période de cotisation"
+   ],
+   "source.evidence": "Aucune rente pour enfant n’est octroyée pendant la durée du versement anticipé de la rente."
+  },
+  "it": {
+   "question": "Nell'AVS, quando non sono versate rendite per figli?",
+   "answer": "Durante il periodo di riscossione anticipata della rendita",
+   "answer_aliases": [
+    "periodo di riscossione anticipata della rendita",
+    "riscossione anticipata della rendita"
+   ],
+   "near_miss_answers": [
+    "il periodo di attesa",
+    "il pensionamento",
+    "l'età pensionabile"
+   ],
+   "source.evidence": "Durante il periodo di riscossione anticipata della rendita non sono versate rendite per figli."
+  }
+ },
+ "cx-0049": {
+  "action": "patch",
+  "kind": "yes_no_rewrite",
+  "summary": "Ja/Nein-Frage in offene Frage umbauen (Ja/Nein-Anteil ≤ 15 %)",
+  "all": {
+   "question_type": "procedural",
+   "answer_type": "text",
+   "answer_normalized": null
+  },
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "de": {
+   "question": "Wer räumt in der AHV den Versicherten die Möglichkeit ein, auf die Ausnahme von der Beitragsbemessung für Erwerbseinkommen nach dem Referenzalter zu verzichten?",
+   "answer": "Der Bundesrat",
+   "answer_aliases": [
+    "Bundesrat",
+    "der Bundesrat"
+   ],
+   "near_miss_answers": [
+    "Das Parlament",
+    "Die Ausgleichskasse"
+   ],
+   "source.evidence": "der Bundesrat räumt den Versicherten die Möglichkeit ein"
+  },
+  "fr": {
+   "question": "Qui donne aux assurés la possibilité de renoncer à l’exception du calcul des cotisations pour le revenu d’activité lucrative après l’âge de référence dans l’AVS?",
+   "answer": "Le Conseil fédéral",
+   "answer_aliases": [
+    "Conseil fédéral",
+    "le Conseil fédéral"
+   ],
+   "near_miss_answers": [
+    "Le Parlement",
+    "La caisse de compensation"
+   ],
+   "source.evidence": "le Conseil fédéral donne aux assurés la possibilité de renoncer à l’exception du calcul des cotisations"
+  },
+  "it": {
+   "question": "Chi prevede per gli assicurati la possibilità di chiedere che i redditi da attività lucrativa dopo l’età di riferimento siano inclusi nel calcolo nell’AVS?",
+   "answer": "Il Consiglio federale",
+   "answer_aliases": [
+    "Consiglio federale",
+    "il Consiglio federale"
+   ],
+   "near_miss_answers": [
+    "Il Parlamento",
+    "La cassa di compensazione"
+   ],
+   "source.evidence": "il Consiglio federale prevede la possibilità per gli assicurati di chiedere che tali redditi siano inclusi nel calcolo"
+  }
+ },
+ "cx-0050": {
+  "action": "keep",
+  "kind": "outdated_none",
+  "summary": "Keine Altantwort möglich: The earlier version (2023-09-01) only allows deferral of the entire old-age pension ('den Beginn des Rentenbezuges', 'le début du versement de la rente', 'l’inizio del godimento della rendita') and does not provide for partial deferral. The concept of a minimum share (20%) is introduced in the current version (2026-01-01). Therefore, the earlier text does not answer the same question.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  }
+ },
+ "cx-0062": {
+  "action": "keep",
+  "kind": "yes_no_kept",
+  "summary": "Ja/Nein bleibt: An open short-answer question testing the same rule is not possible in all three languages without violating the constraint that the question must not contain any word of the answer. The only viable short literal answers from the paragraph are the contribution names (Pflegebeitrag, contribution aux soins, contributo alle cure), but the required naming of the health insurance branch in plain words (obligatorische Krankenpflegeversicherung, assurance obligatoire des soins, assicurazione obbligatoria delle cure medico-sanitarie) shares words with those answers (Pflege/Pflegebeitrag, soins, cure). Alternative answers like the IV branch name would require the question to name that branch, giving away the answer.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  }
+ },
+ "cx-0070": {
+  "action": "keep",
+  "kind": "yes_no_kept",
+  "summary": "Ja/Nein bleibt: Open question possible but cannot satisfy answer_aliases requirement (at least two other spellings from statute) for French and Italian versions",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  }
+ },
+ "cx-0071": {
+  "action": "patch",
+  "kind": "variants",
+  "summary": "Antwortvarianten ergänzen",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "fr": {
+   "answer_aliases": [
+    "mille trois cents francs",
+    "CHF 1300"
+   ]
+  },
+  "it": {
+   "answer_aliases": [
+    "mille trecento franchi",
+    "CHF 1300"
+   ]
+  }
+ },
+ "cx-0075": {
+  "action": "patch",
+  "kind": "variants",
+  "summary": "Antwortvarianten ergänzen",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "de": {
+   "answer_aliases": [
+    "80%",
+    "achtzig Prozent"
+   ]
+  },
+  "fr": {
+   "answer_aliases": [
+    "80 pour cent",
+    "quatre-vingts pour cent"
+   ]
+  },
+  "it": {
+   "answer_aliases": [
+    "80%",
+    "ottanta per cento"
+   ]
+  }
+ },
+ "cx-0076": {
+  "action": "patch",
+  "kind": "variants",
+  "summary": "Antwortvarianten ergänzen",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "de": {
+   "answer_aliases": [
+    "90%",
+    "neunzig Prozent"
+   ]
+  },
+  "fr": {
+   "answer_aliases": [
+    "90 pour cent",
+    "quatre-vingt-dix pour cent"
+   ]
+  },
+  "it": {
+   "answer_aliases": [
+    "90%",
+    "novanta per cento"
+   ]
+  }
+ },
+ "cx-0080": {
+  "action": "patch",
+  "kind": "variants",
+  "summary": "Antwortvarianten ergänzen",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "fr": {
+   "answer_aliases": [
+    "le traitement médical est terminé",
+    "si l’assuré ne peut prétendre une rente, lorsque le traitement médical est terminé"
+   ]
+  },
+  "it": {
+   "answer_aliases": [
+    "termine della cura medica",
+    "al termine della cura medica se l’assicurato non ha diritto a una rendita"
+   ]
+  }
+ },
+ "cx-0084": {
+  "action": "patch",
+  "kind": "yes_no_rewrite",
+  "summary": "Ja/Nein-Frage in offene Frage umbauen (Ja/Nein-Anteil ≤ 15 %)",
+  "all": {
+   "question_type": "procedural",
+   "answer_type": "text",
+   "answer_normalized": null
+  },
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "de": {
+   "question": "In der Unfallversicherung: Welche stationäre Einrichtung kann der Versicherte frei wählen?",
+   "answer": "Spital",
+   "answer_aliases": [
+    "das Spital",
+    "Spital"
+   ],
+   "near_miss_answers": [
+    "Arzt",
+    "Zahnarzt",
+    "Apotheke"
+   ],
+   "source.evidence": "Der Versicherte kann den Arzt, den Zahnarzt, den Chiropraktor, die Apotheke, das Spital und die Kuranstalt frei wählen."
+  },
+  "fr": {
+   "question": "Dans l’assurance-accidents: quel établissement hospitalier l’assuré peut-il choisir librement?",
+   "answer": "l’hôpital",
+   "answer_aliases": [
+    "l’hôpital",
+    "hôpital"
+   ],
+   "near_miss_answers": [
+    "médecin",
+    "dentiste",
+    "pharmacie"
+   ],
+   "source.evidence": "L’assuré peut choisir librement son médecin, son dentiste, son chiropraticien, sa pharmacie et l’hôpital ou l’établissement de cure dans lequel il veut se faire soigner."
+  },
+  "it": {
+   "question": "Nell’assicurazione contro gli infortuni: quale struttura ospedaliera può scegliere liberamente l’assicurato?",
+   "answer": "l’ospedale",
+   "answer_aliases": [
+    "l’ospedale",
+    "ospedale"
+   ],
+   "near_miss_answers": [
+    "medico",
+    "dentista",
+    "farmacia"
+   ],
+   "source.evidence": "L’assicurato può scegliere liberamente il medico, il dentista, il chiropratico, la farmacia, l’ospedale e la casa di cura."
+  }
+ },
+ "cx-0085": {
+  "action": "keep",
+  "kind": "yes_no_kept",
+  "summary": "Ja/Nein bleibt: The paragraph does not contain a short noun phrase answer (≤8 words) that has at least two distinct verbatim spelling variants in the statute text, as required for answer_aliases.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  }
+ },
+ "cx-0086": {
+  "action": "keep",
+  "kind": "yes_no_kept",
+  "summary": "Ja/Nein bleibt: The paragraph only allows an open question about the excepted benefit (DE: 'Bestattungskosten', FR: 'indemnité pour frais funéraires', IT: 'spese funerarie'), but these answers are single noun phrases with no alternative spellings or shorter/longer variants in the statute text, making it impossible to provide the required answer_aliases (at least two other correct spellings).",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  }
+ },
+ "cx-0087": {
+  "action": "patch",
+  "kind": "variants",
+  "summary": "Antwortvarianten ergänzen",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "fr": {
+   "answer_aliases": [
+    "vingt-quatre mois",
+    "24 mois"
+   ]
+  },
+  "it": {
+   "answer_aliases": [
+    "ventiquattro mesi",
+    "24 mesi"
+   ]
+  }
+ },
+ "cx-0088": {
+  "action": "patch",
+  "kind": "variants",
+  "summary": "Antwortvarianten ergänzen",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "it": {
+   "answer_aliases": [
+    "dodici mesi",
+    "12 mesi"
+   ]
+  }
+ },
+ "cx-0090": {
+  "action": "patch",
+  "kind": "variants",
+  "summary": "Antwortvarianten ergänzen",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "fr": {
+   "answer_aliases": [
+    "trente jours",
+    "30 jours"
+   ]
+  },
+  "it": {
+   "answer_aliases": [
+    "trenta giorni",
+    "30 giorni"
+   ]
+  }
+ },
+ "cx-0093": {
+  "action": "patch",
+  "kind": "variants",
+  "summary": "Antwortvarianten ergänzen",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "it": {
+   "answer_aliases": [
+    "tribunale delle assicurazioni del Cantone dove l’assicurato è domiciliato",
+    "tribunale delle assicurazioni del Cantone di domicilio dell’assicurato"
+   ]
+  }
+ },
+ "cx-0094": {
+  "action": "patch",
+  "kind": "variants",
+  "summary": "Antwortvarianten ergänzen",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "fr": {
+   "answer_aliases": [
+    "médecin",
+    "un médecin"
+   ]
+  },
+  "it": {
+   "answer_aliases": [
+    "medico",
+    "un medico"
+   ]
+  }
+ },
+ "cx-0095": {
+  "action": "patch",
+  "kind": "variants",
+  "summary": "Antwortvarianten ergänzen",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "fr": {
+   "answer_aliases": [
+    "L’assureur",
+    "assureur"
+   ]
+  },
+  "it": {
+   "answer_aliases": [
+    "L’assicuratore",
+    "assicuratore"
+   ]
+  }
+ },
+ "cx-0097": {
+  "action": "patch",
+  "kind": "yes_no_rewrite",
+  "summary": "Ja/Nein-Frage in offene Frage umbauen (Ja/Nein-Anteil ≤ 15 %)",
+  "all": {
+   "question_type": "procedural",
+   "answer_type": "text",
+   "answer_normalized": null
+  },
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "de": {
+   "question": "Was kann in einem Sozialversicherungsverfahren nicht erstreckt werden?",
+   "answer": "Eine gesetzliche Frist",
+   "answer_aliases": [
+    "gesetzliche Frist",
+    "Eine gesetzliche Frist"
+   ],
+   "near_miss_answers": [
+    "eine richterliche Frist",
+    "eine behördliche Frist",
+    "eine vertragliche Frist"
+   ],
+   "source.evidence": "Eine gesetzliche Frist kann nicht erstreckt werden."
+  },
+  "fr": {
+   "question": "Qu'est-ce qui ne peut pas être prolongé dans une procédure d'assurance sociale?",
+   "answer": "Le délai légal",
+   "answer_aliases": [
+    "délai légal",
+    "Le délai légal"
+   ],
+   "near_miss_answers": [
+    "un délai judiciaire",
+    "un délai administratif",
+    "un délai contractuel"
+   ],
+   "source.evidence": "Le délai légal ne peut pas être prolongé."
+  },
+  "it": {
+   "question": "Cosa non può essere prorogato in un procedimento di assicurazione sociale?",
+   "answer": "Il termine legale",
+   "answer_aliases": [
+    "termine legale",
+    "Il termine legale"
+   ],
+   "near_miss_answers": [
+    "un termine giudiziario",
+    "un termine amministrativo",
+    "un termine contrattuale"
+   ],
+   "source.evidence": "Il termine legale non può essere prorogato."
+  }
+ },
+ "cx-0098": {
+  "action": "keep",
+  "kind": "yes_no_kept",
+  "summary": "Ja/Nein bleibt: The paragraph only states a negative rule (no delay interest for delays caused by foreign insurers) and does not contain a positive fact that can be asked as an open question with a short literal answer and at least two answer aliases from the statute text.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  }
+ },
+ "cx-0099": {
+  "action": "patch",
+  "kind": "yes_no_rewrite",
+  "summary": "Ja/Nein-Frage in offene Frage umbauen (Ja/Nein-Anteil ≤ 15 %)",
+  "all": {
+   "question_type": "procedural",
+   "answer_type": "text",
+   "answer_normalized": null
+  },
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "de": {
+   "question": "Wann sind Behandlungs- oder Eingliederungsmassnahmen in den Sozialversicherungen nicht zumutbar?",
+   "answer": "Gefahr für Leben und Gesundheit",
+   "answer_aliases": [
+    "eine Gefahr für Leben und Gesundheit",
+    "Gefahr für Leben und Gesundheit darstellen"
+   ],
+   "near_miss_answers": [
+    "Fehlende schriftliche Mahnung",
+    "Keine Bedenkzeit",
+    "Keine wesentliche Verbesserung der Erwerbsfähigkeit"
+   ],
+   "source.evidence": "Behandlungs- oder Eingliederungsmassnahmen, die eine Gefahr für Leben und Gesundheit darstellen, sind nicht zumutbar."
+  },
+  "fr": {
+   "question": "Quand les traitements ou mesures de réadaptation ne peuvent-ils pas être exigés dans les assurances sociales?",
+   "answer": "danger pour la vie ou pour la santé",
+   "answer_aliases": [
+    "un danger pour la vie ou pour la santé",
+    "danger pour la vie ou pour la santé présenter"
+   ],
+   "near_miss_answers": [
+    "Absence de mise en demeure écrite",
+    "Pas de délai de réflexion",
+    "Pas d'amélioration notable de la capacité de travail"
+   ],
+   "source.evidence": "Les traitements et les mesures de réadaptation qui présentent un danger pour la vie ou pour la santé ne peuvent être exigés."
+  },
+  "it": {
+   "question": "Quando non si possono esigere cure o provvedimenti d’integrazione nelle assicurazioni sociali?",
+   "answer": "pericolo per la vita o per la salute",
+   "answer_aliases": [
+    "un pericolo per la vita o per la salute",
+    "pericolo per la vita o per la salute rappresentano"
+   ],
+   "near_miss_answers": [
+    "Mancata diffida scritta",
+    "Nessun termine di riflessione",
+    "Nessun miglioramento della capacità di lavoro"
+   ],
+   "source.evidence": "Non si possono esigere cure e provvedimenti d’integrazione che rappresentano un pericolo per la vita o per la salute."
+  }
+ },
+ "cx-0100": {
+  "action": "keep",
+  "kind": "yes_no_kept",
+  "summary": "Ja/Nein bleibt: The paragraph only contains a single noun phrase ('die Frist' / 'le délai' / 'il termine') that can serve as a short literal answer. It does not provide at least two distinct alternative spellings (e.g., with/without article, singular/plural) required for the answer_aliases field, making a compliant open question impossible.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  }
+ },
+ "cx-0102": {
+  "action": "patch",
+  "kind": "variants",
+  "summary": "Antwortvarianten ergänzen",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  },
+  "fr": {
+   "answer_aliases": [
+    "employeur",
+    "l'employeur"
+   ]
+  },
+  "it": {
+   "answer_aliases": [
+    "datore di lavoro",
+    "il datore di lavoro"
+   ]
+  }
+ },
+ "cx-0105": {
+  "action": "keep",
+  "kind": "yes_no_kept",
+  "summary": "Ja/Nein bleibt: The paragraph only states that a termination during a protection period is null (one-word answer) and describes suspension of the notice period. The nullity answer ('nichtig'/'nul'/'nulla') lacks two distinct alternative spellings from the statute for answer_aliases, and the suspension rule does not yield a short noun phrase or number.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-04",
+   "prompt_version": "nemotron-rewrite-v1 sha256:4306c70e8397 (src/prompts/nemotron_rewrite_v1.txt)"
+  }
+ }
+}

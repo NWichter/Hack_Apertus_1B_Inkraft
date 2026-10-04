@@ -1,0 +1,38 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"AVIV\", \"article_id\": \"art_30\", \"paragraph\": \"\", \"domain\": \"eo_alv\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Welche Artikel des AVIG werden in Art. 30 AVIV als Rechtsgrundlage genannt?\", \"answer\": \"Art. 20 und 96b AVIG\", \"answer_aliases\": [\"Art. 20 und 96b\", \"Artikel 20 und 96b AVIG\", \"Art. 20, 96b AVIG\"], \"near_miss_answers\": [\"Art. 20 AVIG\", \"Art. 96b AVIG\", \"Art. 19 ATSG und Art. 20 AVIG\"], \"evidence\": \"(Art. 19 ATSG, Art. 20 und 96b AVIG)\"}, \"fr\": {\"question\": \"Quels articles de la LACI sont cités comme base légale à l'art. 30 AVIV?\", \"answer\": \"art. 20 et 96b LACI\", \"answer_aliases\": [\"art. 20 et 96b\", \"articles 20 et 96b LACI\", \"art. 20, 96b LACI\"], \"near_miss_answers\": [\"art. 20 LACI\", \"art. 96b LACI\", \"art. 19 LPGA et art. 20 LACI\"], \"evidence\": \"(art. 19 LPGA: art. 20 et 96b LACI)\"}, \"it\": {\"question\": \"Quali articoli della LADI sono citati come base legale all'art. 30 AVIV?\", \"answer\": \"art. 20 e 96b LADI\", \"answer_aliases\": [\"art. 20 e 96b\", \"articoli 20 e 96b LADI\", \"art. 20, 96b LADI\"], \"near_miss_answers\": [\"art. 20 LADI\", \"art. 96b LADI\", \"art. 19 LPGA e art. 20 LADI\"], \"evidence\": \"(art. 19 LPGA; art. 20 e 96b LADI)\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2025-11-01\", \"paragraph\": \"\", \"de\": {\"outdated_answer\": \"Art. 20, 96b und 97a AVIG\", \"evidence\": \"(Art. 19 ATSG; Art. 20, 96b und 97a AVIG)\"}, \"fr\": {\"outdated_answer\": \"art. 20, 96b et 97a LACI\", \"evidence\": \"(art. 19 LPGA; art. 20, 96b et 97a LACI)\"}, \"it\": {\"outdated_answer\": \"art. 20, 96b e 97a LADI\", \"evidence\": \"(art. 19 LPGA; art. 20, 96b e 97a LADI)\"}}]}}",
+ "reasoning_chars": 8270,
+ "usage": {
+  "prompt_tokens": 1610,
+  "completion_tokens": 3547,
+  "total_tokens": 5157,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2109,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 61.0,
+ "attempts": 1,
+ "generated_at": "2026-10-04",
+ "settings": {
+  "max_tokens": 24000,
+  "reasoning_effort": "medium",
+  "temperature": 0.3
+ }
+}

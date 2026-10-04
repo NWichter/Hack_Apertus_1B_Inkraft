@@ -1,0 +1,38 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"EOG\", \"article_id\": \"art_16_k\", \"paragraph\": \"4\", \"domain\": \"eo_alv\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Welche Bedingung muss für die Ausrichtung der zusätzlichen Taggelder vorliegen?\", \"answer\": \"Wird der Urlaub tageweise bezogen\", \"answer_aliases\": [\"Wird der Urlaub tageweise bezogen,\", \"Wird der Urlaub tageweise bezogen, so werden pro 5 entschädigte Tage zusätzlich 2 Taggelder ausgerichtet.\"], \"near_miss_answers\": [\"so werden pro 5 entschädigte Tage zusätzlich 2 Taggelder ausgerichtet\", \"5 entschädigte Tage\", \"2 Taggelder\"], \"evidence\": \"Wird der Urlaub tageweise bezogen\"}, \"fr\": {\"question\": \"Quelle condition doit être remplie pour le versement des indemnités journalières supplémentaires?\", \"answer\": \"Si le congé est pris sous la forme de journées\", \"answer_aliases\": [\"Si le congé est pris sous la forme de journées,\", \"Si le congé est pris sous la forme de journées, l’autre parent touche, pour cinq jours indemnisés, deux indemnités journalières supplémentaires.\"], \"near_miss_answers\": [\"l’autre parent touche, pour cinq jours indemnisés, deux indemnités journalières supplémentaires\", \"cinq jours indemnisés\", \"deux indemnités journalières supplémentaires\"], \"evidence\": \"Si le congé est pris sous la forme de journées\"}, \"it\": {\"question\": \"Quale condizione deve essere soddisfatta per l'erogazione delle indennità giornaliere supplementari?\", \"answer\": \"Se il congedo è preso in giorni\", \"answer_aliases\": [\"Se il congedo è preso in giorni,\", \"Se il congedo è preso in giorni, sono versate due indennità giornaliere supplementari ogni cinque giorni indennizzati.\"], \"near_miss_answers\": [\"sono versate due indennità giornaliere supplementari ogni cinque giorni indennizzati\", \"cinque giorni indennizzati\", \"due indennità giornaliere supplementari\"], \"evidence\": \"Se il congedo è preso in giorni\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-01-01\", \"paragraph\": \"4\", \"de\": {\"outdated_answer\": \"Bezieht er den Urlaub tageweise\", \"evidence\": \"Bezieht er den Urlaub tageweise\"}, \"fr\": {\"outdated_answer\": \"Si le congé est pris sous la forme de journées\", \"evidence\": \"Si le congé est pris sous la forme de journées\"}, \"it\": {\"outdated_answer\": \"Se il congedo è preso in giorni\", \"evidence\": \"Se il congedo è preso in giorni\"}}]}}",
+ "reasoning_chars": 96673,
+ "usage": {
+  "prompt_tokens": 1620,
+  "completion_tokens": 23117,
+  "total_tokens": 24737,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 24451,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 572.4,
+ "attempts": 1,
+ "generated_at": "2026-10-04",
+ "settings": {
+  "max_tokens": 24000,
+  "reasoning_effort": "medium",
+  "temperature": 0.3
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"IVV\", \"article_id\": \"art_39_f\", \"paragraph\": \"2\", \"domain\": \"iv_el\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"currency_chf\", \"answer_normalized\": {\"value\": 52.95, \"unit\": \"CHF\"}, \"de\": {\"question\": \"Wie hoch ist der Assistenzbeitrag pro Stunde, wenn die Assistenzperson für die benötigten Hilfeleistungen in den Bereichen nach Artikel 39c Buchstaben e–g über besondere Qualifikationen verfügen muss?\", \"answer\": \"52.95 Franken pro Stunde\", \"answer_aliases\": [\"52.95 Franken\", \"CHF 52.95 pro Stunde\", \"52.95 Franken/Stunde\"], \"near_miss_answers\": [\"53.00 Franken pro Stunde\", \"52.90 Franken pro Stunde\", \"52.95 Franken pro Tag\"], \"evidence\": \"Muss die Assistenzperson für die benötigten Hilfeleistungen in den Bereichen nach Artikel 39c Buchstaben e–g über besondere Qualifikationen verfügen, so beträgt der Assistenzbeitrag 52.95 Franken pro Stunde.\"}, \"fr\": {\"question\": \"Quel est le montant de la contribution d’assistance par heure lorsque l’assistant doit disposer de qualifications particulières pour fournir les prestations requises dans les domaines prévus à l’art. 39c, let. e à g ?\", \"answer\": \"52 fr. 95 par heure\", \"answer_aliases\": [\"52.95 francs par heure\", \"CHF 52.95 par heure\", \"52 fr. 95/heure\"], \"near_miss_answers\": [\"53 fr. par heure\", \"52 fr. 90 par heure\", \"52 fr. 95 par jour\"], \"evidence\": \"Si l’assistant doit disposer de qualifications particulières pour fournir les prestations requises dans les domaines prévus à l’art. 39c, let. e à g, le montant de la contribution d’assistance s’élève à 52 fr. 95 par heure.\"}, \"it\": {\"question\": \"A quanto ammonta il contributo per l’assistenza all’ora se le prestazioni di aiuto necessarie negli ambiti di cui all’articolo 39c lettere e–g richiedono qualifiche particolari dell’assistente?\", \"answer\": \"52.95 franchi all’ora\", \"answer_aliases\": [\"52.95 franchi/ora\", \"CHF 52.95 all’ora\", \"52.95 franchi l’ora\"], \"near_miss_answers\": [\"53.00 franchi all’ora\", \"52.90 franchi all’ora\", \"52.95 franchi al giorno\"], \"evidence\": \"Se le prestazioni di aiuto necessarie negli ambiti di cui all’articolo 39c lettere e–g richiedono qualifiche particolari dell’assistente, il contributo per l’assistenza ammonta a 52.95 franchi all’ora.\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2024-01-01\", \"paragraph\": \"2\", \"de\": {\"outdated_answer\": \"51.50 Franken pro Stunde\", \"evidence\": \"Muss die Assistenzperson für die benötigten Hilfeleistungen in den Bereichen nach Artikel 39c Buchstaben e–g über besondere Qualifikationen verfügen, so beträgt der Assistenzbeitrag 51.50 Franken pro Stunde.\"}, \"fr\": {\"outdated_answer\": \"51 fr. 50 par heure\", \"evidence\": \"Si l’assistant doit disposer de qualifications particulières pour fournir les prestations requises dans les domaines prévus à l’art. 39c, let. e à g, le montant de la contribution d’assistance s’élève à 51 fr. 50 par heure.\"}, \"it\": {\"outdated_answer\": \"51.50 franchi all’ora\", \"evidence\": \"Se le prestazioni di aiuto necessarie negli ambiti di cui all’articolo 39c lettere e–g richiedono qualifiche particolari dell’assistente, il contributo per l’assistenza ammonta a 51.50 franchi all’ora.\"}}]}}",
+ "reasoning_chars": 11318,
+ "usage": {
+  "prompt_tokens": 1775,
+  "completion_tokens": 4096,
+  "total_tokens": 5871,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2892,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 138.3,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

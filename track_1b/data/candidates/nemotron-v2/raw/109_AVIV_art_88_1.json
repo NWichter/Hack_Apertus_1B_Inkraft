@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\":\"AVIV\",\"article_id\":\"art_88\",\"paragraph\":\"1\",\"domain\":\"eo_alv\",\"question_type\":\"temporal\",\"register\":\"professional\",\"difficulty_prior\":2,\"answer_type\":\"text\",\"answer_normalized\":null,\"de\":{\"question\":\"Welche Kostenart wird in der Aufzählung der anrechenbaren Bildungsmassnahmenkosten zwischen Projektierungs- und Raumkosten genannt?\",\"answer\":\"Fremdkapital\",\"answer_aliases\":[\"Fremdkapital-\",\"die erforderlichen Projektierungs‑, Fremdkapital- und Raumkosten\"],\"near_miss_answers\":[\"Projektierungskosten\",\"Raumkosten\",\"Transportkosten\"],\"evidence\":\"die erforderlichen Projektierungs‑, Fremdkapital- und Raumkosten.\"},\"fr\":{\"question\":\"Quel frais est mentionné entre les frais de projet et les frais de locaux dans l'énumération des frais à prendre en compte pour les mesures de formation?\",\"answer\":\"capital étranger\",\"answer_aliases\":[\"de capital étranger\",\"les frais nécessaires de projet, de capital étranger et de locaux\"],\"near_miss_answers\":[\"frais de projet\",\"frais de locaux\",\"frais de transport\"],\"evidence\":\"les frais nécessaires de projet, de capital étranger et de locaux.\"},\"it\":{\"question\":\"Quale voce di costo è indicata tra le spese di progettazione e le spese per i locali nell'elenco delle spese computabili per i provvedimenti di formazione?\",\"answer\":\"capitale di terzi\",\"answer_aliases\":[\"per il capitale di terzi\",\"le spese necessarie per la progettazione, per il capitale di terzi e per i locali\"],\"near_miss_answers\":[\"spese di progettazione\",\"spese per i locali\",\"spese di trasporto\"],\"evidence\":\"le spese necessarie per la progettazione, per il capitale di terzi e per i locali.\"},\"temporal\":{\"versions\":[{\"version_date\":\"2025-11-01\",\"paragraph\":\"1\",\"de\":{\"outdated_answer\":\"Kapital\",\"evidence\":\"die erforderlichen Projektierungs‑, Kapital- und Raumkosten.\"},\"fr\":{\"outdated_answer\":\"capital investi\",\"evidence\":\"les frais nécessaires de projet, de capital investi et de locaux.\"},\"it\":{\"outdated_answer\":\"capitale investito\",\"evidence\":\"le spese necessarie per la progettazione, per il capitale investito e per i locali.\"}}]}}",
+ "reasoning_chars": 18274,
+ "usage": {
+  "prompt_tokens": 2366,
+  "completion_tokens": 5286,
+  "total_tokens": 7652,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 4658,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 118.5,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"EOG\", \"article_id\": \"art_20_a\", \"paragraph\": \"1\", \"domain\": \"eo_alv\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Nach welchen Artikeln des BZG haften die Kantone in der Erwerbsersatzordnung für Schäden durch Missachtung von Vorschriften beim Aufgebot für Zivilschutzeinsätze?\", \"answer\": \"Artikel 46 Absatz 2 und 49–53 BZG\", \"answer_aliases\": [\"Art. 46 Abs. 2 und 49–53 BZG\", \"Artikel 46 Absatz 2 und 49–53 BZG\"], \"near_miss_answers\": [\"Artikel 53 Absatz 3 BZG\"], \"evidence\": \"durch die Missachtung von Vorschriften beim Aufgebot für Zivilschutzeinsätze nach den Artikeln 46 Absatz 2 und 49–53 BZG\"}, \"fr\": {\"question\": \"En vertu de quels articles de la LPPCi les cantons sont-ils responsables dans le régime des allocations pour perte de gain pour les dommages dus au non-respect des prescriptions relatives à la convocation à des interventions de protection civile ?\", \"answer\": \"art. 46, al. 2, et 49 à 53 LPPCi\", \"answer_aliases\": [\"art. 46, al. 2, et 49 à 53 LPPCi\", \"articles 46, alinéa 2, et 49 à 53 LPPCi\"], \"near_miss_answers\": [\"art. 53, al. 3 LPPCi\"], \"evidence\": \"non-respect des prescriptions relatives à la convocation à des interventions de la protection civile au sens des art. 46, al. 2, et 49 à 53 LPPCi\"}, \"it\": {\"question\": \"In forza di quali articoli della LPPC i Cantoni rispondono nell'ordinamento delle indennità per perdita di guadagno per i danni dovuti all'inosservanza di prescrizioni concernenti la chiamata per interventi di protezione civile?\", \"answer\": \"articoli 46 capoverso 2 e 49–53 LPPC\", \"answer_aliases\": [\"art. 46 cpv. 2 e 49–53 LPPC\", \"articoli 46 capoverso 2 e 49–53 LPPC\"], \"near_miss_answers\": [\"articolo 53 capoverso 3 LPPC\"], \"evidence\": \"per l’inosservanza di prescrizioni concernenti la chiamata per interventi della protezione civile ai sensi degli articoli 46 capoverso 2 e 49–53 LPPC\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2024-07-01\", \"paragraph\": \"1\", \"de\": {\"outdated_answer\": \"Artikel 27 Absatz 2, 27a Absatz 1 Buchstabe b und 33–36 BZG\", \"evidence\": \"durch die Missachtung von Vorschriften beim Aufgebot für Zivilschutzeinsätze nach den Artikeln 27 Absatz 2, 27a Absatz 1 Buchstabe b und 33–36 BZG\"}, \"fr\": {\"outdated_answer\": \"art. 27, al. 2, 27a, al. 1, let. b, et 33 à 36 LPPCi\", \"evidence\": \"non-respect des prescriptions relatives à la convocation à des interventions de la protection civile au sens des art. 27, al. 2, 27a, al. 1, let. b, et 33 à 36 LPPCi\"}, \"it\": {\"outdated_answer\": \"articoli 27 capoverso 2, 27a capoverso 1 lettera b e 33–36 LPPC\", \"evidence\": \"per l’inosservanza di prescrizioni concernenti la chiamata per interventi della protezione civile ai sensi degli articoli 27 capoverso 2, 27a capoverso 1 lettera b e 33–36 LPPC\"}}]}}",
+ "reasoning_chars": 11437,
+ "usage": {
+  "prompt_tokens": 2259,
+  "completion_tokens": 4628,
+  "total_tokens": 6887,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2938,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 129.4,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

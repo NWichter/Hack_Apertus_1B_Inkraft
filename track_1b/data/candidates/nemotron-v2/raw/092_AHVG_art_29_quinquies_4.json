@@ -1,0 +1,38 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"AHVG\", \"article_id\": \"art_29_quinquies\", \"paragraph\": \"4\", \"domain\": \"ahv\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"yes_no\", \"answer_normalized\": null, \"de\": {\"question\": \"Ist die vorbezogene Rente nach Artikel 40 von der Teilung der Einkommen zwischen Ehegatten ausgenommen?\", \"answer\": \"Ja\", \"answer_aliases\": [\"Ja\", \"Ja.\"], \"near_miss_answers\": [\"Keine Ausnahme\", \"Nur für Altersrente\"], \"evidence\": \"mit Ausnahme der vorbezogenen Rente (Art. 40)\"}, \"fr\": {\"question\": \"Le versement anticipé de la rente selon l'article 40 est-il exclu du partage des revenus entre époux?\", \"answer\": \"Oui\", \"answer_aliases\": [\"Oui\", \"Oui.\"], \"near_miss_answers\": [\"Aucune exception\", \"Seulement pour la rente de vieillesse\"], \"evidence\": \"exception faite des cas dans lesquels il y a versement anticipé de la rente (art. 40)\"}, \"it\": {\"question\": \"La riscossione anticipata della rendita secondo l'articolo 40 è esclusa dalla ripartizione dei redditi tra coniugi?\", \"answer\": \"Sì\", \"answer_aliases\": [\"Sì\", \"Sì.\"], \"near_miss_answers\": [\"Nessuna eccezione\", \"Solo per la rendita di vecchiaia\"], \"evidence\": \"fatto salvo il caso della riscossione anticipata della rendita secondo l'articolo 40\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-09-01\", \"paragraph\": \"4\", \"de\": {\"outdated_answer\": \"Nein\", \"evidence\": \"aus der Zeit zwischen dem 1. Januar nach Vollendung des 20. Altersjahres und dem 31. Dezember vor Eintritt des Versicherungsfalles beim Ehegatten, welcher zuerst rentenberechtigt wird; und\"}, \"fr\": {\"outdated_answer\": \"Non\", \"evidence\": \"entre le 1er janvier de l’année suivant celle durant laquelle la personne a atteint 20 ans révolus et le 31 décembre qui précède l’ouverture du droit à la rente du conjoint qui le premier peut y prétendre et\"}, \"it\": {\"outdated_answer\": \"No\", \"evidence\": \"tra il 1° gennaio che segue il compimento dei 20 anni e il 31 dicembre che precede l’insorgere dell’evento assicurato da parte del coniuge che ha per primo diritto alla rendita; e\"}}]}}",
+ "reasoning_chars": 48098,
+ "usage": {
+  "prompt_tokens": 2151,
+  "completion_tokens": 12603,
+  "total_tokens": 14754,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 12131,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 401.7,
+ "attempts": 1,
+ "generated_at": "2026-10-04",
+ "settings": {
+  "max_tokens": 24000,
+  "reasoning_effort": "medium",
+  "temperature": 0.3
+ }
+}

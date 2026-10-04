@@ -1,0 +1,141 @@
+  1 AHVV art_19  ok
+  3 AHVV art_21 2 ok
+  2 AHVV art_21 1 ok
+  4 AHVV art_28 1 ok
+  5 AHVV art_34_d 1 ok
+  6 ELV art_16_a 3 ok
+  7 IVV art_1_bis 2 ok
+  8 IVV art_39_f 1 ok
+ 10 AHVG art_103  ok
+  9 IVV art_39_f 2 ok
+ 14 AHVV art_52_b 1 ok
+ 13 AHVV art_16 2 ok
+ 15 AHVV art_60 1 ok
+ 11 AHVG art_29_bis 2 FAIL unparseable
+ 17 BVV2 art_60_a 3 FAIL unparseable
+ 16 BVV2 art_1 3 ok
+ 12 AHVG art_5 3 FAIL unparseable
+ 19 IVV art_26_bis 3 ok
+ 20 KVV art_105_k 4 ok
+ 18 BVV3 art_3_a 3 ok
+ 22 KVV art_106_c 5 ok
+ 21 KVV art_105_k 5 ok
+ 24 BVV2 art_12  ok
+ 23 ELG art_11 3 FAIL unparseable
+ 25 AHVG art_29_bis 5 FAIL unparseable
+ 26 AHVG art_29_quinquies 3 ok
+ 27 AHVG art_29_septies 6 ok
+ 28 AHVG art_29_sexies 3 FAIL unparseable
+ 29 AHVG art_64 2bis ok
+ 31 AHVV art_161 4 ok
+ 30 AHVG art_91 2 ok
+ 33 AVIG art_8 1 ok
+ 32 AHVV art_225 3 ok
+ 34 AVIV art_27 3 FAIL unparseable
+ 37 ELV art_26 1 ok
+ 35 AVIV art_30  FAIL unparseable
+ 38 ELV art_26 2 ok
+ 39 EOG art_16_i 3 ok
+ 36 AVIV art_6 1ter FAIL unparseable
+ 40 EOG art_20_a 1 ok
+ 43 KVG art_52 3 ok
+ 41 IVG art_22_bis 4 ok
+ 42 KVG art_25_a 1 ok
+ 45 KVV art_30_a 7 ok
+ 47 OR art_362 1 ok
+ 44 KVG art_53 1 FAIL unparseable
+ 46 KVV art_71 4 FAIL unparseable
+ 49 AVIV art_10_d 2 FAIL unparseable
+ 50 OR art_329_g 2 ok
+ 48 UVG art_22  FAIL unparseable
+ 53 IVG art_42_septies 3 ok
+ 52 AHVG art_24_b  FAIL unparseable
+ 51 UVG art_31 4 FAIL unparseable
+ 54 KVV art_106_c 1 FAIL unparseable
+ 55 AVIG art_37  FAIL unparseable
+ 57 OR art_329_b 3 ok
+ 58 KVG art_4_a  ok
+ 56 BVG art_8 3 ok
+ 60 AHVG art_39 4 ok
+ 63 EOG art_16_m 2 ok
+ 61 AVIV art_60 2 ok
+ 59 AHVV art_54_bis 2 FAIL unparseable
+ 62 ELG art_23 1 ok
+ 67 AHVV art_142 2 ok
+ 65 AHVV art_34_d 2 FAIL unparseable
+ 68 AHVV art_53 1 FAIL unparseable
+ 64 KVV art_22 3 FAIL unparseable
+ 66 AHVG art_20 2 ok
+ 70 AVIV art_6 5 ok
+ 69 AHVV art_99 5 FAIL unparseable
+ 72 EOG art_16_j 3 ok
+ 73 OR art_335_c 3 ok
+ 71 BVV2 art_14 1 FAIL unparseable
+ 76 AHVG art_18 3 ok
+ 77 AHVG art_35 3 ok
+ 75 KVG art_21 2 FAIL unparseable
+ 74 ELV art_25 1 FAIL unparseable
+ 81 AVIV art_86 1 ok
+ 79 AHVV art_55_ter 4 ok
+ 78 AHVG art_39 3 ok
+ 80 AVIV art_30 3 FAIL unparseable
+ 84 ELV art_15_a  ok
+ 82 BVG art_52_e 1bis FAIL unparseable
+ 83 BVG art_79_b 2 FAIL unparseable
+ 85 KVG art_25 2 FAIL unparseable
+ 87 KVV art_28 6 ok
+ 86 KVG art_56 5 FAIL unparseable
+ 88 KVV art_65_d 3 ok
+ 89 KVV art_65_e 2 ok
+ 93 AVIG art_66 2bis ok
+ 90 ELV art_25 2 FAIL unparseable
+ 91 KVV art_71_a 1 ok
+ 92 AHVG art_29_quinquies 4 FAIL unparseable
+ 95 BVG art_17 1 ok
+ 96 BVV2 art_24_a 2 ok
+ 94 AVIV art_41_b 1 ok
+ 99 KVG art_25_a 2 ok
+ 98 EOG art_16_k 4 FAIL unparseable
+100 KVV art_50_c  ok
+101 AHVG art_58 2 FAIL unparseable
+ 97 EOG art_16_k 3 FAIL unparseable
+102 AHVG art_12 3 ok
+104 AHVV art_222 3 ok
+103 AHVV art_174 1bis ok
+105 AVIG art_27 3 ok
+106 AVIG art_27 5 ok
+107 AVIV art_122 2 ok
+109 AVIV art_88 1 ok
+110 AVIV art_95 2 ok
+112 BVV3 art_7 3 ok
+113 EOG art_16_m 1 ok
+108 AVIV art_78  FAIL unparseable
+111 AVIV art_97 1 FAIL unparseable
+114 EOG art_1_a 4bis ok
+117 KVG art_41 2ter ok
+115 IVG art_74 2 ok
+116 KVG art_18 2quater ok
+118 KVG art_49_a 3bis ok
+122 KVV art_94 2 ok
+119 KVG art_65_a  FAIL unparseable
+120 KVG art_66_a 1 ok
+121 KVV art_28 9 FAIL unparseable
+123 AHVG art_18 2 ok
+124 ELG art_5 3 FAIL unparseable
+126 AHVV art_125  ok
+129 AHVV art_180 2 ok
+127 AHVV art_137  ok
+125 AHVG art_63 3 ok
+132 BVG art_33_a 2 ok
+128 AHVV art_161 2 ok
+131 BVG art_24 3 ok
+133 BVG art_34_a 4 ok
+134 BVG art_36 1 ok
+130 BVG art_10 2 ok
+137 BVV2 art_24_a 1 ok
+135 BVG art_41 3 ok
+139 BVV2 art_26_b 1 ok
+136 BVG art_47_a 4 ok
+138 BVV2 art_26_a 1 ok
+140 IVV art_81_bis 1 ok
+97/140 parsed, 97 cores, 291 rows, 6034 s

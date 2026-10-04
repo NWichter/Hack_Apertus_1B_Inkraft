@@ -1,0 +1,38 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"KVG\", \"article_id\": \"art_65_a\", \"paragraph\": \"\", \"domain\": \"kvg_insured\", \"question_type\": \"temporal\", \"register\": \"lay\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Nennen Sie den letzten Staat in der Aufzählung der Wohnstaaten für Prämienverbilligungen in der obligatorischen Krankenpflegeversicherung.\", \"answer\": \"Vereinigtes Königreich\", \"answer_aliases\": [\"das Vereinigte Königreich\", \"Vereinigtes Königreich (UK)\"], \"near_miss_answers\": [\"Norwegen\", \"Island\", \"EU-Mitgliedstaat\"], \"evidence\": \"im Vereinigten Königreich\"}, \"fr\": {\"question\": \"Nommez le dernier État énuméré parmi les États de résidence pour les réductions de primes dans l'assurance-maladie obligatoire.\", \"answer\": \"Royaume-Uni\", \"answer_aliases\": [\"le Royaume-Uni\", \"Royaume-Uni (UK)\"], \"near_miss_answers\": [\"Norvège\", \"Islande\", \"État membre de l'UE\"], \"evidence\": \"au Royaume-Uni\"}, \"it\": {\"question\": \"Indichi l'ultimo Stato nell'elenco degli Stati di residenza per le riduzioni dei premi nell'assicurazione malattia obbligatoria.\", \"answer\": \"Regno Unito\", \"answer_aliases\": [\"il Regno Unito\", \"Regno Unito (UK)\"], \"near_miss_answers\": [\"Norvegia\", \"Islanda\", \"Stato membro dell'UE\"], \"evidence\": \"nel Regno Unito\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2024-01-01\", \"paragraph\": \"\", \"de\": {\"outdated_answer\": \"Norwegen\", \"evidence\": \"in Island oder in Norwegen\"}, \"fr\": {\"outdated_answer\": \"Norvège\", \"evidence\": \"en Islande ou en Norvège\"}, \"it\": {\"outdated_answer\": \"Norvegia\", \"evidence\": \"in Islanda o in Norvegia\"}}]}}",
+ "reasoning_chars": 16858,
+ "usage": {
+  "prompt_tokens": 2549,
+  "completion_tokens": 4813,
+  "total_tokens": 7362,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 4302,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 119.2,
+ "attempts": 1,
+ "generated_at": "2026-10-04",
+ "settings": {
+  "max_tokens": 24000,
+  "reasoning_effort": "medium",
+  "temperature": 0.3
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "content": "{\"rewrite\": false, \"reason\": \"An open short-answer question testing the same rule is not possible in all three languages without violating the constraint that the question must not contain any word of the answer. The only viable short literal answers from the paragraph are the contribution names (Pflegebeitrag, contribution aux soins, contributo alle cure), but the required naming of the health insurance branch in plain words (obligatorische Krankenpflegeversicherung, assurance obligatoire des soins, assicurazione obbligatoria delle cure medico-sanitarie) shares words with those answers (Pflege/Pflegebeitrag, soins, cure). Alternative answers like the IV branch name would require the question to name that branch, giving away the answer.\"}",
+ "usage": {
+  "prompt_tokens": 1232,
+  "completion_tokens": 12336,
+  "total_tokens": 13568,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 12636,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 271.1,
+ "generated_at": "2026-10-04"
+}

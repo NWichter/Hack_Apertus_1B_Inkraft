@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"AHVV\", \"article_id\": \"art_180\", \"paragraph\": \"2\", \"domain\": \"ahv\", \"question_type\": \"temporal\", \"register\": \"lay\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Wer bestimmt den Kommissär, wenn die kommissarische Kassenverwaltung nach Artikel 72b Buchstabe h AHVG angeordnet wird?\", \"answer\": \"das BSV\", \"answer_aliases\": [\"Bundesamt für Sozialversicherungen\", \"BSV\"], \"near_miss_answers\": [\"der Kanton\", \"die Gründerverbände\", \"das oberste Kassenorgan\"], \"evidence\": \"das BSV nach Anhörung des Kantons beziehungsweise der Gründerverbände den Kommissär\"}, \"fr\": {\"question\": \"Qui désigne le commissaire lorsque la gestion par commissaire est ordonnée en application de l'art. 72b, let. h, LAVS?\", \"answer\": \"l'OFAS\", \"answer_aliases\": [\"Office fédéral des assurances sociales\", \"OFAS\"], \"near_miss_answers\": [\"le canton\", \"les associations fondatrices\", \"l'organe supérieur\"], \"evidence\": \"l'OFAS, après avoir consulté le canton ou les associations fondatrices, désigne le commissaire\"}, \"it\": {\"question\": \"Chi nomina il commissario quando si ordina l'amministrazione della cassa di compensazione da parte di un commissario in applicazione dell'articolo 72b lettera h LAVS?\", \"answer\": \"l'UFAS\", \"answer_aliases\": [\"Ufficio federale delle assicurazioni sociali\", \"UFAS\"], \"near_miss_answers\": [\"il Cantone\", \"le associazioni fondatrici\", \"l'organo superiore della cassa\"], \"evidence\": \"l'UFAS nomina il commissario previa consultazione del Cantone o delle associazioni fondatrici\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-09-01\", \"paragraph\": \"2\", \"de\": {\"outdated_answer\": \"Das Departement\", \"evidence\": \"Das Departement bestimmt nach Anhörung des Kantons bzw. der Gründerverbände den Kommissär\"}, \"fr\": {\"outdated_answer\": \"Le DFI\", \"evidence\": \"Le DFI, après avoir consulté le canton ou les associations fondatrices, désigne le commissaire\"}, \"it\": {\"outdated_answer\": \"Il DFI\", \"evidence\": \"Il DFI nomina il commissario previa consultazione del Cantone o delle associazioni fondatrici\"}}]}}",
+ "reasoning_chars": 4989,
+ "usage": {
+  "prompt_tokens": 1838,
+  "completion_tokens": 1901,
+  "total_tokens": 3739,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 1286,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 43.5,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

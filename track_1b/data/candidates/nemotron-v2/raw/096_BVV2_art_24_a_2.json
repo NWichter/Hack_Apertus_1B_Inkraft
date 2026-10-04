@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"BVV2\", \"article_id\": \"art_24_a\", \"paragraph\": \"2\", \"domain\": \"bvg_3a\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Welcher Begriff bezeichnet das Alter, ab dem die Vorsorgeeinrichtung Leistungen in gleichem Umfang weiter erbringt und Leistungskürzungen nach UVG und MVG nicht ausgleichen muss?\", \"answer\": \"Referenzalter\", \"answer_aliases\": [\"Referenzalters\", \"das Referenzalter\"], \"near_miss_answers\": [\"Rentenalter\", \"ordentliches Rentenalter\", \"Pensionierungsalter\"], \"evidence\": \"Erreichen des Referenzalters\"}, \"fr\": {\"question\": \"Quel terme désigne l'âge à partir duquel l'institution de prévoyance continue de verser ses prestations dans la même mesure et ne doit pas compenser les réductions de prestations selon la LAA et la LAM?\", \"answer\": \"âge de référence\", \"answer_aliases\": [\"l'âge de référence\", \"âge de référence (réforme AVS 21)\"], \"near_miss_answers\": [\"âge de la retraite\", \"âge ordinaire de la retraite\", \"âge de pensionnement\"], \"evidence\": \"l'âge de référence\"}, \"it\": {\"question\": \"Quale termine indica l'età a partire dalla quale l'istituto di previdenza continua a fornire le prestazioni nella stessa misura e non deve compensare la riduzione delle prestazioni secondo la LAINF e la LAM?\", \"answer\": \"età di riferimento\", \"answer_aliases\": [\"l'età di riferimento\", \"età di riferimento (riforma AVS 21)\"], \"near_miss_answers\": [\"età di pensionamento\", \"età ordinaria di pensionamento\", \"età pensionabile\"], \"evidence\": \"l'età di riferimento\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-01-01\", \"paragraph\": \"2\", \"de\": {\"outdated_answer\": \"ordentliches Rentenalter\", \"evidence\": \"Erreichen des ordentlichen Rentenalters\"}, \"fr\": {\"outdated_answer\": \"âge ordinaire de la retraite\", \"evidence\": \"atteint ordinaire l'âge de la retraite\"}, \"it\": {\"outdated_answer\": \"età ordinaria di pensionamento\", \"evidence\": \"raggiungesse l'età ordinaria di pensionamento\"}}]}}",
+ "reasoning_chars": 10486,
+ "usage": {
+  "prompt_tokens": 1983,
+  "completion_tokens": 3223,
+  "total_tokens": 5206,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2698,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 65.2,
+ "attempts": 2,
+ "generated_at": "2026-10-04"
+}

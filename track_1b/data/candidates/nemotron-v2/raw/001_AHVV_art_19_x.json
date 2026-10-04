@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"AHVV\", \"article_id\": \"art_19\", \"paragraph\": \"\", \"domain\": \"ahv\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"currency_chf\", \"answer_normalized\": {\"value\": 2500, \"unit\": \"CHF\"}, \"de\": {\"question\": \"Bis zu welchem Betrag im Kalenderjahr werden Beiträge für Einkommen aus nebenberuflich selbstständiger Erwerbstätigkeit in der AHV nur auf Verlangen erhoben?\", \"answer\": \"2500 Franken\", \"answer_aliases\": [\"CHF 2500\", \"2'500 Franken\", \"2500 Franken\"], \"near_miss_answers\": [\"5000 Franken\", \"1000 Franken\"], \"evidence\": \"Vom Einkommen aus einer nebenberuflich ausgeübten selbstständigen Erwerbstätigkeit, das 2500 Franken im Kalenderjahr nicht übersteigt, werden die Beiträge nur auf Verlangen des Versicherten erhoben.\"}, \"fr\": {\"question\": \"Jusqu'à quel montant annuel les cotisations pour les revenus d'une activité indépendante exercée à titre accessoire sont-elles perçues seulement sur demande de l'assuré dans l'AVS ?\", \"answer\": \"2500 francs\", \"answer_aliases\": [\"CHF 2500\", \"2'500 francs\", \"2500 francs\"], \"near_miss_answers\": [\"5000 francs\", \"1000 francs\"], \"evidence\": \"Lorsque le revenu provenant d’une activité indépendante exercée à titre accessoire n’excède pas 2500 francs par année civile, la cotisation n’est perçue qu’à la demande de l’assuré.\"}, \"it\": {\"question\": \"Fino a quale importo annuo i contributi per il reddito da attività indipendente esercitata a titolo accessorio sono riscossi solo su richiesta dell'assicurato nell'AVS?\", \"answer\": \"2500 franchi\", \"answer_aliases\": [\"CHF 2500\", \"2'500 franchi\", \"2500 franchi\"], \"near_miss_answers\": [\"5000 franchi\", \"1000 franchi\"], \"evidence\": \"Se il reddito proveniente da attività indipendenti esercitate a titolo accessorio non supera 2500 franchi per anno civile, il contributo è percepito soltanto a richiesta dell’assicurato.\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2024-01-01\", \"paragraph\": \"\", \"de\": {\"outdated_answer\": \"2300 Franken\", \"evidence\": \"Vom Einkommen aus einer nebenberuflich ausgeübten selbstständigen Erwerbstätigkeit, das 2300 Franken im Kalenderjahr nicht übersteigt, werden die Beiträge nur auf Verlangen des Versicherten erhoben.\"}, \"fr\": {\"outdated_answer\": \"2300 francs\", \"evidence\": \"Lorsque le revenu provenant d’une activité indépendante exercée à titre accessoire n’excède pas 2300 francs par année civile, la cotisation n’est perçue qu’à la demande de l’assuré.\"}, \"it\": {\"outdated_answer\": \"2300 franchi\", \"evidence\": \"Se il reddito proveniente da attività indipendenti esercitate a titolo accessorio non supera 2300 franchi per anno civile, il contributo è percepito soltanto a richiesta dell’assicurato.\"}}]}}",
+ "reasoning_chars": 9945,
+ "usage": {
+  "prompt_tokens": 1716,
+  "completion_tokens": 3387,
+  "total_tokens": 5103,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2529,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 151.5,
+ "attempts": 2,
+ "generated_at": "2026-10-04"
+}

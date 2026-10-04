@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"AHVV\", \"article_id\": \"art_52_b\", \"paragraph\": \"1\", \"domain\": \"ahv\", \"question_type\": \"procedural\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Was geschieht in der AHV mit Beitragszeiten vor dem 1. Januar nach Vollendung des 20. Altersjahres, wenn die Beitragsdauer nicht vollständig ist?\", \"answer\": \"zur Auffüllung späterer Beitragslücken angerechnet\", \"answer_aliases\": [\"zur Auffüllung späterer Beitragslücken\", \"werden zur Auffüllung späterer Beitragslücken angerechnet\"], \"near_miss_answers\": [\"zur Auffüllung früherer Beitragslücken angerechnet\", \"nicht angerechnet\", \"nur für Lücken vor dem 20. Altersjahr angerechnet\"], \"evidence\": \"werden Beitragszeiten vor dem 1. Januar nach Vollendung des 20. Altersjahres zur Auffüllung späterer Beitragslücken angerechnet\"}, \"fr\": {\"question\": \"Que se passe-t-il dans l'AVS avec les périodes de cotisations avant le 1er janvier qui suit l'âge de 20 ans, lorsque la durée de cotisations n'est pas complète?\", \"answer\": \"prises en compte pour combler les lacunes de cotisations apparues depuis cette date\", \"answer_aliases\": [\"pour combler les lacunes de cotisations apparues depuis cette date\", \"sont prises en compte pour combler les lacunes de cotisations apparues depuis cette date\"], \"near_miss_answers\": [\"pour combler les lacunes de cotisations antérieures\", \"non prises en compte\", \"uniquement pour les lacunes avant 20 ans\"], \"evidence\": \"sont prises en compte pour combler les lacunes de cotisations apparues depuis cette date\"}, \"it\": {\"question\": \"Cosa succede nell'AVS con i periodi di contribuzione precedenti il 1° gennaio che segue il compimento dei 20 anni, quando la durata di contribuzione è incompleta?\", \"answer\": \"computati ai fini di colmare successive lacune contributive\", \"answer_aliases\": [\"ai fini di colmare successive lacune contributive\", \"sono computati ai fini di colmare successive lacune contributive\"], \"near_miss_answers\": [\"ai fini di colmare precedenti lacune contributive\", \"non computati\", \"solo per lacune prima dei 20 anni\"], \"evidence\": \"sono computati ai fini di colmare successive lacune contributive\"}, \"temporal\": null}",
+ "reasoning_chars": 15944,
+ "usage": {
+  "prompt_tokens": 1653,
+  "completion_tokens": 4829,
+  "total_tokens": 6482,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 4084,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 92.9,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

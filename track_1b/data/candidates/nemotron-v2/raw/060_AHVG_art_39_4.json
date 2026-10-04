@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"AHVG\", \"article_id\": \"art_39\", \"paragraph\": \"4\", \"domain\": \"ahv\", \"question_type\": \"procedural\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"In welchem Intervall überprüft der Bundesrat die Erhöhungsfaktoren für den Aufschub der Altersrente?\", \"answer\": \"mindestens alle zehn Jahre\", \"answer_aliases\": [\"mindestens alle 10 Jahre\", \"alle zehn Jahre\"], \"near_miss_answers\": [\"alle fünf Jahre\", \"jährlich\", \"alle zwanzig Jahre\"], \"evidence\": \"Er überprüft die Erhöhungsfaktoren mindestens alle zehn Jahre.\"}, \"fr\": {\"question\": \"À quelle fréquence le Conseil fédéral vérifie-t-il les taux d’augmentation pour l’ajournement de la rente de vieillesse ?\", \"answer\": \"tous les dix ans au moins\", \"answer_aliases\": [\"tous les 10 ans au moins\", \"tous les dix ans\"], \"near_miss_answers\": [\"tous les cinq ans\", \"chaque année\", \"tous les vingt ans\"], \"evidence\": \"Il vérifie les taux d’augmentation tous les dix ans au moins.\"}, \"it\": {\"question\": \"Con quale frequenza il Consiglio federale riesamina le aliquote d’aumento per il differimento della rendita di vecchiaia ?\", \"answer\": \"almeno ogni dieci anni\", \"answer_aliases\": [\"almeno ogni 10 anni\", \"ogni dieci anni\"], \"near_miss_answers\": [\"ogni cinque anni\", \"ogni anno\", \"ogni venti anni\"], \"evidence\": \"Riesamina le aliquote d’aumento almeno ogni dieci anni.\"}, \"temporal\": null}",
+ "reasoning_chars": 14475,
+ "usage": {
+  "prompt_tokens": 1839,
+  "completion_tokens": 4062,
+  "total_tokens": 5901,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 3703,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 93.9,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

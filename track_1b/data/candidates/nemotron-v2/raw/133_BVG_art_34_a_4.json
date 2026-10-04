@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"BVG\", \"article_id\": \"art_34_a\", \"paragraph\": \"4\", \"domain\": \"bvg_3a\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Wie wird das Alter bezeichnet, bei dessen Erreichen die Kürzung anderer Leistungen nicht auszugleichen ist?\", \"answer\": \"Referenzalter\", \"answer_aliases\": [\"Referenzalter\", \"Referenzalters\", \"des Referenzalters\"], \"near_miss_answers\": [\"Rentenalter\", \"Pensionsalter\", \"gesetzliches Rentenalter\"], \"evidence\": \"beim Erreichen des Referenzalters\"}, \"fr\": {\"question\": \"Quel terme désigne l'âge dont l'atteinte entraîne une réduction d'autres prestations qui ne doit pas être compensée ?\", \"answer\": \"âge de référence\", \"answer_aliases\": [\"âge de référence\", \"l'âge de référence\"], \"near_miss_answers\": [\"âge de la retraite\", \"âge de pension\", \"âge légal de la retraite\"], \"evidence\": \"à l'âge de référence\"}, \"it\": {\"question\": \"Quale termine indica l'età il cui raggiungimento comporta una riduzione di altre prestazioni che non deve essere compensata?\", \"answer\": \"età di riferimento\", \"answer_aliases\": [\"età di riferimento\", \"l'età di riferimento\"], \"near_miss_answers\": [\"età di pensionamento\", \"età pensionabile\", \"età legale di pensionamento\"], \"evidence\": \"al raggiungimento dell'età di riferimento\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-09-26\", \"paragraph\": \"4\", \"de\": {\"outdated_answer\": \"ordentliches Rentenalter\", \"evidence\": \"beim Erreichen des ordentlichen Rentenalters\"}, \"fr\": {\"outdated_answer\": \"âge ordinaire de la retraite\", \"evidence\": \"à l'âge ordinaire de la retraite\"}, \"it\": {\"outdated_answer\": \"età ordinaria di pensionamento\", \"evidence\": \"al raggiungimento dell'età ordinaria di pensionamento\"}}]}}",
+ "reasoning_chars": 11224,
+ "usage": {
+  "prompt_tokens": 1703,
+  "completion_tokens": 3213,
+  "total_tokens": 4916,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2863,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 93.6,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

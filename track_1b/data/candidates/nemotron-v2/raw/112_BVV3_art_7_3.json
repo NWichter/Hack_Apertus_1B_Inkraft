@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"BVV3\", \"article_id\": \"art_7\", \"paragraph\": \"3\", \"domain\": \"bvg_3a\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Nach Erreichen welches Alters können Beiträge an anerkannte Vorsorgeformen längstens bis fünf Jahre geleistet werden?\", \"answer\": \"Referenzalter\", \"answer_aliases\": [\"Referenzalter\", \"das Referenzalter\"], \"near_miss_answers\": [\"Rentenalter\", \"Pensionsalter\"], \"evidence\": \"nach Erreichen des Referenzalters\"}, \"fr\": {\"question\": \"Après l'atteinte de quel âge les cotisations à des formes reconnues de prévoyance peuvent-elles être versées jusqu’à cinq ans au plus?\", \"answer\": \"âge de référence\", \"answer_aliases\": [\"âge de référence\", \"l’âge de référence\"], \"near_miss_answers\": [\"âge de la retraite\", \"âge de la pension\"], \"evidence\": \"après l’âge de référence\"}, \"it\": {\"question\": \"Dopo il raggiungimento di quale età i contributi a forme riconosciute di previdenza possono essere versati al più tardi fino a cinque anni?\", \"answer\": \"età di riferimento\", \"answer_aliases\": [\"età di riferimento\", \"l’età di riferimento\"], \"near_miss_answers\": [\"età della rendita\", \"età di pensione\"], \"evidence\": \"dopo il raggiungimento dell’età di riferimento\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2021-01-01\", \"paragraph\": \"3\", \"de\": {\"outdated_answer\": \"ordentliches Rentenalter der AHV\", \"evidence\": \"nach Erreichen des ordentlichen Rentenalters der AHV (Art. 21 Abs. 1 AHVG)\"}, \"fr\": {\"outdated_answer\": \"âge ordinaire de la retraite de l’AVS\", \"evidence\": \"après l’âge ordinaire de la retraite de l’AVS (art. 21, al. 1, LAVS)\"}, \"it\": {\"outdated_answer\": \"età ordinaria della rendita AVS\", \"evidence\": \"dopo il raggiungimento dell’età ordinaria della rendita AVS (art. 21 cpv. 1 LAVS)\"}}]}}",
+ "reasoning_chars": 16433,
+ "usage": {
+  "prompt_tokens": 1673,
+  "completion_tokens": 4789,
+  "total_tokens": 6462,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 4231,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 89.9,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

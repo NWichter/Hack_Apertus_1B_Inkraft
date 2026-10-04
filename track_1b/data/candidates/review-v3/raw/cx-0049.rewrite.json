@@ -1,0 +1,29 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "content": "{\"rewrite\": true, \"question_type\": \"procedural\", \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Wer räumt in der AHV den Versicherten die Möglichkeit ein, auf die Ausnahme von der Beitragsbemessung für Erwerbseinkommen nach dem Referenzalter zu verzichten?\", \"answer\": \"Der Bundesrat\", \"answer_aliases\": [\"Bundesrat\", \"der Bundesrat\"], \"near_miss_answers\": [\"Das Parlament\", \"Die Ausgleichskasse\"], \"evidence\": \"der Bundesrat räumt den Versicherten die Möglichkeit ein\"}, \"fr\": {\"question\": \"Qui donne aux assurés la possibilité de renoncer à l’exception du calcul des cotisations pour le revenu d’activité lucrative après l’âge de référence dans l’AVS?\", \"answer\": \"Le Conseil fédéral\", \"answer_aliases\": [\"Conseil fédéral\", \"le Conseil fédéral\"], \"near_miss_answers\": [\"Le Parlement\", \"La caisse de compensation\"], \"evidence\": \"le Conseil fédéral donne aux assurés la possibilité de renoncer à l’exception du calcul des cotisations\"}, \"it\": {\"question\": \"Chi prevede per gli assicurati la possibilità di chiedere che i redditi da attività lucrativa dopo l’età di riferimento siano inclusi nel calcolo nell’AVS?\", \"answer\": \"Il Consiglio federale\", \"answer_aliases\": [\"Consiglio federale\", \"il Consiglio federale\"], \"near_miss_answers\": [\"Il Parlamento\", \"La cassa di compensazione\"], \"evidence\": \"il Consiglio federale prevede la possibilità per gli assicurati di chiedere che tali redditi siano inclusi nel calcolo\"}}",
+ "usage": {
+  "prompt_tokens": 1392,
+  "completion_tokens": 2075,
+  "total_tokens": 3467,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 1757,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 35.3,
+ "generated_at": "2026-10-04"
+}

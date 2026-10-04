@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"AHVV\", \"article_id\": \"art_16\", \"paragraph\": \"2\", \"domain\": \"ahv\", \"question_type\": \"procedural\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Was gilt zusätzlich für die Festsetzung und Ermittlung der Beiträge nach Erreichen des Referenzalters?\", \"answer\": \"Artikel 6quater Absätze 4–6 sinngemäss\", \"answer_aliases\": [\"Art. 6quater Abs. 4–6 sinngemäss\", \"Artikel 6quater Absätze 4–6\"], \"near_miss_answers\": [\"Artikel 6quater Absätze 1–3\", \"Artikel 6 Absatz 2 AHVG\", \"Artikel 6quater Absätze 1–3 zur Anwendung\"], \"evidence\": \"Für die Festsetzung und Ermittlung der Beiträge nach Erreichen des Referenzalters gilt zusätzlich Artikel 6quater Absätze 4–6 sinngemäss.\"}, \"fr\": {\"question\": \"Quelle disposition s’applique en outre par analogie pour la fixation et la détermination des cotisations dues après l’âge de référence?\", \"answer\": \"L’art. 6quater, al. 4 à 6\", \"answer_aliases\": [\"L’article 6quater, alinéas 4 à 6\", \"Art. 6quater al. 4–6\"], \"near_miss_answers\": [\"L’art. 6quater, al. 1 à 3\", \"L’art. 6, al. 2, LAVS\", \"L’art. 6quater, al. 1 à 3, s’applique\"], \"evidence\": \"L’art. 6quater, al. 4 à 6, s’applique également par analogie à la fixation et à la détermination des cotisations dues après l’âge de référence.\"}, \"it\": {\"question\": \"Cosa si applica inoltre per analogia per la fissazione e la determinazione dei contributi dovuti dopo il raggiungimento dell’età di riferimento?\", \"answer\": \"l’articolo 6quater capoversi 4–6\", \"answer_aliases\": [\"l'art. 6quater cpv. 4–6\", \"articolo 6quater capoversi 4–6\"], \"near_miss_answers\": [\"l’articolo 6quater capoversi 1–3\", \"l’articolo 6 capoverso 2 LAVS\", \"l’articolo 6quater capoversi 1–3 si applica\"], \"evidence\": \"Per la fissazione e la determinazione dei contributi dovuti dopo il raggiungimento dell’età di riferimento si applica inoltre per analogia l’articolo 6quater capoversi 4–6.\"}, \"temporal\": null}",
+ "reasoning_chars": 17072,
+ "usage": {
+  "prompt_tokens": 1666,
+  "completion_tokens": 5471,
+  "total_tokens": 7137,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 4441,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 131.9,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

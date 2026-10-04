@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"BVG\", \"article_id\": \"art_10\", \"paragraph\": \"2\", \"domain\": \"bvg_3a\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 1, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Welcher Begriff bezeichnet in der beruflichen Vorsorge das Alter, bei dessen Erreichen die obligatorische Versicherungspflicht endet?\", \"answer\": \"Referenzalter\", \"answer_aliases\": [\"Referenzalter\", \"das Referenzalter\"], \"near_miss_answers\": [\"Rentenalter\", \"Pensionierungsalter\", \"AHV-Alter\"], \"evidence\": \"das Referenzalter erreicht wird (Art. 13)\"}, \"fr\": {\"question\": \"Quel terme désigne dans la prévoyance professionnelle le seuil marquant la fin de l’obligation d’assurance?\", \"answer\": \"âge de référence\", \"answer_aliases\": [\"âge de référence\", \"l’âge de référence\"], \"near_miss_answers\": [\"âge de la retraite\", \"âge AVS\", \"âge de la prévoyance\"], \"evidence\": \"à l’âge de référence (art. 13)\"}, \"it\": {\"question\": \"Quale termine indica nella previdenza professionale la soglia che pone fine all’obbligo assicurativo?\", \"answer\": \"età di riferimento\", \"answer_aliases\": [\"età di riferimento\", \"l’età di riferimento\"], \"near_miss_answers\": [\"età di pensionamento\", \"età AVS\", \"età pensionabile\"], \"evidence\": \"è raggiunta l’età di riferimento (art. 13)\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-09-26\", \"paragraph\": \"2\", \"de\": {\"outdated_answer\": \"ordentliches Rentenalter\", \"evidence\": \"das ordentliche Rentenalter erreicht wird (Art. 13)\"}, \"fr\": {\"outdated_answer\": \"âge ordinaire de la retraite\", \"evidence\": \"à l’âge ordinaire de la retraite (art. 13)\"}, \"it\": {\"outdated_answer\": \"età ordinaria di pensionamento\", \"evidence\": \"è raggiunta l’età ordinaria di pensionamento (art. 13)\"}}]}}",
+ "reasoning_chars": 24887,
+ "usage": {
+  "prompt_tokens": 1936,
+  "completion_tokens": 7089,
+  "total_tokens": 9025,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 6397,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 218.1,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

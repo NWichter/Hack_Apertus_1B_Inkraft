@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"AHVG\", \"article_id\": \"art_91\", \"paragraph\": \"2\", \"domain\": \"ahv\", \"question_type\": \"temporal\", \"register\": \"lay\", \"difficulty_prior\": 1, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Was verlangt das Gesetz für den Erlass einer Ordnungsbusse in der AHV?\", \"answer\": \"Die Bussenverfügung ist zu begründen\", \"answer_aliases\": [\"Bussenverfügung ist zu begründen\", \"Die Bussenverfügung ist zu begründen.\"], \"near_miss_answers\": [\"Die Bussenverfügung ist zuzustellen\", \"Die Bussenverfügung kann mündlich ergehen\", \"Die Bussenverfügung bedarf keiner Form\"], \"evidence\": \"Die Bussenverfügung ist zu begründen.\"}, \"fr\": {\"question\": \"Que la loi exige-t-elle pour la délivrance d'une amende administrative dans l'AVS?\", \"answer\": \"Le prononcé d’amende doit être motivé\", \"answer_aliases\": [\"Le prononcé d’amende doit être motivé.\", \"Prononcé d’amende doit être motivé\"], \"near_miss_answers\": [\"Le prononcé d’amende est à notifier\", \"Le prononcé d’amende peut être oral\", \"Le prononcé d’amende ne requiert pas de forme\"], \"evidence\": \"Le prononcé d’amende doit être motivé.\"}, \"it\": {\"question\": \"Cosa richiede la legge per l'emissione di una multa amministrativa nell'AVS?\", \"answer\": \"La decisione di multa deve indicare i motivi\", \"answer_aliases\": [\"La decisione di multa deve indicare i motivi.\", \"Decisione di multa deve indicare i motivi\"], \"near_miss_answers\": [\"La decisione di multa deve essere notificata\", \"La decisione di multa può essere orale\", \"La decisione di multa non richiede forma\"], \"evidence\": \"La decisione di multa deve indicare i motivi.\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2024-01-01\", \"paragraph\": \"2\", \"de\": {\"outdated_answer\": \"2Die Bussenverfügung ist zu begründen\", \"evidence\": \"2Die Bussenverfügung ist zu begründen.\"}, \"fr\": {\"outdated_answer\": \"Le prononcé d’amende doit être motivé\", \"evidence\": \"Le prononcé d’amende doit être motivé.\"}, \"it\": {\"outdated_answer\": \"La decisione di multa deve indicare i motivi\", \"evidence\": \"La decisione di multa deve indicare i motivi.\"}}]}}",
+ "reasoning_chars": 30639,
+ "usage": {
+  "prompt_tokens": 1501,
+  "completion_tokens": 8491,
+  "total_tokens": 9992,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 7828,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 235.8,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

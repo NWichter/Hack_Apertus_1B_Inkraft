@@ -1,0 +1,29 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "content": "{\"rewrite\": true, \"question_type\": \"procedural\", \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Was steht Versicherten im System des Tiers garant gegenüber dem Versicherer zu?\", \"answer\": \"Anspruch auf Rückerstattung\", \"answer_aliases\": [\"Rückerstattung\", \"Anspruch auf Rückerstattung (System des Tiers garant)\"], \"near_miss_answers\": [\"Anspruch auf Vergütung\", \"Anspruch auf Abtretung\", \"Anspruch auf Leistung\"], \"evidence\": \"Die Versicherten haben in diesem Fall gegenüber dem Versicherer einen Anspruch auf Rückerstattung\"}, \"fr\": {\"question\": \"Qu’obtient l’assuré de son assureur dans le système du tiers garant?\", \"answer\": \"le droit d’être remboursé\", \"answer_aliases\": [\"le remboursement\", \"le droit d’être remboursé par son assureur\"], \"near_miss_answers\": [\"droit à la rémunération\", \"droit de cession\", \"droit à la prestation\"], \"evidence\": \"L’assuré a, dans ce cas, le droit d’être remboursé par son assureur\"}, \"it\": {\"question\": \"Cosa può ottenere l’assicurato dal suo assicuratore nel sistema del terzo garante?\", \"answer\": \"diritto di essere rimborsato\", \"answer_aliases\": [\"il rimborso\", \"diritto di essere rimborsato dal suo assicuratore\"], \"near_miss_answers\": [\"diritto alla rimunerazione\", \"diritto di cessione\", \"diritto alla prestazione\"], \"evidence\": \"l’assicurato ha diritto di essere rimborsato dal suo assicuratore\"}}",
+ "usage": {
+  "prompt_tokens": 1349,
+  "completion_tokens": 3616,
+  "total_tokens": 4965,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 3273,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 154.6,
+ "generated_at": "2026-10-04"
+}

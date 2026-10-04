@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"AVIG\", \"article_id\": \"art_66\", \"paragraph\": \"2bis\", \"domain\": \"eo_alv\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"duration\", \"answer_normalized\": {\"value\": 12, \"unit\": \"months\"}, \"de\": {\"question\": \"Wie lange beträgt die maximale Anspruchsdauer auf Einarbeitungszuschüsse für Versicherte über 50 Jahre?\", \"answer\": \"längstens 12 Monate\", \"answer_aliases\": [\"12 Monate\", \"zwölf Monate\", \"längstens zwölf Monate\", \"maximal 12 Monate\"], \"near_miss_answers\": [\"6 Monate\", \"24 Monate\", \"unbegrenzt\"], \"evidence\": \"längstens zwölf Monate\"}, \"fr\": {\"question\": \"Quelle est la durée maximale du droit aux allocations d\\u2019initiation au travail pour les assur\\u00e9s d\\u00e8s 50 ans r\\u00e9volus ?\", \"answer\": \"12 mois au plus\", \"answer_aliases\": [\"douze mois au plus\", \"12 mois maximum\", \"au plus 12 mois\"], \"near_miss_answers\": [\"6 mois\", \"24 mois\", \"illimit\\u00e9\"], \"evidence\": \"douze mois au plus\"}, \"it\": {\"question\": \"Qual \\u00e8 la durata massima del diritto agli assegni per il periodo d\\u2019introduzione per gli assicurati che hanno pi\\u00f9 di 50 anni?\", \"answer\": \"12 mesi al massimo\", \"answer_aliases\": [\"dodici mesi al massimo\", \"massimo 12 mesi\", \"12 mesi massimi\"], \"near_miss_answers\": [\"6 mesi\", \"24 mesi\", \"illimitato\"], \"evidence\": \"12 mesi al massimo\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2025-09-27\", \"paragraph\": \"2bis\", \"de\": {\"outdated_answer\": \"12 Monate\", \"evidence\": \"zw\\u00f6lf Monate\"}, \"fr\": {\"outdated_answer\": \"12 mois\", \"evidence\": \"douze mois\"}, \"it\": {\"outdated_answer\": \"12 mesi\", \"evidence\": \"12 mesi\"}}]}}",
+ "reasoning_chars": 15737,
+ "usage": {
+  "prompt_tokens": 1622,
+  "completion_tokens": 4632,
+  "total_tokens": 6254,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 4040,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 100.9,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

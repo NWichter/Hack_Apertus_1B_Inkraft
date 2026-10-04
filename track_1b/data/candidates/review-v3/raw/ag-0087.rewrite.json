@@ -1,0 +1,29 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "content": "{\"rewrite\": true, \"question_type\": \"procedural\", \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"In der obligatorischen Krankenversicherung: Was kann für Leistungen, die über das erforderliche Mass hinausgehen, verweigert werden?\", \"answer\": \"die Vergütung\", \"answer_aliases\": [\"Vergütung\", \"die Vergütung\"], \"near_miss_answers\": [\"die Rückforderung\", \"der Versicherer\", \"die versicherte Person\"], \"evidence\": \"Für Leistungen, die über dieses Mass hinausgehen, kann die Vergütung verweigert werden.\"}, \"fr\": {\"question\": \"Dans l'assurance-maladie obligatoire: quelle rémunération peut être refusée pour les prestations dépassant la mesure requise?\", \"answer\": \"la rémunération\", \"answer_aliases\": [\"rémunération\", \"la rémunération\"], \"near_miss_answers\": [\"la restitution\", \"l'assureur\", \"l'assuré\"], \"evidence\": \"La rémunération des prestations qui dépassent cette limite peut être refusée.\"}, \"it\": {\"question\": \"Nell'assicurazione malattie obbligatoria: cosa può essere rifiutato per le prestazioni che superano la misura necessaria?\", \"answer\": \"la rimunerazione\", \"answer_aliases\": [\"rimunerazione\", \"la rimunerazione\"], \"near_miss_answers\": [\"la restituzione\", \"l'assicuratore\", \"l'assicurato\"], \"evidence\": \"La rimunerazione può essere rifiutata per le prestazioni eccedenti questo limite.\"}}",
+ "usage": {
+  "prompt_tokens": 1403,
+  "completion_tokens": 2722,
+  "total_tokens": 4125,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2414,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 53.1,
+ "generated_at": "2026-10-04"
+}

@@ -1,0 +1,29 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "content": "{\"rewrite\": true, \"question_type\": \"procedural\", \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Wann sind Behandlungs- oder Eingliederungsmassnahmen in den Sozialversicherungen nicht zumutbar?\", \"answer\": \"Gefahr für Leben und Gesundheit\", \"answer_aliases\": [\"eine Gefahr für Leben und Gesundheit\", \"Gefahr für Leben und Gesundheit darstellen\"], \"near_miss_answers\": [\"Fehlende schriftliche Mahnung\", \"Keine Bedenkzeit\", \"Keine wesentliche Verbesserung der Erwerbsfähigkeit\"], \"evidence\": \"Behandlungs- oder Eingliederungsmassnahmen, die eine Gefahr für Leben und Gesundheit darstellen, sind nicht zumutbar.\"}, \"fr\": {\"question\": \"Quand les traitements ou mesures de réadaptation ne peuvent-ils pas être exigés dans les assurances sociales?\", \"answer\": \"danger pour la vie ou pour la santé\", \"answer_aliases\": [\"un danger pour la vie ou pour la santé\", \"danger pour la vie ou pour la santé présenter\"], \"near_miss_answers\": [\"Absence de mise en demeure écrite\", \"Pas de délai de réflexion\", \"Pas d'amélioration notable de la capacité de travail\"], \"evidence\": \"Les traitements et les mesures de réadaptation qui présentent un danger pour la vie ou pour la santé ne peuvent être exigés.\"}, \"it\": {\"question\": \"Quando non si possono esigere cure o provvedimenti d’integrazione nelle assicurazioni sociali?\", \"answer\": \"pericolo per la vita o per la salute\", \"answer_aliases\": [\"un pericolo per la vita o per la salute\", \"pericolo per la vita o per la salute rappresentano\"], \"near_miss_answers\": [\"Mancata diffida scritta\", \"Nessun termine di riflessione\", \"Nessun miglioramento della capacità di lavoro\"], \"evidence\": \"Non si possono esigere cure e provvedimenti d’integrazione che rappresentano un pericolo per la vita o per la salute.\"}}",
+ "usage": {
+  "prompt_tokens": 1494,
+  "completion_tokens": 4007,
+  "total_tokens": 5501,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 3615,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 113.9,
+ "generated_at": "2026-10-04"
+}

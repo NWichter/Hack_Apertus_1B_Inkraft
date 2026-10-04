@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"KVG\", \"article_id\": \"art_52\", \"paragraph\": \"3\", \"domain\": \"kvg_billing\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Nach welchem Artikel kann der Tarif für im Praxislaboratorium vorgenommene Analysen vereinbart werden?\", \"answer\": \"Artikel 46\", \"answer_aliases\": [\"Art. 46\", \"Artikel 46\"], \"near_miss_answers\": [\"Artikel 48\", \"Artikel 47\", \"Artikel 46 und 47\"], \"evidence\": \"für die der Tarif nach Artikel 46 vereinbart werden kann\"}, \"fr\": {\"question\": \"Selon quel article le tarif pour les analyses effectuées dans le laboratoire du cabinet médical peut-il être convenu ?\", \"answer\": \"l'art. 46\", \"answer_aliases\": [\"article 46\", \"l'article 46\"], \"near_miss_answers\": [\"l'art. 48\", \"l'art. 47\", \"les art. 46 et 47\"], \"evidence\": \"pour lesquelles le tarif peut être convenu conformément à l'art. 46\"}, \"it\": {\"question\": \"Secondo quale articolo la tariffa per le analisi effettuate nel laboratorio dello studio medico può essere stabilita ?\", \"answer\": \"l'articolo 46\", \"answer_aliases\": [\"articolo 46\", \"art. 46\"], \"near_miss_answers\": [\"l'articolo 48\", \"l'articolo 47\", \"gli articoli 46 e 47\"], \"evidence\": \"per le quali la tariffa può essere stabilita secondo l'articolo 46\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2025-07-01\", \"paragraph\": \"3\", \"de\": {\"outdated_answer\": \"Artikel 46 und 48\", \"evidence\": \"für die der Tarif nach den Artikeln 46 und 48 festgesetzt werden kann\"}, \"fr\": {\"outdated_answer\": \"art. 46 et 48\", \"evidence\": \"pour lesquelles le tarif peut être fixé conformément aux art. 46 et 48\"}, \"it\": {\"outdated_answer\": \"gli articoli 46 e 48\", \"evidence\": \"per le quali la tariffa può essere stabilita secondo gli articoli 46 e 48\"}}, {\"version_date\": \"2023-09-01\", \"paragraph\": \"3\", \"de\": {\"outdated_answer\": \"Artikel 46 und 48\", \"evidence\": \"für die der Tarif nach den Artikeln 46 und 48 festgesetzt werden kann\"}, \"fr\": {\"outdated_answer\": \"art. 46 et 48\", \"evidence\": \"pour lesquelles le tarif peut être fixé conformément aux art. 46 et 48\"}, \"it\": {\"outdated_answer\": \"gli articoli 46 e 48\", \"evidence\": \"per le quali la tariffa può essere stabilita secondo gli articoli 46 e 48\"}}]}}",
+ "reasoning_chars": 14371,
+ "usage": {
+  "prompt_tokens": 2756,
+  "completion_tokens": 5044,
+  "total_tokens": 7800,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 3655,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 121.1,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

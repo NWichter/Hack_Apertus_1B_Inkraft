@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"IVG\", \"article_id\": \"art_74\", \"paragraph\": \"2\", \"domain\": \"iv_el\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Wie wird das Alter bezeichnet, bei dessen Erreichen die Beiträge an Organisationen der privaten Invalidenhilfe weiterhin ausgerichtet werden?\", \"answer\": \"Referenzalter nach Artikel 21 Absatz 1 AHVG\", \"answer_aliases\": [\"Referenzalter nach Art. 21 Abs. 1 AHVG\", \"Referenzalter gemäß Artikel 21 Absatz 1 AHVG\"], \"near_miss_answers\": [\"Referenzalter\", \"Rentenalter\"], \"evidence\": \"Referenzalter nach Artikel 21 Absatz 1 AHVG\"}, \"fr\": {\"question\": \"Quel terme désigne l’âge dont l’atteinte entraîne la poursuite du versement des subventions aux organisations d’aide privée aux invalides ?\", \"answer\": \"l’âge de référence fixé à l’art. 21, al. 1, LAVS\", \"answer_aliases\": [\"l’âge de référence selon l’art. 21, al. 1, LAVS\", \"l’âge de référence fixé à l’article 21, alinéa 1, LAVS\"], \"near_miss_answers\": [\"l’âge de référence\", \"l’âge de la rente AVS\"], \"evidence\": \"l’âge de référence fixé à l’art. 21, al. 1, LAVS\"}, \"it\": {\"question\": \"Come viene denominata l’età il cui raggiungimento comporta la continuazione dell’erogazione dei sussidi alle organizzazioni di assistenza privata agli invalidi?\", \"answer\": \"l’età di riferimento secondo l’articolo 21 capoverso 1 LAVS\", \"answer_aliases\": [\"l’età di riferimento secondo l’art. 21 cpv. 1 LAVS\", \"l’età di riferimento ai sensi dell’articolo 21 capoverso 1 LAVS\"], \"near_miss_answers\": [\"l’età di riferimento\", \"l’età per la rendita AVS\"], \"evidence\": \"l’età di riferimento secondo l’articolo 21 capoverso 1 LAVS\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-01-01\", \"paragraph\": \"2\", \"de\": {\"outdated_answer\": \"Rentenalter der AHV\", \"evidence\": \"Rentenalter der AHV\"}, \"fr\": {\"outdated_answer\": \"l’âge ouvrant le droit à la rente de vieillesse de l’AVS\", \"evidence\": \"l’âge ouvrant le droit à la rente de vieillesse de l’AVS\"}, \"it\": {\"outdated_answer\": \"l’età che dà diritto alla rendita AVS\", \"evidence\": \"l’età che dà diritto alla rendita AVS\"}}]}}",
+ "reasoning_chars": 21919,
+ "usage": {
+  "prompt_tokens": 1625,
+  "completion_tokens": 6514,
+  "total_tokens": 8139,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 5619,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 153.6,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

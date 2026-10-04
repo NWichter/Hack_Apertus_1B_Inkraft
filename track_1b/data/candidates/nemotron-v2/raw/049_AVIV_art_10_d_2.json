@@ -1,0 +1,38 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"AVIV\", \"article_id\": \"art_10_d\", \"paragraph\": \"2\", \"domain\": \"eo_alv\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Bis zu welchem Zeitpunkt werden die Monate gezählt, wenn in der Arbeitslosenversicherung kein Zeitraum für die freiwilligen Leistungen festgelegt wurde?\", \"answer\": \"Referenzalter nach Artikel 21 Absatz 1 AHVG\", \"answer_aliases\": [\"Referenzalter gemäss Art. 21 Abs. 1 AHVG\", \"Erreichen des Referenzalters nach Art. 21 Abs. 1 AHVG\"], \"near_miss_answers\": [\"Rentenalter 65\", \"Ende der Beitragspflicht\", \"vollendetes 64. Altersjahr\"], \"evidence\": \"bis zum Erreichen des Referenzalters nach Artikel 21 Absatz 1 des Bundesgesetzes vom 20. Dezember 1946 über die Alters- und Hinterlassenenversicherung (AHVG)\"}, \"fr\": {\"question\": \"Jusqu'à quel moment les mois sont-ils comptés si aucune période n'a été fixée pour les prestations volontaires dans l'assurance-chômage?\", \"answer\": \"âge de référence fixé à l'art. 21, al. 1, LAVS\", \"answer_aliases\": [\"âge de référence selon art. 21 al. 1 LAVS\", \"atteinte de l'âge de référence selon l'art. 21 al. 1 LAVS\"], \"near_miss_answers\": [\"âge de la retraite 65 ans\", \"fin de l'obligation de cotiser\", \"64 ans révolus\"], \"evidence\": \"l’âge de référence fixé à l’art. 21, al. 1, de la loi fédérale du 20 décembre 1946 sur l’assurance-vieillesse et survivants (LAVS)\"}, \"it\": {\"question\": \"Fino a che momento si contano i mesi se non è stato stabilito alcun periodo per le prestazioni volontarie nell'assicurazione contro la disoccupazione?\", \"answer\": \"età di riferimento secondo l'articolo 21 capoverso 1 LAVS\", \"answer_aliases\": [\"età di riferimento ai sensi dell'art. 21 cpv. 1 LAVS\", \"raggiungimento dell'età di riferimento secondo art. 21 cpv. 1 LAVS\"], \"near_miss_answers\": [\"età di pensionamento 65 anni\", \"fine dell'obbligo contributivo\", \"64 anni compiuti\"], \"evidence\": \"il raggiungimento dell’età di riferimento secondo l’articolo 21 capoverso 1 della legge federale del 20 dicembre 1946 sull’assicurazione per la vecchiaia e per i superstiti (LAVS)\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-09-01\", \"paragraph\": \"2\", \"de\": {\"outdated_answer\": \"ordentliches AHV-Rentenalter\", \"evidence\": \"bis zum Erreichen des ordentlichen AHV-Rentenalters\"}, \"fr\": {\"outdated_answer\": \"âge ordinaire de l'AVS\", \"evidence\": \"l’âge ordinaire de l’AVS\"}, \"it\": {\"outdated_answer\": \"età ordinaria che dà diritto alla rendita AVS\", \"evidence\": \"il raggiungimento dell’età ordinaria che dà diritto alla rendita AVS\"}}]}}",
+ "reasoning_chars": 18562,
+ "usage": {
+  "prompt_tokens": 1807,
+  "completion_tokens": 5922,
+  "total_tokens": 7729,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 4818,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 114.7,
+ "attempts": 1,
+ "generated_at": "2026-10-04",
+ "settings": {
+  "max_tokens": 24000,
+  "reasoning_effort": "medium",
+  "temperature": 0.3
+ }
+}

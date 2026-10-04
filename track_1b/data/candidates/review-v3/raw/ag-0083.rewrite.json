@@ -1,0 +1,29 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "content": "{\"rewrite\": true, \"question_type\": \"procedural\", \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"In der obligatorischen Krankenversicherung: Was muss der Leistungserbringer im System des Tiers payant der versicherten Person unaufgefordert übermitteln?\", \"answer\": \"eine Kopie der Rechnung\", \"answer_aliases\": [\"Kopie der Rechnung\", \"Rechnungskopie\"], \"near_miss_answers\": [\"die Rechnung\", \"eine Bestätigung\", \"keine Kopie\"], \"evidence\": \"Im System des Tiers payant muss der Leistungserbringer der versicherten Person unaufgefordert eine Kopie der Rechnung übermitteln, die an den Versicherer geht.\"}, \"fr\": {\"question\": \"Dans l'assurance-maladie obligatoire: Que doit transmettre le fournisseur de prestations à l'assuré sans demande préalable dans le système du tiers payant?\", \"answer\": \"une copie de la facture\", \"answer_aliases\": [\"copie de la facture\", \"la copie de la facture\"], \"near_miss_answers\": [\"la facture\", \"une attestation\", \"rien\"], \"evidence\": \"Dans le système du tiers payant, le fournisseur de prestations est tenu de transmettre à l’assuré une copie de la facture qui est adressée à l’assureur sans que l’assuré n’ait à le demander.\"}, \"it\": {\"question\": \"Nell'assicurazione malattie obbligatoria: Cosa deve trasmettere il fornitore di prestazioni all'assicurato senza richiesta nel sistema del terzo pagante?\", \"answer\": \"una copia della fattura\", \"answer_aliases\": [\"copia della fattura\", \"la copia della fattura\"], \"near_miss_answers\": [\"la fattura\", \"un attestato\", \"nulla\"], \"evidence\": \"Nel sistema del terzo pagante il fornitore di prestazioni trasmette all’assicurato, senza che questi debba farne richiesta, una copia della fattura inviata all’assicuratore.\"}}",
+ "usage": {
+  "prompt_tokens": 1689,
+  "completion_tokens": 3178,
+  "total_tokens": 4867,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2726,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 71.6,
+ "generated_at": "2026-10-04"
+}

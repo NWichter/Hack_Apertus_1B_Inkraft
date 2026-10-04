@@ -1,0 +1,38 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"UVG\", \"article_id\": \"art_31\", \"paragraph\": \"4\", \"domain\": \"uvg_atsg\", \"question_type\": \"procedural\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Bei welcher Änderung der AHV-Rente erfolgt eine Anpassung der Komplementärrente in der Unfallversicherung?\", \"answer\": \"infolge eines Aufschubs oder Vorbezugs geändert wird\", \"answer_aliases\": [\"infolge eines Aufschubs oder Vorbezugs\", \"wenn die AHV-Rente infolge eines Aufschubs oder Vorbezugs geändert wird\"], \"near_miss_answers\": [\"Änderung des Bezügerkreises\", \"Änderung der IV-Rente\", \"erstmaliges Zusammentreffen\"], \"evidence\": \"Sie wird angepasst, wenn die AHV-Rente infolge eines Aufschubs oder Vorbezugs geändert wird oder wenn der Bezügerkreis der AHV- oder der IV-Renten geändert wird.\"}, \"fr\": {\"question\": \"Lors de quelle modification de la rente AVS une adaptation de la rente complémentaire a-t-elle lieu dans l'assurance-accidents?\", \"answer\": \"à la suite d'un ajournement ou d'un versement anticipé\", \"answer_aliases\": [\"à la suite d'un ajournement ou d'un versement anticipé\", \"lorsque la rente de l'assurance-vieillesse et survivants est modifiée à la suite d'un ajournement ou d'un versement anticipé\"], \"near_miss_answers\": [\"changement du cercle des bénéficiaires\", \"modification de la rente AI\", \"premier concours avec la rente AI\"], \"evidence\": \"Elle est adaptée lorsque la rente de l'assurance-vieillesse et survivants est modifiée à la suite d'un ajournement ou d'un versement anticipé, ou lorsque le cercle des bénéficiaires de rentes de l'assurance-vieillesse et survivants ou de l'assurance-invalidité est modifié.\"}, \"it\": {\"question\": \"In caso di quale modifica della rendita AVS viene adeguata la rendita complementare nell'assicurazione contro gli infortuni?\", \"answer\": \"in seguito a una riscossione anticipata o differita\", \"answer_aliases\": [\"in seguito a una riscossione anticipata o differita\", \"se la rendita AVS è modificata in seguito a una riscossione anticipata o differita\"], \"near_miss_answers\": [\"modifica della cerchia dei beneficiari\", \"modifica della rendita AI\", \"primo concorso con la rendita AI\"], \"evidence\": \"Viene adeguata se la rendita AVS è modificata in seguito a una riscossione anticipata o differita oppure se cambia la cerchia dei beneficiari di rendite AI o AVS.\"}, \"temporal\": null}",
+ "reasoning_chars": 51117,
+ "usage": {
+  "prompt_tokens": 2674,
+  "completion_tokens": 13739,
+  "total_tokens": 16413,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 13033,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 376.6,
+ "attempts": 1,
+ "generated_at": "2026-10-04",
+ "settings": {
+  "max_tokens": 24000,
+  "reasoning_effort": "medium",
+  "temperature": 0.3
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"KVV\", \"article_id\": \"art_28\", \"paragraph\": \"9\", \"domain\": \"kvg_billing\", \"question_type\": \"procedural\", \"register\": \"lay\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Nach welcher Vorschrift sind bestimmte Resultate von der Bereitstellung an die Vollzugsstellen ausgenommen?\", \"answer\": \"Absatz 1bis\", \"answer_aliases\": [\"Absatz 1 bis\", \"Absatz 1bis KVV\"], \"near_miss_answers\": [\"Absatz 2\", \"Absatz 1\"], \"evidence\": \"Absatz 1bis\"}, \"fr\": {\"question\": \"Selon quelle disposition certains résultats sont-ils exclus de la mise à disposition aux organes d’exécution?\", \"answer\": \"l’al. 1bis\", \"answer_aliases\": [\"al. 1bis\", \"l’al. 1 bis\"], \"near_miss_answers\": [\"al. 2\", \"al. 1\"], \"evidence\": \"l’al. 1bis\"}, \"it\": {\"question\": \"Secondo quale disposizione alcuni risultati sono esclusi dalla messa a disposizione agli organismi di esecuzione?\", \"answer\": \"capoverso 1bis\", \"answer_aliases\": [\"capoverso 1 bis\", \"capoverso 1bis KVV\"], \"near_miss_answers\": [\"capoverso 2\", \"capoverso 1\"], \"evidence\": \"capoverso 1bis\"}, \"temporal\": null}",
+ "reasoning_chars": 77232,
+ "usage": {
+  "prompt_tokens": 1830,
+  "completion_tokens": 20745,
+  "total_tokens": 22575,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 19515,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 569.5,
+ "attempts": 1,
+ "generated_at": "2026-10-04",
+ "settings": {
+  "max_tokens": 24000,
+  "reasoning_effort": "medium",
+  "temperature": 0.3
+ }
+}

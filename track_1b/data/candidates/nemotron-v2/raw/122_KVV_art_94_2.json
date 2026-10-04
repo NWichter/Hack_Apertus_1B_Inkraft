@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"KVV\", \"article_id\": \"art_94\", \"paragraph\": \"2\", \"domain\": \"kvg_billing\", \"question_type\": \"temporal\", \"register\": \"lay\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Wohin kann in der obligatorischen Krankenpflegeversicherung neben einer tieferen Franchise oder einem anderen Versicherer gewechselt werden?\", \"answer\": \"Bonusversicherung\", \"answer_aliases\": [\"Bonus-Versicherung\", \"Versicherung mit Bonus\"], \"near_miss_answers\": [\"eine höhere Franchise\", \"ein anderes Versicherungsmodell\", \"eine Standardversicherung\"], \"evidence\": \"in eine Bonusversicherung\"}, \"fr\": {\"question\": \"Vers quoi peut-on passer dans l'assurance-maladie obligatoire, outre une franchise moins élevée ou un autre assureur ?\", \"answer\": \"assurance avec bonus\", \"answer_aliases\": [\"assurance bonus\", \"assurance avec système de bonus\"], \"near_miss_answers\": [\"une franchise plus élevée\", \"un autre modèle d'assurance\", \"une assurance standard\"], \"evidence\": \"à une assurance avec bonus\"}, \"it\": {\"question\": \"A cosa si può passare nell'assicurazione malattie obbligatoria, oltre a una franchigia inferiore o a un altro assicuratore?\", \"answer\": \"assicurazione con bonus\", \"answer_aliases\": [\"assicurazione bonus\", \"assicurazione con sistema di bonus\"], \"near_miss_answers\": [\"una franchigia più alta\", \"un altro modello di assicurazione\", \"un'assicurazione standard\"], \"evidence\": \"a un'assicurazione con bonus\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2024-10-01\", \"paragraph\": \"2\", \"de\": {\"outdated_answer\": \"eine andere Versicherungsform\", \"evidence\": \"in eine andere Versicherungsform\"}, \"fr\": {\"outdated_answer\": \"une autre forme d'assurance\", \"evidence\": \"à une autre forme d'assurance\"}, \"it\": {\"outdated_answer\": \"un'altra forma di assicurazione\", \"evidence\": \"a un'altra forma di assicurazione\"}}]}}",
+ "reasoning_chars": 8366,
+ "usage": {
+  "prompt_tokens": 1806,
+  "completion_tokens": 2566,
+  "total_tokens": 4372,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2133,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 59.2,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

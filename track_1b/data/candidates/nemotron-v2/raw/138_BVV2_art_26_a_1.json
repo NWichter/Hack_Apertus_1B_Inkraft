@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"BVV2\", \"article_id\": \"art_26_a\", \"paragraph\": \"1\", \"domain\": \"bvg_3a\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Welche Bezeichnung wird in der beruflichen Vorsorge für den Zeitpunkt verwendet, vor dessen Erreichen bei einer Scheidung der Betrag für den Vorsorgeausgleich nicht verwendet werden kann, wenn eine Invalidenrente infolge Zusammentreffens mit Unfall- oder Militärversicherung gekürzt wurde?\", \"answer\": \"reglementarisches Referenzalter\", \"answer_aliases\": [\"Referenzalter\", \"reglementarisches Referenzalter\"], \"near_miss_answers\": [\"ordentliches Referenzalter\", \"gesetzliches Referenzalter\", \"koordiniertes Referenzalter\"], \"evidence\": \"vor dem Erreichen des reglementarischen Referenzalters\"}, \"fr\": {\"question\": \"Quelle désignation est utilisée dans la prévoyance professionnelle pour le moment avant l'atteinte duquel, en cas de divorce, le montant pour le partage de la prévoyance ne peut pas être utilisé, si une rente d'invalidité a été réduite en raison d'un concours de prestations de l'assurance-accidents ou de l'assurance militaire?\", \"answer\": \"âge de référence réglementaire\", \"answer_aliases\": [\"âge de référence\", \"âge de référence réglementaire\"], \"near_miss_answers\": [\"âge de référence ordinaire\", \"âge légal de référence\", \"âge de référence coordonné\"], \"evidence\": \"avant l’âge de référence réglementaire\"}, \"it\": {\"question\": \"Quale denominazione è usata nella previdenza professionale per il momento prima del raggiungimento del quale, in caso di divorzio, l'importo per il conguaglio della previdenza non può essere impiegato, se una rendita d'invalidità è stata ridotta a causa del concorso con prestazioni dell'assicurazione contro gli infortuni o dell'assicurazione militare?\", \"answer\": \"età di riferimento regolamentare\", \"answer_aliases\": [\"età di riferimento\", \"età di riferimento regolamentare\"], \"near_miss_answers\": [\"età di riferimento ordinaria\", \"età legale di riferimento\", \"età di riferimento coordinata\"], \"evidence\": \"prima del raggiungimento dell’età di riferimento regolamentare\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-01-01\", \"paragraph\": \"1\", \"de\": {\"outdated_answer\": \"reglementarisches Rentenalter\", \"evidence\": \"vor dem reglementarischen Rentenalter\"}, \"fr\": {\"outdated_answer\": \"âge réglementaire de la retraite\", \"evidence\": \"avant l'âge réglementaire de la retraite\"}, \"it\": {\"outdated_answer\": \"età di pensionamento stabilita dal regolamento\", \"evidence\": \"prima dell’età di pensionamento stabilita dal regolamento\"}}]}}",
+ "reasoning_chars": 21002,
+ "usage": {
+  "prompt_tokens": 1951,
+  "completion_tokens": 5913,
+  "total_tokens": 7864,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 5400,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 179.0,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

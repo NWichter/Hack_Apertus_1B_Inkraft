@@ -1,0 +1,1402 @@
+[
+ {
+  "act": "AHVV",
+  "article_id": "art_19",
+  "paragraph": "",
+  "previous_paragraph": "",
+  "domain": "ahv",
+  "change_kind": "amount",
+  "score": 11.0,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "AHVV",
+  "article_id": "art_21",
+  "paragraph": "1",
+  "previous_paragraph": "1",
+  "domain": "ahv",
+  "change_kind": "amount",
+  "score": 11.0,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "AHVV",
+  "article_id": "art_21",
+  "paragraph": "2",
+  "previous_paragraph": "2",
+  "domain": "ahv",
+  "change_kind": "amount",
+  "score": 11.0,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "AHVV",
+  "article_id": "art_28",
+  "paragraph": "1",
+  "previous_paragraph": "1",
+  "domain": "ahv",
+  "change_kind": "amount",
+  "score": 11.0,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "AHVV",
+  "article_id": "art_34_d",
+  "paragraph": "1",
+  "previous_paragraph": "1",
+  "domain": "ahv",
+  "change_kind": "amount",
+  "score": 11.0,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "ELV",
+  "article_id": "art_16_a",
+  "paragraph": "3",
+  "previous_paragraph": "3",
+  "domain": "iv_el",
+  "change_kind": "amount",
+  "score": 11.0,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "IVV",
+  "article_id": "art_1_bis",
+  "paragraph": "2",
+  "previous_paragraph": "2",
+  "domain": "iv_el",
+  "change_kind": "amount",
+  "score": 11.0,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "IVV",
+  "article_id": "art_39_f",
+  "paragraph": "1",
+  "previous_paragraph": "1",
+  "domain": "iv_el",
+  "change_kind": "amount",
+  "score": 11.0,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "IVV",
+  "article_id": "art_39_f",
+  "paragraph": "2",
+  "previous_paragraph": "2",
+  "domain": "iv_el",
+  "change_kind": "amount",
+  "score": 11.0,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "AHVG",
+  "article_id": "art_103",
+  "paragraph": "",
+  "previous_paragraph": "1",
+  "domain": "ahv",
+  "change_kind": "amount",
+  "score": 8.5,
+  "diff_kind": "new_paragraph"
+ },
+ {
+  "act": "AHVG",
+  "article_id": "art_29_bis",
+  "paragraph": "2",
+  "previous_paragraph": "2",
+  "domain": "ahv",
+  "change_kind": "value",
+  "score": 7.0,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "AHVG",
+  "article_id": "art_5",
+  "paragraph": "3",
+  "previous_paragraph": "3",
+  "domain": "ahv",
+  "change_kind": "value",
+  "score": 7.0,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "AHVV",
+  "article_id": "art_16",
+  "paragraph": "2",
+  "previous_paragraph": "",
+  "domain": "ahv",
+  "change_kind": "value",
+  "score": 7.0,
+  "diff_kind": "new_paragraph"
+ },
+ {
+  "act": "AHVV",
+  "article_id": "art_52_b",
+  "paragraph": "1",
+  "previous_paragraph": "",
+  "domain": "ahv",
+  "change_kind": "value",
+  "score": 7.0,
+  "diff_kind": "new_paragraph"
+ },
+ {
+  "act": "AHVV",
+  "article_id": "art_60",
+  "paragraph": "1",
+  "previous_paragraph": "1",
+  "domain": "ahv",
+  "change_kind": "value",
+  "score": 7.0,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "BVV2",
+  "article_id": "art_1",
+  "paragraph": "3",
+  "previous_paragraph": "3",
+  "domain": "bvg_3a",
+  "change_kind": "value",
+  "score": 7.0,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "BVV2",
+  "article_id": "art_60_a",
+  "paragraph": "3",
+  "previous_paragraph": "3",
+  "domain": "bvg_3a",
+  "change_kind": "value",
+  "score": 7.0,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "BVV3",
+  "article_id": "art_3_a",
+  "paragraph": "3",
+  "previous_paragraph": "3",
+  "domain": "bvg_3a",
+  "change_kind": "value",
+  "score": 7.0,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "IVV",
+  "article_id": "art_26_bis",
+  "paragraph": "3",
+  "previous_paragraph": "3",
+  "domain": "iv_el",
+  "change_kind": "value",
+  "score": 7.0,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "KVV",
+  "article_id": "art_105_k",
+  "paragraph": "4",
+  "previous_paragraph": "2",
+  "domain": "kvg_billing",
+  "change_kind": "value",
+  "score": 7.0,
+  "diff_kind": "new_paragraph"
+ },
+ {
+  "act": "KVV",
+  "article_id": "art_105_k",
+  "paragraph": "5",
+  "previous_paragraph": "3",
+  "domain": "kvg_billing",
+  "change_kind": "value",
+  "score": 7.0,
+  "diff_kind": "new_paragraph"
+ },
+ {
+  "act": "KVV",
+  "article_id": "art_106_c",
+  "paragraph": "5",
+  "previous_paragraph": "5",
+  "domain": "kvg_billing",
+  "change_kind": "value",
+  "score": 7.0,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "ELG",
+  "article_id": "art_11",
+  "paragraph": "3",
+  "previous_paragraph": "3",
+  "domain": "iv_el",
+  "change_kind": "value",
+  "score": 6.93,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "BVV2",
+  "article_id": "art_12",
+  "paragraph": "",
+  "previous_paragraph": "",
+  "domain": "bvg_3a",
+  "change_kind": "value",
+  "score": 6.3,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "AHVG",
+  "article_id": "art_29_bis",
+  "paragraph": "5",
+  "previous_paragraph": "2",
+  "domain": "ahv",
+  "change_kind": "rule_changed",
+  "score": 6.0,
+  "diff_kind": "new_paragraph"
+ },
+ {
+  "act": "AHVG",
+  "article_id": "art_29_quinquies",
+  "paragraph": "3",
+  "previous_paragraph": "3",
+  "domain": "ahv",
+  "change_kind": "rule_changed",
+  "score": 6.0,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "AHVG",
+  "article_id": "art_29_septies",
+  "paragraph": "6",
+  "previous_paragraph": "6",
+  "domain": "ahv",
+  "change_kind": "rule_changed",
+  "score": 6.0,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "AHVG",
+  "article_id": "art_29_sexies",
+  "paragraph": "3",
+  "previous_paragraph": "3",
+  "domain": "ahv",
+  "change_kind": "rule_changed",
+  "score": 6.0,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "AHVG",
+  "article_id": "art_64",
+  "paragraph": "2bis",
+  "previous_paragraph": "2bis",
+  "domain": "ahv",
+  "change_kind": "rule_changed",
+  "score": 6.0,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "AHVG",
+  "article_id": "art_91",
+  "paragraph": "2",
+  "previous_paragraph": "2",
+  "domain": "ahv",
+  "change_kind": "value",
+  "score": 6.0,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "AHVV",
+  "article_id": "art_161",
+  "paragraph": "4",
+  "previous_paragraph": "4",
+  "domain": "ahv",
+  "change_kind": "value",
+  "score": 6.0,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "AHVV",
+  "article_id": "art_225",
+  "paragraph": "3",
+  "previous_paragraph": "3",
+  "domain": "ahv",
+  "change_kind": "rule_changed",
+  "score": 6.0,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "AVIG",
+  "article_id": "art_8",
+  "paragraph": "1",
+  "previous_paragraph": "1",
+  "domain": "eo_alv",
+  "change_kind": "rule_changed",
+  "score": 6.0,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "AVIV",
+  "article_id": "art_27",
+  "paragraph": "3",
+  "previous_paragraph": "3",
+  "domain": "eo_alv",
+  "change_kind": "rule_changed",
+  "score": 6.0,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "AVIV",
+  "article_id": "art_30",
+  "paragraph": "",
+  "previous_paragraph": "",
+  "domain": "eo_alv",
+  "change_kind": "value",
+  "score": 6.0,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "AVIV",
+  "article_id": "art_6",
+  "paragraph": "1ter",
+  "previous_paragraph": "1ter",
+  "domain": "eo_alv",
+  "change_kind": "value",
+  "score": 6.0,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "ELV",
+  "article_id": "art_26",
+  "paragraph": "1",
+  "previous_paragraph": "1",
+  "domain": "iv_el",
+  "change_kind": "value",
+  "score": 6.0,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "ELV",
+  "article_id": "art_26",
+  "paragraph": "2",
+  "previous_paragraph": "2",
+  "domain": "iv_el",
+  "change_kind": "value",
+  "score": 6.0,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "EOG",
+  "article_id": "art_16_i",
+  "paragraph": "3",
+  "previous_paragraph": "3",
+  "domain": "eo_alv",
+  "change_kind": "rule_changed",
+  "score": 6.0,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "EOG",
+  "article_id": "art_20_a",
+  "paragraph": "1",
+  "previous_paragraph": "1",
+  "domain": "eo_alv",
+  "change_kind": "value",
+  "score": 6.0,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "IVG",
+  "article_id": "art_22_bis",
+  "paragraph": "4",
+  "previous_paragraph": "4",
+  "domain": "iv_el",
+  "change_kind": "rule_changed",
+  "score": 6.0,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "KVG",
+  "article_id": "art_25_a",
+  "paragraph": "1",
+  "previous_paragraph": "1",
+  "domain": "kvg_billing",
+  "change_kind": "rule_changed",
+  "score": 6.0,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "KVG",
+  "article_id": "art_52",
+  "paragraph": "3",
+  "previous_paragraph": "3",
+  "domain": "kvg_billing",
+  "change_kind": "value",
+  "score": 6.0,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "KVG",
+  "article_id": "art_53",
+  "paragraph": "1",
+  "previous_paragraph": "1",
+  "domain": "kvg_billing",
+  "change_kind": "value",
+  "score": 6.0,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "KVV",
+  "article_id": "art_30_a",
+  "paragraph": "7",
+  "previous_paragraph": "7",
+  "domain": "kvg_billing",
+  "change_kind": "value",
+  "score": 6.0,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "KVV",
+  "article_id": "art_71",
+  "paragraph": "4",
+  "previous_paragraph": "6",
+  "domain": "kvg_billing",
+  "change_kind": "value",
+  "score": 6.0,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "OR",
+  "article_id": "art_362",
+  "paragraph": "1",
+  "previous_paragraph": "2",
+  "domain": "or_illness",
+  "change_kind": "rule_changed",
+  "score": 6.0,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "UVG",
+  "article_id": "art_22",
+  "paragraph": "",
+  "previous_paragraph": "",
+  "domain": "uvg_atsg",
+  "change_kind": "rule_changed",
+  "score": 6.0,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "AVIV",
+  "article_id": "art_10_d",
+  "paragraph": "2",
+  "previous_paragraph": "2",
+  "domain": "eo_alv",
+  "change_kind": "rule_changed",
+  "score": 5.83,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "OR",
+  "article_id": "art_329_g",
+  "paragraph": "2",
+  "previous_paragraph": "2",
+  "domain": "or_illness",
+  "change_kind": "rule_changed",
+  "score": 5.83,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "UVG",
+  "article_id": "art_31",
+  "paragraph": "4",
+  "previous_paragraph": "4",
+  "domain": "uvg_atsg",
+  "change_kind": "rule_changed",
+  "score": 5.7,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "AHVG",
+  "article_id": "art_24_b",
+  "paragraph": "",
+  "previous_paragraph": "",
+  "domain": "ahv",
+  "change_kind": "rule_changed",
+  "score": 5.67,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "IVG",
+  "article_id": "art_42_septies",
+  "paragraph": "3",
+  "previous_paragraph": "3",
+  "domain": "iv_el",
+  "change_kind": "rule_changed",
+  "score": 5.67,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "KVV",
+  "article_id": "art_106_c",
+  "paragraph": "1",
+  "previous_paragraph": "1",
+  "domain": "kvg_billing",
+  "change_kind": "rule_changed",
+  "score": 5.67,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "AVIG",
+  "article_id": "art_37",
+  "paragraph": "",
+  "previous_paragraph": "",
+  "domain": "eo_alv",
+  "change_kind": "rule_changed",
+  "score": 5.63,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "BVG",
+  "article_id": "art_8",
+  "paragraph": "3",
+  "previous_paragraph": "3",
+  "domain": "bvg_3a",
+  "change_kind": "rule_changed",
+  "score": 5.63,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "OR",
+  "article_id": "art_329_b",
+  "paragraph": "3",
+  "previous_paragraph": "3",
+  "domain": "or_illness",
+  "change_kind": "rule_changed",
+  "score": 5.63,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "KVG",
+  "article_id": "art_4_a",
+  "paragraph": "",
+  "previous_paragraph": "",
+  "domain": "kvg_insured",
+  "change_kind": "rule_changed",
+  "score": 5.58,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "AHVV",
+  "article_id": "art_54_bis",
+  "paragraph": "2",
+  "previous_paragraph": "2",
+  "domain": "ahv",
+  "change_kind": "rule_changed",
+  "score": 5.5,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "AHVG",
+  "article_id": "art_39",
+  "paragraph": "4",
+  "previous_paragraph": "3",
+  "domain": "ahv",
+  "change_kind": "rule_changed",
+  "score": 5.33,
+  "diff_kind": "new_paragraph"
+ },
+ {
+  "act": "AVIV",
+  "article_id": "art_60",
+  "paragraph": "2",
+  "previous_paragraph": "2",
+  "domain": "eo_alv",
+  "change_kind": "rule_changed",
+  "score": 5.33,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "ELG",
+  "article_id": "art_23",
+  "paragraph": "1",
+  "previous_paragraph": "1",
+  "domain": "iv_el",
+  "change_kind": "rule_changed",
+  "score": 5.33,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "EOG",
+  "article_id": "art_16_m",
+  "paragraph": "2",
+  "previous_paragraph": "2",
+  "domain": "eo_alv",
+  "change_kind": "rule_changed",
+  "score": 5.33,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "KVV",
+  "article_id": "art_22",
+  "paragraph": "3",
+  "previous_paragraph": "3",
+  "domain": "kvg_billing",
+  "change_kind": "rule_changed",
+  "score": 5.32,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "AHVV",
+  "article_id": "art_34_d",
+  "paragraph": "2",
+  "previous_paragraph": "2",
+  "domain": "ahv",
+  "change_kind": "rule_changed",
+  "score": 5.18,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "AHVG",
+  "article_id": "art_20",
+  "paragraph": "2",
+  "previous_paragraph": "2",
+  "domain": "ahv",
+  "change_kind": "rule_changed",
+  "score": 5.17,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "AHVV",
+  "article_id": "art_142",
+  "paragraph": "2",
+  "previous_paragraph": "2",
+  "domain": "ahv",
+  "change_kind": "rule_changed",
+  "score": 5.17,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "AHVV",
+  "article_id": "art_53",
+  "paragraph": "1",
+  "previous_paragraph": "1",
+  "domain": "ahv",
+  "change_kind": "rule_changed",
+  "score": 5.17,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "AHVV",
+  "article_id": "art_99",
+  "paragraph": "5",
+  "previous_paragraph": "5",
+  "domain": "ahv",
+  "change_kind": "rule_changed",
+  "score": 5.17,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "AVIV",
+  "article_id": "art_6",
+  "paragraph": "5",
+  "previous_paragraph": "5",
+  "domain": "eo_alv",
+  "change_kind": "rule_changed",
+  "score": 5.17,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "BVV2",
+  "article_id": "art_14",
+  "paragraph": "1",
+  "previous_paragraph": "1",
+  "domain": "bvg_3a",
+  "change_kind": "rule_changed",
+  "score": 5.17,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "EOG",
+  "article_id": "art_16_j",
+  "paragraph": "3",
+  "previous_paragraph": "3",
+  "domain": "eo_alv",
+  "change_kind": "rule_changed",
+  "score": 5.17,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "OR",
+  "article_id": "art_335_c",
+  "paragraph": "3",
+  "previous_paragraph": "3",
+  "domain": "or_illness",
+  "change_kind": "rule_changed",
+  "score": 5.17,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "ELV",
+  "article_id": "art_25",
+  "paragraph": "1",
+  "previous_paragraph": "1",
+  "domain": "iv_el",
+  "change_kind": "rule_changed",
+  "score": 5.12,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "KVG",
+  "article_id": "art_21",
+  "paragraph": "2",
+  "previous_paragraph": "2",
+  "domain": "kvg_insured",
+  "change_kind": "rule_changed",
+  "score": 5.02,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "AHVG",
+  "article_id": "art_18",
+  "paragraph": "3",
+  "previous_paragraph": "3",
+  "domain": "ahv",
+  "change_kind": "rule_changed",
+  "score": 5.0,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "AHVG",
+  "article_id": "art_35",
+  "paragraph": "3",
+  "previous_paragraph": "3",
+  "domain": "ahv",
+  "change_kind": "rule_changed",
+  "score": 5.0,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "AHVG",
+  "article_id": "art_39",
+  "paragraph": "3",
+  "previous_paragraph": "2",
+  "domain": "ahv",
+  "change_kind": "rule_changed",
+  "score": 5.0,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "AHVV",
+  "article_id": "art_55_ter",
+  "paragraph": "4",
+  "previous_paragraph": "4",
+  "domain": "ahv",
+  "change_kind": "rule_changed",
+  "score": 5.0,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "AVIV",
+  "article_id": "art_30",
+  "paragraph": "3",
+  "previous_paragraph": "3",
+  "domain": "eo_alv",
+  "change_kind": "rule_changed",
+  "score": 5.0,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "AVIV",
+  "article_id": "art_86",
+  "paragraph": "1",
+  "previous_paragraph": "1",
+  "domain": "eo_alv",
+  "change_kind": "rule_changed",
+  "score": 5.0,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "BVG",
+  "article_id": "art_52_e",
+  "paragraph": "1bis",
+  "previous_paragraph": "1",
+  "domain": "bvg_3a",
+  "change_kind": "rule_changed",
+  "score": 5.0,
+  "diff_kind": "new_paragraph"
+ },
+ {
+  "act": "BVG",
+  "article_id": "art_79_b",
+  "paragraph": "2",
+  "previous_paragraph": "2",
+  "domain": "bvg_3a",
+  "change_kind": "rule_changed",
+  "score": 5.0,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "ELV",
+  "article_id": "art_15_a",
+  "paragraph": "",
+  "previous_paragraph": "",
+  "domain": "iv_el",
+  "change_kind": "rule_changed",
+  "score": 5.0,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "KVG",
+  "article_id": "art_25",
+  "paragraph": "2",
+  "previous_paragraph": "2",
+  "domain": "kvg_billing",
+  "change_kind": "rule_changed",
+  "score": 5.0,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "KVG",
+  "article_id": "art_56",
+  "paragraph": "5",
+  "previous_paragraph": "5",
+  "domain": "kvg_billing",
+  "change_kind": "rule_changed",
+  "score": 5.0,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "KVV",
+  "article_id": "art_28",
+  "paragraph": "6",
+  "previous_paragraph": "6",
+  "domain": "kvg_billing",
+  "change_kind": "rule_changed",
+  "score": 5.0,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "KVV",
+  "article_id": "art_65_d",
+  "paragraph": "3",
+  "previous_paragraph": "3",
+  "domain": "kvg_billing",
+  "change_kind": "rule_changed",
+  "score": 5.0,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "KVV",
+  "article_id": "art_65_e",
+  "paragraph": "2",
+  "previous_paragraph": "2",
+  "domain": "kvg_billing",
+  "change_kind": "rule_changed",
+  "score": 5.0,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "ELV",
+  "article_id": "art_25",
+  "paragraph": "2",
+  "previous_paragraph": "2",
+  "domain": "iv_el",
+  "change_kind": "rule_changed",
+  "score": 4.98,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "KVV",
+  "article_id": "art_71_a",
+  "paragraph": "1",
+  "previous_paragraph": "1",
+  "domain": "kvg_billing",
+  "change_kind": "rule_changed",
+  "score": 4.98,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "AHVG",
+  "article_id": "art_29_quinquies",
+  "paragraph": "4",
+  "previous_paragraph": "4",
+  "domain": "ahv",
+  "change_kind": "rule_changed",
+  "score": 4.83,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "AVIG",
+  "article_id": "art_66",
+  "paragraph": "2bis",
+  "previous_paragraph": "2bis",
+  "domain": "eo_alv",
+  "change_kind": "rule_changed",
+  "score": 4.83,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "AVIV",
+  "article_id": "art_41_b",
+  "paragraph": "1",
+  "previous_paragraph": "1",
+  "domain": "eo_alv",
+  "change_kind": "rule_changed",
+  "score": 4.83,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "BVG",
+  "article_id": "art_17",
+  "paragraph": "1",
+  "previous_paragraph": "1",
+  "domain": "bvg_3a",
+  "change_kind": "rule_changed",
+  "score": 4.83,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "BVV2",
+  "article_id": "art_24_a",
+  "paragraph": "2",
+  "previous_paragraph": "2",
+  "domain": "bvg_3a",
+  "change_kind": "rule_changed",
+  "score": 4.83,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "EOG",
+  "article_id": "art_16_k",
+  "paragraph": "3",
+  "previous_paragraph": "3",
+  "domain": "eo_alv",
+  "change_kind": "rule_changed",
+  "score": 4.83,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "EOG",
+  "article_id": "art_16_k",
+  "paragraph": "4",
+  "previous_paragraph": "4",
+  "domain": "eo_alv",
+  "change_kind": "rule_changed",
+  "score": 4.83,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "KVG",
+  "article_id": "art_25_a",
+  "paragraph": "2",
+  "previous_paragraph": "2",
+  "domain": "kvg_billing",
+  "change_kind": "rule_changed",
+  "score": 4.77,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "KVV",
+  "article_id": "art_50_c",
+  "paragraph": "",
+  "previous_paragraph": "",
+  "domain": "kvg_billing",
+  "change_kind": "rule_changed",
+  "score": 4.75,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "AHVG",
+  "article_id": "art_58",
+  "paragraph": "2",
+  "previous_paragraph": "2",
+  "domain": "ahv",
+  "change_kind": "rule_changed",
+  "score": 4.7,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "AHVG",
+  "article_id": "art_12",
+  "paragraph": "3",
+  "previous_paragraph": "3",
+  "domain": "ahv",
+  "change_kind": "rule_changed",
+  "score": 4.67,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "AHVV",
+  "article_id": "art_174",
+  "paragraph": "1bis",
+  "previous_paragraph": "1bis",
+  "domain": "ahv",
+  "change_kind": "rule_changed",
+  "score": 4.67,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "AHVV",
+  "article_id": "art_222",
+  "paragraph": "3",
+  "previous_paragraph": "3",
+  "domain": "ahv",
+  "change_kind": "rule_changed",
+  "score": 4.67,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "AVIG",
+  "article_id": "art_27",
+  "paragraph": "3",
+  "previous_paragraph": "3",
+  "domain": "eo_alv",
+  "change_kind": "rule_changed",
+  "score": 4.67,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "AVIG",
+  "article_id": "art_27",
+  "paragraph": "5",
+  "previous_paragraph": "5",
+  "domain": "eo_alv",
+  "change_kind": "rule_changed",
+  "score": 4.67,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "AVIV",
+  "article_id": "art_122",
+  "paragraph": "2",
+  "previous_paragraph": "2",
+  "domain": "eo_alv",
+  "change_kind": "rule_changed",
+  "score": 4.67,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "AVIV",
+  "article_id": "art_78",
+  "paragraph": "",
+  "previous_paragraph": "",
+  "domain": "eo_alv",
+  "change_kind": "rule_changed",
+  "score": 4.67,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "AVIV",
+  "article_id": "art_88",
+  "paragraph": "1",
+  "previous_paragraph": "1",
+  "domain": "eo_alv",
+  "change_kind": "rule_changed",
+  "score": 4.67,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "AVIV",
+  "article_id": "art_95",
+  "paragraph": "2",
+  "previous_paragraph": "2",
+  "domain": "eo_alv",
+  "change_kind": "rule_changed",
+  "score": 4.67,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "AVIV",
+  "article_id": "art_97",
+  "paragraph": "1",
+  "previous_paragraph": "1",
+  "domain": "eo_alv",
+  "change_kind": "rule_changed",
+  "score": 4.67,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "BVV3",
+  "article_id": "art_7",
+  "paragraph": "3",
+  "previous_paragraph": "3",
+  "domain": "bvg_3a",
+  "change_kind": "rule_changed",
+  "score": 4.67,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "EOG",
+  "article_id": "art_16_m",
+  "paragraph": "1",
+  "previous_paragraph": "1",
+  "domain": "eo_alv",
+  "change_kind": "rule_changed",
+  "score": 4.67,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "EOG",
+  "article_id": "art_1_a",
+  "paragraph": "4bis",
+  "previous_paragraph": "4bis",
+  "domain": "eo_alv",
+  "change_kind": "rule_changed",
+  "score": 4.67,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "IVG",
+  "article_id": "art_74",
+  "paragraph": "2",
+  "previous_paragraph": "2",
+  "domain": "iv_el",
+  "change_kind": "rule_changed",
+  "score": 4.67,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "KVG",
+  "article_id": "art_18",
+  "paragraph": "2quater",
+  "previous_paragraph": "2quater",
+  "domain": "kvg_insured",
+  "change_kind": "rule_changed",
+  "score": 4.67,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "KVG",
+  "article_id": "art_41",
+  "paragraph": "2ter",
+  "previous_paragraph": "2ter",
+  "domain": "kvg_billing",
+  "change_kind": "rule_changed",
+  "score": 4.67,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "KVG",
+  "article_id": "art_49_a",
+  "paragraph": "3bis",
+  "previous_paragraph": "3bis",
+  "domain": "kvg_billing",
+  "change_kind": "rule_changed",
+  "score": 4.67,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "KVG",
+  "article_id": "art_65_a",
+  "paragraph": "",
+  "previous_paragraph": "",
+  "domain": "kvg_insured",
+  "change_kind": "rule_changed",
+  "score": 4.67,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "KVG",
+  "article_id": "art_66_a",
+  "paragraph": "1",
+  "previous_paragraph": "1",
+  "domain": "kvg_insured",
+  "change_kind": "rule_changed",
+  "score": 4.67,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "KVV",
+  "article_id": "art_28",
+  "paragraph": "9",
+  "previous_paragraph": "9",
+  "domain": "kvg_billing",
+  "change_kind": "rule_changed",
+  "score": 4.67,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "KVV",
+  "article_id": "art_94",
+  "paragraph": "2",
+  "previous_paragraph": "2",
+  "domain": "kvg_billing",
+  "change_kind": "rule_changed",
+  "score": 4.67,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "AHVG",
+  "article_id": "art_18",
+  "paragraph": "2",
+  "previous_paragraph": "2",
+  "domain": "ahv",
+  "change_kind": "rule_changed",
+  "score": 4.63,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "ELG",
+  "article_id": "art_5",
+  "paragraph": "3",
+  "previous_paragraph": "3",
+  "domain": "iv_el",
+  "change_kind": "rule_changed",
+  "score": 4.54,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "AHVG",
+  "article_id": "art_63",
+  "paragraph": "3",
+  "previous_paragraph": "3",
+  "domain": "ahv",
+  "change_kind": "rule_changed",
+  "score": 4.5,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "AHVV",
+  "article_id": "art_125",
+  "paragraph": "",
+  "previous_paragraph": "",
+  "domain": "ahv",
+  "change_kind": "rule_changed",
+  "score": 4.5,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "AHVV",
+  "article_id": "art_137",
+  "paragraph": "",
+  "previous_paragraph": "",
+  "domain": "ahv",
+  "change_kind": "rule_changed",
+  "score": 4.5,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "AHVV",
+  "article_id": "art_161",
+  "paragraph": "2",
+  "previous_paragraph": "2",
+  "domain": "ahv",
+  "change_kind": "rule_changed",
+  "score": 4.5,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "AHVV",
+  "article_id": "art_180",
+  "paragraph": "2",
+  "previous_paragraph": "2",
+  "domain": "ahv",
+  "change_kind": "rule_changed",
+  "score": 4.5,
+  "diff_kind": "value_change"
+ },
+ {
+  "act": "BVG",
+  "article_id": "art_10",
+  "paragraph": "2",
+  "previous_paragraph": "2",
+  "domain": "bvg_3a",
+  "change_kind": "rule_changed",
+  "score": 4.5,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "BVG",
+  "article_id": "art_24",
+  "paragraph": "3",
+  "previous_paragraph": "3",
+  "domain": "bvg_3a",
+  "change_kind": "rule_changed",
+  "score": 4.5,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "BVG",
+  "article_id": "art_33_a",
+  "paragraph": "2",
+  "previous_paragraph": "2",
+  "domain": "bvg_3a",
+  "change_kind": "rule_changed",
+  "score": 4.5,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "BVG",
+  "article_id": "art_34_a",
+  "paragraph": "4",
+  "previous_paragraph": "4",
+  "domain": "bvg_3a",
+  "change_kind": "rule_changed",
+  "score": 4.5,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "BVG",
+  "article_id": "art_36",
+  "paragraph": "1",
+  "previous_paragraph": "1",
+  "domain": "bvg_3a",
+  "change_kind": "rule_changed",
+  "score": 4.5,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "BVG",
+  "article_id": "art_41",
+  "paragraph": "3",
+  "previous_paragraph": "3",
+  "domain": "bvg_3a",
+  "change_kind": "rule_changed",
+  "score": 4.5,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "BVG",
+  "article_id": "art_47_a",
+  "paragraph": "4",
+  "previous_paragraph": "4",
+  "domain": "bvg_3a",
+  "change_kind": "rule_changed",
+  "score": 4.5,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "BVV2",
+  "article_id": "art_24_a",
+  "paragraph": "1",
+  "previous_paragraph": "1",
+  "domain": "bvg_3a",
+  "change_kind": "rule_changed",
+  "score": 4.5,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "BVV2",
+  "article_id": "art_26_a",
+  "paragraph": "1",
+  "previous_paragraph": "1",
+  "domain": "bvg_3a",
+  "change_kind": "rule_changed",
+  "score": 4.5,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "BVV2",
+  "article_id": "art_26_b",
+  "paragraph": "1",
+  "previous_paragraph": "1",
+  "domain": "bvg_3a",
+  "change_kind": "rule_changed",
+  "score": 4.5,
+  "diff_kind": "text_change"
+ },
+ {
+  "act": "IVV",
+  "article_id": "art_81_bis",
+  "paragraph": "1",
+  "previous_paragraph": "1",
+  "domain": "iv_el",
+  "change_kind": "rule_changed",
+  "score": 4.5,
+  "diff_kind": "text_change"
+ }
+]

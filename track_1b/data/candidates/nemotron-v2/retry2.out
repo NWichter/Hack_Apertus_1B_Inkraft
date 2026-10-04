@@ -1,0 +1,19 @@
+ 74 ELV art_25 1 ok
+ 75 KVG art_21 2 ok
+ 82 BVG art_52_e 1bis ok
+ 71 BVV2 art_14 1 ok
+ 83 BVG art_79_b 2 ok
+ 90 ELV art_25 2 ok
+ 86 KVG art_56 5 ok
+ 80 AVIV art_30 3 ok
+ 85 KVG art_25 2 ok
+101 AHVG art_58 2 ok
+108 AVIV art_78  ok
+111 AVIV art_97 1 ok
+119 KVG art_65_a  ok
+ 97 EOG art_16_k 3 ok
+124 ELG art_5 3 ok
+ 92 AHVG art_29_quinquies 4 ok
+ 98 EOG art_16_k 4 ok
+121 KVV art_28 9 ok
+regenerated [71, 74, 75, 80, 82, 83, 85, 86, 90, 92, 97, 98, 101, 108, 111, 119, 121, 124]; rebuild with --build-only

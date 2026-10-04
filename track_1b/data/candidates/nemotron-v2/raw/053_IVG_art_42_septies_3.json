@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"IVG\", \"article_id\": \"art_42_septies\", \"paragraph\": \"3\", \"domain\": \"iv_el\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Welche Altersgrenze führt neben dem Vorbezug einer ganzen Altersrente zum Erlöschen des Anspruchs?\", \"answer\": \"das Referenzalter nach Artikel 21 Absatz 1 AHVG\", \"answer_aliases\": [\"Referenzalter nach Artikel 21 Absatz 1 AHVG\", \"das Referenzalter gemäss Art. 21 Abs. 1 AHVG\"], \"near_miss_answers\": [\"eine ganze Altersrente nach Artikel 40 Absatz 1 AHVG vorbezieht\", \"die Voraussetzungen nach Artikel 42quater nicht mehr erfüllt\", \"der Tod der versicherten Person\"], \"evidence\": \"in dem die versicherte Person eine ganze Altersrente nach Artikel 40 Absatz 1 AHVG vorbezieht oder das Referenzalter nach Artikel 21 Absatz 1 AHVG erreicht\"}, \"fr\": {\"question\": \"Quelle limite d’âge, outre l’anticipation d’une rente de vieillesse entière, entraîne l’extinction du droit ?\", \"answer\": \"l’âge de référence\", \"answer_aliases\": [\"l’âge de référence fixé à l’art. 21, al. 1, LAVS\", \"âge de référence selon l’article 21 LAVS\"], \"near_miss_answers\": [\"anticipe la perception de la totalité de sa rente de vieillesse\", \"ne remplit plus les conditions visées à l’art. 42quater\", \"décède\"], \"evidence\": \"anticipe la perception de la totalité de sa rente de vieillesse en vertu de l’art. 40, al. 1, LAVS, ou atteint l’âge de référence fixé à l’art. 21, al. 1, LAVS\"}, \"it\": {\"question\": \"Quale limite d’età, oltre all’anticipazione della rendita di vecchiaia intera, porta all’estinzione del diritto?\", \"answer\": \"l’età di riferimento\", \"answer_aliases\": [\"l’età di riferimento secondo l’articolo 21 capoverso 1 LAVS\", \"età di riferimento art. 21 cpv. 1 LAVS\"], \"near_miss_answers\": [\"anticipa la riscossione della totalità della rendita di vecchiaia\", \"non adempie più le condizioni di cui all’articolo 42quater\", \"decede\"], \"evidence\": \"anticipa la riscossione della totalità della rendita di vecchiaia in virtù dell’articolo 40 capoverso 1 LAVS o raggiunge l’età di riferimento secondo l’articolo 21 capoverso 1 LAVS\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-01-01\", \"paragraph\": \"3\", \"de\": {\"outdated_answer\": \"das Rentenalter\", \"evidence\": \"in dem die versicherte Person vom Rentenvorbezug nach Artikel 40 Absatz 1 AHVG Gebrauch macht oder das Rentenalter erreicht\"}, \"fr\": {\"outdated_answer\": \"l’âge de la retraite\", \"evidence\": \"a fait usage de son droit à une rente anticipée en vertu de l’art. 40, al. 1, LAVS ou a atteint l’âge de la retraite\"}, \"it\": {\"outdated_answer\": \"l’età di pensionamento\", \"evidence\": \"si avvale del diritto al godimento anticipato della rendita di vecchiaia secondo l’articolo 40 capoverso 1 LAVS o raggiunge l’età di pensionamento\"}}]}}",
+ "reasoning_chars": 24286,
+ "usage": {
+  "prompt_tokens": 1960,
+  "completion_tokens": 7569,
+  "total_tokens": 9529,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 6282,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 151.4,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

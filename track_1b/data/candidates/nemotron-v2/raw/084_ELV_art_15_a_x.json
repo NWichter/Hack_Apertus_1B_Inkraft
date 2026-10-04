@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"ELV\", \"article_id\": \"art_15_a\", \"paragraph\": \"\", \"domain\": \"iv_el\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Was wird bei einem Vorbezug der Altersrente für die Berechnung der jährlichen Ergänzungsleistung als Einnahme angerechnet?\", \"answer\": \"die ganze aufgrund des Vorbezugs gekürzte Rente\", \"answer_aliases\": [\"ganze aufgrund des Vorbezugs gekürzte Rente\", \"aufgrund des Vorbezugs gekürzte Rente\"], \"near_miss_answers\": [\"die Altersrente\", \"die jährliche Ergänzungsleistung\"], \"evidence\": \"die ganze aufgrund des Vorbezugs gekürzte Rente als Einnahme angerechnet\"}, \"fr\": {\"question\": \"Qu'est-ce qui est pris en compte comme revenu pour le calcul de la prestation complémentaire annuelle en cas de perception anticipée de la rente de vieillesse ?\", \"answer\": \"la rente entière réduite en raison de l’anticipation\", \"answer_aliases\": [\"rente entière réduite en raison de l’anticipation\", \"entière réduite en raison de l’anticipation\"], \"near_miss_answers\": [\"la rente de vieillesse\", \"la prestation complémentaire annuelle\"], \"evidence\": \"le montant de la rente entière réduite en raison de l’anticipation est pris en compte en tant que revenu\"}, \"it\": {\"question\": \"Cosa viene computato come reddito per il calcolo della prestazione complementare annua in caso di riscossione anticipata della rendita di vecchiaia ?\", \"answer\": \"l’importo della rendita intera, ridotta a causa dell’anticipazione\", \"answer_aliases\": [\"della rendita intera, ridotta a causa dell’anticipazione\", \"rendita intera, ridotta a causa dell’anticipazione\"], \"near_miss_answers\": [\"la rendita di vecchiaia\", \"la prestazione complementare annua\"], \"evidence\": \"l’importo della rendita intera, ridotta a causa dell’anticipazione è computato come reddito\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-01-01\", \"paragraph\": \"\", \"de\": {\"outdated_answer\": \"die gekürzte Rente\", \"evidence\": \"die gekürzte Rente als Einnahme angerechnet\"}, \"fr\": {\"outdated_answer\": \"la rente réduite\", \"evidence\": \"la rente réduite est pris en compte comme revenu\"}, \"it\": {\"outdated_answer\": \"la rendita ridotta\", \"evidence\": \"la rendita ridotta è computata come reddito\"}}]}}",
+ "reasoning_chars": 29300,
+ "usage": {
+  "prompt_tokens": 1748,
+  "completion_tokens": 8407,
+  "total_tokens": 10155,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 7530,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 193.9,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

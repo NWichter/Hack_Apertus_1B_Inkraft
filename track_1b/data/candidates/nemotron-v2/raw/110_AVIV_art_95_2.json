@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"AVIV\", \"article_id\": \"art_95\", \"paragraph\": \"2\", \"domain\": \"eo_alv\", \"question_type\": \"temporal\", \"register\": \"lay\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Was muss der Versicherte der kantonalen Amtsstelle beim Gesuch um einen Pendlerkostenbeitrag oder einen Beitrag an Wochenaufenthalter angeben?\", \"answer\": \"Arbeitslosenkasse\", \"answer_aliases\": [\"die von ihm gewählte Arbeitslosenkasse\", \"die Arbeitslosenkasse\"], \"near_miss_answers\": [\"kantonalen Amtsstelle\", \"Pendlerkostenbeitrag\", \"Artikel 28 Absatz 2\"], \"evidence\": \"die von ihm gewählte Arbeitslosenkasse angeben\"}, \"fr\": {\"question\": \"Que doit indiquer l'assuré à l'autorité cantonale lors de la requête en vue d'obtenir une contribution aux frais de déplacement quotidien ou aux frais de déplacement et de séjour hebdomadaires ?\", \"answer\": \"caisse de chômage\", \"answer_aliases\": [\"la caisse de chômage qu'il a choisie\", \"la caisse de chômage\"], \"near_miss_answers\": [\"l'autorité cantonale\", \"contribution aux frais de déplacement quotidien\", \"art. 28, al. 2\"], \"evidence\": \"la caisse de chômage qu'il a choisie\"}, \"it\": {\"question\": \"Cosa deve indicare l'assicurato al servizio cantonale con la domanda di un sussidio per le spese di pendolare o di un sussidio per le spese di soggiornante settimanale ?\", \"answer\": \"cassa di disoccupazione\", \"answer_aliases\": [\"la cassa di disoccupazione che ha scelto\", \"la cassa di disoccupazione\"], \"near_miss_answers\": [\"il servizio cantonale\", \"sussidio per le spese di pendolare\", \"articolo 28 capoverso 2\"], \"evidence\": \"la cassa di disoccupazione che ha scelto\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2025-11-01\", \"paragraph\": \"2\", \"de\": {\"outdated_answer\": \"Kasse\", \"evidence\": \"die von ihm gewählte Kasse angeben\"}, \"fr\": {\"outdated_answer\": \"caisse\", \"evidence\": \"la caisse qu'il a choisie\"}, \"it\": {\"outdated_answer\": \"cassa\", \"evidence\": \"la cassa che ha scelto\"}}]}}",
+ "reasoning_chars": 14304,
+ "usage": {
+  "prompt_tokens": 1927,
+  "completion_tokens": 4330,
+  "total_tokens": 6257,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 3647,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 112.3,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

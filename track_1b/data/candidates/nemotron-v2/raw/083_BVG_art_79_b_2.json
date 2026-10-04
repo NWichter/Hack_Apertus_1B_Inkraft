@@ -1,0 +1,38 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"BVG\", \"article_id\": \"art_79_b\", \"paragraph\": \"2\", \"domain\": \"bvg_3a\", \"question_type\": \"procedural\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Für welche Personengruppe regelt der Bundesrat den Einkauf neben Personen, die nie einer Vorsorgeeinrichtung angehörten?\", \"answer\": \"Personen, die eine Leistung der beruflichen Vorsorge beziehen\", \"answer_aliases\": [\"Personen, die eine Leistung der beruflichen Vorsorge beziehen oder bezogen haben\", \"Personen mit Bezug einer Leistung der beruflichen Vorsorge\"], \"near_miss_answers\": [\"Personen, die bis zum Zeitpunkt des Einkaufs noch nie einer Vorsorgeeinrichtung angehört haben\", \"Personen, die einer Vorsorgeeinrichtung angehören\", \"Personen ohne Leistungsbezug der beruflichen Vorsorge\"], \"evidence\": \"Der Bundesrat regelt den Einkauf von Personen, die: a. bis zum Zeitpunkt, in dem sie den Einkauf verlangen, noch nie einer Vorsorgeeinrichtung angehört haben; b. eine Leistung der beruflichen Vorsorge beziehen oder bezogen haben.\"}, \"fr\": {\"question\": \"Pour quel groupe de personnes le Conseil fédéral règle-t-il le rachat à côté des personnes qui n'ont jamais appartenu à une institution de prévoyance ?\", \"answer\": \"personnes qui perçoivent une prestation de la prévoyance professionnelle\", \"answer_aliases\": [\"personnes qui perçoivent ou ont perçu une prestation de la prévoyance professionnelle\", \"personnes percevant une prestation de la prévoyance professionnelle\"], \"near_miss_answers\": [\"personnes qui n'ont jamais été affiliées à une institution de prévoyance\", \"personnes affiliées à une institution de prévoyance\", \"personnes sans prestation de la prévoyance professionnelle\"], \"evidence\": \"Le Conseil fédéral règle le rachat pour les personnes qui: a. n'ont jamais été affiliées à une institution de prévoyance au moment où elles font valoir la possibilité de rachat; b. perçoivent ou ont perçu une prestation de la prévoyance professionnelle.\"}, \"it\": {\"question\": \"Per quale gruppo di persone il Consiglio federale disciplina il riscatto accanto alle persone che non hanno mai fatto parte di un istituto di previdenza?\", \"answer\": \"persone che ricevono prestazioni della previdenza professionale\", \"answer_aliases\": [\"persone che ricevono o hanno ricevuto prestazioni della previdenza professionale\", \"persone con prestazioni della previdenza professionale\"], \"near_miss_answers\": [\"persone che non sono mai state affiliate a un istituto di previdenza\", \"persone affiliate a un istituto di previdenza\", \"persone senza prestazioni della previdenza professionale\"], \"evidence\": \"Il Consiglio federale disciplina il riscatto per le persone che: a. fino al momento in cui fanno valere la possibilità del riscatto, non sono mai state affiliate a un istituto di previdenza; b. ricevono o hanno ricevuto prestazioni della previdenza professionale.\"}, \"temporal\": null}",
+ "reasoning_chars": 39727,
+ "usage": {
+  "prompt_tokens": 1723,
+  "completion_tokens": 10522,
+  "total_tokens": 12245,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 10095,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 369.3,
+ "attempts": 1,
+ "generated_at": "2026-10-04",
+ "settings": {
+  "max_tokens": 24000,
+  "reasoning_effort": "medium",
+  "temperature": 0.3
+ }
+}

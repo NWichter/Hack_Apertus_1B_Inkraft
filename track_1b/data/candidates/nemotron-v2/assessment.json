@@ -1,0 +1,961 @@
+[
+ {
+  "core_id": "nmv-0001",
+  "verdict": "accept",
+  "reason": "Clean temporal pair (2300 -> 2500 CHF threshold); question names all conditions and does not leak the value; FR/IT authentic.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0004",
+  "verdict": "accept",
+  "reason": "Clear single value (435 CHF minimum contribution for non-employed), genuine change from 422 CHF, distractors are not former values.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0007",
+  "verdict": "accept",
+  "reason": "Genuine change of the IV minimum contribution (68 -> 70 CHF); question is unambiguous. Near-miss 3500 is the current maximum, acceptable as distractor.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0010",
+  "verdict": "accept_minor",
+  "reason": "Name the scheme in the question ('Bundesbeitrag an die AHV'), since 'der Versicherung' is ambiguous across schemes; add near-misses for IT for parity.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0013",
+  "verdict": "reject",
+  "reason": "Answer is a pure cross-reference (Art. 6quater para. 4-6); not meaningful for practitioners or insured persons without the article.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0016",
+  "verdict": "accept",
+  "reason": "Single verifiable answer (13th old-age pension not counted in plan adequacy), present in all three authentic texts and practically relevant.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0019",
+  "verdict": "accept_minor",
+  "reason": "Genuine change (10% -> 20% deduction at functional capacity <= 50%); remove the reference 'nach Artikel 49 Absatz 1bis' / 'art. 49 al. 1bis' from DE/FR/IT questions and add IT near-misses.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0022",
+  "verdict": "reject",
+  "reason": "Answer is a cross-reference (Art. 105k para. 5), a pure referral detail without practical value.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0025",
+  "verdict": "reject",
+  "reason": "List-position question ('last listed category') about a Federal Council delegation norm; outdated answer is only the former last list item, not a change of the same answer.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0028",
+  "verdict": "revise",
+  "reason": "Change is substantive, but the answer is a clause fragment and FR/IT outdated answers are truncated ('...pour le conjoint qui'); rephrase as a closed question about the event ending the splitting period with complete answer/outdated strings, and drop weak alias 'le premier des conjoints'.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0031",
+  "verdict": "reject",
+  "reason": "Answer is a paragraph cross-reference (paras 1 and 2) in an internal administrative rule; not useful for practitioners.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0034",
+  "verdict": "reject",
+  "reason": "Asks for the legal-basis citation in a heading bracket; pure referral detail and the question names the article.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0037",
+  "verdict": "accept_minor",
+  "reason": "Genuine change of the urban/rural typology (2012 -> 2020); remove the nonsensical alias \"2'020\" in all languages.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0040",
+  "verdict": "reject",
+  "reason": "Change 'Rentenalter' -> 'Referenzalter' is an AHV21 terminology change; question lacks context on which entitlement is meant and the answer contains article references.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0043",
+  "verdict": "reject",
+  "reason": "List-position question about article numbers in an appeal provision; pure referral detail and the question names the article.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0046",
+  "verdict": "reject",
+  "reason": "Automatic error temporal.not_changed; the answer ('darf nicht abgewichen werden') does not answer the question about the legal consequence, and the outdated 'nichtig' is a different answer type.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0049",
+  "verdict": "revise",
+  "reason": "Question relies on article numbers (329g/329gbis) and is not understandable without them; rephrase by describing the leave types (6-month period for the other parent's leave, suspended during the leave after the mother's death) and check the future-change warning.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0052",
+  "verdict": "reject",
+  "reason": "Change 'Rentenalter' -> 'Referenzalter' is terminology only; answer carries an article reference.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0055",
+  "verdict": "reject",
+  "reason": "Answer consists of article numbers; question about 'numbers in the Code of Obligations' is a pure referral detail.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0058",
+  "verdict": "reject",
+  "reason": "Outdated answer is the pronoun 'Sie' (pure rewording); question refers to 'Absatz 2' and there is no real legal change.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0061",
+  "verdict": "reject",
+  "reason": "Automatic error evidence.not_in_article; change 'materielle Rechtsanwendung' -> 'Einhaltung der gesetzlichen Vorschriften' is essentially rewording and the question ('which legal aspect') is vague.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0064",
+  "verdict": "revise",
+  "reason": "Substantive change (choirs added to the mandatory-contribution list) but asked as a list-position question; rephrase (e.g., whether contributions on wages paid by choirs must always be paid) and fix FR/IT 'Dans l'AHV'/'Nell'AVS' wording to AVS.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0067",
+  "verdict": "reject",
+  "reason": "Overlong verbatim answer; the actual change (deletion of conversion between parity/non-parity funds) is not what the question asks, and the topic is internal administration.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0070",
+  "verdict": "reject",
+  "reason": "Question mislabels the benefit as 'Betreuungsgutschrift'/'allocation pour tâches de garde' (it is the other-parent allowance), and 'Vater' -> 'anderer Elternteil' is mainly gender-neutral rewording.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0073",
+  "verdict": "reject",
+  "reason": "List-letter position question ('purpose under letter d') in a Federal Council discretionary data provision; no practical value.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0076",
+  "verdict": "reject",
+  "reason": "Answer is a wording-level phrase; near-miss 'versicherungstechnischen Gegenwert' is the formerly valid wording, and the 2025 outdated answer ('Erhöhung ausgeschlossen') is a different answer type.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0079",
+  "verdict": "reject",
+  "reason": "'Kasse' -> 'Arbeitslosenkasse' is pure rewording, not a legal change.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0082",
+  "verdict": "revise",
+  "reason": "Real change (whole reduced pension counts after anticipation) but automatic error evidence.not_in_article must be resolved, and the outdated 'die gekürzte Rente' is a substring of the current answer; rephrase to ask whether the whole pension or only the anticipated part counts.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0085",
+  "verdict": "reject",
+  "reason": "Answer is a range of letters in a cross-reference (a-e); pure referral detail.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0088",
+  "verdict": "reject",
+  "reason": "Question depends on the article reference (Art. 25 para. 1 let. bbis); describing the condition instead would reveal the answer.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0091",
+  "verdict": "reject",
+  "reason": "Automatic errors temporal.not_changed/same_value: 12 months is unchanged, outdated answer equals the current one.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0094",
+  "verdict": "reject",
+  "reason": "'ordentliches Rentenalter' -> 'Referenzalter' is a terminology change, not a substantive legal change.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0097",
+  "verdict": "accept_minor",
+  "reason": "Genuine change (joint prescription by doctor and nurse); fix IT answer fragment 'un medico e da un infermiere' and drop near-misses 'der Spitalarzt'/'le médecin de l'hôpital'/'il medico ospedaliero', which match the formerly valid answer.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0100",
+  "verdict": "reject",
+  "reason": "Automatic error temporal.not_changed; FR/IT outdated equals current and 'zwischenstaatliche Vereinbarungen' -> 'internationale Abkommen' is rewording.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0103",
+  "verdict": "reject",
+  "reason": "Terminology change ('AHV-Rentenalter' -> 'Referenzalter') in a Federal Council discretionary provision; near-miss 'Referenzalter' equals an alias of the answer.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0106",
+  "verdict": "reject",
+  "reason": "Asks for the citation bracket (Art. 53 AVIG); pure referral detail.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0109",
+  "verdict": "reject",
+  "reason": "Niche cost-accounting detail with low practical value; question leaks 'Kapital', and FR/IT outdated answers ('capital investi', 'capitale investito') are not from the authentic former text.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0112",
+  "verdict": "accept_minor",
+  "reason": "Genuine change (only a whole old-age pension ends the entitlement); name the scheme correctly ('EO' / 'régime des APG' / 'IPG' instead of 'Erwerbsersatzversicherung' / 'assurance perte de gain').",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0115",
+  "verdict": "accept_minor",
+  "reason": "Genuine change (United Kingdom added); add the condition that the insured draw a Swiss pension to the question in all languages and allow order-independent list matching.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0118",
+  "verdict": "reject",
+  "reason": "Duplicate of nmv-0117 and a list-position question ('last state listed').",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0121",
+  "verdict": "reject",
+  "reason": "Automatic error temporal.not_changed; FR/IT outdated equals current and the change is rewording.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0124",
+  "verdict": "reject",
+  "reason": "'Bundesamt' -> 'BSV' is an abbreviation change, not a legal change; FR outdated equals current.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0127",
+  "verdict": "revise",
+  "reason": "Real change of competence (Department -> FSIO), but remove the article reference from the questions and reconsider practical relevance, since it is an internal supervisory detail.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0130",
+  "verdict": "reject",
+  "reason": "Terminology change to 'Referenzalter' and the value depends on the pension fund regulations.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0133",
+  "verdict": "reject",
+  "reason": "'Rücktrittsalter' -> 'Referenzalter' is a terminology change only.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0136",
+  "verdict": "reject",
+  "reason": "Terminology change to 'Referenzalter', regulation-dependent age, and the question is overly long and convoluted.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0002",
+  "verdict": "accept",
+  "reason": "Clear CHF threshold, correctly read as 'mindestens' (lower bound of the sliding scale), real 2025 adjustment from 9800; near-misses are not former values.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0005",
+  "verdict": "accept",
+  "reason": "Real increase 2300 -> 2500 CHF, 'nicht übersteigt' reflected correctly in all three languages; optionally mention that household and cultural employers are excepted (Abs. 2).",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0008",
+  "verdict": "accept_minor",
+  "reason": "Correct amount and real change (34.30 -> 35.30), but Abs. 2/3 set other hourly rates (special qualifications, night service); add 'ordentlicher/allgemeiner Ansatz' to the question in DE/FR/IT.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0011",
+  "verdict": "accept_minor",
+  "reason": "Answer is correct and unique, but the question lacks context; add 'in der AHV' (and FR/IT equivalent) so it is understandable without the article.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0014",
+  "verdict": "accept",
+  "reason": "Unique, correctly read answer (contribution periods before age 20 fill later gaps); FR/IT match the authentic texts.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0017",
+  "verdict": "revise",
+  "reason": "Two correct answers: the paragraph names both remaining pension assets AND non-transferred vested benefits (Freizügigkeitsguthaben), and the latter is wrongly used as a near-miss; ask for both or narrow the question.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0020",
+  "verdict": "reject",
+  "reason": "Pure cross-reference detail (Art. 64a Abs. 4 vs 5 after renumbering in the KVG), not a substantive change; the question also requires the article citation.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0023",
+  "verdict": "reject",
+  "reason": "Positional question ('last item in Art. 11 Abs. 3 ELG') needs the article citation and the outdated answers are just earlier last list items; a substantive item would ask whether the 13th AHV pension counts as EL income.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0026",
+  "verdict": "revise",
+  "reason": "Ambiguous: 'beide Ehegatten' also fits lit. d (both receive an IV pension), which is listed as near-miss; restrict the question to the age-based trigger without revealing the answer.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0029",
+  "verdict": "reject",
+  "reason": "Reject: the change is only the AHV 21 terminology switch (ordentliches Rentenalter -> Referenzalter) and the question just asks for the name of the age, so it is not a real legal change for this item. The Bundesrat also sets the relevant age limit (discretion).",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0032",
+  "verdict": "revise",
+  "reason": "Asking for the name of the age is terminology-only; reframe on the substantive change (drawing an AHV old-age pension early no longer excludes ALE entitlement per se, previously it did).",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0035",
+  "verdict": "reject",
+  "reason": "Automatic check error temporal.not_changed; 'which word ends the provision' is not a meaningful legal question; the real change (removal of the 3.3% unemployment-rate condition) is not tested.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0038",
+  "verdict": "reject",
+  "reason": "Answer 'Personen' is trivially generic, the question depends on 'Absatz 1 Buchstabe c oder d' and the matter is delegated to the Bundesrat; not usable without the article.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0041",
+  "verdict": "accept_minor",
+  "reason": "Real change (nursing initiative: nurses can provide care without medical order); drop the near-miss 'Teilweise', which is defensible given KLV limits, and clarify 'nach dem KVG' in the question.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0044",
+  "verdict": "reject",
+  "reason": "Pure reference detail (which statistics ordinance applies by analogy) with article citation in the question; no value for practitioners or insured persons.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0047",
+  "verdict": "reject",
+  "reason": "Reject: the change is only the AHV 21 terminology switch (ordentliches Rentenalter -> Referenzalter) and the question just asks for the name of the age, so it is not a real legal change for this item. A usable item would instead test the new trigger (only a full early withdrawal of the AHV pension ends revision).",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0050",
+  "verdict": "accept_minor",
+  "reason": "Correct answer, but the paragraph also adapts the complementary pension when the circle of beneficiaries changes; clarify in DE/FR/IT that the question concerns changes of the AHV pension amount itself.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0053",
+  "verdict": "reject",
+  "reason": "Administrative data exchange insurer -> canton with little practical value; in addition the outdated answers wrongly contain the current answer (2026-01-01 version).",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0056",
+  "verdict": "reject",
+  "reason": "Renaming Vaterschaftsurlaub -> Urlaub des andern Elternteils asked as a naming question with 'Artikel 329g' in the question; not understandable without the article reference.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0059",
+  "verdict": "accept",
+  "reason": "Unique fixed interval 'mindestens alle zehn Jahre' with correct threshold wording in all languages; the Bundesrat discretion concerns the factors, not the asked interval.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0062",
+  "verdict": "reject",
+  "reason": "Naming-only change (Vaterschafts- -> Entschädigung des andern Elternteils) and ambiguous: Art. 16d EOG has the same minimum rule for the Mutterschaftsentschädigung, which is listed as near-miss.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0065",
+  "verdict": "reject",
+  "reason": "Pure cross-reference detail (Art. 63 Abs. 4 -> 63a Abs. 1 AHVG), no near-misses, no practical value.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0068",
+  "verdict": "revise",
+  "reason": "Real change (controlled unemployment days instead of work days), but the question refers to 'Absatz 4' without explaining the waiting period and the near-misses are of a different type; describe the special waiting period and use same-type near-misses.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0071",
+  "verdict": "reject",
+  "reason": "Naming-only change (Vaterschaftsurlaub -> Urlaub des andern Elternteils) and ambiguous: other situations (e.g. Art. 336c OR) also extend the notice period.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0074",
+  "verdict": "reject",
+  "reason": "Automatic check error temporal.not_changed; FR/IT texts are unchanged and the DE change is purely editorial (zwischenstaatliche Vereinbarung -> internationales Abkommen).",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0077",
+  "verdict": "revise",
+  "reason": "Question is inverted (asks for the condition instead of the cap) and near-misses are not of the answer type; ask instead what the sum of increases may not exceed when child or supplementary pensions are deferred too.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0080",
+  "verdict": "revise",
+  "reason": "FR and IT answers are truncated/ungrammatical ('...et relatives', missing 'disposizioni'); fix them to the full phrase and add clearer context (pension fund).",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0083",
+  "verdict": "reject",
+  "reason": "Misreads the paragraph: nursing care is also covered outpatient and in nursing homes (Art. 25a KVG), so 'ambulant' as near-miss is wrong and the answer is not unique.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0086",
+  "verdict": "reject",
+  "reason": "Change 'kleinste Packung und Dosierung' -> 'kleinste Packung der tiefsten Dosisstärke' is a reformulation, not a substantive change of the basis; the real novelty (identical-price exception) is not tested.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0089",
+  "verdict": "reject",
+  "reason": "'Institut' and 'Swissmedic' denote the same authority, so the temporal pair is editorial only; the real change (new lit. c post-exposure prophylaxis) is not tested.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0092",
+  "verdict": "reject",
+  "reason": "Reject: the change is only the AHV 21 terminology switch (ordentliches Rentenalter -> Referenzalter) and the question just asks for the name of the age, so it is not a real legal change for this item.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0095",
+  "verdict": "reject",
+  "reason": "Automatic check error temporal.not_changed; only a grammatical rewording, and the question repeats the full rule.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0098",
+  "verdict": "reject",
+  "reason": "Version date of an SIWF training programme is a reference detail with little practical value; '1. Januar 2024' also appears for the Schwerpunktprogramme.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0101",
+  "verdict": "reject",
+  "reason": "Automatic check error temporal.not_changed; 'SECO' -> spelled-out name is editorial, administrative detail only.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0104",
+  "verdict": "reject",
+  "reason": "No question or answer generated (all fields None), multiple automatic errors.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0107",
+  "verdict": "revise",
+  "reason": "Real change (only third-party capital costs count), but the positional question ('between Projektierungs- and Raumkosten') is a text-recall trick; ask whether equity or borrowed capital costs are chargeable.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0110",
+  "verdict": "reject",
+  "reason": "Reject: the change is only the AHV 21 terminology switch (ordentliches Rentenalter -> Referenzalter) and the question just asks for the name of the age, so it is not a real legal change for this item.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0113",
+  "verdict": "reject",
+  "reason": "Reject: the change is only the AHV 21 terminology switch (ordentliches Rentenalter -> Referenzalter) and the question just asks for the name of the age, so it is not a real legal change for this item.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0116",
+  "verdict": "revise",
+  "reason": "Real change (UK added) and correct current answer, but the earlier-version evidence quotes a different provision (cross-border commuter list of old Abs. 3) rather than the pensioner rule; supply the correct prior paragraph text.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0119",
+  "verdict": "reject",
+  "reason": "Pure internal cross-reference (Absatz 1bis) and administrative data detail; not understandable without the article.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0122",
+  "verdict": "reject",
+  "reason": "Reject: the change is only the AHV 21 terminology switch (ordentliches Rentenalter -> Referenzalter) and the question just asks for the name of the age, so it is not a real legal change for this item. Automatic errors on previous-version evidence; the question also cites the article.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0125",
+  "verdict": "revise",
+  "reason": "There is a real change (IK no longer limited to contributions until the old-age pension arises; contributions after reference age now count), but old and new answers are not of the same type; reframe as yes/no question on post-retirement contributions.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0128",
+  "verdict": "reject",
+  "reason": "Reject: the change is only the AHV 21 terminology switch (ordentliches Rentenalter -> Referenzalter) and the question just asks for the name of the age, so it is not a real legal change for this item.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0131",
+  "verdict": "reject",
+  "reason": "Reject: the change is only the AHV 21 terminology switch (ordentliches Rentenalter -> Referenzalter) and the question just asks for the name of the age, so it is not a real legal change for this item.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0134",
+  "verdict": "reject",
+  "reason": "Reject: the change is only the AHV 21 terminology switch (ordentliches Rentenalter -> Referenzalter) and the question just asks for the name of the age, so it is not a real legal change for this item. The regulatory reference age is additionally set by the pension fund regulations.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0137",
+  "verdict": "reject",
+  "reason": "Reject: the change is only the AHV 21 terminology switch (ordentliches Rentenalter -> Referenzalter) and the question just asks for the name of the age, so it is not a real legal change for this item. The age is additionally set by the pension fund regulations.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0003",
+  "verdict": "reject",
+  "reason": "Duplicate of nmv-0002 (same threshold change 9800 -> 10 100 CHF); keep only one. If this one is kept instead, drop the 'Artikel 6quater' reference and fix FR 'revenu comptable' to 'revenu à prendre en compte'.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0006",
+  "verdict": "accept_minor",
+  "reason": "Correct real change (3060 -> 3480 CHF), but the question omits who gets this flat rate; add the condition from the article (persons living in property they or an included person own or hold usufruct/right of residence) so it is not confused with the heating-cost lump sum.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0009",
+  "verdict": "accept_minor",
+  "reason": "Real change (51.50 -> 52.95 CHF/h) and correctly read; replace 'Artikel 39c Buchstaben e-g' in all three questions with a plain description of the activity areas, and drop the odd near-miss '52.95 Franken pro Tag'.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0012",
+  "verdict": "accept_minor",
+  "reason": "Genuine change (women 64/men 65 -> reference age); make the canonical answer 'Referenzalter' (article ref only as alias) and remove the near-miss 'Artikel 21 Absatz 1', which denotes the correct answer.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0015",
+  "verdict": "reject",
+  "reason": "Pure cross-reference question (Art. 50-56ter -> 50-56quater); renumbering of referenced articles is not a substantive change and has no value for practitioners.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0018",
+  "verdict": "reject",
+  "reason": "Change is terminological (ordentliches Rentenalter -> Referenzalter) and the question misdescribes the provision: it concerns transfer of 3a capital / buy-ins into occupational pension, not 'Einkauf in der Säule 3a'.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0021",
+  "verdict": "revise",
+  "reason": "Real change (85 % -> amount borne by the canton), but near-miss 'den vom Kanton übernommenen Betrag' is equivalent to the answer, and the question cites only Art. 64a Abs. 3 while the text now also covers 3bis and annulment for double insurance; rewrite without article refs and fix near-misses.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0024",
+  "verdict": "reject",
+  "reason": "Paragraph is only a bare cross-reference '(Art. 15 Abs. 2 BVG)'; no substantive answer, wrong question_type, not useful.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0027",
+  "verdict": "accept_minor",
+  "reason": "Genuine AHV 21 change and correctly read; add FR/IT near-misses (currently empty) and accept a shorter core answer ('31. Dezember vor dem Tag, an dem der erste Ehegatte das Referenzalter erreicht') across languages.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0030",
+  "verdict": "reject",
+  "reason": "No legal change: the 'earlier version' is the same sentence with a paragraph number prefix; trivial question.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0033",
+  "verdict": "revise",
+  "reason": "Old answer 'nur wochenweise' does not answer 'under which condition can daily withdrawal be granted' (no condition existed before); rephrase e.g. as 'Can control-free days be taken individually?' or make it non-temporal, and fix the fragmentary DE near-misses.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0036",
+  "verdict": "reject",
+  "reason": "Year of the municipal typology (2012 -> 2020) is a technical classification detail with no practical value for insured persons; aliases like \"2'020\" are nonsensical.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0039",
+  "verdict": "reject",
+  "reason": "Answer is a renumbered BZG cross-reference after the civil protection law revision; a reference change, not a substantive change in cantonal liability.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0042",
+  "verdict": "revise",
+  "reason": "Answer is a bare article number; the real change (tariff for practice-lab analyses now agreed per Art. 46 instead of set per Art. 46 and 48) should be asked substantively, and the DE question already contains 'vereinbart', which hints at the answer.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0045",
+  "verdict": "reject",
+  "reason": "Only removal of an internal reference ('nach den Absätzen 1-5'); trivial question with no legal change.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0048",
+  "verdict": "reject",
+  "reason": "Change is terminological (ordentliches AHV-Rentenalter -> Referenzalter); near-miss 'Rentenalter 65' is effectively the current reference age, and the question context ('freiwillige Leistungen') is unclear.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0051",
+  "verdict": "accept_minor",
+  "reason": "Correct and useful; FR and IT questions say 'AHV' instead of 'AVS', fix that, and make the canonical answer include 'gegebenenfalls' for the pension supplement.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0054",
+  "verdict": "accept_minor",
+  "reason": "Correct; fix FR 'perte de travail comptable' to 'à prendre en considération' and make the FR/IT canonical answers 'formateurs'/'formatori' without the article reference.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0057",
+  "verdict": "revise",
+  "reason": "Asking for the 'last state in the enumeration' is artificial; rephrase as a substantive question (e.g. are family members residing in the UK insured with the same insurer?) and avoid overlap with nmv-0114/nmv-0117.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0060",
+  "verdict": "reject",
+  "reason": "Pure renaming 'Kasse' -> 'Arbeitslosenkasse'; no legal change, and the question asks about wording rather than law.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0063",
+  "verdict": "reject",
+  "reason": "Question refers to 'Buchstabe d' and concerns an administrative dispute between the joint institution and insurers; not understandable without article context and not useful for practitioners.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0066",
+  "verdict": "reject",
+  "reason": "Administrative detail (BSV rule-making competence); the question is vague and the near-miss 'Vorschriften zur Berechnung der Renten' is a correct partial answer.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0069",
+  "verdict": "reject",
+  "reason": "Change is terminological (Rentenalter -> Referenzalter); near-miss 'Referenzalter' is actually the correct answer and FR/IT answers are truncated ('de référence fixé...').",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0072",
+  "verdict": "revise",
+  "reason": "The question nearly reveals the answer ('Tagestaxe' implies a home or hospital stay); rephrase, e.g. ask for the 120 CHF threshold below which adjustment can be waived, or ask a yes/no about a partial-month home stay.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0075",
+  "verdict": "revise",
+  "reason": "'Last case group in the enumeration' is artificial and concerns Federal Council implementing powers; rephrase substantively (e.g. whether the couple cap also applies when only part of the pension is drawn), and old answer must answer the same question.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0078",
+  "verdict": "reject",
+  "reason": "The asked-about rule (direct electronic transmission to cantonal tax authority) no longer exists in the current text; the given answer does not answer the question.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0081",
+  "verdict": "accept_minor",
+  "reason": "Correct delegation scope; make the canonical answer 'Personen, die eine Leistung der beruflichen Vorsorge beziehen oder bezogen haben' in all languages.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0084",
+  "verdict": "accept_minor",
+  "reason": "Correct; replace near-misses 'einheitliche Kriterien' and 'klinische Leitlinien' (and FR/IT equivalents), which are correct partial answers, with genuinely wrong alternatives.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0087",
+  "verdict": "accept",
+  "reason": "Genuine change (comparison no longer exclusively with off-patent originals; other preparations included), clear yes/no, consistent in all three languages.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0090",
+  "verdict": "revise",
+  "reason": "Misreading: the Art. 40 exception means early withdrawal does not end the splitting period, not that the advance pension is excluded from splitting; rephrase the question and remove the nonsensical yes/no near-misses.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0093",
+  "verdict": "accept_minor",
+  "reason": "Correct and useful; fix the garbled IT near-miss 'altre norme della rendita di vecchiaia'.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0096",
+  "verdict": "reject",
+  "reason": "No legal change (only rephrasing 'Bezieht er' -> 'Wird'); also flagged future change.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0099",
+  "verdict": "accept_minor",
+  "reason": "Genuine change (Swiss citizenship requirement dropped); since the outdated answer contains the current answer, better ask 'Must board members be Swiss citizens?' (No) to make the stale answer clearly distinguishable.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0102",
+  "verdict": "reject",
+  "reason": "Change is terminological (Rentenalter -> Referenzalter); near-miss 'Alter 65 Jahre' equals the current reference age; administrative subsidy detail.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0105",
+  "verdict": "reject",
+  "reason": "Only abbreviation change (Bundesamt für Sozialversicherungen -> BSV); no legal change, FR outdated answer identical to current answer.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0108",
+  "verdict": "reject",
+  "reason": "Pure renaming 'Kasse' -> 'Arbeitslosenkasse'; no legal change.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0111",
+  "verdict": "reject",
+  "reason": "Not unique: maternity, care and adoption allowances have parallel exclusion rules, so the near-misses are also correct; the change is mainly a renaming of the paternity allowance and there is a future-change flag.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0114",
+  "verdict": "reject",
+  "reason": "Artificial 'last state in enumeration' question on an administrative task of the joint institution; duplicates the UK-extension pattern of nmv-0057/nmv-0117.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0117",
+  "verdict": "revise",
+  "reason": "Real change (UK added), but the 'last state in the enumeration' framing is artificial and near-duplicates nmv-0057; rephrase as a substantive question (e.g. do cantons grant premium reductions to cross-border commuters living in the UK?) or merge.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0120",
+  "verdict": "accept_minor",
+  "reason": "Genuine change (any other insurance form -> bonus insurance only); remove IT near-miss 'un altro modello di assicurazione' (equals the formerly valid answer) and add DE/FR near-misses.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0123",
+  "verdict": "reject",
+  "reason": "Question already contains the answer context and only an ancillary clause was removed; Federal Council administrative competence, not useful.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0126",
+  "verdict": "reject",
+  "reason": "Real change, but purely administrative audit rules for AHV branch offices; the question references 'Absatz 1' and has no value for practitioners or insured persons.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0129",
+  "verdict": "reject",
+  "reason": "Terminological change only (ordentliches Rentenalter -> Referenzalter); IT authentic text still says 'età ordinaria di pensionamento', so current and outdated IT answers are identical.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0132",
+  "verdict": "reject",
+  "reason": "Terminological change only (ordentliches Rentenalter -> Referenzalter); near-miss 'Rentenalter' is substantively correct.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ },
+ {
+  "core_id": "nmv-0135",
+  "verdict": "reject",
+  "reason": "Terminological change only (ordentliches Rentenalter -> Referenzalter); the question also narrows 'Leistungen' to 'Invalidenleistungen', which the text does not say.",
+  "assessor": "claude-opus-5-5 (agent pre-assessment, not a human review)",
+  "date": "2026-10-04"
+ }
+]

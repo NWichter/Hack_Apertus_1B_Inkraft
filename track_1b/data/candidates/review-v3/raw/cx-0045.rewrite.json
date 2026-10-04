@@ -1,0 +1,29 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "content": "{\"rewrite\": true, \"question_type\": \"procedural\", \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"In der AHV: Was entfällt bei Ehepaaren, deren gemeinsamer Haushalt richterlich aufgehoben wurde?\", \"answer\": \"Die Kürzung\", \"answer_aliases\": [\"Kürzung\", \"Die Kürzung.\"], \"near_miss_answers\": [\"Der gemeinsame Haushalt\", \"Die Ehepaare\", \"Die richterliche Aufhebung\"], \"evidence\": \"Die Kürzung entfällt bei Ehepaaren, deren gemeinsamer Haushalt richterlich aufgehoben wurde.\"}, \"fr\": {\"question\": \"Dans l'AVS: Que n'est pas prévu pour les époux dont le ménage commun a été dissous judiciairement?\", \"answer\": \"Aucune réduction des rentes\", \"answer_aliases\": [\"Réduction des rentes\", \"Aucune réduction\"], \"near_miss_answers\": [\"Le ménage commun\", \"Les époux\", \"La décision judiciaire\"], \"evidence\": \"Aucune réduction des rentes n’est prévue au détriment des époux qui ne vivent plus en ménage commun suite à une décision judiciaire.\"}, \"it\": {\"question\": \"Nell'AVS: Cosa non è previsto per i coniugi che non vivono più in comunione domestica in seguito a una decisione giudiziaria?\", \"answer\": \"Nessuna riduzione\", \"answer_aliases\": [\"Riduzione\", \"Nessuna riduzione.\"], \"near_miss_answers\": [\"La comunione domestica\", \"I coniugi\", \"La decisione giudiziaria\"], \"evidence\": \"Non è prevista nessuna riduzione a scapito dei coniugi che non vivono più in comunione domestica in seguito ad una decisione giudiziaria.\"}}",
+ "usage": {
+  "prompt_tokens": 1085,
+  "completion_tokens": 6813,
+  "total_tokens": 7898,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 6303,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 150.4,
+ "generated_at": "2026-10-04"
+}

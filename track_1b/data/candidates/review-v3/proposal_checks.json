@@ -1,0 +1,240 @@
+{
+ "ag-0032": {
+  "errors": [],
+  "warnings": []
+ },
+ "ag-0041": {
+  "errors": [],
+  "warnings": [
+   "question.answer_overlap"
+  ]
+ },
+ "ag-0062": {
+  "errors": [],
+  "warnings": []
+ },
+ "ag-0081": {
+  "errors": [],
+  "warnings": []
+ },
+ "ag-0083": {
+  "errors": [],
+  "warnings": [
+   "source.discretion"
+  ]
+ },
+ "ag-0084": {
+  "errors": [],
+  "warnings": [
+   "source.discretion"
+  ]
+ },
+ "ag-0087": {
+  "errors": [],
+  "warnings": [
+   "question.answer_overlap"
+  ]
+ },
+ "ag-0088": {
+  "errors": [],
+  "warnings": [
+   "answer.inflected"
+  ]
+ },
+ "cl-0003": {
+  "errors": [],
+  "warnings": [
+   "source.discretion"
+  ]
+ },
+ "cl-0016": {
+  "errors": [],
+  "warnings": [
+   "source.discretion"
+  ]
+ },
+ "cl-0017": {
+  "errors": [],
+  "warnings": []
+ },
+ "cl-0023": {
+  "errors": [],
+  "warnings": []
+ },
+ "cl-0032": {
+  "errors": [],
+  "warnings": []
+ },
+ "cl-0034": {
+  "errors": [],
+  "warnings": [
+   "question.answer_overlap"
+  ]
+ },
+ "cl-0036": {
+  "errors": [],
+  "warnings": []
+ },
+ "cl-0038": {
+  "errors": [],
+  "warnings": [
+   "source.discretion"
+  ]
+ },
+ "cl-0049": {
+  "errors": [],
+  "warnings": []
+ },
+ "cl-0052": {
+  "errors": [],
+  "warnings": [
+   "question.answer_overlap"
+  ]
+ },
+ "cl-0054": {
+  "errors": [],
+  "warnings": [
+   "source.discretion"
+  ]
+ },
+ "cl-0062": {
+  "errors": [],
+  "warnings": []
+ },
+ "cl-0073": {
+  "errors": [],
+  "warnings": []
+ },
+ "cl-0084": {
+  "errors": [],
+  "warnings": []
+ },
+ "cl-0093": {
+  "errors": [],
+  "warnings": [
+   "source.discretion"
+  ]
+ },
+ "cl-0094": {
+  "errors": [],
+  "warnings": []
+ },
+ "cl-0105": {
+  "errors": [],
+  "warnings": []
+ },
+ "cx-0009": {
+  "errors": [],
+  "warnings": [
+   "answer.alias_only"
+  ]
+ },
+ "cx-0012": {
+  "errors": [],
+  "warnings": [
+   "answer.alias_only"
+  ]
+ },
+ "cx-0024": {
+  "errors": [],
+  "warnings": [
+   "answer.inflected"
+  ]
+ },
+ "cx-0025": {
+  "errors": [],
+  "warnings": []
+ },
+ "cx-0027": {
+  "errors": [],
+  "warnings": []
+ },
+ "cx-0043": {
+  "errors": [],
+  "warnings": [
+   "source.discretion"
+  ]
+ },
+ "cx-0044": {
+  "errors": [],
+  "warnings": [
+   "evidence.apostrophe"
+  ]
+ },
+ "cx-0045": {
+  "errors": [],
+  "warnings": []
+ },
+ "cx-0046": {
+  "errors": [],
+  "warnings": []
+ },
+ "cx-0049": {
+  "errors": [],
+  "warnings": [
+   "source.discretion"
+  ]
+ },
+ "cx-0071": {
+  "errors": [],
+  "warnings": []
+ },
+ "cx-0075": {
+  "errors": [],
+  "warnings": []
+ },
+ "cx-0076": {
+  "errors": [],
+  "warnings": []
+ },
+ "cx-0080": {
+  "errors": [],
+  "warnings": [
+   "source.discretion"
+  ]
+ },
+ "cx-0084": {
+  "errors": [],
+  "warnings": []
+ },
+ "cx-0087": {
+  "errors": [],
+  "warnings": []
+ },
+ "cx-0088": {
+  "errors": [],
+  "warnings": []
+ },
+ "cx-0090": {
+  "errors": [],
+  "warnings": []
+ },
+ "cx-0093": {
+  "errors": [],
+  "warnings": [
+   "answer.alias_only",
+   "answer.inflected",
+   "question.answer_overlap"
+  ]
+ },
+ "cx-0094": {
+  "errors": [],
+  "warnings": []
+ },
+ "cx-0095": {
+  "errors": [],
+  "warnings": []
+ },
+ "cx-0097": {
+  "errors": [],
+  "warnings": []
+ },
+ "cx-0099": {
+  "errors": [],
+  "warnings": []
+ },
+ "cx-0102": {
+  "errors": [],
+  "warnings": []
+ }
+}

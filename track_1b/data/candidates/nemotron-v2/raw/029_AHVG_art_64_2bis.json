@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"AHVG\", \"article_id\": \"art_64\", \"paragraph\": \"2bis\", \"domain\": \"ahv\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 1, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Vor dem Erreichen welches Alters muss die Erwerbstätigkeit aufgegeben werden, damit Versicherte als Nichterwerbstätige der bisherigen Ausgleichskasse angeschlossen bleiben?\", \"answer\": \"des Referenzalters\", \"answer_aliases\": [\"Referenzalters\", \"vor Erreichen des Referenzalters\"], \"near_miss_answers\": [\"Altersgrenze\", \"die erforderliche Altersgrenze\"], \"evidence\": \"vor Erreichen des Referenzalters aufgeben, bleiben als Nichterwerbstätige der bisher zuständigen Ausgleichskasse angeschlossen\"}, \"fr\": {\"question\": \"Avant d'atteindre quel âge l'activité lucrative doit-elle être cessée pour que les assurés restent affiliés en qualité de non-actifs auprès de la caisse de compensation précédemment compétente?\", \"answer\": \"l'âge de référence\", \"answer_aliases\": [\"âge de référence\", \"avant d'avoir atteint l'âge de référence\"], \"near_miss_answers\": [\"limite d'âge\", \"âge de la retraite\"], \"evidence\": \"avant d'avoir atteint l'âge de référence mais qui ont atteint à ce moment la limite d'âge fixée par le Conseil fédéral restent affiliés en qualité de non actifs auprès de la caisse de compensation qui était compétente jusqu'alors\"}, \"it\": {\"question\": \"Prima di raggiungere quale età l'attività lucrativa deve essere cessata affinché gli assicurati restino affiliati quali persone senza attività lucrativa alla cassa di compensazione precedentemente competente?\", \"answer\": \"l'età di riferimento\", \"answer_aliases\": [\"età di riferimento\", \"prima di raggiungere l'età di riferimento\"], \"near_miss_answers\": [\"limite d'età\", \"età di pensionamento\"], \"evidence\": \"prima di raggiungere l'età di riferimento restano affiliati quali persone senza attività lucrativa alla cassa di compensazione precedentemente competente\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-09-01\", \"paragraph\": \"2bis\", \"de\": {\"outdated_answer\": \"des ordentlichen Rentenalters\", \"evidence\": \"vor Erreichen des ordentlichen Rentenalters aufgeben, bleiben als Nichterwerbstätige der bisher zuständigen Ausgleichskasse angeschlossen\"}, \"fr\": {\"outdated_answer\": \"l'âge ordinaire de la retraite\", \"evidence\": \"avant d'atteindre l'âge ordinaire de la retraite mais qui ont atteint à ce moment la limite d'âge fixée par le Conseil fédéral restent affiliés\"}, \"it\": {\"outdated_answer\": \"l'età ordinaria di pensionamento\", \"evidence\": \"prima di raggiungere l'età ordinaria di pensionamento ma hanno raggiunto il limite d'età fissato dal Consiglio federale restano affiliati\"}}]}}",
+ "reasoning_chars": 22426,
+ "usage": {
+  "prompt_tokens": 2032,
+  "completion_tokens": 6218,
+  "total_tokens": 8250,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 5707,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 194.9,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

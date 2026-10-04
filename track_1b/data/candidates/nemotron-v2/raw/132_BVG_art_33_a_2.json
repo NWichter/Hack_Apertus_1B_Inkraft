@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"BVG\", \"article_id\": \"art_33_a\", \"paragraph\": \"2\", \"domain\": \"bvg_3a\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Bis zu welchem Alter kann die Weiterversicherung des bisherigen versicherten Verdienstes höchstens erfolgen?\", \"answer\": \"reglementarisches Referenzalter\", \"answer_aliases\": [\"Referenzalter\", \"reglementarischer Referenzalter\"], \"near_miss_answers\": [\"ordentliches reglementarisches Rentenalter\", \"reglementarisches Rentenalter\", \"ordentliches Referenzalter\"], \"evidence\": \"höchstens bis zum reglementarischen Referenzalter\"}, \"fr\": {\"question\": \"Jusqu'à quel âge la prévoyance peut-elle être maintenue au niveau du dernier gain assuré au plus tard?\", \"answer\": \"âge de référence réglementaire\", \"answer_aliases\": [\"âge de référence\", \"âge de référence réglementaire\"], \"near_miss_answers\": [\"âge réglementaire ordinaire de la retraite\", \"âge réglementaire de la retraite\", \"âge ordinaire de référence\"], \"evidence\": \"au plus tard jusqu'à l'âge de référence réglementaire\"}, \"it\": {\"question\": \"Fino a che età la previdenza può essere mantenuta al livello del precedente guadagno assicurato al più tardi?\", \"answer\": \"età di riferimento regolamentare\", \"answer_aliases\": [\"età di riferimento\", \"età di riferimento regolamentare\"], \"near_miss_answers\": [\"età ordinaria di pensionamento stabilita dal regolamento\", \"età regolamentare di pensionamento\", \"età ordinaria di riferimento\"], \"evidence\": \"al più tardi fino al raggiungimento dell'età di riferimento regolamentare\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-09-26\", \"paragraph\": \"2\", \"de\": {\"outdated_answer\": \"ordentliches reglementarisches Rentenalter\", \"evidence\": \"höchstens bis zum ordentlichen reglementarischen Rentenalter\"}, \"fr\": {\"outdated_answer\": \"âge réglementaire ordinaire de la retraite\", \"evidence\": \"au plus tard jusqu'à l'âge réglementaire ordinaire de la retraite\"}, \"it\": {\"outdated_answer\": \"età ordinaria di pensionamento stabilita dal regolamento\", \"evidence\": \"al più tardi fino al raggiungimento dell'età ordinaria di pensionamento stabilita dal regolamento\"}}]}}",
+ "reasoning_chars": 3086,
+ "usage": {
+  "prompt_tokens": 1632,
+  "completion_tokens": 1346,
+  "total_tokens": 2978,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 790,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 35.2,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"AVIV\", \"article_id\": \"art_122\", \"paragraph\": \"2\", \"domain\": \"eo_alv\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Welche Behörde setzt die Entschädigungsansätze im Einvernehmen mit der Ausgleichsstelle der Arbeitslosenversicherung fest?\", \"answer\": \"Das BSV\", \"answer_aliases\": [\"BSV\", \"das BSV\"], \"near_miss_answers\": [\"Ausgleichsstelle der Arbeitslosenversicherung\", \"Bundesrat\", \"Eidgenössisches Departement des Innern\"], \"evidence\": \"Das BSV setzt die Entschädigungsansätze im Einvernehmen mit der Ausgleichsstelle der Arbeitslosenversicherung fest.\"}, \"fr\": {\"question\": \"Quelle autorité fixe les taux d'indemnisation en accord avec l'organe de compensation de l'assurance-chômage ?\", \"answer\": \"L'OFAS\", \"answer_aliases\": [\"OFAS\", \"l'OFAS\"], \"near_miss_answers\": [\"organe de compensation de l'assurance-chômage\", \"Conseil fédéral\", \"Département fédéral de l'intérieur\"], \"evidence\": \"L'OFAS fixe les taux d'indemnisation en accord avec l'organe de compensation de l'assurance-chômage.\"}, \"it\": {\"question\": \"Quale autorità stabilisce le aliquote di risarcimento d'intesa con l'ufficio di compensazione dell'assicurazione contro la disoccupazione ?\", \"answer\": \"L'UFAS\", \"answer_aliases\": [\"UFAS\", \"l'UFAS\"], \"near_miss_answers\": [\"ufficio di compensazione dell'assicurazione contro la disoccupazione\", \"Consiglio federale\", \"Dipartimento federale dell'interno\"], \"evidence\": \"L'UFAS stabilisce le aliquote di risarcimento d'intesa con l'ufficio di compensazione dell'assicurazione contro la disoccupazione.\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2025-11-01\", \"paragraph\": \"2\", \"de\": {\"outdated_answer\": \"Das Bundesamt für Sozialversicherungen\", \"evidence\": \"Das Bundesamt für Sozialversicherungen setzt die Entschädigungsansätze im Einvernehmen mit der Ausgleichsstelle der Arbeitslosenversicherung fest.\"}, \"fr\": {\"outdated_answer\": \"L'OFAS\", \"evidence\": \"L'OFAS fixe les taux d'indemnisation en accord avec l'organe de compensation de l'assurance-chômage.\"}, \"it\": {\"outdated_answer\": \"L'Ufficio federale delle assicurazioni sociali\", \"evidence\": \"L'Ufficio federale delle assicurazioni sociali stabilisce le aliquote di risarcimento d'intesa con l'ufficio di compensazione dell'assicurazione contro la disoccupazione.\"}}]}}",
+ "reasoning_chars": 16835,
+ "usage": {
+  "prompt_tokens": 1932,
+  "completion_tokens": 4903,
+  "total_tokens": 6835,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 4284,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 161.5,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

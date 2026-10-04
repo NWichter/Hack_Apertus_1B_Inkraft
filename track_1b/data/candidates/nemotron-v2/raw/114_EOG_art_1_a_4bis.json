@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"EOG\", \"article_id\": \"art_1_a\", \"paragraph\": \"4bis\", \"domain\": \"eo_alv\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Mit dem Bezug welcher Altersrente erlischt der Anspruch auf eine Entschädigung in der Erwerbsersatzversicherung?\", \"answer\": \"einer ganzen Altersrente der Alters- und Hinterlassenenversicherung\", \"answer_aliases\": [\"einer ganzen Altersrente\", \"der ganzen Altersrente\", \"ganze Altersrente der Alters- und Hinterlassenenversicherung\"], \"near_miss_answers\": [\"einer ganzen Hinterlassenenrente\", \"einer ganzen Invalidenrente\", \"dem Erreichen des Referenzalters\"], \"evidence\": \"Der Anspruch auf eine Entschädigung erlischt mit dem Bezug einer ganzen Altersrente der Alters- und Hinterlassenenversicherung\"}, \"fr\": {\"question\": \"Avec la perception de quelle rente de vieillesse le droit à une allocation s'éteint-il dans l'assurance perte de gain?\", \"answer\": \"de la totalité de la rente de vieillesse de l'assurance-vieillesse et survivants\", \"answer_aliases\": [\"de la totalité de la rente de vieillesse\", \"de la rente de vieillesse totale\", \"la totalité de la rente de vieillesse\"], \"near_miss_answers\": [\"d'une rente de survivants totale\", \"d'une rente d'invalidité totale\", \"l'atteinte de l'âge de référence\"], \"evidence\": \"Le droit à une allocation s’éteint avec la perception de la totalité de la rente de vieillesse de l’assurance-vieillesse et survivants\"}, \"it\": {\"question\": \"Con la riscossione di quale rendita di vecchiaia si estingue il diritto a un'indennità nell'assicurazione per perdita di guadagno?\", \"answer\": \"della totalità della rendita di vecchiaia dell'assicurazione per la vecchiaia e per i superstiti\", \"answer_aliases\": [\"della totalità della rendita di vecchiaia\", \"della rendita di vecchiaia totale\", \"la totalità della rendita di vecchiaia\"], \"near_miss_answers\": [\"di una rendita di superstiti totale\", \"di una rendita d'invalidità totale\", \"il raggiungimento dell'età di riferimento\"], \"evidence\": \"Il diritto a un’indennità si estingue con la riscossione della totalità della rendita di vecchiaia dell’assicurazione per la vecchiaia e per i superstiti\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-01-01\", \"paragraph\": \"4bis\", \"de\": {\"outdated_answer\": \"einer Altersrente der Alters- und Hinterlassenenversicherung\", \"evidence\": \"Der Anspruch auf eine Entschädigung erlischt mit dem Bezug einer Altersrente der Alters- und Hinterlassenenversicherung\"}, \"fr\": {\"outdated_answer\": \"d'une rente de vieillesse de l'assurance-vieillesse et survivants\", \"evidence\": \"Le droit à une allocation s’éteint avec la perception d’une rente de vieillesse de l’assurance-vieillesse et survivants\"}, \"it\": {\"outdated_answer\": \"di una rendita di vecchiaia dell'assicurazione per la vecchiaia e per i superstiti\", \"evidence\": \"Il diritto a un’indennità si estingue con la riscossione di una rendita di vecchiaia dell’assicurazione per la vecchiaia e per i superstiti\"}}]}}",
+ "reasoning_chars": 11473,
+ "usage": {
+  "prompt_tokens": 1961,
+  "completion_tokens": 3969,
+  "total_tokens": 5930,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2937,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 80.5,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

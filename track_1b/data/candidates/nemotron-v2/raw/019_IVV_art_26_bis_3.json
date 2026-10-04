@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"IVV\", \"article_id\": \"art_26_bis\", \"paragraph\": \"3\", \"domain\": \"iv_el\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"percent\", \"answer_normalized\": {\"value\": 20, \"unit\": \"percent\"}, \"de\": {\"question\": \"Wie hoch ist der Abzug vom statistisch bestimmten Wert, wenn die versicherte Person aufgrund ihrer Invalidität nur noch mit einer funktionellen Leistungsfähigkeit nach Artikel 49 Absatz 1bis von 50 Prozent oder weniger tätig sein kann?\", \"answer\": \"20 Prozent\", \"answer_aliases\": [\"20 %\", \"zwanzig Prozent\"], \"near_miss_answers\": [\"10 Prozent\", \"50 Prozent\"], \"evidence\": \"so werden 20 Prozent abgezogen\"}, \"fr\": {\"question\": \"Quel pourcentage est déduit de la valeur statistique lorsque, en raison de son invalidité, l'assuré ne peut travailler qu'avec une capacité fonctionnelle au sens de l'art. 49, al. 1bis, de 50 % ou moins ?\", \"answer\": \"20 %\", \"answer_aliases\": [\"20 pour cent\", \"vingt pour cent\"], \"near_miss_answers\": [\"10 %\", \"50 %\"], \"evidence\": \"une déduction de 20 % est opérée\"}, \"it\": {\"question\": \"Quale percentuale viene dedotta dal valore determinato statisticamente quando l'assicurato, a causa dell'invalidità, può lavorare soltanto con una capacità funzionale secondo l'articolo 49 capoverso 1bis pari o inferiore al 50 per cento?\", \"answer\": \"20 per cento\", \"answer_aliases\": [\"20%\", \"venti per cento\"], \"near_miss_answers\": [\"10 per cento\", \"50 per cento\"], \"evidence\": \"è applicata una deduzione del 20 per cento\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-10-01\", \"paragraph\": \"3\", \"de\": {\"outdated_answer\": \"10 Prozent\", \"evidence\": \"so werden vom statistisch bestimmten Wert zehn Prozent für Teilzeitarbeit abgezogen\"}, \"fr\": {\"outdated_answer\": \"10 %\", \"evidence\": \"une déduction de 10 % pour le travail à temps partiel est opérée sur la valeur statistique\"}, \"it\": {\"outdated_answer\": \"10 per cento\", \"evidence\": \"è applicata una deduzione del dieci per cento per attività lucrativa a tempo parziale\"}}]}}",
+ "reasoning_chars": 8222,
+ "usage": {
+  "prompt_tokens": 1902,
+  "completion_tokens": 2738,
+  "total_tokens": 4640,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2120,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 123.8,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

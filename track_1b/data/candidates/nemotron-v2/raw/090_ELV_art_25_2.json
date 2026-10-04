@@ -1,0 +1,38 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"ELV\", \"article_id\": \"art_25\", \"paragraph\": \"2\", \"domain\": \"iv_el\", \"question_type\": \"procedural\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Auf welchen Zeitpunkt hin ist die jährliche Ergänzungsleistung in den Ergänzungsleistungen zur AHV/IV im Fall von Art. 25 Absatz 1 Buchstabe bbis neu zu verfügen?\", \"answer\": \"auf den Beginn des Monats, für den das Heim oder Spital nicht alle Tage in Rechnung stellt\", \"answer_aliases\": [\"Beginn des Monats, für den das Heim oder Spital nicht alle Tage in Rechnung stellt\", \"Monatsbeginn, für den das Heim oder Spital nicht alle Tage in Rechnung stellt\"], \"near_miss_answers\": [\"Beginn des der Veränderung folgenden Monats\", \"Beginn des neuen Rentenanspruchs\", \"Beginn des Monats, in dem die Änderung gemeldet wurde\"], \"evidence\": \"abis. im Fall von Absatz 1 Buchstabe bbis auf den Beginn des Monats, für den das Heim oder Spital nicht alle Tage in Rechnung stellt;\"}, \"fr\": {\"question\": \"À partir de quel moment la prestation complémentaire annuelle doit-elle faire l'objet d'une nouvelle décision dans les prestations complémentaires AVS/AI (LPC) dans le cas prévu par l'art. 25, al. 1, let. bbis?\", \"answer\": \"au début du mois pour lequel le home ou l'hôpital ne facture pas tous les jours\", \"answer_aliases\": [\"début du mois pour lequel le home ou l'hôpital ne facture pas tous les jours\", \"au début du mois pour lequel le home ou l'hôpital ne facture pas tous les jours\"], \"near_miss_answers\": [\"début du mois qui suit celui au cours duquel le changement est survenu\", \"début du mois au cours duquel la nouvelle rente a pris naissance\", \"début du mois au cours duquel le changement a été annoncé\"], \"evidence\": \"abis. dans le cas prévu par l'al. 1, let. bbis, au début du mois pour lequel le home ou l'hôpital ne facture pas tous les jours;\"}, \"it\": {\"question\": \"Da quale momento la prestazione complementare annua deve essere oggetto di una nuova decisione nelle prestazioni complementari AVS/AI (LPC) nel caso previsto dall'art. 25 cpv. 1 lett. bbis?\", \"answer\": \"dall'inizio del mese per il quale l'istituto o l'ospedale non fattura tutti i giorni\", \"answer_aliases\": [\"inizio del mese per il quale l'istituto o l'ospedale non fattura tutti i giorni\", \"dall'inizio del mese per il quale l'istituto o l'ospedale non fattura tutti i giorni\"], \"near_miss_answers\": [\"inizio del mese che segue quello in cui è avvenuto il cambiamento\", \"inizio del mese in cui la nuova rendita è nata\", \"inizio del mese in cui è stato annunciato il cambiamento\"], \"evidence\": \"abis. nel caso previsto dal capoverso 1 lettera bbis, dall'inizio del mese per il quale l'istituto o l'ospedale non fattura tutti i giorni;\"}, \"temporal\": null}",
+ "reasoning_chars": 9098,
+ "usage": {
+  "prompt_tokens": 3412,
+  "completion_tokens": 3205,
+  "total_tokens": 6617,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2317,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 50.9,
+ "attempts": 1,
+ "generated_at": "2026-10-04",
+ "settings": {
+  "max_tokens": 24000,
+  "reasoning_effort": "medium",
+  "temperature": 0.3
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"AHVV\", \"article_id\": \"art_161\", \"paragraph\": \"2\", \"domain\": \"ahv\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Welche Voraussetzung müssen Zweigstellen der AHV erfüllen, die nicht unter Absatz 1 fallen, damit sie jährlich mindestens einmal an Ort und Stelle revidiert werden müssen?\", \"answer\": \"selbständig Verfügungen ausstellen\", \"answer_aliases\": [\"ebenfalls selbständig Verfügungen ausstellen\", \"Verfügungen selbständig ausstellen\"], \"near_miss_answers\": [\"unter Absatz 1 fallen\", \"jährlich mindestens einmal revidiert werden\", \"nach den übertragenen Aufgaben\"], \"evidence\": \"Zweigstellen, die nicht unter Absatz 1 fallen, aber ebenfalls selbständig Verfügungen ausstellen, müssen jährlich mindestens einmal an Ort und Stelle revidiert werden.\"}, \"fr\": {\"question\": \"Quelle condition les agences de l'AVS qui ne relèvent pas de l'alinéa 1 doivent-elles remplir pour devoir être révisées sur place au moins une fois par an ?\", \"answer\": \"avoir la compétence de prendre des décisions\", \"answer_aliases\": [\"elles aussi la compétence de prendre des décisions\", \"compétence de prendre des décisions\"], \"near_miss_answers\": [\"relever de l'alinéa 1\", \"être révisées sur place au moins une fois par an\", \"selon le champ d'activité\"], \"evidence\": \"Les agences auxquelles ne s'applique pas l'al. 1, mais qui ont elles aussi la compétence de prendre des décisions, doivent être révisées sur place au moins une fois par an.\"}, \"it\": {\"question\": \"Quale requisito devono soddisfare le agenzie dell'AVS che non rientrano nel capoverso 1 per dover essere controllate sul posto almeno una volta l'anno?\", \"answer\": \"emanare decisioni autonomamente\", \"answer_aliases\": [\"emanano decisioni autonomamente\", \"decisioni autonomamente\"], \"near_miss_answers\": [\"rientrare nel capoverso 1\", \"essere controllate sul posto almeno una volta l'anno\", \"secondo i compiti delegati\"], \"evidence\": \"Le agenzie che non sono della categoria indicata nel capoverso 1, ma che emanano decisioni autonomamente, devono essere controllate sul posto almeno una volta l'anno.\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-09-01\", \"paragraph\": \"2\", \"de\": {\"outdated_answer\": \"mehr als die in Artikel 116 Absatz 1 genannten Mindestfunktionen ausüben\", \"evidence\": \"Zweigstellen, welche nicht unter Absatz 1 fallen, aber mehr als die in Artikel 116 Absatz 1 genannten Mindestfunktionen ausüben, müssen jährlich mindestens einmal an Ort und Stelle revidiert werden.\"}, \"fr\": {\"outdated_answer\": \"avoir d'autres tâches que les attributions minimums énumérées à l'art. 116, al. 1\", \"evidence\": \"Les agences auxquelles ne s'applique pas l'al. 1, mais qui ont d'autres tâches que les attributions minimums énumérées à l'art. 116, al. 1, doivent être révisées sur place au moins une fois par an.\"}, \"it\": {\"outdated_answer\": \"non adempiere soltanto i compiti enumerati nell'articolo 116 capoverso 1\", \"evidence\": \"Le agenzie che non sono della categoria indicata nel capoverso 1, ma che non adempiono soltanto i compiti enumerati nell'articolo 116 capoverso 1, devono essere controllate sul posto almeno una volta l'anno.\"}}]}}",
+ "reasoning_chars": 15524,
+ "usage": {
+  "prompt_tokens": 1831,
+  "completion_tokens": 4768,
+  "total_tokens": 6599,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 3987,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 159.9,
+ "attempts": 2,
+ "generated_at": "2026-10-04"
+}

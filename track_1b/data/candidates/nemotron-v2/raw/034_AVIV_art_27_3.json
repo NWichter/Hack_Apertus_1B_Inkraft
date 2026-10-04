@@ -1,0 +1,38 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"AVIV\", \"article_id\": \"art_27\", \"paragraph\": \"3\", \"domain\": \"eo_alv\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Unter welcher Bedingung kann die zuständige Amtsstelle einen tageweisen Bezug von kontrollfreien Tagen gewähren?\", \"answer\": \"Werden die Beratung und die Vermittlung nicht beeinträchtigt\", \"answer_aliases\": [\"Beratung und die Vermittlung nicht beeinträchtigt\", \"die Beratung und die Vermittlung nicht beeinträchtigt\"], \"near_miss_answers\": [\"spätestens 14 Tage im Voraus melden\", \"ohne entschuldbaren Grund als bezogen gelte\", \"grundsätzlich wochenweise zu beziehen\"], \"evidence\": \"Werden die Beratung und die Vermittlung nicht beeinträchtigt, so kann die zuständige Amtsstelle einen tageweisen Bezug gewähren.\"}, \"fr\": {\"question\": \"Sous quelle condition l'office compétent peut-il accorder la prise individuelle de jours sans contrôle ?\", \"answer\": \"ne nuit ni au conseil ni au placement\", \"answer_aliases\": [\"si elle ne nuit ni au conseil ni au placement\", \"ni au conseil ni au placement\"], \"near_miss_answers\": [\"au moins deux semaines à l'avance\", \"sans motif valable\", \"par semaine entière\"], \"evidence\": \"L’office compétent peut accorder la prise individuelle de jours sans contrôle si elle ne nuit ni au conseil ni au placement.\"}, \"it\": {\"question\": \"A quale condizione il servizio competente può autorizzare la fruizione a giorni singoli dei giorni esenti dall’obbligo di controllo?\", \"answer\": \"non pregiudichi né la consulenza né il collocamento\", \"answer_aliases\": [\"ciò non pregiudichi né la consulenza né il collocamento\", \"né la consulenza né il collocamento\"], \"near_miss_answers\": [\"con almeno 14 giorni di anticipo\", \"senza motivo scusabile\", \"in blocchi settimanali\"], \"evidence\": \"Il servizio competente può autorizzare la fruizione a giorni singoli purché ciò non pregiudichi né la consulenza né il collocamento.\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2025-11-01\", \"paragraph\": \"3\", \"de\": {\"outdated_answer\": \"nur wochenweise bezogen werden\", \"evidence\": \"Die kontrollfreien Tage können nur wochenweise bezogen werden.\"}, \"fr\": {\"outdated_answer\": \"que par semaine entière\", \"evidence\": \"Il ne peut prendre ses jours sans contrôle que par semaine entière.\"}, \"it\": {\"outdated_answer\": \"soltanto in blocchi settimanali\", \"evidence\": \"I giorni esenti dall’obbligo di controllo possono essere presi soltanto in blocchi settimanali.\"}}]}}",
+ "reasoning_chars": 20273,
+ "usage": {
+  "prompt_tokens": 1975,
+  "completion_tokens": 5818,
+  "total_tokens": 7793,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 5185,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 126.3,
+ "attempts": 1,
+ "generated_at": "2026-10-04",
+ "settings": {
+  "max_tokens": 24000,
+  "reasoning_effort": "medium",
+  "temperature": 0.3
+ }
+}

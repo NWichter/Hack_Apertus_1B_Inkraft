@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"KVV\", \"article_id\": \"art_105_k\", \"paragraph\": \"5\", \"domain\": \"kvg_billing\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Welchen Betrag erstattet der Versicherer dem Kanton zurück, wenn dieser eine Prämienverbilligung für einen Zeitraum ausrichtet, für den der Versicherer bereits eine Forderung nach Artikel 64a Absatz 3 KVG in seiner Schlussabrechnung bekanntgegeben hat?\", \"answer\": \"Höhe des vom Kanton übernommenen Betrags\", \"answer_aliases\": [\"einen Prozentsatz dieser Prämienverbilligung in der Höhe des vom Kanton übernommenen Betrags\", \"in der Höhe des vom Kanton übernommenen Betrags\"], \"near_miss_answers\": [\"den Betrag der ganzen Prämienverbilligung\", \"den vom Kanton übernommenen Betrag\", \"einen pauschalen Prozentsatz\"], \"evidence\": \"so erstattet der Versicherer dem Kanton einen Prozentsatz dieser Prämienverbilligung in der Höhe des vom Kanton übernommenen Betrags zurück\"}, \"fr\": {\"question\": \"Quel montant l’assureur rembourse-t-il au canton lorsque celui-ci accorde une réduction de primes pour une période pour laquelle l’assureur a déjà annoncé une créance conformément à l’art. 64a, al. 3, LAMal dans son décompte final?\", \"answer\": \"montant identique à celui pris en charge par le canton\", \"answer_aliases\": [\"d’un montant identique à celui pris en charge par le canton\", \"un pourcentage d’un montant identique à celui pris en charge par le canton\"], \"near_miss_answers\": [\"le montant intégral de la réduction de primes\", \"le montant pris en charge par le canton\", \"un pourcentage fixe\"], \"evidence\": \"l’assureur lui rétrocède un pourcentage de la réduction de primes en question, d’un montant identique à celui pris en charge par le canton\"}, \"it\": {\"question\": \"Quale importo l’assicuratore rimborsa al Cantone quando questi accorda una riduzione del premio per un periodo per il quale l’assicuratore ha già notificato nel suo conteggio finale un credito secondo l’articolo 64a capoverso 3 LAMal?\", \"answer\": \"importo pari a quello assunto dal Cantone\", \"answer_aliases\": [\"per un importo pari a quello assunto dal Cantone\", \"una percentuale di tale riduzione del premio per un importo pari a quello assunto dal Cantone\"], \"near_miss_answers\": [\"l’ammontare dell’intera riduzione del premio\", \"l’importo assunto dal Cantone\", \"una percentuale fissa\"], \"evidence\": \"l’assicuratore gli restituisce una percentuale di tale riduzione del premio per un importo pari a quello assunto dal Cantone\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2025-06-01\", \"paragraph\": \"3\", \"de\": {\"outdated_answer\": \"85 Prozent dieser Prämienverbilligung\", \"evidence\": \"so erstattet der Versicherer 85 Prozent dieser Prämienverbilligung an den Kanton zurück\"}, \"fr\": {\"outdated_answer\": \"85 % de la réduction de primes\", \"evidence\": \"l’assureur rétrocède au canton 85 % de la réduction de primes en question\"}, \"it\": {\"outdated_answer\": \"l’85 per cento di tale riduzione del premio\", \"evidence\": \"l’assicuratore restituisce al Cantone l’85 per cento di tale riduzione del premio\"}}]}}",
+ "reasoning_chars": 27469,
+ "usage": {
+  "prompt_tokens": 2482,
+  "completion_tokens": 7997,
+  "total_tokens": 10479,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 7039,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 245.0,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

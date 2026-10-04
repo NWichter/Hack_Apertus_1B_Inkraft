@@ -1,0 +1,38 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"KVV\", \"article_id\": \"art_71\", \"paragraph\": \"4\", \"domain\": \"kvg_billing\", \"question_type\": \"temporal\", \"register\": \"lay\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Was erfolgt über eine öffentlich zugängliche Online-Plattform?\", \"answer\": \"Die Veröffentlichungen\", \"answer_aliases\": [\"Veröffentlichungen\", \"Die Veröffentlichungen\"], \"near_miss_answers\": [\"Veröffentlichungen nach Absatz 1\", \"Veröffentlichungen im Bundesblatt\", \"Veröffentlichungen auf Papier\"], \"evidence\": \"Die Veröffentlichungen erfolgen über eine öffentlich zugängliche Online-Plattform.\"}, \"fr\": {\"question\": \"Qu'est-ce qui est effectué sur une plateforme en ligne accessible au public ?\", \"answer\": \"Les publications visées au présent article\", \"answer_aliases\": [\"Les publications\", \"Publications visées au présent article\"], \"near_miss_answers\": [\"Publications visées à l'alinéa 1\", \"Publications au Bulletin officiel\", \"Publications sur papier\"], \"evidence\": \"Les publications visées au présent article sont effectuées sur une plateforme en ligne accessible au public.\"}, \"it\": {\"question\": \"Cosa avviene attraverso una piattaforma online pubblicamente accessibile?\", \"answer\": \"Le pubblicazioni\", \"answer_aliases\": [\"Pubblicazioni\", \"Le pubblicazioni\"], \"near_miss_answers\": [\"Pubblicazioni del capoverso 1\", \"Pubblicazioni nella Gazzetta ufficiale\", \"Pubblicazioni su carta\"], \"evidence\": \"Le pubblicazioni sono effettuate attraverso una piattaforma online pubblicamente accessibile.\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-09-01\", \"paragraph\": \"6\", \"de\": {\"outdated_answer\": \"Die Veröffentlichungen nach den Absätzen 1–5\", \"evidence\": \"Die Veröffentlichungen nach den Absätzen 1–5 erfolgen über eine öffentlich zugängliche Online-Plattform.\"}, \"fr\": {\"outdated_answer\": \"Les publications visées aux al. 1 à 5\", \"evidence\": \"Les publications visées aux al. 1 à 5 sont effectuées sur une plate-forme en ligne publique.\"}, \"it\": {\"outdated_answer\": \"Le pubblicazioni di cui ai capoversi 1–5\", \"evidence\": \"Le pubblicazioni di cui ai capoversi 1–5 sono effettuate attraverso una piattaforma online pubblicamente accessibile.\"}}]}}",
+ "reasoning_chars": 24514,
+ "usage": {
+  "prompt_tokens": 1552,
+  "completion_tokens": 6159,
+  "total_tokens": 7711,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 6301,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 143.6,
+ "attempts": 1,
+ "generated_at": "2026-10-04",
+ "settings": {
+  "max_tokens": 24000,
+  "reasoning_effort": "medium",
+  "temperature": 0.3
+ }
+}

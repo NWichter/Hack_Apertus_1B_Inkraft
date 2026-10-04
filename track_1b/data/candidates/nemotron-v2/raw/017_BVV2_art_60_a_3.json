@@ -1,0 +1,38 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"BVV2\", \"article_id\": \"art_60_a\", \"paragraph\": \"3\", \"domain\": \"bvg_3a\", \"question_type\": \"procedural\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Welche Vorsorgeguthaben reduzieren den Höchstbetrag der Einkaufssumme?\", \"answer\": \"Vorsorgeguthaben, die in der bisherigen Vorsorgeeinrichtung verbleiben\", \"answer_aliases\": [\"Vorsorgeguthaben, die in der bisherigen Vorsorgeeinrichtung verbleiben\", \"Vorsorgeguthaben in der bisherigen Vorsorgeeinrichtung\", \"verbleibende Vorsorgeguthaben in der bisherigen Vorsorgeeinrichtung\"], \"near_miss_answers\": [\"Freizügigkeitsguthaben\", \"Vorsorgeguthaben\", \"Freizügigkeitsguthaben, die nicht übertragen werden mussten\"], \"evidence\": \"Vorsorgeguthaben, die in der bisherigen Vorsorgeeinrichtung verbleiben, oder Freizügigkeitsguthaben\"}, \"fr\": {\"question\": \"Quels avoirs de prévoyance réduisent le montant maximal de la somme de rachat ?\", \"answer\": \"avoirs de prévoyance auprès de l'institution de prévoyance précédente\", \"answer_aliases\": [\"avoirs de prévoyance auprès de l'institution de prévoyance précédente\", \"avoirs de prévoyance de l'institution précédente\", \"avoirs de prévoyance restants auprès de l'institution précédente\"], \"near_miss_answers\": [\"avoirs de libre passage\", \"avoirs de prévoyance\", \"avoirs de libre passage non transférables\"], \"evidence\": \"avoirs de prévoyance auprès de l'institution de prévoyance précédente ou d'avoirs de libre passage\"}, \"it\": {\"question\": \"Quali averi di previdenza riducono l'ammontare massimo della somma di acquisto?\", \"answer\": \"avere di previdenza che rimane nel precedente istituto di previdenza\", \"answer_aliases\": [\"avere di previdenza che rimane nel precedente istituto di previdenza\", \"avere di previdenza nel precedente istituto\", \"avere di previdenza rimasto nel precedente istituto\"], \"near_miss_answers\": [\"avere di libero passaggio\", \"avere di previdenza\", \"avere di libero passaggio non trasferibile\"], \"evidence\": \"avere di previdenza che rimane nel precedente istituto di previdenza o di un avere di libero passaggio\"}, \"temporal\": null}",
+ "reasoning_chars": 48275,
+ "usage": {
+  "prompt_tokens": 1873,
+  "completion_tokens": 12809,
+  "total_tokens": 14682,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 12294,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 422.9,
+ "attempts": 1,
+ "generated_at": "2026-10-04",
+ "settings": {
+  "max_tokens": 24000,
+  "reasoning_effort": "medium",
+  "temperature": 0.3
+ }
+}

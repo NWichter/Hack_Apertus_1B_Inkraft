@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"KVV\", \"article_id\": \"art_71_a\", \"paragraph\": \"1\", \"domain\": \"kvg_billing\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Welche Behörde genehmigt die Fachinformation, ausserhalb deren Anwendung die obligatorische Krankenpflegeversicherung unter bestimmten Voraussetzungen die Kosten eines Arzneimittels der Spezialitätenliste übernimmt?\", \"answer\": \"Swissmedic\", \"answer_aliases\": [\"Swissmedic\", \"Swissmedic\"], \"near_miss_answers\": [\"BAG\", \"Kanton\", \"Versicherer\"], \"evidence\": \"von der Swissmedic genehmigten Fachinformation\"}, \"fr\": {\"question\": \"Quelle autorité approuve l'information professionnelle, en dehors de l'application de laquelle l'assurance obligatoire des soins prend en charge les coûts d'un médicament de la liste des spécialités sous certaines conditions ?\", \"answer\": \"Swissmedic\", \"answer_aliases\": [\"Swissmedic\", \"Swissmedic\"], \"near_miss_answers\": [\"OFSP\", \"Canton\", \"Assureur\"], \"evidence\": \"autorisée par Swissmedic\"}, \"it\": {\"question\": \"Quale autorità approva l'informazione professionale, al di fuori dell'applicazione della quale l'assicurazione obbligatoria delle cure medico-sanitarie assume i costi di un medicamento dell'elenco delle specialità a determinate condizioni ?\", \"answer\": \"Swissmedic\", \"answer_aliases\": [\"Swissmedic\", \"Swissmedic\"], \"near_miss_answers\": [\"UFSP\", \"Cantone\", \"Assicuratore\"], \"evidence\": \"approvata da Swissmedic\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-09-01\", \"paragraph\": \"1\", \"de\": {\"outdated_answer\": \"Institut\", \"evidence\": \"vom Institut genehmigten Fachinformation\"}, \"fr\": {\"outdated_answer\": \"l'institut\", \"evidence\": \"autorisée par l'institut\"}, \"it\": {\"outdated_answer\": \"l'Istituto\", \"evidence\": \"approvata dall'Istituto\"}}]}}",
+ "reasoning_chars": 31312,
+ "usage": {
+  "prompt_tokens": 2811,
+  "completion_tokens": 8577,
+  "total_tokens": 11388,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 7968,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 191.8,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

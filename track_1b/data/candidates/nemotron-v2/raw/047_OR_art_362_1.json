@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"OR\", \"article_id\": \"art_362\", \"paragraph\": \"1\", \"domain\": \"or_illness\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Was ist die rechtliche Folge, wenn durch Gesamtarbeitsvertrag von den folgenden Vorschriften zuungunsten der Arbeitnehmerin oder des Arbeitnehmers abgewichen wird?\", \"answer\": \"darf nicht abgewichen werden\", \"answer_aliases\": [\"nicht abgewichen werden\", \"darf nicht zuungunsten abgewichen werden\"], \"near_miss_answers\": [\"sind unwirksam\", \"können abgewichen werden\", \"sind anfechtbar\"], \"evidence\": \"darf von den folgenden Vorschriften nicht zuungunsten der Arbeitnehmerin oder des Arbeitnehmers abgewichen werden\"}, \"fr\": {\"question\": \"Quelle est la conséquence juridique en cas de dérogation aux dispositions ci-après au détriment de la travailleuse ou du travailleur par convention collective de travail?\", \"answer\": \"ne peut pas être dérogé\", \"answer_aliases\": [\"ne peut être dérogé\", \"interdiction de déroguer\"], \"near_miss_answers\": [\"sont invalides\", \"peuvent être dérogés\", \"sont annulables\"], \"evidence\": \"Il ne peut pas être dérogé aux dispositions ci-après par accord, contrat-type de travail ou convention collective, au détriment de la travailleuse ou du travailleur\"}, \"it\": {\"question\": \"Qual è la conseguenza giuridica se si deroga alle disposizioni seguenti a svantaggio della lavoratrice o del lavoratore mediante contratto collettivo di lavoro?\", \"answer\": \"non può essere derogato\", \"answer_aliases\": [\"non può essere derogato a svantaggio\", \"divieto di deroga\"], \"near_miss_answers\": [\"sono invalidi\", \"possono essere derogati\", \"sono annullabili\"], \"evidence\": \"Alle disposizioni seguenti non può essere derogato a svantaggio del lavoratore mediante accordo, contratto normale o contratto collettivo di lavoro\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2026-01-01\", \"paragraph\": \"2\", \"de\": {\"outdated_answer\": \"sind nichtig\", \"evidence\": \"Abreden sowie Bestimmungen von Normalarbeitsverträgen und Gesamtarbeitsverträgen, die von den vorstehend angeführten Vorschriften zuungunsten des Arbeitnehmers abweichen, sind nichtig.\"}, \"fr\": {\"outdated_answer\": \"sont nuls\", \"evidence\": \"Les accords et les dispositions de contrats-types de travail et de conventions collectives qui dérogent aux dispositions susdites au détriment du travailleur, sont nuls.\"}, \"it\": {\"outdated_answer\": \"sono nulli\", \"evidence\": \"Sono nulli gli accordi e le clausole di contratti normali e contratti collettivi di lavoro deroganti alle disposizioni surriferite a svantaggio del lavoratore.\"}}]}}",
+ "reasoning_chars": 21187,
+ "usage": {
+  "prompt_tokens": 1666,
+  "completion_tokens": 5885,
+  "total_tokens": 7551,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 5394,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 155.5,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

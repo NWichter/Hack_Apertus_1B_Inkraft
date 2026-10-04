@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"ELG\", \"article_id\": \"art_23\", \"paragraph\": \"1\", \"domain\": \"iv_el\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Auf welchen rechtlichen Aspekt muss sich die Revision bei den Stellen, die Ergänzungsleistungen festsetzen und auszahlen, erstrecken?\", \"answer\": \"die Einhaltung der gesetzlichen Vorschriften\", \"answer_aliases\": [\"Einhaltung der gesetzlichen Vorschriften\", \"die Einhaltung der gesetzlichen Vorschriften\"], \"near_miss_answers\": [\"die materielle Rechtsanwendung\", \"die Buchführung\", \"die Jahresrechnung\"], \"evidence\": \"die Einhaltung der gesetzlichen Vorschriften, die Buchführung, die Jahresrechnung und die Geschäftsführung\"}, \"fr\": {\"question\": \"Sur quel aspect juridique la révision doit-elle porter chez les services qui fixent et versent les prestations complémentaires?\", \"answer\": \"le respect des dispositions légales\", \"answer_aliases\": [\"respect des dispositions légales\", \"le respect des dispositions légales\"], \"near_miss_answers\": [\"l’application des dispositions légales quant au fond\", \"la comptabilité\", \"les comptes annuels\"], \"evidence\": \"le respect des dispositions légales, à la comptabilité, aux comptes annuels et à la gestion en général\"}, \"it\": {\"question\": \"Su quale aspetto giuridico deve concentrarsi la revisione presso gli uffici che fissano e versano le prestazioni complementari?\", \"answer\": \"il rispetto delle prescrizioni legali\", \"answer_aliases\": [\"rispetto delle prescrizioni legali\", \"il rispetto delle prescrizioni legali\"], \"near_miss_answers\": [\"l’applicazione materiale del diritto\", \"la contabilità\", \"il conto annuale\"], \"evidence\": \"il rispetto delle prescrizioni legali, alla contabilità, al conto annuale e alla gestione\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-01-01\", \"paragraph\": \"1\", \"de\": {\"outdated_answer\": \"die materielle Rechtsanwendung\", \"evidence\": \"die materielle Rechtsanwendung, die Buchhaltung und die Geschäftsführung\"}, \"fr\": {\"outdated_answer\": \"l’application des dispositions légales quant au fond\", \"evidence\": \"l’application des dispositions légales quant au fond, à la comptabilité et à la gestion en général\"}, \"it\": {\"outdated_answer\": \"l’applicazione materiale del diritto\", \"evidence\": \"l’applicazione materiale del diritto, alla contabilità e alla gestione\"}}]}}",
+ "reasoning_chars": 31604,
+ "usage": {
+  "prompt_tokens": 1762,
+  "completion_tokens": 8144,
+  "total_tokens": 9906,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 8065,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 174.8,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

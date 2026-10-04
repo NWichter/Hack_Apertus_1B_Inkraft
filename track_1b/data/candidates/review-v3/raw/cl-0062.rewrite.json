@@ -1,0 +1,29 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "content": "{\"rewrite\": true, \"question_type\": \"procedural\", \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Was kann die versicherte Person in der Invalidenversicherung beanspruchen, solange der Rentenanspruch nicht entsteht?\", \"answer\": \"Taggeld nach Artikel 22\", \"answer_aliases\": [\"Taggeld nach Art. 22\", \"ein Taggeld nach Artikel 22\"], \"near_miss_answers\": [\"Taggeld nach Artikel 21\", \"Taggeld nach Artikel 23\", \"Verletztenentschädigung\"], \"evidence\": \"Der Anspruch entsteht nicht, solange die versicherte Person ein Taggeld nach Artikel 22 beanspruchen kann.\"}, \"fr\": {\"question\": \"Quelle prestation l’assuré peut-il faire valoir dans l’assurance-invalidité tant que le droit à une rente ne prend pas naissance?\", \"answer\": \"une indemnité journalière au sens de l’art. 22\", \"answer_aliases\": [\"une indemnité journalière au sens de l’article 22\", \"indemnité journalière au sens de l’art. 22\"], \"near_miss_answers\": [\"indemnité journalière au sens de l’art. 21\", \"indemnité journalière au sens de l’art. 23\", \"allocation pour impotent\"], \"evidence\": \"Le droit ne prend pas naissance tant que l’assuré peut faire valoir son droit à une indemnité journalière au sens de l’art. 22.\"}, \"it\": {\"question\": \"Quale prestazione può pretendere l’assicurato nell’assicurazione invalidità finché il diritto a una rendita non nasce?\", \"answer\": \"un’indennità giornaliera ai sensi dell’articolo 22\", \"answer_aliases\": [\"un’indennità giornaliera ai sensi dell’art. 22\", \"indennità giornaliera ai sensi dell’articolo 22\"], \"near_miss_answers\": [\"indennità giornaliera ai sensi dell’articolo 21\", \"indennità giornaliera ai sensi dell’articolo 23\", \"indennità per impotente\"], \"evidence\": \"Il diritto non nasce finché l’assicurato può pretendere un’indennità giornaliera ai sensi dell’articolo 22.\"}}",
+ "usage": {
+  "prompt_tokens": 1118,
+  "completion_tokens": 5767,
+  "total_tokens": 6885,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 5038,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 81.9,
+ "generated_at": "2026-10-04"
+}

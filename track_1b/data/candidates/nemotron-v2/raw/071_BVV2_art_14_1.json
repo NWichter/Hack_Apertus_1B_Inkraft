@@ -1,0 +1,38 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"BVV2\", \"article_id\": \"art_14\", \"paragraph\": \"1\", \"domain\": \"bvg_3a\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Bis zu welchem Zeitpunkt muss die Vorsorgeeinrichtung das Alterskonto einer invaliden Person, der sie eine Rente ausrichtet, für den Fall eines Wiedereintritts in das Erwerbsleben weiterführen?\", \"answer\": \"des Referenzalters nach Artikel 13 Absatz 1 BVG\", \"answer_aliases\": [\"bis zum Erreichen des Referenzalters nach Artikel 13 Absatz 1 BVG\", \"Erreichen des Referenzalters nach Artikel 13 Absatz 1 BVG\"], \"near_miss_answers\": [\"Wiedereintritt in das Erwerbsleben\", \"Artikel 13 Absatz 1 BVG\", \"Referenzalter\"], \"evidence\": \"bis zum Erreichen des Referenzalters nach Artikel 13 Absatz 1 BVG\"}, \"fr\": {\"question\": \"Jusqu'à quel moment l'institution de prévoyance doit-elle continuer de tenir le compte de vieillesse d'un invalide auquel elle verse une rente, dans la perspective d'une réinsertion possible dans la vie active?\", \"answer\": \"de référence fixé à l'art. 13, al. 1, LPP\", \"answer_aliases\": [\"jusqu'à l'âge de référence fixé à l'art. 13, al. 1, LPP\", \"l'âge de référence fixé à l'art. 13, al. 1, LPP\"], \"near_miss_answers\": [\"réinsertion dans la vie active\", \"art. 13, al. 1, LPP\", \"âge de référence\"], \"evidence\": \"jusqu'à l'âge de référence fixé à l'art. 13, al. 1, LPP\"}, \"it\": {\"question\": \"Fino a quando l'istituto di previdenza deve continuare a tenere il conto di vecchiaia di un invalido a cui versa una rendita, nella prospettiva di un possibile reinserimento nella vita attiva?\", \"answer\": \"di riferimento secondo l'articolo 13 capoverso 1 LPP\", \"answer_aliases\": [\"fino al momento in cui questi ha raggiunto l'età di riferimento secondo l'articolo 13 capoverso 1 LPP\", \"l'età di riferimento secondo l'articolo 13 capoverso 1 LPP\"], \"near_miss_answers\": [\"reinserimento nella vita attiva\", \"articolo 13 capoverso 1 LPP\", \"età di riferimento\"], \"evidence\": \"fino al momento in cui questi ha raggiunto l'età di riferimento secondo l'articolo 13 capoverso 1 LPP\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-01-01\", \"paragraph\": \"1\", \"de\": {\"outdated_answer\": \"bis zum Rentenalter\", \"evidence\": \"bis zum Rentenalter\"}, \"fr\": {\"outdated_answer\": \"jusqu'à l'âge-terme de la vieillesse\", \"evidence\": \"jusqu'à l'âge-terme de la vieillesse\"}, \"it\": {\"outdated_answer\": \"fino al momento in cui questi ha raggiunto l'età conferente il diritto alla rendita di vecchiaia\", \"evidence\": \"fino al momento in cui questi ha raggiunto l'età conferente il diritto alla rendita di vecchiaia\"}}]}}",
+ "reasoning_chars": 37579,
+ "usage": {
+  "prompt_tokens": 1818,
+  "completion_tokens": 12948,
+  "total_tokens": 14766,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 9733,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 341.7,
+ "attempts": 1,
+ "generated_at": "2026-10-04",
+ "settings": {
+  "max_tokens": 24000,
+  "reasoning_effort": "medium",
+  "temperature": 0.3
+ }
+}

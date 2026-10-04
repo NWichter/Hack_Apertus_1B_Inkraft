@@ -1,0 +1,38 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"KVG\", \"article_id\": \"art_56\", \"paragraph\": \"5\", \"domain\": \"kvg_billing\", \"question_type\": \"procedural\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Wie muss die Kostenübernahme im Einzelfall laut Tarifverträgen geprüft werden?\", \"answer\": \"nach einheitlichen Kriterien unter Berücksichtigung klinischer Leitlinien\", \"answer_aliases\": [\"einheitlichen Kriterien unter Berücksichtigung klinischer Leitlinien\", \"geprüft nach einheitlichen Kriterien unter Berücksichtigung klinischer Leitlinien\"], \"near_miss_answers\": [\"diagnostische Massnahmen nicht unnötig wiederholt werden\", \"einheitliche Kriterien\", \"klinische Leitlinien\"], \"evidence\": \"die Kostenübernahme im Einzelfall nach einheitlichen Kriterien unter Berücksichtigung klinischer Leitlinien geprüft wird\"}, \"fr\": {\"question\": \"Selon quelles modalités la prise en charge au cas par cas doit-elle être examinée dans les conventions tarifaires ?\", \"answer\": \"selon des critères uniformes tenant compte des recommandations pour la pratique clinique\", \"answer_aliases\": [\"critères uniformes tenant compte des recommandations pour la pratique clinique\", \"examinée selon des critères uniformes tenant compte des recommandations pour la pratique clinique\"], \"near_miss_answers\": [\"éviter une réitération inutile d’actes diagnostiques\", \"critères uniformes\", \"recommandations pour la pratique clinique\"], \"evidence\": \"une prise en charge dans le cas particulier qui soit examinée selon des critères uniformes tenant compte des recommandations pour la pratique clinique\"}, \"it\": {\"question\": \"Secondo quali modalità l’assunzione dei costi nel singolo caso deve essere esaminata nelle convenzioni tariffali ?\", \"answer\": \"secondo criteri uniformi e tenendo conto delle linee guida cliniche\", \"answer_aliases\": [\"criteri uniformi e tenendo conto delle linee guida cliniche\", \"esaminata secondo criteri uniformi e tenendo conto delle linee guida cliniche\"], \"near_miss_answers\": [\"sia evitata una ripetizione inutile di atti diagnostici\", \"criteri uniformi\", \"linee guida cliniche\"], \"evidence\": \"l’assunzione dei costi nel singolo caso sia esaminata secondo criteri uniformi e tenendo conto delle linee guida cliniche\"}, \"temporal\": null}",
+ "reasoning_chars": 13944,
+ "usage": {
+  "prompt_tokens": 1931,
+  "completion_tokens": 3826,
+  "total_tokens": 5757,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 3551,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 66.0,
+ "attempts": 1,
+ "generated_at": "2026-10-04",
+ "settings": {
+  "max_tokens": 24000,
+  "reasoning_effort": "medium",
+  "temperature": 0.3
+ }
+}

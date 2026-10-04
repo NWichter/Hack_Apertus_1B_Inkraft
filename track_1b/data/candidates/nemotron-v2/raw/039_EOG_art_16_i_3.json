@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"EOG\", \"article_id\": \"art_16_i\", \"paragraph\": \"3\", \"domain\": \"eo_alv\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Für wen regelt der Bundesrat die Anspruchsvoraussetzungen bei Arbeitsunfähigkeit oder Arbeitslosigkeit, wenn die Voraussetzungen nach Absatz 1 Buchstabe c oder d nicht erfüllt sind?\", \"answer\": \"Personen\", \"answer_aliases\": [\"Personen\", \"die Personen\", \"alle Personen\"], \"near_miss_answers\": [\"Anspruchsberechtigte\", \"Versicherte\", \"Eltern\"], \"evidence\": \"für Personen, die wegen Arbeitsunfähigkeit oder Arbeitslosigkeit die Voraussetzungen nach Absatz 1 Buchstabe c oder d nicht erfüllen\"}, \"fr\": {\"question\": \"Pour qui le Conseil fédéral règle-t-il les conditions du droit à l'allocation en cas d'incapacité de travail ou de chômage, lorsque les conditions de l'al. 1, let. c ou d ne sont pas remplies?\", \"answer\": \"personnes\", \"answer_aliases\": [\"personnes\", \"les personnes\", \"toutes les personnes\"], \"near_miss_answers\": [\"ayants droit\", \"assurés\", \"parents\"], \"evidence\": \"des personnes qui, pour cause d’incapacité de travail ou de chômage, ne remplissent pas les conditions de l’al. 1, let. c ou d\"}, \"it\": {\"question\": \"Per chi il Consiglio federale disciplina le condizioni del diritto all'indennità in caso di incapacità al lavoro o disoccupazione, quando non sono soddisfatte le condizioni di cui al capoverso 1 lettere c o d?\", \"answer\": \"persone\", \"answer_aliases\": [\"persone\", \"le persone\", \"tutte le persone\"], \"near_miss_answers\": [\"aventi diritto\", \"assicurati\", \"genitori\"], \"evidence\": \"delle persone che, per incapacità al lavoro o disoccupazione, non soddisfano le condizioni di cui al capoverso 1 lettere c o d\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-01-01\", \"paragraph\": \"3\", \"de\": {\"outdated_answer\": \"Männer\", \"evidence\": \"für Männer, die wegen Arbeitsunfähigkeit oder Arbeitslosigkeit: a. die Voraussetzungen von Absatz 1 Buchstabe c nicht erfüllen; b. im Zeitpunkt der Geburt des Kindes nicht Arbeitnehmer oder Selbstständigerwerbende sind.\"}, \"fr\": {\"outdated_answer\": \"hommes\", \"evidence\": \"des hommes qui, pour cause d’incapacité de travail ou de chômage: a. ne remplissent pas les conditions prévues à l’al. 1, let. c; b. ne sont pas considérés comme salariés ou indépendants au moment de la naissance de l’enfant.\"}, \"it\": {\"outdated_answer\": \"uomini\", \"evidence\": \"degli uomini che per incapacità al lavoro o disoccupazione: a. non soddisfano le condizioni di cui al capoverso 1 lettera c; b. al momento della nascita del figlio non sono salariati o indipendenti.\"}}]}}",
+ "reasoning_chars": 18165,
+ "usage": {
+  "prompt_tokens": 1760,
+  "completion_tokens": 5361,
+  "total_tokens": 7121,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 4668,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 133.0,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}

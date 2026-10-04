@@ -1,0 +1,33 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"BVV2\", \"article_id\": \"art_26_b\", \"paragraph\": \"1\", \"domain\": \"bvg_3a\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"text\", \"answer_normalized\": null, \"de\": {\"question\": \"Nach Erreichen welches Alters entscheidet das Gericht bei der Scheidung über den Vorsorgeausgleich auf Basis der ungekürzten Invalidenrente?\", \"answer\": \"reglementarisches Referenzalter\", \"answer_aliases\": [\"Referenzalter\", \"reglementarisches Referenzalter\"], \"near_miss_answers\": [\"ordentliches Rentenalter\", \"AHV-Referenzalter\"], \"evidence\": \"nach dem Erreichen des reglementarischen Referenzalters\"}, \"fr\": {\"question\": \"Après l'atteinte de quel âge le juge statue-t-il sur le partage en se basant sur la rente d'invalidité non réduite en cas de divorce ?\", \"answer\": \"âge de référence réglementaire\", \"answer_aliases\": [\"âge de référence\", \"âge de référence réglementaire\"], \"near_miss_answers\": [\"âge ordinaire de la retraite\", \"âge de référence AVS\"], \"evidence\": \"après l’âge de référence réglementaire\"}, \"it\": {\"question\": \"Dopo il raggiungimento di quale età il giudice decide sulla divisione basandosi sulla rendita d'invalidità non ridotta in caso di divorzio?\", \"answer\": \"età di riferimento regolamentare\", \"answer_aliases\": [\"età di riferimento\", \"età di riferimento regolamentare\"], \"near_miss_answers\": [\"età ordinaria di pensionamento\", \"età di riferimento AVS\"], \"evidence\": \"dopo il raggiungimento dell’età di riferimento regolamentare\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-01-01\", \"paragraph\": \"1\", \"de\": {\"outdated_answer\": \"reglementarisches Rentenalter\", \"evidence\": \"nach dem reglementarischen Rentenalter\"}, \"fr\": {\"outdated_answer\": \"âge réglementaire de la retraite\", \"evidence\": \"après l'âge réglementaire de la retraite\"}, \"it\": {\"outdated_answer\": \"età di pensionamento stabilita dal regolamento\", \"evidence\": \"dopo l’età di pensionamento stabilita dal regolamento\"}}]}}",
+ "reasoning_chars": 10624,
+ "usage": {
+  "prompt_tokens": 1808,
+  "completion_tokens": 3180,
+  "total_tokens": 4988,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2713,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 89.1,
+ "attempts": 1,
+ "generated_at": "2026-10-04"
+}
