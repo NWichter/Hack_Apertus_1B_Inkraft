@@ -25,7 +25,7 @@ Judges can run the reproducible benchmark directly via Docker on a clean checkou
 make run
 ```
 
-By default, `make run` executes the offline replay check without API credentials. The dataset is not frozen yet and no model has been evaluated, so `data/` holds no `expected_results.json`; until then the replay runs on the bundled 6-row test fixture (`track_1b/tests/fixtures/mini`) and only shows that scoring is reproducible.
+By default, `make run` executes the offline replay check without API credentials. The dataset is not frozen yet and there is only one preliminary run on the unreviewed draft (aggregates in `track_1b/report/preliminary_summary.json`), so `data/` holds no `expected_results.json`; until the freeze the replay runs on the bundled 6-row test fixture (`track_1b/tests/fixtures/mini`) and only shows that scoring is reproducible, it does not recompute the preliminary numbers.
 
 ### Live Evaluation (`MODE=full`)
 

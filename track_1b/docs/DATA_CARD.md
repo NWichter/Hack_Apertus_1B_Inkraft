@@ -22,7 +22,8 @@ tags:
 # Inkraft
 
 Short-answer benchmark on Swiss social and health insurance law in German, French and Italian, as of
-**1 October 2026**. Every gold answer is quoted from the authentic text of a federal act on fedlex. For
+**1 October 2026**. Every gold answer is backed by a verbatim quote from the authentic text of a federal act on fedlex
+(yes/no and calculation answers are derived from it). For
 amended provisions the previously valid answer is stored as well, so wrong answers can be classed as
 _stale_ (matches the earlier law) or as another error.
 

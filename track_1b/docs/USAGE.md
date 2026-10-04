@@ -2,7 +2,7 @@
 
 `inkraft` is the evaluation code for the Inkraft dataset: short questions on Swiss federal social and
 health insurance law (KVG, AHV/IV/EL, UVG/ATSG, EO, OR 324a) in German, French and Italian, as of
-1 October 2026. Every gold answer is quoted from fedlex. Grading follows SimpleQA
+1 October 2026. Every gold answer is backed by a verbatim fedlex quote. Grading follows SimpleQA
 (correct / incorrect / not attempted), extended by the error subtypes `STALE` (the rule before an
 amendment) and `NEAR_MISS` (a related but wrong value).
 
