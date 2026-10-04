@@ -55,6 +55,8 @@ make run MODE=full
 | `track_1b/data/` | Benchmark draft (`test.jsonl`, `metadata.jsonl`); 303 LLM-drafted cores, human review pending, not frozen |
 | `track_1b/docs/` | Dataset Card, annotation guidelines, and CLI usage documentation |
 | `track_1b/src/*.py` | Dataset construction: `fetch_fedlex.py` (sources), `make_batches.py` / `build_items.py` / `assemble.py` (drafting), `validate_items.py`, `apply_review.py`, `find_changes.py` (version diff and sentence-level change check), `calibration_pilot.py` |
+| `track_1b/src/*.py` (pipeline after drafting) | `gen_nemotron.py` (temporal candidates from version diffs, open model), `gen_proposals.py` (review proposals), `check_candidates.py`, `make_review_package.py`, `after_review.py` (apply the human review), `freeze.py` (v1.0.0), `hf_release.py` (dataset card and upload); `track_1b/scripts/run_after_freeze.sh` (judge calibration, runs, scoring, human sample) |
+| `tools/review/` | Local review tool (`index.html`, no server): every core next to the statute text, decisions logged; loads the review package `track_1b/data/review/review_package.v1.jsonl`. Guide (German): `tools/review/ANLEITUNG.md`. `fedlex_texte.js` is built locally with `build_fedlex.py` and not committed |
 | `track_1b/report/` | Report build (`build.sh`, `build.ps1`), figure script and the aggregates of the preliminary run |
 | `website/` | Project landing page and interactive report preview |
 
