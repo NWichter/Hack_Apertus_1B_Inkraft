@@ -19,6 +19,13 @@ def _items(args):
     items = dataset.load(args.data)
     if args.lang:
         items = [it for it in items if it["lang"].startswith(args.lang)]
+    if getattr(args, "cores", None):
+        keep = {
+            line.strip()
+            for line in Path(args.cores).read_text(encoding="utf-8").splitlines()
+            if line.strip()
+        }
+        items = [it for it in items if it["core_id"] in keep]
     if args.sample:
         cores = sorted({it["core_id"] for it in items})
         keep = set(random.Random(args.seed).sample(cores, min(args.sample, len(cores))))
@@ -230,6 +237,7 @@ def main(argv=None):
             "--sample", type=int, help="random subset of N cores (all languages)"
         )
         p.add_argument("--seed", type=int, default=20261001)
+        p.add_argument("--cores", help="file with one core_id per line (ablation subset)")
         p.add_argument("--workers", type=int, default=3)
         if name == "generate":
             p.add_argument("--model", help="overrides LLM_NAME")
