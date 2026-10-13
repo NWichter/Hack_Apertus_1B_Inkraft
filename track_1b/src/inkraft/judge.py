@@ -132,6 +132,11 @@ def run(endpoint, items, responses, out_path, workers=4, extra_params=None):
                     **chat_kwargs,
                 )
                 raw = d["choices"][0]["message"].get("content")
+                usage = d.get("usage") or {}
+                row["tokens_in"] = usage.get("prompt_tokens")
+                row["tokens_out"] = usage.get("completion_tokens")
+                if usage.get("cost") is not None:
+                    row["cost_usd"] = round(row.get("cost_usd", 0.0) + usage["cost"], 8)
             except Exception as e:  # noqa: BLE001
                 raw, row["error"] = None, str(e)[:300]
             parsed = parse(raw)

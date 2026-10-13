@@ -43,6 +43,8 @@ def grade_rows(items, responses, judgements=None):
                 "register": it.get("register"),
                 "temporal": (it.get("temporal") or {}).get("bucket"),
                 "authoring": (it.get("authoring") or {}).get("mode"),
+                "generator": it.get("generator"),
+                "stale_pair": bool(it.get("outdated_answers")),
                 "model": r["model"],
                 "condition": r["condition"],
                 "grade": grade,
@@ -229,6 +231,10 @@ def score_all(
         res["language_consistency"] = language_consistency(rows)
         res["by_domain"] = breakdown(rows, "domain")
         res["by_question_type"] = breakdown(rows, "question_type")
+        res["by_temporal"] = breakdown(rows, "temporal")
+        res["by_stale_pair"] = breakdown(rows, "stale_pair")
+        if any(r.get("generator") for r in rows):
+            res["by_generator"] = breakdown(rows, "generator")
         if include_authoring and any(r.get("authoring") for r in rows):
             res["by_authoring"] = breakdown(rows, "authoring")
         if include_exposure and any(r.get("exposure") for r in rows):

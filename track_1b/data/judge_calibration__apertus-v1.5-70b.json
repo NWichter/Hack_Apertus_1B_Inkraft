@@ -1,0 +1,96 @@
+{
+ "judge_model": "apertus-v1.5-70b",
+ "prompt_id": "inkraft-judge-v1",
+ "n": 61,
+ "grade_accuracy": 0.9836,
+ "subtype_accuracy": 0.8852,
+ "errors": [
+  {
+   "cal_id": "cal-003",
+   "kind": "stale",
+   "expected": "INCORRECT",
+   "expected_subtype": "STALE",
+   "got": null,
+   "grade_ok": false,
+   "subtype_ok": false
+  },
+  {
+   "cal_id": "cal-020",
+   "kind": "conflicting",
+   "expected": "INCORRECT",
+   "expected_subtype": "OTHER",
+   "got": {
+    "grade": "INCORRECT",
+    "incorrect_subtype": "NEAR_MISS",
+    "reason": "Gibt zwei widersprüchliche Zeiträume an (6 Monate und 1 Jahr), wobei 1 Jahr ein veraltetes bzw. nahe liegendes falsches Detail ist."
+   },
+   "grade_ok": true,
+   "subtype_ok": false
+  },
+  {
+   "cal_id": "cal-036",
+   "kind": "conflicting",
+   "expected": "INCORRECT",
+   "expected_subtype": "OTHER",
+   "got": {
+    "grade": "INCORRECT",
+    "incorrect_subtype": "NEAR_MISS",
+    "reason": "The model answer includes the near-miss value '3 anni' which is incorrect as of 2026-10-01."
+   },
+   "grade_ok": true,
+   "subtype_ok": false
+  },
+  {
+   "cal_id": "cal-042",
+   "kind": "near_miss",
+   "expected": "INCORRECT",
+   "expected_subtype": "NEAR_MISS",
+   "got": {
+    "grade": "INCORRECT",
+    "incorrect_subtype": "OTHER",
+    "reason": "The model answer states 'Non' which contradicts the gold answer 'Oui'."
+   },
+   "grade_ok": true,
+   "subtype_ok": false
+  },
+  {
+   "cal_id": "cal-044",
+   "kind": "conflicting",
+   "expected": "INCORRECT",
+   "expected_subtype": "OTHER",
+   "got": {
+    "grade": "INCORRECT",
+    "incorrect_subtype": "NEAR_MISS",
+    "reason": "The model answer includes the near-miss value 'un anno' (one year) instead of the correct 'cinque anni' (five years)."
+   },
+   "grade_ok": true,
+   "subtype_ok": false
+  },
+  {
+   "cal_id": "cal-058",
+   "kind": "near_miss",
+   "expected": "INCORRECT",
+   "expected_subtype": "NEAR_MISS",
+   "got": {
+    "grade": "INCORRECT",
+    "incorrect_subtype": "OTHER",
+    "reason": "The model answer states 'No', which contradicts the gold answer 'Sì'."
+   },
+   "grade_ok": true,
+   "subtype_ok": false
+  },
+  {
+   "cal_id": "cal-060",
+   "kind": "conflicting",
+   "expected": "INCORRECT",
+   "expected_subtype": "OTHER",
+   "got": {
+    "grade": "INCORRECT",
+    "incorrect_subtype": "NEAR_MISS",
+    "reason": "The answer provides '6 mesi' which is a near-miss value (half of the correct 12 months)."
+   },
+   "grade_ok": true,
+   "subtype_ok": false
+  }
+ ]
+}

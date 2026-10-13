@@ -266,6 +266,78 @@
      }
     }
    },
+   "by_temporal": {
+    "changed_2024_2025": {
+     "n": 2,
+     "correct": 0.0,
+     "incorrect": 0.5,
+     "not_attempted": 0.5,
+     "cga": 0.0,
+     "f": 0.0,
+     "hallucination_rate": 1.0,
+     "stale_share_of_errors": 1.0,
+     "score_l1": -0.5,
+     "score_l3": -1.5,
+     "n_total": 2,
+     "n_ungraded": 0,
+     "grade_source": {
+      "judge": 2
+     }
+    },
+    "stable_pre2024": {
+     "n": 4,
+     "correct": 0.75,
+     "incorrect": 0.25,
+     "not_attempted": 0.0,
+     "cga": 0.75,
+     "f": 0.75,
+     "hallucination_rate": 0.25,
+     "stale_share_of_errors": 0.0,
+     "score_l1": 0.5,
+     "score_l3": 0.0,
+     "n_total": 4,
+     "n_ungraded": 0,
+     "grade_source": {
+      "judge": 4
+     }
+    }
+   },
+   "by_stale_pair": {
+    "False": {
+     "n": 4,
+     "correct": 0.75,
+     "incorrect": 0.25,
+     "not_attempted": 0.0,
+     "cga": 0.75,
+     "f": 0.75,
+     "hallucination_rate": 0.25,
+     "stale_share_of_errors": 0.0,
+     "score_l1": 0.5,
+     "score_l3": 0.0,
+     "n_total": 4,
+     "n_ungraded": 0,
+     "grade_source": {
+      "judge": 4
+     }
+    },
+    "True": {
+     "n": 2,
+     "correct": 0.0,
+     "incorrect": 0.5,
+     "not_attempted": 0.5,
+     "cga": 0.0,
+     "f": 0.0,
+     "hallucination_rate": 1.0,
+     "stale_share_of_errors": 1.0,
+     "score_l1": -0.5,
+     "score_l3": -1.5,
+     "n_total": 2,
+     "n_ungraded": 0,
+     "grade_source": {
+      "judge": 2
+     }
+    }
+   },
    "by_rule": {
     "abstain": 1,
     "match": 3,

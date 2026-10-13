@@ -1,0 +1,61 @@
+{
+ "judge_model": "qwen/qwen3-235b-a22b-2507",
+ "prompt_id": "inkraft-judge-v1",
+ "n": 61,
+ "grade_accuracy": 1.0,
+ "subtype_accuracy": 0.9344,
+ "errors": [
+  {
+   "cal_id": "cal-020",
+   "kind": "conflicting",
+   "expected": "INCORRECT",
+   "expected_subtype": "OTHER",
+   "got": {
+    "grade": "INCORRECT",
+    "incorrect_subtype": "NEAR_MISS",
+    "reason": "The model answer gives two possible durations (6 months or 1 year), including the near-miss value of 1 year, creating conflicting information instead of a single correct answer."
+   },
+   "grade_ok": true,
+   "subtype_ok": false
+  },
+  {
+   "cal_id": "cal-036",
+   "kind": "conflicting",
+   "expected": "INCORRECT",
+   "expected_subtype": "OTHER",
+   "got": {
+    "grade": "INCORRECT",
+    "incorrect_subtype": "NEAR_MISS",
+    "reason": "L'answer fornisce due valori, uno corretto (cinque anni) e uno errato (3 anni), creando un conflitto."
+   },
+   "grade_ok": true,
+   "subtype_ok": false
+  },
+  {
+   "cal_id": "cal-044",
+   "kind": "conflicting",
+   "expected": "INCORRECT",
+   "expected_subtype": "OTHER",
+   "got": {
+    "grade": "INCORRECT",
+    "incorrect_subtype": "NEAR_MISS",
+    "reason": "L'answer fornisce due valori, uno corretto (cinque anni) e uno errato (un anno), creando ambiguità e contraddizione."
+   },
+   "grade_ok": true,
+   "subtype_ok": false
+  },
+  {
+   "cal_id": "cal-060",
+   "kind": "conflicting",
+   "expected": "INCORRECT",
+   "expected_subtype": "OTHER",
+   "got": {
+    "grade": "INCORRECT",
+    "incorrect_subtype": "NEAR_MISS",
+    "reason": "L'answer fornisce due valori, 12 mesi e 6 mesi, creando ambiguità e includendo un valore errato (6 mesi) che è un near-miss."
+   },
+   "grade_ok": true,
+   "subtype_ok": false
+  }
+ ]
+}

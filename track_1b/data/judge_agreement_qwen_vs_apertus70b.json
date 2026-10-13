@@ -1,0 +1,50 @@
+{
+ "judge_a": "qwen/qwen3-235b-a22b-2507",
+ "judge_b": "apertus-v1.5-70b",
+ "condition": "closed_dated",
+ "classes": [
+  "CORRECT",
+  "INCORRECT",
+  "NOT_ATTEMPTED"
+ ],
+ "by_model": {
+  "apertus-v1.5-70b": {
+   "n": 951,
+   "raw_agreement": 0.9285,
+   "kappa": 0.86,
+   "kappa_5class": 0.6125,
+   "grades_a": {
+    "CORRECT": 485,
+    "INCORRECT": 456,
+    "NOT_ATTEMPTED": 10
+   },
+   "grades_b": {
+    "CORRECT": 533,
+    "INCORRECT": 403,
+    "NOT_ATTEMPTED": 15
+   },
+   "rule_decided": 690,
+   "rule_agreement_a": 0.971,
+   "rule_agreement_b": 0.9536
+  },
+  "apertus-v1.5-8b": {
+   "n": 951,
+   "raw_agreement": 0.959,
+   "kappa": 0.9291,
+   "kappa_5class": 0.6671,
+   "grades_a": {
+    "INCORRECT": 527,
+    "NOT_ATTEMPTED": 111,
+    "CORRECT": 313
+   },
+   "grades_b": {
+    "INCORRECT": 501,
+    "NOT_ATTEMPTED": 118,
+    "CORRECT": 332
+   },
+   "rule_decided": 682,
+   "rule_agreement_a": 0.9545,
+   "rule_agreement_b": 0.9531
+  }
+ }
+}

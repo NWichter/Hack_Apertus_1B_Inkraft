@@ -90,6 +90,7 @@ def load(data_dir):
                 "source": m.get("source"),
                 "temporal": m.get("temporal"),
                 "authoring": m.get("authoring"),
+                "generator": m.get("generator"),
             }
         )
     return out
