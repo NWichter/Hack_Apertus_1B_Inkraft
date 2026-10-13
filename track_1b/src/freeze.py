@@ -24,7 +24,8 @@ SEED = 20261012
 
 
 def sha(path):
-    return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+    """SHA-256 over LF line endings, so the hash does not depend on the checkout platform."""
+    return hashlib.sha256(Path(path).read_bytes().replace(b"\r\n", b"\n")).hexdigest()
 
 
 def main():

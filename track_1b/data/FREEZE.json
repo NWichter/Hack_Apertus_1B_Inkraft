@@ -3,12 +3,12 @@
  "frozen_at": "2026-10-13T18:05:47+00:00",
  "as_of": "2026-10-01",
  "files": {
-  "test.jsonl": "12f784c3d22f63e50e7ef9513bb7c7cd022f14d5e458885f0e99db160c9ac6fb",
-  "metadata.jsonl": "6dc63da71a22d708725abf164da4d83548cc59db26f91a731555bb999c0cd486",
+  "test.jsonl": "5165d0b04504fd6936c818247ccbdaed82dac4046ecfcd3eb17f8c9052cf4a16",
+  "metadata.jsonl": "97fb5a88c7979ce42c5b62eca144d9bdeb2b6adb82f05fa68f0da2ead9f5330f",
   "merged.v1.0.0-rc1.jsonl": "ab795353dc105a2274c4116300a0174bfa5cb447f2b73df5dd2dab2842bf4a32",
   "ablation_cores.txt": "c8820808f2201f43e774d6a04e42c3eccca077e42bfab09685a7f026fa598272"
  },
- "fedlex_manifest_sha256": "757dd932dfffd0bab7416c406a6f5b55811225ad873cbce5d41bd5e7de14ff56",
+ "fedlex_manifest_sha256": "074f17b0f0b141dcffc165c1a1349f649d944cc99e9f1dbbc6a664eb49d79f3d",
  "stats": {
   "cores": 327,
   "rows": 951,
@@ -77,5 +77,6 @@
   "reviewed": 0,
   "auto_verified": 327
  },
- "review_log_sha256": "3d7cc4e57627c59a2a5517149ed86da22f24b5770aad9cad320d75a2238f53cd"
+ "review_log_sha256": "3d7cc4e57627c59a2a5517149ed86da22f24b5770aad9cad320d75a2238f53cd",
+ "hash_note": "SHA-256 over the file content with LF line endings"
 }
