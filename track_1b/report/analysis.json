@@ -1,0 +1,424 @@
+{
+ "judge_model": "qwen/qwen3-235b-a22b-2507",
+ "models": {
+  "apertus-v1.5-8b": {
+   "closed_dated": {
+    "all": {
+     "k": 313,
+     "n": 951,
+     "rate": 0.3291,
+     "wilson95": [
+      0.3,
+      0.3596
+     ]
+    },
+    "stale_pair_rows_correct": {
+     "k": 9,
+     "n": 157,
+     "rate": 0.0573,
+     "wilson95": [
+      0.0304,
+      0.1053
+     ]
+    },
+    "stale_pair_rows_stale": {
+     "k": 20,
+     "n": 157,
+     "rate": 0.1274,
+     "wilson95": [
+      0.084,
+      0.1886
+     ]
+    },
+    "stale_pair_rows_not_attempted": {
+     "k": 37,
+     "n": 157,
+     "rate": 0.2357,
+     "wilson95": [
+      0.1761,
+      0.3079
+     ]
+    },
+    "other_rows_correct": {
+     "k": 304,
+     "n": 794,
+     "rate": 0.3829,
+     "wilson95": [
+      0.3497,
+      0.4172
+     ]
+    }
+   },
+   "open_book": {
+    "all": {
+     "k": 902,
+     "n": 951,
+     "rate": 0.9485,
+     "wilson95": [
+      0.9325,
+      0.9608
+     ]
+    },
+    "stale_pair_rows_correct": {
+     "k": 150,
+     "n": 157,
+     "rate": 0.9554,
+     "wilson95": [
+      0.9108,
+      0.9782
+     ]
+    },
+    "stale_pair_rows_stale": {
+     "k": 1,
+     "n": 157,
+     "rate": 0.0064,
+     "wilson95": [
+      0.0011,
+      0.0352
+     ]
+    }
+   },
+   "stale_pair_cores": {
+    "n": 53,
+    "with_stale_answer_in_any_language": 11
+   },
+   "exposure": {
+    "current": {
+     "correct": {
+      "k": 231,
+      "n": 564,
+      "rate": 0.4096,
+      "wilson95": [
+       0.3697,
+       0.4506
+      ]
+     },
+     "stale": {
+      "k": 0,
+      "n": 564,
+      "rate": 0.0,
+      "wilson95": [
+       0.0,
+       0.0068
+      ]
+     }
+    },
+    "absent": {
+     "correct": {
+      "k": 71,
+      "n": 277,
+      "rate": 0.2563,
+      "wilson95": [
+       0.2085,
+       0.3108
+      ]
+     },
+     "stale": {
+      "k": 2,
+      "n": 277,
+      "rate": 0.0072,
+      "wilson95": [
+       0.002,
+       0.0259
+      ]
+     }
+    },
+    "outdated": {
+     "correct": {
+      "k": 6,
+      "n": 84,
+      "rate": 0.0714,
+      "wilson95": [
+       0.0331,
+       0.1472
+      ]
+     },
+     "stale": {
+      "k": 18,
+      "n": 84,
+      "rate": 0.2143,
+      "wilson95": [
+       0.1401,
+       0.3135
+      ]
+     }
+    }
+   },
+   "ablation_de": {
+    "closed_dated_vs_closed_swiss": {
+     "n": 327,
+     "closed_dated_correct": 0.3394,
+     "closed_swiss_correct": 0.3547,
+     "only_dated_correct": 4,
+     "only_closed_swiss_correct": 9,
+     "mcnemar_exact_p": 0.2668,
+     "stale_dated": 8,
+     "stale_closed_swiss": 9
+    },
+    "closed_dated_vs_closed_plain": {
+     "n": 327,
+     "closed_dated_correct": 0.3394,
+     "closed_plain_correct": 0.3211,
+     "only_dated_correct": 36,
+     "only_closed_plain_correct": 30,
+     "mcnemar_exact_p": 0.5386,
+     "stale_dated": 8,
+     "stale_closed_plain": 9
+    }
+   },
+   "by_lang_correct": {
+    "de-CH": {
+     "k": 111,
+     "n": 327,
+     "rate": 0.3394,
+     "wilson95": [
+      0.2903,
+      0.3924
+     ]
+    },
+    "fr-CH": {
+     "k": 105,
+     "n": 312,
+     "rate": 0.3365,
+     "wilson95": [
+      0.2864,
+      0.3907
+     ]
+    },
+    "it-CH": {
+     "k": 97,
+     "n": 312,
+     "rate": 0.3109,
+     "wilson95": [
+      0.2621,
+      0.3643
+     ]
+    }
+   },
+   "language_consistency": {
+    "n_cores": 312,
+    "same_grade_all_three": 0.5032,
+    "correct_on_parallel_cores": {
+     "de": 0.3397,
+     "fr": 0.3365,
+     "it": 0.3109
+    }
+   }
+  },
+  "apertus-v1.5-70b": {
+   "closed_dated": {
+    "all": {
+     "k": 485,
+     "n": 951,
+     "rate": 0.51,
+     "wilson95": [
+      0.4782,
+      0.5417
+     ]
+    },
+    "stale_pair_rows_correct": {
+     "k": 12,
+     "n": 157,
+     "rate": 0.0764,
+     "wilson95": [
+      0.0443,
+      0.1288
+     ]
+    },
+    "stale_pair_rows_stale": {
+     "k": 45,
+     "n": 157,
+     "rate": 0.2866,
+     "wilson95": [
+      0.2217,
+      0.3618
+     ]
+    },
+    "stale_pair_rows_not_attempted": {
+     "k": 3,
+     "n": 157,
+     "rate": 0.0191,
+     "wilson95": [
+      0.0065,
+      0.0547
+     ]
+    },
+    "other_rows_correct": {
+     "k": 473,
+     "n": 794,
+     "rate": 0.5957,
+     "wilson95": [
+      0.5612,
+      0.6293
+     ]
+    }
+   },
+   "open_book": {
+    "all": {
+     "k": 916,
+     "n": 951,
+     "rate": 0.9632,
+     "wilson95": [
+      0.9492,
+      0.9734
+     ]
+    },
+    "stale_pair_rows_correct": {
+     "k": 153,
+     "n": 157,
+     "rate": 0.9745,
+     "wilson95": [
+      0.9363,
+      0.99
+     ]
+    },
+    "stale_pair_rows_stale": {
+     "k": 1,
+     "n": 157,
+     "rate": 0.0064,
+     "wilson95": [
+      0.0011,
+      0.0352
+     ]
+    }
+   },
+   "stale_pair_cores": {
+    "n": 53,
+    "with_stale_answer_in_any_language": 24
+   },
+   "exposure": {
+    "current": {
+     "correct": {
+      "k": 360,
+      "n": 564,
+      "rate": 0.6383,
+      "wilson95": [
+       0.5978,
+       0.6769
+      ]
+     },
+     "stale": {
+      "k": 0,
+      "n": 564,
+      "rate": 0.0,
+      "wilson95": [
+       0.0,
+       0.0068
+      ]
+     }
+    },
+    "absent": {
+     "correct": {
+      "k": 107,
+      "n": 277,
+      "rate": 0.3863,
+      "wilson95": [
+       0.3309,
+       0.4448
+      ]
+     },
+     "stale": {
+      "k": 14,
+      "n": 277,
+      "rate": 0.0505,
+      "wilson95": [
+       0.0303,
+       0.083
+      ]
+     }
+    },
+    "outdated": {
+     "correct": {
+      "k": 10,
+      "n": 84,
+      "rate": 0.119,
+      "wilson95": [
+       0.066,
+       0.2055
+      ]
+     },
+     "stale": {
+      "k": 29,
+      "n": 84,
+      "rate": 0.3452,
+      "wilson95": [
+       0.2523,
+       0.4517
+      ]
+     }
+    }
+   },
+   "ablation_de": {
+    "closed_dated_vs_closed_swiss": {
+     "n": 327,
+     "closed_dated_correct": 0.5321,
+     "closed_swiss_correct": 0.5352,
+     "only_dated_correct": 11,
+     "only_closed_swiss_correct": 12,
+     "mcnemar_exact_p": 1.0,
+     "stale_dated": 16,
+     "stale_closed_swiss": 14
+    },
+    "closed_dated_vs_closed_plain": {
+     "n": 327,
+     "closed_dated_correct": 0.5321,
+     "closed_plain_correct": 0.5168,
+     "only_dated_correct": 40,
+     "only_closed_plain_correct": 35,
+     "mcnemar_exact_p": 0.6445,
+     "stale_dated": 16,
+     "stale_closed_plain": 17
+    }
+   },
+   "by_lang_correct": {
+    "de-CH": {
+     "k": 174,
+     "n": 327,
+     "rate": 0.5321,
+     "wilson95": [
+      0.478,
+      0.5855
+     ]
+    },
+    "fr-CH": {
+     "k": 158,
+     "n": 312,
+     "rate": 0.5064,
+     "wilson95": [
+      0.4512,
+      0.5615
+     ]
+    },
+    "it-CH": {
+     "k": 153,
+     "n": 312,
+     "rate": 0.4904,
+     "wilson95": [
+      0.4354,
+      0.5456
+     ]
+    }
+   },
+   "language_consistency": {
+    "n_cores": 312,
+    "same_grade_all_three": 0.6667,
+    "correct_on_parallel_cores": {
+     "de": 0.5288,
+     "fr": 0.5064,
+     "it": 0.4904
+    }
+   }
+  }
+ },
+ "70b_vs_8b_closed_dated": {
+  "n": 951,
+  "only_70b": 224,
+  "only_8b": 52,
+  "mcnemar_exact_p": 0.0
+ },
+ "paid_usage_usd": {
+  "judge_qwen": 0.4385,
+  "second_check_qwen": 0.0609,
+  "note": "reported by OpenRouter per call; judge calibration (61 calls) and a 5-core test of the second check are not included"
+ }
+}

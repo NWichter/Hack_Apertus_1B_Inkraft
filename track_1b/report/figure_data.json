@@ -1,0 +1,98 @@
+{
+ "8B closed|stable": {
+  "n": 716,
+  "CORRECT": 288,
+  "STALE": 0,
+  "NEAR_MISS": 136,
+  "OTHER": 229,
+  "NOT_ATTEMPTED": 63
+ },
+ "8B closed|changed": {
+  "n": 78,
+  "CORRECT": 16,
+  "STALE": 0,
+  "NEAR_MISS": 17,
+  "OTHER": 34,
+  "NOT_ATTEMPTED": 11
+ },
+ "8B closed|stale_pair": {
+  "n": 157,
+  "CORRECT": 9,
+  "STALE": 20,
+  "NEAR_MISS": 6,
+  "OTHER": 85,
+  "NOT_ATTEMPTED": 37
+ },
+ "70B closed|stable": {
+  "n": 716,
+  "CORRECT": 445,
+  "STALE": 0,
+  "NEAR_MISS": 110,
+  "OTHER": 157,
+  "NOT_ATTEMPTED": 4
+ },
+ "70B closed|changed": {
+  "n": 78,
+  "CORRECT": 28,
+  "STALE": 0,
+  "NEAR_MISS": 21,
+  "OTHER": 26,
+  "NOT_ATTEMPTED": 3
+ },
+ "70B closed|stale_pair": {
+  "n": 157,
+  "CORRECT": 12,
+  "STALE": 45,
+  "NEAR_MISS": 21,
+  "OTHER": 76,
+  "NOT_ATTEMPTED": 3
+ },
+ "8B open book|stable": {
+  "n": 716,
+  "CORRECT": 681,
+  "STALE": 0,
+  "NEAR_MISS": 21,
+  "OTHER": 1,
+  "NOT_ATTEMPTED": 13
+ },
+ "8B open book|changed": {
+  "n": 78,
+  "CORRECT": 71,
+  "STALE": 0,
+  "NEAR_MISS": 3,
+  "OTHER": 3,
+  "NOT_ATTEMPTED": 1
+ },
+ "8B open book|stale_pair": {
+  "n": 157,
+  "CORRECT": 150,
+  "STALE": 1,
+  "NEAR_MISS": 5,
+  "OTHER": 1,
+  "NOT_ATTEMPTED": 0
+ },
+ "70B open book|stable": {
+  "n": 716,
+  "CORRECT": 690,
+  "STALE": 0,
+  "NEAR_MISS": 14,
+  "OTHER": 6,
+  "NOT_ATTEMPTED": 6
+ },
+ "70B open book|changed": {
+  "n": 78,
+  "CORRECT": 73,
+  "STALE": 0,
+  "NEAR_MISS": 1,
+  "OTHER": 3,
+  "NOT_ATTEMPTED": 1
+ },
+ "70B open book|stale_pair": {
+  "n": 157,
+  "CORRECT": 153,
+  "STALE": 1,
+  "NEAR_MISS": 2,
+  "OTHER": 1,
+  "NOT_ATTEMPTED": 0
+ }
+}

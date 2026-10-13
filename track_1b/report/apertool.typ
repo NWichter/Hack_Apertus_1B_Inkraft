@@ -29,6 +29,7 @@
   show heading: set block(above: 1.1em, below: 0.6em)
   set figure(gap: 0.5em)
   show figure.caption: set text(8.5pt)
+  show figure.where(kind: image): it => place(top, scope: "parent", float: true, it)
   set table(stroke: none, inset: (x: 4pt, y: 3pt))
   show table: set text(8.5pt)
   show raw: set text(font: "DejaVu Sans Mono", size: 8pt)

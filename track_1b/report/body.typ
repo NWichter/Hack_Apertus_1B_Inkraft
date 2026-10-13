@@ -1,24 +1,27 @@
 #quote(block: true)[
-Three sentence summary: Swiss residents, municipal AHV offices, medical
+Three sentence summary: Swiss residents, AHV branch offices, medical
 practices and social services need exact amounts, deadlines and
 responsibilities from Swiss social and health insurance law, and a model
 that states last year's rule is worse than one that says it does not
 know. Inkraft is a trilingual (German, French, Italian) short-answer
-benchmark in which every gold answer is backed by a verbatim quote from
-the authentic text of a federal act as of 1 October 2026 (yes/no and
-calculation answers are derived from it) and, for amended provisions,
-the previously valid answer is stored as well, so that wrong answers
-split into #emph[stale] and #emph[invented]. Preliminary results on the
-unreviewed draft (rule-based grading only): Apertus 1.5 70B answers 52~%
-and 8B 35~% of rows correctly, but only 6--10~% of the questions on
-rules changed since 2024, and a date in the prompt does not help.
+benchmark of 327 questions (951 rows) in which every gold answer is
+backed by a verbatim quote from the authentic text of a federal act as
+of 1 October 2026, and for 53 amended provisions the previously valid
+answer is stored verbatim from the earlier Fedlex version, so that wrong
+answers split into #emph[stale] (earlier law) and other errors. On
+release candidate v1.0.0-rc1 (automatically verified; human spot check
+in progress), Apertus 1.5 70B answers 51 % of rows correctly but only 8
+% of the rows whose rule changed with a stored earlier answer, where it
+gives the earlier law in 29 % of the rows; with the cited paragraph in
+the prompt it reaches 97 % on the same rows, and a date in the prompt
+does not help.
 ]
 
 #strong[Track:] Apertus Readiness - Track 1B (Swiss Voices, Core Task
 Intelligence) \ #strong[Event:] Online \ #strong[Team:] Apertool ---
 Niklas Wichter \ #strong[Demo:] project page
-https:/\/inkraft.apertool.ch; Hugging Face dataset and video planned
-with v1.0.0 (by 2026-10-15)
+https:/\/inkraft.apertool.ch; Hugging Face dataset with test items,
+model responses, judgements and metadata (published with the submission)
 
 #divider()
 
@@ -26,7 +29,9 @@ with v1.0.0 (by 2026-10-15)
 <use-of-apertus>
 - #strong[Model:] swiss-ai/Apertus-v1.5-8B and swiss-ai/Apertus-v1.5-70B
   @apertus2025@swissai2026apertus15
-- #strong[How it is used:] evaluation
+- #strong[How it is used:] evaluation (examinee). Apertus never drafts,
+  fixes or checks items; Apertus-70B is used once as a #emph[comparison]
+  judge to measure self-preference, never for the reported scores.
 - #strong[Where it runs:] hosted Hack Apertus endpoint
   (OpenAI-compatible); any other endpoint via `LLM_BASE_URL`,
   `LLM_API_KEY`, `LLM_NAME`
@@ -37,37 +42,40 @@ with v1.0.0 (by 2026-10-15)
 <use-case-description>
 Every person living in Switzerland is insured under the Federal Health
 Insurance Act (KVG) and the old-age and survivors' insurance (AHV).
-Questions about deductibles, contribution rates, waiting periods and
-registration deadlines reach municipal AHV branch offices, front-office
-staff in medical practices, social services and the insured themselves.
-Mistakes cost money: a missed switching deadline binds a person to an
-insurer for another year, a wrong waiting period delays an invalidity
-insurance (IV) claim. Public administrations already deploy Apertus
-@swissai2026apertus15, so the question is not only whether the model
-knows this law, but whether it knows the law #emph[in force].
+Questions about deductibles, contribution rates, waiting periods, family
+allowances and registration deadlines reach municipal AHV branch
+offices, front-office staff in medical practices, social services and
+the insured themselves. Mistakes cost money: a missed switching deadline
+binds a person to an insurer for another year, a wrong waiting period
+delays an invalidity insurance (IV) claim. Public administrations
+already deploy Apertus @swissai2026apertus15, so the question is not
+only whether the model knows this law, but whether it knows the law
+#emph[in force].
 
-Social insurance law changes on fixed dates. The minimum full AHV
-old-age pension in Art. 34 para. 5 AHVG was CHF 1,225 in the
-consolidated version of 1 January 2024 and is CHF 1,260 since the
-version of 1 January 2025. A model trained on older web text may give
-the earlier figure with confidence. Language models have source-specific
-effective knowledge cutoffs @cheng2024dateddata, legal hallucinations
-are frequent @dahl2024legalfictions, and outdated statutory knowledge
-has been shown for German law @prior2026oldfriend. Inkraft therefore
-separates three kinds of failure: an answer that matches the rule before
-an amendment (#emph[stale]), an answer that matches no version
-(#emph[invented]), and an honest refusal (#emph[not attempted]).
+Social insurance law changes on fixed dates. The minimum child allowance
+under Art. 5 para. 1 FamZG was CHF 200 per month until 2024 and is CHF
+215 since the version of 1 January 2025; the deductible for original
+drugs with cheaper generics (Art. 38a para. 1 KLV) rose from 20 to 40 %.
+A model trained on older text may give the earlier figure with
+confidence. Language models have source-specific effective knowledge
+cutoffs @cheng2024dateddata, legal hallucinations are frequent
+@dahl2024legalfictions, and outdated statutory knowledge has been shown
+for German law @prior2026oldfriend. Inkraft therefore separates three
+kinds of failure: an answer that matches the rule before an amendment
+(#emph[stale]), an answer that matches no version (#emph[other],
+including near misses), and an honest refusal (#emph[not attempted]).
 
 = Dataset Summary
 <dataset-summary>
-Inkraft targets the federal acts on health insurance (KVG, KVV),
-old-age, invalidity and supplementary benefits (AHVG, IVG, ELG),
-accident insurance and the general part of social insurance law (UVG,
-ATSG), and continued payment of wages in case of illness (Art. 324a OR).
-Each item is a single-turn question with a short gold answer, accepted
-variants, #emph[near-miss] answers (a related but wrong value, e.g.~the
-amount for children instead of adults) and, for amended provisions, the
-outdated answer. Every item is anchored to one paragraph: fedlex ELI
+Inkraft covers 19 federal acts and ordinances on health insurance (KVG,
+KVV, KLV), old-age, invalidity and supplementary benefits (AHVG, AHVV,
+IVG, IVV, ELG, ELV), accident insurance and the general part (UVG,
+ATSG), unemployment and income compensation (AVIG, AVIV, EOG),
+occupational pensions (BVG, BVV 2, BVV 3), family allowances (FamZG) and
+continued payment of wages (Art. 324a OR). Each item is a single-turn
+question with a short gold answer, accepted variants, #emph[near-miss]
+answers (a related but wrong value) and, for amended provisions, the
+outdated answer. Every item is anchored to one paragraph: Fedlex ELI
 with version date and the verbatim quote in the language of the item.
 The as-of date is 1 October 2026 for all items.
 
@@ -79,9 +87,9 @@ and 003 cover FINMA, data protection and contract law
 and Prior et al.~measure outdated knowledge of German statutes
 @prior2026oldfriend. To our knowledge no open benchmark combines Swiss
 social insurance law, gold answers from three authentic language
-versions, an as-of date with the previous rule, credit for abstention,
-and an exposure check against the published training data of the
-evaluated model.
+versions, an as-of date with the verbatim earlier rule, credit for
+abstention, and an exposure check against the published training data of
+the evaluated model.
 
 #figure(
   align(center)[#table(
@@ -102,130 +110,110 @@ evaluated model.
   , kind: table
   )
 
-Table 2 describes the current draft (not yet frozen; every row is still
-marked for human review). It comprises #strong[303 German core
-questions] and #strong[879 rows in total]\; 288 cores exist in all three
-languages (DE, FR, IT). All cores are LLM drafts: 105 by Claude, 103 by
-GPT-5.5 (Codex) and 95 by Gemini (gemini-3.8-flash in an Antigravity
-agent); the Gemini cores contain all 20 calculation items (`calc`) and
-all 20 false-premise items (`false_premise`). No item is hand-written
-yet. 16 cores are `temporal` items whose provision was amended since
-\2024.
-
-#figure(
-  align(center)[#table(
-    columns: (63.08%, 7.69%, 21.54%, 7.69%),
-    align: (auto,auto,auto,auto,),
-    table.header([Domain], [Cores], [Question type], [Cores],),
-    table.hline(),
-    [Accident insurance / ATSG], [56], [numeric], [129],
-    [Health insurance, insured], [56], [yes / no], [65],
-    [AHV], [44], [procedural], [50],
-    [IV / EL], [42], [calc], [20],
-    [EO / ALV], [37], [false\_premise], [20],
-    [Occupational pensions & 3a (BVG / BVV3)], [24], [temporal], [16],
-    [Health insurance, billing], [24], [term], [3],
-    [Wage during illness (OR)], [20], [#strong[Total]], [#strong[303]],
-  )]
-  , caption: [Draft (not frozen), German cores by domain and question
-  type (879 total rows across DE, FR, IT). Automatic checks against
-  fedlex: 0 errors.]
-  , kind: table
-  )
+Release candidate #strong[v1.0.0-rc1] (frozen 2026-10-13,
+`data/FREEZE.json`) has #strong[327 German core questions, 951 rows],
+312 cores in all three languages. Question types: numeric 114, yes/no
+66, procedural 61, temporal 45, calculation 20 (recomputed by the
+validator from cited inputs), false premise 18, term 3. Registers:
+professional 170, lay 157. The temporal bucket is set per #emph[evidence
+sentence] over all stored versions: 248 cores cite a sentence unchanged
+since 2024, 79 a sentence that changed in 2024--2026; #strong[53 of them
+are STALE pairs] (157 rows) whose earlier answer occurs verbatim in an
+earlier Fedlex version and differs from the current one. Drafting
+models: GPT-5.5 via Codex 98 cores, Claude 97, Gemini 86 (all disclosed
+per row, see below) and the open model Nemotron 3 Ultra 46 (33 of the 53
+STALE pairs).
 
 = Data Collection Method
 <data-collection-method>
 #strong[Truth comes from the statute, never from a language model.] The
-pipeline runs fedlex → paragraphs → item drafting → automatic checks →
-review → freeze (v1.0.0) → evaluation. It fetches the acts from the
-fedlex SPARQL endpoint in German, French and Italian: the consolidation
-applicable on 1 October 2026, the one applicable at the end of 2023 for
-`temporal` items, and every already published future version to flag
-provisions that will change. Articles are split into paragraphs.
+pipeline runs Fedlex → paragraphs → version diff → drafting → automatic
+checks → independent second check → freeze → evaluation → human spot
+check. It fetches 20 acts from the Fedlex SPARQL endpoint in German,
+French and Italian: the consolidation applicable on 1 October 2026, the
+one applicable at the end of 2023, every version in between and
+published future versions (`src/fetch_fedlex.py`, URLs and SHA-256 in
+`data/sources/fedlex_manifest.v2.json`). Articles are split into
+paragraphs; `src/find_changes.py` diffs every paragraph across versions.
 
-Two routes create items. (a) #emph[LLM-drafted, human review planned
-before the freeze:] a drafting model receives a single paragraph and
-proposes a question, answer variants and near misses; the gold answer
-must occur verbatim (or as a normalised number) in that paragraph,
-otherwise the draft is rejected automatically. The draft questions were
-written this way by Claude (Anthropic) and GPT-5.5 (OpenAI, via Codex);
-a third batch of 95 cores (calculations, false premises, EO, ALV, BVG)
-was drafted by Gemini (Google) inside an Antigravity agent that wrote
-the items into Python scripts. Every row records `generator`,
-`generator_model`, `prompt_version` and the date. (b)
-#emph[Hand-written] items by the author are planned (target ≥ 30~% of
-the final set) but do not exist yet; the hand-written share of the
-current draft is 0~%.
+#strong[Drafting.] 303 cores were drafted per paragraph by Claude,
+GPT-5.5 (Codex) and Gemini (an Antigravity agent) in early October; the
+gold answer must occur verbatim (or as a normalised number) in the
+paragraph. Because the version diff was the scarce resource, 160 further
+temporal candidates were drafted by the open model Nemotron 3 Ultra from
+ranked version diffs (prompt `nemotron-temporal-v2`, hash stored per
+row), including four found by a numeric diff of acts outside the first
+manifest (FamZG, EOV, KLV) and checked against the stored Fedlex
+versions. French and Italian questions are translations, but their gold
+answers and evidence come from the authentic French and Italian text of
+the same paragraph, because all three versions are equally binding
+@publg2023art14.
 
-French and Italian questions are translations, but their gold answers
-and evidence come from the authentic French and Italian text of the same
-paragraph, because all three language versions of federal law are
-equally binding @publg2023art14. Terminology follows the official
-versions (e.g.~#emph[Selbstbehalt / quote-part / aliquota]).
+#strong[Automatic verification] (`src/validate_items.py`, every row):
+schema; the evidence occurs verbatim in the cited paragraph of the
+version valid on the as-of date; the answer occurs in the evidence; the
+outdated answer occurs verbatim in an earlier stored version and differs
+from the current value; a near-miss value valid in an earlier version is
+rejected; calculation items are recomputed from inputs anchored in the
+cited text; duplicates; language and value consistency across DE/FR/IT;
+Swiss spelling and a PII scan. #strong[v1.0.0-rc1: 0 errors on 951
+rows], 216 warnings (87 only flag a published later version).
 
-#strong[Automatic checks] (script `validate_items.py`, run on every
-version): schema and allowed values; the evidence occurs verbatim in the
-cited paragraph of the version valid on the as-of date; the answer or
-its normalised number occurs in the evidence; for `temporal` items the
-outdated answer occurs in the previous version and differs from the
-current value; a near-miss value that occurs in an earlier stored
-version but not in the current one is rejected (it belongs to the
-outdated answers); duplicate and near-duplicate questions; language and
-value consistency across DE/FR/IT; Swiss spelling and a PII scan. The
-current draft passes with #strong[0 errors on 879 rows]\; 153 warnings
-remain (mostly future amendments published in the Federal Gazette for
-2027+).
+#strong[Release rules] (`src/auto_review.py`, fixed before any model
+output was scored; decisions logged per core in `data/review/auto/`):
+existing cores lose paragraph clusters and near-duplicates (19 dropped)
+and gain machine-proposed answer variants and outdated answers only when
+the validator passes (21 patched); a candidate needs no validator error,
+no duplicate and no "reject" in a pre-assessment, and its correction
+notes are applied by Nemotron and re-validated (`src/auto_fix.py`).
+Every remaining core then gets an #strong[independent second check by
+Qwen3-235B] (`src/second_check.py`, a model family not used for
+drafting): answer supported by the paragraph, unambiguous question, no
+leak, equivalent languages, valid variants and near misses, and a real
+(not merely renamed) earlier rule. 15 of 335 cores were flagged; 8 were
+dropped, 7 calculation items were kept because the checker sees no
+calculation inputs while the validator recomputes them. Drop rates by
+drafting model: Codex 4.9 %, Claude 7.6 %, Gemini 9.5 %, Nemotron 71 %
+(114 of 160 candidates; most changes in the diff pool are renamings such
+as "ordentliches Rentenalter" → "Referenzalter").
 
-#strong[Review.] Each item is checked against four questions: does the
-answer stand in the linked paragraph, is there exactly one defensible
-short answer, is the question understandable without the article, and do
-FR/IT match DE. Review v1 removed 2 cores and corrected 7; review v2
-corrected 8 more (e.g.~outdated amounts listed as near misses) and left
-one circular item open. Review v1 included, for example, restricting the
-women's reference age question to cohorts born in 1964 or later because
-the AHV 21 transitional rules give earlier cohorts an age between 64 and
-\65. Every change is logged in the item. Exclusion rules: no
-canton-dependent answers, no facts that are politically open during the
-evaluation period, no questions with more than one defensible answer.
+#strong[Human check.] All rows of rc1 have `status: auto_verified` and
+`needs_human_review: true`. A stratified random sample of 35 cores (15
+of the 53 STALE pairs, 20 of the other 274) is checked by the curator
+against the linked paragraph, blind to model outputs
+(`src/make_check_file.py`, seed 20261013); the error rate per stratum
+with Wilson interval and every rejected core are reported with v1.0.0,
+and rejected cores are removed without new model calls. No item was
+selected, changed or removed on model outcomes.
 
 #strong[Exposure check.] Apertus 1.5 was trained on the Swiss
 legislation subset `switzerland_lexfind` of MultiLegalPile
-@swissai2026transparency@niklaus2024multilegalpile. We downloaded the
-German, French and Italian files at the published revision of 12 January
-2024 (16,981 German documents, federal and cantonal law) and checked,
-per item, whether the verbatim evidence of the current version and, for
-`temporal` items, of the previous version occurs in that corpus; we also
-count 13-gram overlaps between questions and the corpus
-@brown2020gpt3@sainz2023contamination. On the current draft (879 rows,
-recomputed on 2026-10-04) the current evidence occurs in 602 rows, only
-the previous wording in 26, neither in 232; 19 evidences are too short
-to search. For the 48 `temporal` rows the current wording occurs
-#strong[never]\; the previous wording occurs in 24. Apertus has
-therefore seen the old rule, not the new one, for every amended
-provision in the draft that the corpus covers. The 52 questions with
-13-gram hits reuse statutory phrasing; the questions themselves are new.
-The check is recomputed on v1.0.0.
+@swissai2026transparency@niklaus2024multilegalpile. For every row we
+search the verbatim current evidence and, for amended provisions, the
+earlier evidence in the German, French and Italian files at the
+published revision of 12 January 2024; we also count 13-gram overlaps
+between questions and the corpus @brown2020gpt3@sainz2023contamination.
+On rc1 the current wording occurs in 564 rows, only the earlier wording
+in 84, neither in 277 (26 evidences too short). For the 135 `temporal`
+rows the current wording occurs once, the earlier one 76 times. 55
+questions share a 13-gram with the corpus; they reuse statutory
+phrasing, the questions themselves are new.
 
-#strong[Consent.] No personal data is collected; case vignettes use
-roles only. A consent form template for optional native-speaker
-reviewers is provided (`docs/consent_form_template.md`).
+#strong[Consent.] No personal data is collected; vignettes use roles
+only. A consent form template for optional reviewers is provided
+(`docs/consent_form_template.md`).
 
 = Dataset Details
 <dataset-details>
 The statute texts are not protected by copyright (Art. 5 para. 1 URG)
-@urg2025art5\; fedlex linked data is offered for free use
+@urg2025art5\; Fedlex linked data is offered for free use
 @opendataswiss2026terms. Questions, answers and metadata are released
-under CDLA-Permissive-2.0; the licence is stored per item. Pages of
-admin.ch and ahv-iv.ch were used only to cross-check facts, never as
-text. The intermediate MultiLegalPile files (CC BY-NC-SA) are analysed
-locally and not redistributed. The data card follows the Hack Apertus
-template, Datasheets and Data Cards
-@gebru2021datasheets@pushkarna2022datacards. A canary GUID in every file
-lets future model builders exclude the set from training
-@srivastava2023bigbench. Quality figures in the data card: validator
-errors and warnings, PII hits (0) and the corrections of reviews v1 and
-v2; the human-review rejection rate per generator and the ambiguity rate
-are planned, not yet available, and follow with v1.0.0.
+under CDLA-Permissive-2.0; the licence is stored per item. The
+intermediate MultiLegalPile files (CC BY-NC-SA) are analysed locally and
+not redistributed. The data card follows the Hack Apertus template,
+Datasheets and Data Cards @gebru2021datasheets@pushkarna2022datacards\;
+a canary GUID in every file lets model builders exclude the set from
+training @srivastava2023bigbench.
 
 = Evaluation
 <evaluation>
@@ -233,163 +221,160 @@ are planned, not yet available, and follow with v1.0.0.
 <method>
 Grading follows SimpleQA @wei2024simpleqa: each answer is CORRECT,
 INCORRECT or NOT\_ATTEMPTED; INCORRECT answers carry the subtype STALE
-(matches the outdated answer) or NEAR\_MISS, otherwise OTHER
-(#emph[invented]). Reported metrics: correct, incorrect and
-not-attempted rates; correct given attempted (CGA); the SimpleQA
-F-score; hallucination rate I/(C+I); share of stale errors; a penalised
-score C − λ·I with λ = 1 and λ = 3, which rewards abstention over
-guessing @kalai2025hallucinate@wen2025abstention\; language consistency
-(same grade in DE, FR and IT for a core) @qi2023crosslingual\; and the
-open-book gain (accuracy with the cited paragraph in the prompt minus
-closed-book accuracy), which separates a knowledge gap from a reading
-gap. All figures carry 95~% percentile bootstrap intervals (1,000
-resamples, fixed seed); language differences use paired resampling.
+(matches the outdated answer), NEAR\_MISS or OTHER. Metrics: correct,
+incorrect and not-attempted rates, correct given attempted (CGA),
+F-score, hallucination rate I/(C+I), share of stale errors, penalised
+scores C − λ·I (λ = 1, 3) @kalai2025hallucinate@wen2025abstention,
+language consistency (same grade in DE, FR and IT) @qi2023crosslingual
+and the open-book gain, which separates a knowledge gap from a reading
+gap. Intervals are 95 % Wilson or cluster bootstrap over cores (1,000
+resamples); paired comparisons use exact McNemar tests.
 
 Grading has three stages. (1) A deterministic pre-grade extracts
-numbers, number words, ordinals and units in all three languages,
-compares durations in days and detects refusals; it never overrules the
-judge but serves as a hint and as a check. (2) An LLM judge from a
-different model family than the examinee grades every answer against
-gold, variants, outdated and near-miss answers @zheng2023judging\;
-self-preference is avoided by construction
-@panickssery2024selfpreference. Before use, the judge must reach at
-least 95~% on 61 constructed answers with known grades (correct,
-verbose, hedged, wrong language, stale, near miss, conflicting,
-refusal). Planned judge: Qwen3-235B, a family different from all
-examinees and drafting models; its calibration accuracy is reported with
-v1.0.0. (3) A human grades a stratified 20~% sample of every model ×
-condition blind to the judge's grade; we report raw agreement and
-Cohen's κ with bootstrap intervals
-@cohen1960kappa@bavaresco2025llmjudges.
+numbers, number words, units and refusals in all three languages; it is
+a hint for the judge, never a grade. (2) The LLM judge
+#strong[Qwen3-235B-A22B-2507] (OpenRouter, temperature 0), a family
+different from every examinee and every drafting model of the reported
+items, grades every answer against gold, variants, outdated and
+near-miss answers @zheng2023judging@panickssery2024selfpreference. On 61
+constructed answers with known grades it scores #strong[61/61 on the
+grade] (gate 0.95) and 57/61 with subtype (four conflicting answers
+labelled near miss instead of other). (3) A human grades a stratified
+random 22 % sample of the judgements of the submitted run (Apertus 70B,
+`closed_dated`: 211 of 951) blind to the judge's grade; raw agreement
+and Cohen's κ with bootstrap interval are reported with v1.0.0
+@cohen1960kappa@bavaresco2025llmjudges. As a diagnostic we also graded
+the main runs with Apertus-70B as judge: agreement with Qwen is κ = 0.86
+on 70B answers and 0.93 on 8B answers, but Apertus-70B marks 48 more of
+its own answers correct (533 vs 485, +5.0 points), against +19 on the
+8B's answers, a pattern consistent with self-preference; we therefore
+never use it for scores.
 
 == Evaluation setup and inference parameters
 <evaluation-setup-and-inference-parameters>
 Conditions: `closed_dated` (main): system prompt on Swiss federal law
 with the date and the instruction to answer briefly and say when unsure;
-`closed_swiss`: the same prompt without the date (date effect);
-`closed_plain`: the bare question (context effect); `open_book`: as
-`closed_dated` plus the cited paragraph; `thinking`: as `closed_dated`
-with Apertus' reasoning mode. Parameters: temperature 0, top-p 1, max.
-256 output tokens (3,000 with reasoning), seed 20261001, native chat
-template via the endpoint. Examinees: Apertus-v1.5-8B and -70B on the
-hosted Hack Apertus endpoint. Preliminary run: 2026-10-04,
-`closed_swiss` and `closed_dated`, 3,516 answers (3,748 HTTP calls
-including retries, 0 failures). Final runs on v1.0.0 are planned for
-2026-10-12/13.
+`open_book`: the same plus the cited paragraph; on all 327 German rows
+also `closed_swiss` (no date) and `closed_plain` (bare question).
+Parameters: temperature 0, top-p 1, max. 256 output tokens, seed
+20261001, reasoning mode off, native chat template of the hosted Hack
+Apertus endpoint. Runs of 2026-10-13: 5,112 Apertus answers (0 failures
+after retries), 5,112 judge calls. Paid model use (OpenRouter, as
+reported per call): judge 0.44 USD, second check 0.06 USD; Nemotron was
+used free of charge.
 
-== Preliminary results (unreviewed draft, rule-based grading only)
-<preliminary-results-unreviewed-draft-rule-based-grading-only>
-#quote(block: true)[
-#strong[Preliminary.] One run on the unreviewed draft (879 rows,
-2026-10-04), graded only by the deterministic pre-grade, without the LLM
-judge and without human review. 21--25~% of the answers stay undecided
-(mostly procedural items), so correct rates are lower bounds; some wrong
-answers may come from wrong gold answers in the draft. No item was
-selected, changed or removed on these outcomes. Final results follow on
-v1.0.0 with the judge and the 20~% human sample.
-]
-
+== Results
+<results>
 #figure(
   align(center)[#table(
     columns: 4,
-    align: (auto,auto,auto,auto,),
-    table.header([Rows (`closed_dated`)], [n], [8B], [70B],),
+    align: (auto,right,right,right,),
+    table.header([`closed_dated`], [n], [8B], [70B],),
     table.hline(),
-    [All rows], [879], [35 (32--38)], [52 (49--55)],
-    [Stable before 2024], [451], [39 (35--44)], [56 (51--60)],
-    [Changed since 2024 (temporal)], [48], [6 (2--17)], [10 (5--22)],
-    [Current wording in corpus], [602], [38 (34--42)], [57 (53--61)],
-    [No wording found], [232], [31 (25--37)], [43 (37--49)],
-    [Only previous wording], [26], [12 (4--29)], [19 (9--38)],
+    [All rows], [951], [32.9 (30--36)], [51.0 (48--54)],
+    [No earlier answer: correct], [794], [38.3 (35--42)], [59.6
+    (56--63)],
+    [STALE pairs: correct], [157], [5.7 (3--11)], [7.6 (4--13)],
+    [STALE pairs: #strong[earlier law]], [157], [12.7 (8--19)], [28.7
+    (22--36)],
+    [STALE pairs, open book], [157], [95.5 (91--98)], [97.5 (94--99)],
+    [Corpus has current text], [564], [41.0 (37--45)], [63.8 (60--68)],
+    [Corpus has no wording], [277], [25.6 (21--31)], [38.6 (33--44)],
+    [Corpus has only earlier], [84], [7.1 (3--15)], [11.9 (7--21)],
+    [… of which earlier law], [84], [21.4 (14--31)], [34.5 (25--45)],
   )]
-  , caption: [Preliminary correct rates in % with 95~% Wilson intervals;
-  the last three rows are the exposure buckets. `closed_swiss` (same
-  prompt without the date) differs by at most 2.2 points per row, except
-  3.8 points (one row of 26) for the 70B on the only-previous-wording
-  bucket.]
+  , caption: [Main results on v1.0.0-rc1, % correct unless stated
+  (Wilson 95 % CI), judge Qwen3-235B (`report/analysis.json`). Corpus
+  rows: exposure bucket of the cited wording in MultiLegalPile.
+  Incorrect / not attempted overall: 8B 55.4 / 11.7 %, 70B 47.9 / 1.1 %;
+  F-score 0.35 and 0.51.]
   , kind: table
   )
 
-#figure(image("/report/fig_preliminary.svg", width: 100.0%, alt: "Preliminary correct rates per group and model (closed_dated), with 95 % Wilson intervals."),
+#figure(image("/report/fig_results.svg", width: 100.0%, alt: "Grades per model and condition for unchanged rules, changed rules without stored earlier answer, and STALE pairs. Numbers are % of rows."),
   caption: [
-    Preliminary correct rates per group and model (`closed_dated`), with
-    95~% Wilson intervals.
+    Grades per model and condition for unchanged rules, changed rules
+    without stored earlier answer, and STALE pairs. Numbers are % of
+    rows.
   ]
 )
 
-Three findings hold for both models. #strong[\(1) Changed rules are
-rarely known.] On the 48 rows whose rule changed since 2024, only
-6--10~% of the answers are correct, against 39--56~% on stable rules;
-the 70B gives the earlier rule in 16 of the 48 rows, the 8B in 6.
-#strong[\(2) The date in the prompt does not help.] Adding "today is 1
-October 2026" changes the correct rate by +0.8 points for the 8B (paired
-exact McNemar test, p = 0.35) and by ±0 for the 70B (p = 1.0); only the
-8B's not-attempted rate falls by 1.7 points (p = 0.006). #strong[\(3)
-Accuracy differs by exposure bucket:] the 70B is correct in 57~% of the
-rows whose current wording occurs in its training corpus, in 43~% where
-no wording is found and in 19~% where only the previous wording occurs.
-This is an association, not a causal effect: bucket, act and change date
-are confounded. Across all rows the 70B is 17 points ahead of the 8B
-(paired, 95~% CI 13--21, equally in DE, FR and IT); the 8B abstains more
-often (56--71 rows against 3--4).
-
-Planned for v1.0.0: a full results table with C, I, NA, CGA, F,
-hallucination rate and penalised scores per model × language with
-intervals; stacked bars correct / stale / near miss / other / not
-attempted; judge--human κ.
+#strong[\(1) Apertus knows the old law, not the new one.] On the 157
+STALE-pair rows the 70B is correct in 8 % and gives the earlier rule in
+29 %, almost four times as often; for 24 of the 53 amended provisions it
+states the earlier value in at least one language. The 8B answers less
+(24 % not attempted) and is stale in 13 %. On the other rows the 70B is
+correct in 60 %. #strong[\(2) It is a knowledge gap, not a reading gap.]
+With the cited paragraph in the prompt both models answer 95--97 % of
+all rows and 96--97 % of the STALE-pair rows correctly (open-book gain
+\+45 points for the 70B, +62 for the 8B); this also shows that the gold
+answers are recoverable from the cited text. #strong[\(3) Exposure
+tracks accuracy.] Where only the earlier wording occurs in the published
+training corpus, the 70B is correct in 12 % and stale in 35 %; where the
+current wording occurs, it is correct in 64 % (association; bucket, act
+and change date are confounded). #strong[\(4) The date does not help.]
+On the German rows the date in the system prompt changes the correct
+rate by −0.3 points for the 70B (11 vs 12 discordant rows, p = 1.0) and
+by −1.5 for the 8B (p = 0.27); the full system prompt (Swiss law and
+date) against the bare question adds +1.5 and +1.8 points (p = 0.64,
+0.54). #strong[\(5) Size helps on stable law only.] The 70B beats the 8B
+on 224 rows and loses on 52 (p \< 0.001), consistently in DE (53 %), FR
+(51 %) and IT (49 %); it gives the same grade in all three languages for
+67 % of the cores (8B: 50 %).
 
 = Dataset Limitations
 <dataset-limitations>
-Only federal law; cantonal rules (e.g.~premium reductions) are excluded.
-A single annotator who is not a native Swiss speaker will review all
-items; French and Italian questions are machine-translated, although
-their gold answers come from the authentic texts. All questions so far
-were drafted by closed models (Claude, GPT-5.5, Gemini), disclosed per
-row, and human review is still pending; once hand-written items exist we
-report accuracy separately for hand-written and drafted items to detect
-drafting artefacts. The `temporal` bucket is determined per article, so
-an item can sit in an amended article whose paragraph did not change:
-only 39 of the 146 `changed_*` cores cite a sentence that changed, and
-only 19 carry an outdated answer (`src/find_changes.py`). The as-of date
-ages: the set needs a new version after each amendment (e.g.~on 1
-January 2027). The exposure check covers only the Swiss legislation
-subset of MultiLegalPile, not web crawls such as Nemotron-CC
-@su2025nemotroncc or FineWeb-2 @penedo2025fineweb2. Short answers
-measure knowledge, not the quality of advice.
+Only federal law; cantonal rules are excluded. v1.0.0-rc1 is verified by
+deterministic checks against Fedlex and one independent model check, not
+yet by a full human review; the human spot check covers 35 cores, and
+the second check flagged little (15 of 335), so it is a weak filter for
+subtle ambiguity. 281 of 327 cores were drafted by closed models
+(Claude, GPT-5.5, Gemini), disclosed per row; accuracy by drafting model
+is reported in `data/results.json`, but drafting model and question type
+are confounded (all calculation and false-premise items come from
+Gemini, 33 of 53 STALE pairs from Nemotron). French and Italian
+questions are model translations; answers come from the authentic texts.
+One annotator, not a native Swiss speaker. 20 % yes/no items (50 %
+guessing rate, reported separately). The STALE-pair set (53 cores) is
+limited by the version diff: most changes since 2024 are renamings or
+cross-reference renumbering, not new values. The as-of date ages; 29
+cores already have a published later version. The exposure check covers
+only the Swiss legislation subset of MultiLegalPile, not web crawls
+@su2025nemotroncc@penedo2025fineweb2. Short answers measure knowledge,
+not the quality of advice.
 
 = Lessons Learnt and Recommendations
 <lessons-learnt-and-recommendations>
-For the dataset: yearly updates on 1 January, a cantonal extension,
-native-speaker review of French and Italian, more `temporal` items. For
-the model (from the preliminary run): a date in the system prompt does
-not make Apertus more current, so the fix has to come from data or
-retrieval: a refreshed legislation corpus, retrieval with a version
-filter instead of parametric recall @prior2026oldfriend, and training
-abstention instead of rewarding guesses @kalai2025hallucinate.
-
-A practical lesson from building the grader: number extraction must
-treat indefinite articles (#emph[un mois], #emph[eine Rente]), calendar
-dates, ordinals and units explicitly; a naive extractor counted refusals
-as wrong answers and accepted "three months" for "three weeks". The
-calibration set caught these errors before any judge or human grade was
-produced.
+For the model: a date in the system prompt does not make Apertus more
+current, while the cited paragraph fixes almost every error, so the fix
+has to come from data or retrieval: a refreshed legislation corpus,
+retrieval with a version filter instead of parametric recall
+@prior2026oldfriend, and training abstention instead of rewarding
+guesses @kalai2025hallucinate. For the dataset: yearly updates on 1
+January from the version diff, native-speaker review of French and
+Italian, a cantonal extension. For benchmark builders: the scarce
+resource is not drafting but real value changes; a paragraph diff over
+all intermediate versions plus a verbatim check of the earlier answer
+found 53 usable STALE pairs in 20 acts, and an independent judge family
+matters, since the examinee as judge was measurably lenient with itself.
 
 = Reproducibility
 <reproducibility>
 `make run` builds a Docker image (Python 3.12, no GPU, no API keys) and
-replays the scoring offline. Until the freeze, `data/` holds no
-`expected_results.json`, so the replay checks only the bundled 6-row
-fixture (`tests/fixtures/mini`) and shows that scoring is deterministic;
-it does not yet recompute the preliminary numbers above, whose
-aggregates are stored in `report/preliminary_summary.json`. From v1.0.0
-on, the replay recomputes every reported number from the stored
-responses and judgements, compares it with `data/expected_results.json`
-and prints PASS or FAIL. `make run MODE=full` evaluates any
-OpenAI-compatible model given `LLM_*` (and grades with `JUDGE_*`).
-`make test` runs the unit tests. Seeds: 20261001 (generation, sampling
-of pilot cores), 20261016 (bootstrap, human sample). The commit and
-Hugging Face revision of v1.0.0 will be listed here at the freeze. The
-replay needs no GPU and no keys.
+replays the scoring offline: it recomputes all eight result blocks from
+the stored responses (`data/responses/`) and judgements
+(`data/judgements/`) and compares them with `data/expected_results.json`
+(PASS/FAIL). `make run MODE=full` evaluates any OpenAI-compatible model
+given `LLM_*` and grades with `JUDGE_*` (smoke test: `LIMIT=50`).
+`scripts/run_after_freeze.sh` reruns calibration, generation, judging,
+scoring and the human sample page; `report/analysis.py` and
+`report/make_figures.py` recompute every number and the figure in this
+report. The dataset construction is scripted end to end
+(`src/fetch_fedlex.py` → `find_changes.py` → `gen_nemotron.py` →
+`validate_items.py` → `auto_fix.py` → `auto_review.py` →
+`second_check.py` → `after_review.py` → `freeze.py`). Seeds: 20261001
+(generation), 20261016 (bootstrap), 20261013 (human samples).
+`make test` runs the unit tests.
 
 = License
 <license>

@@ -5,7 +5,7 @@
 [![Docs License: CC-BY-4.0](https://img.shields.io/badge/Docs_License-CC_BY_4.0-lightgrey.svg)](LICENSE-docs)
 [![Hack Apertus](https://img.shields.io/badge/Hack_Apertus-2026-red.svg)](https://hackapertus.ch/)
 
-**Inkraft** is a trilingual factual and temporal benchmark evaluating large language models (specifically the Swiss open-weights Apertus model family) on Swiss federal social and health insurance law (KVG/KVV, AHVG, IVG, ELG, UVG, ATSG, OR) as of **1 October 2026**.
+**Inkraft** is a trilingual factual and temporal benchmark evaluating large language models (specifically the Swiss open-weights Apertus model family) on Swiss federal social and health insurance law (19 acts and ordinances: KVG/KVV/KLV, AHVG/AHVV, IVG/IVV, ELG/ELV, UVG, ATSG, AVIG/AVIV, EOG, BVG/BVV, FamZG, OR) as of **1 October 2026**. Release candidate v1.0.0-rc1: 327 trilingual cores, 951 rows, 53 STALE pairs.
 
 Every question is anchored in a verified federal law provision ([fedlex.admin.ch](https://www.fedlex.admin.ch/)). Inkraft measures:
 1. **Core Factuality & Hallucination Rate** across German, French, and Italian.
@@ -25,7 +25,7 @@ Judges can run the reproducible benchmark directly via Docker on a clean checkou
 make run
 ```
 
-By default, `make run` executes the offline replay check without API credentials. The dataset is not frozen yet and there is only one preliminary run on the unreviewed draft (aggregates in `track_1b/report/preliminary_summary.json`), so `data/` holds no `expected_results.json`; until the freeze the replay runs on the bundled 6-row test fixture (`track_1b/tests/fixtures/mini`) and only shows that scoring is reproducible, it does not recompute the preliminary numbers.
+By default, `make run` executes the offline replay without API credentials: it recomputes all eight result blocks (Apertus 1.5 8B and 70B × `closed_dated`, `open_book`, `closed_swiss`, `closed_plain`) from the stored responses and judgements in `track_1b/data/` and compares them with `track_1b/data/expected_results.json` (PASS/FAIL). Expected runtime: under a minute after the image build; no GPU, no keys.
 
 ### Live Evaluation (`MODE=full`)
 
@@ -36,9 +36,9 @@ export LLM_NAME="apertus-v1.5-8b"
 export LLM_BASE_URL="https://your-apertus-endpoint.cscs.ch/v1"
 export LLM_API_KEY="your-api-key"
 
-# Optional judge endpoint (Qwen2.5 / Qwen3 recommended)
-export JUDGE_NAME="Qwen/Qwen2.5-72B-Instruct"
-export JUDGE_BASE_URL="https://api.together.xyz/v1"
+# Optional judge endpoint (the reported results use Qwen3-235B-A22B-2507 via OpenRouter)
+export JUDGE_NAME="qwen/qwen3-235b-a22b-2507"
+export JUDGE_BASE_URL="https://openrouter.ai/api/v1"
 export JUDGE_API_KEY="your-judge-key"
 
 make run MODE=full
@@ -52,17 +52,18 @@ make run MODE=full
 | --- | --- |
 | `track_1b/` | Official track root directory (contains `Makefile`, `run.sh`, `technical_report.md`) |
 | `track_1b/src/inkraft/` | Python CLI and evaluation library (`generate`, `judge`, `score`, `human`, `contam`) |
-| `track_1b/data/` | Benchmark draft (`test.jsonl`, `metadata.jsonl`); 303 LLM-drafted cores, human review pending, not frozen |
+| `track_1b/data/` | Release candidate v1.0.0-rc1 (`test.jsonl`, `metadata.jsonl`, `FREEZE.json`), model responses, judgements, `expected_results.json`, `results.json`; all rows `auto_verified`, human spot check in progress |
 | `track_1b/docs/` | Dataset Card, annotation guidelines, and CLI usage documentation |
 | `track_1b/src/*.py` | Dataset construction: `fetch_fedlex.py` (sources), `make_batches.py` / `build_items.py` / `assemble.py` (drafting), `validate_items.py`, `apply_review.py`, `find_changes.py` (version diff and sentence-level change check), `calibration_pilot.py` |
 | `track_1b/src/*.py` (pipeline after drafting) | `gen_nemotron.py` (temporal candidates from version diffs, open model), `gen_proposals.py` (review proposals), `check_candidates.py`, `make_review_package.py`, `after_review.py` (apply the human review), `freeze.py` (v1.0.0), `hf_release.py` (dataset card and upload); `track_1b/scripts/run_after_freeze.sh` (judge calibration, runs, scoring, human sample) |
 | `tools/review/` | Local review tool (`index.html`, no server): every core next to the statute text, decisions logged; loads the review package `track_1b/data/review/review_package.v1.jsonl`. Guide (German): `tools/review/ANLEITUNG.md`. `fedlex_texte.js` is built locally with `build_fedlex.py` and not committed |
-| `track_1b/report/` | Report build (`build.sh`, `build.ps1`), figure script and the aggregates of the preliminary run |
+| `track_1b/report/` | Report build (`build.sh`, `build.ps1`), `analysis.py` and `make_figures.py` (every number and the figure of the report) |
+| `track_1b/src/*.py` (release candidate) | `auto_fix.py` (open-model fixes of candidate notes), `auto_review.py` (logged automatic decisions), `second_check.py` (independent check by Qwen3-235B), `make_check_file.py` / `import_human.py` (human spot check page and its analysis), `judge_agreement.py` |
 | `website/` | Project landing page and interactive report preview; demo video embedded (`website/media/video.mp4`, subtitles `website/media/video.vtt`) |
 
-### Preliminary results (unreviewed draft)
+### Results (v1.0.0-rc1, judge Qwen3-235B)
 
-One run on the unreviewed draft (879 rows, 2026-10-04), graded only by the rule-based pre-grade (no judge, no human check): Apertus 1.5 70B answers 52 % of rows correctly, 8B 35 %. On the 48 rows whose rule changed since 2024 only 6–10 % are correct, a date in the prompt does not help, and accuracy differs by exposure bucket (70B: 57 % with the current wording in the training corpus, 19 % with only the previous wording). Details and intervals in the technical report; final results follow on v1.0.0.
+Apertus 1.5 70B answers 51.0 % of the 951 rows correctly (8B: 32.9 %). On the 157 rows of the 53 STALE pairs the 70B is correct in 7.6 % and gives the earlier law in 28.7 %; with the cited paragraph in the prompt (`open_book`) it is correct in 97.5 % of the same rows. A date in the system prompt does not change accuracy (German rows, exact McNemar p = 1.0 for the 70B). Details, intervals and limitations in `track_1b/technical_report.md`; numbers in `track_1b/data/results.json` and `track_1b/report/analysis.json`. The rows are automatically verified against Fedlex and by an independent model check; the human spot check (35 cores, 22 % of the 70B judgements) is in progress.
 
 ---
 
