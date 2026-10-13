@@ -1,0 +1,6 @@
+[
+ {"act": "FamZG", "article_id": "art_5", "paragraph": "1", "previous_paragraph": "1", "domain": "famz", "change_kind": "amount", "score": 10.0, "diff_kind": "value_change", "source_note": "daten-recherche 2026-10-13, checked against fedlex versions 2024-01-01 and 2026-01-01"},
+ {"act": "FamZG", "article_id": "art_5", "paragraph": "2", "previous_paragraph": "2", "domain": "famz", "change_kind": "amount", "score": 10.0, "diff_kind": "value_change", "source_note": "daten-recherche 2026-10-13, checked against fedlex versions 2024-01-01 and 2026-01-01"},
+ {"act": "EOV", "article_id": "art_36", "paragraph": "2", "previous_paragraph": "2", "domain": "eo_alv", "change_kind": "amount", "score": 9.0, "diff_kind": "value_change", "source_note": "daten-recherche 2026-10-13, checked against fedlex versions 2024-07-01 and 2026-06-01"},
+ {"act": "KLV", "article_id": "art_38_a", "paragraph": "1", "previous_paragraph": "1", "domain": "kvg_billing", "change_kind": "rate", "score": 9.0, "diff_kind": "value_change", "source_note": "fedlex diff 2023-11-01 vs 2026-08-01 (20 -> 40 percent)"}
+]

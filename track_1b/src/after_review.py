@@ -23,8 +23,9 @@ from find_changes import Fedlex, bucket_of, norm  # noqa: E402
 CANDIDATE_FILES = [
     DATA / "candidates" / "nemotron-v2" / "candidates.jsonl",
     DATA / "candidates" / "nemotron-pilot" / "candidates.ultra.jsonl",
+    DATA / "candidates" / "nemotron-v3" / "candidates.jsonl",
 ]
-CANDIDATE_PREFIXES = ("nmu-", "nmv-", "nms-")
+CANDIDATE_PREFIXES = ("nmu-", "nmv-", "nms-", "nmf-")
 
 
 def read(path):

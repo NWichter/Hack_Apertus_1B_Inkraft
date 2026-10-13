@@ -1,0 +1,38 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"EOV\", \"article_id\": \"art_36\", \"paragraph\": \"2\", \"domain\": \"eo_alv\", \"question_type\": \"temporal\", \"register\": \"lay\", \"difficulty_prior\": 1, \"answer_type\": \"currency_chf\", \"answer_normalized\": {\"value\": 25, \"unit\": \"CHF\"}, \"de\": {\"question\": \"Wie hoch ist der minimale Jahresbeitrag für Nichterwerbstätige in der Erwerbsersatzversicherung?\", \"answer\": \"25 Franken\", \"answer_aliases\": [\"CHF 25\", \"25 CHF\", \"fünfundzwanzig Franken\"], \"near_miss_answers\": [\"1250 Franken\", \"25–1250 Franken\"], \"evidence\": \"25–1250 Franken im Jahr\"}, \"fr\": {\"question\": \"Quel est le montant minimal de la cotisation annuelle pour les personnes sans activité lucrative dans l'assurance perte de gain?\", \"answer\": \"25 francs\", \"answer_aliases\": [\"CHF 25\", \"25 CHF\", \"vingt-cinq francs\"], \"near_miss_answers\": [\"1250 francs\", \"25 à 1250 francs\"], \"evidence\": \"25 à 1250 francs par an\"}, \"it\": {\"question\": \"Qual è il contributo annuo minimo per le persone che non esercitano un’attività lucrativa nell’assicurazione per la perdita di guadagno?\", \"answer\": \"25 franchi\", \"answer_aliases\": [\"CHF 25\", \"25 CHF\", \"venticinque franchi\"], \"near_miss_answers\": [\"1250 franchi\", \"25 a 1250 franchi\"], \"evidence\": \"25 a 1250 franchi annui\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2024-07-01\", \"paragraph\": \"2\", \"de\": {\"outdated_answer\": \"24 Franken\", \"evidence\": \"24–1200 Franken im Jahr\"}, \"fr\": {\"outdated_answer\": \"24 francs\", \"evidence\": \"24 à 1200 francs par an\"}, \"it\": {\"outdated_answer\": \"24 franchi\", \"evidence\": \"24 a 1200 franchi annui\"}}]}}",
+ "reasoning_chars": 9937,
+ "usage": {
+  "prompt_tokens": 1698,
+  "completion_tokens": 3456,
+  "total_tokens": 5154,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2535,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 136.0,
+ "attempts": 1,
+ "generated_at": "2026-10-13",
+ "settings": {
+  "max_tokens": 16000,
+  "reasoning_effort": "medium",
+  "temperature": 0.3
+ }
+}

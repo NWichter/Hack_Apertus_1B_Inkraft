@@ -1,0 +1,38 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"FamZG\", \"article_id\": \"art_5\", \"paragraph\": \"2\", \"domain\": \"famz\", \"question_type\": \"temporal\", \"register\": \"lay\", \"difficulty_prior\": 1, \"answer_type\": \"currency_chf\", \"answer_normalized\": {\"value\": 268, \"unit\": \"CHF\"}, \"de\": {\"question\": \"Wie hoch ist der Mindestbetrag der Ausbildungszulage pro Monat in Franken?\", \"answer\": \"268 Franken pro Monat\", \"answer_aliases\": [\"268 Franken\", \"268 CHF pro Monat\", \"268 Franken monatlich\"], \"near_miss_answers\": [\"300 Franken pro Monat\", \"200 Franken pro Monat\"], \"evidence\": \"Die Ausbildungszulage beträgt mindestens 268 Franken pro Monat.\"}, \"fr\": {\"question\": \"Quel est le montant minimum de l'allocation de formation par mois en francs?\", \"answer\": \"268 francs par mois\", \"answer_aliases\": [\"268 francs\", \"268 CHF par mois\", \"268 francs mensuels\"], \"near_miss_answers\": [\"300 francs par mois\", \"200 francs par mois\"], \"evidence\": \"L’allocation de formation s’élève à 268 francs par mois au minimum.\"}, \"it\": {\"question\": \"A quanto ammonta l'importo minimo dell'assegno di formazione al mese in franchi?\", \"answer\": \"268 franchi mensili\", \"answer_aliases\": [\"268 franchi\", \"268 CHF al mese\", \"268 franchi al mese\"], \"near_miss_answers\": [\"300 franchi mensili\", \"200 franchi mensili\"], \"evidence\": \"L’assegno di formazione ammonta ad almeno 268 franchi mensili.\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2024-01-01\", \"paragraph\": \"2\", \"de\": {\"outdated_answer\": \"250 Franken pro Monat\", \"evidence\": \"Die Ausbildungszulage beträgt mindestens 250 Franken pro Monat.\"}, \"fr\": {\"outdated_answer\": \"250 francs par mois\", \"evidence\": \"L’allocation de formation s’élève à 250 francs par mois au minimum.\"}, \"it\": {\"outdated_answer\": \"250 franchi mensili\", \"evidence\": \"L’assegno di formazione ammonta ad almeno 250 franchi mensili.\"}}]}}",
+ "reasoning_chars": 9123,
+ "usage": {
+  "prompt_tokens": 1559,
+  "completion_tokens": 3131,
+  "total_tokens": 4690,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2320,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 109.7,
+ "attempts": 1,
+ "generated_at": "2026-10-13",
+ "settings": {
+  "max_tokens": 16000,
+  "reasoning_effort": "medium",
+  "temperature": 0.3
+ }
+}

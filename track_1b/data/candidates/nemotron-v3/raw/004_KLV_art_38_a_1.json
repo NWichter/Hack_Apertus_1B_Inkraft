@@ -1,0 +1,38 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"KLV\", \"article_id\": \"art_38_a\", \"paragraph\": \"1\", \"domain\": \"kvg_billing\", \"question_type\": \"temporal\", \"register\": \"professional\", \"difficulty_prior\": 2, \"answer_type\": \"percent\", \"answer_normalized\": {\"value\": 40, \"unit\": \"percent\"}, \"de\": {\"question\": \"Wie hoch ist der Selbstbehalt in Prozent für Arzneimittel, deren Fabrikabgabepreis den Durchschnitt der Fabrikabgabepreise des günstigsten Drittels aller Arzneimittel mit gleicher Wirkstoffzusammensetzung auf der Spezialitätenliste um mindestens 10 Prozent übersteigt, in der obligatorischen Krankenpflegeversicherung?\", \"answer\": \"40 Prozent\", \"answer_aliases\": [\"40%\", \"vierzig Prozent\"], \"near_miss_answers\": [\"10 Prozent\"], \"evidence\": \"beträgt der Selbstbehalt 40 Prozent der die Franchise übersteigenden Kosten.\"}, \"fr\": {\"question\": \"Quel est le taux de la quote-part en pourcentage pour les médicaments dont le prix de fabrique est au moins 10 % supérieur à la moyenne des prix de fabrique du tiers le plus avantageux de tous les médicaments composés des mêmes substances actives figurant sur la liste des spécialités, dans l'assurance-maladie obligatoire?\", \"answer\": \"40 %\", \"answer_aliases\": [\"40 pour cent\", \"40%\"], \"near_miss_answers\": [\"10 %\"], \"evidence\": \"s’élève à 40 % des coûts dépassant la franchise\"}, \"it\": {\"question\": \"A quanto ammonta l'aliquota percentuale per i medicamenti il cui prezzo di fabbrica per la consegna supera almeno del 10 per cento la media dei prezzi di fabbrica per la consegna dei prodotti che rientrano nel terzo meno caro di tutti i medicamenti con la stessa composizione di principi attivi figuranti nell’elenco delle specialità, nell'assicurazione malattie obbligatoria?\", \"answer\": \"40 per cento\", \"answer_aliases\": [\"40%\", \"quaranta per cento\"], \"near_miss_answers\": [\"10 per cento\"], \"evidence\": \"l’aliquota percentuale ammonta al 40 per cento dei costi eccedenti la franchigia\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2023-11-01\", \"paragraph\": \"1\", \"de\": {\"outdated_answer\": \"20 Prozent\", \"evidence\": \"beträgt der Selbstbehalt 20 Prozent der die Franchise übersteigenden Kosten.\"}, \"fr\": {\"outdated_answer\": \"20 %\", \"evidence\": \"s’élève à 20 % des coûts dépassant la franchise\"}, \"it\": {\"outdated_answer\": \"20 per cento\", \"evidence\": \"l’aliquota percentuale ammonta al 20 per cento dei costi eccedenti la franchigia\"}}]}}",
+ "reasoning_chars": 15957,
+ "usage": {
+  "prompt_tokens": 1931,
+  "completion_tokens": 4873,
+  "total_tokens": 6804,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 4101,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 162.6,
+ "attempts": 1,
+ "generated_at": "2026-10-13",
+ "settings": {
+  "max_tokens": 16000,
+  "reasoning_effort": "medium",
+  "temperature": 0.3
+ }
+}

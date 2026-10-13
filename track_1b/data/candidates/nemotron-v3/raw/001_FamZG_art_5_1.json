@@ -1,0 +1,38 @@
+{
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "provider": "Nvidia",
+ "content": "{\"act\": \"FamZG\", \"article_id\": \"art_5\", \"paragraph\": \"1\", \"domain\": \"famz\", \"question_type\": \"temporal\", \"register\": \"lay\", \"difficulty_prior\": 1, \"answer_type\": \"currency_chf\", \"answer_normalized\": {\"value\": 215, \"unit\": \"CHF\"}, \"de\": {\"question\": \"Wie hoch ist die minimale monatliche Kinderzulage in den Familienzulagen?\", \"answer\": \"215 Franken pro Monat\", \"answer_aliases\": [\"CHF 215 pro Monat\", \"215 Franken monatlich\", \"215 Franken/Monat\"], \"near_miss_answers\": [\"268 Franken pro Monat\"], \"evidence\": \"Die Kinderzulage beträgt mindestens 215 Franken pro Monat.\"}, \"fr\": {\"question\": \"Quel est le montant minimal mensuel de l'allocation pour enfant dans les allocations familiales?\", \"answer\": \"215 francs par mois\", \"answer_aliases\": [\"CHF 215 par mois\", \"215 francs mensuels\", \"215 francs/mois\"], \"near_miss_answers\": [\"268 francs par mois\"], \"evidence\": \"L’allocation pour enfant s’élève à 215 francs par mois au minimum.\"}, \"it\": {\"question\": \"A quanto ammonta l'assegno per i figli minimo mensile negli assegni familiari?\", \"answer\": \"215 franchi mensili\", \"answer_aliases\": [\"CHF 215 al mese\", \"215 franchi al mese\", \"215 franchi/mese\"], \"near_miss_answers\": [\"268 franchi mensili\"], \"evidence\": \"L’assegno per i figli ammonta ad almeno 215 franchi mensili.\"}, \"temporal\": {\"versions\": [{\"version_date\": \"2024-01-01\", \"paragraph\": \"1\", \"de\": {\"outdated_answer\": \"200 Franken pro Monat\", \"evidence\": \"Die Kinderzulage beträgt mindestens 200 Franken pro Monat.\"}, \"fr\": {\"outdated_answer\": \"200 francs par mois\", \"evidence\": \"L’allocation pour enfant s’élève à 200 francs par mois au minimum.\"}, \"it\": {\"outdated_answer\": \"200 franchi mensili\", \"evidence\": \"L’assegno per i figli ammonta ad almeno 200 franchi mensili.\"}}]}}",
+ "reasoning_chars": 14649,
+ "usage": {
+  "prompt_tokens": 1557,
+  "completion_tokens": 4301,
+  "total_tokens": 5858,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 3705,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 148.2,
+ "attempts": 1,
+ "generated_at": "2026-10-13",
+ "settings": {
+  "max_tokens": 16000,
+  "reasoning_effort": "medium",
+  "temperature": 0.3
+ }
+}

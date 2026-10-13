@@ -35,6 +35,7 @@ DOMAINS = {
     "eo_alv",
     "bvg_3a",
     "or_illness",
+    "famz",
 }
 ANSWER_TYPES = {
     "currency_chf",
@@ -785,12 +786,17 @@ def check_record(r, src, issues, seen_ids):
             "ERROR", "format.difficulty", rid, "difficulty_prior muss 1, 2 oder 3 sein"
         )
     if FROZEN["value"]:
-        if r.get("status") != "reviewed" or r.get("needs_human_review") is not False:
+        ok = (r.get("status"), r.get("needs_human_review")) in (
+            ("reviewed", False),
+            ("auto_verified", True),
+        )
+        if not ok:
             issues.add(
                 "ERROR",
                 "format.status",
                 rid,
-                "im Freeze muss status reviewed und needs_human_review false sein",
+                "im Freeze: status reviewed + needs_human_review false (Mensch) "
+                "oder auto_verified + needs_human_review true (nur automatisch geprüft)",
             )
     elif r.get("status") != "draft" or r.get("needs_human_review") is not True:
         issues.add(
