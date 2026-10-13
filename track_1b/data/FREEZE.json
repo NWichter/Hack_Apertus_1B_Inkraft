@@ -1,0 +1,81 @@
+{
+ "version": "1.0.0-rc1",
+ "frozen_at": "2026-10-13T18:05:47+00:00",
+ "as_of": "2026-10-01",
+ "files": {
+  "test.jsonl": "12f784c3d22f63e50e7ef9513bb7c7cd022f14d5e458885f0e99db160c9ac6fb",
+  "metadata.jsonl": "6dc63da71a22d708725abf164da4d83548cc59db26f91a731555bb999c0cd486",
+  "merged.v1.0.0-rc1.jsonl": "ab795353dc105a2274c4116300a0174bfa5cb447f2b73df5dd2dab2842bf4a32",
+  "ablation_cores.txt": "c8820808f2201f43e774d6a04e42c3eccca077e42bfab09685a7f026fa598272"
+ },
+ "fedlex_manifest_sha256": "757dd932dfffd0bab7416c406a6f5b55811225ad873cbce5d41bd5e7de14ff56",
+ "stats": {
+  "cores": 327,
+  "rows": 951,
+  "trilingual_cores": 312,
+  "temporal_changed_cores": 79,
+  "stale_pair_cores": 53,
+  "yes_no_cores": 67,
+  "yes_no_share": 0.205,
+  "rows_without_variants": 6,
+  "by_generator": {
+   "gemini": 86,
+   "claude": 97,
+   "codex": 98,
+   "nemotron": 46
+  },
+  "by_act": {
+   "KVV": 33,
+   "KVG": 54,
+   "AHVG": 50,
+   "EOG": 28,
+   "AVIG": 10,
+   "UVG": 29,
+   "OR": 17,
+   "BVG": 19,
+   "BVV3": 2,
+   "IVG": 25,
+   "ELG": 13,
+   "ATSG": 27,
+   "FamZG": 2,
+   "KLV": 1,
+   "BVV2": 4,
+   "AHVV": 6,
+   "IVV": 3,
+   "AVIV": 3,
+   "ELV": 1
+  },
+  "by_domain": {
+   "kvg_insured": 57,
+   "ahv": 56,
+   "eo_alv": 41,
+   "uvg_atsg": 56,
+   "or_illness": 17,
+   "bvg_3a": 25,
+   "iv_el": 42,
+   "kvg_billing": 31,
+   "famz": 2
+  },
+  "by_question_type": {
+   "calc": 20,
+   "false_premise": 18,
+   "yes_no": 66,
+   "numeric": 114,
+   "procedural": 61,
+   "term": 3,
+   "temporal": 45
+  },
+  "by_bucket": {
+   "stable_pre2024": 248,
+   "changed_2024_2025": 71,
+   "changed_2026": 8
+  }
+ },
+ "ablation_cores": 139,
+ "release_candidate": true,
+ "review_status_cores": {
+  "reviewed": 0,
+  "auto_verified": 327
+ },
+ "review_log_sha256": "3d7cc4e57627c59a2a5517149ed86da22f24b5770aad9cad320d75a2238f53cd"
+}

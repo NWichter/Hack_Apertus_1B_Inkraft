@@ -28,3 +28,6 @@ build/
 
 # Local scratch scripts (absolute local paths, not part of the benchmark)
 scratch/
+
+# Per-row hits of the exposure check quote MultiLegalPile (CC BY-NC-SA): kept local, only the summary is shipped
+data/contamination.jsonl

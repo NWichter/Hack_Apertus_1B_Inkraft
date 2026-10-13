@@ -1,0 +1,36 @@
+{
+ "n": 951,
+ "bucket": {
+  "current": 564,
+  "absent": 277,
+  "evidence_too_short": 26,
+  "outdated": 84
+ },
+ "bucket_by_lang": {
+  "de-CH": {
+   "current": 196,
+   "evidence_too_short": 5,
+   "absent": 97,
+   "outdated": 29
+  },
+  "fr-CH": {
+   "current": 185,
+   "absent": 88,
+   "evidence_too_short": 12,
+   "outdated": 27
+  },
+  "it-CH": {
+   "current": 183,
+   "absent": 92,
+   "evidence_too_short": 9,
+   "outdated": 28
+  }
+ },
+ "temporal_bucket": {
+  "outdated": 76,
+  "absent": 53,
+  "evidence_too_short": 5,
+  "current": 1
+ },
+ "items_with_question_13gram_hit": 55
+}
