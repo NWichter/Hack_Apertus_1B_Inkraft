@@ -20,6 +20,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 HF = ROOT / "hf"
+sys.path.insert(0, str(ROOT / "src"))
+import coverage  # noqa: E402
 
 
 def load_json(path, required=True):
@@ -121,6 +123,7 @@ def card(args):
         "STALE_PAIRS": st["stale_pair_cores"],
         "YES_NO_SHARE": f"{100 * st['yes_no_share']:.0f} %",
         "COMPOSITION_TABLE": comp,
+        "COVERAGE_TABLE": coverage.matrix(DATA),
         "QC_TABLE": qc,
         "REJECT_TABLE": rej,
         "HUMAN_DATASET": human_dataset,
@@ -151,6 +154,17 @@ def files_to_upload():
     }
     for name in ("test.jsonl", "metadata.jsonl"):
         out[f"data/{name}"] = DATA / name
+    for p in (
+        DATA / "results.json",
+        DATA / "expected_results.json",
+        ROOT / "report" / "analysis.json",
+        DATA / "judge_calibration.json",
+        DATA / "judge_calibration__apertus-v1.5-70b.json",
+        DATA / "judge_agreement_qwen_vs_apertus70b.json",
+        DATA / "contamination.summary.json",
+        DATA / "sources" / "fedlex_manifest.v2.json",
+    ):
+        out[f"results/{p.name}"] = p
     for sub in ("responses", "judgements", "human_labels"):
         for p in sorted((DATA / sub).glob("*.jsonl")) + sorted(
             (DATA / sub).glob("*.json")

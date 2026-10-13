@@ -24,6 +24,14 @@ configs:
     data_files:
       - split: test
         path: data/metadata.jsonl
+  - config_name: responses
+    data_files:
+      - split: test
+        path: responses/*.jsonl
+  - config_name: judgements
+    data_files:
+      - split: test
+        path: judgements/qwen_*.jsonl
 ---
 
 # Dataset Card for Inkraft
@@ -74,9 +82,12 @@ reported separately.
 | --- | --- |
 | `data/test.jsonl` | one row per item and language: `id`, `core_id`, `lang`, `domain`, `question_type`, `register`, `difficulty_prior`, `question`, `answer`, `answer_aliases`, `answer_core`, `answer_type`, `answer_normalized`, `calc`, `outdated_answers`, `near_miss_answers`, `as_of` |
 | `data/metadata.jsonl` | per `id`: `source` (act, SR number, article, paragraph, ELI URL with version date, verbatim quote and evidence, licence), `temporal` (bucket per evidence sentence, earlier versions and their evidence), `future_change`, `authoring` (generator, manual corrections), `review` (decision, reviewer, time), `license`, `canary` |
-| `responses/` | Apertus 1.5 responses per model and condition |
-| `judgements/` | judge grades ({{JUDGE}}) with the rule-based pre-grade |
-| `human_labels/` | blind human labels for the random 20 % sample of judge grades |
+| `responses/<model>__<condition>.jsonl` | Apertus 1.5 responses ({{MODELS}}) with prompt, parameters, tokens and latency; `closed_dated` and `open_book` on all rows, `closed_swiss` and `closed_plain` on the German rows |
+| `judgements/qwen_*.jsonl` | judge grades ({{JUDGE}}) with the rule-based pre-grade and the raw judge output |
+| `judgements/apertus-v1.5-70b__*.jsonl` | comparison judge on `closed_dated` (diagnostic of self-preference, not used for scores) |
+| `human_labels/` | human spot check of the dataset (`dataset_sample.jsonl`) and blind human labels of the judge sample (`sample_20pct.jsonl`, `labels_*.jsonl`, `agreement.json`, `summary.json`) |
+| `results/` | `results.json` (all scores), `expected_results.json` (what `make run` replays), `analysis.json` (numbers of the report), judge calibration and judge–judge agreement |
+| `FREEZE.json` | version, SHA-256 of the data files (LF line endings), statistics |
 
 Only a `test` split. `core_id` links the three language versions of an item.
 
@@ -85,6 +96,10 @@ languages. Temporal cores (evidence sentence changed since 2024): {{TEMPORAL_CHA
 {{STALE_PAIRS}} carry an outdated answer quoted from an earlier version. Yes/no share: {{YES_NO_SHARE}}.
 
 {{COMPOSITION_TABLE}}
+
+**Coverage matrix** (German cores; changed = evidence sentence changed since 2024):
+
+{{COVERAGE_TABLE}}
 
 ## Dataset Creation
 
