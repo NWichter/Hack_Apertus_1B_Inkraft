@@ -41,7 +41,8 @@ const D = JSON.parse(document.getElementById('data').textContent);
 const KEY = 'inkraft-pruefung-' + D.version;
 let S = {part: 'A', i: {A: 0, B: 0}, a: {}, b: {}, started: new Date().toISOString()};
 try { const x = JSON.parse(localStorage.getItem(KEY)); if (x) S = x; } catch (e) {}
-const save = () => { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {} };
+let warned = false;
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) { if (!warned) { warned = true; alert('Zwischenspeichern im Browser nicht möglich – bitte regelmäßig exportieren.'); } } };
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const list = xs => (xs && xs.length) ? xs.map(esc).join(' · ') : '–';
 function hl(text, needle) {
@@ -124,7 +125,7 @@ document.getElementById('exp').onclick = () => {
   const out = {version: D.version, exported_at: new Date().toISOString(), started: S.started, dataset: S.a, judge: S.b};
   const blob = new Blob([JSON.stringify(out, null, 1)], {type: 'application/json'});
   const a = document.createElement('a'); a.href = URL.createObjectURL(blob);
-  a.download = 'inkraft-pruefung-' + D.version + '.json'; a.click();
+  a.download = 'inkraft-pruefung-' + D.version + '.json'; document.body.appendChild(a); a.click(); a.remove();
 };
 document.addEventListener('keydown', e => {
   if (e.target.tagName === 'TEXTAREA') return;

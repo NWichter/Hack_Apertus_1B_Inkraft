@@ -1,0 +1,1418 @@
+[
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0008-de",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0008-fr",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0008-it",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0009-de",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0009-fr",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0009-it",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0018-de",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0018-fr",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0018-it",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0019-de",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0019-fr",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0019-it",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0027-de",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0027-fr",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0027-it",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0029-de",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0029-fr",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0029-it",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0034-de",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0034-fr",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0034-it",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0037-de",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0037-fr",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0037-it",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0042-de",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0042-fr",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0042-it",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0044-de",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0044-fr",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0044-it",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0045-de",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0045-fr",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0045-it",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0048-de",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0048-fr",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0048-it",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0049-de",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0049-fr",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0049-it",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0051-de",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0051-fr",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0051-it",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0052-de",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0052-fr",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0052-it",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0053-de",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0053-fr",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0053-it",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0054-de",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0054-fr",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0054-it",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0055-de",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0055-fr",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0055-it",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "question.answer_overlap",
+  "id": "ag-0056-de",
+  "msg": "Antwortwörter stehen in der Frage: ['höchstens', 'taggelder']"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0056-de",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0056-fr",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0056-it",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.threshold_word",
+  "id": "ag-0069-de",
+  "msg": "Evidenz enthält 'weniger als', Frage und Antwort nicht: Schwelle prüfen"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.threshold_word",
+  "id": "ag-0069-it",
+  "msg": "Evidenz enthält 'meno di', Frage und Antwort nicht: Schwelle prüfen"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.threshold_word",
+  "id": "ag-0074-fr",
+  "msg": "Evidenz enthält 'au moins', Frage und Antwort nicht: Schwelle prüfen"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.threshold_word",
+  "id": "ag-0074-it",
+  "msg": "Evidenz enthält 'almeno', Frage und Antwort nicht: Schwelle prüfen"
+ },
+ {
+  "level": "WARN",
+  "code": "question.answer_overlap",
+  "id": "ag-0079-fr",
+  "msg": "Antwortwörter stehen in der Frage: ['avoir', 'vieillesse']"
+ },
+ {
+  "level": "WARN",
+  "code": "question.answer_overlap",
+  "id": "ag-0079-it",
+  "msg": "Antwortwörter stehen in der Frage: ['avere', 'vecchiaia']"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.threshold_word",
+  "id": "ag-0089-de",
+  "msg": "Evidenz enthält 'bis zu', Frage und Antwort nicht: Schwelle prüfen"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.threshold_word",
+  "id": "ag-0089-fr",
+  "msg": "Evidenz enthält 'au plus', Frage und Antwort nicht: Schwelle prüfen"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0094-de",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0094-fr",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0094-it",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0095-de",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0095-fr",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "ag-0095-it",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.discretion",
+  "id": "cl-0002-de",
+  "msg": "Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.threshold_word",
+  "id": "cl-0006-fr",
+  "msg": "Evidenz enthält 'moins de', Frage und Antwort nicht: Schwelle prüfen"
+ },
+ {
+  "level": "WARN",
+  "code": "source.discretion",
+  "id": "cl-0016-de",
+  "msg": "Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist"
+ },
+ {
+  "level": "WARN",
+  "code": "question.answer_overlap",
+  "id": "cl-0018-de",
+  "msg": "Antwortwörter stehen in der Frage: ['wohnkantons']"
+ },
+ {
+  "level": "WARN",
+  "code": "question.answer_overlap",
+  "id": "cl-0018-fr",
+  "msg": "Antwortwörter stehen in der Frage: ['canton', 'résidence']"
+ },
+ {
+  "level": "WARN",
+  "code": "question.answer_overlap",
+  "id": "cl-0018-it",
+  "msg": "Antwortwörter stehen in der Frage: ['cantone', 'domicilio']"
+ },
+ {
+  "level": "WARN",
+  "code": "question.answer_overlap",
+  "id": "cl-0034-fr",
+  "msg": "Antwortwörter stehen in der Frage: ['analyses', 'laboratoire']"
+ },
+ {
+  "level": "WARN",
+  "code": "question.answer_overlap",
+  "id": "cl-0034-it",
+  "msg": "Antwortwörter stehen in der Frage: ['analisi', 'laboratorio']"
+ },
+ {
+  "level": "WARN",
+  "code": "source.discretion",
+  "id": "cl-0037-de",
+  "msg": "Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist"
+ },
+ {
+  "level": "WARN",
+  "code": "source.discretion",
+  "id": "cl-0038-de",
+  "msg": "Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist"
+ },
+ {
+  "level": "WARN",
+  "code": "source.discretion",
+  "id": "cl-0040-de",
+  "msg": "Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist"
+ },
+ {
+  "level": "WARN",
+  "code": "question.contains_answer_number",
+  "id": "cl-0042-fr",
+  "msg": "Die Zahl der Antwort (2) steht in der Frage"
+ },
+ {
+  "level": "WARN",
+  "code": "source.discretion",
+  "id": "cl-0044-de",
+  "msg": "Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist"
+ },
+ {
+  "level": "WARN",
+  "code": "question.answer_overlap",
+  "id": "cl-0046-fr",
+  "msg": "Antwortwörter stehen in der Frage: ['minimal', 'montant']"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.threshold_word",
+  "id": "cl-0047-de",
+  "msg": "Evidenz enthält 'mindestens', Frage und Antwort nicht: Schwelle prüfen"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.threshold_word",
+  "id": "cl-0047-fr",
+  "msg": "Evidenz enthält 'au moins', Frage und Antwort nicht: Schwelle prüfen"
+ },
+ {
+  "level": "WARN",
+  "code": "source.discretion",
+  "id": "cl-0050-de",
+  "msg": "Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.threshold_word",
+  "id": "cl-0051-de",
+  "msg": "Evidenz enthält 'übersteig', Frage und Antwort nicht: Schwelle prüfen"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.threshold_word",
+  "id": "cl-0051-fr",
+  "msg": "Evidenz enthält 'dépass', Frage und Antwort nicht: Schwelle prüfen"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.threshold_word",
+  "id": "cl-0051-it",
+  "msg": "Evidenz enthält 'supera', Frage und Antwort nicht: Schwelle prüfen"
+ },
+ {
+  "level": "WARN",
+  "code": "question.answer_overlap",
+  "id": "cl-0052-fr",
+  "msg": "Antwortwörter stehen in der Frage: ['caisse', 'compensation']"
+ },
+ {
+  "level": "WARN",
+  "code": "question.answer_overlap",
+  "id": "cl-0052-it",
+  "msg": "Antwortwörter stehen in der Frage: ['cassa', 'compensazione']"
+ },
+ {
+  "level": "WARN",
+  "code": "source.discretion",
+  "id": "cl-0054-de",
+  "msg": "Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist"
+ },
+ {
+  "level": "WARN",
+  "code": "source.discretion",
+  "id": "cl-0066-de",
+  "msg": "Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "cl-0071-de",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-01-01, 2028-01-01, 2029-01-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "cl-0071-fr",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-01-01, 2028-01-01, 2029-01-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "cl-0071-it",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-01-01, 2028-01-01, 2029-01-01"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.threshold_word",
+  "id": "cl-0076-it",
+  "msg": "Evidenz enthält 'fino a', Frage und Antwort nicht: Schwelle prüfen"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.no_variations",
+  "id": "cl-0099-fr",
+  "msg": "Weder answer_aliases noch near_miss/outdated angegeben"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.no_variations",
+  "id": "cl-0099-it",
+  "msg": "Weder answer_aliases noch near_miss/outdated angegeben"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.no_variations",
+  "id": "cl-0100-fr",
+  "msg": "Weder answer_aliases noch near_miss/outdated angegeben"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.no_variations",
+  "id": "cl-0100-it",
+  "msg": "Weder answer_aliases noch near_miss/outdated angegeben"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.inflected",
+  "id": "cx-0014-de",
+  "msg": "Antwort 'ein Arzt oder eine Ärztin' nur flektiert/umgestellt in der Evidenz"
+ },
+ {
+  "level": "WARN",
+  "code": "question.answer_overlap",
+  "id": "cx-0014-it",
+  "msg": "Antwortwörter stehen in der Frage: ['medico']"
+ },
+ {
+  "level": "WARN",
+  "code": "source.discretion",
+  "id": "cx-0015-de",
+  "msg": "Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.number_literal_only",
+  "id": "cx-0018-fr",
+  "msg": "Zahl 1 nicht als Ziffer/Zahlwort erkannt, Antwort 'dans le mois qui suit l’information' steht aber wörtlich in der Evidenz"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.number_literal_only",
+  "id": "cx-0018-it",
+  "msg": "Zahl 1 nicht als Ziffer/Zahlwort erkannt, Antwort 'nel mese che segue l’informazione' steht aber wörtlich in der Evidenz"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.threshold_word",
+  "id": "cx-0022-it",
+  "msg": "Evidenz enthält 'supera', Frage und Antwort nicht: Schwelle prüfen"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.number_literal_only",
+  "id": "cx-0030-it",
+  "msg": "Zahl 23 nicht als Ziffer/Zahlwort erkannt, Antwort 'dopo la ventitreesima settimana di gravidanza' steht aber wörtlich in der Evidenz"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.number_literal_only",
+  "id": "cx-0031-it",
+  "msg": "Zahl 56 nicht als Ziffer/Zahlwort erkannt, Antwort 'il cinquantaseiesimo giorno dopo il parto' steht aber wörtlich in der Evidenz"
+ },
+ {
+  "level": "WARN",
+  "code": "question.answer_overlap",
+  "id": "cx-0040-fr",
+  "msg": "Antwortwörter stehen in der Frage: ['employeur']"
+ },
+ {
+  "level": "WARN",
+  "code": "source.discretion",
+  "id": "cx-0041-de",
+  "msg": "Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist"
+ },
+ {
+  "level": "WARN",
+  "code": "source.discretion",
+  "id": "cx-0051-de",
+  "msg": "Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.inflected",
+  "id": "cx-0057-de",
+  "msg": "Antwort 'die zuständige IV-Stelle' nur flektiert/umgestellt in der Evidenz"
+ },
+ {
+  "level": "WARN",
+  "code": "question.answer_overlap",
+  "id": "cx-0057-fr",
+  "msg": "Antwortwörter stehen in der Frage: ['office']"
+ },
+ {
+  "level": "WARN",
+  "code": "source.discretion",
+  "id": "cx-0058-de",
+  "msg": "Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist"
+ },
+ {
+  "level": "WARN",
+  "code": "source.discretion",
+  "id": "cx-0059-de",
+  "msg": "Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist"
+ },
+ {
+  "level": "WARN",
+  "code": "style.long_answer",
+  "id": "cx-0063-fr",
+  "msg": "Antwort lang (166 Zeichen)"
+ },
+ {
+  "level": "WARN",
+  "code": "style.long_answer",
+  "id": "cx-0063-it",
+  "msg": "Antwort lang (166 Zeichen)"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.threshold_word",
+  "id": "cx-0064-de",
+  "msg": "Evidenz enthält 'übersteig', Frage und Antwort nicht: Schwelle prüfen"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.threshold_word",
+  "id": "cx-0064-fr",
+  "msg": "Evidenz enthält 'dépass', Frage und Antwort nicht: Schwelle prüfen"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.threshold_word",
+  "id": "cx-0064-it",
+  "msg": "Evidenz enthält 'supera', Frage und Antwort nicht: Schwelle prüfen"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "cx-0066-de",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2028-01-01, 2029-01-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "cx-0066-fr",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2028-01-01, 2029-01-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "cx-0066-it",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2028-01-01, 2029-01-01"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.threshold_word",
+  "id": "cx-0067-de",
+  "msg": "Evidenz enthält 'übersteig', Frage und Antwort nicht: Schwelle prüfen"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "cx-0068-de",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2028-01-01, 2029-01-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "cx-0068-fr",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2028-01-01, 2029-01-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "cx-0068-it",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2028-01-01, 2029-01-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "cx-0069-de",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2028-01-01, 2029-01-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "cx-0069-fr",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2028-01-01, 2029-01-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "cx-0069-it",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2028-01-01, 2029-01-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "cx-0070-de",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2028-01-01, 2029-01-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "cx-0070-fr",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2028-01-01, 2029-01-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "cx-0070-it",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2028-01-01, 2029-01-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "cx-0071-de",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-01-01, 2028-01-01, 2029-01-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "cx-0071-fr",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-01-01, 2028-01-01, 2029-01-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "cx-0071-it",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-01-01, 2028-01-01, 2029-01-01"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.threshold_word",
+  "id": "cx-0073-de",
+  "msg": "Evidenz enthält 'mehr als', Frage und Antwort nicht: Schwelle prüfen"
+ },
+ {
+  "level": "WARN",
+  "code": "source.discretion",
+  "id": "cx-0073-de",
+  "msg": "Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.threshold_word",
+  "id": "cx-0073-fr",
+  "msg": "Evidenz enthält 'plus de', Frage und Antwort nicht: Schwelle prüfen"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.threshold_word",
+  "id": "cx-0073-it",
+  "msg": "Evidenz enthält 'al massimo', Frage und Antwort nicht: Schwelle prüfen"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.threshold_word",
+  "id": "cx-0077-de",
+  "msg": "Evidenz enthält 'höchstens', Frage und Antwort nicht: Schwelle prüfen"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.threshold_word",
+  "id": "cx-0077-fr",
+  "msg": "Evidenz enthält 'au plus', Frage und Antwort nicht: Schwelle prüfen"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.threshold_word",
+  "id": "cx-0077-it",
+  "msg": "Evidenz enthält 'al massimo', Frage und Antwort nicht: Schwelle prüfen"
+ },
+ {
+  "level": "WARN",
+  "code": "source.discretion",
+  "id": "cx-0080-de",
+  "msg": "Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.inflected",
+  "id": "cx-0081-de",
+  "msg": "Antwort 'die Suva oder andere zugelassene Versicherer und eine von diesen betriebene Ersatzkasse' nur flektiert/umgestellt in der Evidenz"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.inflected",
+  "id": "cx-0081-fr",
+  "msg": "Antwort 'la CNA ou d’autres assureurs autorisés et une caisse supplétive gérée par ceux-ci' nur flektiert/umgestellt in der Evidenz"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.inflected",
+  "id": "cx-0081-it",
+  "msg": "Antwort 'l’INSAI o altri assicuratori autorizzati e la cassa suppletiva da loro amministrata' nur flektiert/umgestellt in der Evidenz"
+ },
+ {
+  "level": "WARN",
+  "code": "source.discretion",
+  "id": "cx-0083-de",
+  "msg": "Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist"
+ },
+ {
+  "level": "WARN",
+  "code": "question.answer_overlap",
+  "id": "cx-0083-fr",
+  "msg": "Antwortwörter stehen in der Frage: ['auprès']"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.number_literal_only",
+  "id": "cx-0089-it",
+  "msg": "Zahl 7 nicht als Ziffer/Zahlwort erkannt, Antwort 'il settimo giorno' steht aber wörtlich in der Evidenz"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.number_literal_only",
+  "id": "cx-0091-de",
+  "msg": "Zahl 50 nicht als Ziffer/Zahlwort erkannt, Antwort 'die Hälfte' steht aber wörtlich in der Evidenz"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.number_literal_only",
+  "id": "cx-0091-fr",
+  "msg": "Zahl 50 nicht als Ziffer/Zahlwort erkannt, Antwort 'la moitié' steht aber wörtlich in der Evidenz"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.number_literal_only",
+  "id": "cx-0091-it",
+  "msg": "Zahl 50 nicht als Ziffer/Zahlwort erkannt, Antwort 'la metà' steht aber wörtlich in der Evidenz"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.inflected",
+  "id": "cx-0093-de",
+  "msg": "Antwort 'das Versicherungsgericht desjenigen Kantons, in dem die versicherte Person zur Zeit der Beschwerdeerhebung Wohnsitz hat' nur flektiert/umgestellt in der Evidenz"
+ },
+ {
+  "level": "WARN",
+  "code": "question.answer_overlap",
+  "id": "cx-0093-fr",
+  "msg": "Antwortwörter stehen in der Frage: ['assurances', 'assuré', 'tribunal']"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.alias_only",
+  "id": "cx-0093-fr",
+  "msg": "Antwort 'le tribunal des assurances du canton de domicile de l’assuré' nicht wörtlich, aber ein Alias"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.inflected",
+  "id": "cx-0093-it",
+  "msg": "Antwort 'il tribunale delle assicurazioni del Cantone dove l’assicurato è domiciliato' nur flektiert/umgestellt in der Evidenz"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.number_literal_only",
+  "id": "cx-0101-de",
+  "msg": "Zahl 80 nicht als Ziffer/Zahlwort erkannt, Antwort 'vier Fünftel' steht aber wörtlich in der Evidenz"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.threshold_word",
+  "id": "cx-0101-fr",
+  "msg": "Evidenz enthält 'au moins', Frage und Antwort nicht: Schwelle prüfen"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.number_literal_only",
+  "id": "cx-0101-fr",
+  "msg": "Zahl 80 nicht als Ziffer/Zahlwort erkannt, Antwort 'les quatre cinquièmes' steht aber wörtlich in der Evidenz"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.number_literal_only",
+  "id": "cx-0101-it",
+  "msg": "Zahl 80 nicht als Ziffer/Zahlwort erkannt, Antwort 'i quattro quinti' steht aber wörtlich in der Evidenz"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "cx-0105-de",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "cx-0105-fr",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "cx-0105-it",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.threshold_word",
+  "id": "nmf-0001-de",
+  "msg": "Evidenz enthält 'mindestens', Frage und Antwort nicht: Schwelle prüfen"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.threshold_word",
+  "id": "nmf-0001-it",
+  "msg": "Evidenz enthält 'almeno', Frage und Antwort nicht: Schwelle prüfen"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.threshold_word",
+  "id": "nmf-0002-de",
+  "msg": "Evidenz enthält 'mindestens', Frage und Antwort nicht: Schwelle prüfen"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.threshold_word",
+  "id": "nmf-0002-it",
+  "msg": "Evidenz enthält 'almeno', Frage und Antwort nicht: Schwelle prüfen"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.threshold_word",
+  "id": "nmf-0004-fr",
+  "msg": "Evidenz enthält 'dépass', Frage und Antwort nicht: Schwelle prüfen"
+ },
+ {
+  "level": "WARN",
+  "code": "source.discretion",
+  "id": "nmu-0001-de",
+  "msg": "Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist"
+ },
+ {
+  "level": "WARN",
+  "code": "evidence.apostrophe",
+  "id": "nmu-0001-it",
+  "msg": "Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+ },
+ {
+  "level": "WARN",
+  "code": "source.discretion",
+  "id": "nmu-0002-de",
+  "msg": "Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.threshold_word",
+  "id": "nmu-0003-fr",
+  "msg": "Evidenz enthält 'au moins', Frage und Antwort nicht: Schwelle prüfen"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.threshold_word",
+  "id": "nmu-0003-it",
+  "msg": "Evidenz enthält 'almeno', Frage und Antwort nicht: Schwelle prüfen"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.threshold_word",
+  "id": "nmu-0004-de",
+  "msg": "Evidenz enthält 'mindestens', Frage und Antwort nicht: Schwelle prüfen"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.threshold_word",
+  "id": "nmu-0004-fr",
+  "msg": "Evidenz enthält 'au moins', Frage und Antwort nicht: Schwelle prüfen"
+ },
+ {
+  "level": "WARN",
+  "code": "evidence.apostrophe",
+  "id": "nmu-0004-fr",
+  "msg": "Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.threshold_word",
+  "id": "nmu-0004-it",
+  "msg": "Evidenz enthält 'almeno', Frage und Antwort nicht: Schwelle prüfen"
+ },
+ {
+  "level": "WARN",
+  "code": "evidence.apostrophe",
+  "id": "nmu-0004-it",
+  "msg": "Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+ },
+ {
+  "level": "ERROR",
+  "code": "temporal.not_changed",
+  "id": "nmu-0005-de",
+  "msg": "Artikel seit 2024 unverändert, aber Typ temporal"
+ },
+ {
+  "level": "WARN",
+  "code": "temporal.evidence_unchanged",
+  "id": "nmu-0005-de",
+  "msg": "veraltete Antwort angegeben, aber der Belegsatz steht unverändert in allen früheren Fassungen"
+ },
+ {
+  "level": "WARN",
+  "code": "source.discretion",
+  "id": "nmu-0005-de",
+  "msg": "Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.threshold_word",
+  "id": "nmu-0005-fr",
+  "msg": "Evidenz enthält 'au plus', Frage und Antwort nicht: Schwelle prüfen"
+ },
+ {
+  "level": "ERROR",
+  "code": "temporal.not_changed",
+  "id": "nmu-0005-fr",
+  "msg": "Artikel seit 2024 unverändert, aber Typ temporal"
+ },
+ {
+  "level": "ERROR",
+  "code": "temporal.not_changed",
+  "id": "nmu-0005-it",
+  "msg": "Artikel seit 2024 unverändert, aber Typ temporal"
+ },
+ {
+  "level": "WARN",
+  "code": "temporal.evidence_unchanged",
+  "id": "nmu-0007-it",
+  "msg": "veraltete Antwort angegeben, aber der Belegsatz steht unverändert in allen früheren Fassungen"
+ },
+ {
+  "level": "WARN",
+  "code": "evidence.apostrophe",
+  "id": "nmu-0008-fr",
+  "msg": "Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.threshold_word",
+  "id": "nmu-0018-fr",
+  "msg": "Evidenz enthält 'au plus', Frage und Antwort nicht: Schwelle prüfen"
+ },
+ {
+  "level": "WARN",
+  "code": "evidence.apostrophe",
+  "id": "nmu-0018-fr",
+  "msg": "Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.threshold_word",
+  "id": "nmu-0018-it",
+  "msg": "Evidenz enthält 'al massimo', Frage und Antwort nicht: Schwelle prüfen"
+ },
+ {
+  "level": "WARN",
+  "code": "evidence.apostrophe",
+  "id": "nmu-0018-it",
+  "msg": "Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.threshold_word",
+  "id": "nmv-0001-de",
+  "msg": "Evidenz enthält 'übersteig', Frage und Antwort nicht: Schwelle prüfen"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.threshold_word",
+  "id": "nmv-0001-it",
+  "msg": "Evidenz enthält 'supera', Frage und Antwort nicht: Schwelle prüfen"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.threshold_word",
+  "id": "nmv-0002-de",
+  "msg": "Evidenz enthält 'weniger als', Frage und Antwort nicht: Schwelle prüfen"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.threshold_word",
+  "id": "nmv-0002-fr",
+  "msg": "Evidenz enthält 'au moins', Frage und Antwort nicht: Schwelle prüfen"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.threshold_word",
+  "id": "nmv-0002-it",
+  "msg": "Evidenz enthält 'almeno', Frage und Antwort nicht: Schwelle prüfen"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.number_literal_only",
+  "id": "nmv-0008-fr",
+  "msg": "Zahl 35.3 nicht als Ziffer/Zahlwort erkannt, Antwort '35 fr. 30' steht aber wörtlich in der Evidenz"
+ },
+ {
+  "level": "WARN",
+  "code": "evidence.apostrophe",
+  "id": "nmv-0017-fr",
+  "msg": "Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+ },
+ {
+  "level": "ERROR",
+  "code": "style.eszett",
+  "id": "nmv-0026-de",
+  "msg": "de-CH-Item enthält ß"
+ },
+ {
+  "level": "WARN",
+  "code": "evidence.apostrophe",
+  "id": "nmv-0027-fr",
+  "msg": "Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+ },
+ {
+  "level": "WARN",
+  "code": "evidence.apostrophe",
+  "id": "nmv-0027-it",
+  "msg": "Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+ },
+ {
+  "level": "ERROR",
+  "code": "temporal.not_changed",
+  "id": "nmv-0042-de",
+  "msg": "Artikel seit 2024 unverändert, aber Typ temporal"
+ },
+ {
+  "level": "WARN",
+  "code": "temporal.evidence_unchanged",
+  "id": "nmv-0042-de",
+  "msg": "veraltete Antwort angegeben, aber der Belegsatz steht unverändert in allen früheren Fassungen"
+ },
+ {
+  "level": "ERROR",
+  "code": "near_miss.earlier_version",
+  "id": "nmv-0042-de",
+  "msg": "Near-Miss 'nach Artikel 48 vereinbart werden kann': Wert 48 steht in der Fassung vom 2023-09-01, nicht in der geltenden; gehört nach outdated_answers"
+ },
+ {
+  "level": "WARN",
+  "code": "evidence.apostrophe",
+  "id": "nmv-0042-fr",
+  "msg": "Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+ },
+ {
+  "level": "ERROR",
+  "code": "temporal.not_changed",
+  "id": "nmv-0042-fr",
+  "msg": "Artikel seit 2024 unverändert, aber Typ temporal"
+ },
+ {
+  "level": "WARN",
+  "code": "temporal.evidence_unchanged",
+  "id": "nmv-0042-fr",
+  "msg": "veraltete Antwort angegeben, aber der Belegsatz steht unverändert in allen früheren Fassungen"
+ },
+ {
+  "level": "ERROR",
+  "code": "near_miss.earlier_version",
+  "id": "nmv-0042-fr",
+  "msg": "Near-Miss \"conformément à l'art. 48\": Wert 48 steht in der Fassung vom 2023-09-01, nicht in der geltenden; gehört nach outdated_answers"
+ },
+ {
+  "level": "ERROR",
+  "code": "temporal.not_changed",
+  "id": "nmv-0042-it",
+  "msg": "Artikel seit 2024 unverändert, aber Typ temporal"
+ },
+ {
+  "level": "WARN",
+  "code": "temporal.evidence_unchanged",
+  "id": "nmv-0042-it",
+  "msg": "veraltete Antwort angegeben, aber der Belegsatz steht unverändert in allen früheren Fassungen"
+ },
+ {
+  "level": "ERROR",
+  "code": "near_miss.earlier_version",
+  "id": "nmv-0042-it",
+  "msg": "Near-Miss 'secondo l’articolo 48': Wert 48 steht in der Fassung vom 2023-09-01, nicht in der geltenden; gehört nach outdated_answers"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "nmv-0049-de",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "nmv-0049-fr",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "source.future_change",
+  "id": "nmv-0049-it",
+  "msg": "Artikel ändert sich nach dem Stichtag: 2027-07-01"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.alias_only",
+  "id": "nmv-0057-de",
+  "msg": "Antwort 'Vereinigtes Königreich' nicht wörtlich, aber ein Alias"
+ },
+ {
+  "level": "WARN",
+  "code": "source.discretion",
+  "id": "nmv-0059-de",
+  "msg": "Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.threshold_word",
+  "id": "nmv-0068-fr",
+  "msg": "Evidenz enthält 'plus de', Frage und Antwort nicht: Schwelle prüfen"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.threshold_word",
+  "id": "nmv-0068-it",
+  "msg": "Evidenz enthält 'più di', Frage und Antwort nicht: Schwelle prüfen"
+ },
+ {
+  "level": "WARN",
+  "code": "source.discretion",
+  "id": "nmv-0075-de",
+  "msg": "Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist"
+ },
+ {
+  "level": "WARN",
+  "code": "source.discretion",
+  "id": "nmv-0080-de",
+  "msg": "Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist"
+ },
+ {
+  "level": "ERROR",
+  "code": "answer.yes_no",
+  "id": "nmv-0090-de",
+  "msg": "Ja/Nein-Antwort erwartet, erhalten 'vorbezogenen Rente'"
+ },
+ {
+  "level": "ERROR",
+  "code": "answer.yes_no",
+  "id": "nmv-0090-fr",
+  "msg": "Ja/Nein-Antwort erwartet, erhalten 'versement anticipé'"
+ },
+ {
+  "level": "ERROR",
+  "code": "answer.yes_no",
+  "id": "nmv-0090-it",
+  "msg": "Ja/Nein-Antwort erwartet, erhalten 'riscossione anticipata'"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.inflected",
+  "id": "nmv-0097-de",
+  "msg": "Antwort 'ein Arzt oder eine Ärztin und eine Pflegefachperson' nur flektiert/umgestellt in der Evidenz"
+ },
+ {
+  "level": "WARN",
+  "code": "evidence.apostrophe",
+  "id": "nmv-0097-fr",
+  "msg": "Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.inflected",
+  "id": "nmv-0097-it",
+  "msg": "Antwort 'un medico e un infermiere' nur flektiert/umgestellt in der Evidenz"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.inflected",
+  "id": "nmv-0115-de",
+  "msg": "Antwort 'Mitgliedstaat der Europäischen Union, Island, Norwegen, Vereinigtes Königreich' nur flektiert/umgestellt in der Evidenz"
+ },
+ {
+  "level": "WARN",
+  "code": "source.discretion",
+  "id": "nmv-0115-de",
+  "msg": "Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.inflected",
+  "id": "nmv-0115-fr",
+  "msg": "Antwort \"État membre de l'Union européenne, Islande, Norvège, Royaume-Uni\" nur flektiert/umgestellt in der Evidenz"
+ },
+ {
+  "level": "WARN",
+  "code": "answer.inflected",
+  "id": "nmv-0115-it",
+  "msg": "Antwort \"Stato membro dell'Unione europea, Islanda, Norvegia, Regno Unito\" nur flektiert/umgestellt in der Evidenz"
+ },
+ {
+  "level": "WARN",
+  "code": "evidence.apostrophe",
+  "id": "nmv-0127-fr",
+  "msg": "Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+ },
+ {
+  "level": "WARN",
+  "code": "evidence.apostrophe",
+  "id": "nmv-0127-it",
+  "msg": "Evidenz nutzt ' statt ’ (nur normalisiert gefunden)"
+ }
+]

@@ -12,7 +12,7 @@ DATA=data
 MODELS="${MODELS:-apertus-v1.5-8b apertus-v1.5-70b}"
 STEP="${STEP:-all}"
 INKRAFT="python -m inkraft --data $DATA"
-export PYTHONPATH="${PYTHONPATH:-}:src"
+export PYTHONPATH=src
 
 [ -f "$DATA/FREEZE.json" ] || { echo "no data/FREEZE.json: run src/freeze.py first" >&2; exit 2; }
 : "${JUDGE_BASE_URL:?set JUDGE_BASE_URL}" "${JUDGE_API_KEY:?set JUDGE_API_KEY}" "${JUDGE_NAME:?set JUDGE_NAME}"

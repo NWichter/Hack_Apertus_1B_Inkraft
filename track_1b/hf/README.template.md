@@ -7,7 +7,7 @@ language:
 task_categories:
   - question-answering
 size_categories:
-  - 1K<n<10K
+  - n<1K
 pretty_name: Inkraft
 tags:
   - swiss-law
@@ -65,7 +65,7 @@ dataset version; cantonal law.
 
 One short checkable answer per question (number with unit, body or step as named in the act), both
 registers (`lay`, `professional`), all three official languages (equally binding, Art. 14 PublG), an
-explicit as-of date, and the earlier answer for amended rules. Yes/no items are capped at 15 % and
+explicit as-of date, and the earlier answer for amended rules. Yes/no items ({{YES_NO_SHARE}}) are
 reported separately.
 
 ## Dataset Structure
@@ -96,8 +96,8 @@ abstention, and an exposure check against the training data of the evaluated mod
 
 ### Source Data
 
-Swiss federal acts and ordinances on fedlex: ATSG, AHVG, AHVV, IVG, IVV, ELG, ELV, KVG, KVV, UVG, OR
-(Art. 319–362), EOG, AVIG, AVIV, BVG, BVV 2, BVV 3.
+Swiss federal acts and ordinances on fedlex: ATSG, AHVG, AHVV, IVG, IVV, ELG, ELV, KVG, KVV, KLV, UVG, OR
+(Art. 319–362), EOG, AVIG, AVIV, BVG, BVV 2, BVV 3, FamZG (EOV fetched, no item released).
 
 #### Data Collection
 
@@ -134,15 +134,17 @@ statute text.
 
 #### Annotation Process
 
-Every core was reviewed by a human in the review tool (`tools/review/`): statute paragraph side by side
-with DE/FR/IT, automatic checks, decision keep / correct / drop with reason, time per core. Decisions are
-applied with `src/apply_review.py` and logged per row (`review`, `authoring.manual_correction`).
-Guidelines: `docs/annotation_guidelines.md`. Review time {{REVIEW_TIME_H}} h, drop rate by generator:
+Release decisions are automatic and logged per core (`src/auto_review.py`, `data/review/auto/`, rules fixed
+before any model output was scored): validator in frozen mode, open-model fixes of candidate notes
+(`src/auto_fix.py`), and an independent second check of every core by Qwen3-235B (`src/second_check.py`).
+Rows carry `status: auto_verified` unless a human checked them (`status: reviewed`). Drop rate by
+drafting model:
 
 {{REJECT_TABLE}}
 
-Judge check: random 20 % of all reported judge grades ({{SAMPLE_N}} grades), labelled blind;
-agreement {{AGREEMENT}}.
+Human spot check (stratified random sample, blind to model outputs, `src/make_check_file.py`):
+{{HUMAN_DATASET}}. Judge check: stratified random sample of {{SAMPLE_N}} judge grades of the submitted run,
+labelled blind; agreement {{AGREEMENT}}. Guidelines: `docs/annotation_guidelines.md`.
 
 #### Annotator Details
 
@@ -152,7 +154,8 @@ from the authentic texts; the questions are model translations checked by the cu
 ## Risks, Bias, and Limitations
 
 - Federal law only, no cantonal law; the as-of date ages with every amendment.
-- Most items are LLM drafts (four model families) reviewed by one person.
+- All items are LLM drafts (four model families); verified automatically against fedlex and by an independent
+  model; one person checked a stratified random sample.
 - Generator, question type and domain are partly confounded; results are reported within type and domain.
 - Exposure is measured against MultiLegalPile `switzerland_lexfind` (revision `911e1d2`, 2024-01-12) only;
   web crawls were not scanned. Exposure shows association, not causation.

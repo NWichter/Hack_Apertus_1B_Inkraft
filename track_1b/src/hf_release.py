@@ -47,6 +47,11 @@ def card(args):
     summary = load_json(DATA / "review" / "after_review_summary.json")
     agreement = load_json(DATA / "human_labels" / "agreement.json")
     calib = load_json(DATA / "judge_calibration.json")
+    human = load_json(DATA / "human_labels" / "summary.json")
+    human_dataset = "; ".join(
+        f"{g}: {s['drop']} of {s['n']} rejected (Wilson 95 % {s['error_rate_wilson95']}), {s['unsure']} unsure"
+        for g, s in sorted(human["dataset_check"].items())
+    )
     st = freeze["stats"]
     sample = DATA / "human_labels" / "sample_20pct.jsonl"
     n_sample = (
@@ -83,9 +88,10 @@ def card(args):
                 "0 errors",
             ],
             [
-                "Human review of every core",
+                "Release rules and independent second check (Qwen3-235B) of every core",
                 f"{st['cores']} cores kept, {summary['decisions'].get('drop', 0)} dropped, {summary['decisions'].get('patch', 0)} corrected",
             ],
+            ["Human spot check (stratified random sample)", human_dataset],
             [
                 "Judge calibration on constructed answers (gate 0.95)",
                 f"grade accuracy {calib.get('grade_accuracy')}, with subtype {calib.get('subtype_accuracy')} (n = {calib.get('n')})",
@@ -117,7 +123,7 @@ def card(args):
         "COMPOSITION_TABLE": comp,
         "QC_TABLE": qc,
         "REJECT_TABLE": rej,
-        "REVIEW_TIME_H": summary.get("review_time_h"),
+        "HUMAN_DATASET": human_dataset,
         "SAMPLE_N": n_sample,
         "AGREEMENT": json.dumps({k: v for k, v in agreement.items() if "kappa" in k}),
         "HF_REPO": args.repo,
