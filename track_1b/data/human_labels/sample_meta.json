@@ -1,0 +1,19 @@
+{
+ "version": "1.0.0-rc1",
+ "seed": 20261013,
+ "strata": {
+  "stale": 53,
+  "other": 274
+ },
+ "dataset_sample": {
+  "stale": 15,
+  "other": 20
+ },
+ "judge_sample": 211,
+ "judged_responses": 951,
+ "judge_share": 0.2219,
+ "model": "apertus-v1.5-70b",
+ "condition": "closed_dated",
+ "judge_model": "qwen/qwen3-235b-a22b-2507",
+ "sample_fingerprint": "b841e2ffd9"
+}
