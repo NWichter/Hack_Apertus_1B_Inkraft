@@ -115,7 +115,7 @@ def build_prompt(core):
     )
 
 
-def call(key, model, prompt, attempts=6):
+def call(key, model, prompt, attempts=6, extra=None):
     body = json.dumps(
         {
             "model": model,
@@ -123,6 +123,7 @@ def call(key, model, prompt, attempts=6):
             "temperature": 0.0,
             "max_tokens": 400,
             "usage": {"include": True},
+            **(extra or {}),
         }
     ).encode()
     delay, err = 5, None

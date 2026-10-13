@@ -1,0 +1,867 @@
+{
+ "original": "claude-opus-5-5 (agents, 2026-10-04)",
+ "open_model": "qwen/qwen3-235b-a22b-2507",
+ "n": 156,
+ "four_class": {
+  "raw_agreement": 0.2564,
+  "kappa": 0.1079,
+  "confusion_original_rows_open_cols": {
+   "accept": {
+    "accept": 8,
+    "accept_minor": 5,
+    "revise": 2,
+    "reject": 0
+   },
+   "accept_minor": {
+    "accept": 9,
+    "accept_minor": 15,
+    "revise": 2,
+    "reject": 0
+   },
+   "revise": {
+    "accept": 4,
+    "accept_minor": 12,
+    "revise": 12,
+    "reject": 0
+   },
+   "reject": {
+    "accept": 16,
+    "accept_minor": 33,
+    "revise": 33,
+    "reject": 5
+   }
+  }
+ },
+ "keep_vs_reject": {
+  "raw_agreement": 0.4744,
+  "kappa": 0.0512
+ },
+ "verdicts_original": {
+  "accept_minor": 26,
+  "revise": 28,
+  "accept": 15,
+  "reject": 87
+ },
+ "verdicts_open": {
+  "accept_minor": 65,
+  "accept": 37,
+  "revise": 49,
+  "reject": 5
+ },
+ "failed": [],
+ "cost_usd": 0.0418,
+ "disagreements": [
+  {
+   "core_id": "nmu-0003",
+   "original": "revise",
+   "open": "accept",
+   "original_reason": "Question states the current threshold 22 680 (itself changed from 22 050) and so leaks the version; near miss '3780' equals the gold. Remove the threshold from the question, replace the near miss.",
+   "open_reason": "The item meets all criteria: the current and earlier versions provide a clear, verbatim basis for the answer; the question is neutrally phrased without revealing the answer; the temporal change is substantive (amount adjustment); all language versions are consistent and accurately reflect the legal text; the topic is relevant for practitioners and insured persons."
+  },
+  {
+   "core_id": "nmu-0004",
+   "original": "accept",
+   "open": "accept_minor",
+   "original_reason": "Correct temporal item (30 -> 40 percent), all conditions in the question, long but unambiguous.",
+   "open_reason": "The item meets all core criteria but triggers a warning for 'answer.threshold_word' due to the use of 'mindestens' in the paragraph which is part of the precise legal wording; this does not affect correctness but could be clarified in the answer phrasing. No substantive revision needed."
+  },
+  {
+   "core_id": "nmu-0005",
+   "original": "accept_minor",
+   "open": "revise",
+   "original_reason": "Correct temporal item (6 -> 12 periods). Answer '12' should carry the unit ('12 Abrechnungsperioden').",
+   "open_reason": "The current paragraph grants discretion to the Federal Council (\"kann verlängern\"), which violates criterion 1 by involving administrative discretion; the answer must be a legally binding, non-discretionary provision. Additionally, the 'temporal.evidence_unchanged' warning indicates the earlier version's evidence is identical in meaning, suggesting no real legal change, undermining the temporal item's validity."
+  },
+  {
+   "core_id": "nmu-0006",
+   "original": "accept",
+   "open": "accept_minor",
+   "original_reason": "New rule (max. two debt enforcements per year); no outdated answer possible, numeric type correct.",
+   "open_reason": "The item is mostly correct, but the warning 'source.discretion' indicates the canton's discretion is mentioned in the paragraph; however, the answer '2' is clearly defined and not subject to discretion. Minor clarification may be needed to ensure no ambiguity regarding the federal rule vs. cantonal reporting."
+  },
+  {
+   "core_id": "nmu-0010",
+   "original": "reject",
+   "open": "revise",
+   "original_reason": "Circular: the question already contains the answer ('ohne ärztliche Anordnung').",
+   "open_reason": "The automatic check warns about 'source.discretion' — the current paragraph grants the Federal Council discretion in defining nursing services, which violates criterion 1 (no discretion allowed). The answer must be a precisely defined, non-discretionary fact. This requires revision to ensure the item reflects a mandatory, verbatim provision without administrative leeway."
+  },
+  {
+   "core_id": "nmu-0011",
+   "original": "revise",
+   "open": "accept_minor",
+   "original_reason": "Answer is a list of states; grading brittle. Rewrite as yes/no on the United Kingdom (the actual change).",
+   "open_reason": "The item correctly identifies the extended scope (addition of UK) as a genuine legal change, with accurate current and outdated answers. However, the question phrasing slightly hints at the answer by listing 'Staaten' (states), which could be neutralized; minor rewording recommended for neutrality."
+  },
+  {
+   "core_id": "nmu-0012",
+   "original": "reject",
+   "open": "accept",
+   "original_reason": "Legally wrong reading: Art. 39 para. 2 AHVG excludes raising the deferred SHARE; the deferred pension itself is still increased (para. 3). Gold 'Nein' would be false.",
+   "open_reason": "The current paragraph clearly states that an increase of the deferred pension portion is excluded, supporting the 'No' answer. The earlier version correctly shows a legal change where the increase was previously allowed, meeting all criteria for a valid temporal item."
+  },
+  {
+   "core_id": "nmu-0014",
+   "original": "accept",
+   "open": "revise",
+   "original_reason": "Valid temporal rule change (whole pension required instead of any old-age pension incl. early withdrawal); EL recipients excluded by the question wording.",
+   "open_reason": "The current answer 'Personen, die ihre ganze Altersrente beziehen' is not fully aligned with the paragraph, which lists two groups (full AHV pensioners OR supplementary benefits recipients) who are severely, moderately, or lightly disabled. The question asks only about 'Altersrentenbezüger', thus excluding the second group, but the answer should reflect the full condition including the degree of helplessness per Art. 9 ATSG, which is missing in the answer. This omission makes the answer factually incomplete and potentially misleading."
+  },
+  {
+   "core_id": "nmu-0015",
+   "original": "revise",
+   "open": "accept_minor",
+   "original_reason": "Answer too long (validator error answer.not_in_evidence); outdated answer is an invented paraphrase. Shorten to yes/no with the deciding condition.",
+   "open_reason": "The answer is substantively correct and aligns with the current legal text, but the automatic check 'answer.not_in_evidence' indicates it is not perfectly quoted; minor revision to match the exact wording of the current paragraph is needed. All other criteria, including temporal change and multilingual consistency, are met."
+  },
+  {
+   "core_id": "nmu-0018",
+   "original": "accept",
+   "open": "revise",
+   "original_reason": "Valid temporal item: previously prohibited ('unzulässig'), now up to 1 percent.",
+   "open_reason": "The current paragraph allows up to 1% for liquidity management, but the question does not specify the condition 'for covering obligations from hedging transactions', which is required for this allowance. The answer must reflect the exact condition from the text to avoid overgeneralization."
+  },
+  {
+   "core_id": "nmu-0019",
+   "original": "accept_minor",
+   "open": "accept",
+   "original_reason": "Clear yes/no; alias typo 'Nei' to remove.",
+   "open_reason": "The item meets all criteria: the answer 'Nein/Non/No' is explicitly stated in the current paragraph, the question does not reveal the answer, no earlier version exists so temporal consistency is not applicable, the wording is consistent across languages, and the content is relevant and understandable for practitioners."
+  },
+  {
+   "core_id": "nmv-0001",
+   "original": "accept",
+   "open": "accept_minor",
+   "original_reason": "Clean temporal pair (2300 -> 2500 CHF threshold); question names all conditions and does not leak the value; FR/IT authentic.",
+   "open_reason": "The item meets all core criteria, but the warning 'answer.threshold_word' indicates the threshold word 'übersteigt'/'n’excède pas'/'non supera' requires careful interpretation; ensure the question's phrasing does not inadvertently suggest inclusion of the threshold value, which could confuse test-takers. Slight rephrasing of the question for clarity is recommended."
+  },
+  {
+   "core_id": "nmv-0002",
+   "original": "accept",
+   "open": "accept_minor",
+   "original_reason": "Clear CHF threshold, correctly read as 'mindestens' (lower bound of the sliding scale), real 2025 adjustment from 9800; near-misses are not former values.",
+   "open_reason": "The item meets all core criteria, but the warning 'answer.threshold_word' indicates the answer includes a threshold term ('mindestens') that should be explicitly reflected in the question to ensure precision. The question should be slightly adjusted to include 'mindestens' to match the legal formulation exactly."
+  },
+  {
+   "core_id": "nmv-0003",
+   "original": "reject",
+   "open": "revise",
+   "original_reason": "Duplicate of nmv-0002 (same threshold change 9800 -> 10 100 CHF); keep only one. If this one is kept instead, drop the 'Artikel 6quater' reference and fix FR 'revenu comptable' to 'revenu à prendre en compte'.",
+   "open_reason": "The question asks 'ab welchem Einkommen' (from which income) the 4.35% rate no longer applies, but the paragraph states 'weniger als 10 100 Franken' (less than 10 100 CHF), meaning the rate applies below that threshold. The correct interpretation is that the rate changes *above* 10 100 CHF, so the answer should reflect the threshold *at which it stops applying*, but the current answer '10 100 Franken' is ambiguous without clarifying 'ab' vs 'unter'. The threshold wording in the question must align precisely with the legal formulation to avoid misinterpretation."
+  },
+  {
+   "core_id": "nmv-0006",
+   "original": "accept_minor",
+   "open": "accept",
+   "original_reason": "Correct real change (3060 -> 3480 CHF), but the question omits who gets this flat rate; add the condition from the article (persons living in property they or an included person own or hold usufruct/right of residence) so it is not confused with the heating-cost lump sum.",
+   "open_reason": "The item meets all criteria: the current answer is explicitly stated in the paragraph, the question does not reveal the answer, the outdated answer corresponds to the same question and reflects a genuine legal change, the aliases and near misses are appropriate, and all language versions are consistent and correctly formulated."
+  },
+  {
+   "core_id": "nmv-0010",
+   "original": "accept_minor",
+   "open": "accept",
+   "original_reason": "Name the scheme in the question ('Bundesbeitrag an die AHV'), since 'der Versicherung' is ambiguous across schemes; add near-misses for IT for parity.",
+   "open_reason": "The item meets all criteria: the current answer is precisely quoted from the current paragraph, the outdated answer matches the earlier version for the same question, the change is a genuine legal update, questions in all languages are equivalent and do not reveal the answer, and the content is relevant for practitioners. Minor formatting variations in answer aliases are acceptable."
+  },
+  {
+   "core_id": "nmv-0011",
+   "original": "accept_minor",
+   "open": "accept",
+   "original_reason": "Answer is correct and unique, but the question lacks context; add 'in der AHV' (and FR/IT equivalent) so it is understandable without the article.",
+   "open_reason": "The item meets all criteria: the answer is precisely and literally in the current paragraph, the question does not reveal the answer, no earlier versions require checking, the answer is technically accurate with correct near-misses, and all language versions ask the same question with answers from the authentic text."
+  },
+  {
+   "core_id": "nmv-0013",
+   "original": "reject",
+   "open": "accept",
+   "original_reason": "Answer is a pure cross-reference (Art. 6quater para. 4-6); not meaningful for practitioners or insured persons without the article.",
+   "open_reason": "The item meets all criteria: the answer is precisely and literally supported by the current paragraph, the question does not reveal the answer, no earlier versions are present so temporal consistency is not an issue, the answer is correctly interpreted from the full context, and all language versions ask the same question with authentic text matches. The near-misses are plausible but incorrect options, and the content is relevant for practitioners."
+  },
+  {
+   "core_id": "nmv-0015",
+   "original": "reject",
+   "open": "accept",
+   "original_reason": "Pure cross-reference question (Art. 50-56ter -> 50-56quater); renumbering of referenced articles is not a substantive change and has no value for practitioners.",
+   "open_reason": "The item meets all criteria: the current answer is precisely quoted from the current paragraph, the question does not reveal the answer, the outdated answers match earlier versions and reflect actual legal changes, the answer type is consistent, translations are accurate and equivalent, and the content is relevant for practitioners. No issues found."
+  },
+  {
+   "core_id": "nmv-0018",
+   "original": "reject",
+   "open": "accept",
+   "original_reason": "Change is terminological (ordentliches Rentenalter -> Referenzalter) and the question misdescribes the provision: it concerns transfer of 3a capital / buy-ins into occupational pension, not 'Einkauf in der Säule 3a'.",
+   "open_reason": "The item meets all criteria: the current answer 'Referenzalter' is explicitly stated in the current paragraph, the question does not reveal the answer, the outdated answer corresponds to the same question and reflects a genuine legal change, the near-miss is plausible, and all language versions are consistent and correctly translated from the authentic text."
+  },
+  {
+   "core_id": "nmv-0020",
+   "original": "reject",
+   "open": "revise",
+   "original_reason": "Pure cross-reference detail (Art. 64a Abs. 4 vs 5 after renumbering in the KVG), not a substantive change; the question also requires the article citation.",
+   "open_reason": "The question reveals the answer by including the word '4' in the question text indirectly through the structure, and the outdated answer refers to a different paragraph (5) which is not present in the current version, making the temporal change not a genuine legal change but a misalignment in paragraph numbering; also, the automatic checks indicate answer alias and question overlap issues that need correction."
+  },
+  {
+   "core_id": "nmv-0021",
+   "original": "revise",
+   "open": "accept_minor",
+   "original_reason": "Real change (85 % -> amount borne by the canton), but near-miss 'den vom Kanton übernommenen Betrag' is equivalent to the answer, and the question cites only Art. 64a Abs. 3 while the text now also covers 3bis and annulment for double insurance; rewrite without article refs and fix near-misses.",
+   "open_reason": "The item meets all core criteria but includes a minor style warning (article mentioned in question); rephrase the question to avoid referencing 'Artikel 64a Absatz 3 KVG' directly to prevent cueing the answer and improve neutrality."
+  },
+  {
+   "core_id": "nmv-0022",
+   "original": "reject",
+   "open": "accept",
+   "original_reason": "Answer is a cross-reference (Art. 105k para. 5), a pure referral detail without practical value.",
+   "open_reason": "The item meets all criteria: the answer is precisely and literally in the current paragraph, the question does not reveal the answer, no earlier versions require checking, the answer is technically correct and consistently phrased across languages, and the content is relevant and understandable for practitioners."
+  },
+  {
+   "core_id": "nmv-0023",
+   "original": "reject",
+   "open": "accept_minor",
+   "original_reason": "Positional question ('last item in Art. 11 Abs. 3 ELG') needs the article citation and the outdated answers are just earlier last list items; a substantive item would ask whether the 13th AHV pension counts as EL income.",
+   "open_reason": "The item is mostly correct, but the question includes the article number (Artikel 11), which slightly violates criterion 2 by hinting at the structure of the answer; rephrase to avoid mentioning the article to prevent any cueing."
+  },
+  {
+   "core_id": "nmv-0024",
+   "original": "reject",
+   "open": "accept_minor",
+   "original_reason": "Paragraph is only a bare cross-reference '(Art. 15 Abs. 2 BVG)'; no substantive answer, wrong question_type, not useful.",
+   "open_reason": "The item is factually correct and the answer is directly supported by the current paragraph, but the automatic check warns about 'style.article_in_question'—mentioning 'Art. 12 BVV2' in the question may slightly hint at the answer structure; rephrase the question to avoid including the article number to prevent any suggestion of the answer."
+  },
+  {
+   "core_id": "nmv-0025",
+   "original": "reject",
+   "open": "revise",
+   "original_reason": "List-position question ('last listed category') about a Federal Council delegation norm; outdated answer is only the former last list item, not a change of the same answer.",
+   "open_reason": "The current paragraph does not contain the phrase 'letzte aufgeführte Kategorie' explicitly; the answer relies on interpretation of list order, which is not clearly defined in the text. The question must be rephrased to avoid ambiguity and ensure the answer is literally and unambiguously stated in the paragraph."
+  },
+  {
+   "core_id": "nmv-0029",
+   "original": "reject",
+   "open": "accept_minor",
+   "original_reason": "Reject: the change is only the AHV 21 terminology switch (ordentliches Rentenalter -> Referenzalter) and the question just asks for the name of the age, so it is not a real legal change for this item. The Bundesrat also sets the relevant age limit (discretion).",
+   "open_reason": "The answer 'des Referenzalters' is correctly supported by the current text, and the outdated answer matches the earlier version for the same question. However, the near-miss answers include 'Altersgrenze', which is mentioned as being defined by the Federal Council in the same sentence, creating potential ambiguity; this should be clarified to ensure the near-miss does not overlap with a related but distinct concept in the paragraph."
+  },
+  {
+   "core_id": "nmv-0031",
+   "original": "reject",
+   "open": "revise",
+   "original_reason": "Answer is a paragraph cross-reference (paras 1 and 2) in an internal administrative rule; not useful for practitioners.",
+   "open_reason": "The question asks about the scope of the decision but includes 'in der AHV' (in the AHV), which is not precise since the paragraph is from AHVV (ordinance) not the AHV law; this could mislead candidates. Also, the automatic check 'question.answer_overlap' indicates potential leakage of the answer in the question (e.g., 'Absätze' in both question and answer), which must be rephrased to avoid cueing."
+  },
+  {
+   "core_id": "nmv-0033",
+   "original": "revise",
+   "open": "accept",
+   "original_reason": "Old answer 'nur wochenweise' does not answer 'under which condition can daily withdrawal be granted' (no condition existed before); rephrase e.g. as 'Can control-free days be taken individually?' or make it non-temporal, and fix the fragmentary DE near-misses.",
+   "open_reason": "The item meets all criteria: the current answer is precisely supported by the text, the question does not reveal the answer, the outdated answer correctly reflects the prior version's restriction, the change is substantive, and all language versions are consistent and correctly formulated."
+  },
+  {
+   "core_id": "nmv-0034",
+   "original": "reject",
+   "open": "accept_minor",
+   "original_reason": "Asks for the legal-basis citation in a heading bracket; pure referral detail and the question names the article.",
+   "open_reason": "The question mentions 'Art. 30 AVIV' which slightly overlaps with the answer format, and the article number in the question could be seen as hinting at the answer; rephrase the question to avoid any overlap, e.g., 'Which AVIG articles are cited as legal basis in the ordinance on invalidity insurance?'."
+  },
+  {
+   "core_id": "nmv-0036",
+   "original": "reject",
+   "open": "revise",
+   "original_reason": "Year of the municipal typology (2012 -> 2020) is a technical classification detail with no practical value for insured persons; aliases like \"2'020\" are nonsensical.",
+   "open_reason": "The question asks for a year, but the current paragraph does not explicitly state '2020' as a value to be extracted; it only refers to 'Gemeindetypologie 2020' as part of a descriptive phrase. The answer '2020' is not directly quotable as a standalone number from the text, violating criterion 1. The item must be rephrased to ensure the answer is literally and unambiguously present in the paragraph."
+  },
+  {
+   "core_id": "nmv-0038",
+   "original": "reject",
+   "open": "revise",
+   "original_reason": "Answer 'Personen' is trivially generic, the question depends on 'Absatz 1 Buchstabe c oder d' and the matter is delegated to the Bundesrat; not usable without the article.",
+   "open_reason": "The current paragraph grants discretion to the Federal Council (Bundesrat/Conseil fédéral/Consiglio federale), which violates criterion 1 (no discretion allowed). The question must specify that it refers to the group for whom the Federal Council regulates entitlements, not imply that the Federal Council defines the group itself."
+  },
+  {
+   "core_id": "nmv-0039",
+   "original": "reject",
+   "open": "accept_minor",
+   "original_reason": "Answer is a renumbered BZG cross-reference after the civil protection law revision; a reference change, not a substantive change in cantonal liability.",
+   "open_reason": "The item meets all core criteria but has minor issues: the answer is slightly inflected (e.g., 'Artikel' vs. 'Art.') and there is partial overlap between question and answer (e.g., 'Aufgebot für Zivilschutzeinsätze' appears in both), which could subtly hint at the answer. These can be corrected with minor rewording."
+  },
+  {
+   "core_id": "nmv-0040",
+   "original": "reject",
+   "open": "accept_minor",
+   "original_reason": "Change 'Rentenalter' -> 'Referenzalter' is an AHV21 terminology change; question lacks context on which entitlement is meant and the answer contains article references.",
+   "open_reason": "The answer is correctly derived from the current paragraph, but the German answer could be slightly shortened to 'das Referenzalter nach Artikel 21 AHVG' for consistency with the more concise FR/IT versions; minor stylistic adjustment recommended."
+  },
+  {
+   "core_id": "nmv-0041",
+   "original": "accept_minor",
+   "open": "accept",
+   "original_reason": "Real change (nursing initiative: nurses can provide care without medical order); drop the near-miss 'Teilweise', which is defensible given KLV limits, and clarify 'nach dem KVG' in the question.",
+   "open_reason": "The item meets all criteria: the current answer 'Nein' is directly supported by the current paragraph listing three conditions where only one (c) requires a medical order, the question does not reveal the answer, the outdated answer 'Ja' correctly reflects the prior version requiring a prescription, the change is substantive, and all language versions are consistent and accurately translated."
+  },
+  {
+   "core_id": "nmv-0042",
+   "original": "revise",
+   "open": "accept_minor",
+   "original_reason": "Answer is a bare article number; the real change (tariff for practice-lab analyses now agreed per Art. 46 instead of set per Art. 46 and 48) should be asked substantively, and the DE question already contains 'vereinbart', which hints at the answer.",
+   "open_reason": "The item meets all core criteria, but the warning 'question.answer_overlap' indicates the question slightly reveals the answer (e.g., 'Artikel' in question and answer); rephrase the question to avoid overlap, e.g., 'Auf welcher Grundlage...' or 'Welcher Artikel regelt...'."
+  },
+  {
+   "core_id": "nmv-0043",
+   "original": "reject",
+   "open": "revise",
+   "original_reason": "List-position question about article numbers in an appeal provision; pure referral detail and the question names the article.",
+   "open_reason": "The question reveals the answer by including '46 Absatz 4' and asking for the 'directly following' article, making the sequence too obvious; also, 'Artikel' in the question violates style and may hint at the answer structure. Rephrase to avoid overlap and remove article references in the question."
+  },
+  {
+   "core_id": "nmv-0044",
+   "original": "reject",
+   "open": "accept_minor",
+   "original_reason": "Pure reference detail (which statistics ordinance applies by analogy) with article citation in the question; no value for practitioners or insured persons.",
+   "open_reason": "The item meets all core criteria but includes a minor style warning about article reference in the question (e.g., 'Art. 30 KVV'), which should be avoided to prevent hinting. Slight rephrasing of the question to omit the article number would improve neutrality without affecting content."
+  },
+  {
+   "core_id": "nmv-0045",
+   "original": "reject",
+   "open": "revise",
+   "original_reason": "Only removal of an internal reference ('nach den Absätzen 1-5'); trivial question with no legal change.",
+   "open_reason": "The current answer 'Die Veröffentlichungen' is not precise enough as it does not match the full subject in the current paragraph, which refers to 'Veröffentlichungen nach den Absätzen 1–5' in the earlier version but is now generalized; the answer must reflect the exact wording in the current and earlier versions to ensure consistency and accuracy for the temporal type. Also, the outdated answer in French 'visées aux al. 1 à 5' does not exactly match the current 'au présent article', indicating a potential change in scope that needs clarification."
+  },
+  {
+   "core_id": "nmv-0046",
+   "original": "reject",
+   "open": "revise",
+   "original_reason": "Automatic error temporal.not_changed; the answer ('darf nicht abgewichen werden') does not answer the question about the legal consequence, and the outdated 'nichtig' is a different answer type.",
+   "open_reason": "The current answer 'darf nicht abgewichen werden' describes a prohibition, not a legal consequence; the outdated answer 'sind nichtig' correctly states the consequence (nullity), so the current answer must also reflect the legal effect (e.g. 'ist nichtig') to match the question about legal consequences. The current formulation fails criterion 1 (exact short answer from text) and 3 (comparable answer type over time)."
+  },
+  {
+   "core_id": "nmv-0047",
+   "original": "reject",
+   "open": "accept_minor",
+   "original_reason": "Reject: the change is only the AHV 21 terminology switch (ordentliches Rentenalter -> Referenzalter) and the question just asks for the name of the age, so it is not a real legal change for this item. A usable item would instead test the new trigger (only a full early withdrawal of the AHV pension ends revision).",
+   "open_reason": "The item is mostly correct, but the answer 'Referenzalters' (de), 'âge de référence' (fr), and 'età di riferimento' (it) should be adjusted to match the grammatical case/number in the question (e.g., 'des Referenzalters' instead of 'Referenzalters') for full accuracy; the current form is not a literal match in context."
+  },
+  {
+   "core_id": "nmv-0048",
+   "original": "reject",
+   "open": "accept_minor",
+   "original_reason": "Change is terminological (ordentliches AHV-Rentenalter -> Referenzalter); near-miss 'Rentenalter 65' is effectively the current reference age, and the question context ('freiwillige Leistungen') is unclear.",
+   "open_reason": "The answer is correctly quoted from the current text and matches across languages; the outdated answer corresponds to the same question and reflects a genuine legal change. However, the warning 'answer.inflected' suggests minor linguistic adjustment (e.g., base form preferred), which should be corrected for consistency."
+  },
+  {
+   "core_id": "nmv-0049",
+   "original": "revise",
+   "open": "accept_minor",
+   "original_reason": "Question relies on article numbers (329g/329gbis) and is not understandable without them; rephrase by describing the leave types (6-month period for the other parent's leave, suspended during the leave after the mother's death) and check the future-change warning.",
+   "open_reason": "The item is correct and verifiable from the current text, but the question includes the article number (329g/329gbis), which is a style warning; rephrase the question to avoid citing article numbers directly while preserving clarity."
+  },
+  {
+   "core_id": "nmv-0052",
+   "original": "reject",
+   "open": "accept_minor",
+   "original_reason": "Change 'Rentenalter' -> 'Referenzalter' is terminology only; answer carries an article reference.",
+   "open_reason": "The current answer 'das Referenzalter nach Artikel 21 Absatz 1 AHVG' is correctly verifiable in the current text, but the German question slightly hints at the answer by including 'Altersgrenze', which overlaps with 'Referenzalter'; rephrase to avoid partial clue. All other criteria including temporal change, multilingual consistency, and correctness are met."
+  },
+  {
+   "core_id": "nmv-0053",
+   "original": "reject",
+   "open": "accept_minor",
+   "original_reason": "Administrative data exchange insurer -> canton with little practical value; in addition the outdated answers wrongly contain the current answer (2026-01-01 version).",
+   "open_reason": "The item is mostly correct, but the outdated_answer for 2024-10-01 in all languages should reflect the absence of any additional information, which is accurate; however, the current answer includes 'nach Artikel 26 Absatz 4...' in one alias, which adds non-essential detail not required by the core answer. Simplify aliases to match the concise answer format."
+  },
+  {
+   "core_id": "nmv-0054",
+   "original": "accept_minor",
+   "open": "accept",
+   "original_reason": "Correct; fix FR 'perte de travail comptable' to 'à prendre en considération' and make the FR/IT canonical answers 'formateurs'/'formatori' without the article reference.",
+   "open_reason": "The item meets all criteria: the answer is precisely and literally in the current text, the question does not reveal the answer, no earlier version issues, the answer type is consistent, near-misses are plausible but incorrect, and all language versions ask the same question with authentic terminology."
+  },
+  {
+   "core_id": "nmv-0055",
+   "original": "reject",
+   "open": "revise",
+   "original_reason": "Answer consists of article numbers; question about 'numbers in the Code of Obligations' is a pure referral detail.",
+   "open_reason": "The question asks for 'numbers' (Nummern/numéros/numeri) which is not the exact wording in the legal text; the answer should be verifiable as 'Artikeln 329g und 329gbis OR' etc., but the question's phrasing may mislead or imply a different answer format. The question should be rephrased to ask for the 'articles' or 'legal provisions' to match the authentic text and ensure the answer is literally grounded in the paragraph."
+  },
+  {
+   "core_id": "nmv-0056",
+   "original": "reject",
+   "open": "accept_minor",
+   "original_reason": "Renaming Vaterschaftsurlaub -> Urlaub des andern Elternteils asked as a naming question with 'Artikel 329g' in the question; not understandable without the article reference.",
+   "open_reason": "The item is correct and the answer is directly supported by the current text, but the warning 'style.article_in_question' indicates that the article number in the question should be avoided to prevent hinting; rephrase the question to omit 'Artikel 329g'."
+  },
+  {
+   "core_id": "nmv-0057",
+   "original": "revise",
+   "open": "accept_minor",
+   "original_reason": "Asking for the 'last state in the enumeration' is artificial; rephrase as a substantive question (e.g. are family members residing in the UK insured with the same insurer?) and avoid overlap with nmv-0114/nmv-0117.",
+   "open_reason": "The item is mostly correct, but the answer aliases include 'im Vereinigten Königreich' (and equivalents in FR/IT), which adds a preposition not strictly necessary for the short answer; this should be simplified to match the exact wording in the law without prepositions to ensure consistency and precision."
+  },
+  {
+   "core_id": "nmv-0058",
+   "original": "reject",
+   "open": "revise",
+   "original_reason": "Outdated answer is the pronoun 'Sie' (pure rewording); question refers to 'Absatz 2' and there is no real legal change.",
+   "open_reason": "The question asks for the type of pensions not reduced, but the answer 'Kinder- oder Waisenrenten' is partially revealed in the question itself, violating criterion 2. The phrasing should be adjusted to avoid including the answer terms (e.g., 'Welche Renten sind von der Kürzung ausgenommen, wenn...')."
+  },
+  {
+   "core_id": "nmv-0059",
+   "original": "accept",
+   "open": "accept_minor",
+   "original_reason": "Unique fixed interval 'mindestens alle zehn Jahre' with correct threshold wording in all languages; the Bundesrat discretion concerns the factors, not the asked interval.",
+   "open_reason": "The item meets all core criteria, but the automatic check 'source.discretion' indicates the Bundesrat has discretion in setting procedures, which slightly affects criterion 1; however, the answer 'mindestens alle zehn Jahre' is mandatory and wörtlich belegt, so only minor clarification is needed to confirm the fixed interval is not subject to discretion."
+  },
+  {
+   "core_id": "nmv-0060",
+   "original": "reject",
+   "open": "revise",
+   "original_reason": "Pure renaming 'Kasse' -> 'Arbeitslosenkasse'; no legal change, and the question asks about wording rather than law.",
+   "open_reason": "The question asks for the 'Bezeichnung' in the current regulation, but the current paragraph does not define or introduce the term for the first time; it assumes prior knowledge. The core issue is that the current paragraph (Art. 60 Abs. 2 AVIV) regulates switching of unemployment funds during short-time work, not the initial designation, which is covered elsewhere (e.g. Art. 35 AVIG). Thus, the answer 'Arbeitslosenkasse' is not directly and solely evidenced in this paragraph as the term to be 'chosen' here, violating criterion 1. The item should be revised to reflect the actual content of Art. 60 para. 2."
+  },
+  {
+   "core_id": "nmv-0061",
+   "original": "reject",
+   "open": "revise",
+   "original_reason": "Automatic error evidence.not_in_article; change 'materielle Rechtsanwendung' -> 'Einhaltung der gesetzlichen Vorschriften' is essentially rewording and the question ('which legal aspect') is vague.",
+   "open_reason": "The current answer 'die Einhaltung der gesetzlichen Vorschriften' is not fully supported by the current paragraph, which lists multiple aspects (legal compliance, accounting, annual accounts, management); the evidence for the outdated answer incorrectly omits 'Jahresrechnung/comptes annuels/conto annuale' in the earlier version, affecting accuracy; the question should specify it asks for one of several required aspects to avoid implying exclusivity."
+  },
+  {
+   "core_id": "nmv-0062",
+   "original": "reject",
+   "open": "accept",
+   "original_reason": "Naming-only change (Vaterschafts- -> Entschädigung des andern Elternteils) and ambiguous: Art. 16d EOG has the same minimum rule for the Mutterschaftsentschädigung, which is listed as near-miss.",
+   "open_reason": "The item meets all criteria: the current answer is precisely supported by the current text, the question does not reveal the answer, the temporal change reflects a genuine legal update (from paternity benefit to benefit for the other parent), and all language versions correctly mirror the legal text with appropriate near-misses and outdated answers."
+  },
+  {
+   "core_id": "nmv-0063",
+   "original": "reject",
+   "open": "accept",
+   "original_reason": "Question refers to 'Buchstabe d' and concerns an administrative dispute between the joint institution and insurers; not understandable without article context and not useful for practitioners.",
+   "open_reason": "The item meets all criteria: the answer is precisely and literally in the current paragraph, the question does not reveal the answer, no earlier version issues, answer aliases are valid, near-misses are plausible but incorrect, and translations match the source text and each other."
+  },
+  {
+   "core_id": "nmv-0065",
+   "original": "reject",
+   "open": "accept_minor",
+   "original_reason": "Pure cross-reference detail (Art. 63 Abs. 4 -> 63a Abs. 1 AHVG), no near-misses, no practical value.",
+   "open_reason": "The question slightly overlaps with the answer by including 'AHVG' and 'delegiert', which are part of the answer; rephrase the question to avoid wording too close to the answer while preserving clarity."
+  },
+  {
+   "core_id": "nmv-0066",
+   "original": "reject",
+   "open": "revise",
+   "original_reason": "Administrative detail (BSV rule-making competence); the question is vague and the near-miss 'Vorschriften zur Berechnung der Renten' is a correct partial answer.",
+   "open_reason": "The current answer includes 'Vorschriften zur Berechnung der Renten und verbindliche Rententabellen', but the current legal text states that the BSV issues the regulations and establishes the tables, meaning both elements are still valid; thus, the temporal change is not a true legal change but a rephrasing, violating criterion 3. Additionally, the outdated answer 'verbindliche Rententabellen' was never the full and correct answer, making the near-miss and outdated logic flawed."
+  },
+  {
+   "core_id": "nmv-0067",
+   "original": "reject",
+   "open": "accept_minor",
+   "original_reason": "Overlong verbatim answer; the actual change (deletion of conversion between parity/non-parity funds) is not what the question asks, and the topic is internal administration.",
+   "open_reason": "The item meets all core criteria but has a style warning due to a long answer; shorten the answer aliases to match the exact answer length for consistency and clarity."
+  },
+  {
+   "core_id": "nmv-0068",
+   "original": "revise",
+   "open": "accept_minor",
+   "original_reason": "Real change (controlled unemployment days instead of work days), but the question refers to 'Absatz 4' without explaining the waiting period and the near-misses are of a different type; describe the special waiting period and use same-type near-misses.",
+   "open_reason": "The answer 'Tage kontrollierter Arbeitslosigkeit' is correctly quoted from the current text, but the warning 'answer.threshold_word' suggests a potential issue with threshold wording (e.g. 'nicht mehr als') which should be reviewed for precision. The overlap between question and answer is minimal and acceptable for clarity, but slight rephrasing could improve neutrality."
+  },
+  {
+   "core_id": "nmv-0069",
+   "original": "reject",
+   "open": "accept_minor",
+   "original_reason": "Change is terminological (Rentenalter -> Referenzalter); near-miss 'Referenzalter' is actually the correct answer and FR/IT answers are truncated ('de référence fixé...').",
+   "open_reason": "The answer in all languages is precise and directly supported by the current text, but the German answer 'des Referenzalters nach Artikel 13 Absatz 1 BVG' is grammatically incomplete (missing 'bis zum Erreichen'); this minor issue should be corrected for full clarity and correctness."
+  },
+  {
+   "core_id": "nmv-0070",
+   "original": "reject",
+   "open": "accept_minor",
+   "original_reason": "Question mislabels the benefit as 'Betreuungsgutschrift'/'allocation pour tâches de garde' (it is the other-parent allowance), and 'Vater' -> 'anderer Elternteil' is mainly gender-neutral rewording.",
+   "open_reason": "The item meets all core criteria, but the German question 'wessen Tod bewirkt das Ende des Anspruchs nebst dem Tod des Kindes?' could be slightly rephrased to avoid echoing 'Kindes' from the answer structure; minor wording improvement suggested for symmetry with FR/IT. All other elements are correct and consistent across languages."
+  },
+  {
+   "core_id": "nmv-0071",
+   "original": "reject",
+   "open": "revise",
+   "original_reason": "Naming-only change (Vaterschaftsurlaub -> Urlaub des andern Elternteils) and ambiguous: other situations (e.g. Art. 336c OR) also extend the notice period.",
+   "open_reason": "The question asks for a 'condition' but the answer 'Urlaub des andern Elternteils' is not precise enough; it must specify that it is the entitlement before the end of employment, which is a key condition in the paragraph. The current answer could mislead as it omits this crucial timing element."
+  },
+  {
+   "core_id": "nmv-0072",
+   "original": "revise",
+   "open": "accept",
+   "original_reason": "The question nearly reveals the answer ('Tagestaxe' implies a home or hospital stay); rephrase, e.g. ask for the 120 CHF threshold below which adjustment can be waived, or ask a yes/no about a partial-month home stay.",
+   "open_reason": "The item meets all criteria: the answer is precisely and literally supported by the current text, the question does not reveal the answer, no earlier version is present so temporal consistency is not applicable, the answer is correctly interpreted from the paragraph, and all language versions ask the same question with authentic terminology. The content is relevant and understandable for practitioners."
+  },
+  {
+   "core_id": "nmv-0073",
+   "original": "reject",
+   "open": "accept_minor",
+   "original_reason": "List-letter position question ('purpose under letter d') in a Federal Council discretionary data provision; no practical value.",
+   "open_reason": "The answer is correctly quoted from the current paragraph and matches across languages, but the warning 'source.discretion' indicates the provision involves federal council discretion, which slightly contradicts criterion 1; however, the question asks for the stated purpose, not an exercise of discretion, so it remains acceptable with minor concern."
+  },
+  {
+   "core_id": "nmv-0074",
+   "original": "reject",
+   "open": "revise",
+   "original_reason": "Automatic check error temporal.not_changed; FR/IT texts are unchanged and the DE change is purely editorial (zwischenstaatliche Vereinbarung -> internationales Abkommen).",
+   "open_reason": "The outdated answer in all languages is identical to the current answer (e.g., 'convention' in FR), but the automatic check 'temporal.not_changed' indicates no real legal change occurred; the temporal item must be based on an actual change in the law, not just rewording, so the core must be revised to reflect a genuine legal amendment."
+  },
+  {
+   "core_id": "nmv-0075",
+   "original": "revise",
+   "open": "accept_minor",
+   "original_reason": "'Last case group in the enumeration' is artificial and concerns Federal Council implementing powers; rephrase substantively (e.g. whether the couple cap also applies when only part of the pension is drawn), and old answer must answer the same question.",
+   "open_reason": "The item meets all core criteria but the warning 'source.discretion' indicates the current paragraph grants discretion to the Federal Council, which slightly undermines the requirement for a single verifiable answer. However, the answer itself is precisely quoted and the temporal change is valid, so only minor clarification is needed to address the discretion concern."
+  },
+  {
+   "core_id": "nmv-0076",
+   "original": "reject",
+   "open": "accept_minor",
+   "original_reason": "Answer is a wording-level phrase; near-miss 'versicherungstechnischen Gegenwert' is the formerly valid wording, and the 2025 outdated answer ('Erhöhung ausgeschlossen') is a different answer type.",
+   "open_reason": "The item is mostly correct, but the German near-miss 'versicherungstechnischen Gegenwert der aufgeschobenen Leistungen' is too close to a valid earlier version and could confuse; adjust to ensure near-misses are clearly incorrect. All other criteria are met."
+  },
+  {
+   "core_id": "nmv-0078",
+   "original": "reject",
+   "open": "revise",
+   "original_reason": "The asked-about rule (direct electronic transmission to cantonal tax authority) no longer exists in the current text; the given answer does not answer the question.",
+   "open_reason": "The current law does not mention cantonal authorities or direct transmission, but the question refers to 'Kantonen, die eine direkte Übermittlung... vorsehen', which introduces a condition not present in the current text and implies a factual scenario that no longer exists; this violates criterion 1 (answer must be directly and solely supported by current text) and creates a misleading context even though the answer itself is correct."
+  },
+  {
+   "core_id": "nmv-0079",
+   "original": "reject",
+   "open": "accept",
+   "original_reason": "'Kasse' -> 'Arbeitslosenkasse' is pure rewording, not a legal change.",
+   "open_reason": "The item meets all criteria: the current answer is explicitly stated in the paragraph, the question does not reveal the answer, the outdated answer matches the earlier version for the same question, the change is substantive, translations are accurate and consistent, and the content is relevant and understandable for practitioners."
+  },
+  {
+   "core_id": "nmv-0081",
+   "original": "accept_minor",
+   "open": "revise",
+   "original_reason": "Correct delegation scope; make the canonical answer 'Personen, die eine Leistung der beruflichen Vorsorge beziehen oder bezogen haben' in all languages.",
+   "open_reason": "The answer 'Personen, die eine Leistung der beruflichen Vorsorge beziehen' is incomplete as it omits 'oder bezogen haben', which is part of the mandatory condition in the current paragraph; the correct answer must include both present and past recipients to fully reflect the legal text."
+  },
+  {
+   "core_id": "nmv-0083",
+   "original": "reject",
+   "open": "revise",
+   "original_reason": "Misreads the paragraph: nursing care is also covered outpatient and in nursing homes (Art. 25a KVG), so 'ambulant' as near-miss is wrong and the answer is not unique.",
+   "open_reason": "The current answer 'im Rahmen einer stationären Behandlung' is not fully supported by the current text, which lists 'Pflegeleistungen, die im Rahmen einer stationären Behandlung erbracht werden' as part of the services provided by certain professionals, but the location requirement is tied to the treatment context, not the care itself; the question and answer should be rephrased to reflect that nursing care is covered when provided within the context of inpatient treatment, not a standalone location condition."
+  },
+  {
+   "core_id": "nmv-0084",
+   "original": "accept_minor",
+   "open": "accept",
+   "original_reason": "Correct; replace near-misses 'einheitliche Kriterien' and 'klinische Leitlinien' (and FR/IT equivalents), which are correct partial answers, with genuinely wrong alternatives.",
+   "open_reason": "The item meets all criteria: the answer is precisely quoted from the current paragraph, the question does not reveal the answer, no outdated versions are present, the answer type is consistent, near-misses are plausible but incorrect, and all language versions ask the same question with answers directly from the authentic text. The content is relevant for practitioners and understandable without additional context."
+  },
+  {
+   "core_id": "nmv-0085",
+   "original": "reject",
+   "open": "accept_minor",
+   "original_reason": "Answer is a range of letters in a cross-reference (a-e); pure referral detail.",
+   "open_reason": "The item meets all core criteria but has minor style issues: the answer aliases include non-standard forms (e.g., 'a e' in Italian) and the question contains the article reference which slightly increases cueing. These require small corrections but do not affect validity."
+  },
+  {
+   "core_id": "nmv-0086",
+   "original": "reject",
+   "open": "accept_minor",
+   "original_reason": "Change 'kleinste Packung und Dosierung' -> 'kleinste Packung der tiefsten Dosisstärke' is a reformulation, not a substantive change of the basis; the real novelty (identical-price exception) is not tested.",
+   "open_reason": "The answer and aliases are correctly derived from the current paragraph, but 'Packung der tiefsten Dosisstärke' (DE) and 'più piccola del dosaggio minimo' (IT) are incomplete quotes and slightly deviate from the full phrase; minor correction to align verbatim with the text is needed."
+  },
+  {
+   "core_id": "nmv-0088",
+   "original": "reject",
+   "open": "accept_minor",
+   "original_reason": "Question depends on the article reference (Art. 25 para. 1 let. bbis); describing the condition instead would reveal the answer.",
+   "open_reason": "The item meets all core criteria: the answer is precisely quoted from the current text, questions are equivalent across languages, and near-misses are plausible distractors. However, minor style issues are present: the question includes the article 'Art.' (warning: article_in_question), and apostrophes in the French answer should be consistent (e.g., 'l'hôpital'). These do not affect validity but should be corrected for consistency."
+  },
+  {
+   "core_id": "nmv-0089",
+   "original": "reject",
+   "open": "accept",
+   "original_reason": "'Institut' and 'Swissmedic' denote the same authority, so the temporal pair is editorial only; the real change (new lit. c post-exposure prophylaxis) is not tested.",
+   "open_reason": "The item meets all criteria: the current answer 'Swissmedic' is explicitly stated in the current paragraph, the question does not reveal the answer, the outdated answer 'Institut' correctly reflects the earlier version, the change is a genuine legal update (renaming), all language versions are consistent and accurately translated, and the content is relevant for practitioners and insured persons."
+  },
+  {
+   "core_id": "nmv-0090",
+   "original": "revise",
+   "open": "accept_minor",
+   "original_reason": "Misreading: the Art. 40 exception means early withdrawal does not end the splitting period, not that the advance pension is excluded from splitting; rephrase the question and remove the nonsensical yes/no near-misses.",
+   "open_reason": "The item meets all core criteria: the current answer 'Ja/Oui/Sì' is directly supported by the current paragraph, which explicitly excludes the pre-paid pension (Art. 40) from income sharing. The outdated answer 'Nein/Non/No' correctly reflects the earlier version, which lacked this exception, confirming a genuine rule change. The question does not reveal the answer, and all language versions are consistent. A minor style issue exists (use of 'Artikel' in question), but it does not impair clarity or fairness."
+  },
+  {
+   "core_id": "nmv-0092",
+   "original": "reject",
+   "open": "accept_minor",
+   "original_reason": "Reject: the change is only the AHV 21 terminology switch (ordentliches Rentenalter -> Referenzalter) and the question just asks for the name of the age, so it is not a real legal change for this item.",
+   "open_reason": "The answer is correctly based on the current legal text and the outdated answer matches the earlier version, but the warning 'answer.inflected' indicates minor linguistic inconsistency in answer phrasing that should be standardized for precision."
+  },
+  {
+   "core_id": "nmv-0093",
+   "original": "accept_minor",
+   "open": "accept",
+   "original_reason": "Correct and useful; fix the garbled IT near-miss 'altre norme della rendita di vecchiaia'.",
+   "open_reason": "The item meets all criteria: the answer is precisely and literally supported by the current paragraph, the question does not reveal the answer, no outdated versions are present, the answer is correctly formulated in all languages based on authentic texts, and the content is relevant and understandable for practitioners."
+  },
+  {
+   "core_id": "nmv-0094",
+   "original": "reject",
+   "open": "accept",
+   "original_reason": "'ordentliches Rentenalter' -> 'Referenzalter' is a terminology change, not a substantive legal change.",
+   "open_reason": "The item meets all criteria: the current answer 'Referenzalter' is explicitly stated in the current paragraph, the question does not reveal the answer, the outdated answer corresponds to the same question and reflects a genuine legal change, and all language versions are consistent and correctly based on authentic texts."
+  },
+  {
+   "core_id": "nmv-0095",
+   "original": "reject",
+   "open": "revise",
+   "original_reason": "Automatic check error temporal.not_changed; only a grammatical rewording, and the question repeats the full rule.",
+   "open_reason": "The automatic check 'temporal.not_changed' indicates no actual legal change occurred, but the item is marked as 'temporal'; the current and earlier versions are substantively identical, so this is likely a reformulation, not a true legal change, violating criterion 3."
+  },
+  {
+   "core_id": "nmv-0096",
+   "original": "reject",
+   "open": "revise",
+   "original_reason": "No legal change (only rephrasing 'Bezieht er' -> 'Wird'); also flagged future change.",
+   "open_reason": "The automatic check 'temporal.not_changed' indicates no actual legal change occurred, but the item is marked as 'temporal'; the current and earlier versions' texts are substantively identical, meaning the 'outdated_answer' does not reflect a real legal change, violating criterion 3."
+  },
+  {
+   "core_id": "nmv-0098",
+   "original": "reject",
+   "open": "revise",
+   "original_reason": "Version date of an SIWF training programme is a reference detail with little practical value; '1. Januar 2024' also appears for the Schwerpunktprogramme.",
+   "open_reason": "The question asks for the date of the 'massgebende Weiterbildungsprogramm', but the current paragraph lists two different programs (general psychiatry and subspecialties), creating ambiguity about which date is correct. The answer '1. Januar 2024' applies only to specific subspecialty programs, while the general program refers to a different date (1. Juli 2006 in version 20. Dezember 2018). This makes the core ambiguous and potentially misleading, requiring clarification to ensure exactly one verifiable answer."
+  },
+  {
+   "core_id": "nmv-0100",
+   "original": "reject",
+   "open": "revise",
+   "original_reason": "Automatic error temporal.not_changed; FR/IT outdated equals current and 'zwischenstaatliche Vereinbarungen' -> 'internationale Abkommen' is rewording.",
+   "open_reason": "The automatic check 'temporal.not_changed' indicates no actual legal change occurred; the outdated answer is identical to the current answer in FR/IT, and DE differs only in wording ('zwischenstaatliche Vereinbarungen' vs. 'internationale Abkommen'), which may be mere rewording, not a substantive change. The item must be revised to ensure the temporal change is genuine and correctly reflected."
+  },
+  {
+   "core_id": "nmv-0101",
+   "original": "reject",
+   "open": "revise",
+   "original_reason": "Automatic check error temporal.not_changed; 'SECO' -> spelled-out name is editorial, administrative detail only.",
+   "open_reason": "The automatic check 'temporal.not_changed' indicates no actual legal change occurred; the 'outdated_answer' in earlier versions must differ from the current answer, but 'SECO' is still correct in the current version, making the temporal aspect invalid. The item must be revised to reflect a genuine legal change."
+  },
+  {
+   "core_id": "nmv-0102",
+   "original": "reject",
+   "open": "accept_minor",
+   "original_reason": "Change is terminological (Rentenalter -> Referenzalter); near-miss 'Alter 65 Jahre' equals the current reference age; administrative subsidy detail.",
+   "open_reason": "The answer is correctly derived from the current paragraph and matches across languages, with a genuine legal change from 'Rentenalter' to 'Referenzalter'. The near-miss answers are plausible distractors. Minor issue: 'answer.inflected' warning suggests the answer form might be slightly adapted rather than verbatim; ensure answer phrasing matches the text exactly, e.g., 'des Referenzalters nach Artikel 21 Absatz 1 AHVG' instead of 'Referenzalter nach Artikel 21 Absatz 1 AHVG'."
+  },
+  {
+   "core_id": "nmv-0103",
+   "original": "reject",
+   "open": "revise",
+   "original_reason": "Terminology change ('AHV-Rentenalter' -> 'Referenzalter') in a Federal Council discretionary provision; near-miss 'Referenzalter' equals an alias of the answer.",
+   "open_reason": "The current answer 'Referenzalters nach Artikel 21 Absatz 1 AHVG' is not verbatim in the current paragraph, which uses 'Referenzalters nach Artikel 21 Absatz 1 AHVG' only partially; the exact phrase is 'Referenzalters nach Artikel 21 Absatz 1 AHVG' but the paragraph says 'nach Artikel 21 Absatz 1 AHVG' without 'Referenzalters' directly attached; this violates criterion 1. Also, the French and Italian answers slightly rephrase the source text instead of quoting it exactly, violating criterion 5."
+  },
+  {
+   "core_id": "nmv-0105",
+   "original": "reject",
+   "open": "revise",
+   "original_reason": "Only abbreviation change (Bundesamt für Sozialversicherungen -> BSV); no legal change, FR outdated answer identical to current answer.",
+   "open_reason": "The outdated answer in French ('L'OFAS') is identical to the current answer, which violates the temporal item requirement that the outdated answer must differ from the current one; the evidence for the earlier version must reflect a genuine legal change, not just a rephrasing."
+  },
+  {
+   "core_id": "nmv-0107",
+   "original": "revise",
+   "open": "accept",
+   "original_reason": "Real change (only third-party capital costs count), but the positional question ('between Projektierungs- and Raumkosten') is a text-recall trick; ask whether equity or borrowed capital costs are chargeable.",
+   "open_reason": "The item meets all criteria: the answer is uniquely and literally supported by the current text, the question does not reveal the answer, the temporal change is genuine (Fremdkapital vs. Kapital), the near-miss and outdated answers are appropriate, and all language versions correctly reflect the authentic legal text and ask the same question."
+  },
+  {
+   "core_id": "nmv-0108",
+   "original": "reject",
+   "open": "accept_minor",
+   "original_reason": "Pure renaming 'Kasse' -> 'Arbeitslosenkasse'; no legal change.",
+   "open_reason": "The item meets all core criteria, but the outdated answer 'Kasse'/'caisse'/'cassa' in the earlier version is too vague and not fully aligned with the current specificity 'Arbeitslosenkasse/caisse de chômage/cassa di disoccupazione'; minor correction needed to ensure the near-miss and outdated answers reflect only meaningful distinctions without being misleading."
+  },
+  {
+   "core_id": "nmv-0109",
+   "original": "reject",
+   "open": "accept_minor",
+   "original_reason": "Niche cost-accounting detail with low practical value; question leaks 'Kapital', and FR/IT outdated answers ('capital investi', 'capitale investito') are not from the authentic former text.",
+   "open_reason": "The item meets all core criteria, but the German and French near-miss 'Eigenkapital'/'capital propre' could be confused as valid since they are logical opposites of the correct answer; clarify that only 'Fremdkapital'/'capital étranger' is listed to prevent ambiguity."
+  },
+  {
+   "core_id": "nmv-0110",
+   "original": "reject",
+   "open": "revise",
+   "original_reason": "Reject: the change is only the AHV 21 terminology switch (ordentliches Rentenalter -> Referenzalter) and the question just asks for the name of the age, so it is not a real legal change for this item.",
+   "open_reason": "The current question asks for the age after which contributions can be paid, but the current paragraph states the rule applies 'after reaching the reference age', not that contributions start at that age. The phrasing implies the reference age is the starting point, but the rule allows payments up to five years after it, not from it. The question should be rephrased to avoid implying the reference age is the trigger for starting contributions, e.g., 'Until how long after reaching which age can contributions be made?' to match the actual meaning."
+  },
+  {
+   "core_id": "nmv-0111",
+   "original": "reject",
+   "open": "accept",
+   "original_reason": "Not unique: maternity, care and adoption allowances have parallel exclusion rules, so the near-misses are also correct; the change is mainly a renaming of the paternity allowance and there is a future-change flag.",
+   "open_reason": "The item meets all criteria: the current answer is precisely supported by the current text, the question does not reveal the answer, the outdated answer correctly reflects the previous legal term for the same question, the change is substantive, and all language versions are consistent and correctly formulated."
+  },
+  {
+   "core_id": "nmv-0113",
+   "original": "reject",
+   "open": "accept_minor",
+   "original_reason": "Reject: the change is only the AHV 21 terminology switch (ordentliches Rentenalter -> Referenzalter) and the question just asks for the name of the age, so it is not a real legal change for this item.",
+   "open_reason": "The item meets all core criteria, but the German question uses 'Beiträge' while the paragraph uses 'Subventionen' (fr/it) or 'sussidi' (it); this terminology should be aligned to 'Subventionen' for consistency with the legal text. All other aspects including temporal change, answer precision, and language equivalence are correct."
+  },
+  {
+   "core_id": "nmv-0114",
+   "original": "reject",
+   "open": "accept_minor",
+   "original_reason": "Artificial 'last state in enumeration' question on an administrative task of the joint institution; duplicates the UK-extension pattern of nmv-0057/nmv-0117.",
+   "open_reason": "The item is correct and the answer is clearly supported by the current text, but the warning 'answer.alias_only' suggests that some aliases may not be fully justified by the text; review aliases like 'UK' to ensure they are explicitly valid per the legal wording."
+  },
+  {
+   "core_id": "nmv-0116",
+   "original": "revise",
+   "open": "accept_minor",
+   "original_reason": "Real change (UK added) and correct current answer, but the earlier-version evidence quotes a different provision (cross-border commuter list of old Abs. 3) rather than the pensioner rule; supply the correct prior paragraph text.",
+   "open_reason": "The item meets all core criteria, but the answer aliases include phrasings that slightly rephrase the original text (e.g., omitting 'in einem'), which could be adjusted for stricter verbatim alignment. The near-miss and outdated answers are appropriate, and the temporal change is valid (addition of UK). Minor refinement of aliases is recommended for precision."
+  },
+  {
+   "core_id": "nmv-0117",
+   "original": "revise",
+   "open": "accept_minor",
+   "original_reason": "Real change (UK added), but the 'last state in the enumeration' framing is artificial and near-duplicates nmv-0057; rephrase as a substantive question (e.g. do cantons grant premium reductions to cross-border commuters living in the UK?) or merge.",
+   "open_reason": "The item meets all core criteria but has minor style issues: the answer is inflected (e.g., 'das Vereinigte Königreich') and the question ends with a period instead of a question mark. These do not affect validity but should be corrected for consistency."
+  },
+  {
+   "core_id": "nmv-0118",
+   "original": "reject",
+   "open": "revise",
+   "original_reason": "Duplicate of nmv-0117 and a list-position question ('last state listed').",
+   "open_reason": "The question asks for the 'last state in the enumeration', but the order of states in the text is not legally significant and may vary by language version, risking ambiguity. The answer must be based on a legally relevant criterion, not textual sequence; rephrase question to focus on the added state due to legal change."
+  },
+  {
+   "core_id": "nmv-0119",
+   "original": "reject",
+   "open": "accept",
+   "original_reason": "Pure internal cross-reference (Absatz 1bis) and administrative data detail; not understandable without the article.",
+   "open_reason": "The item meets all criteria: the answer 'Absatz 1bis' is explicitly stated in the current paragraph, the question does not reveal the answer, no earlier versions require checking, the answer is precise and verbatim, and all language versions correctly reflect the same meaning with authentic terminology."
+  },
+  {
+   "core_id": "nmv-0120",
+   "original": "accept_minor",
+   "open": "accept",
+   "original_reason": "Genuine change (any other insurance form -> bonus insurance only); remove IT near-miss 'un altro modello di assicurazione' (equals the formerly valid answer) and add DE/FR near-misses.",
+   "open_reason": "The item meets all criteria: the current answer 'Bonusversicherung' is explicitly stated in the current paragraph, the question does not reveal the answer, the outdated answer corresponds to the same question and reflects a genuine legal change, and all language versions are consistent and correctly based on authentic texts."
+  },
+  {
+   "core_id": "nmv-0121",
+   "original": "reject",
+   "open": "revise",
+   "original_reason": "Automatic error temporal.not_changed; FR/IT outdated equals current and the change is rewording.",
+   "open_reason": "The automatic check 'temporal.not_changed' indicates no actual legal change occurred; the 'outdated_answer' in all languages is identical to the current answer, meaning the temporal aspect is invalid. The item must be revised to reflect a genuine legal change or be rejected."
+  },
+  {
+   "core_id": "nmv-0122",
+   "original": "reject",
+   "open": "revise",
+   "original_reason": "Reject: the change is only the AHV 21 terminology switch (ordentliches Rentenalter -> Referenzalter) and the question just asks for the name of the age, so it is not a real legal change for this item. Automatic errors on previous-version evidence; the question also cites the article.",
+   "open_reason": "The question asks for the term used in the current version, but the current paragraph does not explicitly rename or define the age in Article 21 AHVG/LAVS as 'Referenzalter'—it only refers to 'das Referenzalter nach Artikel 21 Absatz 1 AHVG' without confirming this is the official term. The evidence for the current answer is insufficient within the cited paragraph, violating criterion 1. Also, the earlier version evidence does not clearly show a legal change in the term, raising issues under criterion 3."
+  },
+  {
+   "core_id": "nmv-0123",
+   "original": "reject",
+   "open": "revise",
+   "original_reason": "Question already contains the answer context and only an ancillary clause was removed; Federal Council administrative competence, not useful.",
+   "open_reason": "The current paragraph grants discretion to the Federal Council ('kann ... übertragen'), which violates criterion 1 requiring no discretion; the answer 'die Zusammenarbeit' is not a mandatory duty but depends on regulatory action, making it untestable as a definite fact."
+  },
+  {
+   "core_id": "nmv-0124",
+   "original": "reject",
+   "open": "revise",
+   "original_reason": "'Bundesamt' -> 'BSV' is an abbreviation change, not a legal change; FR outdated equals current.",
+   "open_reason": "The outdated answer in French (l'OFAS) is identical to the current answer, which violates the temporal item requirement that the outdated answer must differ from the current one; the earlier version evidence must reflect a genuine change, not just a rephrasing."
+  },
+  {
+   "core_id": "nmv-0126",
+   "original": "reject",
+   "open": "accept_minor",
+   "original_reason": "Real change, but purely administrative audit rules for AHV branch offices; the question references 'Absatz 1' and has no value for practitioners or insured persons.",
+   "open_reason": "The answer and its aliases are correctly derived from the current paragraph, and the outdated answers match the earlier version for the same question. However, the German alias 'Verfügungen selbständig ausstellen' slightly reorders the key phrase and could be more precisely worded as 'selbständig Verfügungen ausstellen' to match the text exactly. This is a minor linguistic refinement needed for full consistency."
+  },
+  {
+   "core_id": "nmv-0127",
+   "original": "revise",
+   "open": "accept_minor",
+   "original_reason": "Real change of competence (Department -> FSIO), but remove the article reference from the questions and reconsider practical relevance, since it is an internal supervisory detail.",
+   "open_reason": "The item meets all core criteria, but the warning 'style.article_in_question' indicates the question includes an article (e.g., 'dem', 'le', 'il') which should be avoided for consistency; remove the definite article in questions for minor improvement."
+  },
+  {
+   "core_id": "nmv-0128",
+   "original": "reject",
+   "open": "accept",
+   "original_reason": "Reject: the change is only the AHV 21 terminology switch (ordentliches Rentenalter -> Referenzalter) and the question just asks for the name of the age, so it is not a real legal change for this item.",
+   "open_reason": "The item meets all criteria: the current answer 'Referenzalter' is explicitly stated in the current paragraph, the question does not reveal the answer, the outdated answer corresponds to the same question and reflects a genuine legal change, the near-miss answers are plausible but incorrect, and all language versions are consistent and correctly translated."
+  },
+  {
+   "core_id": "nmv-0129",
+   "original": "reject",
+   "open": "revise",
+   "original_reason": "Terminological change only (ordentliches Rentenalter -> Referenzalter); IT authentic text still says 'età ordinaria di pensionamento', so current and outdated IT answers are identical.",
+   "open_reason": "The Italian item has a current answer 'età ordinaria di pensionamento' which is identical to the outdated answer, but the current law uses 'età di riferimento' (implied by DE/FR versions); the Italian current paragraph incorrectly retains the old term, so the answer and evidence must be updated to reflect the actual legal change."
+  },
+  {
+   "core_id": "nmv-0130",
+   "original": "reject",
+   "open": "accept_minor",
+   "original_reason": "Terminology change to 'Referenzalter' and the value depends on the pension fund regulations.",
+   "open_reason": "The answer 'reglementarisches Referenzalter' is correctly derived from the current text, but one alias 'reglementarischer Referenzalter' has incorrect gender agreement (should be neuter 'das Referenzalter'), so a minor correction is needed. All other criteria including temporal change, question neutrality, and multilingual consistency are met."
+  },
+  {
+   "core_id": "nmv-0131",
+   "original": "reject",
+   "open": "accept",
+   "original_reason": "Reject: the change is only the AHV 21 terminology switch (ordentliches Rentenalter -> Referenzalter) and the question just asks for the name of the age, so it is not a real legal change for this item.",
+   "open_reason": "The item meets all criteria: the current answer 'Referenzalter' is explicitly stated in the current paragraph, the question does not reveal the answer, the outdated answer corresponds to the same question and reflects a genuine legal change, and all language versions are accurate and equivalent. No major or minor issues require correction."
+  },
+  {
+   "core_id": "nmv-0132",
+   "original": "reject",
+   "open": "accept_minor",
+   "original_reason": "Terminological change only (ordentliches Rentenalter -> Referenzalter); near-miss 'Rentenalter' is substantively correct.",
+   "open_reason": "The item meets all core criteria, but the warning 'source.discretion' indicates the adjustment is subject to federal council ordinance, which slightly contradicts criterion 1 (no discretion); however, the anchoring in law and clear answer 'Referenzalter' make it acceptable with minor correction to clarify the mandatory nature of the adjustment once triggered."
+  },
+  {
+   "core_id": "nmv-0133",
+   "original": "reject",
+   "open": "accept",
+   "original_reason": "'Rücktrittsalter' -> 'Referenzalter' is a terminology change only.",
+   "open_reason": "The item meets all criteria: the current answer 'Referenzalter' is explicitly stated in the current paragraph, the question does not reveal the answer, the outdated answer corresponds to the same question and reflects a genuine legal change, all language versions are consistent and correctly translated, and the content is relevant and understandable for practitioners."
+  },
+  {
+   "core_id": "nmv-0134",
+   "original": "reject",
+   "open": "accept_minor",
+   "original_reason": "Reject: the change is only the AHV 21 terminology switch (ordentliches Rentenalter -> Referenzalter) and the question just asks for the name of the age, so it is not a real legal change for this item. The regulatory reference age is additionally set by the pension fund regulations.",
+   "open_reason": "The answer 'reglementarisches Referenzalter' is correctly quoted from the current text, but one alias 'das reglementarische Referenzalter' includes a definite article not present in the source, which may slightly affect precision; otherwise, the item meets all criteria including valid temporal change and correct near-misses."
+  },
+  {
+   "core_id": "nmv-0135",
+   "original": "reject",
+   "open": "accept",
+   "original_reason": "Terminological change only (ordentliches Rentenalter -> Referenzalter); the question also narrows 'Leistungen' to 'Invalidenleistungen', which the text does not say.",
+   "open_reason": "The item meets all criteria: the current answer 'Referenzalter' is explicitly stated in the current paragraph, the question does not reveal the answer, the outdated answer corresponds to the same question and reflects a genuine legal change, the language versions are consistent and correctly translated, and the content is relevant and understandable for practitioners."
+  },
+  {
+   "core_id": "nmv-0136",
+   "original": "reject",
+   "open": "accept_minor",
+   "original_reason": "Terminology change to 'Referenzalter', regulation-dependent age, and the question is overly long and convoluted.",
+   "open_reason": "The core meets all criteria except that the answer aliases include 'Referenzalter' without the qualifier 'reglementarisches', which could imply ambiguity; the current text specifies 'reglementarisches Referenzalter', so the alias should require the full term to avoid imprecision. Minor correction needed to restrict aliases to only the exact form used in the law."
+  },
+  {
+   "core_id": "nmv-0137",
+   "original": "reject",
+   "open": "accept_minor",
+   "original_reason": "Reject: the change is only the AHV 21 terminology switch (ordentliches Rentenalter -> Referenzalter) and the question just asks for the name of the age, so it is not a real legal change for this item. The age is additionally set by the pension fund regulations.",
+   "open_reason": "The item meets all core criteria, but the warning 'answer.alias_only' suggests one alias might not be fully justified; verify that 'Referenzalter' alone is sufficient without 'reglementarisches' in the legal context. Otherwise, the temporal change is valid and responses are correctly aligned across languages."
+  }
+ ]
+}
