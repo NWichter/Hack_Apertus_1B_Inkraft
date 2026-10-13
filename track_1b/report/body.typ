@@ -93,7 +93,7 @@ the evaluated model.
 
 #figure(
   align(center)[#table(
-    columns: (16.67%, 65.38%, 8.97%, 8.97%),
+    columns: (32.26%, 51.61%, 8.06%, 8.06%),
     align: (auto,auto,auto,auto,),
     table.header([Benchmark], [Domain, format], [Stale], [Abst.],),
     table.hline(),
@@ -101,8 +101,8 @@ the evaluated model.
     [Swiss-Bench], [FINMA, nDSG, OR; mixed], [n.~r.], [n.~r.],
     [LEXam], [law exams; open + MC], [n.~r.], [n.~r.],
     [Prior et al.], [German law; temporal QA], [yes], [n.~r.],
-    [#strong[Inkraft]], [#strong[social insurance; short, DE/FR/IT,
-    fedlex quote]], [#strong[yes]], [#strong[yes]],
+    [#strong[Inkraft]], [#strong[social insurance;
+    DE/FR/IT]], [#strong[yes]], [#strong[yes]],
   )]
   , caption: [Related benchmarks. Stale: separates outdated from wrong
   answers. Abst.: credits abstention. n.~r.: not reported in the
@@ -115,26 +115,29 @@ Release candidate #strong[v1.0.0-rc1] (frozen 2026-10-13,
 312 cores in all three languages. Question types: numeric 114, yes/no
 66, procedural 61, temporal 45, calculation 20 (recomputed by the
 validator from cited inputs), false premise 18, term 3. Registers:
-professional 170, lay 157. The temporal bucket is set per #emph[evidence
-sentence] over all stored versions: 248 cores cite a sentence unchanged
-since 2024, 79 a sentence that changed in 2024--2026; #strong[53 of them
-are STALE pairs] (157 rows) whose earlier answer occurs verbatim in an
-earlier Fedlex version and differs from the current one. Drafting
-models: GPT-5.5 via Codex 98 cores, Claude 97, Gemini 86 (all disclosed
-per row, see below) and the open model Nemotron 3 Ultra 46 (33 of the 53
-STALE pairs).
+professional 170, lay 157. A coverage matrix (domain × question type ×
+change status) is in the data card. The temporal bucket is set per
+#emph[evidence sentence] over all stored versions: 248 cores cite a
+sentence unchanged since 2024, 79 a sentence that changed in 2024--2026;
+#strong[53 of them are STALE pairs] (157 rows) whose earlier answer
+occurs verbatim in an earlier Fedlex version and differs from the
+current one. Drafting models: GPT-5.5 via Codex 98 cores, Claude 97,
+Gemini 86 (all disclosed per row, see below) and the open model Nemotron
+3 Ultra 46 (33 of the 53 STALE pairs).
 
 = Data Collection Method
 <data-collection-method>
 #strong[Truth comes from the statute, never from a language model.] The
 pipeline runs Fedlex → paragraphs → version diff → drafting → automatic
 checks → independent second check → freeze → evaluation → human spot
-check. It fetches 20 acts from the Fedlex SPARQL endpoint in German,
-French and Italian: the consolidation applicable on 1 October 2026, the
-one applicable at the end of 2023, every version in between and
-published future versions (`src/fetch_fedlex.py`, URLs and SHA-256 in
-`data/sources/fedlex_manifest.v2.json`). Articles are split into
-paragraphs; `src/find_changes.py` diffs every paragraph across versions.
+check. It fetches 20 acts and ordinances from the Fedlex SPARQL endpoint
+(19 are cited by released items; EOV yielded no item that passed the
+checks) in German, French and Italian: the consolidation applicable on 1
+October 2026, the one applicable at the end of 2023, every version in
+between and published future versions (`src/fetch_fedlex.py`, URLs and
+SHA-256 in `data/sources/fedlex_manifest.v2.json`). Articles are split
+into paragraphs; `src/find_changes.py` diffs every paragraph across
+versions.
 
 #strong[Drafting.] 303 cores were drafted per paragraph by Claude,
 GPT-5.5 (Codex) and Gemini (an Antigravity agent) in early October; the
@@ -164,18 +167,19 @@ output was scored; decisions logged per core in `data/review/auto/`):
 existing cores lose paragraph clusters and near-duplicates (19 dropped)
 and gain machine-proposed answer variants and outdated answers only when
 the validator passes (21 patched); a candidate needs no validator error,
-no duplicate and no "reject" in a pre-assessment, and its correction
-notes are applied by Nemotron and re-validated (`src/auto_fix.py`).
-Every remaining core then gets an #strong[independent second check by
-Qwen3-235B] (`src/second_check.py`, a model family not used for
-drafting): answer supported by the paragraph, unambiguous question, no
-leak, equivalent languages, valid variants and near misses, and a real
-(not merely renamed) earlier rule. 15 of 335 cores were flagged; 8 were
-dropped, 7 calculation items were kept because the checker sees no
-calculation inputs while the validator recomputes them. Drop rates by
-drafting model: Codex 4.9 %, Claude 7.6 %, Gemini 9.5 %, Nemotron 71 %
-(114 of 160 candidates; most changes in the diff pool are renamings such
-as "ordentliches Rentenalter" → "Referenzalter").
+no duplicate and no "reject" in a pre-assessment by claude-opus-5-5 (an
+agent pass, not a human review), and its correction notes are applied by
+Nemotron and re-validated (`src/auto_fix.py`). Every remaining core then
+gets an #strong[independent second check by Qwen3-235B]
+(`src/second_check.py`, a model family not used for drafting): answer
+supported by the paragraph, unambiguous question, no leak, equivalent
+languages, valid variants and near misses, and a real (not merely
+renamed) earlier rule. 15 of 335 cores were flagged; 8 were dropped, 7
+calculation items were kept because the checker sees no calculation
+inputs while the validator recomputes them. Drop rates by drafting
+model: Codex 4.9 %, Claude 7.6 %, Gemini 9.5 %, Nemotron 71 % (114 of
+160 candidates; most changes in the diff pool are renamings such as
+"ordentliches Rentenalter" → "Referenzalter").
 
 #strong[Human check.] All rows of rc1 have `status: auto_verified` and
 `needs_human_review: true`. A stratified random sample of 35 cores (15
@@ -244,11 +248,12 @@ random 22 % sample of the judgements of the submitted run (Apertus 70B,
 `closed_dated`: 211 of 951) blind to the judge's grade; raw agreement
 and Cohen's κ with bootstrap interval are reported with v1.0.0
 @cohen1960kappa@bavaresco2025llmjudges. As a diagnostic we also graded
-the main runs with Apertus-70B as judge: agreement with Qwen is κ = 0.86
-on 70B answers and 0.93 on 8B answers, but Apertus-70B marks 48 more of
-its own answers correct (533 vs 485, +5.0 points), against +19 on the
-8B's answers, a pattern consistent with self-preference; we therefore
-never use it for scores.
+the main runs with Apertus-70B as a second judge: judge--judge agreement
+(Qwen vs Apertus-70B, no human involved) is κ = 0.86 on 70B answers and
+0.93 on 8B answers, but Apertus-70B marks 48 more of its own answers
+correct (533 vs 485, +5.0 points), against +19 on the 8B's answers, a
+pattern consistent with self-preference; we therefore never use it for
+scores.
 
 == Evaluation setup and inference parameters
 <evaluation-setup-and-inference-parameters>
@@ -303,11 +308,14 @@ used free of charge.
 STALE-pair rows the 70B is correct in 8 % and gives the earlier rule in
 29 %, almost four times as often; for 24 of the 53 amended provisions it
 states the earlier value in at least one language. The 8B answers less
-(24 % not attempted) and is stale in 13 %. On the other rows the 70B is
-correct in 60 %. #strong[\(2) It is a knowledge gap, not a reading gap.]
-With the cited paragraph in the prompt both models answer 95--97 % of
-all rows and 96--97 % of the STALE-pair rows correctly (open-book gain
-\+45 points for the 70B, +62 for the 8B); this also shows that the gold
+(24 % not attempted) and is stale in 13 %. On all 235 rows whose cited
+sentence changed since 2024 (with or without a stored earlier answer)
+the 70B is correct in 17.0 % (95 % CI 12.8--22.4) and the 8B in 10.6 %
+(7.3--15.2); on the other rows the 70B is correct in 60 %. #strong[\(2)
+It is a knowledge gap, not a reading gap.] With the cited paragraph in
+the prompt the 8B and the 70B answer 94.9 % and 96.3 % of all rows and
+95.5 % and 97.5 % of the STALE-pair rows correctly (open-book gain +45
+points for the 70B, +62 for the 8B); this also shows that the gold
 answers are recoverable from the cited text. #strong[\(3) Exposure
 tracks accuracy.] Where only the earlier wording occurs in the published
 training corpus, the 70B is correct in 12 % and stale in 35 %; where the
@@ -317,10 +325,12 @@ On the German rows the date in the system prompt changes the correct
 rate by −0.3 points for the 70B (11 vs 12 discordant rows, p = 1.0) and
 by −1.5 for the 8B (p = 0.27); the full system prompt (Swiss law and
 date) against the bare question adds +1.5 and +1.8 points (p = 0.64,
-0.54). #strong[\(5) Size helps on stable law only.] The 70B beats the 8B
-on 224 rows and loses on 52 (p \< 0.001), consistently in DE (53 %), FR
-(51 %) and IT (49 %); it gives the same grade in all three languages for
-67 % of the cores (8B: 50 %).
+0.54). #strong[\(5) Size helps mostly on stable law.] The 70B is 22
+points ahead on unchanged rules (62.2 vs 40.2 %) but only 6 points on
+changed ones (17.0 vs 10.6 %); overall it beats the 8B on 224 rows and
+loses on 52 (p \< 0.001), consistently in DE (53 %), FR (51 %) and IT
+(49 %); it gives the same grade in all three languages for 67 % of the
+cores (8B: 50 %).
 
 = Dataset Limitations
 <dataset-limitations>

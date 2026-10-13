@@ -80,6 +80,22 @@ languages** (15 German only).
 | Cores with near misses / with answer variants | 313 / 275 (the 52 without variants are 50 yes/no and 2 others) |
 | `future_change` (later version already published) | 29 cores |
 
+**Coverage matrix** (German cores; `src/coverage.py`). Changed = evidence sentence changed since 2024;
+STALE pairs are the changed cores with a verbatim earlier answer.
+
+| Domain (acts) | numeric | procedural | yes_no | temporal | calc | false_premise | term | changed since 2024 | STALE pairs | total |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| Health insurance (insured) (KVG, KVV) | 22 | 8 | 20 | 2 | 4 | 1 | 0 | 6 | 3 | 57 |
+| AHV (AHVG, AHVV) | 15 | 13 | 6 | 18 | 2 | 2 | 0 | 28 | 22 | 56 |
+| Accident insurance / ATSG (ATSG, UVG) | 23 | 13 | 16 | 0 | 1 | 1 | 2 | 0 | 0 | 56 |
+| IV / EL (ELG, ELV, IVG, IVV) | 21 | 9 | 3 | 8 | 0 | 1 | 0 | 9 | 8 | 42 |
+| EO / ALV (AVIG, AVIV, EOG) | 18 | 3 | 3 | 5 | 7 | 5 | 0 | 10 | 5 | 41 |
+| Health insurance (billing) (KLV, KVG, KVV) | 3 | 8 | 10 | 7 | 0 | 2 | 1 | 8 | 7 | 31 |
+| Occupational pensions / 3a (BVG, BVV2, BVV3) | 8 | 5 | 2 | 3 | 5 | 2 | 0 | 15 | 6 | 25 |
+| Wage during illness (OR) (OR) | 4 | 2 | 6 | 0 | 1 | 4 | 0 | 1 | 0 | 17 |
+| Family allowances (FamZG) | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 2 | 2 | 2 |
+| **Total** | 114 | 61 | 66 | 45 | 20 | 18 | 3 | 79 | 53 | 327 |
+
 **Why these specifications fit the use case.** Staff of compensation funds, IV offices, health insurers and
 social services, and insured persons ask for exact amounts, deadlines, ages and responsible bodies. The items
 therefore have one short checkable answer (number with unit, body or step as named in the act), both
@@ -184,7 +200,10 @@ earlier stored version.
 **Judge annotations.** Qwen3-235B-A22B-2507 (temperature 0, prompt `inkraft-judge-v1`, adapted from the
 SimpleQA grader) grades every answer: 61/61 on 61 constructed calibration answers (subtype 57/61,
 `data/judge_calibration.json`). A human grades a stratified random 22 % of the judgements of the 70B
-`closed_dated` run (211 of 951) blind to the judge; Cohen's κ is added with v1.0.0.
+`closed_dated` run (211 of 951) blind to the judge. Status 2026-10-14: sample drawn
+(`human_labels/sample_20pct.jsonl`, `sample_meta.json`), labelling running; the human–judge κ is computed by
+`src/import_human.py` into `human_labels/agreement.json`. The κ of 0.86/0.93 in `data/judge_agreement_qwen_vs_apertus70b.json`
+is judge–judge agreement (Qwen vs Apertus-70B), not a human check.
 
 ## Personal and Sensitive Information
 

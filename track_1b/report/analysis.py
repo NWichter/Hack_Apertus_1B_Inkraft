@@ -85,6 +85,7 @@ def main():
                 stale_pair, lambda r: r["grade"] == "NOT_ATTEMPTED"
             ),
             "other_rows_correct": share(other, is_c),
+            "changed_sentence_rows_correct": share([r for r in all_rows if r["temporal"] != "stable_pre2024"], is_c),
         }
         ob_sp = [ob[r["id"]] for r in stale_pair if r["id"] in ob]
         res["open_book"] = {

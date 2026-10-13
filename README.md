@@ -5,7 +5,7 @@
 [![Docs License: CC-BY-4.0](https://img.shields.io/badge/Docs_License-CC_BY_4.0-lightgrey.svg)](LICENSE-docs)
 [![Hack Apertus](https://img.shields.io/badge/Hack_Apertus-2026-red.svg)](https://hackapertus.ch/)
 
-**Inkraft** is a trilingual factual and temporal benchmark evaluating large language models (specifically the Swiss open-weights Apertus model family) on Swiss federal social and health insurance law (19 acts and ordinances: KVG/KVV/KLV, AHVG/AHVV, IVG/IVV, ELG/ELV, UVG, ATSG, AVIG/AVIV, EOG, BVG/BVV, FamZG, OR) as of **1 October 2026**. Release candidate v1.0.0-rc1: 327 trilingual cores, 951 rows, 53 STALE pairs.
+**Inkraft** is a trilingual factual and temporal benchmark evaluating large language models (specifically the Swiss open-weights Apertus model family) on Swiss federal social and health insurance law (19 acts and ordinances: KVG/KVV/KLV, AHVG/AHVV, IVG/IVV, ELG/ELV, UVG, ATSG, AVIG/AVIV, EOG, BVG/BVV, FamZG, OR) as of **1 October 2026**. Release candidate v1.0.0-rc1: 327 core questions (312 in all three languages, 15 German only), 951 rows, 53 STALE pairs.
 
 Every question is anchored in a verified federal law provision ([fedlex.admin.ch](https://www.fedlex.admin.ch/)). Inkraft measures:
 1. **Core Factuality & Hallucination Rate** across German, French, and Italian.
@@ -63,7 +63,7 @@ make run MODE=full
 
 ### Results (v1.0.0-rc1, judge Qwen3-235B)
 
-Apertus 1.5 70B answers 51.0 % of the 951 rows correctly (8B: 32.9 %). On the 157 rows of the 53 STALE pairs the 70B is correct in 7.6 % and gives the earlier law in 28.7 %; with the cited paragraph in the prompt (`open_book`) it is correct in 97.5 % of the same rows. A date in the system prompt does not change accuracy (German rows, exact McNemar p = 1.0 for the 70B). Details, intervals and limitations in `track_1b/technical_report.md`; numbers in `track_1b/data/results.json` and `track_1b/report/analysis.json`. The rows are automatically verified against Fedlex and by an independent model check; the human spot check (35 cores, 22 % of the 70B judgements) is in progress.
+Apertus 1.5 70B answers 51.0 % of the 951 rows correctly (8B: 32.9 %). On the 157 rows of the 53 STALE pairs the 70B is correct in 7.6 % and gives the earlier law in 28.7 %; with the cited paragraph in the prompt (`open_book`) it is correct in 97.5 % of the same rows. On all 235 rows whose cited sentence changed since 2024 the 70B is correct in 17.0 % (8B: 10.6 %). A date in the system prompt does not change accuracy (German rows, exact McNemar p = 1.0 for the 70B). Details, intervals and limitations in `track_1b/technical_report.md`; numbers in `track_1b/data/results.json` and `track_1b/report/analysis.json`. The rows are automatically verified against Fedlex and by an independent model check; two human checks are in progress: a random sample of 35 dataset cores, and a blind re-grade of 211 judge grades (22 % of the 70B `closed_dated` run) for the human–judge κ.
 
 ---
 
