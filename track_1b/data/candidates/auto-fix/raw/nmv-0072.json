@@ -1,0 +1,31 @@
+{
+ "core_id": "nmv-0072",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "error": null,
+ "content": "{\"fixed\": true, \"question_type\": \"short_answer\", \"answer_type\": \"noun_phrase\", \"de\": {\"question\": \"In den Ergänzungsleistungen zur AHV/IV: Welcher Tatbestand führt zu einer Anpassung der jährlichen Ergänzungsleistung, wenn eine tägliche Gebühr nicht für alle Tage eines Monats in Rechnung gestellt wird?\", \"answer\": \"Heim- oder Spitalaufenthalt\", \"answer_aliases\": [\"bei einem Heim- oder Spitalaufenthalt\", \"Heim- oder Spitalaufenthalt, für den die Tagestaxe nach Artikel 10 Absatz 2 Buchstabe a ELG nicht für alle Tage eines Monats in Rechnung gestellt wird\"], \"near_miss_answers\": [\"Veränderung der Personengemeinschaft\", \"Änderung der Rente der AHV/IV\", \"Änderung der anerkannten Ausgaben und anrechenbaren Einnahmen\"], \"outdated_answers\": [], \"evidence\": \"bbis. bei einem Heim- oder Spitalaufenthalt, für den die Tagestaxe nach Artikel 10 Absatz 2 Buchstabe a ELG nicht für alle Tage eines Monats in Rechnung gestellt wird;\"}, \"fr\": {\"question\": \"Dans les prestations complémentaires AVS/AI: quel fait justifie une adaptation de la prestation complémentaire annuelle lorsqu'une redevance journalière n'est pas facturée pour tous les jours d'un mois ?\", \"answer\": \"séjour dans un home ou dans un hôpital\", \"answer_aliases\": [\"en cas de séjour dans un home ou dans un hôpital\", \"séjour dans un home ou dans un hôpital, lorsque la taxe journalière visée à l’art. 10, al. 2, let. a, LPC n’est pas facturée pour tous les jours d’un mois\"], \"near_miss_answers\": [\"changement dans la communauté de personnes\", \"modification de la rente AVS/AI\", \"changement des dépenses reconnues et des revenus déterminants\"], \"outdated_answers\": [], \"evidence\": \"bbis. en cas de séjour dans un home ou dans un hôpital, lorsque la taxe journalière visée à l’art. 10, al. 2, let. a, LPC n’est pas facturée pour tous les jours d’un mois;\"}, \"it\": {\"question\": \"Nelle prestazioni complementari AVS/AI: quale fattispecie comporta un adeguamento della prestazione complementare annua quando una retta giornaliera non è fatturata per tutti i giorni di un mese?\", \"answer\": \"soggiorno in un istituto o in un ospedale\", \"answer_aliases\": [\"in caso di soggiorno in un istituto o in un ospedale\", \"soggiorno in un istituto o in un ospedale, quando la tassa giornaliera secondo l’articolo 10 capoverso 2 lettera a LPC non è fatturata per tutti i giorni di un mese\"], \"near_miss_answers\": [\"cambiamento nella comunione di persone\", \"modificazione della rendita AVS/AI\", \"diminuzione o aumento delle spese riconosciute e dei redditi determinanti\"], \"outdated_answers\": [], \"evidence\": \"bbis. quando, in caso di soggiorno in un istituto o in un ospedale, la tassa giornaliera secondo l’articolo 10 capoverso 2 lettera a LPC non è fatturata per tutti i giorni di un mese;\"}}",
+ "usage": {
+  "prompt_tokens": 2375,
+  "completion_tokens": 9386,
+  "total_tokens": 11761,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 8985,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 295.5,
+ "at": "2026-10-13T16:48:46+00:00"
+}

@@ -1,0 +1,31 @@
+{
+ "core_id": "nmv-0033",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "error": null,
+ "content": "{\"fixed\": true, \"question_type\": \"condition\", \"answer_type\": \"phrase\", \"de\": {\"question\": \"Können kontrollfreie Tage einzeln bezogen werden?\", \"answer\": \"Werden die Beratung und die Vermittlung nicht beeinträchtigt\", \"answer_aliases\": [\"Beratung und die Vermittlung nicht beeinträchtigt\", \"die Beratung und die Vermittlung nicht beeinträchtigt\"], \"near_miss_answers\": [\"Meldung spätestens 14 Tage im Voraus\", \"Gelten als bezogen ohne entschuldbaren Grund\", \"Bezug grundsätzlich wochenweise\"], \"outdated_answers\": [\"nur wochenweise bezogen werden\"], \"evidence\": \"Werden die Beratung und die Vermittlung nicht beeinträchtigt, so kann die zuständige Amtsstelle einen tageweisen Bezug gewähren.\"}, \"fr\": {\"question\": \"Les jours sans contrôle peuvent-ils être pris individuellement ?\", \"answer\": \"ne nuit ni au conseil ni au placement\", \"answer_aliases\": [\"si elle ne nuit ni au conseil ni au placement\", \"ni au conseil ni au placement\"], \"near_miss_answers\": [\"Avis au moins deux semaines à l’avance\", \"Considérés comme pris sans motif valable\", \"Prise par semaine entière\"], \"outdated_answers\": [\"que par semaine entière\"], \"evidence\": \"L’office compétent peut accorder la prise individuelle de jours sans contrôle si elle ne nuit ni au conseil ni au placement.\"}, \"it\": {\"question\": \"I giorni esenti dall’obbligo di controllo possono essere fruiti singolarmente?\", \"answer\": \"non pregiudichi né la consulenza né il collocamento\", \"answer_aliases\": [\"ciò non pregiudichi né la consulenza né il collocamento\", \"né la consulenza né il collocamento\"], \"near_miss_answers\": [\"Comunicazione con almeno 14 giorni di anticipo\", \"Considerati presi senza motivo scusabile\", \"Fruizione in blocchi settimanali\"], \"outdated_answers\": [\"soltanto in blocchi settimanali\"], \"evidence\": \"Il servizio competente può autorizzare la fruizione a giorni singoli purché ciò non pregiudichi né la consulenza né il collocamento.\"}}",
+ "usage": {
+  "prompt_tokens": 1583,
+  "completion_tokens": 7228,
+  "total_tokens": 8811,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 7182,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 228.8,
+ "at": "2026-10-13T17:12:36+00:00"
+}

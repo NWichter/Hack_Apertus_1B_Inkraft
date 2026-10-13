@@ -1,0 +1,31 @@
+{
+ "core_id": "nmu-0009",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "error": null,
+ "content": "{\"fixed\": true, \"question_type\": \"definition\", \"answer_type\": \"noun_phrase\", \"de\": {\"question\": \"In der obligatorischen Krankenversicherung: Wann liegt eine Notfallbehandlung vor?\", \"answer\": \"Wenn die Behandlung nicht aufgeschoben werden kann.\", \"answer_aliases\": [\"Wenn die Behandlung nicht aufgeschoben werden kann\", \"Behandlung nicht aufschiebbar\"], \"near_miss_answers\": [\"Wenn die versicherte Person ohne sofortige Behandlung gesundheitliche Schäden befürchten muss\", \"Wenn die Gesundheit anderer Personen gefährdet werden kann\", \"Wenn die Behandlung sofort durchgeführt werden muss\"], \"outdated_answers\": [], \"evidence\": \"Eine Notfallbehandlung liegt vor, wenn die Behandlung nicht aufgeschoben werden kann.\"}, \"fr\": {\"question\": \"Dans l'assurance-maladie obligatoire : quand une prestation relève-t-elle de la médecine d'urgence ?\", \"answer\": \"Lorsqu'elle ne peut pas être repoussée.\", \"answer_aliases\": [\"Lorsqu'elle ne peut pas être repoussée\", \"Ne peut pas être repoussée\"], \"near_miss_answers\": [\"Lorsque l'assuré doit craindre une atteinte à la santé en l'absence de traitement immédiat\", \"Lorsque la santé d'autres personnes peut être mise en danger\", \"Lorsque le traitement doit être effectué immédiatement\"], \"outdated_answers\": [], \"evidence\": \"Une prestation relevant de la médecine d’urgence consiste en une prestation qui ne peut pas être repoussée.\"}, \"it\": {\"question\": \"Nell'assicurazione malattie obbligatoria: quando si considera urgenza medica?\", \"answer\": \"Quando un trattamento non può essere differito.\", \"answer_aliases\": [\"Quando un trattamento non può essere differito\", \"Trattamento non differibile\"], \"near_miss_answers\": [\"Quando l'assicurato deve temere danni alla salute in assenza di un trattamento immediato\", \"Quando la salute di altre persone può essere messa in pericolo\", \"Quando il trattamento deve essere eseguito immediatamente\"], \"outdated_answers\": [], \"evidence\": \"Vi è urgenza medica quando un trattamento non può essere differito.\"}}",
+ "usage": {
+  "prompt_tokens": 1689,
+  "completion_tokens": 3136,
+  "total_tokens": 4825,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2985,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 114.5,
+ "at": "2026-10-13T17:11:03+00:00"
+}

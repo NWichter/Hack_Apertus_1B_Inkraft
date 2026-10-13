@@ -41,9 +41,16 @@ def main():
     ap.add_argument(
         "--go", action="store_true", help="Niklas gave the go for the freeze"
     )
+    ap.add_argument(
+        "--rc",
+        action="store_true",
+        help="release candidate (version must contain '-rc'): evaluation runs, no release tag",
+    )
     args = ap.parse_args()
     sys.stdout.reconfigure(encoding="utf-8")
-    if not args.go:
+    if args.rc and "-rc" not in args.version:
+        sys.exit("--rc needs a version like 1.0.0-rc1")
+    if not (args.go or args.rc):
         sys.exit("freeze needs --go: Niklas decides when the dataset is frozen")
     data = Path(args.data)
     args.src = args.src or str(data / "merged.v2.jsonl")
@@ -61,8 +68,9 @@ def main():
             f"{len(missing)} cores without a keep/patch review decision, e.g. {missing[:5]}"
         )
     for r in rows:
-        r["status"] = "reviewed"
-        r["needs_human_review"] = False
+        human = not str(r["review"].get("reviewer") or "").startswith("automatic")
+        r["status"] = "reviewed" if human else "auto_verified"
+        r["needs_human_review"] = not human
     frozen = data / f"merged.v{args.version}.jsonl"
     write(frozen, rows)
 
@@ -138,6 +146,11 @@ def main():
         "fedlex_manifest_sha256": sha(data / "sources" / "fedlex_manifest.v2.json"),
         "stats": stats(rows),
         "ablation_cores": len(ablation),
+        "release_candidate": bool(args.rc),
+        "review_status_cores": {
+            s: len({r["core_id"] for r in rows if r["status"] == s})
+            for s in ("reviewed", "auto_verified")
+        },
         "review_log_sha256": rows[0]["review"]["log_sha256"],
     }
     (data / "FREEZE.json").write_text(

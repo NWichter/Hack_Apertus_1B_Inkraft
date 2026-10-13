@@ -1,0 +1,31 @@
+{
+ "core_id": "nmv-0008",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "error": null,
+ "content": "{\"fixed\": true, \"question_type\": \"short_answer\", \"answer_type\": \"currency\", \"de\": {\"question\": \"Wie hoch ist der ordentliche Assistenzbeitrag pro Stunde in der Invalidenversicherung?\", \"answer\": \"35.30 Franken\", \"answer_aliases\": [\"CHF 35.30\", \"35.30 CHF\", \"35 Franken 30 Rappen\"], \"near_miss_answers\": [\"35 Franken\", \"36 Franken\", \"35.50 Franken\"], \"outdated_answers\": [\"34.30 Franken\"], \"evidence\": \"Der Assistenzbeitrag beträgt 35.30 Franken pro Stunde.\"}, \"fr\": {\"question\": \"À combien s'élève le taux ordinaire de la contribution d’assistance par heure dans l'assurance-invalidité?\", \"answer\": \"35 fr. 30\", \"answer_aliases\": [\"CHF 35.30\", \"35 francs 30 centimes\", \"35.30 francs\"], \"near_miss_answers\": [\"35 francs\", \"36 francs\", \"35.50 francs\"], \"outdated_answers\": [\"34 fr. 30\"], \"evidence\": \"La contribution d’assistance se monte à 35 fr. 30 par heure.\"}, \"it\": {\"question\": \"A quanto ammonta il tasso ordinario del contributo per l’assistenza all’ora nell'assicurazione per l'invalidità?\", \"answer\": \"35.30 franchi\", \"answer_aliases\": [\"CHF 35.30\", \"35 franchi 30 centesimi\", \"35.30 franchi\"], \"near_miss_answers\": [\"35 franchi\", \"36 franchi\", \"35.50 franchi\"], \"outdated_answers\": [\"34.30 franchi\"], \"evidence\": \"Il contributo per l’assistenza ammonta a 35.30 franchi all’ora.\"}}",
+ "usage": {
+  "prompt_tokens": 1252,
+  "completion_tokens": 3361,
+  "total_tokens": 4613,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 3025,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 99.0,
+ "at": "2026-10-13T16:24:19+00:00"
+}

@@ -1,0 +1,31 @@
+{
+ "core_id": "nmv-0090",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "error": null,
+ "content": "{\"fixed\": true, \"question_type\": \"short_answer\", \"answer_type\": \"noun_phrase\", \"de\": {\"question\": \"In der Alters- und Hinterlassenenversicherung: Welche Ausnahme gilt für den Endzeitpunkt der Einkommensaufteilung?\", \"answer\": \"vorbezogenen Rente\", \"answer_aliases\": [\"vorbezogene Rente\", \"vorbezogenen Rente (Art. 40)\"], \"near_miss_answers\": [\"normale Altersrente\", \"Versicherungsfall\"], \"outdated_answers\": [\"Nein\"], \"evidence\": \"mit Ausnahme der vorbezogenen Rente (Art. 40)\"}, \"fr\": {\"question\": \"Dans l'assurance-vieillesse et survivants: quelle exception marque la fin de la période de partage?\", \"answer\": \"versement anticipé\", \"answer_aliases\": [\"versement anticipé de la rente\", \"versement anticipé (art. 40)\"], \"near_miss_answers\": [\"survenance du risque assuré\", \"rente de vieillesse\"], \"outdated_answers\": [\"Non\"], \"evidence\": \"exception faite des cas dans lesquels il y a versement anticipé de la rente (art. 40)\"}, \"it\": {\"question\": \"Nell'assicurazione per la vecchiaia e per i superstiti: quale eccezione segna la fine del periodo di ripartizione?\", \"answer\": \"riscossione anticipata\", \"answer_aliases\": [\"riscossione anticipata della rendita\", \"riscossione anticipata (art. 40)\"], \"near_miss_answers\": [\"riscossione normale\", \"evento assicurato\"], \"outdated_answers\": [\"No\"], \"evidence\": \"fatto salvo il caso della riscossione anticipata della rendita secondo l’articolo 40\"}}",
+ "usage": {
+  "prompt_tokens": 1480,
+  "completion_tokens": 7779,
+  "total_tokens": 9259,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 7272,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 350.4,
+ "at": "2026-10-13T16:55:20+00:00"
+}

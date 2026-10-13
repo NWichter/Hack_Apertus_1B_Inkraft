@@ -1,0 +1,31 @@
+{
+ "core_id": "nmv-0093",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "error": null,
+ "content": "{\"fixed\": true, \"question_type\": \"short_answer\", \"answer_type\": \"noun_phrase\", \"de\": {\"question\": \"Nach welchen Regeln wird die Kinderrente berechnet?\", \"answer\": \"die gleichen Berechnungsregeln wie für die Altersrente\", \"answer_aliases\": [\"gleiche Berechnungsregeln wie für die Altersrente\", \"die Berechnungsregeln der Altersrente\"], \"near_miss_answers\": [\"die gleichen Berechnungsregeln wie für die Waisenrente\", \"andere Berechnungsregeln als für die Altersrente\", \"Berechnungsregeln der Waisenrente\"], \"outdated_answers\": [], \"evidence\": \"Für die Kinderrente gelten die gleichen Berechnungsregeln wie für die Altersrente.\"}, \"fr\": {\"question\": \"Selon quelles règles la rente pour enfant est-elle calculée ?\", \"answer\": \"les mêmes règles que la rente de vieillesse\", \"answer_aliases\": [\"mêmes règles que la rente de vieillesse\", \"les règles de la rente de vieillesse\"], \"near_miss_answers\": [\"les mêmes règles que la rente d'orphelin\", \"d'autres règles que la rente de vieillesse\", \"règles de la rente d'orphelin\"], \"outdated_answers\": [], \"evidence\": \"La rente pour enfant est calculée selon les mêmes règles que la rente de vieillesse.\"}, \"it\": {\"question\": \"Secondo quali regole viene calcolata la rendita per i figli?\", \"answer\": \"le norme applicabili alla rendita di vecchiaia\", \"answer_aliases\": [\"norme applicabili alla rendita di vecchiaia\", \"secondo le norme applicabili alla rendita di vecchiaia\"], \"near_miss_answers\": [\"le stesse norme della rendita per orfani\", \"altre norme rispetto alla rendita di vecchiaia\", \"norme della rendita per orfani\"], \"outdated_answers\": [], \"evidence\": \"La rendita per i figli è calcolata secondo le norme applicabili alla rendita di vecchiaia.\"}}",
+ "usage": {
+  "prompt_tokens": 1418,
+  "completion_tokens": 1574,
+  "total_tokens": 2992,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 1133,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 46.0,
+ "at": "2026-10-13T16:50:34+00:00"
+}

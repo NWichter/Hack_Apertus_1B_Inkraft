@@ -1,0 +1,272 @@
+[
+ {
+  "core_id": "nmu-0001",
+  "status": "fixed",
+  "reason": null
+ },
+ {
+  "core_id": "nmu-0002",
+  "status": "fixed",
+  "reason": null
+ },
+ {
+  "core_id": "nmu-0003",
+  "status": "fixed",
+  "reason": null
+ },
+ {
+  "core_id": "nmu-0005",
+  "status": "fixed",
+  "reason": null
+ },
+ {
+  "core_id": "nmu-0007",
+  "status": "fixed",
+  "reason": null
+ },
+ {
+  "core_id": "nmu-0009",
+  "status": "fixed",
+  "reason": null
+ },
+ {
+  "core_id": "nmu-0011",
+  "status": "not_fixed",
+  "reason": "The reviewer requests a yes/no question about the United Kingdom, but the benchmark rules require the answer to be a noun phrase (max 8 words) or number with unit taken verbatim from the statute paragraph. The current paragraph does not contain the words 'Ja', 'Oui', or 'Sì', so a yes/no answer cannot be evidenced verbatim. Changing the answer type to yes/no would violate Rule 1 (evidence must contain the answer words) and Rule 2 (answer must be a noun phrase from the statute). Therefore the correction cannot be applied without breaking the rules."
+ },
+ {
+  "core_id": "nmu-0013",
+  "status": "fixed",
+  "reason": null
+ },
+ {
+  "core_id": "nmu-0015",
+  "status": "not_fixed",
+  "reason": "The requested correction to shorten the answer to a yes/no with the deciding condition cannot be applied because the statute text does not contain 'Ja' or 'Nein', and the answer must be a literal substring of the evidence (max 8 words). A yes/no answer would violate the literal‑answer rule and the 8‑word limit for noun phrases."
+ },
+ {
+  "core_id": "nmu-0016",
+  "status": "not_fixed",
+  "reason": "Cannot rewrite as yes/no because the answer 'ja'/'oui'/'sì' does not appear literally in the statute paragraph, violating rule 1 (answer must be stated literally in the paragraph)."
+ },
+ {
+  "core_id": "nmu-0019",
+  "status": "not_fixed",
+  "reason": "Removing the typo 'Nei' from the German answer_aliases would leave it empty, violating rule 6 which requires at least two correct answer aliases."
+ },
+ {
+  "core_id": "nmv-0006",
+  "status": "not_fixed",
+  "reason": "The condition about persons living in property they own or hold usufruct/right of residence is not present in the provided paragraph (ELV Art. 16a Abs. 3), which only states the flat-rate amount. Adding it would violate Rule 1 (evidence must be verbatim from the paragraph)."
+ },
+ {
+  "core_id": "nmv-0008",
+  "status": "fixed",
+  "reason": null
+ },
+ {
+  "core_id": "nmv-0009",
+  "status": "not_fixed",
+  "reason": "The current paragraph only references 'Artikel 39c Buchstaben e–g' but does not contain a plain description of those activity areas. Replacing the reference with a description would require knowledge from Article 39c, which is not provided in the ground truth text. Rule 1 requires all content to be based solely on the current paragraph."
+ },
+ {
+  "core_id": "nmv-0010",
+  "status": "fixed",
+  "reason": null
+ },
+ {
+  "core_id": "nmv-0011",
+  "status": "fixed",
+  "reason": null
+ },
+ {
+  "core_id": "nmv-0012",
+  "status": "fixed",
+  "reason": null
+ },
+ {
+  "core_id": "nmv-0017",
+  "status": "fixed",
+  "reason": null
+ },
+ {
+  "core_id": "nmv-0019",
+  "status": "fixed",
+  "reason": null
+ },
+ {
+  "core_id": "nmv-0021",
+  "status": "fixed",
+  "reason": null
+ },
+ {
+  "core_id": "nmv-0026",
+  "status": "fixed",
+  "reason": null
+ },
+ {
+  "core_id": "nmv-0027",
+  "status": "fixed",
+  "reason": null
+ },
+ {
+  "core_id": "nmv-0028",
+  "status": "not_fixed",
+  "reason": "Cannot provide complete outdated answer strings for FR and IT without access to the earlier version of the law; the current item contains truncated outdated answers and the reviewer requires complete strings, but the ground truth only provides the current paragraph (2026-01-01)."
+ },
+ {
+  "core_id": "nmv-0032",
+  "status": "not_fixed",
+  "reason": "The current paragraph (AVIG Art. 8 Abs. 1) only defines the reference age as a condition for entitlement; it does not contain the substantive rule about early AHV pension no longer excluding ALE entitlement. Therefore the requested reframing cannot be supported by evidence from this paragraph."
+ },
+ {
+  "core_id": "nmv-0033",
+  "status": "fixed",
+  "reason": null
+ },
+ {
+  "core_id": "nmv-0037",
+  "status": "not_fixed",
+  "reason": "Removing the alias \"2'020\" would leave only one entry in answer_aliases (\"2020\"), violating rule 6 which requires at least two other correct spellings of the answer from the statute. The statute text only contains \"2020\" with no alternative spellings."
+ },
+ {
+  "core_id": "nmv-0041",
+  "status": "not_fixed",
+  "reason": "The current answer 'Nein' does not appear verbatim in the statute paragraph, violating rule 1 (evidence must contain the answer). Additionally, rule 6 requires at least two answer_aliases that are spellings/wordings from the statute, but the statute contains no wording for 'Nein' or its equivalents. Applying the requested corrections (adding 'nach dem KVG' to question, removing 'Teilweise' from near_miss) would not resolve these fundamental rule violations."
+ },
+ {
+  "core_id": "nmv-0042",
+  "status": "fixed",
+  "reason": null
+ },
+ {
+  "core_id": "nmv-0049",
+  "status": "fixed",
+  "reason": null
+ },
+ {
+  "core_id": "nmv-0050",
+  "status": "fixed",
+  "reason": null
+ },
+ {
+  "core_id": "nmv-0051",
+  "status": "not_fixed",
+  "reason": "The corrected canonical answers in French and Italian would exceed the 8-word maximum for noun phrases (Rule 2)."
+ },
+ {
+  "core_id": "nmv-0054",
+  "status": "fixed",
+  "reason": null
+ },
+ {
+  "core_id": "nmv-0057",
+  "status": "fixed",
+  "reason": null
+ },
+ {
+  "core_id": "nmv-0064",
+  "status": "not_fixed",
+  "reason": "The reviewer requests rephrasing the list-position question into a substantive yes/no question (e.g., 'whether contributions on wages paid by choirs must always be paid'), but Rule 2 requires the answer to be a noun phrase from the statute text (max 8 words). A yes/no answer like 'ja' does not appear in the statute and is not a noun phrase from it. The current answer 'Chören' is a noun phrase from the statute, but any question that uniquely elicits 'Chören' from the current paragraph without using list position would require a distinguishing feature not present in the text. Thus the requested rephrasing cannot be done while complying with Rule 2."
+ },
+ {
+  "core_id": "nmv-0068",
+  "status": "fixed",
+  "reason": null
+ },
+ {
+  "core_id": "nmv-0072",
+  "status": "fixed",
+  "reason": null
+ },
+ {
+  "core_id": "nmv-0075",
+  "status": "fixed",
+  "reason": null
+ },
+ {
+  "core_id": "nmv-0077",
+  "status": "not_fixed",
+  "reason": "..."
+ },
+ {
+  "core_id": "nmv-0080",
+  "status": "fixed",
+  "reason": null
+ },
+ {
+  "core_id": "nmv-0081",
+  "status": "not_fixed",
+  "reason": "The requested canonical answer 'Personen, die eine Leistung der beruflichen Vorsorge beziehen oder bezogen haben' (and its FR/IT equivalents) exceeds the maximum of 8 words allowed for a noun phrase answer (rule 2)."
+ },
+ {
+  "core_id": "nmv-0082",
+  "status": "fixed",
+  "reason": null
+ },
+ {
+  "core_id": "nmv-0084",
+  "status": "fixed",
+  "reason": null
+ },
+ {
+  "core_id": "nmv-0090",
+  "status": "fixed",
+  "reason": null
+ },
+ {
+  "core_id": "nmv-0093",
+  "status": "fixed",
+  "reason": null
+ },
+ {
+  "core_id": "nmv-0097",
+  "status": "fixed",
+  "reason": null
+ },
+ {
+  "core_id": "nmv-0099",
+  "status": "not_fixed",
+  "reason": "The current paragraph (AHVG Art. 58 para. 2) does not mention Swiss citizenship; it only states that board members must be affiliated as insured persons or employers. Therefore, the proposed question 'Must board members be Swiss citizens?' cannot be answered with a literal evidence from the paragraph, violating Rule 1."
+ },
+ {
+  "core_id": "nmv-0107",
+  "status": "fixed",
+  "reason": null
+ },
+ {
+  "core_id": "nmv-0112",
+  "status": "fixed",
+  "reason": null
+ },
+ {
+  "core_id": "nmv-0115",
+  "status": "fixed",
+  "reason": null
+ },
+ {
+  "core_id": "nmv-0116",
+  "status": "not_fixed",
+  "reason": "The correction requires supplying the correct prior paragraph text for the pensioner rule (Art. 49a para. 3bis before the UK addition), but only the current paragraph (2026-07-01) is provided as ground truth. The prior version text is not available, so the outdated_answers cannot be verified or corrected without external knowledge."
+ },
+ {
+  "core_id": "nmv-0117",
+  "status": "fixed",
+  "reason": null
+ },
+ {
+  "core_id": "nmv-0120",
+  "status": "fixed",
+  "reason": null
+ },
+ {
+  "core_id": "nmv-0125",
+  "status": "not_fixed",
+  "reason": "The requested yes/no question on post-retirement contributions cannot be answered with a noun phrase or number from the statute, and the paragraph does not contain 'ja'/'nein' (or 'oui'/'non', 'sì'/'no') as verbatim evidence required by rule 1."
+ },
+ {
+  "core_id": "nmv-0127",
+  "status": "fixed",
+  "reason": null
+ }
+]

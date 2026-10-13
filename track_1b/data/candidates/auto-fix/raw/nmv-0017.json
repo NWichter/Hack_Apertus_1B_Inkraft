@@ -1,0 +1,31 @@
+{
+ "core_id": "nmv-0017",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "error": null,
+ "content": "{\"fixed\": true, \"question_type\": \"short_answer\", \"answer_type\": \"noun_phrase\", \"de\": {\"question\": \"Welche Vorsorgeguthaben reduzieren den Höchstbetrag der Einkaufssumme?\", \"answer\": \"Vorsorgeguthaben, die in der bisherigen Vorsorgeeinrichtung verbleiben\", \"answer_aliases\": [\"Vorsorgeguthaben, die in der bisherigen Vorsorgeeinrichtung verbleiben\", \"Vorsorgeguthaben in der bisherigen Vorsorgeeinrichtung\", \"verbleibende Vorsorgeguthaben in der bisherigen Vorsorgeeinrichtung\"], \"near_miss_answers\": [\"Vorsorgeguthaben der neuen Vorsorgeeinrichtung\", \"Altersguthaben\", \"Überobligatorische Vorsorgeguthaben\"], \"outdated_answers\": [], \"evidence\": \"Vorsorgeguthaben, die in der bisherigen Vorsorgeeinrichtung verbleiben, oder Freizügigkeitsguthaben\"}, \"fr\": {\"question\": \"Quels avoirs de prévoyance réduisent le montant maximal de la somme de rachat ?\", \"answer\": \"avoirs de prévoyance auprès de l'institution de prévoyance précédente\", \"answer_aliases\": [\"avoirs de prévoyance auprès de l'institution de prévoyance précédente\", \"avoirs de prévoyance de l'institution précédente\", \"avoirs de prévoyance restants auprès de l'institution précédente\"], \"near_miss_answers\": [\"avoirs de prévoyance de la nouvelle institution\", \"avoirs de vieillesse\", \"avoirs surobligatoires\"], \"outdated_answers\": [], \"evidence\": \"avoirs de prévoyance auprès de l'institution de prévoyance précédente ou d'avoirs de libre passage\"}, \"it\": {\"question\": \"Quali averi di previdenza riducono l'ammontare massimo della somma di acquisto?\", \"answer\": \"avere di previdenza che rimane nel precedente istituto di previdenza\", \"answer_aliases\": [\"avere di previdenza che rimane nel precedente istituto di previdenza\", \"avere di previdenza nel precedente istituto\", \"avere di previdenza rimasto nel precedente istituto\"], \"near_miss_answers\": [\"avere di previdenza del nuovo istituto\", \"avere di vecchiaia\", \"avere soprabbligatorio\"], \"outdated_answers\": [], \"evidence\": \"avere di previdenza che rimane nel precedente istituto di previdenza o di un avere di libero passaggio\"}}",
+ "usage": {
+  "prompt_tokens": 1523,
+  "completion_tokens": 11499,
+  "total_tokens": 13022,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 11651,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 385.1,
+ "at": "2026-10-13T17:32:50+00:00"
+}

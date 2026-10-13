@@ -1,0 +1,31 @@
+{
+ "core_id": "nmv-0010",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "error": null,
+ "content": "{\"fixed\": true, \"question_type\": \"short_answer\", \"answer_type\": \"percentage\", \"de\": {\"question\": \"Wie hoch ist der Bundesbeitrag an die AHV in Prozent der jährlichen Ausgaben der AHV?\", \"answer\": \"20,2 Prozent\", \"answer_aliases\": [\"20,2 %\", \"20.2 Prozent\"], \"near_miss_answers\": [\"20,0 Prozent\", \"20,5 Prozent\", \"19,5 Prozent\"], \"outdated_answers\": [\"19,55 Prozent\"], \"evidence\": \"Der Bundesbeitrag beläuft sich auf 20,2 Prozent der jährlichen Ausgaben der Versicherung; davon wird der Beitrag an die Hilflosenentschädigung nach Artikel 102 Absatz 2 abgezogen.\"}, \"fr\": {\"question\": \"Quel est le pourcentage de la contribution de la Confédération à l'AVS par rapport aux dépenses annuelles de l'AVS ?\", \"answer\": \"20,2 %\", \"answer_aliases\": [\"20,2 pour cent\", \"20,2%\"], \"near_miss_answers\": [\"20,0 %\", \"20,5 %\", \"19,5 %\"], \"outdated_answers\": [\"19,55 %\"], \"evidence\": \"La contribution de la Confédération s’élève à 20,2 % des dépenses annuelles de l’assurance; la contribution à l’allocation pour impotent visée à l’art. 102, al. 2, en est déduite.\"}, \"it\": {\"question\": \"A quanto ammonta il contributo della Confederazione all'AVS in percentuale delle uscite annue dell'AVS?\", \"answer\": \"20,2 per cento\", \"answer_aliases\": [\"20,2%\", \"20,2 per cento\"], \"near_miss_answers\": [\"20,0 per cento\", \"20,5 per cento\", \"19,5 per cento\"], \"outdated_answers\": [\"19,55 per cento\"], \"evidence\": \"Il contributo della Confederazione ammonta al 20,2 per cento delle uscite annue dell’assicurazione; da questo importo è dedotto il contributo all’assegno per grandi invalidi secondo l’articolo 102 capoverso 2.\"}}",
+ "usage": {
+  "prompt_tokens": 1371,
+  "completion_tokens": 9527,
+  "total_tokens": 10898,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 9527,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 351.4,
+ "at": "2026-10-13T16:28:57+00:00"
+}

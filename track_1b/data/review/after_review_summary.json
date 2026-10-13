@@ -1,0 +1,102 @@
+{
+ "cores": 327,
+ "rows": 951,
+ "trilingual_cores": 312,
+ "temporal_changed_cores": 79,
+ "stale_pair_cores": 53,
+ "yes_no_cores": 67,
+ "yes_no_share": 0.205,
+ "rows_without_variants": 6,
+ "by_generator": {
+  "gemini": 86,
+  "claude": 97,
+  "codex": 98,
+  "nemotron": 46
+ },
+ "by_act": {
+  "KVV": 33,
+  "KVG": 54,
+  "AHVG": 50,
+  "EOG": 28,
+  "AVIG": 10,
+  "UVG": 29,
+  "OR": 17,
+  "BVG": 19,
+  "BVV3": 2,
+  "IVG": 25,
+  "ELG": 13,
+  "ATSG": 27,
+  "FamZG": 2,
+  "KLV": 1,
+  "BVV2": 4,
+  "AHVV": 6,
+  "IVV": 3,
+  "AVIV": 3,
+  "ELV": 1
+ },
+ "by_domain": {
+  "kvg_insured": 57,
+  "ahv": 56,
+  "eo_alv": 41,
+  "uvg_atsg": 56,
+  "or_illness": 17,
+  "bvg_3a": 25,
+  "iv_el": 42,
+  "kvg_billing": 31,
+  "famz": 2
+ },
+ "by_question_type": {
+  "calc": 20,
+  "false_premise": 18,
+  "yes_no": 66,
+  "numeric": 114,
+  "procedural": 61,
+  "term": 3,
+  "temporal": 45
+ },
+ "by_bucket": {
+  "stable_pre2024": 248,
+  "changed_2024_2025": 71,
+  "changed_2026": 8
+ },
+ "decisions": {
+  "keep": 276,
+  "drop": 136,
+  "patch": 51
+ },
+ "candidates_decided": 160,
+ "candidates_accepted": 46,
+ "reject_rate_by_generator": {
+  "gemini": {
+   "decided": 95,
+   "dropped": 9,
+   "rate": 0.095
+  },
+  "claude": {
+   "decided": 105,
+   "dropped": 8,
+   "rate": 0.076
+  },
+  "codex": {
+   "decided": 103,
+   "dropped": 5,
+   "rate": 0.049
+  },
+  "nemotron": {
+   "decided": 160,
+   "dropped": 114,
+   "rate": 0.713
+  }
+ },
+ "review_time_h": 0.0,
+ "median_review_s": 0,
+ "bucket_moves": {
+  "changed_2024_2025->changed_2024_2025": 199,
+  "changed_2024_2025->stable_pre2024": 162,
+  "changed_2026->changed_2024_2025": 12,
+  "changed_2026->changed_2026": 24,
+  "changed_2026->stable_pre2024": 124,
+  "stable_pre2024->stable_pre2024": 430
+ },
+ "log_sha256": "3d7cc4e57627c59a2a5517149ed86da22f24b5770aad9cad320d75a2238f53cd"
+}

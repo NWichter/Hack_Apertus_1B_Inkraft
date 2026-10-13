@@ -1,0 +1,31 @@
+{
+ "core_id": "nmv-0012",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "error": null,
+ "content": "{\"fixed\": true, \"question_type\": \"short_answer\", \"answer_type\": \"noun_phrase\", \"de\": {\"question\": \"Nach Erreichen welchen Alters gilt für mitarbeitende Familienglieder wieder nur der Barlohn als massgebender Lohn?\", \"answer\": \"Referenzalter\", \"answer_aliases\": [\"Referenzalter nach Art. 21 Abs. 1\", \"das Referenzalter nach Artikel 21 Absatz 1\"], \"near_miss_answers\": [\"20. Altersjahr\"], \"outdated_answers\": [\"Frauen das 64. und Männer das 65. Altersjahr vollendet haben\"], \"evidence\": \"Referenzalter nach Artikel 21 Absatz 1\"}, \"fr\": {\"question\": \"Après avoir atteint quel âge le seul salaire déterminant pour les membres de la famille travaillant dans l’entreprise familiale redevient-il le salaire en espèces ?\", \"answer\": \"âge de référence\", \"answer_aliases\": [\"âge de référence selon l’art. 21, al. 1\", \"l’âge de référence fixé à l’art. 21, al. 1\"], \"near_miss_answers\": [\"20 ans révolus\"], \"outdated_answers\": [\"les femmes atteignent l’âge de 64 ans, les hommes l’âge de 65 ans\"], \"evidence\": \"âge de référence fixé à l’art. 21, al. 1\"}, \"it\": {\"question\": \"Dopo aver raggiunto quale età il salario determinante per i familiari che lavorano nell’azienda di famiglia torna a essere soltanto quello versato in contanti?\", \"answer\": \"età di riferimento\", \"answer_aliases\": [\"età di riferimento secondo l’art. 21 cpv. 1\", \"l’età di riferimento secondo l’articolo 21 capoverso 1\"], \"near_miss_answers\": [\"20 anni\"], \"outdated_answers\": [\"le donne compiono i 64 anni, gli uomini i 65 anni\"], \"evidence\": \"età di riferimento secondo l’articolo 21 capoverso 1\"}}",
+ "usage": {
+  "prompt_tokens": 1517,
+  "completion_tokens": 4575,
+  "total_tokens": 6092,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 4160,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 147.7,
+ "at": "2026-10-13T16:28:07+00:00"
+}

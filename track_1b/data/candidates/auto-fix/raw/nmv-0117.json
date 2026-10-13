@@ -1,0 +1,31 @@
+{
+ "core_id": "nmv-0117",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "error": null,
+ "content": "{\"fixed\": true, \"question_type\": \"substantive\", \"answer_type\": \"noun_phrase\", \"de\": {\"question\": \"Welche Leistung gewähren die Kantone Grenzgängern mit Wohnsitz im Vereinigten Königreich in der obligatorischen Krankenpflegeversicherung?\", \"answer\": \"Prämienverbilligungen\", \"answer_aliases\": [\"Prämienverbilligung\", \"die Prämienverbilligungen\"], \"near_miss_answers\": [\"Prämienzuschüsse\", \"Beitragsreduktionen\", \"Kostenbeteiligungen\"], \"outdated_answers\": [\"Norwegen\"], \"evidence\": \"in einem Mitgliedstaat der Europäischen Union, in Island, in Norwegen oder im Vereinigten Königreich wohnen, Prämienverbilligungen: a. den Grenzgängern und Grenzgängerinnen sowie deren Familienangehörigen\"}, \"fr\": {\"question\": \"Quelle prestation les cantons accordent-ils aux frontaliers résidant au Royaume-Uni dans l'assurance-maladie obligatoire?\", \"answer\": \"réduction des primes\", \"answer_aliases\": [\"une réduction des primes\", \"réductions des primes\"], \"near_miss_answers\": [\"subsides\", \"allocations\", \"remboursements\"], \"outdated_answers\": [\"Norvège\"], \"evidence\": \"une réduction des primes aux assurés de condition économique modeste désignés ci-après qui résident dans un État membre de l’Union européenne, en Islande, en Norvège ou au Royaume-Uni, soit: a. aux frontaliers ainsi qu’aux membres de leur famille\"}, \"it\": {\"question\": \"Quale prestazione concedono i Cantoni ai frontalieri residenti nel Regno Unito nell'assicurazione malattia obbligatoria?\", \"answer\": \"riduzioni dei premi\", \"answer_aliases\": [\"riduzione dei premi\", \"le riduzioni dei premi\"], \"near_miss_answers\": [\"sussidi\", \"contributi\", \"rimborsi\"], \"outdated_answers\": [\"Norvegia\"], \"evidence\": \"riduzioni dei premi ai seguenti assicurati di condizioni economiche modeste che risiedono in uno Stato membro dell’Unione europea, in Islanda, in Norvegia o nel Regno Unito: a. ai frontalieri e ai loro familiari\"}}",
+ "usage": {
+  "prompt_tokens": 1443,
+  "completion_tokens": 11213,
+  "total_tokens": 12656,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 11491,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 302.9,
+ "at": "2026-10-13T17:16:06+00:00"
+}

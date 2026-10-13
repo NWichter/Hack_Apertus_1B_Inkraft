@@ -1,0 +1,31 @@
+{
+ "core_id": "nmv-0084",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "error": null,
+ "content": "{\"fixed\": true, \"question_type\": \"short_answer\", \"answer_type\": \"noun_phrase\", \"de\": {\"question\": \"Wie muss die Kostenübernahme im Einzelfall laut Tarifverträgen geprüft werden?\", \"answer\": \"nach einheitlichen Kriterien unter Berücksichtigung klinischer Leitlinien\", \"answer_aliases\": [\"einheitlichen Kriterien unter Berücksichtigung klinischer Leitlinien\", \"geprüft nach einheitlichen Kriterien unter Berücksichtigung klinischer Leitlinien\"], \"near_miss_answers\": [\"diagnostische Massnahmen nicht unnötig wiederholt werden\", \"Massnahmen zur Sicherstellung der Wirtschaftlichkeit\", \"Konsultation mehrerer Leistungserbringer\"], \"outdated_answers\": [], \"evidence\": \"die Kostenübernahme im Einzelfall nach einheitlichen Kriterien unter Berücksichtigung klinischer Leitlinien geprüft wird\"}, \"fr\": {\"question\": \"Selon quelles modalités la prise en charge au cas par cas doit-elle être examinée dans les conventions tarifaires ?\", \"answer\": \"selon des critères uniformes tenant compte des recommandations pour la pratique clinique\", \"answer_aliases\": [\"critères uniformes tenant compte des recommandations pour la pratique clinique\", \"examinée selon des critères uniformes tenant compte des recommandations pour la pratique clinique\"], \"near_miss_answers\": [\"éviter une réitération inutile d’actes diagnostiques\", \"mesures pour garantir l’économicité des prestations\", \"consultation de plusieurs fournisseurs de prestations\"], \"outdated_answers\": [], \"evidence\": \"une prise en charge dans le cas particulier qui soit examinée selon des critères uniformes tenant compte des recommandations pour la pratique clinique\"}, \"it\": {\"question\": \"Secondo quali modalità l’assunzione dei costi nel singolo caso deve essere esaminata nelle convenzioni tariffali ?\", \"answer\": \"secondo criteri uniformi e tenendo conto delle linee guida cliniche\", \"answer_aliases\": [\"criteri uniformi e tenendo conto delle linee guida cliniche\", \"esaminata secondo criteri uniformi e tenendo conto delle linee guida cliniche\"], \"near_miss_answers\": [\"sia evitata una ripetizione inutile di atti diagnostici\", \"misure per garantire l’economicità delle prestazioni\", \"consultazione di più fornitori di prestazioni\"], \"outdated_answers\": [], \"evidence\": \"l’assunzione dei costi nel singolo caso sia esaminata secondo criteri uniformi e tenendo conto delle linee guida cliniche\"}}",
+ "usage": {
+  "prompt_tokens": 1560,
+  "completion_tokens": 1728,
+  "total_tokens": 3288,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 1284,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 62.7,
+ "at": "2026-10-13T16:49:48+00:00"
+}

@@ -1,0 +1,31 @@
+{
+ "core_id": "nmv-0054",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "error": null,
+ "content": "{\"fixed\": true, \"question_type\": \"short_answer\", \"answer_type\": \"noun_phrase\", \"de\": {\"question\": \"An wen richtet sich die Auszahlungspflicht des Arbeitgebers für die Differenz zwischen Kurzarbeitsentschädigung und vertraglichem Lohn bei anrechenbarem Arbeitsausfall mit Ausbildungsaufgaben?\", \"answer\": \"Berufsbildnerinnen und Berufsbildner\", \"answer_aliases\": [\"den Berufsbildnerinnen und Berufsbildnern\", \"Berufsbildnerinnen und Berufsbildner\"], \"near_miss_answers\": [\"Arbeitnehmer\", \"Lernende\"], \"outdated_answers\": [], \"evidence\": \"den Berufsbildnerinnen und Berufsbildnern nach Artikel 32 Absatz 6 für die Stunden, die als anrechenbarer Arbeitsausfall gelten und in denen sie die Ausbildung der Lernenden sicherstellen, die Differenz zwischen der Kurzarbeitsentschädigung und dem vertraglich vereinbarten Lohn auszubezahlen\"}, \"fr\": {\"question\": \"À qui s'adresse l'obligation de versement de l'employeur pour la différence entre l'indemnité et le salaire contractuel en cas de perte de travail à prendre en considération avec tâches de formation?\", \"answer\": \"formateurs\", \"answer_aliases\": [\"aux formateurs\", \"formateurs visés à l’art. 32, al. 6\"], \"near_miss_answers\": [\"travailleurs\", \"apprentis\"], \"outdated_answers\": [], \"evidence\": \"de verser aux formateurs visés à l’art. 32, al. 6, la différence entre l’indemnité et le salaire contractuel pour les heures qui comptent comme perte de travail à prendre en considération et qui sont consacrées à la formation des apprentis\"}, \"it\": {\"question\": \"A chi è rivolto l'obbligo di pagamento del datore di lavoro per la differenza tra l'indennità per lavoro ridotto e il salario convenuto in caso di perdita di lavoro computabile con compiti di formazione?\", \"answer\": \"formatori\", \"answer_aliases\": [\"ai formatori\", \"formatori di cui all’articolo 32 capoverso 6\"], \"near_miss_answers\": [\"lavoratori\", \"apprendisti\"], \"outdated_answers\": [], \"evidence\": \"a pagare ai formatori di cui all’articolo 32 capoverso 6, per le ore considerate perdita di lavoro computabile e da loro dedicate alla formazione degli apprendisti, la differenza tra l’indennità per lavoro ridotto e il salario convenuto contrattualmente\"}}",
+ "usage": {
+  "prompt_tokens": 1984,
+  "completion_tokens": 8106,
+  "total_tokens": 10090,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 7779,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 323.7,
+ "at": "2026-10-13T16:45:20+00:00"
+}

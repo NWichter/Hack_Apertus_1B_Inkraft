@@ -1,0 +1,31 @@
+{
+ "core_id": "nmv-0042",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "error": null,
+ "content": "{\"fixed\": true, \"question_type\": \"short_answer\", \"answer_type\": \"noun_phrase\", \"de\": {\"question\": \"In der obligatorischen Krankenpflegeversicherung: Wie wird der Tarif für Analysen im Praxislaboratorium festgelegt?\", \"answer\": \"nach Artikel 46 vereinbart werden kann\", \"answer_aliases\": [\"nach Art. 46 vereinbart werden kann\", \"nach Artikel 46 vereinbart werden kann\"], \"near_miss_answers\": [\"nach Artikel 47 vereinbart werden kann\", \"nach Artikel 48 vereinbart werden kann\"], \"outdated_answers\": [\"Artikel 46 und 48\"], \"evidence\": \"nach Artikel 46 vereinbart werden kann\"}, \"fr\": {\"question\": \"Dans l'assurance obligatoire des soins: comment le tarif pour les analyses du laboratoire de cabinet est-il déterminé?\", \"answer\": \"conformément à l'art. 46\", \"answer_aliases\": [\"conformément à l'article 46\", \"conformément à l'art. 46\"], \"near_miss_answers\": [\"conformément à l'art. 47\", \"conformément à l'art. 48\"], \"outdated_answers\": [\"art. 46 et 48\"], \"evidence\": \"conformément à l'art. 46\"}, \"it\": {\"question\": \"Nell'assicurazione obbligatoria delle cure medico-sanitarie: come viene stabilita la tariffa per le analisi nel laboratorio dello studio medico?\", \"answer\": \"secondo l’articolo 46\", \"answer_aliases\": [\"secondo l'articolo 46\", \"secondo l’art. 46\"], \"near_miss_answers\": [\"secondo l’articolo 47\", \"secondo l’articolo 48\"], \"outdated_answers\": [\"gli articoli 46 e 48\"], \"evidence\": \"secondo l’articolo 46\"}}",
+ "usage": {
+  "prompt_tokens": 1553,
+  "completion_tokens": 11349,
+  "total_tokens": 12902,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 10808,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 476.6,
+ "at": "2026-10-13T16:43:33+00:00"
+}

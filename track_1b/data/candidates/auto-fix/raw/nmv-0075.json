@@ -1,0 +1,31 @@
+{
+ "core_id": "nmv-0075",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "error": null,
+ "content": "{\"fixed\": true, \"question_type\": \"short_answer\", \"answer_type\": \"noun_phrase\", \"de\": {\"question\": \"Für welchen Fall regelt der Bundesrat in der AHV die Kürzung der beiden Renten neben der unvollständigen Beitragsdauer?\", \"answer\": \"bei Bezug lediglich eines Teils der Rente\", \"answer_aliases\": [\"Bezug lediglich eines Teils der Rente\", \"lediglich eines Teils der Rente\"], \"near_miss_answers\": [\"im Verhältnis ihrer Anteile\", \"die Einzelheiten\"], \"outdated_answers\": [\"bei Versicherten mit unvollständiger Beitragsdauer\"], \"evidence\": \"sowie bei Bezug lediglich eines Teils der Rente.\"}, \"fr\": {\"question\": \"Pour quel cas le Conseil fédéral règle-t-il en AVS la réduction des deux rentes outre la durée de cotisation incomplète?\", \"answer\": \"qui ne perçoivent qu’un pourcentage de leur rente\", \"answer_aliases\": [\"ne perçoivent qu’un pourcentage de leur rente\", \"perçoivent qu’un pourcentage de leur rente\"], \"near_miss_answers\": [\"en proportion de leur quote-part\", \"les modalités\"], \"outdated_answers\": [\"aux assurés dont la durée de cotisation est incomplète\"], \"evidence\": \"ou qui ne perçoivent qu’un pourcentage de leur rente.\"}, \"it\": {\"question\": \"Per quale caso il Consiglio federale disciplina nell'AVS la riduzione delle due rendite oltre alla durata di contribuzione incompleta?\", \"answer\": \"che percepiscono soltanto una percentuale della rendita\", \"answer_aliases\": [\"percepiscono soltanto una percentuale della rendita\", \"soltanto una percentuale della rendita\"], \"near_miss_answers\": [\"in proporzione alla loro quota-parte\", \"i dettagli\"], \"outdated_answers\": [\"agli assicurati con durata di contribuzione incompleta\"], \"evidence\": \"o che percepiscono soltanto una percentuale della rendita.\"}}",
+ "usage": {
+  "prompt_tokens": 1407,
+  "completion_tokens": 4930,
+  "total_tokens": 6337,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 4780,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 172.9,
+ "at": "2026-10-13T16:48:21+00:00"
+}

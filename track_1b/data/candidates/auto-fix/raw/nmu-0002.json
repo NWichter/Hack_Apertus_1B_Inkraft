@@ -1,0 +1,31 @@
+{
+ "core_id": "nmu-0002",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "error": null,
+ "content": "{\"fixed\": true, \"question_type\": \"threshold\", \"answer_type\": \"currency\", \"de\": {\"question\": \"Welchen gesamten Jahreslohn muss ein nicht obligatorisch versicherter Arbeitnehmer, der im Dienste mehrerer Arbeitgeber steht, übersteigen, um sich freiwillig versichern lassen zu können?\", \"answer\": \"22 680 Franken\", \"answer_aliases\": [\"CHF 22680\", \"22'680 Franken\", \"22680 Franken\"], \"near_miss_answers\": [\"22 000 Franken\", \"23 000 Franken\", \"21 680 Franken\"], \"outdated_answers\": [\"22 050 Franken\"], \"evidence\": \"dessen gesamter Jahreslohn 22 680 Franken übersteigt\"}, \"fr\": {\"question\": \"Quel salaire annuel total doit dépasser un salarié non obligatoirement assuré, au service de plusieurs employeurs, pour pouvoir s'assurer à titre facultatif ?\", \"answer\": \"22 680 francs\", \"answer_aliases\": [\"CHF 22680\", \"22'680 francs\", \"22680 francs\"], \"near_miss_answers\": [\"22 000 francs\", \"23 000 francs\", \"21 680 francs\"], \"outdated_answers\": [\"22 050 francs\"], \"evidence\": \"dont le salaire annuel total dépasse 22 680 francs\"}, \"it\": {\"question\": \"Quale salario complessivo annuo deve superare un lavoratore non assicurato obbligatoriamente, al servizio di vari datori di lavoro, per potersi assicurare facoltativamente?\", \"answer\": \"22 680 franchi\", \"answer_aliases\": [\"CHF 22680\", \"22'680 franchi\", \"22680 franchi\"], \"near_miss_answers\": [\"22 000 franchi\", \"23 000 franchi\", \"21 680 franchi\"], \"outdated_answers\": [\"22 050 franchi\"], \"evidence\": \"il cui salario complessivo supera i 22 680 franchi\"}}",
+ "usage": {
+  "prompt_tokens": 1506,
+  "completion_tokens": 7555,
+  "total_tokens": 9061,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 7785,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 268.9,
+ "at": "2026-10-13T16:21:16+00:00"
+}

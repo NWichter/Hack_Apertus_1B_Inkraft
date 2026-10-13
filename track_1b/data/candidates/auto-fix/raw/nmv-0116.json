@@ -1,0 +1,31 @@
+{
+ "core_id": "nmv-0116",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "error": null,
+ "content": "{\"fixed\": false, \"reason\": \"The correction requires supplying the correct prior paragraph text for the pensioner rule (Art. 49a para. 3bis before the UK addition), but only the current paragraph (2026-07-01) is provided as ground truth. The prior version text is not available, so the outdated_answers cannot be verified or corrected without external knowledge.\"}",
+ "usage": {
+  "prompt_tokens": 1663,
+  "completion_tokens": 4626,
+  "total_tokens": 6289,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 5470,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 118.5,
+ "at": "2026-10-13T16:56:03+00:00"
+}

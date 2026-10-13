@@ -1,0 +1,31 @@
+{
+ "core_id": "nmv-0068",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "error": null,
+ "content": "{\"fixed\": true, \"question_type\": \"short_answer\", \"answer_type\": \"noun_phrase\", \"de\": {\"question\": \"In der Arbeitslosenversicherung: Was darf je Kontrollperiode nicht mehr als fünf betragen, damit die zweimonatige Wartezeit nach Beendigung des Arbeitsverhältnisses entfällt?\", \"answer\": \"Tage kontrollierter Arbeitslosigkeit\", \"answer_aliases\": [\"kontrollierter Arbeitslosigkeit\", \"fünf Tage kontrollierter Arbeitslosigkeit\"], \"near_miss_answers\": [\"fünf Karenztage\", \"fünf Wartezeitentage\", \"fünf Sperrtage\"], \"outdated_answers\": [\"Arbeitstage\"], \"evidence\": \"wenn je Kontrollperiode nicht mehr als fünf Tage kontrollierter Arbeitslosigkeit ausgewiesen werden\"}, \"fr\": {\"question\": \"Dans l'assurance-chômage: quel élément ne doit pas dépasser cinq par période de contrôle pour que le délai d’attente de deux mois après la fin du rapport de travail devienne caduc?\", \"answer\": \"jours de chômage contrôlé\", \"answer_aliases\": [\"chômage contrôlé\", \"cinq jours de chômage contrôlé\"], \"near_miss_answers\": [\"cinq jours de carence\", \"cinq jours de délai\", \"cinq jours de suspension\"], \"outdated_answers\": [\"jours de travail\"], \"evidence\": \"lorsque l’assuré ne justifie pas de plus de cinq jours de chômage contrôlé par période de contrôle\"}, \"it\": {\"question\": \"Nell'assicurazione contro la disoccupazione: quale elemento non deve superare i cinque per periodo di controllo affinché il periodo di attesa di due mesi dalla fine del rapporto di lavoro non debba essere compiuto?\", \"answer\": \"giorni di disoccupazione controllata\", \"answer_aliases\": [\"disoccupazione controllata\", \"cinque giorni di disoccupazione controllata\"], \"near_miss_answers\": [\"cinque giorni di carenza\", \"cinque giorni di sospensione\", \"cinque giorni di attesa\"], \"outdated_answers\": [\"giorni di lavoro\"], \"evidence\": \"se, per un periodo di controllo, l’assicurato non effettua più di cinque giorni di disoccupazione controllata\"}}",
+ "usage": {
+  "prompt_tokens": 1505,
+  "completion_tokens": 6731,
+  "total_tokens": 8236,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 6694,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 183.8,
+ "at": "2026-10-13T16:46:37+00:00"
+}

@@ -1,0 +1,31 @@
+{
+ "core_id": "nmv-0082",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "error": null,
+ "content": "{\"fixed\": true, \"question_type\": \"short_answer\", \"answer_type\": \"noun_phrase\", \"de\": {\"question\": \"Welcher Betrag der Altersrente wird bei einem Vorbezug für die Berechnung der jährlichen Ergänzungsleistung als Einnahme angerechnet?\", \"answer\": \"die ganze aufgrund des Vorbezugs gekürzte Rente\", \"answer_aliases\": [\"ganze aufgrund des Vorbezugs gekürzte Rente\", \"aufgrund des Vorbezugs gekürzte Rente\"], \"near_miss_answers\": [\"die Altersrente\", \"die jährliche Ergänzungsleistung\"], \"outdated_answers\": [\"die gekürzte Rente\"], \"evidence\": \"die ganze aufgrund des Vorbezugs gekürzte Rente als Einnahme angerechnet\"}, \"fr\": {\"question\": \"Quel montant de la rente de vieillesse est pris en compte comme revenu pour le calcul de la prestation complémentaire annuelle en cas de perception anticipée ?\", \"answer\": \"la rente entière réduite en raison de l’anticipation\", \"answer_aliases\": [\"rente entière réduite en raison de l’anticipation\", \"entière réduite en raison de l’anticipation\"], \"near_miss_answers\": [\"la rente de vieillesse\", \"la prestation complémentaire annuelle\"], \"outdated_answers\": [\"la rente réduite\"], \"evidence\": \"le montant de la rente entière réduite en raison de l’anticipation est pris en compte en tant que revenu\"}, \"it\": {\"question\": \"Quale importo della rendita di vecchiaia viene computato come reddito per il calcolo della prestazione complementare annua in caso di riscossione anticipata ?\", \"answer\": \"l’importo della rendita intera, ridotta a causa dell’anticipazione\", \"answer_aliases\": [\"della rendita intera, ridotta a causa dell’anticipazione\", \"rendita intera, ridotta a causa dell’anticipazione\"], \"near_miss_answers\": [\"la rendita di vecchiaia\", \"la prestazione complementare annua\"], \"outdated_answers\": [\"la rendita ridotta\"], \"evidence\": \"l’importo della rendita intera, ridotta a causa dell’anticipazione è computato come reddito\"}}",
+ "usage": {
+  "prompt_tokens": 1425,
+  "completion_tokens": 6726,
+  "total_tokens": 8151,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 6105,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 316.9,
+ "at": "2026-10-13T16:53:38+00:00"
+}

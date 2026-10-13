@@ -1,0 +1,31 @@
+{
+ "core_id": "nmu-0003",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "error": null,
+ "content": "{\"fixed\": true, \"question_type\": \"short_answer\", \"answer_type\": \"number_with_unit\", \"de\": {\"question\": \"In der beruflichen Vorsorge: Wie hoch ist der mindestens zu versichernde Betrag für obligatorisch versicherte Personen, die bei einem Arbeitgeber einen massgebenden AHV-Lohn beziehen?\", \"answer\": \"3780 Franken\", \"answer_aliases\": [\"3780 Franken\", \"CHF 3780\", \"3'780 Franken\"], \"near_miss_answers\": [\"22 680 Franken\", \"22 680\"], \"outdated_answers\": [\"3675 Franken\"], \"evidence\": \"muss ein Betrag in der Höhe von mindestens 3780 Franken versichert werden.\"}, \"fr\": {\"question\": \"Dans la prévoyance professionnelle : Quel est le montant minimal qui doit être assuré pour les personnes assurées obligatoirement qui perçoivent d'un même employeur un salaire AVS ?\", \"answer\": \"3780 francs\", \"answer_aliases\": [\"3780 francs\", \"CHF 3780\", \"3'780 francs\"], \"near_miss_answers\": [\"22 680 francs\", \"22 680\"], \"outdated_answers\": [\"3675 francs\"], \"evidence\": \"un montant de 3780 francs au moins doit être assuré.\"}, \"it\": {\"question\": \"Nella previdenza professionale: Qual è l'importo minimo che deve essere assicurato per le persone assicurate obbligatoriamente che percepiscono da un datore di lavoro un salario determinante AVS ?\", \"answer\": \"3780 franchi\", \"answer_aliases\": [\"3780 franchi\", \"CHF 3780\", \"3'780 franchi\"], \"near_miss_answers\": [\"22 680 franchi\", \"22 680\"], \"outdated_answers\": [\"3675 franchi\"], \"evidence\": \"deve essere assicurato un importo di almeno 3780 franchi.\"}}",
+ "usage": {
+  "prompt_tokens": 1448,
+  "completion_tokens": 3445,
+  "total_tokens": 4893,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2807,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 154.3,
+ "at": "2026-10-13T17:11:21+00:00"
+}

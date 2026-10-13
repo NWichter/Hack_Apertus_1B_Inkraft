@@ -1,0 +1,31 @@
+{
+ "core_id": "nmu-0005",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "error": null,
+ "content": "{\"fixed\": true, \"question_type\": \"temporal\", \"answer_type\": \"number_with_unit\", \"de\": {\"question\": \"Um wie viele Abrechnungsperioden kann der Bundesrat die Höchstbezugsdauer der Kurzarbeitsentschädigung befristet höchstens verlängern?\", \"answer\": \"12 Abrechnungsperioden\", \"answer_aliases\": [\"zwölf Abrechnungsperioden\", \"12 Abrechnungsperioden\"], \"near_miss_answers\": [\"4\", \"8\", \"24\"], \"outdated_answers\": [\"sechs\"], \"evidence\": \"höchstens zwölf Abrechnungsperioden\"}, \"fr\": {\"question\": \"De combien de périodes de décompte au maximum le Conseil fédéral peut-il prolonger temporairement la durée maximale de l'indemnisation pour travail réduit ?\", \"answer\": \"12 périodes de décompte\", \"answer_aliases\": [\"douze périodes de décompte\", \"12 périodes de décompte\"], \"near_miss_answers\": [\"4\", \"8\", \"24\"], \"outdated_answers\": [\"six\"], \"evidence\": \"douze périodes de décompte au plus\"}, \"it\": {\"question\": \"Di quanti periodi di conteggio al massimo il Consiglio federale può prolungare temporaneamente la durata massima delle prestazioni per lavoro ridotto?\", \"answer\": \"12 periodi di conteggio\", \"answer_aliases\": [\"dodici periodi di conteggio\", \"12 periodi di conteggio\"], \"near_miss_answers\": [\"4\", \"8\", \"24\"], \"outdated_answers\": [\"sei\"], \"evidence\": \"di al massimo dodici periodi di conteggio\"}}",
+ "usage": {
+  "prompt_tokens": 1299,
+  "completion_tokens": 4690,
+  "total_tokens": 5989,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 4195,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 246.5,
+ "at": "2026-10-13T16:16:48+00:00"
+}

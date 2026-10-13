@@ -1,0 +1,31 @@
+{
+ "core_id": "nmu-0001",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "error": null,
+ "content": "{\"fixed\": true, \"question_type\": \"amount\", \"answer_type\": \"currency\", \"de\": {\"question\": \"Wie hoch darf der Mindestbeitrag für Nichterwerbstätige in der Erwerbsersatzordnung (EO) höchstens betragen?\", \"answer\": \"25 Franken im Jahr\", \"answer_aliases\": [\"25 Franken\", \"25 Franken im Jahr\", \"CHF 25\", \"25 CHF\"], \"near_miss_answers\": [\"50 Franken\", \"1250 Franken\"], \"outdated_answers\": [\"24 Franken im Jahr\"], \"evidence\": \"Der Mindestbeitrag beträgt höchstens 25 Franken im Jahr.\"}, \"fr\": {\"question\": \"Quel est le montant maximal de la cotisation minimale par an pour les assurés n'exerçant aucune activité lucrative dans l'ordonnance sur l'assurance perte de gain (APG) ?\", \"answer\": \"25 francs par an\", \"answer_aliases\": [\"25 francs\", \"25 francs par an\", \"CHF 25\"], \"near_miss_answers\": [\"50 francs\", \"1250 francs\"], \"outdated_answers\": [\"24 francs par an\"], \"evidence\": \"La cotisation minimale ne peut être supérieure à 25 francs par an.\"}, \"it\": {\"question\": \"Qual è l'importo massimo del contributo minimo all'anno per gli assicurati che non esercitano un'attività lucrativa nell'ordinanza sull'assicurazione per la perdita di guadagno (IPG)?\", \"answer\": \"25 franchi all'anno\", \"answer_aliases\": [\"25 franchi\", \"25 franchi all'anno\", \"CHF 25\"], \"near_miss_answers\": [\"50 franchi\", \"1250 franchi\"], \"outdated_answers\": [\"24 franchi all'anno\"], \"evidence\": \"Il contributo minimo non può eccedere 25 franchi all'anno.\"}}",
+ "usage": {
+  "prompt_tokens": 1835,
+  "completion_tokens": 854,
+  "total_tokens": 2689,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 395,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 26.0,
+ "at": "2026-10-13T16:13:07+00:00"
+}

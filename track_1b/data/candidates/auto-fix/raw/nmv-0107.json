@@ -1,0 +1,31 @@
+{
+ "core_id": "nmv-0107",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "error": null,
+ "content": "{\"fixed\": true, \"question_type\": \"which\", \"answer_type\": \"noun_phrase\", \"de\": {\"question\": \"Welche Kapitalkosten sind in der Aufzählung der anrechenbaren Bildungsmassnahmenkosten enthalten?\", \"answer\": \"Fremdkapital\", \"answer_aliases\": [\"Fremdkapital-\", \"die erforderlichen Projektierungs‑, Fremdkapital- und Raumkosten\"], \"near_miss_answers\": [\"Projektierungskosten\", \"Raumkosten\", \"Transportkosten\"], \"outdated_answers\": [\"Kapital\"], \"evidence\": \"die erforderlichen Projektierungs‑, Fremdkapital- und Raumkosten.\"}, \"fr\": {\"question\": \"Quels frais de capital sont mentionnés dans l'énumération des frais à prendre en compte pour les mesures de formation?\", \"answer\": \"capital étranger\", \"answer_aliases\": [\"de capital étranger\", \"les frais nécessaires de projet, de capital étranger et de locaux\"], \"near_miss_answers\": [\"frais de projet\", \"frais de locaux\", \"frais de transport\"], \"outdated_answers\": [\"capital investi\"], \"evidence\": \"les frais nécessaires de projet, de capital étranger et de locaux.\"}, \"it\": {\"question\": \"Quali costi di capitale sono indicati nell'elenco delle spese computabili per i provvedimenti di formazione?\", \"answer\": \"capitale di terzi\", \"answer_aliases\": [\"per il capitale di terzi\", \"le spese necessarie per la progettazione, per il capitale di terzi e per i locali\"], \"near_miss_answers\": [\"spese di progettazione\", \"spese per i locali\", \"spese di trasporto\"], \"outdated_answers\": [\"capitale investito\"], \"evidence\": \"le spese necessarie per la progettazione, per il capitale di terzi e per i locali.\"}}",
+ "usage": {
+  "prompt_tokens": 1634,
+  "completion_tokens": 4633,
+  "total_tokens": 6267,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 4392,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 133.4,
+ "at": "2026-10-13T16:54:05+00:00"
+}

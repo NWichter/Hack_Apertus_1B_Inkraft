@@ -1,0 +1,31 @@
+{
+ "core_id": "nmv-0099",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "error": null,
+ "content": "{\"fixed\": false, \"reason\": \"The current paragraph (AHVG Art. 58 para. 2) does not mention Swiss citizenship; it only states that board members must be affiliated as insured persons or employers. Therefore, the proposed question 'Must board members be Swiss citizens?' cannot be answered with a literal evidence from the paragraph, violating Rule 1.\"}",
+ "usage": {
+  "prompt_tokens": 1808,
+  "completion_tokens": 1371,
+  "total_tokens": 3179,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 1652,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 40.0,
+ "at": "2026-10-13T16:51:36+00:00"
+}

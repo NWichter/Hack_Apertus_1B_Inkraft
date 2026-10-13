@@ -1,0 +1,31 @@
+{
+ "core_id": "nmv-0120",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "error": null,
+ "content": "{\"fixed\": true, \"question_type\": \"short_answer\", \"answer_type\": \"noun_phrase\", \"de\": {\"question\": \"Wohin kann in der obligatorischen Krankenpflegeversicherung neben einer tieferen Franchise oder einem anderen Versicherer gewechselt werden?\", \"answer\": \"Bonusversicherung\", \"answer_aliases\": [\"Bonus-Versicherung\", \"Versicherung mit Bonus\"], \"near_miss_answers\": [\"eine höhere Franchise\", \"ein anderes Versicherungsmodell\", \"eine Standardversicherung\"], \"outdated_answers\": [\"eine andere Versicherungsform\"], \"evidence\": \"in eine Bonusversicherung\"}, \"fr\": {\"question\": \"Vers quoi peut-on passer dans l'assurance-maladie obligatoire, outre une franchise moins élevée ou un autre assureur ?\", \"answer\": \"assurance avec bonus\", \"answer_aliases\": [\"assurance bonus\", \"assurance avec système de bonus\"], \"near_miss_answers\": [\"une franchise plus élevée\", \"un autre modèle d'assurance\", \"une assurance standard\"], \"outdated_answers\": [\"une autre forme d'assurance\"], \"evidence\": \"à une assurance avec bonus\"}, \"it\": {\"question\": \"A cosa si può passare nell'assicurazione malattie obbligatoria, oltre a una franchigia inferiore o a un altro assicuratore?\", \"answer\": \"assicurazione con bonus\", \"answer_aliases\": [\"assicurazione bonus\", \"assicurazione con sistema di bonus\"], \"near_miss_answers\": [\"una franchigia più alta\", \"un'assicurazione standard\"], \"outdated_answers\": [\"un'altra forma di assicurazione\"], \"evidence\": \"a un’assicurazione con bonus\"}}",
+ "usage": {
+  "prompt_tokens": 1246,
+  "completion_tokens": 5246,
+  "total_tokens": 6492,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 5235,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 187.9,
+ "at": "2026-10-13T16:58:28+00:00"
+}

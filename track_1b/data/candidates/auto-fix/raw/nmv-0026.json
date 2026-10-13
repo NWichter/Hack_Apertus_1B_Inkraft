@@ -1,0 +1,31 @@
+{
+ "core_id": "nmv-0026",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "error": null,
+ "content": "{\"fixed\": true, \"question_type\": \"short_answer\", \"answer_type\": \"phrase\", \"de\": {\"question\": \"Welche Voraussetzung für die Einkommensteilung in der AHV ist ausschließlich an das Alter der Ehegatten geknüpft?\", \"answer\": \"das Referenzalter erreicht haben\", \"answer_aliases\": [\"Referenzalter erreicht haben\", \"beide Ehegatten das Referenzalter erreicht haben\"], \"near_miss_answers\": [\"Anspruch auf eine Rente der Invalidenversicherung haben\", \"Auflösung der Ehe durch Scheidung\", \"verwitwete Person das Referenzalter erreicht\"], \"outdated_answers\": [\"rentenberechtigt sind\"], \"evidence\": \"wenn beide Ehegatten das Referenzalter erreicht haben\"}, \"fr\": {\"question\": \"Quelle condition pour la répartition des revenus dans l'AVS est exclusivement liée à l'âge des conjoints?\", \"answer\": \"ont atteint l’âge de référence\", \"answer_aliases\": [\"les deux conjoints ont atteint l’âge de référence\", \"deux conjoints ont atteint l’âge de référence\"], \"near_miss_answers\": [\"ont droit à une rente de l’assurance-invalidité\", \"le mariage est dissous par le divorce\", \"la veuve ou le veuf atteint l’âge de référence\"], \"outdated_answers\": [\"ont droit à la rente\"], \"evidence\": \"les deux conjoints ont atteint l’âge de référence\"}, \"it\": {\"question\": \"Quale presupposto per la ripartizione dei redditi nell'AVS è legato esclusivamente all'età dei coniugi?\", \"answer\": \"hanno raggiunto l’età di riferimento\", \"answer_aliases\": [\"entrambi i coniugi hanno raggiunto l’età di riferimento\", \"coniugi hanno raggiunto l’età di riferimento\"], \"near_miss_answers\": [\"hanno diritto a una rendita dell’assicurazione per l’invalidità\", \"il matrimonio è sciolto mediante divorzio\", \"la vedova o il vedovo raggiunge l’età di riferimento\"], \"outdated_answers\": [\"hanno diritto alla rendita\"], \"evidence\": \"entrambi i coniugi hanno raggiunto l’età di riferimento\"}}",
+ "usage": {
+  "prompt_tokens": 1612,
+  "completion_tokens": 10654,
+  "total_tokens": 12266,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 10801,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 421.5,
+ "at": "2026-10-13T16:35:37+00:00"
+}

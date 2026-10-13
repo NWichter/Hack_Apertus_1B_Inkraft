@@ -1,0 +1,31 @@
+{
+ "core_id": "nmv-0080",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "error": null,
+ "content": "{\"fixed\": true, \"question_type\": \"factoid\", \"answer_type\": \"noun_phrase\", \"de\": {\"question\": \"Was prüft der Experte für berufliche Vorsorge in der Pensionskasse zusätzlich periodisch auf Einhaltung der Gesetze?\", \"answer\": \"versicherungstechnischen Bestimmungen über die Leistungen und die Finanzierung\", \"answer_aliases\": [\"die versicherungstechnischen Bestimmungen über die Leistungen und die Finanzierung\", \"reglementarischen versicherungstechnischen Bestimmungen über die Leistungen und die Finanzierung\"], \"near_miss_answers\": [\"gesetzlichen Vorschriften\", \"die Leistungen und die Finanzierung\", \"Experte für berufliche Vorsorge\"], \"outdated_answers\": [], \"evidence\": \"Er prüft zudem periodisch, ob die reglementarischen versicherungstechnischen Bestimmungen über die Leistungen und die Finanzierung den gesetzlichen Vorschriften entsprechen.\"}, \"fr\": {\"question\": \"Qu'examine l'expert en prévoyance professionnelle dans la caisse de pension en outre périodiquement pour sa conformité à la loi ?\", \"answer\": \"dispositions réglementaires de nature actuarielle et relatives aux prestations et au financement\", \"answer_aliases\": [\"les dispositions réglementaires de nature actuarielle et relatives aux prestations et au financement\", \"dispositions réglementaires de nature actuarielle et relatives aux prestations et au financement\"], \"near_miss_answers\": [\"dispositions légales\", \"prestations et au financement\", \"expert en prévoyance professionnelle\"], \"outdated_answers\": [], \"evidence\": \"Il examine en outre périodiquement si les dispositions réglementaires de nature actuarielle et relatives aux prestations et au financement sont conformes aux dispositions légales.\"}, \"it\": {\"question\": \"Cosa verifica inoltre periodicamente l'esperto in materia di previdenza professionale nel fondo pensione per la conformità con le prescrizioni legali ?\", \"answer\": \"disposizioni attuariali regolamentari inerenti alle prestazioni e al finanziamento\", \"answer_aliases\": [\"le disposizioni attuariali regolamentari inerenti alle prestazioni e al finanziamento\", \"disposizioni attuariali regolamentari inerenti alle prestazioni e al finanziamento\"], \"near_miss_answers\": [\"prescrizioni legali\", \"prestazioni e al finanziamento\", \"esperto in materia di previdenza professionale\"], \"outdated_answers\": [], \"evidence\": \"Verifica inoltre periodicamente se le disposizioni attuariali regolamentari inerenti alle prestazioni e al finanziamento sono conformi alle prescrizioni legali.\"}}",
+ "usage": {
+  "prompt_tokens": 1372,
+  "completion_tokens": 5673,
+  "total_tokens": 7045,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 5624,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 172.1,
+ "at": "2026-10-13T16:49:29+00:00"
+}

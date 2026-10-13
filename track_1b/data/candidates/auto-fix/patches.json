@@ -1,0 +1,1087 @@
+{
+ "nmu-0005": {
+  "action": "patch",
+  "kind": "auto_fix",
+  "all": {},
+  "de": {
+   "answer": "12 Abrechnungsperioden",
+   "answer_aliases": [
+    "zwölf Abrechnungsperioden",
+    "12 Abrechnungsperioden"
+   ]
+  },
+  "fr": {
+   "answer": "12 périodes de décompte",
+   "answer_aliases": [
+    "douze périodes de décompte",
+    "12 périodes de décompte"
+   ]
+  },
+  "it": {
+   "answer": "12 periodi di conteggio",
+   "answer_aliases": [
+    "dodici periodi di conteggio",
+    "12 periodi di conteggio"
+   ]
+  },
+  "summary": "auto fix of the pre-assessment note: Correct temporal item (6 -> 12 periods). Answer '12' should carry the unit ('12 Abrechnungsperioden').",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-13",
+   "prompt_version": "auto-fix-v1 (template nemotron-rewrite-v1) sha256:8a561cfe5958"
+  }
+ },
+ "nmu-0001": {
+  "action": "patch",
+  "kind": "auto_fix",
+  "all": {},
+  "de": {
+   "question": "Wie hoch darf der Mindestbeitrag für Nichterwerbstätige in der Erwerbsersatzordnung (EO) höchstens betragen?",
+   "near_miss_answers": [
+    "50 Franken",
+    "1250 Franken"
+   ]
+  },
+  "fr": {
+   "question": "Quel est le montant maximal de la cotisation minimale par an pour les assurés n'exerçant aucune activité lucrative dans l'ordonnance sur l'assurance perte de gain (APG) ?",
+   "near_miss_answers": [
+    "50 francs",
+    "1250 francs"
+   ]
+  },
+  "it": {
+   "question": "Qual è l'importo massimo del contributo minimo all'anno per gli assicurati che non esercitano un'attività lucrativa nell'ordinanza sull'assicurazione per la perdita di guadagno (IPG)?",
+   "near_miss_answers": [
+    "50 franchi",
+    "1250 franchi"
+   ]
+  },
+  "summary": "auto fix of the pre-assessment note: Correct temporal item (24 -> 25 CHF). Use the statutory term 'Erwerbsersatzordnung (EO)'; drop near miss '0,5 Prozent' (different unit).",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-13",
+   "prompt_version": "auto-fix-v1 (template nemotron-rewrite-v1) sha256:8a561cfe5958"
+  }
+ },
+ "nmu-0009": {
+  "action": "patch",
+  "kind": "auto_fix",
+  "all": {},
+  "de": {
+   "near_miss_answers": [
+    "Wenn die versicherte Person ohne sofortige Behandlung gesundheitliche Schäden befürchten muss",
+    "Wenn die Gesundheit anderer Personen gefährdet werden kann",
+    "Wenn die Behandlung sofort durchgeführt werden muss"
+   ]
+  },
+  "fr": {
+   "near_miss_answers": [
+    "Lorsque l'assuré doit craindre une atteinte à la santé en l'absence de traitement immédiat",
+    "Lorsque la santé d'autres personnes peut être mise en danger",
+    "Lorsque le traitement doit être effectué immédiatement"
+   ]
+  },
+  "it": {
+   "near_miss_answers": [
+    "Quando l'assicurato deve temere danni alla salute in assenza di un trattamento immediato",
+    "Quando la salute di altre persone può essere messa in pericolo",
+    "Quando il trattamento deve essere eseguito immediatamente"
+   ]
+  },
+  "summary": "auto fix of the pre-assessment note: Definition item is answerable; near misses are implausible, replace them.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-13",
+   "prompt_version": "auto-fix-v1 (template nemotron-rewrite-v1) sha256:8a561cfe5958"
+  }
+ },
+ "nmu-0002": {
+  "action": "patch",
+  "kind": "auto_fix",
+  "all": {},
+  "de": {
+   "question": "Welchen gesamten Jahreslohn muss ein nicht obligatorisch versicherter Arbeitnehmer, der im Dienste mehrerer Arbeitgeber steht, übersteigen, um sich freiwillig versichern lassen zu können?"
+  },
+  "fr": {
+   "question": "Quel salaire annuel total doit dépasser un salarié non obligatoirement assuré, au service de plusieurs employeurs, pour pouvoir s'assurer à titre facultatif ?"
+  },
+  "it": {
+   "question": "Quale salario complessivo annuo deve superare un lavoratore non assicurato obbligatoriamente, al servizio di vari datori di lavoro, per potersi assicurare facoltativamente?"
+  },
+  "summary": "auto fix of the pre-assessment note: Correct temporal item. 'Ab welchem' vs. statute 'übersteigt': rephrase to 'Welchen Jahreslohn muss ... übersteigen'.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-13",
+   "prompt_version": "auto-fix-v1 (template nemotron-rewrite-v1) sha256:8a561cfe5958"
+  }
+ },
+ "nmu-0007": {
+  "action": "patch",
+  "kind": "auto_fix",
+  "all": {
+   "question_type": "numeric",
+   "answer_type": "number"
+  },
+  "de": {
+   "question": "In der Krankenversicherung: Wie viel Prozent der Forderungen muss der Kanton zusätzlich übernehmen, damit der Versicherer ihm diese abtritt?",
+   "answer": "fünf Prozent",
+   "answer_aliases": [
+    "5 Prozent",
+    "5 %",
+    "fünf Prozent"
+   ],
+   "near_miss_answers": [
+    "10 Prozent",
+    "15 Prozent",
+    "20 Prozent"
+   ],
+   "source.evidence": "fünf Prozent"
+  },
+  "fr": {
+   "question": "Dans l'assurance-maladie: Quel pourcentage des créances le canton doit-il prendre en charge en plus pour que l’assureur lui cède ces créances?",
+   "answer": "5 %",
+   "answer_aliases": [
+    "5 %",
+    "5 pour cent",
+    "cinq pour cent"
+   ],
+   "near_miss_answers": [
+    "10 %",
+    "15 %",
+    "20 %"
+   ],
+   "source.evidence": "5 % supplémentaires"
+  },
+  "it": {
+   "question": "Nell'assicurazione malattia: Quale percentuale dei crediti il Cantone deve assumere in più perché l’assicuratore gli ceda questi crediti?",
+   "answer": "5 per cento",
+   "answer_aliases": [
+    "5 per cento",
+    "5%",
+    "cinque per cento"
+   ],
+   "near_miss_answers": [
+    "10 per cento",
+    "15 per cento",
+    "20 per cento"
+   ],
+   "source.evidence": "5 per cento"
+  },
+  "summary": "auto fix of the pre-assessment note: Outdated answer is a different rule, not an answer to the question; question contains the trigger. Rewrite as numeric: share the canton must take over (5 percent).",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-13",
+   "prompt_version": "auto-fix-v1 (template nemotron-rewrite-v1) sha256:8a561cfe5958"
+  }
+ },
+ "nmu-0003": {
+  "action": "patch",
+  "kind": "auto_fix",
+  "all": {},
+  "de": {
+   "question": "In der beruflichen Vorsorge: Wie hoch ist der mindestens zu versichernde Betrag für obligatorisch versicherte Personen, die bei einem Arbeitgeber einen massgebenden AHV-Lohn beziehen?",
+   "near_miss_answers": [
+    "22 680 Franken",
+    "22 680"
+   ]
+  },
+  "fr": {
+   "question": "Dans la prévoyance professionnelle : Quel est le montant minimal qui doit être assuré pour les personnes assurées obligatoirement qui perçoivent d'un même employeur un salaire AVS ?",
+   "near_miss_answers": [
+    "22 680 francs",
+    "22 680"
+   ]
+  },
+  "it": {
+   "question": "Nella previdenza professionale: Qual è l'importo minimo che deve essere assicurato per le persone assicurate obbligatoriamente che percepiscono da un datore di lavoro un salario determinante AVS ?",
+   "near_miss_answers": [
+    "22 680 franchi",
+    "22 680"
+   ]
+  },
+  "summary": "auto fix of the pre-assessment note: Question states the current threshold 22 680 (itself changed from 22 050) and so leaks the version; near miss '3780' equals the gold. Remove the threshold from the question, replace the near miss.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-13",
+   "prompt_version": "auto-fix-v1 (template nemotron-rewrite-v1) sha256:8a561cfe5958"
+  }
+ },
+ "nmu-0013": {
+  "action": "patch",
+  "kind": "auto_fix",
+  "all": {
+   "question_type": "procedural"
+  },
+  "de": {
+   "question": "Was können Bezieher einer vorzeitig bezogenen Altersrente verlangen?"
+  },
+  "fr": {
+   "question": "Que peuvent réclamer les bénéficiaires d'une rente de vieillesse anticipée ?",
+   "source.evidence": "Les personnes qui perçoivent un pourcentage de la rente de manière anticipée peuvent demander une fois l’augmentation de ce pourcentage."
+  },
+  "it": {
+   "question": "Cosa possono chiedere i titolari di una rendita di vecchiaia riscossa in anticipo ?",
+   "source.evidence": "Chi ha anticipato la riscossione di una percentuale della rendita può chiedere, una sola volta, l’aumento di tale percentuale."
+  },
+  "summary": "auto fix of the pre-assessment note: Outdated answer ('wird gekürzt') does not answer the question; make it a non-temporal procedural item.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-13",
+   "prompt_version": "auto-fix-v1 (template nemotron-rewrite-v1) sha256:8a561cfe5958"
+  }
+ },
+ "nmv-0011": {
+  "action": "patch",
+  "kind": "auto_fix",
+  "all": {},
+  "de": {
+   "question": "Welche Gutschriften werden in der AHV neben Beitragsjahren und Erwerbseinkommen für die Rentenberechnung berücksichtigt?"
+  },
+  "fr": {
+   "question": "Outre les années de cotisation et les revenus d’activité lucrative, quelles bonifications entrent dans le calcul de la rente dans l'AVS ?"
+  },
+  "it": {
+   "question": "Oltre agli anni di contribuzione e ai redditi da attività lucrativa, quali accrediti concorrono al calcolo della rendita nell'AVS ?"
+  },
+  "summary": "auto fix of the pre-assessment note: Answer is correct and unique, but the question lacks context; add 'in der AHV' (and FR/IT equivalent) so it is understandable without the article.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-13",
+   "prompt_version": "auto-fix-v1 (template nemotron-rewrite-v1) sha256:8a561cfe5958"
+  }
+ },
+ "nmv-0008": {
+  "action": "patch",
+  "kind": "auto_fix",
+  "all": {},
+  "de": {
+   "question": "Wie hoch ist der ordentliche Assistenzbeitrag pro Stunde in der Invalidenversicherung?"
+  },
+  "fr": {
+   "question": "À combien s'élève le taux ordinaire de la contribution d’assistance par heure dans l'assurance-invalidité?"
+  },
+  "it": {
+   "question": "A quanto ammonta il tasso ordinario del contributo per l’assistenza all’ora nell'assicurazione per l'invalidità?"
+  },
+  "summary": "auto fix of the pre-assessment note: Correct amount and real change (34.30 -> 35.30), but Abs. 2/3 set other hourly rates (special qualifications, night service); add 'ordentlicher/allgemeiner Ansatz' to the question in DE/FR/IT.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-13",
+   "prompt_version": "auto-fix-v1 (template nemotron-rewrite-v1) sha256:8a561cfe5958"
+  }
+ },
+ "nmv-0010": {
+  "action": "patch",
+  "kind": "auto_fix",
+  "all": {},
+  "de": {
+   "question": "Wie hoch ist der Bundesbeitrag an die AHV in Prozent der jährlichen Ausgaben der AHV?"
+  },
+  "fr": {
+   "question": "Quel est le pourcentage de la contribution de la Confédération à l'AVS par rapport aux dépenses annuelles de l'AVS ?"
+  },
+  "it": {
+   "question": "A quanto ammonta il contributo della Confederazione all'AVS in percentuale delle uscite annue dell'AVS?",
+   "near_miss_answers": [
+    "20,0 per cento",
+    "20,5 per cento",
+    "19,5 per cento"
+   ]
+  },
+  "summary": "auto fix of the pre-assessment note: Name the scheme in the question ('Bundesbeitrag an die AHV'), since 'der Versicherung' is ambiguous across schemes; add near-misses for IT for parity.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-13",
+   "prompt_version": "auto-fix-v1 (template nemotron-rewrite-v1) sha256:8a561cfe5958"
+  }
+ },
+ "nmv-0012": {
+  "action": "patch",
+  "kind": "auto_fix",
+  "all": {},
+  "de": {
+   "answer": "Referenzalter",
+   "near_miss_answers": [
+    "20. Altersjahr"
+   ]
+  },
+  "fr": {
+   "answer": "âge de référence",
+   "near_miss_answers": [
+    "20 ans révolus"
+   ]
+  },
+  "it": {
+   "answer": "età di riferimento",
+   "near_miss_answers": [
+    "20 anni"
+   ]
+  },
+  "summary": "auto fix of the pre-assessment note: Genuine change (women 64/men 65 -> reference age); make the canonical answer 'Referenzalter' (article ref only as alias) and remove the near-miss 'Artikel 21 Absatz 1', which denotes the correct answer.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-13",
+   "prompt_version": "auto-fix-v1 (template nemotron-rewrite-v1) sha256:8a561cfe5958"
+  }
+ },
+ "nmv-0026": {
+  "action": "patch",
+  "kind": "auto_fix",
+  "all": {},
+  "de": {
+   "question": "Welche Voraussetzung für die Einkommensteilung in der AHV ist ausschließlich an das Alter der Ehegatten geknüpft?"
+  },
+  "fr": {
+   "question": "Quelle condition pour la répartition des revenus dans l'AVS est exclusivement liée à l'âge des conjoints?"
+  },
+  "it": {
+   "question": "Quale presupposto per la ripartizione dei redditi nell'AVS è legato esclusivamente all'età dei coniugi?"
+  },
+  "summary": "auto fix of the pre-assessment note: Ambiguous: 'beide Ehegatten' also fits lit. d (both receive an IV pension), which is listed as near-miss; restrict the question to the age-based trigger without revealing the answer.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-13",
+   "prompt_version": "auto-fix-v1 (template nemotron-rewrite-v1) sha256:8a561cfe5958"
+  }
+ },
+ "nmv-0021": {
+  "action": "patch",
+  "kind": "auto_fix",
+  "all": {},
+  "de": {
+   "question": "Welchen Betrag erstattet der Versicherer dem Kanton zurück, wenn dieser eine Prämienverbilligung für einen Zeitraum ausrichtet, für den der Versicherer bereits eine Forderung in seiner Schlussabrechnung bekanntgegeben hat, oder eine Prämienverbilligung wegen Doppelversicherung annulliert?",
+   "near_miss_answers": [
+    "den Betrag der ganzen Prämienverbilligung",
+    "einen pauschalen Prozentsatz",
+    "den Betrag der bekannten Forderung"
+   ]
+  },
+  "fr": {
+   "question": "Quel montant l’assureur rembourse-t-il au canton lorsque celui-ci accorde une réduction de primes pour une période pour laquelle l’assureur a déjà annoncé une créance dans son décompte final, ou annule une réduction de primes en raison d’une double assurance?",
+   "near_miss_answers": [
+    "le montant intégral de la réduction de primes",
+    "un pourcentage fixe",
+    "le montant de la créance annoncée"
+   ]
+  },
+  "it": {
+   "question": "Quale importo l’assicuratore rimborsa al Cantone quando questi accorda una riduzione del premio per un periodo per il quale l’assicuratore ha già comunicato nel suo conteggio finale un credito, o annulla tale riduzione a causa di una doppia assicurazione?",
+   "near_miss_answers": [
+    "l’ammontare dell’intera riduzione del premio",
+    "una percentuale fissa",
+    "l’importo del credito comunicato"
+   ]
+  },
+  "summary": "auto fix of the pre-assessment note: Real change (85 % -> amount borne by the canton), but near-miss 'den vom Kanton übernommenen Betrag' is equivalent to the answer, and the question cites only Art. 64a Abs. 3 while the text now also covers 3bis and annulment for double insurance; rewrite without article refs and fix near-misses.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-13",
+   "prompt_version": "auto-fix-v1 (template nemotron-rewrite-v1) sha256:8a561cfe5958"
+  }
+ },
+ "nmv-0019": {
+  "action": "patch",
+  "kind": "auto_fix",
+  "all": {},
+  "de": {
+   "question": "Wie hoch ist der Abzug vom statistisch bestimmten Wert, wenn die versicherte Person aufgrund ihrer Invalidität nur noch mit einer funktionellen Leistungsfähigkeit von 50 Prozent oder weniger tätig sein kann?"
+  },
+  "fr": {
+   "question": "Quel pourcentage est déduit de la valeur statistique lorsque, en raison de son invalidité, l'assuré ne peut travailler qu'avec une capacité fonctionnelle de 50 % ou moins ?"
+  },
+  "it": {
+   "question": "Quale percentuale viene dedotta dal valore determinato statisticamente quando l'assicurato, a causa dell'invalidità, può lavorare soltanto con una capacità funzionale pari o inferiore al 50 per cento?",
+   "near_miss_answers": [
+    "50 per cento"
+   ]
+  },
+  "summary": "auto fix of the pre-assessment note: Genuine change (10% -> 20% deduction at functional capacity <= 50%); remove the reference 'nach Artikel 49 Absatz 1bis' / 'art. 49 al. 1bis' from DE/FR/IT questions and add IT near-misses.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-13",
+   "prompt_version": "auto-fix-v1 (template nemotron-rewrite-v1) sha256:8a561cfe5958"
+  }
+ },
+ "nmv-0027": {
+  "action": "patch",
+  "kind": "auto_fix",
+  "all": {},
+  "fr": {
+   "answer": "31 décembre précédant le jour où le premier des conjoints atteint l'âge de référence",
+   "near_miss_answers": [
+    "le 1er janvier de l'année qui suit celle au cours de laquelle l'assuré a eu 20 ans révolus"
+   ]
+  },
+  "it": {
+   "answer": "31 dicembre che precede il raggiungimento dell'età di riferimento da parte del coniuge più anziano",
+   "near_miss_answers": [
+    "il 1° gennaio che segue il compimento dei 20 anni"
+   ]
+  },
+  "summary": "auto fix of the pre-assessment note: Genuine AHV 21 change and correctly read; add FR/IT near-misses (currently empty) and accept a shorter core answer ('31. Dezember vor dem Tag, an dem der erste Ehegatte das Referenzalter erreicht') across languages.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-13",
+   "prompt_version": "auto-fix-v1 (template nemotron-rewrite-v1) sha256:8a561cfe5958"
+  }
+ },
+ "nmv-0033": {
+  "action": "patch",
+  "kind": "auto_fix",
+  "all": {},
+  "de": {
+   "question": "Können kontrollfreie Tage einzeln bezogen werden?",
+   "near_miss_answers": [
+    "Meldung spätestens 14 Tage im Voraus",
+    "Gelten als bezogen ohne entschuldbaren Grund",
+    "Bezug grundsätzlich wochenweise"
+   ]
+  },
+  "fr": {
+   "question": "Les jours sans contrôle peuvent-ils être pris individuellement ?",
+   "near_miss_answers": [
+    "Avis au moins deux semaines à l’avance",
+    "Considérés comme pris sans motif valable",
+    "Prise par semaine entière"
+   ]
+  },
+  "it": {
+   "question": "I giorni esenti dall’obbligo di controllo possono essere fruiti singolarmente?",
+   "near_miss_answers": [
+    "Comunicazione con almeno 14 giorni di anticipo",
+    "Considerati presi senza motivo scusabile",
+    "Fruizione in blocchi settimanali"
+   ]
+  },
+  "summary": "auto fix of the pre-assessment note: Old answer 'nur wochenweise' does not answer 'under which condition can daily withdrawal be granted' (no condition existed before); rephrase e.g. as 'Can control-free days be taken individually?' or make it non-temporal, and fix the fragmentary DE near-misses.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-13",
+   "prompt_version": "auto-fix-v1 (template nemotron-rewrite-v1) sha256:8a561cfe5958"
+  }
+ },
+ "nmv-0042": {
+  "action": "patch",
+  "kind": "auto_fix",
+  "all": {},
+  "de": {
+   "question": "In der obligatorischen Krankenpflegeversicherung: Wie wird der Tarif für Analysen im Praxislaboratorium festgelegt?",
+   "answer": "nach Artikel 46 vereinbart werden kann",
+   "answer_aliases": [
+    "nach Art. 46 vereinbart werden kann",
+    "nach Artikel 46 vereinbart werden kann"
+   ],
+   "near_miss_answers": [
+    "nach Artikel 47 vereinbart werden kann",
+    "nach Artikel 48 vereinbart werden kann"
+   ],
+   "source.evidence": "nach Artikel 46 vereinbart werden kann"
+  },
+  "fr": {
+   "question": "Dans l'assurance obligatoire des soins: comment le tarif pour les analyses du laboratoire de cabinet est-il déterminé?",
+   "answer": "conformément à l'art. 46",
+   "answer_aliases": [
+    "conformément à l'article 46",
+    "conformément à l'art. 46"
+   ],
+   "near_miss_answers": [
+    "conformément à l'art. 47",
+    "conformément à l'art. 48"
+   ],
+   "source.evidence": "conformément à l'art. 46"
+  },
+  "it": {
+   "question": "Nell'assicurazione obbligatoria delle cure medico-sanitarie: come viene stabilita la tariffa per le analisi nel laboratorio dello studio medico?",
+   "answer": "secondo l’articolo 46",
+   "answer_aliases": [
+    "secondo l'articolo 46",
+    "secondo l’art. 46"
+   ],
+   "near_miss_answers": [
+    "secondo l’articolo 47",
+    "secondo l’articolo 48"
+   ],
+   "source.evidence": "secondo l’articolo 46"
+  },
+  "summary": "auto fix of the pre-assessment note: Answer is a bare article number; the real change (tariff for practice-lab analyses now agreed per Art. 46 instead of set per Art. 46 and 48) should be asked substantively, and the DE question already contains 'vereinbart', which hints at the answer.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-13",
+   "prompt_version": "auto-fix-v1 (template nemotron-rewrite-v1) sha256:8a561cfe5958"
+  }
+ },
+ "nmv-0054": {
+  "action": "patch",
+  "kind": "auto_fix",
+  "all": {},
+  "fr": {
+   "question": "À qui s'adresse l'obligation de versement de l'employeur pour la différence entre l'indemnité et le salaire contractuel en cas de perte de travail à prendre en considération avec tâches de formation?",
+   "answer": "formateurs",
+   "answer_aliases": [
+    "aux formateurs",
+    "formateurs visés à l’art. 32, al. 6"
+   ]
+  },
+  "it": {
+   "answer": "formatori",
+   "answer_aliases": [
+    "ai formatori",
+    "formatori di cui all’articolo 32 capoverso 6"
+   ]
+  },
+  "summary": "auto fix of the pre-assessment note: Correct; fix FR 'perte de travail comptable' to 'à prendre en considération' and make the FR/IT canonical answers 'formateurs'/'formatori' without the article reference.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-13",
+   "prompt_version": "auto-fix-v1 (template nemotron-rewrite-v1) sha256:8a561cfe5958"
+  }
+ },
+ "nmv-0057": {
+  "action": "patch",
+  "kind": "auto_fix",
+  "all": {},
+  "de": {
+   "question": "In der obligatorischen Krankenpflegeversicherung: Welcher Wohnortstaat für versicherungspflichtige Familienangehörige ist weder ein Mitgliedstaat der Europäischen Union noch Island noch Norwegen?"
+  },
+  "fr": {
+   "question": "Dans l'assurance-maladie obligatoire: quel État de résidence pour les membres de la famille tenus de s'assurer n'est ni un État membre de l'Union européenne, ni l'Islande, ni la Norvège?"
+  },
+  "it": {
+   "question": "Nell'assicurazione obbligatoria delle cure medico-sanitarie: quale Stato di residenza per i familiari tenuti ad assicurarsi non è né uno Stato membro dell'Unione europea, né l'Islanda, né la Norvegia?"
+  },
+  "summary": "auto fix of the pre-assessment note: Asking for the 'last state in the enumeration' is artificial; rephrase as a substantive question (e.g. are family members residing in the UK insured with the same insurer?) and avoid overlap with nmv-0114/nmv-0117.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-13",
+   "prompt_version": "auto-fix-v1 (template nemotron-rewrite-v1) sha256:8a561cfe5958"
+  }
+ },
+ "nmv-0049": {
+  "action": "patch",
+  "kind": "auto_fix",
+  "all": {},
+  "de": {
+   "question": "Wird die sechsmonatige Frist für den Bezug des Urlaubs des anderen Elternteils während des Urlaubs nach dem Tod der Mutter stillgestellt?"
+  },
+  "fr": {
+   "question": "Le délai de six mois pour prendre le congé de l'autre parent est-il suspendu pendant le congé après le décès de la mère ?"
+  },
+  "it": {
+   "question": "Il termine di sei mesi per fruire del congedo dell'altro genitore è sospeso durante il congedo dopo la morte della madre ?"
+  },
+  "summary": "auto fix of the pre-assessment note: Question relies on article numbers (329g/329gbis) and is not understandable without them; rephrase by describing the leave types (6-month period for the other parent's leave, suspended during the leave after the mother's death) and check the future-change warning.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-13",
+   "prompt_version": "auto-fix-v1 (template nemotron-rewrite-v1) sha256:8a561cfe5958"
+  }
+ },
+ "nmv-0050": {
+  "action": "patch",
+  "kind": "auto_fix",
+  "all": {},
+  "de": {
+   "question": "Bei welcher Änderung der Höhe der AHV-Rente wird die Komplementärrente in der Unfallversicherung angepasst?"
+  },
+  "fr": {
+   "question": "Lors de quelle modification du montant de la rente AVS la rente complémentaire est-elle adaptée dans l'assurance-accidents?",
+   "source.evidence": "Elle est adaptée lorsque la rente de l'assurance-vieillesse et survivants est modifiée à la suite d’un ajournement ou d’un versement anticipé, ou lorsque le cercle des bénéficiaires de rentes de l'assurance-vieillesse et survivants ou de l'assurance-invalidité est modifié."
+  },
+  "it": {
+   "question": "In caso di quale modifica dell'importo della rendita AVS viene adeguata la rendita complementare nell'assicurazione contro gli infortuni?"
+  },
+  "summary": "auto fix of the pre-assessment note: Correct answer, but the paragraph also adapts the complementary pension when the circle of beneficiaries changes; clarify in DE/FR/IT that the question concerns changes of the AHV pension amount itself.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-13",
+   "prompt_version": "auto-fix-v1 (template nemotron-rewrite-v1) sha256:8a561cfe5958"
+  }
+ },
+ "nmv-0072": {
+  "action": "patch",
+  "kind": "auto_fix",
+  "all": {},
+  "de": {
+   "question": "In den Ergänzungsleistungen zur AHV/IV: Welcher Tatbestand führt zu einer Anpassung der jährlichen Ergänzungsleistung, wenn eine tägliche Gebühr nicht für alle Tage eines Monats in Rechnung gestellt wird?"
+  },
+  "fr": {
+   "question": "Dans les prestations complémentaires AVS/AI: quel fait justifie une adaptation de la prestation complémentaire annuelle lorsqu'une redevance journalière n'est pas facturée pour tous les jours d'un mois ?"
+  },
+  "it": {
+   "question": "Nelle prestazioni complementari AVS/AI: quale fattispecie comporta un adeguamento della prestazione complementare annua quando una retta giornaliera non è fatturata per tutti i giorni di un mese?"
+  },
+  "summary": "auto fix of the pre-assessment note: The question nearly reveals the answer ('Tagestaxe' implies a home or hospital stay); rephrase, e.g. ask for the 120 CHF threshold below which adjustment can be waived, or ask a yes/no about a partial-month home stay.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-13",
+   "prompt_version": "auto-fix-v1 (template nemotron-rewrite-v1) sha256:8a561cfe5958"
+  }
+ },
+ "nmv-0068": {
+  "action": "patch",
+  "kind": "auto_fix",
+  "all": {},
+  "de": {
+   "question": "In der Arbeitslosenversicherung: Was darf je Kontrollperiode nicht mehr als fünf betragen, damit die zweimonatige Wartezeit nach Beendigung des Arbeitsverhältnisses entfällt?",
+   "near_miss_answers": [
+    "fünf Karenztage",
+    "fünf Wartezeitentage",
+    "fünf Sperrtage"
+   ]
+  },
+  "fr": {
+   "question": "Dans l'assurance-chômage: quel élément ne doit pas dépasser cinq par période de contrôle pour que le délai d’attente de deux mois après la fin du rapport de travail devienne caduc?",
+   "near_miss_answers": [
+    "cinq jours de carence",
+    "cinq jours de délai",
+    "cinq jours de suspension"
+   ]
+  },
+  "it": {
+   "question": "Nell'assicurazione contro la disoccupazione: quale elemento non deve superare i cinque per periodo di controllo affinché il periodo di attesa di due mesi dalla fine del rapporto di lavoro non debba essere compiuto?",
+   "near_miss_answers": [
+    "cinque giorni di carenza",
+    "cinque giorni di sospensione",
+    "cinque giorni di attesa"
+   ]
+  },
+  "summary": "auto fix of the pre-assessment note: Real change (controlled unemployment days instead of work days), but the question refers to 'Absatz 4' without explaining the waiting period and the near-misses are of a different type; describe the special waiting period and use same-type near-misses.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-13",
+   "prompt_version": "auto-fix-v1 (template nemotron-rewrite-v1) sha256:8a561cfe5958"
+  }
+ },
+ "nmv-0075": {
+  "action": "patch",
+  "kind": "auto_fix",
+  "all": {},
+  "de": {
+   "question": "Für welchen Fall regelt der Bundesrat in der AHV die Kürzung der beiden Renten neben der unvollständigen Beitragsdauer?"
+  },
+  "fr": {
+   "question": "Pour quel cas le Conseil fédéral règle-t-il en AVS la réduction des deux rentes outre la durée de cotisation incomplète?"
+  },
+  "it": {
+   "question": "Per quale caso il Consiglio federale disciplina nell'AVS la riduzione delle due rendite oltre alla durata di contribuzione incompleta?"
+  },
+  "summary": "auto fix of the pre-assessment note: 'Last case group in the enumeration' is artificial and concerns Federal Council implementing powers; rephrase substantively (e.g. whether the couple cap also applies when only part of the pension is drawn), and old answer must answer the same question.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-13",
+   "prompt_version": "auto-fix-v1 (template nemotron-rewrite-v1) sha256:8a561cfe5958"
+  }
+ },
+ "nmv-0084": {
+  "action": "patch",
+  "kind": "auto_fix",
+  "all": {},
+  "de": {
+   "near_miss_answers": [
+    "diagnostische Massnahmen nicht unnötig wiederholt werden",
+    "Massnahmen zur Sicherstellung der Wirtschaftlichkeit",
+    "Konsultation mehrerer Leistungserbringer"
+   ]
+  },
+  "fr": {
+   "near_miss_answers": [
+    "éviter une réitération inutile d’actes diagnostiques",
+    "mesures pour garantir l’économicité des prestations",
+    "consultation de plusieurs fournisseurs de prestations"
+   ]
+  },
+  "it": {
+   "near_miss_answers": [
+    "sia evitata una ripetizione inutile di atti diagnostici",
+    "misure per garantire l’economicità delle prestazioni",
+    "consultazione di più fornitori di prestazioni"
+   ]
+  },
+  "summary": "auto fix of the pre-assessment note: Correct; replace near-misses 'einheitliche Kriterien' and 'klinische Leitlinien' (and FR/IT equivalents), which are correct partial answers, with genuinely wrong alternatives.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-13",
+   "prompt_version": "auto-fix-v1 (template nemotron-rewrite-v1) sha256:8a561cfe5958"
+  }
+ },
+ "nmv-0093": {
+  "action": "patch",
+  "kind": "auto_fix",
+  "all": {},
+  "it": {
+   "near_miss_answers": [
+    "le stesse norme della rendita per orfani",
+    "altre norme rispetto alla rendita di vecchiaia",
+    "norme della rendita per orfani"
+   ]
+  },
+  "summary": "auto fix of the pre-assessment note: Correct and useful; fix the garbled IT near-miss 'altre norme della rendita di vecchiaia'.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-13",
+   "prompt_version": "auto-fix-v1 (template nemotron-rewrite-v1) sha256:8a561cfe5958"
+  }
+ },
+ "nmv-0082": {
+  "action": "patch",
+  "kind": "auto_fix",
+  "all": {},
+  "de": {
+   "question": "Welcher Betrag der Altersrente wird bei einem Vorbezug für die Berechnung der jährlichen Ergänzungsleistung als Einnahme angerechnet?"
+  },
+  "fr": {
+   "question": "Quel montant de la rente de vieillesse est pris en compte comme revenu pour le calcul de la prestation complémentaire annuelle en cas de perception anticipée ?"
+  },
+  "it": {
+   "question": "Quale importo della rendita di vecchiaia viene computato come reddito per il calcolo della prestazione complementare annua in caso di riscossione anticipata ?"
+  },
+  "summary": "auto fix of the pre-assessment note: Real change (whole reduced pension counts after anticipation) but automatic error evidence.not_in_article must be resolved, and the outdated 'die gekürzte Rente' is a substring of the current answer; rephrase to ask whether the whole pension or only the anticipated part counts.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-13",
+   "prompt_version": "auto-fix-v1 (template nemotron-rewrite-v1) sha256:8a561cfe5958"
+  }
+ },
+ "nmv-0080": {
+  "action": "patch",
+  "kind": "auto_fix",
+  "all": {},
+  "de": {
+   "question": "Was prüft der Experte für berufliche Vorsorge in der Pensionskasse zusätzlich periodisch auf Einhaltung der Gesetze?"
+  },
+  "fr": {
+   "question": "Qu'examine l'expert en prévoyance professionnelle dans la caisse de pension en outre périodiquement pour sa conformité à la loi ?",
+   "answer": "dispositions réglementaires de nature actuarielle et relatives aux prestations et au financement",
+   "answer_aliases": [
+    "les dispositions réglementaires de nature actuarielle et relatives aux prestations et au financement",
+    "dispositions réglementaires de nature actuarielle et relatives aux prestations et au financement"
+   ]
+  },
+  "it": {
+   "question": "Cosa verifica inoltre periodicamente l'esperto in materia di previdenza professionale nel fondo pensione per la conformità con le prescrizioni legali ?",
+   "answer": "disposizioni attuariali regolamentari inerenti alle prestazioni e al finanziamento",
+   "answer_aliases": [
+    "le disposizioni attuariali regolamentari inerenti alle prestazioni e al finanziamento",
+    "disposizioni attuariali regolamentari inerenti alle prestazioni e al finanziamento"
+   ]
+  },
+  "summary": "auto fix of the pre-assessment note: FR and IT answers are truncated/ungrammatical ('...et relatives', missing 'disposizioni'); fix them to the full phrase and add clearer context (pension fund).",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-13",
+   "prompt_version": "auto-fix-v1 (template nemotron-rewrite-v1) sha256:8a561cfe5958"
+  }
+ },
+ "nmv-0097": {
+  "action": "patch",
+  "kind": "auto_fix",
+  "all": {},
+  "de": {
+   "near_miss_answers": [
+    "die Pflegefachperson allein",
+    "der Versicherer"
+   ]
+  },
+  "fr": {
+   "near_miss_answers": [
+    "l'infirmier seul",
+    "l'assureur"
+   ]
+  },
+  "it": {
+   "answer": "un medico e un infermiere",
+   "near_miss_answers": [
+    "l'infermiere da solo",
+    "l'assicuratore"
+   ]
+  },
+  "summary": "auto fix of the pre-assessment note: Genuine change (joint prescription by doctor and nurse); fix IT answer fragment 'un medico e da un infermiere' and drop near-misses 'der Spitalarzt'/'le médecin de l'hôpital'/'il medico ospedaliero', which match the formerly valid answer.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-13",
+   "prompt_version": "auto-fix-v1 (template nemotron-rewrite-v1) sha256:8a561cfe5958"
+  }
+ },
+ "nmv-0090": {
+  "action": "patch",
+  "kind": "auto_fix",
+  "all": {},
+  "de": {
+   "question": "In der Alters- und Hinterlassenenversicherung: Welche Ausnahme gilt für den Endzeitpunkt der Einkommensaufteilung?",
+   "answer": "vorbezogenen Rente",
+   "answer_aliases": [
+    "vorbezogene Rente",
+    "vorbezogenen Rente (Art. 40)"
+   ],
+   "near_miss_answers": [
+    "normale Altersrente",
+    "Versicherungsfall"
+   ]
+  },
+  "fr": {
+   "question": "Dans l'assurance-vieillesse et survivants: quelle exception marque la fin de la période de partage?",
+   "answer": "versement anticipé",
+   "answer_aliases": [
+    "versement anticipé de la rente",
+    "versement anticipé (art. 40)"
+   ],
+   "near_miss_answers": [
+    "survenance du risque assuré",
+    "rente de vieillesse"
+   ]
+  },
+  "it": {
+   "question": "Nell'assicurazione per la vecchiaia e per i superstiti: quale eccezione segna la fine del periodo di ripartizione?",
+   "answer": "riscossione anticipata",
+   "answer_aliases": [
+    "riscossione anticipata della rendita",
+    "riscossione anticipata (art. 40)"
+   ],
+   "near_miss_answers": [
+    "riscossione normale",
+    "evento assicurato"
+   ],
+   "source.evidence": "fatto salvo il caso della riscossione anticipata della rendita secondo l’articolo 40"
+  },
+  "summary": "auto fix of the pre-assessment note: Misreading: the Art. 40 exception means early withdrawal does not end the splitting period, not that the advance pension is excluded from splitting; rephrase the question and remove the nonsensical yes/no near-misses.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-13",
+   "prompt_version": "auto-fix-v1 (template nemotron-rewrite-v1) sha256:8a561cfe5958"
+  }
+ },
+ "nmv-0107": {
+  "action": "patch",
+  "kind": "auto_fix",
+  "all": {},
+  "de": {
+   "question": "Welche Kapitalkosten sind in der Aufzählung der anrechenbaren Bildungsmassnahmenkosten enthalten?"
+  },
+  "fr": {
+   "question": "Quels frais de capital sont mentionnés dans l'énumération des frais à prendre en compte pour les mesures de formation?"
+  },
+  "it": {
+   "question": "Quali costi di capitale sono indicati nell'elenco delle spese computabili per i provvedimenti di formazione?"
+  },
+  "summary": "auto fix of the pre-assessment note: Real change (only third-party capital costs count), but the positional question ('between Projektierungs- and Raumkosten') is a text-recall trick; ask whether equity or borrowed capital costs are chargeable.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-13",
+   "prompt_version": "auto-fix-v1 (template nemotron-rewrite-v1) sha256:8a561cfe5958"
+  }
+ },
+ "nmv-0112": {
+  "action": "patch",
+  "kind": "auto_fix",
+  "all": {},
+  "de": {
+   "question": "Mit dem Bezug welcher Altersrente erlischt der Anspruch auf eine Entschädigung in der EO?"
+  },
+  "fr": {
+   "question": "Avec la perception de quelle rente de vieillesse le droit à une allocation s'éteint-il dans le régime des APG?"
+  },
+  "it": {
+   "question": "Con la riscossione di quale rendita di vecchiaia si estingue il diritto a un'indennità nell'IPG?"
+  },
+  "summary": "auto fix of the pre-assessment note: Genuine change (only a whole old-age pension ends the entitlement); name the scheme correctly ('EO' / 'régime des APG' / 'IPG' instead of 'Erwerbsersatzversicherung' / 'assurance perte de gain').",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-13",
+   "prompt_version": "auto-fix-v1 (template nemotron-rewrite-v1) sha256:8a561cfe5958"
+  }
+ },
+ "nmv-0115": {
+  "action": "patch",
+  "kind": "auto_fix",
+  "all": {},
+  "de": {
+   "question": "In der obligatorischen Krankenpflegeversicherung: für Wohnsitz in welchen Staaten gilt die Tarifbegrenzung nach Referenzkanton bei stationärer Behandlung für Versicherte, die eine schweizerische Rente beziehen?"
+  },
+  "fr": {
+   "question": "Dans l'assurance-maladie obligatoire : pour une résidence dans quels États la limitation tarifaire selon le canton de référence s'applique-t-elle en cas de traitement stationnaire pour des assurés qui touchent une rente suisse ?"
+  },
+  "it": {
+   "question": "Nell'assicurazione malattie obbligatoria: per residenza in quali Stati si applica la limitazione tariffaria secondo il Cantone di riferimento in caso di cure ospedaliere per assicurati che percepiscono una rendita svizzera ?"
+  },
+  "summary": "auto fix of the pre-assessment note: Genuine change (United Kingdom added); add the condition that the insured draw a Swiss pension to the question in all languages and allow order-independent list matching.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-13",
+   "prompt_version": "auto-fix-v1 (template nemotron-rewrite-v1) sha256:8a561cfe5958"
+  }
+ },
+ "nmv-0120": {
+  "action": "patch",
+  "kind": "auto_fix",
+  "all": {},
+  "de": {
+   "near_miss_answers": [
+    "eine höhere Franchise",
+    "ein anderes Versicherungsmodell",
+    "eine Standardversicherung"
+   ]
+  },
+  "fr": {
+   "near_miss_answers": [
+    "une franchise plus élevée",
+    "un autre modèle d'assurance",
+    "une assurance standard"
+   ]
+  },
+  "it": {
+   "near_miss_answers": [
+    "una franchigia più alta",
+    "un'assicurazione standard"
+   ],
+   "source.evidence": "a un’assicurazione con bonus"
+  },
+  "summary": "auto fix of the pre-assessment note: Genuine change (any other insurance form -> bonus insurance only); remove IT near-miss 'un altro modello di assicurazione' (equals the formerly valid answer) and add DE/FR near-misses.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-13",
+   "prompt_version": "auto-fix-v1 (template nemotron-rewrite-v1) sha256:8a561cfe5958"
+  }
+ },
+ "nmv-0127": {
+  "action": "patch",
+  "kind": "auto_fix",
+  "all": {},
+  "de": {
+   "question": "Wer bestimmt den Kommissär bei einer kommissarischen Kassenverwaltung in der AHV?"
+  },
+  "fr": {
+   "question": "Qui désigne le commissaire lorsque la gestion par commissaire est ordonnée dans l'AVS?"
+  },
+  "it": {
+   "question": "Chi nomina il commissario quando si ordina l'amministrazione della cassa di compensazione da parte di un commissario nell'AVS?"
+  },
+  "summary": "auto fix of the pre-assessment note: Real change of competence (Department -> FSIO), but remove the article reference from the questions and reconsider practical relevance, since it is an internal supervisory detail.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-13",
+   "prompt_version": "auto-fix-v1 (template nemotron-rewrite-v1) sha256:8a561cfe5958"
+  }
+ },
+ "nmv-0117": {
+  "action": "patch",
+  "kind": "auto_fix",
+  "all": {},
+  "de": {
+   "question": "Welche Leistung gewähren die Kantone Grenzgängern mit Wohnsitz im Vereinigten Königreich in der obligatorischen Krankenpflegeversicherung?",
+   "answer": "Prämienverbilligungen",
+   "answer_aliases": [
+    "Prämienverbilligung",
+    "die Prämienverbilligungen"
+   ],
+   "near_miss_answers": [
+    "Prämienzuschüsse",
+    "Beitragsreduktionen",
+    "Kostenbeteiligungen"
+   ],
+   "source.evidence": "in einem Mitgliedstaat der Europäischen Union, in Island, in Norwegen oder im Vereinigten Königreich wohnen, Prämienverbilligungen: a. den Grenzgängern und Grenzgängerinnen sowie deren Familienangehörigen"
+  },
+  "fr": {
+   "question": "Quelle prestation les cantons accordent-ils aux frontaliers résidant au Royaume-Uni dans l'assurance-maladie obligatoire?",
+   "answer": "réduction des primes",
+   "answer_aliases": [
+    "une réduction des primes",
+    "réductions des primes"
+   ],
+   "near_miss_answers": [
+    "subsides",
+    "allocations",
+    "remboursements"
+   ],
+   "source.evidence": "une réduction des primes aux assurés de condition économique modeste désignés ci-après qui résident dans un État membre de l’Union européenne, en Islande, en Norvège ou au Royaume-Uni, soit: a. aux frontaliers ainsi qu’aux membres de leur famille"
+  },
+  "it": {
+   "question": "Quale prestazione concedono i Cantoni ai frontalieri residenti nel Regno Unito nell'assicurazione malattia obbligatoria?",
+   "answer": "riduzioni dei premi",
+   "answer_aliases": [
+    "riduzione dei premi",
+    "le riduzioni dei premi"
+   ],
+   "near_miss_answers": [
+    "sussidi",
+    "contributi",
+    "rimborsi"
+   ],
+   "source.evidence": "riduzioni dei premi ai seguenti assicurati di condizioni economiche modeste che risiedono in uno Stato membro dell’Unione europea, in Islanda, in Norvegia o nel Regno Unito: a. ai frontalieri e ai loro familiari"
+  },
+  "summary": "auto fix of the pre-assessment note: Real change (UK added), but the 'last state in the enumeration' framing is artificial and near-duplicates nmv-0057; rephrase as a substantive question (e.g. do cantons grant premium reductions to cross-border commuters living in the UK?) or merge.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-13",
+   "prompt_version": "auto-fix-v1 (template nemotron-rewrite-v1) sha256:8a561cfe5958"
+  }
+ },
+ "nmv-0017": {
+  "action": "patch",
+  "kind": "auto_fix",
+  "all": {},
+  "de": {
+   "near_miss_answers": [
+    "Vorsorgeguthaben der neuen Vorsorgeeinrichtung",
+    "Altersguthaben",
+    "Überobligatorische Vorsorgeguthaben"
+   ]
+  },
+  "fr": {
+   "near_miss_answers": [
+    "avoirs de prévoyance de la nouvelle institution",
+    "avoirs de vieillesse",
+    "avoirs surobligatoires"
+   ]
+  },
+  "it": {
+   "near_miss_answers": [
+    "avere di previdenza del nuovo istituto",
+    "avere di vecchiaia",
+    "avere soprabbligatorio"
+   ]
+  },
+  "summary": "auto fix of the pre-assessment note: Two correct answers: the paragraph names both remaining pension assets AND non-transferred vested benefits (Freizügigkeitsguthaben), and the latter is wrongly used as a near-miss; ask for both or narrow the question.",
+  "provenance": {
+   "generator": "nemotron",
+   "generator_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "generated_at": "2026-10-13",
+   "prompt_version": "auto-fix-v1 (template nemotron-rewrite-v1) sha256:8a561cfe5958"
+  }
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "core_id": "nmv-0027",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "error": null,
+ "content": "{\"fixed\": true, \"question_type\": \"short_answer\", \"answer_type\": \"noun_phrase\", \"de\": {\"question\": \"Bis wann erstreckt sich der Teilungszeitraum für Betreuungsgutschriften bei verheirateten Personen?\", \"answer\": \"31. Dezember vor dem Tag, an dem der erste Ehegatte das Referenzalter erreicht\", \"answer_aliases\": [\"vor dem Tag, an dem der erste Ehegatte das Referenzalter erreicht\", \"dem 31. Dezember vor dem Tag, an dem der erste Ehegatte das Referenzalter erreicht\"], \"near_miss_answers\": [\"1. Januar nach Vollendung des 20. Altersjahres\"], \"outdated_answers\": [\"31. Dezember vor Eintritt des Versicherungsfalles beim Ehegatten, welcher zuerst rentenberechtigt wird\"], \"evidence\": \"dem 31. Dezember vor dem Tag, an dem der erste Ehegatte das Referenzalter erreicht\"}, \"fr\": {\"question\": \"Jusqu'à quelle date s'étend la période de répartition des bonifications pour tâches d'assistance entre époux?\", \"answer\": \"31 décembre précédant le jour où le premier des conjoints atteint l'âge de référence\", \"answer_aliases\": [\"le 31 décembre précédant le jour où le premier des conjoints atteint l'âge de référence\", \"précédant le jour où le premier des conjoints atteint l'âge de référence\"], \"near_miss_answers\": [\"le 1er janvier de l'année qui suit celle au cours de laquelle l'assuré a eu 20 ans révolus\"], \"outdated_answers\": [\"31 décembre qui précède la réalisation de l'événement assuré pour le conjoint qui, le premier, a droit à la rente\"], \"evidence\": \"le 31 décembre précédant le jour où le premier des conjoints atteint l'âge de référence\"}, \"it\": {\"question\": \"Fino a che data si estende il periodo di ripartizione degli accrediti per compiti assistenziali tra coniugi?\", \"answer\": \"31 dicembre che precede il raggiungimento dell'età di riferimento da parte del coniuge più anziano\", \"answer_aliases\": [\"il 31 dicembre che precede il raggiungimento dell'età di riferimento da parte del coniuge più anziano\", \"che precede il raggiungimento dell'età di riferimento da parte del coniuge più anziano\"], \"near_miss_answers\": [\"il 1° gennaio che segue il compimento dei 20 anni\"], \"outdated_answers\": [\"31 dicembre che precede l'insorgere dell'evento assicurato per il coniuge che ha per primo diritto alla rendita\"], \"evidence\": \"il 31 dicembre che precede il raggiungimento dell'età di riferimento da parte del coniuge più anziano\"}}",
+ "usage": {
+  "prompt_tokens": 1574,
+  "completion_tokens": 7401,
+  "total_tokens": 8975,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 7279,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "latency_s": 274.6,
+ "at": "2026-10-13T16:33:41+00:00"
+}
