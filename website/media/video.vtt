@@ -80,31 +80,38 @@ version of the law.
 Human review is still pending.
 
 18
-00:01:18.948 --> 00:01:26.115
-Preliminary results, before the human
-spot check: on rules changed since 2024,
+00:01:18.948 --> 00:01:20.693
+Preliminary results,
 
 19
-00:01:26.115 --> 00:01:32.348
-Apertus answers just 6–8 % correctly,
-even with the date in the prompt.
+00:01:20.693 --> 00:01:27.495
+before the human spot check: where a rule
+changed and Inkraft stores the old answer,
 
 20
-00:01:32.348 --> 00:01:37.615
+00:01:27.495 --> 00:01:30.980
+Apertus is right only 6–8 % of the time,
+
+21
+00:01:30.980 --> 00:01:33.855
+even with the date in the prompt.
+
+22
+00:01:33.855 --> 00:01:39.082
 We also search the legal corpus
 that Apertus was trained on:
 
-21
-00:01:37.615 --> 00:01:41.948
+23
+00:01:39.082 --> 00:01:44.211
 does it contain this paragraph,
 and in which version?
 
-22
-00:01:42.648 --> 00:01:47.294
+24
+00:01:44.911 --> 00:01:49.557
 Before a model answers questions
 from citizens, test it on the law.
 
-23
-00:01:48.094 --> 00:01:52.043
+25
+00:01:50.357 --> 00:01:54.306
 Inkraft.
 Because the law is the answer key.
