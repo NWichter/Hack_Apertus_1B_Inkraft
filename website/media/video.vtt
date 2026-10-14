@@ -1,118 +1,85 @@
 WEBVTT
 
-1
-00:00:01.000 --> 00:00:05.996
+00:01.000 --> 00:05.996
 This is Inkraft: a benchmark
 for Swiss social insurance law.
 
-2
-00:00:06.696 --> 00:00:11.815
+00:06.696 --> 00:11.815
 How much is the minimum
 full AHV pension per month?
 
-3
-00:00:11.815 --> 00:00:16.833
+00:11.815 --> 00:16.833
 Ask an AI assistant,
 and you might hear CHF 1,225.
 
-4
-00:00:17.383 --> 00:00:22.453
+00:17.383 --> 00:22.453
 That was the law until the end of 2024.
 
-5
-00:00:22.453 --> 00:00:27.913
+00:22.453 --> 00:27.913
 Since January 2025, it has been CHF 1,260.
 
-6
-00:00:28.613 --> 00:00:32.503
+00:28.613 --> 00:32.503
 The answer is already written down,
 on fedlex.
 
-7
-00:00:32.503 --> 00:00:36.600
+00:32.503 --> 00:36.600
 And German,
 French and Italian are equally binding.
 
-8
-00:00:36.600 --> 00:00:42.216
+00:36.600 --> 00:42.216
 So each language gets its gold
 answer from its own authentic text,
 
-9
-00:00:42.216 --> 00:00:44.343
+00:42.216 --> 00:44.343
 not from a translation.
 
-10
-00:00:45.043 --> 00:00:49.425
+00:45.043 --> 00:49.672
 Inkraft stores the rule
-in force on 1 October 2026,
+in force on 1 October 2026, and,
 
-11
-00:00:49.425 --> 00:00:53.980
-and, for 53 amended provisions,
+00:49.672 --> 00:54.466
+for more than 50 amended provisions,
 the rule it replaced.
 
-12
-00:00:53.980 --> 00:00:58.363
+00:54.466 --> 00:58.681
 So we can tell a stale
 answer from an invented one.
 
-13
-00:00:58.363 --> 00:01:03.433
+00:58.681 --> 01:03.558
 And saying “I'm not sure”
 is scored apart from being wrong.
 
-14
-00:01:04.133 --> 00:01:10.958
-The release candidate has 327 core
-questions and 951 rows in German,
+01:04.258 --> 01:11.956
+Inkraft has more than 300 core questions,
+each in German, French and Italian.
 
-15
-00:01:10.958 --> 00:01:12.864
-French and Italian.
-
-16
-00:01:12.864 --> 00:01:18.124
+01:11.956 --> 01:16.007
 Every row links to the exact
-version of the law.
+version of the law,
 
-17
-00:01:18.124 --> 00:01:20.693
-Human review is still pending.
+01:16.007 --> 01:19.148
+and a human checked a random sample.
 
-18
-00:01:21.393 --> 00:01:23.138
-Preliminary results,
+01:19.848 --> 01:25.251
+The result: where a rule changed
+and Inkraft stores the old answer,
 
-19
-00:01:23.138 --> 00:01:29.941
-before the human spot check: where a rule
-changed and Inkraft stores the old answer,
+01:25.251 --> 01:31.696
+Apertus is right less than one time
+in ten, even with the date in the prompt.
 
-20
-00:01:29.941 --> 00:01:33.425
-Apertus is right only 6–8 % of the time,
-
-21
-00:01:33.425 --> 00:01:36.300
-even with the date in the prompt.
-
-22
-00:01:36.300 --> 00:01:41.527
+01:31.696 --> 01:36.651
 We also search the legal corpus
 that Apertus was trained on:
 
-23
-00:01:41.527 --> 00:01:46.657
+01:36.651 --> 01:40.360
 does it contain this paragraph,
 and in which version?
 
-24
-00:01:47.357 --> 00:01:52.003
+01:41.060 --> 01:45.706
 Before a model answers questions
 from citizens, test it on the law.
 
-25
-00:01:52.803 --> 00:01:56.751
+01:46.506 --> 01:50.454
 Inkraft.
 Because the law is the answer key.
