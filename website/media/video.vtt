@@ -43,75 +43,76 @@ answer from its own authentic text,
 not from a translation.
 
 10
-00:00:45.043 --> 00:00:49.415
+00:00:45.043 --> 00:00:49.425
 Inkraft stores the rule
 in force on 1 October 2026,
 
 11
-00:00:49.415 --> 00:00:51.558
-and the rule it replaced.
+00:00:49.425 --> 00:00:53.980
+and, for 53 amended provisions,
+the rule it replaced.
 
 12
-00:00:51.558 --> 00:00:55.930
+00:00:53.980 --> 00:00:58.363
 So we can tell a stale
 answer from an invented one.
 
 13
-00:00:55.930 --> 00:01:00.988
+00:00:58.363 --> 00:01:03.433
 And saying “I'm not sure”
 is scored apart from being wrong.
 
 14
-00:01:01.688 --> 00:01:08.512
+00:01:04.133 --> 00:01:10.958
 The release candidate has 327 core
 questions and 951 rows in German,
 
 15
-00:01:08.512 --> 00:01:10.419
+00:01:10.958 --> 00:01:12.864
 French and Italian.
 
 16
-00:01:10.419 --> 00:01:15.679
+00:01:12.864 --> 00:01:18.124
 Every row links to the exact
 version of the law.
 
 17
-00:01:15.679 --> 00:01:18.248
+00:01:18.124 --> 00:01:20.693
 Human review is still pending.
 
 18
-00:01:18.948 --> 00:01:20.693
+00:01:21.393 --> 00:01:23.138
 Preliminary results,
 
 19
-00:01:20.693 --> 00:01:27.495
+00:01:23.138 --> 00:01:29.941
 before the human spot check: where a rule
 changed and Inkraft stores the old answer,
 
 20
-00:01:27.495 --> 00:01:30.980
+00:01:29.941 --> 00:01:33.425
 Apertus is right only 6–8 % of the time,
 
 21
-00:01:30.980 --> 00:01:33.855
+00:01:33.425 --> 00:01:36.300
 even with the date in the prompt.
 
 22
-00:01:33.855 --> 00:01:39.082
+00:01:36.300 --> 00:01:41.527
 We also search the legal corpus
 that Apertus was trained on:
 
 23
-00:01:39.082 --> 00:01:44.211
+00:01:41.527 --> 00:01:46.657
 does it contain this paragraph,
 and in which version?
 
 24
-00:01:44.911 --> 00:01:49.557
+00:01:47.357 --> 00:01:52.003
 Before a model answers questions
 from citizens, test it on the law.
 
 25
-00:01:50.357 --> 00:01:54.306
+00:01:52.803 --> 00:01:56.751
 Inkraft.
 Because the law is the answer key.
