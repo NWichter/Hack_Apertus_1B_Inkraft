@@ -567,14 +567,14 @@ def check_calc(r, lang, src, issues):
             "ERROR",
             "calc.format",
             rid,
-            "calc braucht formula, inputs, calc_evidence (gleiche Länge) und answer_normalized",
+            "calc needs formula, inputs, calc_evidence (same length) and answer_normalized",
         )
         return
     try:
         result = safe_eval(formula)
     except (ValueError, SyntaxError):
         issues.add(
-            "ERROR", "calc.formula", rid, f"Formel nicht auswertbar: {formula!r}"
+            "ERROR", "calc.formula", rid, f"Formula cannot be evaluated: {formula!r}"
         )
         return
     if abs(result - float(an["value"])) > 0.005:
@@ -582,14 +582,14 @@ def check_calc(r, lang, src, issues):
             "ERROR",
             "calc.result",
             rid,
-            f"Formel ergibt {result}, answer_normalized ist {an['value']}",
+            f"Formula yields {result}, answer_normalized is {an['value']}",
         )
     if float(an["value"]) not in extract_numbers(r.get("answer"), lang):
         issues.add(
             "ERROR",
             "answer.number_mismatch",
             rid,
-            f"Ergebnis {an['value']} nicht in der Antwort",
+            f"Result {an['value']} not in the answer",
         )
     allowed = {100.0} | extract_numbers(r.get("question"), lang)
     for inp, evid in zip(inputs, evidences):
@@ -607,14 +607,14 @@ def check_calc(r, lang, src, issues):
                 "ERROR",
                 "calc.input_evidence",
                 rid,
-                f"Evidenz für Eingangswert {inp.get('value')} steht nicht in {inp.get('act')} {inp.get('article_id')} Abs. {inp.get('paragraph')}",
+                f"Evidence for input value {inp.get('value')} is not in {inp.get('act')} {inp.get('article_id')} para. {inp.get('paragraph')}",
             )
         elif float(inp.get("value")) not in extract_numbers(evid, lang):
             issues.add(
                 "ERROR",
                 "calc.input_value",
                 rid,
-                f"Eingangswert {inp.get('value')} nicht in seiner Evidenz",
+                f"Input value {inp.get('value')} not in its evidence",
             )
         allowed.add(float(inp.get("value")))
     for num in re.findall(r"\d+(?:\.\d+)?", formula):
@@ -624,7 +624,7 @@ def check_calc(r, lang, src, issues):
                 "ERROR",
                 "calc.unanchored_number",
                 rid,
-                f"Zahl {num} der Formel steht weder in Frage noch in Evidenz",
+                f"Number {num} of the formula is in neither the question nor the evidence",
             )
 
 
@@ -722,7 +722,7 @@ def check_leaks(r, lang, q, a, issues):
                 "WARN",
                 "question.contains_answer_number",
                 rid,
-                f"Die Zahl der Antwort ({an['value']:g}) steht in der Frage",
+                f"The number of the answer ({an['value']:g}) appears in the question",
             )
     aw = content_words(r.get("answer_core") or a, lang) if at == "text" else set()
     if aw and len(aw & content_words(q, lang)) / len(aw) >= 0.6:
@@ -730,7 +730,7 @@ def check_leaks(r, lang, q, a, issues):
             "WARN",
             "question.answer_overlap",
             rid,
-            f"Antwortwörter stehen in der Frage: {sorted(aw & content_words(q, lang))}",
+            f"Answer words appear in the question: {sorted(aw & content_words(q, lang))}",
         )
     ev = norm_text((r.get("source") or {}).get("evidence") or "")
     variants = [norm_text(x) for x in [a, *(r.get("answer_aliases") or [])]]
@@ -740,7 +740,7 @@ def check_leaks(r, lang, q, a, issues):
                 "WARN",
                 "answer.threshold_word",
                 rid,
-                f"Evidenz enthält {w.strip()!r}, Frage und Antwort nicht: Schwelle prüfen",
+                f"Evidence contains {w.strip()!r}, question and answer do not: check the threshold",
             )
             break
 
@@ -749,17 +749,17 @@ def check_record(r, src, issues, seen_ids):
     rid = r.get("id", "<no id>")
     for f in REQUIRED:
         if f not in r:
-            issues.add("ERROR", "format.missing_field", rid, f"Feld fehlt: {f}")
+            issues.add("ERROR", "format.missing_field", rid, f"Missing field: {f}")
     if rid in seen_ids:
-        issues.add("ERROR", "format.duplicate_id", rid, "ID doppelt")
+        issues.add("ERROR", "format.duplicate_id", rid, "Duplicate ID")
     seen_ids.add(rid)
     lang = LANGS.get(r.get("lang"))
     if not lang:
-        issues.add("ERROR", "format.lang", rid, f"Unbekannte Sprache: {r.get('lang')}")
+        issues.add("ERROR", "format.lang", rid, f"Unknown language: {r.get('lang')}")
         return
     if not rid.endswith("-" + lang) or not rid.startswith(str(r.get("core_id"))):
         issues.add(
-            "ERROR", "format.id_pattern", rid, "ID passt nicht zu core_id/Sprache"
+            "ERROR", "format.id_pattern", rid, "ID does not match core_id/language"
         )
     for field, allowed in [
         ("question_type", QUESTION_TYPES),
@@ -772,18 +772,18 @@ def check_record(r, src, issues, seen_ids):
                 "ERROR",
                 f"format.{field}",
                 rid,
-                f"Ungültiger Wert {field}={r.get(field)!r}",
+                f"Invalid value {field}={r.get(field)!r}",
             )
     if r.get("register") not in {"lay", "professional"}:
         issues.add(
             "ERROR",
             "format.register",
             rid,
-            f"Ungültiges register={r.get('register')!r}",
+            f"Invalid register={r.get('register')!r}",
         )
     if r.get("difficulty_prior") not in {1, 2, 3}:
         issues.add(
-            "ERROR", "format.difficulty", rid, "difficulty_prior muss 1, 2 oder 3 sein"
+            "ERROR", "format.difficulty", rid, "difficulty_prior must be 1, 2 or 3"
         )
     if FROZEN["value"]:
         ok = (r.get("status"), r.get("needs_human_review")) in (
@@ -795,43 +795,43 @@ def check_record(r, src, issues, seen_ids):
                 "ERROR",
                 "format.status",
                 rid,
-                "im Freeze: status reviewed + needs_human_review false (Mensch) "
-                "oder auto_verified + needs_human_review true (nur automatisch geprüft)",
+                "in the freeze: status reviewed + needs_human_review false (human) "
+                "or auto_verified + needs_human_review true (automatically checked only)",
             )
     elif r.get("status") != "draft" or r.get("needs_human_review") is not True:
         issues.add(
             "ERROR",
             "format.status",
             rid,
-            "status muss draft und needs_human_review true sein",
+            "status must be draft and needs_human_review true",
         )
     if r.get("author") == "human" and not (r.get("authoring") or {}).get("attested_by"):
         issues.add(
             "ERROR",
             "format.human_unattested",
             rid,
-            "author human ohne authoring.attested_by (wer hat das Item von Hand geschrieben?)",
+            "author human without authoring.attested_by (who wrote the item by hand?)",
         )
     if r.get("generator") != r.get("author"):
-        issues.add("ERROR", "format.generator", rid, "generator und author weichen ab")
+        issues.add("ERROR", "format.generator", rid, "generator and author differ")
     if r.get("as_of") != "2026-10-01":
-        issues.add("ERROR", "format.as_of", rid, "as_of ist nicht 2026-10-01")
+        issues.add("ERROR", "format.as_of", rid, "as_of is not 2026-10-01")
     q = r.get("question") or ""
     a = r.get("answer") or ""
     if not q.strip().endswith("?"):
-        issues.add("WARN", "style.question_mark", rid, "Frage endet nicht mit '?'")
+        issues.add("WARN", "style.question_mark", rid, "Question does not end with '?'")
     if len(a) > (220 if r.get("question_type") == "false_premise" else 120):
-        issues.add("WARN", "style.long_answer", rid, f"Antwort lang ({len(a)} Zeichen)")
+        issues.add("WARN", "style.long_answer", rid, f"Answer is long ({len(a)} characters)")
     if lang == "de" and ("ß" in q or "ß" in a):
-        issues.add("ERROR", "style.eszett", rid, "de-CH-Item enthält ß")
+        issues.add("ERROR", "style.eszett", rid, "de-CH item contains ß")
     if re.search(r"\b(Art\.|Artikel|article|articolo)\s*\d", q, re.I):
         issues.add(
-            "WARN", "style.article_in_question", rid, "Frage nennt eine Artikelnummer"
+            "WARN", "style.article_in_question", rid, "Question names an article number"
         )
     check_leaks(r, lang, q, a, issues)
     for name, pat in PII_PATTERNS.items():
         if pat.search(q) or pat.search(a):
-            issues.add("ERROR", f"pii.{name}", rid, f"Mögliche Personendaten ({name})")
+            issues.add("ERROR", f"pii.{name}", rid, f"Possible personal data ({name})")
 
     detected, scores = detect_lang(q, lang)
     if detected and detected != lang:
@@ -839,25 +839,25 @@ def check_record(r, src, issues, seen_ids):
             "ERROR",
             "lang.question",
             rid,
-            f"Frage wirkt wie '{detected}', erwartet '{lang}' {scores}",
+            f"Question looks like '{detected}', expected '{lang}' {scores}",
         )
 
     s = r.get("source") or {}
     for f in SOURCE_REQUIRED:
         if f not in s:
-            issues.add("ERROR", "format.source_field", rid, f"source.{f} fehlt")
+            issues.add("ERROR", "format.source_field", rid, f"source.{f} missing")
     art = src.article(s.get("act"), s.get("article_id"), lang, "current")
     if not art:
         issues.add(
             "ERROR",
             "source.article_missing",
             rid,
-            f"Artikel {s.get('act')} {s.get('article_id')} ({lang}) nicht gefunden",
+            f"Article {s.get('act')} {s.get('article_id')} ({lang}) not found",
         )
         return
     if f"/{lang}" not in (s.get("eli_url") or ""):
         issues.add(
-            "ERROR", "source.eli_lang", rid, "ELI-URL nicht in der Sprache des Items"
+            "ERROR", "source.eli_lang", rid, "ELI URL is not in the item's language"
         )
     para = next(
         (p for p in art["paragraphs"] if p["paragraph"] == (s.get("paragraph") or "")),
@@ -866,7 +866,7 @@ def check_record(r, src, issues, seen_ids):
     ev = s.get("evidence") or ""
     ev_n = norm_text(ev)
     if not ev.strip():
-        issues.add("ERROR", "evidence.missing", rid, "evidence fehlt")
+        issues.add("ERROR", "evidence.missing", rid, "evidence missing")
     elif para and ev_n in norm_text(para["text"]):
         pass
     elif ev_n in norm_text(art["text"]):
@@ -874,35 +874,35 @@ def check_record(r, src, issues, seen_ids):
             "WARN",
             "evidence.other_paragraph",
             rid,
-            f"Evidenz steht im Artikel, aber nicht in Abs. {s.get('paragraph')!r}",
+            f"Evidence is in the article, but not in para. {s.get('paragraph')!r}",
         )
     else:
         issues.add(
             "ERROR",
             "evidence.not_in_article",
             rid,
-            "Evidenz steht nicht wörtlich im zitierten Artikel",
+            "Evidence is not verbatim in the cited article",
         )
     if not para:
         issues.add(
             "ERROR",
             "source.paragraph_missing",
             rid,
-            f"Absatz {s.get('paragraph')!r} existiert nicht",
+            f"Paragraph {s.get('paragraph')!r} does not exist",
         )
     elif norm_space(s.get("quote")) != norm_space(para["text"]):
         issues.add(
             "ERROR",
             "source.quote_mismatch",
             rid,
-            "source.quote entspricht nicht dem Absatztext",
+            "source.quote does not match the paragraph text",
         )
     if "'" in ev and "’" in (para or {}).get("text", ""):
         issues.add(
             "WARN",
             "evidence.apostrophe",
             rid,
-            "Evidenz nutzt ' statt ’ (nur normalisiert gefunden)",
+            "Evidence uses ' instead of ’ (found only after normalisation)",
         )
 
     qt = r.get("question_type")
@@ -915,7 +915,7 @@ def check_record(r, src, issues, seen_ids):
             "ERROR",
             "answer.false_premise_core",
             rid,
-            "false_premise ohne answer_core (wörtliche Korrektur aus dem Gesetz)",
+            "false_premise without answer_core (verbatim correction from the statute)",
         )
     elif r.get("answer_core"):
         if strip_leading(norm_text(r["answer_core"]), lang) not in ev_n:
@@ -923,14 +923,14 @@ def check_record(r, src, issues, seen_ids):
                 "ERROR",
                 "answer.not_in_evidence",
                 rid,
-                f"answer_core {r['answer_core']!r} steht nicht wörtlich in der Evidenz",
+                f"answer_core {r['answer_core']!r} is not verbatim in the evidence",
             )
         if norm_text(r["answer_core"]) not in norm_text(a):
             issues.add(
                 "ERROR",
                 "answer.core_not_in_answer",
                 rid,
-                "answer_core ist nicht Teil der Antwort",
+                "answer_core is not part of the answer",
             )
     elif at == "yes_no" or qt == "yes_no":
         if norm_text(a) not in YES_NO[lang]:
@@ -938,7 +938,7 @@ def check_record(r, src, issues, seen_ids):
                 "ERROR",
                 "answer.yes_no",
                 rid,
-                f"Ja/Nein-Antwort erwartet, erhalten {a!r}",
+                f"Yes/no answer expected, got {a!r}",
             )
     elif an is not None:
         v = an.get("value") if isinstance(an, dict) else None
@@ -947,7 +947,7 @@ def check_record(r, src, issues, seen_ids):
                 "ERROR",
                 "answer.normalized_format",
                 rid,
-                "answer_normalized.value ist keine Zahl",
+                "answer_normalized.value is not a number",
             )
         else:
             literal = strip_leading(norm_text(a), lang) in ev_n
@@ -960,21 +960,21 @@ def check_record(r, src, issues, seen_ids):
                     "WARN",
                     "answer.number_literal_only",
                     rid,
-                    f"Zahl {v} nicht als Ziffer/Zahlwort erkannt, Antwort {a!r} steht aber wörtlich in der Evidenz",
+                    f"Number {v} not recognised as digit/number word, but answer {a!r} is verbatim in the evidence",
                 )
             elif not in_answer:
                 issues.add(
                     "ERROR",
                     "answer.number_mismatch",
                     rid,
-                    f"Zahl {v} nicht in der Antwort {a!r}",
+                    f"Number {v} not in the answer {a!r}",
                 )
             else:
                 issues.add(
                     "ERROR",
                     "answer.not_in_evidence",
                     rid,
-                    f"Zahl {v} steht nicht in der Evidenz",
+                    f"Number {v} is not in the evidence",
                 )
     else:
         if at in {"currency_chf", "percent", "age"}:
@@ -982,7 +982,7 @@ def check_record(r, src, issues, seen_ids):
                 "WARN",
                 "answer.normalized_missing",
                 rid,
-                f"answer_type={at} ohne answer_normalized",
+                f"answer_type={at} without answer_normalized",
             )
         core = strip_leading(norm_text(a), lang)
         if core and core in ev_n:
@@ -996,40 +996,40 @@ def check_record(r, src, issues, seen_ids):
                 "WARN",
                 "answer.alias_only",
                 rid,
-                f"Antwort {a!r} nicht wörtlich, aber ein Alias",
+                f"Answer {a!r} not verbatim, but an alias is",
             )
         elif stem_tokens_match(core, ev_n):
             issues.add(
                 "WARN",
                 "answer.inflected",
                 rid,
-                f"Antwort {a!r} nur flektiert/umgestellt in der Evidenz",
+                f"Answer {a!r} appears in the evidence only inflected/reordered",
             )
         else:
             issues.add(
                 "ERROR",
                 "answer.not_in_evidence",
                 rid,
-                f"Antwort {a!r} steht nicht wörtlich in der Evidenz",
+                f"Answer {a!r} is not verbatim in the evidence",
             )
 
     t = r.get("temporal") or {}
     if t.get("bucket") not in {"stable_pre2024", "changed_2024_2025", "changed_2026"}:
-        issues.add("ERROR", "temporal.bucket", rid, "temporal.bucket fehlt/ungültig")
+        issues.add("ERROR", "temporal.bucket", rid, "temporal.bucket missing/invalid")
     if qt == "temporal":
         if not r.get("outdated_answers"):
             issues.add(
                 "ERROR",
                 "temporal.no_outdated",
                 rid,
-                "temporal-Item ohne veraltete Antwort",
+                "temporal item without outdated answer",
             )
         if t.get("bucket") == "stable_pre2024":
             issues.add(
                 "ERROR",
                 "temporal.not_changed",
                 rid,
-                "Artikel seit 2024 unverändert, aber Typ temporal",
+                "Article unchanged since 2024, but type temporal",
             )
         prev_art = src.article_at(
             s.get("act"), s.get("article_id"), lang, t.get("previous_version_date")
@@ -1042,21 +1042,21 @@ def check_record(r, src, issues, seen_ids):
                     "ERROR",
                     "temporal.version_evidence",
                     rid,
-                    f"Evidenz der veralteten Antwort {ov.get('outdated_answer')!r} steht nicht in der Fassung {ov.get('version_date')}",
+                    f"Evidence of the outdated answer {ov.get('outdated_answer')!r} is not in the version {ov.get('version_date')}",
                 )
         if not prev_art:
             issues.add(
                 "ERROR",
                 "temporal.prev_missing",
                 rid,
-                "Vorfassung des Artikels nicht gefunden",
+                "Previous version of the article not found",
             )
         elif not pev or norm_text(pev) not in norm_text(prev_art["text"]):
             issues.add(
                 "ERROR",
                 "temporal.prev_evidence",
                 rid,
-                "Evidenz der veralteten Antwort steht nicht in der Vorfassung",
+                "Evidence of the outdated answer is not in the previous version",
             )
         elif an and isinstance(an.get("value"), (int, float)):
             old_vals = set()
@@ -1067,14 +1067,14 @@ def check_record(r, src, issues, seen_ids):
                     "ERROR",
                     "temporal.same_value",
                     rid,
-                    "Veraltete Antwort hat denselben Wert wie die aktuelle",
+                    "Outdated answer has the same value as the current one",
                 )
             if old_vals and not (old_vals & extract_numbers(pev, lang)):
                 issues.add(
                     "ERROR",
                     "temporal.outdated_not_in_prev",
                     rid,
-                    "Zahl der veralteten Antwort nicht in der Evidenz der Vorfassung",
+                    "Number of the outdated answer not in the evidence of the previous version",
                 )
     if r.get("outdated_answers") and art:
         ev_raw = norm_text(s.get("evidence") or "")
@@ -1084,7 +1084,7 @@ def check_record(r, src, issues, seen_ids):
                 "WARN",
                 "temporal.evidence_unchanged",
                 rid,
-                "veraltete Antwort angegeben, aber der Belegsatz steht unverändert in allen früheren Fassungen",
+                "outdated answer given, but the evidence sentence is unchanged in all earlier versions",
             )
     quote = s.get("quote") or ""
     if DISCRETION.search(quote) and qt != "yes_no":
@@ -1092,7 +1092,7 @@ def check_record(r, src, issues, seen_ids):
             "WARN",
             "source.discretion",
             rid,
-            "Absatz nennt Bundesrat/Departement/Reglement/Kanton: prüfen, ob der Wert Ermessen ist",
+            "Paragraph mentions Bundesrat/Departement/Reglement/Kanton: check whether the value is discretionary",
         )
     outdated_norm = {norm_text(o) for o in (r.get("outdated_answers") or []) if o}
     near_miss_norm = {norm_text(m) for m in (r.get("near_miss_answers") or []) if m}
@@ -1102,7 +1102,7 @@ def check_record(r, src, issues, seen_ids):
             "ERROR",
             "overlap.outdated_near_miss",
             rid,
-            f"Veraltete Antwort und Near-Miss überlappen: {overlap}",
+            f"Outdated answer and near-miss overlap: {overlap}",
         )
     cur_nums = extract_numbers(art["text"], lang)
     if an and isinstance(an.get("value"), (int, float)):
@@ -1116,7 +1116,7 @@ def check_record(r, src, issues, seen_ids):
                     "ERROR",
                     "near_miss.earlier_version",
                     rid,
-                    f"Near-Miss {m!r}: Wert {n:g} steht in der Fassung vom {hits[0]}, nicht in der geltenden; gehört nach outdated_answers",
+                    f"Near-miss {m!r}: value {n:g} is in the version of {hits[0]}, not in the current one; belongs in outdated_answers",
                 )
     if qt != "yes_no" and at != "yes_no":
         aliases = r.get("answer_aliases") or []
@@ -1125,14 +1125,14 @@ def check_record(r, src, issues, seen_ids):
                 "WARN",
                 "answer.no_variations",
                 rid,
-                "Weder answer_aliases noch near_miss/outdated angegeben",
+                "Neither answer_aliases nor near_miss/outdated given",
             )
     if r.get("future_change"):
         issues.add(
             "WARN",
             "source.future_change",
             rid,
-            f"Artikel ändert sich nach dem Stichtag: {', '.join(r['future_change'])}",
+            f"Article changes after the as-of date: {', '.join(r['future_change'])}",
         )
 
 
@@ -1156,10 +1156,10 @@ def cross_checks(records, issues):
                 "ERROR",
                 "lang.core_inconsistent",
                 core,
-                "Sprachfassungen eines Kerns weichen in Typ/Wert/Quelle ab",
+                "Language versions of a core differ in type/value/source",
             )
         if not any(r.get("lang") == "de-CH" for r in rs):
-            issues.add("ERROR", "lang.no_de", core, "Kern ohne deutsche Fassung")
+            issues.add("ERROR", "lang.no_de", core, "Core without German version")
         yn = {
             LANGS.get(r.get("lang")): norm_text(r.get("answer"))
             for r in rs
@@ -1175,7 +1175,7 @@ def cross_checks(records, issues):
                     "ERROR",
                     "lang.yes_no_inconsistent",
                     core,
-                    f"Ja/Nein weicht zwischen Sprachen ab: {yn}",
+                    f"Yes/no differs between languages: {yn}",
                 )
 
     de = [r for r in records if r.get("lang") == "de-CH"]
@@ -1187,7 +1187,7 @@ def cross_checks(records, issues):
                 "ERROR",
                 "dup.exact_question",
                 r["id"],
-                f"Gleiche Frage wie {seen_q[nq]}",
+                f"Same question as {seen_q[nq]}",
             )
         seen_q[nq] = r["id"]
     qs = [(r["id"], norm_text(r.get("question"))) for r in de]
@@ -1199,7 +1199,7 @@ def cross_checks(records, issues):
                     "WARN",
                     "dup.near_question",
                     qs[i][0],
-                    f"Sehr ähnlich zu {qs[j][0]} (Ratio {ratio:.2f})",
+                    f"Very similar to {qs[j][0]} (ratio {ratio:.2f})",
                 )
     facts = defaultdict(list)
     for r in de:
@@ -1221,13 +1221,13 @@ def cross_checks(records, issues):
                 "WARN",
                 "dup.same_fact",
                 ids[0],
-                f"Gleicher Fakt ({key[0]} {key[1]} Abs. {key[2]}, Wert {key[3]}) auch in: {', '.join(ids[1:])}",
+                f"Same fact ({key[0]} {key[1]} para. {key[2]}, value {key[3]}) also in: {', '.join(ids[1:])}",
             )
 
 
-def table(counter, total=None, header=("Wert", "Anzahl")):
+def table(counter, total=None, header=("Value", "Count")):
     lines = [
-        f"| {header[0]} | {header[1]} |" + (" Anteil |" if total else ""),
+        f"| {header[0]} | {header[1]} |" + (" Share |" if total else ""),
         "| --- | ---: |" + (" ---: |" if total else ""),
     ]
     for k, v in sorted(counter.items(), key=lambda x: (-x[1], str(x[0]))):
@@ -1240,7 +1240,7 @@ def cross_table(records, row_key, col_key, cols):
     for r in records:
         c[row_key(r)][col_key(r)] += 1
     lines = [
-        "| | " + " | ".join(cols) + " | Summe |",
+        "| | " + " | ".join(cols) + " | Total |",
         "| --- |" + " ---: |" * (len(cols) + 1),
     ]
     for row in sorted(c):
@@ -1252,6 +1252,29 @@ def cross_table(records, row_key, col_key, cols):
     return "\n".join(lines)
 
 
+WARN_LEGEND = {
+    "source.future_change": "a later version of the paragraph is already published after 1 October 2026 (the as-of date)",
+    "source.discretion": "the paragraph mentions Bundesrat/Departement/Reglement/Kanton, so the value may be discretionary; check it",
+    "answer.threshold_word": "the evidence contains a threshold word (e.g. 'at least', 'more than') that is missing from question and answer; check the threshold",
+    "answer.inflected": "the answer appears in the evidence only inflected or reordered, not verbatim",
+    "answer.alias_only": "the answer is not verbatim in the evidence, but one of its aliases is",
+    "answer.number_literal_only": "the number was not recognised as digit or number word, but the answer is verbatim in the evidence",
+    "answer.normalized_missing": "answer_type is currency_chf/percent/age but answer_normalized is missing",
+    "answer.no_variations": "neither answer_aliases nor near_miss/outdated answers are given",
+    "evidence.apostrophe": "the evidence uses ' where the paragraph has the typographic apostrophe ’ (found only after normalisation)",
+    "evidence.other_paragraph": "the evidence is in the cited article, but not in the cited paragraph",
+    "question.answer_overlap": "most content words of the answer already appear in the question",
+    "question.contains_answer_number": "the number of the answer already appears in the question",
+    "style.long_answer": "the answer is longer than the length limit",
+    "style.question_mark": "the question does not end with a question mark",
+    "style.article_in_question": "the question names an article number",
+    "temporal.evidence_unchanged": "an outdated answer is given, but the evidence sentence is unchanged in all earlier versions",
+    "dup.near_question": "two DE questions are very similar (ratio 0.85 or higher)",
+    "dup.same_fact": "several DE items cover the same fact (same paragraph and value)",
+    "review.hint": "note from a manual spot check",
+}
+
+
 def write_report(
     path, records, issues, inputs, target_total, min_parallel, min_human_share
 ):
@@ -1261,78 +1284,74 @@ def write_report(
     for r in records:
         by_core_langs[r["core_id"]].add(LANGS.get(r.get("lang")))
     parallel = sum(1 for langs in by_core_langs.values() if {"de", "fr", "it"} <= langs)
-    human = sum(
-        1
-        for r in de
-        if r.get("author") == "human"
-        and (r.get("authoring") or {}).get("mode") == "human_written"
-    )
     errors = [i for i in issues.items if i["level"] == "ERROR"]
     warns = [i for i in issues.items if i["level"] == "WARN"]
     err_ids = {i["id"] for i in errors}
     authors = sorted({r.get("author") for r in records})
     out = []
-    out.append("# Validierungsbericht Stichtag (Entwürfe)\n")
+    out.append("# Validation report\n")
     out.append(
-        f"Erzeugt: {dt.datetime.now().isoformat(timespec='seconds')} mit `validate_items.py`  "
+        f"Generated: {dt.datetime.now().isoformat(timespec='seconds')} with `validate_items.py`  "
     )
-    out.append("Eingaben: " + ", ".join(f"`{Path(p).name}`" for p in inputs) + "\n")
-    out.append("## Zusammenfassung\n")
+    out.append("Inputs: " + ", ".join(f"`{Path(p).name}`" for p in inputs) + "\n")
+    out.append("## Summary\n")
     out.append(
-        f"- Kern-Items (DE): **{len(de)}** von Ziel {target_total}; Zeilen gesamt (alle Sprachen): **{len(records)}**"
-    )
-    out.append(
-        f"- Kerne mit DE+FR+IT: **{parallel}** (Minimum {min_parallel}) → {'erfüllt' if parallel >= min_parallel else 'NICHT erfüllt'}"
-    )
-    share = human / max(len(de), 1)
-    out.append(
-        f"- Handgeschriebener Anteil: **{human}/{len(de)} = {share:.0%}** (Ziel {min_human_share:.0%} des fertigen Datensatzes; zählt nur `author: human` mit `authoring.mode: human_written`)"
+        f"- Core items (DE): **{len(de)}** of target {target_total}; rows in total (all languages): **{len(records)}**"
     )
     out.append(
-        f"- Fehler (ERROR): **{len(errors)}** in {len(err_ids)} Zeilen/Kernen; Warnungen (WARN): **{len(warns)}**"
+        f"- Cores with DE+FR+IT: **{parallel}** (minimum {min_parallel}) → {'met' if parallel >= min_parallel else 'NOT met'}"
     )
     out.append(
-        f"- Zeilen ohne Fehler: **{sum(1 for r in records if r['id'] not in err_ids and r['core_id'] not in err_ids)}** von {len(records)}\n"
-    )
-    out.append("## Prüfungen\n")
-    out.append("| Prüfung | Was genau |\n| --- | --- |")
-    out.append(
-        "| Format | Pflichtfelder, erlaubte Werte, ID-Muster, `status: draft`, `needs_human_review: true`, Generator-Felder, `as_of` |"
+        f"- Errors (ERROR): **{len(errors)}** in {len(err_ids)} rows/cores; warnings (WARN): **{len(warns)}**"
     )
     out.append(
-        "| Evidenz | `source.evidence` steht wörtlich (Leerraum normalisiert) im zitierten Absatz der Fassung vom Stichtag in der Sprache des Items; `source.quote` = Absatztext |"
+        f"- Rows without errors: **{sum(1 for r in records if r['id'] not in err_ids and r['core_id'] not in err_ids)}** of {len(records)}\n"
+    )
+    out.append("## Checks\n")
+    out.append("| Check | What exactly |\n| --- | --- |")
+    out.append(
+        "| Format | required fields, allowed values, ID pattern, `status`, `needs_human_review`, generator fields, `as_of` |"
     )
     out.append(
-        "| Antwort im Artikel | Zahlen: `answer_normalized.value` steht in Antwort und Evidenz (Ziffern, Tausender-Leerzeichen, Dezimalkomma, Zahlwörter DE/FR/IT); Text: Antwort (ohne führende Artikel/Präpositionen) steht wörtlich in der Evidenz; Ja/Nein: erlaubte Form |"
+        "| Evidence | `source.evidence` appears verbatim (whitespace normalised) in the cited paragraph of the as-of-date version, in the item's language; `source.quote` = paragraph text |"
     )
     out.append(
-        "| Veraltet (`temporal`) | Artikel seit 2024 geändert; veraltete Antwort vorhanden; deren Evidenz steht wörtlich in der Vorfassung; alter Wert ≠ neuer Wert |"
+        "| Answer in the article | Numbers: `answer_normalized.value` appears in answer and evidence (digits, thousands spaces, decimal comma, number words DE/FR/IT); text: answer (without leading articles/prepositions) appears verbatim in the evidence; yes/no: allowed form |"
     )
     out.append(
-        "| Near-Miss vs. frühere Fassungen | Zahl eines Near-Miss steht in einer gespeicherten früheren Fassung des Artikels, aber nicht in der geltenden → Fehler (gehört nach `outdated_answers`) |"
+        "| Outdated (`temporal`) | article changed since 2024; outdated answer present; its evidence appears verbatim in the previous version; old value ≠ new value |"
     )
     out.append(
-        "| Duplikate | gleiche DE-Frage (Fehler), ähnliche DE-Fragen ab Ratio 0,85 (Warnung), gleicher Fakt = gleicher Absatz + gleicher Wert (Warnung) |"
+        "| Near-miss vs. earlier versions | a near-miss number appears in a stored earlier version of the article but not in the current one → error (belongs in `outdated_answers`) |"
     )
     out.append(
-        "| Sprachkonsistenz | Sprache der Frage (Stoppwörter), gleicher Typ/Wert/Absatz je Kern, Ja/Nein gleich in allen Sprachen, ELI-URL in Item-Sprache |"
+        "| Duplicates | identical DE question (error), similar DE questions from ratio 0.85 (warning), same fact = same paragraph + same value (warning) |"
     )
     out.append(
-        "| Stil/PII | kein ß in de-CH, keine Artikelnummer in der Frage, Fragezeichen, AHV-Nr./IBAN/Telefon/E-Mail |"
+        "| Language consistency | language of the question (stop words), same type/value/paragraph per core, yes/no identical in all languages, ELI URL in the item's language |"
     )
     out.append(
-        "| Stichtag | Hinweis, wenn für den Artikel bereits eine Fassung nach dem 01.10.2026 publiziert ist |\n"
+        "| Style/PII | no ß in de-CH, no article number in the question, question mark, AHV number/IBAN/phone/email |"
     )
-    out.append("## Fehler und Warnungen nach Prüfung\n")
+    out.append(
+        "| As-of date | note if a version after 1 October 2026 is already published for the article |\n"
+    )
+    out.append("## Errors and warnings by check\n")
     out.append(
         table(
             Counter(f"{i['level']} {i['code']}" for i in issues.items),
-            header=("Prüfung", "Anzahl"),
+            header=("Check", "Count"),
         )
         + "\n"
     )
-    out.append("## Verteilung (DE-Kerne)\n")
-    out.append("### Autor × Gesetz\n")
+    warn_codes = sorted({i["code"] for i in warns})
+    if warn_codes:
+        out.append("Warnings that occur:\n")
+        for code in warn_codes:
+            out.append(f"- `{code}`: {WARN_LEGEND.get(code, 'see the findings table below')}")
+        out.append("")
+    out.append("## Distribution (DE cores)\n")
+    out.append("### Author × statute\n")
     acts = sorted({(r.get("source") or {}).get("act") for r in de})
     out.append(
         cross_table(
@@ -1343,7 +1362,7 @@ def write_report(
         )
         + "\n"
     )
-    out.append("### Autor × Fragetyp\n")
+    out.append("### Author × question type\n")
     qts = sorted({r.get("question_type") for r in de})
     out.append(
         cross_table(
@@ -1351,24 +1370,24 @@ def write_report(
         )
         + "\n"
     )
-    out.append("### Bereich (`domain`)\n")
+    out.append("### Domain (`domain`)\n")
     out.append(table(Counter(r.get("domain") for r in de), len(de)) + "\n")
-    out.append("### Register und Schwierigkeit\n")
+    out.append("### Register and difficulty\n")
     out.append(
         table(
             Counter(
-                f"{r.get('register')} / Stufe {r.get('difficulty_prior')}" for r in de
+                f"{r.get('register')} / level {r.get('difficulty_prior')}" for r in de
             ),
             len(de),
         )
         + "\n"
     )
-    out.append("### Stichtag-Gruppe (Artikelebene)\n")
+    out.append("### As-of-date group (article level)\n")
     out.append(
         table(Counter((r.get("temporal") or {}).get("bucket") for r in de), len(de))
         + "\n"
     )
-    out.append("### Sprachen (alle Zeilen)\n")
+    out.append("### Languages (all rows)\n")
     out.append(
         cross_table(
             records,
@@ -1378,11 +1397,11 @@ def write_report(
         )
         + "\n"
     )
-    out.append("## Alle Befunde\n")
+    out.append("## All findings\n")
     if not issues.items:
-        out.append("Keine.\n")
+        out.append("None.\n")
     else:
-        out.append("| Stufe | Prüfung | ID | Befund |\n| --- | --- | --- | --- |")
+        out.append("| Level | Check | ID | Finding |\n| --- | --- | --- | --- |")
         for i in sorted(
             issues.items, key=lambda x: (x["level"] != "ERROR", x["code"], x["id"])
         ):
