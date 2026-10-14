@@ -49,37 +49,40 @@ answer from an invented one.
 And saying “I'm not sure”
 is scored apart from being wrong.
 
-01:04.258 --> 01:11.956
+01:04.258 --> 01:07.732
 Inkraft has more than 300 core questions,
-each in German, French and Italian.
 
-01:11.956 --> 01:16.007
+01:07.732 --> 01:11.718
+most of them in German,
+French and Italian.
+
+01:11.718 --> 01:15.847
 Every row links to the exact
 version of the law,
 
-01:16.007 --> 01:19.148
+01:15.847 --> 01:18.494
 and a human checked a random sample.
 
-01:19.848 --> 01:25.251
+01:19.194 --> 01:24.599
 The result: where a rule changed
 and Inkraft stores the old answer,
 
-01:25.251 --> 01:31.696
+01:24.599 --> 01:31.047
 Apertus is right less than one time
 in ten, even with the date in the prompt.
 
-01:31.696 --> 01:36.651
+01:31.047 --> 01:36.010
 We also search the legal corpus
 that Apertus was trained on:
 
-01:36.651 --> 01:40.360
+01:36.010 --> 01:39.716
 does it contain this paragraph,
 and in which version?
 
-01:41.060 --> 01:45.706
+01:40.416 --> 01:45.062
 Before a model answers questions
 from citizens, test it on the law.
 
-01:46.506 --> 01:50.454
+01:45.862 --> 01:49.810
 Inkraft.
 Because the law is the answer key.
