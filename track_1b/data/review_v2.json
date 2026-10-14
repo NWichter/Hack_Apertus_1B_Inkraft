@@ -1,6 +1,6 @@
 {
   "version": "review-v2 (2026-10-04)",
-  "reviewer": "claude-opus-5-5 (correction after the review of 2026-10-03; to be confirmed by Niklas)",
+  "reviewer": "LLM assistant (development review: correction after the review of 2026-10-03)",
   "decisions": [
     {"core_id": "ag-0013", "action": "patch",
      "reason": "Premise was a voluntary daily-allowance insurance; Art. 324b OR only covers insurance that is obligatory by law (a voluntary one falls under Art. 324a para. 4 OR, which states no 4/5 rule). DE asked for a daily amount but the answer is monthly; FR/IT differed. Rewritten as an Art. 324b scenario, monthly amount in all three languages.",

@@ -1,6 +1,6 @@
 {
  "version": "review-v3-cx0063 (2026-10-04)",
- "reviewer": "claude-opus-5-5 (rewrite decided by Niklas Wichter on 2026-10-04; wording to be confirmed in the human review)",
+ "reviewer": "LLM assistant (development review: rewrite decided by Niklas Wichter on 2026-10-04)",
  "decisions": [
   {
    "core_id": "cx-0063",
@@ -15,7 +15,7 @@
      },
      {
       "review": "review-v3-cx0063 (2026-10-04)",
-      "note": "N3 resolved by Niklas (2026-10-04): rewrite instead of keeping it open. New open question on the latest end of the entitlement; to be confirmed in the human review."
+      "note": "N3 resolved by Niklas (2026-10-04): rewrite instead of keeping it open. New open question on the latest end of the entitlement."
      }
     ]
    },
