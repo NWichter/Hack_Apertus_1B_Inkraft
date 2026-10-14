@@ -383,6 +383,9 @@ def compute():
             )
             or "none"
         )
+    for k, v in list(n.items()):  # rounded variants for headline numbers (pitch, form text)
+        if isinstance(v, str) and re.fullmatch(r"\d+\.\d", v) and k + "_r" not in n:
+            n[k + "_r"] = f"{float(v):.0f}"
     return {k: v for k, v in n.items() if v is not None}
 
 

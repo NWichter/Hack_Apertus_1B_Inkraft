@@ -553,6 +553,7 @@
       .stack div {
         display: flex;
         align-items: center;
+        min-width: 64px;
         padding-left: 14px;
         color: #fff;
         font: 700 26px/1 var(--mono);
@@ -752,6 +753,78 @@
         color: var(--navy);
       }
 
+      /* result statement (dark) */
+      .s6r {
+        background: var(--navy);
+        color: #fff;
+      }
+      .s6r::before {
+        background: var(--red);
+      }
+      .s6r .kicker {
+        color: #b9c7d8;
+      }
+      .s6r .hero {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 64px;
+        align-items: center;
+        margin-top: 70px;
+      }
+      .s6r .big {
+        font: 700 300px/0.9 var(--serif);
+        color: #ffb4ab;
+        letter-spacing: -0.03em;
+      }
+      .s6r .big small {
+        font-size: 0.45em;
+      }
+      .s6r h2 {
+        color: #fff;
+        font-size: 72px;
+      }
+      .s6r .sub {
+        font-size: 34px;
+        line-height: 1.4;
+        color: #dce4ee;
+        margin: 26px 0 0;
+      }
+      .s6r .pair {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 28px;
+        margin-top: 80px;
+      }
+      .s6r .pair div {
+        border-top: 4px solid #4b6585;
+        padding-top: 18px;
+        font-size: 28px;
+        color: #dce4ee;
+      }
+      .s6r .pair b {
+        display: block;
+        font: 700 64px/1.1 var(--serif);
+        color: #fff;
+      }
+      .s6r .pair .g b {
+        color: #8fe0b5;
+      }
+      .s6r .foot {
+        color: #b9c7d8;
+      }
+      .resp {
+        margin-top: 26px;
+        border-left: 8px solid var(--navy);
+        background: #fff;
+        padding: 16px 22px;
+        font-size: 24px;
+        line-height: 1.45;
+        border-radius: 0 10px 10px 0;
+      }
+      .resp b {
+        color: var(--navy);
+      }
+
       /* 9 close */
       .s9 {
         background: var(--navy);
@@ -921,9 +994,7 @@
         </p>
         <div class="btns">
           <a class="btn pri" href="../report.pdf">Technical report (PDF) →</a>
-          <a class="btn sec" href="../">Project page →</a>
           <a class="btn sec" href="../#video">▶ 2-min video</a>
-          <a class="btn sec" href="https://huggingface.co/datasets/NWichter/inkraft">Dataset on Hugging Face →</a>
         </div>
       </div>
       <img
@@ -1153,14 +1224,33 @@
         </div>
       </div>
       <div class="foot">
-        Release v<!--n:version-->1.0.0-rc1<!--/n-->. All cores are LLM drafts (<!--n:gen_codex-->98<!--/n-->
-        GPT-5.5 via Codex, <!--n:gen_claude-->97<!--/n--> Claude, <!--n:gen_gemini-->86<!--/n--> Gemini, <!--n:gen_nemotron-->46<!--/n--> Nemotron 3 Ultra), checked
-        against fedlex, by a second model and by a human on a random sample of
-        <!--n:sample_cores-->35<!--/n--> cores (<!--n:human_drops-->[[NIKLAS-PRÜFUNG: human_drops]]<!--/n--> rejected and removed).
+        v<!--n:version-->1.0.0-rc1<!--/n--> · LLM drafts (Codex <!--n:gen_codex-->98<!--/n-->, Claude <!--n:gen_claude-->97<!--/n-->, Gemini <!--n:gen_gemini-->86<!--/n-->, Nemotron <!--n:gen_nemotron-->46<!--/n-->), checked by validator, second model and a human (<!--n:sample_cores-->35<!--/n--> cores, <!--n:human_drops-->[[NIKLAS-PRÜFUNG: human_drops]]<!--/n--> removed).
       </div>
     </section>
 
-    <!-- 6 EVALUATION -->
+    <!-- 6 RESULT (statement) -->
+    <section class="slide s6r">
+      <p class="kicker">The finding</p>
+      <div class="hero">
+        <div class="big"><!--n:stalepair_stale_70b_r-->30<!--/n--><small>&nbsp;%</small></div>
+        <div>
+          <h2>When a rule changed, Apertus 70B gives the old rule.</h2>
+          <p class="sub">
+            On the <!--n:stale_rows-->157<!--/n--> rows whose rule changed since 2024 and whose earlier
+            answer is stored, the 70B states the earlier law in <!--n:stalepair_stale_70b_r-->30<!--/n-->&nbsp;% of
+            answers and the rule in force in only <!--n:stalepair_correct_70b_r-->7<!--/n-->&nbsp;%.
+          </p>
+        </div>
+      </div>
+      <div class="pair">
+        <div><b><!--n:stalepair_correct_70b_r-->7<!--/n--> %</b>correct, rule changed, no paragraph given</div>
+        <div class="g"><b><!--n:openbook_stalepair_70b_r-->99<!--/n--> %</b>correct with the cited paragraph in the prompt</div>
+        <div><b><!--n:date_effect_70b-->−0.3<!--/n--> pts</b>effect of today's date in the prompt, German rows (p = <!--n:date_p_70b-->1.0<!--/n-->)</div>
+      </div>
+      <div class="foot">A knowledge gap, not a reading gap. Graded by the majority of <!--n:panel_size-->3<!--/n--> open-weight judges; release v<!--n:version-->1.0.0-rc1<!--/n-->.</div>
+    </section>
+
+    <!-- 7 EVALUATION -->
     <section class="slide s6">
       <p class="kicker">Evaluation</p>
       <h2>Graded like SimpleQA. Checked by a human.</h2>
@@ -1224,7 +1314,7 @@
       </p>
     </section>
 
-    <!-- 7 CONTAMINATION -->
+    <!-- 8 CONTAMINATION -->
     <section class="slide s7">
       <p class="kicker">Contamination check</p>
       <h2>Did Apertus see this law? We check its legal training corpus.</h2>
@@ -1240,6 +1330,10 @@
             check which version of the rule it contains.
           </p>
           <p>
+            Rows: <!--n:exp_current_rows-->564<!--/n--> + <!--n:exp_outdated_rows-->84<!--/n--> + <!--n:exp_absent_rows-->277<!--/n--> in the three buckets, <!--n:cont_short-->26<!--/n--> with evidence
+            too short to search (<!--n:rows-->951<!--/n--> in total).
+          </p>
+          <p>
             Leak check: <!--n:cont_13gram-->55<!--/n--> of <!--n:rows-->951<!--/n--> questions share a 13-gram with the corpus
             (statutory phrasing; the questions are new).
           </p>
@@ -1251,22 +1345,22 @@
               ><span>seen and still valid · <!--n:exp_current_rows-->564<!--/n--> rows</span>
             </div>
             <div class="v">
-              <span class="vh">70B</span><!--n:exp_current_correct_70b_r-->64<!--/n--> %
+              <span class="vh">70B correct</span><!--n:exp_current_correct_70b_r-->64<!--/n--> %
             </div>
           </div>
           <div class="bk old">
             <div>
               <b>Previous rule in that corpus</b
-              ><span>seen, then amended · <!--n:exp_outdated_rows-->84<!--/n--> rows</span>
+              ><span>seen, then amended (not the same set as the stale-pair rows) · <!--n:exp_outdated_rows-->84<!--/n--> rows</span>
             </div>
             <div class="v">
-              <span class="vh">70B</span><!--n:exp_outdated_correct_70b_r-->11<!--/n--> %
+              <span class="vh">70B correct</span><!--n:exp_outdated_correct_70b_r-->11<!--/n--> %
             </div>
           </div>
           <div class="bk abs">
             <div><b>Not in that corpus</b><span>not found there · <!--n:exp_absent_rows-->277<!--/n--> rows</span></div>
             <div class="v">
-              <span class="vh">70B</span><!--n:exp_absent_correct_70b_r-->38<!--/n--> %
+              <span class="vh">70B correct</span><!--n:exp_absent_correct_70b_r-->38<!--/n--> %
             </div>
           </div>
         </div>
@@ -1274,24 +1368,21 @@
       <p class="q">In the corpus but not learned, or not in it? Now we can tell.</p>
     </section>
 
-    <!-- 8 REPRODUCIBILITY -->
+    <!-- 9 REPRODUCIBILITY -->
     <section class="slide s8">
       <p class="kicker">Reproducibility</p>
       <h2>One command. Scoring replayed.</h2>
       <div class="grid">
         <div>
           <div class="term">
-            <span class="p">Replay</span> · no keys, no GPU<br />
-            <span class="c">recomputes <!--n:replay_blocks-->8<!--/n--> result blocks from <!--n:stored_answers-->5,112<!--/n--> stored</span
-            ><br />
-            <span class="c">answers and grades, checks expected results</span>
-            <span class="ok">PASS</span><br />
-            <span class="c">dataset release v<!--n:version-->1.0.0-rc1<!--/n--></span>
+            <span class="p">$ make run</span> <span class="c"># Docker, no keys, no GPU</span><br />
+            <span class="c">recomputes every result block from <!--n:stored_answers-->5,112<!--/n--> stored answers and grades</span><br />
+            <span class="ok">PASS: all <!--n:replay_blocks-->8<!--/n--> result blocks match expected_results.json</span>
           </div>
           <div class="term">
-            <span class="p">Full mode</span><br />
-            <span class="c">grades any OpenAI-compatible model</span><br />
-            <span class="c">Commands: technical docs in the README</span>
+            <span class="p">$ make test</span> <span class="c"># unit tests, same image</span><br />
+            <span class="p">$ make run MODE=full</span><br />
+            <span class="c"># any OpenAI-compatible model: LLM_BASE_URL, LLM_API_KEY, LLM_NAME</span>
           </div>
         </div>
         <div>
@@ -1302,29 +1393,29 @@
             <div>judgements/ <span>every grade · <!--n:panel_size-->3<!--/n--> judges + majority</span></div>
             <div>human_labels/ <span><!--n:judge_share-->22<!--/n--> % sample · κ</span></div>
           </div>
-          <div class="lic">
-            <b>Hugging Face:</b> <!--n:hf_url-->[[NIKLAS-PRÜFUNG: hf_url]]<!--/n--><br />
-            <b>Law text:</b> public domain (Art. 5 URG)<br />
-            <b>Dataset:</b> CDLA-Permissive-2.0 · <b>Code:</b> Apache-2.0<br />
-            <b>Report and docs:</b> CC-BY-4.0
+          <div class="resp">
+            <b>No personal data:</b> vignettes use roles, the validator scans for PII.
+            <b>Consent</b> form for reviewers, <b>data card</b> (Datasheets, Data Cards).<br />
+            <b>Licences:</b> data CDLA-Permissive-2.0 · code Apache-2.0 · docs CC-BY-4.0 · statute text public domain (Art. 5 URG)
           </div>
         </div>
       </div>
+      <div class="foot">Related: SwitzerlandQA, Swiss-Bench and LEXam test Swiss law and civics; Prior et al. (2026) test temporal knowledge of German law. Inkraft adds stored earlier answers, scored abstention and DE · FR · IT.</div>
     </section>
 
-    <!-- 9 TEAM / CLOSE -->
+    <!-- 10 TEAM / CLOSE -->
     <section class="slide s9">
       <div class="wrap">
         <div>
           <p class="kicker">Inkraft · Track 1B Swiss Voices</p>
           <h2>The law is the answer key.</h2>
           <p class="ask2">
-            Before a model answers citizens on AHV or KVG, run it on Inkraft:
-            one command tells you how often it is right, stale or inventing.
+            <b>Our ask:</b> run Inkraft before Apertus answers citizens on AHV or KVG,
+            and refresh it every 1&nbsp;January, when the amounts change.
           </p>
           <div class="links">
             <div>
-              <b>Dataset</b><span>huggingface.co/datasets/NWichter/inkraft</span>
+              <b>Dataset</b><span><!--n:hf_url-->[[NIKLAS-PRÜFUNG: hf_url]]<!--/n--></span>
             </div>
             <div><b>Code</b><span>github.com/NWichter/Hack_Apertus_1B_Inkraft</span></div>
             <div>
