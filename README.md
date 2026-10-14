@@ -5,19 +5,19 @@
 [![Docs: CC-BY-4.0](https://img.shields.io/badge/Docs-CC_BY_4.0-lightgrey.svg)](LICENSE-docs)
 
 **Inkraft** is a trilingual (German, French, Italian) short-answer benchmark on Swiss federal social and health
-insurance law as of **1 October 2026** (dimension: Core Task Intelligence). Release v<!--n:version-->·<!--/n-->:
-<!--n:cores-->·<!--/n--> core questions (<!--n:trilingual-->·<!--/n--> in all three languages, <!--n:de_only-->·<!--/n--> German only), <!--n:rows-->·<!--/n--> question–answer
-rows from <!--n:acts-->·<!--/n--> acts and ordinances. Every gold answer is quoted verbatim from the authentic Fedlex text; for
-<!--n:stale_pairs-->·<!--/n--> amended provisions the previous answer is stored verbatim from the earlier version, so a wrong answer
+insurance law as of **1 October 2026** (dimension: Core Task Intelligence). Release v<!--n:version-->1.0.0-rc1<!--/n-->:
+<!--n:cores-->327<!--/n--> core questions (<!--n:trilingual-->312<!--/n--> in all three languages, <!--n:de_only-->15<!--/n--> German only), <!--n:rows-->951<!--/n--> question–answer
+rows from <!--n:acts-->19<!--/n--> acts and ordinances. Every gold answer is quoted verbatim from the authentic Fedlex text; for
+<!--n:stale_pairs-->53<!--/n--> amended provisions the previous answer is stored verbatim from the earlier version, so a wrong answer
 can be classed as _stale_ (earlier law) rather than invented.
 
-**Results** (Apertus 1.5, majority of a panel of <!--n:panel_size-->·<!--/n--> open-weight judges, human-checked sample):
-the 70B answers <!--n:correct_70b-->·<!--/n--> % of the rows correctly (8B: <!--n:correct_8b-->·<!--/n--> %). On the <!--n:stale_rows-->·<!--/n--> rows whose rule
-changed and whose earlier answer is stored, the 70B is correct in <!--n:stalepair_correct_70b-->·<!--/n--> % and gives the earlier law in
-<!--n:stalepair_stale_70b-->·<!--/n--> %; with the cited paragraph in the prompt it is correct in <!--n:openbook_stalepair_70b-->·<!--/n--> %. A date in the
+**Results** (Apertus 1.5, majority of a panel of <!--n:panel_size-->3<!--/n--> open-weight judges, human-checked sample):
+the 70B answers <!--n:correct_70b-->50.7<!--/n--> % of the rows correctly (8B: <!--n:correct_8b-->33.0<!--/n--> %). On the <!--n:stale_rows-->157<!--/n--> rows whose rule
+changed and whose earlier answer is stored, the 70B is correct in <!--n:stalepair_correct_70b-->7.0<!--/n--> % and gives the earlier law in
+<!--n:stalepair_stale_70b-->29.9<!--/n--> %; with the cited paragraph in the prompt it is correct in <!--n:openbook_stalepair_70b-->98.7<!--/n--> %. A date in the
 system prompt does not help. Human check: Cohen's κ human–judge <!--n:kappa_qwen-->[[NIKLAS-PRÜFUNG: kappa_qwen]]<!--/n-->
-(panel majority <!--n:kappa_panel-->[[NIKLAS-PRÜFUNG: kappa_panel]]<!--/n-->) on <!--n:judge_sample-->·<!--/n--> judgements;
-<!--n:human_drops-->[[NIKLAS-PRÜFUNG: human_drops]]<!--/n--> of <!--n:sample_cores-->·<!--/n--> sampled cores rejected and removed.
+(panel majority <!--n:kappa_panel-->[[NIKLAS-PRÜFUNG: kappa_panel]]<!--/n-->) on <!--n:judge_sample-->211<!--/n--> judgements;
+<!--n:human_drops-->[[NIKLAS-PRÜFUNG: human_drops]]<!--/n--> of <!--n:sample_cores-->35<!--/n--> sampled cores rejected and removed.
 
 ## For the jury: where to look
 
@@ -60,7 +60,7 @@ scores) is described in the report, section Reproducibility, and in `track_1b/do
 | `track_1b/src/inkraft/` | evaluation package and CLI (`generate`, `judge`, `calibrate`, `score`, `replay`, `expect`, `contam`, `agreement`) |
 | `track_1b/src/` | dataset construction (`fetch_fedlex.py`, `find_changes.py`, `make_batches.py`, `build_items.py`, `gen_nemotron.py`, `validate_items.py`), release checks (`auto_fix.py`, `auto_review.py`, `second_check.py`, `after_review.py`, `panel_fixes.py`, `freeze.py`), human check (`draw_human_sample.py`, `translate_sample.py`, `import_human.py`), judge panel (`panel.py`, `rejudge_changed.py`, `judge_agreement.py`), release (`hf_release.py`) |
 | `track_1b/scripts/` | `run_after_freeze.sh` (calibration, runs, judging), `after_human_check.sh` (import, freeze, rescoring), `hf_upload.sh` (Hugging Face release, dry run by default) |
-| `track_1b/report/` | report build (`build.sh`, `build.ps1`), `analysis.py`, `make_figures.py`, `numbers.py` (every number in the documents) |
+| `track_1b/report/` | report build (`build.sh`, `build.ps1`), `analysis.py`, `make_figures.py`, `fill_numbers.py` (every number in the documents) |
 | `track_1b/tests/` | unit tests and the replay fixture |
 | `website/` | project page https://inkraft.apertool.ch with pitch and demo video |
 

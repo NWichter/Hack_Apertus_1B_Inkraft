@@ -1,73 +1,73 @@
 {
  "8B closed|stable": {
   "n": 716,
-  "CORRECT": 288,
+  "CORRECT": 290,
   "STALE": 0,
-  "NEAR_MISS": 136,
-  "OTHER": 229,
-  "NOT_ATTEMPTED": 63
+  "NEAR_MISS": 153,
+  "OTHER": 212,
+  "NOT_ATTEMPTED": 61
  },
  "8B closed|changed": {
   "n": 78,
   "CORRECT": 16,
   "STALE": 0,
-  "NEAR_MISS": 17,
-  "OTHER": 34,
+  "NEAR_MISS": 22,
+  "OTHER": 29,
   "NOT_ATTEMPTED": 11
  },
  "8B closed|stale_pair": {
   "n": 157,
-  "CORRECT": 9,
-  "STALE": 20,
-  "NEAR_MISS": 6,
-  "OTHER": 85,
-  "NOT_ATTEMPTED": 37
+  "CORRECT": 8,
+  "STALE": 22,
+  "NEAR_MISS": 7,
+  "OTHER": 82,
+  "NOT_ATTEMPTED": 38
  },
  "70B closed|stable": {
   "n": 716,
-  "CORRECT": 445,
+  "CORRECT": 443,
   "STALE": 0,
-  "NEAR_MISS": 110,
-  "OTHER": 157,
-  "NOT_ATTEMPTED": 4
+  "NEAR_MISS": 118,
+  "OTHER": 150,
+  "NOT_ATTEMPTED": 5
  },
  "70B closed|changed": {
   "n": 78,
   "CORRECT": 28,
   "STALE": 0,
-  "NEAR_MISS": 21,
-  "OTHER": 26,
+  "NEAR_MISS": 23,
+  "OTHER": 24,
   "NOT_ATTEMPTED": 3
  },
  "70B closed|stale_pair": {
   "n": 157,
-  "CORRECT": 12,
-  "STALE": 45,
-  "NEAR_MISS": 21,
-  "OTHER": 76,
+  "CORRECT": 11,
+  "STALE": 47,
+  "NEAR_MISS": 17,
+  "OTHER": 79,
   "NOT_ATTEMPTED": 3
  },
  "8B open book|stable": {
   "n": 716,
-  "CORRECT": 681,
+  "CORRECT": 683,
   "STALE": 0,
-  "NEAR_MISS": 21,
+  "NEAR_MISS": 20,
   "OTHER": 1,
-  "NOT_ATTEMPTED": 13
+  "NOT_ATTEMPTED": 12
  },
  "8B open book|changed": {
   "n": 78,
   "CORRECT": 71,
   "STALE": 0,
-  "NEAR_MISS": 3,
-  "OTHER": 3,
+  "NEAR_MISS": 4,
+  "OTHER": 2,
   "NOT_ATTEMPTED": 1
  },
  "8B open book|stale_pair": {
   "n": 157,
   "CORRECT": 150,
-  "STALE": 1,
-  "NEAR_MISS": 5,
+  "STALE": 2,
+  "NEAR_MISS": 4,
   "OTHER": 1,
   "NOT_ATTEMPTED": 0
  },
@@ -75,23 +75,23 @@
   "n": 716,
   "CORRECT": 690,
   "STALE": 0,
-  "NEAR_MISS": 14,
+  "NEAR_MISS": 15,
   "OTHER": 6,
-  "NOT_ATTEMPTED": 6
+  "NOT_ATTEMPTED": 5
  },
  "70B open book|changed": {
   "n": 78,
   "CORRECT": 73,
   "STALE": 0,
-  "NEAR_MISS": 1,
-  "OTHER": 3,
+  "NEAR_MISS": 3,
+  "OTHER": 1,
   "NOT_ATTEMPTED": 1
  },
  "70B open book|stale_pair": {
   "n": 157,
-  "CORRECT": 153,
+  "CORRECT": 155,
   "STALE": 1,
-  "NEAR_MISS": 2,
+  "NEAR_MISS": 0,
   "OTHER": 1,
   "NOT_ATTEMPTED": 0
  }

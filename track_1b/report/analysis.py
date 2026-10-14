@@ -53,19 +53,28 @@ def share(rows, pred):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--judge-model", default="qwen/qwen3-235b-a22b-2507")
+    ap.add_argument(
+        "--ablation-judge",
+        default="qwen/qwen3-235b-a22b-2507",
+        help="judge of the paired German ablation; it grades both sides (closed_dated and the ablation conditions)",
+    )
     args = ap.parse_args()
     data = ROOT / "data"
     items = dataset.load(data)
     by_id = {it["id"]: it for it in items}
     contam = {r["id"]: r for r in dataset.read_jsonl(data / "contamination.jsonl")}
-    out = {"judge_model": args.judge_model, "models": {}}
+    out = {
+        "judge_model": args.judge_model,
+        "ablation_judge": args.ablation_judge,
+        "models": {},
+    }
 
-    def rows_of(model, cond):
+    def rows_of(model, cond, judge=None):
         p = data / "responses" / f"{model}__{cond}.jsonl"
         return score.grade_rows(
             items,
             dataset.read_jsonl(p),
-            dataset.read_jsonl(judge_path(data, args.judge_model, model, cond)),
+            dataset.read_jsonl(judge_path(data, judge or args.judge_model, model, cond)),
         )
 
     for m in MODELS:
@@ -116,17 +125,18 @@ def main():
                 "stale": share(sel, is_s),
             }
         # paired ablation on German rows
-        de_ids = sorted(i for i in cd if i.endswith("-de"))
-        abl = {}
+        cd_abl = {r["id"]: r for r in rows_of(m, "closed_dated", args.ablation_judge)}
+        de_ids = sorted(i for i in cd_abl if i.endswith("-de"))
+        abl = {"judge": args.ablation_judge}
         for cond in ("closed_swiss", "closed_plain"):
-            other_c = {r["id"]: r for r in rows_of(m, cond)}
+            other_c = {r["id"]: r for r in rows_of(m, cond, args.ablation_judge)}
             ids = [i for i in de_ids if i in other_c]
-            b = sum(1 for i in ids if is_c(cd[i]) and not is_c(other_c[i]))
-            c = sum(1 for i in ids if not is_c(cd[i]) and is_c(other_c[i]))
+            b = sum(1 for i in ids if is_c(cd_abl[i]) and not is_c(other_c[i]))
+            c = sum(1 for i in ids if not is_c(cd_abl[i]) and is_c(other_c[i]))
             abl[f"closed_dated_vs_{cond}"] = {
                 "n": len(ids),
                 "closed_dated_correct": round(
-                    sum(is_c(cd[i]) for i in ids) / len(ids), 4
+                    sum(is_c(cd_abl[i]) for i in ids) / len(ids), 4
                 ),
                 f"{cond}_correct": round(
                     sum(is_c(other_c[i]) for i in ids) / len(ids), 4
@@ -134,7 +144,7 @@ def main():
                 "only_dated_correct": b,
                 f"only_{cond}_correct": c,
                 "mcnemar_exact_p": mcnemar_exact(b, c),
-                "stale_dated": sum(is_s(cd[i]) for i in ids),
+                "stale_dated": sum(is_s(cd_abl[i]) for i in ids),
                 f"stale_{cond}": sum(is_s(other_c[i]) for i in ids),
             }
         res["ablation_de"] = abl
@@ -160,12 +170,15 @@ def main():
         "only_8b": only8,
         "mcnemar_exact_p": mcnemar_exact(only70, only8),
     }
-    cost = 0.0
-    for p in (data / "judgements").glob("qwen*.jsonl"):
-        cost += sum(j.get("cost_usd") or 0 for j in dataset.read_jsonl(p))
+    costs = Counter()
+    for p in (data / "judgements").glob("*.jsonl"):
+        if p.name.startswith(("panel__", "apertus-")):
+            continue
+        for j in dataset.read_jsonl(p):
+            costs[j.get("judge_model") or p.name.split("__")[0]] += j.get("cost_usd") or 0
     sc = dataset.read_jsonl(data / "review" / "second_check.jsonl")
     out["paid_usage_usd"] = {
-        "judge_qwen": round(cost, 4),
+        "judges": {k: round(v, 4) for k, v in sorted(costs.items())},
         "second_check_qwen": round(sum(r.get("cost_usd") or 0 for r in sc), 4),
         "note": "reported by OpenRouter per call; judge calibration (61 calls) and a 5-core test of the second check are not included",
     }

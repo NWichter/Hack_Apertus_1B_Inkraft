@@ -1,0 +1,1171 @@
+[
+ {
+  "id": "ag-0004-it",
+  "variant": "2600 franchi",
+  "evidence": "il 10 per cento dei costi eccedenti la franchigia",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "ag-0004-it",
+  "variant": "CHF 2600",
+  "evidence": "il 10 per cento dei costi eccedenti la franchigia",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "ag-0004-it",
+  "variant": "2'600 franchi",
+  "evidence": "il 10 per cento dei costi eccedenti la franchigia",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "ag-0023-it",
+  "variant": "Per nulla, il datore di lavoro deve pagare il salario",
+  "evidence": "il datore di lavoro deve pagargli per un tempo limitato il salario",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "ag-0023-it",
+  "variant": "Nessun pagamento di salario",
+  "evidence": "il datore di lavoro deve pagargli per un tempo limitato il salario",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "ag-0025-it",
+  "variant": "Nessuna opposizione, ricorso diretto",
+  "evidence": "le decisioni degli uffici AI cantonali sono impugnabili direttamente dinanzi al tribunale delle assicurazioni del luogo dell’ufficio AI",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "ag-0025-it",
+  "variant": "Ricorso diretto al tribunale",
+  "evidence": "sono impugnabili direttamente dinanzi al tribunale delle assicurazioni del luogo dell’ufficio AI",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "ag-0026-fr",
+  "variant": "aucune franchise n’est exigée",
+  "evidence": "aucune franchise n’est exigée",
+  "accepted": true,
+  "reason": "ok"
+ },
+ {
+  "id": "ag-0026-fr",
+  "variant": "aucune franchise",
+  "evidence": "aucune franchise n’est exigée",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "ag-0027-it",
+  "variant": "No, solo per bambini sotto i 4 anni",
+  "evidence": "accolgono un adottando d’età inferiore ai quattro anni",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "ag-0028-de",
+  "variant": "Nein, sie verlängert sich entsprechend",
+  "evidence": "erfolgt eine entsprechende Verlängerung der Probezeit",
+  "accepted": false,
+  "reason": "words not in the paragraph: ['nein', 'verlängert', 'sich']"
+ },
+ {
+  "id": "ag-0028-de",
+  "variant": "Nein, Probezeit verlängert sich entsprechend",
+  "evidence": "erfolgt eine entsprechende Verlängerung der Probezeit",
+  "accepted": false,
+  "reason": "words not in the paragraph: ['nein', 'verlängert', 'sich']"
+ },
+ {
+  "id": "ag-0028-de",
+  "variant": "Nein, bei Verkürzung verlängert sie sich",
+  "evidence": "Bei einer effektiven Verkürzung der Probezeit ... erfolgt eine entsprechende Verlängerung der Probezeit",
+  "accepted": false,
+  "reason": "evidence not verbatim in the paragraph"
+ },
+ {
+  "id": "ag-0030-de",
+  "variant": "Nein, gleich viele wie der Jahrgang",
+  "evidence": "gleich viele Beitragsjahre aufweist wie ihr Jahrgang",
+  "accepted": false,
+  "reason": "numbers differ from the gold answer"
+ },
+ {
+  "id": "ag-0030-fr",
+  "variant": "Non, même nombre que sa classe d'âge",
+  "evidence": "le même nombre d’années de cotisations que les assurés de sa classe d’âge",
+  "accepted": false,
+  "reason": "numbers differ from the gold answer"
+ },
+ {
+  "id": "ag-0030-it",
+  "variant": "No, occorre lo stesso numero della classe d'età",
+  "evidence": "La durata di contribuzione è completa se una persona presenta lo stesso numero di anni di contribuzione degli assicurati della sua classe d’età.",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "ag-0033-fr",
+  "variant": "Aucun délai de congé",
+  "evidence": "L’employeur et le travailleur peuvent résilier immédiatement le contrat en tout temps pour de justes motifs",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "ag-0034-fr",
+  "variant": "Non, le droit s'éteint avec la reprise du travail",
+  "evidence": "Il s’éteint de manière anticipée si la mère reprend une activité lucrative",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "ag-0035-it",
+  "variant": "Nessuna franchigia",
+  "evidence": "L’assicurato ha diritto alla cura appropriata dei postumi d’infortunio, segnatamente: a. alla cura ambulatoriale da parte del medico, del dentista o, previa loro prescrizione, del personale paramedico e del chiropratico, nonché alla cura ambulatoriale in un ospedale; b. ai medicamenti e alle analisi ordinati dal medico o dal dentista; c. alla cura, al vitto e alloggio in sala comune ospedaliera; d. alle cure complementari e a quelle balneari prescritte dal medico; e. ai mezzi ed agli apparecchi occorrenti per la sua guarigione.",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "ag-0036-it",
+  "variant": "No, gli sconti vanno trasferiti",
+  "evidence": "Il fornitore di prestazioni deve fare usufruire il debitore della rimunerazione di sconti diretti o indiretti",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "ag-0036-it",
+  "variant": "No",
+  "evidence": "Il fornitore di prestazioni deve fare usufruire il debitore della rimunerazione di sconti diretti o indiretti",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "ag-0037-de",
+  "variant": "Nein, Rahmenfrist beträgt sechs Monate",
+  "evidence": "eine Rahmenfrist von sechs Monaten",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "ag-0037-de",
+  "variant": "Nein, innert 6 Monaten",
+  "evidence": "eine Rahmenfrist von sechs Monaten",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "ag-0038-de",
+  "variant": "Nein, ab vollendetem 24. Altersjahr",
+  "evidence": "ab 1. Januar nach Vollendung des 24. Altersjahres auch für das Alter der obligatorischen Versicherung",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "ag-0038-it",
+  "variant": "No, dal 1° gennaio dopo i 24 anni",
+  "evidence": "per la vecchiaia dal 1° gennaio dopo che hanno compiuto il 24° anno di età",
+  "accepted": false,
+  "reason": "numbers differ from the gold answer"
+ },
+ {
+  "id": "ag-0039-it",
+  "variant": "No, il numero è limitato per legge",
+  "evidence": "il numero massimo di indennità giornaliere è determinato in base all’età e al periodo di contribuzione",
+  "accepted": false,
+  "reason": "evidence not verbatim in the paragraph"
+ },
+ {
+  "id": "ag-0039-it",
+  "variant": "No, dipende dall'età e contribuzione",
+  "evidence": "il numero massimo di indennità giornaliere è determinato in base all’età e al periodo di contribuzione",
+  "accepted": false,
+  "reason": "evidence not verbatim in the paragraph"
+ },
+ {
+  "id": "ag-0040-de",
+  "variant": "Nein, es gilt Tiers payant",
+  "evidence": "der Versicherer die Vergütung schuldet (System des Tiers payant)",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "ag-0040-de",
+  "variant": "Nein, Spital rechnet direkt mit dem Versicherer ab",
+  "evidence": "Im Falle der stationären Behandlung schuldet der Versicherer... den auf ihn entfallenden Anteil an der Vergütung",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "ag-0040-fr",
+  "variant": "Non, le tiers payant s'applique obligatoirement",
+  "evidence": "En cas de traitement hospitalier, l’assureur, en dérogation à l’al. 1, est le débiteur de sa part de rémunération.",
+  "accepted": false,
+  "reason": "numbers differ from the gold answer"
+ },
+ {
+  "id": "ag-0040-fr",
+  "variant": "Non, le tiers payant s'applique",
+  "evidence": "En cas de traitement hospitalier, l’assureur, en dérogation à l’al. 1, est le débiteur de sa part de rémunération.",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "ag-0040-fr",
+  "variant": "Non",
+  "evidence": "En cas de traitement hospitalier, l’assureur, en dérogation à l’al. 1, est le débiteur de sa part de rémunération.",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "ag-0041-fr",
+  "variant": "Oui, elles ont droit",
+  "evidence": "Les personnes qui effectuent un service dans l’armée suisse ou dans le Service de la Croix-Rouge ont droit à une allocation pour chaque jour de solde.",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "ag-0041-it",
+  "variant": "Sì, hanno diritto",
+  "evidence": "Le persone che prestano servizio nell’esercito svizzero o nel servizio della Croce Rossa hanno diritto a un’indennità per ogni giorno di soldo.",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "ag-0042-de",
+  "variant": "25 Prozent",
+  "evidence": "25 Prozent des Höchstbetrages der Gesamtentschädigung",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "ag-0042-de",
+  "variant": "25%",
+  "evidence": "25 Prozent des Höchstbetrages der Gesamtentschädigung",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "ag-0042-de",
+  "variant": "25 %",
+  "evidence": "25 Prozent des Höchstbetrages der Gesamtentschädigung",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "ag-0042-de",
+  "variant": "fünfundzwanzig Prozent",
+  "evidence": "25 Prozent des Höchstbetrages der Gesamtentschädigung",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "ag-0050-de",
+  "variant": "innerhalb der folgenden sechs Monate",
+  "evidence": "innerhalb der folgenden sechs Monate wird",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "ag-0055-fr",
+  "variant": "98 indemnités journalières",
+  "evidence": "98 indemnités journalières au plus peuvent être versées",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "ag-0055-fr",
+  "variant": "98 indemnités",
+  "evidence": "98 indemnités journalières au plus peuvent être versées",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "ag-0065-fr",
+  "variant": "260 indemnités journalières",
+  "evidence": "260 indemnités journalières au plus",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "ag-0065-fr",
+  "variant": "260 indemnités au plus",
+  "evidence": "260 indemnités journalières au plus",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "ag-0090-de",
+  "variant": "zwei getrennte Rechnungen",
+  "evidence": "zwei getrennte Rechnungen",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "ag-0090-de",
+  "variant": "2",
+  "evidence": "zwei getrennte Rechnungen",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "ag-0090-de",
+  "variant": "zwei",
+  "evidence": "zwei getrennte Rechnungen",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "ag-0090-fr",
+  "variant": "2 factures séparées",
+  "evidence": "deux factures séparées",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "ag-0090-fr",
+  "variant": "deux factures séparées",
+  "evidence": "deux factures séparées",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "ag-0090-fr",
+  "variant": "2",
+  "evidence": "deux factures séparées",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "ag-0090-fr",
+  "variant": "deux",
+  "evidence": "deux factures séparées",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "ag-0090-it",
+  "variant": "2 fatture separate",
+  "evidence": "emette due fatture separate",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "ag-0090-it",
+  "variant": "due fatture separate",
+  "evidence": "emette due fatture separate",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "ag-0091-fr",
+  "variant": "plus de trois mois",
+  "evidence": "les rapports de travail ont duré plus de trois mois ou ont été conclus pour plus de trois mois",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "ag-0091-fr",
+  "variant": "plus de 3 mois",
+  "evidence": "les rapports de travail ont duré plus de trois mois ou ont été conclus pour plus de trois mois",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cl-0002-fr",
+  "variant": "plus de 60 jours consécutifs",
+  "evidence": "pour plus de 60 jours consécutifs",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cl-0002-it",
+  "variant": "più di 60 giorni consecutivi",
+  "evidence": "per più di 60 giorni consecutivi",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cl-0015-fr",
+  "variant": "système du tiers garant",
+  "evidence": "L’assuré a, dans ce cas, le droit d’être remboursé par son assureur (système du tiers garant).",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cl-0026-de",
+  "variant": "15 Franken",
+  "evidence": "15 Franken.",
+  "accepted": true,
+  "reason": "ok"
+ },
+ {
+  "id": "cl-0026-de",
+  "variant": "täglicher Beitrag... 15 Franken",
+  "evidence": "Der tägliche Beitrag an die Kosten des Aufenthalts im Spital nach Artikel 64 Absatz 5 KVG beträgt 15 Franken.",
+  "accepted": true,
+  "reason": "ok"
+ },
+ {
+  "id": "cl-0026-de",
+  "variant": "CHF 15",
+  "evidence": "15 Franken.",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cl-0031-de",
+  "variant": "auf den Beginn eines Kalenderjahres",
+  "evidence": "Die Wahl einer höheren Franchise kann nur auf den Beginn eines Kalenderjahres erfolgen.",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cl-0031-fr",
+  "variant": "pour le début d'une année civile",
+  "evidence": "L'assuré ne peut choisir une franchise plus élevée que pour le début d'une année civile.",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cl-0034-de",
+  "variant": "das Laboratorium, das die Analyse durchgeführt hat",
+  "evidence": "das Laboratorium, das die Analyse durchgeführt hat",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cl-0034-de",
+  "variant": "das durchführende Laboratorium",
+  "evidence": "das Laboratorium, das die Analyse durchgeführt hat",
+  "accepted": false,
+  "reason": "words not in the paragraph: ['durchführende']"
+ },
+ {
+  "id": "cl-0034-de",
+  "variant": "das Labor",
+  "evidence": "das Laboratorium, das die Analyse durchgeführt hat",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cl-0036-de",
+  "variant": "am ersten Tag des Folgemonats nach Erreichen des Referenzalters",
+  "evidence": "am ersten Tag des Monats, welcher dem Erreichen des Referenzalters folgt",
+  "accepted": false,
+  "reason": "words not in the paragraph: ['folgemonats', 'nach']"
+ },
+ {
+  "id": "cl-0036-fr",
+  "variant": "le premier jour du mois qui suit celui au cours duquel l’assuré atteint l’âge de référence",
+  "evidence": "Le droit à la rente prend naissance le premier jour du mois qui suit celui au cours duquel l’assuré atteint l’âge de référence.",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cl-0052-de",
+  "variant": "bei der kantonalen Ausgleichskasse",
+  "evidence": "bei der kantonalen Ausgleichskasse zu melden",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cl-0073-fr",
+  "variant": "le premier jour du mois au cours duquel la demande est déposée",
+  "evidence": "le premier jour du mois au cours duquel la demande est déposée",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cl-0076-fr",
+  "variant": "six mois",
+  "evidence": "de six mois au plus",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cl-0084-de",
+  "variant": "seinem Arbeitgeber oder dem Versicherer",
+  "evidence": "seinem Arbeitgeber oder dem Versicherer",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cl-0084-de",
+  "variant": "dem Arbeitgeber oder dem Versicherer",
+  "evidence": "seinem Arbeitgeber oder dem Versicherer",
+  "accepted": true,
+  "reason": "ok"
+ },
+ {
+  "id": "cl-0084-it",
+  "variant": "al datore di lavoro o all’assicuratore",
+  "evidence": "al datore di lavoro o all’assicuratore",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cl-0085-de",
+  "variant": "unverzüglich",
+  "evidence": "unverzüglich Mitteilung zu machen",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cl-0085-de",
+  "variant": "sofort",
+  "evidence": "unverzüglich Mitteilung zu machen",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cl-0085-de",
+  "variant": "ohne Verzug",
+  "evidence": "unverzüglich Mitteilung zu machen",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cl-0088-it",
+  "variant": "cinque anni",
+  "evidence": "cinque anni dopo la fine del mese per cui era dovuta la prestazione",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cl-0091-fr",
+  "variant": "Non, si de bonne foi et situation difficile",
+  "evidence": "La restitution ne peut être exigée lorsque l’intéressé était de bonne foi et qu’elle le mettrait dans une situation difficile.",
+  "accepted": false,
+  "reason": "yes/no answers get no new variants"
+ },
+ {
+  "id": "cl-0099-de",
+  "variant": "Unfall",
+  "evidence": "Unfall ist die plötzliche, nicht beabsichtigte schädigende Einwirkung eines ungewöhnlichen äusseren Faktors auf den menschlichen Körper, die eine Beeinträchtigung der körperlichen, geistigen oder psychischen Gesundheit oder den Tod zur Folge hat.",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cx-0002-it",
+  "variant": "autorità designata dal Cantone",
+  "evidence": "L'autorità designata dal Cantone",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cx-0006-fr",
+  "variant": "un tribunal arbitral",
+  "evidence": "Les litiges entre assureurs et fournisseurs de prestations sont jugés par un tribunal arbitral.",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cx-0014-fr",
+  "variant": "un médecin",
+  "evidence": "effectués ou prescrits par un médecin",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cx-0014-fr",
+  "variant": "le médecin",
+  "evidence": "effectués ou prescrits par un médecin",
+  "accepted": true,
+  "reason": "ok"
+ },
+ {
+  "id": "cx-0018-it",
+  "variant": "nel mese successivo all'informazione",
+  "evidence": "nel mese che segue l’informazione",
+  "accepted": false,
+  "reason": "words not in the paragraph: ['successivo']"
+ },
+ {
+  "id": "cx-0018-it",
+  "variant": "entro un mese dall'informazione",
+  "evidence": "nel mese che segue l’informazione",
+  "accepted": false,
+  "reason": "words not in the paragraph: ['entro', 'dall']"
+ },
+ {
+  "id": "cx-0020-it",
+  "variant": "meno di 300 assicurati",
+  "evidence": "segnatamente quando quest’ultimo conta meno di 300 assicurati.",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cx-0028-fr",
+  "variant": "Oui, à tout moment",
+  "evidence": "est possible à tout moment.",
+  "accepted": false,
+  "reason": "yes/no answers get no new variants"
+ },
+ {
+  "id": "cx-0048-de",
+  "variant": "bis zum Ende des Monats, in dem das Referenzalter erreicht wird",
+  "evidence": "bis zum Ende des Monats, in dem die Nichterwerbstätigen das Referenzalter nach Artikel 21 Absatz 1 erreichen",
+  "accepted": false,
+  "reason": "numbers differ from the gold answer"
+ },
+ {
+  "id": "cx-0048-it",
+  "variant": "sino alla fine del mese in cui raggiungono l'età di riferimento",
+  "evidence": "sino alla fine del mese in cui raggiungono l’età di riferimento secondo l’articolo 21 capoverso 1",
+  "accepted": false,
+  "reason": "numbers differ from the gold answer"
+ },
+ {
+  "id": "cx-0052-it",
+  "variant": "a partire da 13 anni compiuti",
+  "evidence": "minorenni a partire da 13 anni compiuti",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cx-0056-fr",
+  "variant": "200 francs",
+  "evidence": "doit se situer entre 200 et 1000 francs.",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cx-0060-fr",
+  "variant": "devant le tribunal des assurances du domicile de l’office concerné",
+  "evidence": "devant le tribunal des assurances du domicile de l’office concerné",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cx-0060-it",
+  "variant": "tribunale delle assicurazioni del luogo dell’ufficio AI",
+  "evidence": "dinanzi al tribunale delle assicurazioni del luogo dell’ufficio AI",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cx-0067-de",
+  "variant": "40 000 Franken",
+  "evidence": "den Betrag von 40 000 Franken übersteigt",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cx-0067-fr",
+  "variant": "supérieure à 40 000 francs",
+  "evidence": "La restitution est seulement exigible pour la part de la succession supérieure à 40 000 francs.",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cx-0067-it",
+  "variant": "supera l'importo di 40 000 franchi",
+  "evidence": "La restituzione è esigibile soltanto dalla parte della massa ereditaria che supera l’importo di 40 000 franchi.",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cx-0068-de",
+  "variant": "der Wohnsitzkanton",
+  "evidence": "der Kanton, in dem die Bezügerin oder der Bezüger Wohnsitz hat",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cx-0068-fr",
+  "variant": "le canton de domicile du bénéficiaire",
+  "evidence": "Le canton de domicile du bénéficiaire est compétent pour fixer et verser les prestations complémentaires.",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cx-0068-it",
+  "variant": "il Cantone di domicilio del beneficiario",
+  "evidence": "al Cantone di domicilio del beneficiario",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cx-0071-fr",
+  "variant": "1300 francs",
+  "evidence": "1300 francs pour les personnes seules",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cx-0071-fr",
+  "variant": "mille trois cents francs",
+  "evidence": "1300 francs pour les personnes seules",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cx-0076-it",
+  "variant": "90 per cento",
+  "evidence": "il 90 per cento del guadagno assicurato",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cx-0077-de",
+  "variant": "um 2 Prozentpunkte",
+  "evidence": "um 2 Prozentpunkte, höchstens aber um 40 Prozent",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cx-0077-it",
+  "variant": "di 2 punti percentuali",
+  "evidence": "di 2 punti percentuali, ma al massimo del 40 per cento",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cx-0080-de",
+  "variant": "bei der Beendigung der ärztlichen Behandlung",
+  "evidence": "bei der Beendigung der ärztlichen Behandlung gewährt",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cx-0080-fr",
+  "variant": "lorsque le traitement médical est terminé",
+  "evidence": "lorsque le traitement médical est terminé",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cx-0080-fr",
+  "variant": "si l’assuré ne peut prétendre une rente, lorsque le traitement médical est terminé",
+  "evidence": "si l’assuré ne peut prétendre une rente, lorsque le traitement médical est terminé",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cx-0080-it",
+  "variant": "termine della cura medica",
+  "evidence": "al termine della cura medica se l’assicurato non ha diritto a una rendita",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cx-0080-it",
+  "variant": "al termine della cura medica",
+  "evidence": "al termine della cura medica se l’assicurato non ha diritto a una rendita",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cx-0083-fr",
+  "variant": "auprès de la CNA",
+  "evidence": "Les personnes au chômage sont assurées auprès de la CNA.",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cx-0085-it",
+  "variant": "No, non sono ridotte",
+  "evidence": "Le prestazioni sanitarie, i rimborsi delle spese, le indennità giornaliere e gli assegni per grandi invalidi non sono ridotti se il danno alla salute è solo in parte conseguenza dell’infortunio.",
+  "accepted": false,
+  "reason": "yes/no answers get no new variants"
+ },
+ {
+  "id": "cx-0086-fr",
+  "variant": "Non, sauf l'indemnité pour frais funéraires",
+  "evidence": "aucune prestation d’assurance n’est allouée, sauf l’indemnité pour frais funéraires",
+  "accepted": false,
+  "reason": "yes/no answers get no new variants"
+ },
+ {
+  "id": "cx-0086-it",
+  "variant": "No, ad eccezione delle spese funerarie",
+  "evidence": "non vi è diritto alle prestazioni assicurative, ad eccezione delle spese funerarie",
+  "accepted": false,
+  "reason": "yes/no answers get no new variants"
+ },
+ {
+  "id": "cx-0086-it",
+  "variant": "No, tranne le spese funerarie",
+  "evidence": "non vi è diritto alle prestazioni assicurative, ad eccezione delle spese funerarie",
+  "accepted": false,
+  "reason": "yes/no answers get no new variants"
+ },
+ {
+  "id": "cx-0087-it",
+  "variant": "24 mesi",
+  "evidence": "dopo 24 mesi dalla nascita del diritto",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cx-0087-it",
+  "variant": "ventiquattro mesi",
+  "evidence": "dopo 24 mesi dalla nascita del diritto",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cx-0088-it",
+  "variant": "12 mesi",
+  "evidence": "al più presto 12 mesi dopo che si è fatto valere il diritto",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cx-0088-it",
+  "variant": "dodici mesi",
+  "evidence": "al più presto 12 mesi dopo che si è fatto valere il diritto",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cx-0092-it",
+  "variant": "all'assicuratore",
+  "evidence": "all’assicuratore",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cx-0092-it",
+  "variant": "all’assicuratore oppure, a lui indirizzate, a un ufficio postale svizzero o a una rappresentanza diplomatica o consolare svizzera",
+  "evidence": "Le richieste scritte devono essere consegnate all’assicuratore oppure, a lui indirizzate, a un ufficio postale svizzero o a una rappresentanza diplomatica o consolare svizzera",
+  "accepted": true,
+  "reason": "ok"
+ },
+ {
+  "id": "cx-0093-de",
+  "variant": "Versicherungsgericht des Wohnsitzkantons",
+  "evidence": "das Versicherungsgericht desjenigen Kantons, in dem die versicherte Person ... zur Zeit der Beschwerdeerhebung Wohnsitz hat",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cx-0094-fr",
+  "variant": "un médecin",
+  "evidence": "de désigner un médecin qui les lui communiquera.",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "cx-0098-fr",
+  "variant": "Aucun intérêt moratoire n’est dû",
+  "evidence": "Aucun intérêt moratoire n’est dû lorsque des assureurs étrangers sont à l’origine des retards.",
+  "accepted": false,
+  "reason": "yes/no answers get no new variants"
+ },
+ {
+  "id": "nmf-0001-fr",
+  "variant": "215 francs par mois",
+  "evidence": "215 francs par mois",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "nmf-0001-fr",
+  "variant": "215 francs mensuels",
+  "evidence": "215 francs par mois",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "nmf-0001-fr",
+  "variant": "215 francs/mois",
+  "evidence": "215 francs par mois",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "nmf-0002-fr",
+  "variant": "268 francs par mois",
+  "evidence": "L’allocation de formation s’élève à 268 francs par mois au minimum.",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "nmu-0003-fr",
+  "variant": "3'780 francs",
+  "evidence": "un montant de 3780 francs au moins doit être assuré.",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "nmu-0004-de",
+  "variant": "40 Prozent",
+  "evidence": "mindestens 40 Prozent tiefer ist, sofern das Schweizer Marktvolumen des Originalpräparates und von dessen Co-Marketing-Arzneimittel während drei Jahren vor Patentablauf im Durchschnitt pro Jahr zwischen 4 Millionen und 8 Millionen Franken liegt",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "nmu-0004-de",
+  "variant": "40 %",
+  "evidence": "mindestens 40 Prozent tiefer ist, sofern das Schweizer Marktvolumen des Originalpräparates und von dessen Co-Marketing-Arzneimittel während drei Jahren vor Patentablauf im Durchschnitt pro Jahr zwischen 4 Millionen und 8 Millionen Franken liegt",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "nmv-0014-it",
+  "variant": "sono computati ai fini di colmare successive lacune contributive",
+  "evidence": "i periodi di contribuzione precedenti il 1° gennaio che segue il compimento dei 20 anni sono computati ai fini di colmare successive lacune contributive",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "nmv-0017-de",
+  "variant": "Vorsorgeguthaben in der bisherigen Vorsorgeeinrichtung",
+  "evidence": "Vorsorgeguthaben, die in der bisherigen Vorsorgeeinrichtung verbleiben",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "nmv-0017-de",
+  "variant": "verbleibende Vorsorgeguthaben in der bisherigen Vorsorgeeinrichtung",
+  "evidence": "Vorsorgeguthaben, die in der bisherigen Vorsorgeeinrichtung verbleiben",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "nmv-0017-fr",
+  "variant": "avoirs de prévoyance auprès de l'institution précédente",
+  "evidence": "avoirs de prévoyance auprès de l'institution de prévoyance précédente",
+  "accepted": true,
+  "reason": "ok"
+ },
+ {
+  "id": "nmv-0017-it",
+  "variant": "avere di previdenza che rimane nel precedente istituto di previdenza",
+  "evidence": "un avere di previdenza che rimane nel precedente istituto di previdenza",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "nmv-0017-it",
+  "variant": "avere di previdenza nel precedente istituto",
+  "evidence": "un avere di previdenza che rimane nel precedente istituto di previdenza",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "nmv-0017-it",
+  "variant": "avere di previdenza rimasto nel precedente istituto",
+  "evidence": "un avere di previdenza che rimane nel precedente istituto di previdenza",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "nmv-0019-de",
+  "variant": "20 Prozent",
+  "evidence": "so werden 20 Prozent abgezogen.",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "nmv-0019-de",
+  "variant": "zwanzig Prozent",
+  "evidence": "so werden 20 Prozent abgezogen.",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "nmv-0019-de",
+  "variant": "20 %",
+  "evidence": "so werden 20 Prozent abgezogen.",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "nmv-0019-fr",
+  "variant": "20 pour cent",
+  "evidence": "une déduction de 20 % est opérée.",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "nmv-0021-fr",
+  "variant": "un pourcentage d’un montant identique à celui pris en charge par le canton",
+  "evidence": "un pourcentage de la réduction de primes en question, d’un montant identique à celui pris en charge par le canton",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "nmv-0027-de",
+  "variant": "dem 31. Dezember vor dem Tag, an dem der erste Ehegatte das Referenzalter erreicht",
+  "evidence": "dem 31. Dezember vor dem Tag, an dem der erste Ehegatte das Referenzalter erreicht",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "nmv-0027-it",
+  "variant": "il 31 dicembre che precede il raggiungimento dell'età di riferimento da parte del coniuge più anziano",
+  "evidence": "il 31 dicembre che precede il raggiungimento dell'età di riferimento da parte del coniuge più anziano",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "nmv-0033-de",
+  "variant": "Beratung und Vermittlung nicht beeinträchtigt",
+  "evidence": "Werden die Beratung und die Vermittlung nicht beeinträchtigt",
+  "accepted": true,
+  "reason": "ok"
+ },
+ {
+  "id": "nmv-0033-de",
+  "variant": "die Beratung und die Vermittlung nicht beeinträchtigt",
+  "evidence": "die Beratung und die Vermittlung nicht beeinträchtigt",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "nmv-0059-fr",
+  "variant": "tous les dix ans au moins",
+  "evidence": "Il vérifie les taux d’augmentation tous les dix ans au moins.",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "nmv-0059-fr",
+  "variant": "tous les 10 ans au moins",
+  "evidence": "Il vérifie les taux d’augmentation tous les dix ans au moins.",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "nmv-0068-de",
+  "variant": "Tage kontrollierter Arbeitslosigkeit",
+  "evidence": "nicht mehr als fünf Tage kontrollierter Arbeitslosigkeit ausgewiesen werden",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "nmv-0068-it",
+  "variant": "giorni di disoccupazione controllata",
+  "evidence": "non effettua più di cinque giorni di disoccupazione controllata",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "nmv-0068-it",
+  "variant": "disoccupazione controllata",
+  "evidence": "non effettua più di cinque giorni di disoccupazione controllata",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "nmv-0072-de",
+  "variant": "bei einem Heim- oder Spitalaufenthalt",
+  "evidence": "bbis. bei einem Heim- oder Spitalaufenthalt, für den die Tagestaxe nach Artikel 10 Absatz 2 Buchstabe a ELG nicht für alle Tage eines Monats in Rechnung gestellt wird",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "nmv-0072-it",
+  "variant": "soggiorno in un istituto o in un ospedale",
+  "evidence": "quando, in caso di soggiorno in un istituto o in un ospedale, la tassa giornaliera secondo l’articolo 10 capoverso 2 lettera a LPC non è fatturata per tutti i giorni di un mese",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "nmv-0072-it",
+  "variant": "in caso di soggiorno in un istituto o in un ospedale",
+  "evidence": "quando, in caso di soggiorno in un istituto o in un ospedale, la tassa giornaliera secondo l’articolo 10 capoverso 2 lettera a LPC non è fatturata per tutti i giorni di un mese",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "nmv-0084-it",
+  "variant": "secondo criteri uniformi e tenendo conto delle linee guida cliniche",
+  "evidence": "l'assunzione dei costi nel singolo caso sia esaminata secondo criteri uniformi e tenendo conto delle linee guida cliniche",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "nmv-0093-de",
+  "variant": "die gleichen Berechnungsregeln wie für die Altersrente",
+  "evidence": "Für die Kinderrente gelten die gleichen Berechnungsregeln wie für die Altersrente.",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "nmv-0093-de",
+  "variant": "gleiche Berechnungsregeln wie für die Altersrente",
+  "evidence": "Für die Kinderrente gelten die gleichen Berechnungsregeln wie für die Altersrente.",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "nmv-0093-de",
+  "variant": "die Berechnungsregeln der Altersrente",
+  "evidence": "Für die Kinderrente gelten die gleichen Berechnungsregeln wie für die Altersrente.",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "nmv-0093-fr",
+  "variant": "les mêmes règles que la rente de vieillesse",
+  "evidence": "La rente pour enfant est calculée selon les mêmes règles que la rente de vieillesse.",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "nmv-0093-it",
+  "variant": "secondo le norme applicabili alla rendita di vecchiaia",
+  "evidence": "La rendita per i figli è calcolata secondo le norme applicabili alla rendita di vecchiaia.",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "nmv-0112-it",
+  "variant": "della totalità della rendita di vecchiaia",
+  "evidence": "con la riscossione della totalità della rendita di vecchiaia dell’assicurazione per la vecchiaia e per i superstiti",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "nmv-0112-it",
+  "variant": "della rendita di vecchiaia totale",
+  "evidence": "della totalità della rendita di vecchiaia dell’assicurazione per la vecchiaia e per i superstiti",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "nmv-0120-de",
+  "variant": "Bonusversicherung",
+  "evidence": "in eine Bonusversicherung",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "nmv-0120-de",
+  "variant": "Versicherung mit Bonus",
+  "evidence": "in eine Bonusversicherung",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "nmv-0127-de",
+  "variant": "das BSV",
+  "evidence": "bestimmt das BSV",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "nmv-0127-de",
+  "variant": "Bundesamt für Sozialversicherungen",
+  "evidence": "das BSV",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ },
+ {
+  "id": "nmv-0127-fr",
+  "variant": "l'OFAS",
+  "evidence": "l’OFAS, après avoir consulté le canton ou les associations fondatrices, désigne le commissaire.",
+  "accepted": false,
+  "reason": "duplicate or empty"
+ }
+]

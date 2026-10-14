@@ -3,8 +3,8 @@ stored files, and written into those documents between markers <!--n:KEY-->…<!
 
 Numbers that depend on the human check show "[[NIKLAS-PRÜFUNG: KEY]]" until data/human_labels/summary.json exists.
 
-python report/numbers.py            # write report/numbers.json and fill all documents
-python report/numbers.py --check    # fail if a document has a marker whose value differs (or an unknown key)
+python report/fill_numbers.py            # write report/numbers.json and fill all documents
+python report/fill_numbers.py --check    # fail if a document has a marker whose value differs (or an unknown key)
 """
 
 import argparse

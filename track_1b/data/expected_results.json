@@ -1,19 +1,19 @@
 {
- "judge_model": "qwen/qwen3-235b-a22b-2507",
- "note": "v1.0.0-rc1 runs (closed_dated, open_book; ablation closed_swiss/closed_plain on German rows), judge qwen/qwen3-235b-a22b-2507",
+ "judge_model": "panel",
+ "note": "v1.0.0-rc1 runs, judge panel majority (qwen/qwen3-235b-a22b-2507 z-ai/glm-5.3 deepseek/deepseek-v3.2); ablation rows judged by qwen/qwen3-235b-a22b-2507",
  "results": {
   "apertus-v1.5-70b__closed_dated": {
    "overall": {
     "n": 951,
-    "correct": 0.51,
-    "incorrect": 0.4795,
-    "not_attempted": 0.0105,
-    "cga": 0.5154,
-    "f": 0.5127,
-    "hallucination_rate": 0.4846,
-    "stale_share_of_errors": 0.0987,
-    "score_l1": 0.0305,
-    "score_l3": -0.9285,
+    "correct": 0.5068,
+    "incorrect": 0.4816,
+    "not_attempted": 0.0116,
+    "cga": 0.5128,
+    "f": 0.5098,
+    "hallucination_rate": 0.4872,
+    "stale_share_of_errors": 0.1026,
+    "score_l1": 0.0252,
+    "score_l3": -0.938,
     "n_total": 951,
     "n_ungraded": 0,
     "grade_source": {
@@ -21,40 +21,40 @@
     },
     "ci95": {
      "correct": [
-      0.4795,
-      0.5415
+      0.4763,
+      0.5384
      ],
      "incorrect": [
-      0.4479,
-      0.511
+      0.449,
+      0.5131
      ],
      "not_attempted": [
       0.0053,
-      0.0179
+      0.019
      ],
      "cga": [
-      0.4836,
-      0.5471
+      0.4813,
+      0.545
      ],
      "f": [
-      0.4815,
-      0.5433
+      0.4783,
+      0.5418
      ],
      "hallucination_rate": [
-      0.4529,
-      0.5164
+      0.455,
+      0.5187
      ],
      "stale_share_of_errors": [
-      0.0721,
-      0.1253
+      0.0756,
+      0.1293
      ],
      "score_l1": [
-      -0.0326,
-      0.0926
+      -0.0368,
+      0.0884
      ],
      "score_l3": [
-      -1.0547,
-      -0.8044
+      -1.0621,
+      -0.8065
      ]
     }
    },
@@ -100,8 +100,8 @@
       0.5199
      ],
      "stale_share_of_errors": [
-      0.0638,
-      0.1595
+      0.0633,
+      0.1622
      ],
      "score_l1": [
       -0.0398,
@@ -115,15 +115,15 @@
    },
    "lang:fr-CH": {
     "n": 312,
-    "correct": 0.5064,
-    "incorrect": 0.4744,
+    "correct": 0.5032,
+    "incorrect": 0.4776,
     "not_attempted": 0.0192,
-    "cga": 0.5163,
-    "f": 0.5113,
-    "hallucination_rate": 0.4837,
-    "stale_share_of_errors": 0.1081,
-    "score_l1": 0.0321,
-    "score_l3": -0.9167,
+    "cga": 0.5131,
+    "f": 0.5081,
+    "hallucination_rate": 0.4869,
+    "stale_share_of_errors": 0.1208,
+    "score_l1": 0.0256,
+    "score_l3": -0.9295,
     "n_total": 312,
     "n_ungraded": 0,
     "grade_source": {
@@ -131,54 +131,54 @@
     },
     "ci95": {
      "correct": [
-      0.4487,
-      0.5609
+      0.4455,
+      0.5577
      ],
      "incorrect": [
-      0.4199,
-      0.5321
+      0.4231,
+      0.5353
      ],
      "not_attempted": [
       0.0064,
       0.0353
      ],
      "cga": [
-      0.461,
-      0.571
+      0.4563,
+      0.5677
      ],
      "f": [
-      0.456,
-      0.5654
+      0.4513,
+      0.5622
      ],
      "hallucination_rate": [
-      0.429,
-      0.539
+      0.4323,
+      0.5437
      ],
      "stale_share_of_errors": [
-      0.0621,
-      0.16
+      0.0738,
+      0.1765
      ],
      "score_l1": [
-      -0.0769,
-      0.1379
+      -0.0865,
+      0.1315
      ],
      "score_l3": [
-      -1.1379,
-      -0.7019
+      -1.1539,
+      -0.7146
      ]
     }
    },
    "lang:it-CH": {
     "n": 312,
-    "correct": 0.4904,
-    "incorrect": 0.5064,
-    "not_attempted": 0.0032,
-    "cga": 0.492,
-    "f": 0.4912,
-    "hallucination_rate": 0.508,
-    "stale_share_of_errors": 0.0823,
-    "score_l1": -0.016,
-    "score_l3": -1.0288,
+    "correct": 0.484,
+    "incorrect": 0.5096,
+    "not_attempted": 0.0064,
+    "cga": 0.4871,
+    "f": 0.4855,
+    "hallucination_rate": 0.5129,
+    "stale_share_of_errors": 0.0818,
+    "score_l1": -0.0256,
+    "score_l3": -1.0449,
     "n_total": 312,
     "n_ungraded": 0,
     "grade_source": {
@@ -186,54 +186,54 @@
     },
     "ci95": {
      "correct": [
-      0.4359,
-      0.5449
+      0.4295,
+      0.5353
      ],
      "incorrect": [
-      0.4519,
-      0.5609
+      0.4583,
+      0.5641
      ],
      "not_attempted": [
       0.0,
-      0.0097
+      0.016
      ],
      "cga": [
-      0.4373,
-      0.5466
+      0.4327,
+      0.5387
      ],
      "f": [
-      0.4366,
-      0.5457
+      0.4323,
+      0.537
      ],
      "hallucination_rate": [
-      0.4534,
-      0.5627
+      0.4613,
+      0.5673
      ],
      "stale_share_of_errors": [
-      0.0435,
-      0.1294
+      0.0432,
+      0.1282
      ],
      "score_l1": [
-      -0.125,
-      0.0929
+      -0.1346,
+      0.0769
      ],
      "score_l3": [
-      -1.2468,
-      -0.8109
+      -1.2629,
+      -0.8395
      ]
     }
    },
    "temporal_items": {
     "n": 135,
-    "correct": 0.0815,
-    "incorrect": 0.9037,
+    "correct": 0.0741,
+    "incorrect": 0.9111,
     "not_attempted": 0.0148,
-    "cga": 0.0827,
-    "f": 0.0821,
-    "hallucination_rate": 0.9173,
-    "stale_share_of_errors": 0.3279,
-    "score_l1": -0.8222,
-    "score_l3": -2.6296,
+    "cga": 0.0752,
+    "f": 0.0746,
+    "hallucination_rate": 0.9248,
+    "stale_share_of_errors": 0.3333,
+    "score_l1": -0.837,
+    "score_l3": -2.6593,
     "n_total": 135,
     "n_ungraded": 0,
     "grade_source": {
@@ -242,25 +242,25 @@
    },
    "language_consistency": {
     "n_cores": 312,
-    "same_grade_all_three": 0.6667,
+    "same_grade_all_three": 0.6763,
     "correct_on_parallel_cores": {
      "de": 0.5288,
-     "fr": 0.5064,
-     "it": 0.4904
+     "fr": 0.5032,
+     "it": 0.484
     }
    },
    "by_domain": {
     "ahv": {
      "n": 166,
-     "correct": 0.3193,
-     "incorrect": 0.6807,
+     "correct": 0.3012,
+     "incorrect": 0.6988,
      "not_attempted": 0.0,
-     "cga": 0.3193,
-     "f": 0.3193,
-     "hallucination_rate": 0.6807,
-     "stale_share_of_errors": 0.1947,
-     "score_l1": -0.3614,
-     "score_l3": -1.7229,
+     "cga": 0.3012,
+     "f": 0.3012,
+     "hallucination_rate": 0.6988,
+     "stale_share_of_errors": 0.1983,
+     "score_l1": -0.3976,
+     "score_l3": -1.7952,
      "n_total": 166,
      "n_ungraded": 0,
      "grade_source": {
@@ -269,15 +269,15 @@
     },
     "bvg_3a": {
      "n": 75,
-     "correct": 0.4533,
-     "incorrect": 0.5333,
+     "correct": 0.4667,
+     "incorrect": 0.52,
      "not_attempted": 0.0133,
-     "cga": 0.4595,
-     "f": 0.4564,
-     "hallucination_rate": 0.5405,
-     "stale_share_of_errors": 0.05,
-     "score_l1": -0.08,
-     "score_l3": -1.1467,
+     "cga": 0.473,
+     "f": 0.4698,
+     "hallucination_rate": 0.527,
+     "stale_share_of_errors": 0.0513,
+     "score_l1": -0.0533,
+     "score_l3": -1.0933,
      "n_total": 75,
      "n_ungraded": 0,
      "grade_source": {
@@ -292,7 +292,7 @@
      "cga": 0.5372,
      "f": 0.5328,
      "hallucination_rate": 0.4628,
-     "stale_share_of_errors": 0.1071,
+     "stale_share_of_errors": 0.0893,
      "score_l1": 0.0732,
      "score_l3": -0.8374,
      "n_total": 123,
@@ -343,7 +343,7 @@
      "cga": 0.4239,
      "f": 0.4216,
      "hallucination_rate": 0.5761,
-     "stale_share_of_errors": 0.0566,
+     "stale_share_of_errors": 0.0943,
      "score_l1": -0.1505,
      "score_l3": -1.2903,
      "n_total": 93,
@@ -355,14 +355,14 @@
     "kvg_insured": {
      "n": 167,
      "correct": 0.5868,
-     "incorrect": 0.3892,
-     "not_attempted": 0.024,
-     "cga": 0.6012,
-     "f": 0.5939,
-     "hallucination_rate": 0.3988,
+     "incorrect": 0.3832,
+     "not_attempted": 0.0299,
+     "cga": 0.6049,
+     "f": 0.5957,
+     "hallucination_rate": 0.3951,
      "stale_share_of_errors": 0.0,
-     "score_l1": 0.1976,
-     "score_l3": -0.5808,
+     "score_l1": 0.2036,
+     "score_l3": -0.5629,
      "n_total": 167,
      "n_ungraded": 0,
      "grade_source": {
@@ -388,15 +388,15 @@
     },
     "uvg_atsg": {
      "n": 156,
-     "correct": 0.6346,
-     "incorrect": 0.3654,
+     "correct": 0.6282,
+     "incorrect": 0.3718,
      "not_attempted": 0.0,
-     "cga": 0.6346,
-     "f": 0.6346,
-     "hallucination_rate": 0.3654,
+     "cga": 0.6282,
+     "f": 0.6282,
+     "hallucination_rate": 0.3718,
      "stale_share_of_errors": 0.0,
-     "score_l1": 0.2692,
-     "score_l3": -0.4615,
+     "score_l1": 0.2564,
+     "score_l3": -0.4872,
      "n_total": 156,
      "n_ungraded": 0,
      "grade_source": {
@@ -408,14 +408,14 @@
     "calc": {
      "n": 60,
      "correct": 0.6167,
-     "incorrect": 0.3833,
-     "not_attempted": 0.0,
-     "cga": 0.6167,
-     "f": 0.6167,
-     "hallucination_rate": 0.3833,
+     "incorrect": 0.3667,
+     "not_attempted": 0.0167,
+     "cga": 0.6271,
+     "f": 0.6218,
+     "hallucination_rate": 0.3729,
      "stale_share_of_errors": 0.0,
-     "score_l1": 0.2333,
-     "score_l3": -0.5333,
+     "score_l1": 0.25,
+     "score_l3": -0.4833,
      "n_total": 60,
      "n_ungraded": 0,
      "grade_source": {
@@ -424,15 +424,15 @@
     },
     "false_premise": {
      "n": 54,
-     "correct": 0.5185,
-     "incorrect": 0.4815,
+     "correct": 0.5,
+     "incorrect": 0.5,
      "not_attempted": 0.0,
-     "cga": 0.5185,
-     "f": 0.5185,
-     "hallucination_rate": 0.4815,
-     "stale_share_of_errors": 0.0769,
-     "score_l1": 0.037,
-     "score_l3": -0.9259,
+     "cga": 0.5,
+     "f": 0.5,
+     "hallucination_rate": 0.5,
+     "stale_share_of_errors": 0.0741,
+     "score_l1": 0.0,
+     "score_l3": -1.0,
      "n_total": 54,
      "n_ungraded": 0,
      "grade_source": {
@@ -464,7 +464,7 @@
      "cga": 0.4743,
      "f": 0.4743,
      "hallucination_rate": 0.5257,
-     "stale_share_of_errors": 0.0326,
+     "stale_share_of_errors": 0.0435,
      "score_l1": -0.0514,
      "score_l3": -1.1029,
      "n_total": 175,
@@ -475,15 +475,15 @@
     },
     "temporal": {
      "n": 135,
-     "correct": 0.0815,
-     "incorrect": 0.9037,
+     "correct": 0.0741,
+     "incorrect": 0.9111,
      "not_attempted": 0.0148,
-     "cga": 0.0827,
-     "f": 0.0821,
-     "hallucination_rate": 0.9173,
-     "stale_share_of_errors": 0.3279,
-     "score_l1": -0.8222,
-     "score_l3": -2.6296,
+     "cga": 0.0752,
+     "f": 0.0746,
+     "hallucination_rate": 0.9248,
+     "stale_share_of_errors": 0.3333,
+     "score_l1": -0.837,
+     "score_l3": -2.6593,
      "n_total": 135,
      "n_ungraded": 0,
      "grade_source": {
@@ -509,15 +509,15 @@
     },
     "yes_no": {
      "n": 188,
-     "correct": 0.6755,
-     "incorrect": 0.3191,
+     "correct": 0.6702,
+     "incorrect": 0.3245,
      "not_attempted": 0.0053,
-     "cga": 0.6791,
-     "f": 0.6773,
-     "hallucination_rate": 0.3209,
+     "cga": 0.6738,
+     "f": 0.672,
+     "hallucination_rate": 0.3262,
      "stale_share_of_errors": 0.0,
-     "score_l1": 0.3564,
-     "score_l3": -0.2819,
+     "score_l1": 0.3457,
+     "score_l3": -0.3032,
      "n_total": 188,
      "n_ungraded": 0,
      "grade_source": {
@@ -528,15 +528,15 @@
    "by_temporal": {
     "changed_2024_2025": {
      "n": 211,
-     "correct": 0.1564,
-     "incorrect": 0.8152,
+     "correct": 0.1517,
+     "incorrect": 0.8199,
      "not_attempted": 0.0284,
-     "cga": 0.161,
-     "f": 0.1587,
-     "hallucination_rate": 0.839,
-     "stale_share_of_errors": 0.2442,
-     "score_l1": -0.6588,
-     "score_l3": -2.2891,
+     "cga": 0.1561,
+     "f": 0.1538,
+     "hallucination_rate": 0.8439,
+     "stale_share_of_errors": 0.2601,
+     "score_l1": -0.6682,
+     "score_l3": -2.3081,
      "n_total": 211,
      "n_ungraded": 0,
      "grade_source": {
@@ -551,7 +551,7 @@
      "cga": 0.2917,
      "f": 0.2917,
      "hallucination_rate": 0.7083,
-     "stale_share_of_errors": 0.1765,
+     "stale_share_of_errors": 0.1176,
      "score_l1": -0.4167,
      "score_l3": -1.8333,
      "n_total": 24,
@@ -562,15 +562,15 @@
     },
     "stable_pre2024": {
      "n": 716,
-     "correct": 0.6215,
-     "incorrect": 0.3729,
-     "not_attempted": 0.0056,
-     "cga": 0.625,
-     "f": 0.6232,
-     "hallucination_rate": 0.375,
+     "correct": 0.6187,
+     "incorrect": 0.3743,
+     "not_attempted": 0.007,
+     "cga": 0.6231,
+     "f": 0.6209,
+     "hallucination_rate": 0.3769,
      "stale_share_of_errors": 0.0,
-     "score_l1": 0.2486,
-     "score_l3": -0.4972,
+     "score_l1": 0.2444,
+     "score_l3": -0.5042,
      "n_total": 716,
      "n_ungraded": 0,
      "grade_source": {
@@ -581,15 +581,15 @@
    "by_stale_pair": {
     "False": {
      "n": 794,
-     "correct": 0.5957,
-     "incorrect": 0.3955,
-     "not_attempted": 0.0088,
-     "cga": 0.601,
-     "f": 0.5984,
-     "hallucination_rate": 0.399,
+     "correct": 0.5932,
+     "incorrect": 0.3967,
+     "not_attempted": 0.0101,
+     "cga": 0.5992,
+     "f": 0.5962,
+     "hallucination_rate": 0.4008,
      "stale_share_of_errors": 0.0,
-     "score_l1": 0.2003,
-     "score_l3": -0.5907,
+     "score_l1": 0.1965,
+     "score_l3": -0.597,
      "n_total": 794,
      "n_ungraded": 0,
      "grade_source": {
@@ -598,15 +598,15 @@
     },
     "True": {
      "n": 157,
-     "correct": 0.0764,
-     "incorrect": 0.9045,
+     "correct": 0.0701,
+     "incorrect": 0.9108,
      "not_attempted": 0.0191,
-     "cga": 0.0779,
-     "f": 0.0772,
-     "hallucination_rate": 0.9221,
-     "stale_share_of_errors": 0.3169,
-     "score_l1": -0.828,
-     "score_l3": -2.6369,
+     "cga": 0.0714,
+     "f": 0.0707,
+     "hallucination_rate": 0.9286,
+     "stale_share_of_errors": 0.3287,
+     "score_l1": -0.8408,
+     "score_l3": -2.6624,
      "n_total": 157,
      "n_ungraded": 0,
      "grade_source": {
@@ -617,15 +617,15 @@
    "by_generator": {
     "claude": {
      "n": 261,
-     "correct": 0.6245,
-     "incorrect": 0.364,
+     "correct": 0.6207,
+     "incorrect": 0.3678,
      "not_attempted": 0.0115,
-     "cga": 0.6318,
-     "f": 0.6281,
-     "hallucination_rate": 0.3682,
-     "stale_share_of_errors": 0.1368,
-     "score_l1": 0.2605,
-     "score_l3": -0.4674,
+     "cga": 0.6279,
+     "f": 0.6243,
+     "hallucination_rate": 0.3721,
+     "stale_share_of_errors": 0.1354,
+     "score_l1": 0.2529,
+     "score_l3": -0.4828,
      "n_total": 261,
      "n_ungraded": 0,
      "grade_source": {
@@ -651,15 +651,15 @@
     },
     "gemini": {
      "n": 258,
-     "correct": 0.5814,
+     "correct": 0.5775,
      "incorrect": 0.407,
-     "not_attempted": 0.0116,
-     "cga": 0.5882,
-     "f": 0.5848,
-     "hallucination_rate": 0.4118,
+     "not_attempted": 0.0155,
+     "cga": 0.5866,
+     "f": 0.582,
+     "hallucination_rate": 0.4134,
      "stale_share_of_errors": 0.019,
-     "score_l1": 0.1744,
-     "score_l3": -0.6395,
+     "score_l1": 0.1705,
+     "score_l3": -0.6434,
      "n_total": 258,
      "n_ungraded": 0,
      "grade_source": {
@@ -668,15 +668,15 @@
     },
     "nemotron": {
      "n": 138,
-     "correct": 0.1304,
-     "incorrect": 0.8478,
+     "correct": 0.1232,
+     "incorrect": 0.8551,
      "not_attempted": 0.0217,
-     "cga": 0.1333,
-     "f": 0.1319,
-     "hallucination_rate": 0.8667,
-     "stale_share_of_errors": 0.188,
-     "score_l1": -0.7174,
-     "score_l3": -2.413,
+     "cga": 0.1259,
+     "f": 0.1245,
+     "hallucination_rate": 0.8741,
+     "stale_share_of_errors": 0.2034,
+     "score_l1": -0.7319,
+     "score_l3": -2.442,
      "n_total": 138,
      "n_ungraded": 0,
      "grade_source": {
@@ -1861,15 +1861,15 @@
   "apertus-v1.5-70b__open_book": {
    "overall": {
     "n": 951,
-    "correct": 0.9632,
-    "incorrect": 0.0294,
-    "not_attempted": 0.0074,
-    "cga": 0.9703,
-    "f": 0.9668,
-    "hallucination_rate": 0.0297,
-    "stale_share_of_errors": 0.0357,
-    "score_l1": 0.9338,
-    "score_l3": 0.8749,
+    "correct": 0.9653,
+    "incorrect": 0.0284,
+    "not_attempted": 0.0063,
+    "cga": 0.9714,
+    "f": 0.9684,
+    "hallucination_rate": 0.0286,
+    "stale_share_of_errors": 0.037,
+    "score_l1": 0.9369,
+    "score_l3": 0.8801,
     "n_total": 951,
     "n_ungraded": 0,
     "grade_source": {
@@ -1877,54 +1877,54 @@
     },
     "ci95": {
      "correct": [
-      0.9506,
-      0.9748
+      0.9537,
+      0.9769
      ],
      "incorrect": [
-      0.0189,
-      0.041
+      0.0179,
+      0.0389
      ],
      "not_attempted": [
-      0.0032,
-      0.0126
+      0.0021,
+      0.0116
      ],
      "cga": [
-      0.9587,
-      0.9809
+      0.9607,
+      0.982
      ],
      "f": [
-      0.9556,
-      0.9773
+      0.9572,
+      0.9794
      ],
      "hallucination_rate": [
-      0.0191,
-      0.0413
+      0.018,
+      0.0393
      ],
      "stale_share_of_errors": [
       0.0,
-      0.1212
+      0.1251
      ],
      "score_l1": [
-      0.9116,
-      0.9548
+      0.9148,
+      0.959
      ],
      "score_l3": [
-      0.8297,
-      0.9159
+      0.837,
+      0.9232
      ]
     }
    },
    "lang:de-CH": {
     "n": 327,
-    "correct": 0.9725,
-    "incorrect": 0.0214,
+    "correct": 0.9755,
+    "incorrect": 0.0183,
     "not_attempted": 0.0061,
-    "cga": 0.9785,
-    "f": 0.9755,
-    "hallucination_rate": 0.0215,
-    "stale_share_of_errors": 0.1429,
-    "score_l1": 0.9511,
-    "score_l3": 0.9083,
+    "cga": 0.9815,
+    "f": 0.9785,
+    "hallucination_rate": 0.0185,
+    "stale_share_of_errors": 0.1667,
+    "score_l1": 0.9572,
+    "score_l3": 0.9205,
     "n_total": 327,
     "n_ungraded": 0,
     "grade_source": {
@@ -1932,54 +1932,54 @@
     },
     "ci95": {
      "correct": [
-      0.9541,
-      0.9878
+      0.9572,
+      0.9908
      ],
      "incorrect": [
       0.0061,
-      0.0367
+      0.0336
      ],
      "not_attempted": [
       0.0,
       0.0153
      ],
      "cga": [
-      0.9627,
-      0.9938
+      0.9662,
+      0.9939
      ],
      "f": [
-      0.9587,
-      0.9893
+      0.963,
+      0.9923
      ],
      "hallucination_rate": [
-      0.0062,
-      0.0373
+      0.0061,
+      0.0338
      ],
      "stale_share_of_errors": [
       0.0,
-      0.5
+      0.5714
      ],
      "score_l1": [
-      0.9174,
-      0.9786
+      0.9266,
+      0.9847
      ],
      "score_l3": [
-      0.8379,
-      0.9633
+      0.8593,
+      0.9725
      ]
     }
    },
    "lang:fr-CH": {
     "n": 312,
-    "correct": 0.9551,
-    "incorrect": 0.0385,
+    "correct": 0.9583,
+    "incorrect": 0.0353,
     "not_attempted": 0.0064,
-    "cga": 0.9613,
-    "f": 0.9582,
-    "hallucination_rate": 0.0387,
+    "cga": 0.9645,
+    "f": 0.9614,
+    "hallucination_rate": 0.0355,
     "stale_share_of_errors": 0.0,
-    "score_l1": 0.9167,
-    "score_l3": 0.8397,
+    "score_l1": 0.9231,
+    "score_l3": 0.8526,
     "n_total": 312,
     "n_ungraded": 0,
     "grade_source": {
@@ -1987,54 +1987,54 @@
     },
     "ci95": {
      "correct": [
-      0.9295,
+      0.9327,
       0.9776
      ],
      "incorrect": [
-      0.0192,
-      0.0609
+      0.016,
+      0.0577
      ],
      "not_attempted": [
       0.0,
       0.016
      ],
      "cga": [
-      0.9381,
-      0.9807
+      0.9416,
+      0.9839
      ],
      "f": [
-      0.9337,
-      0.9791
+      0.9357,
+      0.9808
      ],
      "hallucination_rate": [
-      0.0193,
-      0.0619
+      0.0161,
+      0.0584
      ],
      "stale_share_of_errors": [
       0.0,
       0.0
      ],
      "score_l1": [
-      0.8685,
-      0.9583
+      0.8718,
+      0.9615
      ],
      "score_l3": [
-      0.7404,
-      0.9199
+      0.7563,
+      0.9327
      ]
     }
    },
    "lang:it-CH": {
     "n": 312,
     "correct": 0.9615,
-    "incorrect": 0.0288,
-    "not_attempted": 0.0096,
-    "cga": 0.9709,
-    "f": 0.9662,
-    "hallucination_rate": 0.0291,
+    "incorrect": 0.0321,
+    "not_attempted": 0.0064,
+    "cga": 0.9677,
+    "f": 0.9646,
+    "hallucination_rate": 0.0323,
     "stale_share_of_errors": 0.0,
-    "score_l1": 0.9327,
-    "score_l3": 0.875,
+    "score_l1": 0.9295,
+    "score_l3": 0.8654,
     "n_total": 312,
     "n_ungraded": 0,
     "grade_source": {
@@ -2046,50 +2046,50 @@
       0.9808
      ],
      "incorrect": [
-      0.0128,
-      0.0513
+      0.016,
+      0.0545
      ],
      "not_attempted": [
       0.0,
-      0.0224
+      0.016
      ],
      "cga": [
-      0.9484,
-      0.9871
+      0.9452,
+      0.984
      ],
      "f": [
-      0.945,
+      0.9421,
       0.9839
      ],
      "hallucination_rate": [
-      0.0129,
-      0.0516
+      0.016,
+      0.0548
      ],
      "stale_share_of_errors": [
       0.0,
       0.0
      ],
      "score_l1": [
-      0.891,
+      0.8846,
       0.9679
      ],
      "score_l3": [
-      0.7885,
-      0.9423
+      0.7756,
+      0.9359
      ]
     }
    },
    "temporal_items": {
     "n": 135,
-    "correct": 0.9704,
-    "incorrect": 0.0296,
+    "correct": 0.9852,
+    "incorrect": 0.0148,
     "not_attempted": 0.0,
-    "cga": 0.9704,
-    "f": 0.9704,
-    "hallucination_rate": 0.0296,
-    "stale_share_of_errors": 0.25,
-    "score_l1": 0.9407,
-    "score_l3": 0.8815,
+    "cga": 0.9852,
+    "f": 0.9852,
+    "hallucination_rate": 0.0148,
+    "stale_share_of_errors": 0.5,
+    "score_l1": 0.9704,
+    "score_l3": 0.9407,
     "n_total": 135,
     "n_ungraded": 0,
     "grade_source": {
@@ -2098,25 +2098,25 @@
    },
    "language_consistency": {
     "n_cores": 312,
-    "same_grade_all_three": 0.9391,
+    "same_grade_all_three": 0.9455,
     "correct_on_parallel_cores": {
-     "de": 0.9712,
-     "fr": 0.9551,
+     "de": 0.9744,
+     "fr": 0.9583,
      "it": 0.9615
     }
    },
    "by_domain": {
     "ahv": {
      "n": 166,
-     "correct": 0.9699,
-     "incorrect": 0.0241,
+     "correct": 0.9759,
+     "incorrect": 0.0181,
      "not_attempted": 0.006,
-     "cga": 0.9758,
-     "f": 0.9728,
-     "hallucination_rate": 0.0242,
+     "cga": 0.9818,
+     "f": 0.9789,
+     "hallucination_rate": 0.0182,
      "stale_share_of_errors": 0.0,
-     "score_l1": 0.9458,
-     "score_l3": 0.8976,
+     "score_l1": 0.9578,
+     "score_l3": 0.9217,
      "n_total": 166,
      "n_ungraded": 0,
      "grade_source": {
@@ -2125,15 +2125,15 @@
     },
     "bvg_3a": {
      "n": 75,
-     "correct": 0.96,
-     "incorrect": 0.04,
+     "correct": 0.9733,
+     "incorrect": 0.0267,
      "not_attempted": 0.0,
-     "cga": 0.96,
-     "f": 0.96,
-     "hallucination_rate": 0.04,
+     "cga": 0.9733,
+     "f": 0.9733,
+     "hallucination_rate": 0.0267,
      "stale_share_of_errors": 0.0,
-     "score_l1": 0.92,
-     "score_l3": 0.84,
+     "score_l1": 0.9467,
+     "score_l3": 0.8933,
      "n_total": 75,
      "n_ungraded": 0,
      "grade_source": {
@@ -2177,14 +2177,14 @@
     "iv_el": {
      "n": 118,
      "correct": 0.9661,
-     "incorrect": 0.0085,
-     "not_attempted": 0.0254,
-     "cga": 0.9913,
-     "f": 0.9785,
-     "hallucination_rate": 0.0087,
+     "incorrect": 0.0169,
+     "not_attempted": 0.0169,
+     "cga": 0.9828,
+     "f": 0.9744,
+     "hallucination_rate": 0.0172,
      "stale_share_of_errors": 0.0,
-     "score_l1": 0.9576,
-     "score_l3": 0.9407,
+     "score_l1": 0.9492,
+     "score_l3": 0.9153,
      "n_total": 118,
      "n_ungraded": 0,
      "grade_source": {
@@ -2281,14 +2281,14 @@
     "false_premise": {
      "n": 54,
      "correct": 0.8148,
-     "incorrect": 0.0926,
-     "not_attempted": 0.0926,
-     "cga": 0.898,
-     "f": 0.8544,
-     "hallucination_rate": 0.102,
+     "incorrect": 0.1111,
+     "not_attempted": 0.0741,
+     "cga": 0.88,
+     "f": 0.8462,
+     "hallucination_rate": 0.12,
      "stale_share_of_errors": 0.0,
-     "score_l1": 0.7222,
-     "score_l3": 0.537,
+     "score_l1": 0.7037,
+     "score_l3": 0.4815,
      "n_total": 54,
      "n_ungraded": 0,
      "grade_source": {
@@ -2331,15 +2331,15 @@
     },
     "temporal": {
      "n": 135,
-     "correct": 0.9704,
-     "incorrect": 0.0296,
+     "correct": 0.9852,
+     "incorrect": 0.0148,
      "not_attempted": 0.0,
-     "cga": 0.9704,
-     "f": 0.9704,
-     "hallucination_rate": 0.0296,
-     "stale_share_of_errors": 0.25,
-     "score_l1": 0.9407,
-     "score_l3": 0.8815,
+     "cga": 0.9852,
+     "f": 0.9852,
+     "hallucination_rate": 0.0148,
+     "stale_share_of_errors": 0.5,
+     "score_l1": 0.9704,
+     "score_l3": 0.9407,
      "n_total": 135,
      "n_ungraded": 0,
      "grade_source": {
@@ -2384,15 +2384,15 @@
    "by_temporal": {
     "changed_2024_2025": {
      "n": 211,
-     "correct": 0.9621,
-     "incorrect": 0.0332,
+     "correct": 0.9716,
+     "incorrect": 0.0237,
      "not_attempted": 0.0047,
-     "cga": 0.9667,
-     "f": 0.9644,
-     "hallucination_rate": 0.0333,
+     "cga": 0.9762,
+     "f": 0.9739,
+     "hallucination_rate": 0.0238,
      "stale_share_of_errors": 0.0,
-     "score_l1": 0.9289,
-     "score_l3": 0.8626,
+     "score_l1": 0.9479,
+     "score_l3": 0.9005,
      "n_total": 211,
      "n_ungraded": 0,
      "grade_source": {
@@ -2419,14 +2419,14 @@
     "stable_pre2024": {
      "n": 716,
      "correct": 0.9637,
-     "incorrect": 0.0279,
-     "not_attempted": 0.0084,
-     "cga": 0.9718,
-     "f": 0.9677,
-     "hallucination_rate": 0.0282,
+     "incorrect": 0.0293,
+     "not_attempted": 0.007,
+     "cga": 0.9705,
+     "f": 0.9671,
+     "hallucination_rate": 0.0295,
      "stale_share_of_errors": 0.0,
-     "score_l1": 0.9358,
-     "score_l3": 0.8799,
+     "score_l1": 0.9344,
+     "score_l3": 0.8757,
      "n_total": 716,
      "n_ungraded": 0,
      "grade_source": {
@@ -2438,14 +2438,14 @@
     "False": {
      "n": 794,
      "correct": 0.961,
-     "incorrect": 0.0302,
-     "not_attempted": 0.0088,
-     "cga": 0.9695,
-     "f": 0.9652,
-     "hallucination_rate": 0.0305,
+     "incorrect": 0.0315,
+     "not_attempted": 0.0076,
+     "cga": 0.9683,
+     "f": 0.9646,
+     "hallucination_rate": 0.0317,
      "stale_share_of_errors": 0.0,
-     "score_l1": 0.9307,
-     "score_l3": 0.8703,
+     "score_l1": 0.9295,
+     "score_l3": 0.8665,
      "n_total": 794,
      "n_ungraded": 0,
      "grade_source": {
@@ -2454,15 +2454,15 @@
     },
     "True": {
      "n": 157,
-     "correct": 0.9745,
-     "incorrect": 0.0255,
+     "correct": 0.9873,
+     "incorrect": 0.0127,
      "not_attempted": 0.0,
-     "cga": 0.9745,
-     "f": 0.9745,
-     "hallucination_rate": 0.0255,
-     "stale_share_of_errors": 0.25,
-     "score_l1": 0.949,
-     "score_l3": 0.8981,
+     "cga": 0.9873,
+     "f": 0.9873,
+     "hallucination_rate": 0.0127,
+     "stale_share_of_errors": 0.5,
+     "score_l1": 0.9745,
+     "score_l3": 0.949,
      "n_total": 157,
      "n_ungraded": 0,
      "grade_source": {
@@ -2508,14 +2508,14 @@
     "gemini": {
      "n": 258,
      "correct": 0.9264,
-     "incorrect": 0.0543,
-     "not_attempted": 0.0194,
-     "cga": 0.9447,
-     "f": 0.9354,
-     "hallucination_rate": 0.0553,
+     "incorrect": 0.0581,
+     "not_attempted": 0.0155,
+     "cga": 0.9409,
+     "f": 0.9336,
+     "hallucination_rate": 0.0591,
      "stale_share_of_errors": 0.0,
-     "score_l1": 0.8721,
-     "score_l3": 0.7636,
+     "score_l1": 0.8682,
+     "score_l3": 0.7519,
      "n_total": 258,
      "n_ungraded": 0,
      "grade_source": {
@@ -2524,15 +2524,15 @@
     },
     "nemotron": {
      "n": 138,
-     "correct": 0.9348,
-     "incorrect": 0.058,
+     "correct": 0.9493,
+     "incorrect": 0.0435,
      "not_attempted": 0.0072,
-     "cga": 0.9416,
-     "f": 0.9382,
-     "hallucination_rate": 0.0584,
-     "stale_share_of_errors": 0.125,
-     "score_l1": 0.8768,
-     "score_l3": 0.7609,
+     "cga": 0.9562,
+     "f": 0.9527,
+     "hallucination_rate": 0.0438,
+     "stale_share_of_errors": 0.1667,
+     "score_l1": 0.9058,
+     "score_l3": 0.8188,
      "n_total": 138,
      "n_ungraded": 0,
      "grade_source": {
@@ -2554,15 +2554,15 @@
   "apertus-v1.5-8b__closed_dated": {
    "overall": {
     "n": 951,
-    "correct": 0.3291,
+    "correct": 0.3302,
     "incorrect": 0.5542,
-    "not_attempted": 0.1167,
-    "cga": 0.3726,
-    "f": 0.3495,
-    "hallucination_rate": 0.6274,
-    "stale_share_of_errors": 0.038,
-    "score_l1": -0.225,
-    "score_l3": -1.3333,
+    "not_attempted": 0.1157,
+    "cga": 0.3734,
+    "f": 0.3504,
+    "hallucination_rate": 0.6266,
+    "stale_share_of_errors": 0.0417,
+    "score_l1": -0.224,
+    "score_l3": -1.3323,
     "n_total": 951,
     "n_ungraded": 0,
     "grade_source": {
@@ -2570,54 +2570,54 @@
     },
     "ci95": {
      "correct": [
-      0.3007,
-      0.3565
+      0.3018,
+      0.3586
      ],
      "incorrect": [
-      0.5226,
+      0.5237,
       0.5847
      ],
      "not_attempted": [
-      0.0957,
-      0.1367
+      0.0946,
+      0.1356
      ],
      "cga": [
-      0.3411,
-      0.4031
+      0.3421,
+      0.4051
      ],
      "f": [
-      0.32,
-      0.3781
+      0.3211,
+      0.3797
      ],
      "hallucination_rate": [
-      0.5969,
-      0.6589
+      0.5949,
+      0.6579
      ],
      "stale_share_of_errors": [
-      0.0222,
-      0.0545
+      0.0265,
+      0.0589
      ],
      "score_l1": [
-      -0.2808,
-      -0.1693
+      -0.2787,
+      -0.1672
      ],
      "score_l3": [
-      -1.4501,
-      -1.2145
+      -1.4469,
+      -1.2155
      ]
     }
    },
    "lang:de-CH": {
     "n": 327,
-    "correct": 0.3394,
-    "incorrect": 0.6361,
-    "not_attempted": 0.0245,
-    "cga": 0.348,
-    "f": 0.3437,
-    "hallucination_rate": 0.652,
-    "stale_share_of_errors": 0.0385,
+    "correct": 0.3425,
+    "incorrect": 0.6391,
+    "not_attempted": 0.0183,
+    "cga": 0.3489,
+    "f": 0.3457,
+    "hallucination_rate": 0.6511,
+    "stale_share_of_errors": 0.0383,
     "score_l1": -0.2966,
-    "score_l3": -1.5688,
+    "score_l3": -1.5749,
     "n_total": 327,
     "n_ungraded": 0,
     "grade_source": {
@@ -2625,54 +2625,54 @@
     },
     "ci95": {
      "correct": [
-      0.2844,
-      0.3884
+      0.2875,
+      0.3915
      ],
      "incorrect": [
-      0.5841,
-      0.6942
+      0.5872,
+      0.6943
      ],
      "not_attempted": [
-      0.0092,
-      0.0398
+      0.0061,
+      0.0336
      ],
      "cga": [
-      0.291,
-      0.3987
+      0.2937,
+      0.4
      ],
      "f": [
-      0.287,
-      0.3939
+      0.2905,
+      0.3957
      ],
      "hallucination_rate": [
-      0.6013,
-      0.709
+      0.6,
+      0.7063
      ],
      "stale_share_of_errors": [
       0.0144,
-      0.0663
+      0.066
      ],
      "score_l1": [
-      -0.4098,
-      -0.1987
+      -0.4068,
+      -0.1957
      ],
      "score_l3": [
-      -1.7891,
-      -1.367
+      -1.8012,
+      -1.3731
      ]
     }
    },
    "lang:fr-CH": {
     "n": 312,
     "correct": 0.3365,
-    "incorrect": 0.4583,
-    "not_attempted": 0.2051,
-    "cga": 0.4234,
-    "f": 0.375,
-    "hallucination_rate": 0.5766,
-    "stale_share_of_errors": 0.035,
-    "score_l1": -0.1218,
-    "score_l3": -1.0385,
+    "incorrect": 0.4551,
+    "not_attempted": 0.2083,
+    "cga": 0.4251,
+    "f": 0.3757,
+    "hallucination_rate": 0.5749,
+    "stale_share_of_errors": 0.0423,
+    "score_l1": -0.1186,
+    "score_l3": -1.0288,
     "n_total": 312,
     "n_ungraded": 0,
     "grade_source": {
@@ -2680,40 +2680,40 @@
     },
     "ci95": {
      "correct": [
-      0.2885,
+      0.2884,
       0.391
      ],
      "incorrect": [
       0.4006,
-      0.5128
+      0.5096
      ],
      "not_attempted": [
       0.1603,
-      0.2532
+      0.2564
      ],
      "cga": [
-      0.3658,
-      0.4882
+      0.3673,
+      0.4915
      ],
      "f": [
       0.3233,
-      0.4332
+      0.435
      ],
      "hallucination_rate": [
-      0.5118,
-      0.6342
+      0.5085,
+      0.6327
      ],
      "stale_share_of_errors": [
-      0.0072,
-      0.0658
+      0.0136,
+      0.0769
      ],
      "score_l1": [
-      -0.2147,
-      -0.0192
+      -0.2083,
+      -0.0128
      ],
      "score_l3": [
-      -1.234,
-      -0.8205
+      -1.2244,
+      -0.8173
      ]
     }
    },
@@ -2725,7 +2725,7 @@
     "cga": 0.3553,
     "f": 0.3316,
     "hallucination_rate": 0.6447,
-    "stale_share_of_errors": 0.0398,
+    "stale_share_of_errors": 0.0455,
     "score_l1": -0.2532,
     "score_l3": -1.3814,
     "n_total": 312,
@@ -2735,8 +2735,8 @@
     },
     "ci95": {
      "correct": [
-      0.266,
-      0.359
+      0.2628,
+      0.3591
      ],
      "incorrect": [
       0.5096,
@@ -2744,45 +2744,45 @@
      ],
      "not_attempted": [
       0.0897,
-      0.1635
+      0.1603
      ],
      "cga": [
       0.3025,
-      0.4096
+      0.4088
      ],
      "f": [
-      0.2847,
-      0.3829
+      0.2827,
+      0.3828
      ],
      "hallucination_rate": [
-      0.5904,
+      0.5912,
       0.6975
      ],
      "stale_share_of_errors": [
-      0.0118,
-      0.0695
+      0.017,
+      0.0785
      ],
      "score_l1": [
-      -0.3463,
+      -0.3462,
       -0.1571
      ],
      "score_l3": [
-      -1.5802,
-      -1.1795
+      -1.5737,
+      -1.1857
      ]
     }
    },
    "temporal_items": {
     "n": 135,
-    "correct": 0.0593,
+    "correct": 0.0519,
     "incorrect": 0.7037,
-    "not_attempted": 0.237,
-    "cga": 0.0777,
-    "f": 0.0672,
-    "hallucination_rate": 0.9223,
-    "stale_share_of_errors": 0.1895,
-    "score_l1": -0.6444,
-    "score_l3": -2.0519,
+    "not_attempted": 0.2444,
+    "cga": 0.0686,
+    "f": 0.0591,
+    "hallucination_rate": 0.9314,
+    "stale_share_of_errors": 0.2105,
+    "score_l1": -0.6519,
+    "score_l3": -2.0593,
     "n_total": 135,
     "n_ungraded": 0,
     "grade_source": {
@@ -2791,9 +2791,9 @@
    },
    "language_consistency": {
     "n_cores": 312,
-    "same_grade_all_three": 0.5032,
+    "same_grade_all_three": 0.4936,
     "correct_on_parallel_cores": {
-     "de": 0.3397,
+     "de": 0.3429,
      "fr": 0.3365,
      "it": 0.3109
     }
@@ -2835,15 +2835,15 @@
     },
     "eo_alv": {
      "n": 123,
-     "correct": 0.3171,
-     "incorrect": 0.5772,
+     "correct": 0.3089,
+     "incorrect": 0.5854,
      "not_attempted": 0.1057,
-     "cga": 0.3545,
-     "f": 0.3348,
-     "hallucination_rate": 0.6455,
-     "stale_share_of_errors": 0.0282,
-     "score_l1": -0.2602,
-     "score_l3": -1.4146,
+     "cga": 0.3455,
+     "f": 0.3262,
+     "hallucination_rate": 0.6545,
+     "stale_share_of_errors": 0.0556,
+     "score_l1": -0.2764,
+     "score_l3": -1.4472,
      "n_total": 123,
      "n_ungraded": 0,
      "grade_source": {
@@ -2869,15 +2869,15 @@
     },
     "iv_el": {
      "n": 118,
-     "correct": 0.3305,
-     "incorrect": 0.5085,
-     "not_attempted": 0.161,
-     "cga": 0.3939,
-     "f": 0.3594,
-     "hallucination_rate": 0.6061,
+     "correct": 0.3136,
+     "incorrect": 0.5169,
+     "not_attempted": 0.1695,
+     "cga": 0.3776,
+     "f": 0.3426,
+     "hallucination_rate": 0.6224,
      "stale_share_of_errors": 0.0,
-     "score_l1": -0.178,
-     "score_l3": -1.1949,
+     "score_l1": -0.2034,
+     "score_l3": -1.2373,
      "n_total": 118,
      "n_ungraded": 0,
      "grade_source": {
@@ -2886,15 +2886,15 @@
     },
     "kvg_billing": {
      "n": 93,
-     "correct": 0.2903,
-     "incorrect": 0.5699,
+     "correct": 0.3011,
+     "incorrect": 0.5591,
      "not_attempted": 0.1398,
-     "cga": 0.3375,
-     "f": 0.3121,
-     "hallucination_rate": 0.6625,
-     "stale_share_of_errors": 0.0755,
-     "score_l1": -0.2796,
-     "score_l3": -1.4194,
+     "cga": 0.35,
+     "f": 0.3237,
+     "hallucination_rate": 0.65,
+     "stale_share_of_errors": 0.0769,
+     "score_l1": -0.2581,
+     "score_l3": -1.3763,
      "n_total": 93,
      "n_ungraded": 0,
      "grade_source": {
@@ -2903,15 +2903,15 @@
     },
     "kvg_insured": {
      "n": 167,
-     "correct": 0.3952,
-     "incorrect": 0.515,
-     "not_attempted": 0.0898,
-     "cga": 0.4342,
-     "f": 0.4138,
-     "hallucination_rate": 0.5658,
+     "correct": 0.4012,
+     "incorrect": 0.503,
+     "not_attempted": 0.0958,
+     "cga": 0.4437,
+     "f": 0.4214,
+     "hallucination_rate": 0.5563,
      "stale_share_of_errors": 0.0,
-     "score_l1": -0.1198,
-     "score_l3": -1.1497,
+     "score_l1": -0.1018,
+     "score_l3": -1.1078,
      "n_total": 167,
      "n_ungraded": 0,
      "grade_source": {
@@ -2920,15 +2920,15 @@
     },
     "or_illness": {
      "n": 47,
-     "correct": 0.4043,
+     "correct": 0.4255,
      "incorrect": 0.5319,
-     "not_attempted": 0.0638,
-     "cga": 0.4318,
-     "f": 0.4176,
-     "hallucination_rate": 0.5682,
+     "not_attempted": 0.0426,
+     "cga": 0.4444,
+     "f": 0.4348,
+     "hallucination_rate": 0.5556,
      "stale_share_of_errors": 0.0,
-     "score_l1": -0.1277,
-     "score_l3": -1.1915,
+     "score_l1": -0.1064,
+     "score_l3": -1.1702,
      "n_total": 47,
      "n_ungraded": 0,
      "grade_source": {
@@ -2937,15 +2937,15 @@
     },
     "uvg_atsg": {
      "n": 156,
-     "correct": 0.4679,
-     "incorrect": 0.4679,
-     "not_attempted": 0.0641,
+     "correct": 0.4744,
+     "incorrect": 0.4744,
+     "not_attempted": 0.0513,
      "cga": 0.5,
-     "f": 0.4834,
+     "f": 0.4868,
      "hallucination_rate": 0.5,
      "stale_share_of_errors": 0.0,
      "score_l1": 0.0,
-     "score_l3": -0.9359,
+     "score_l3": -0.9487,
      "n_total": 156,
      "n_ungraded": 0,
      "grade_source": {
@@ -2973,15 +2973,15 @@
     },
     "false_premise": {
      "n": 54,
-     "correct": 0.3148,
+     "correct": 0.3519,
      "incorrect": 0.6481,
-     "not_attempted": 0.037,
-     "cga": 0.3269,
-     "f": 0.3208,
-     "hallucination_rate": 0.6731,
+     "not_attempted": 0.0,
+     "cga": 0.3519,
+     "f": 0.3519,
+     "hallucination_rate": 0.6481,
      "stale_share_of_errors": 0.0,
-     "score_l1": -0.3333,
-     "score_l3": -1.6296,
+     "score_l1": -0.2963,
+     "score_l3": -1.5926,
      "n_total": 54,
      "n_ungraded": 0,
      "grade_source": {
@@ -2990,15 +2990,15 @@
     },
     "numeric": {
      "n": 330,
-     "correct": 0.3242,
-     "incorrect": 0.5333,
-     "not_attempted": 0.1424,
-     "cga": 0.3781,
-     "f": 0.3491,
-     "hallucination_rate": 0.6219,
+     "correct": 0.3273,
+     "incorrect": 0.5273,
+     "not_attempted": 0.1455,
+     "cga": 0.383,
+     "f": 0.3529,
+     "hallucination_rate": 0.617,
      "stale_share_of_errors": 0.0,
-     "score_l1": -0.2091,
-     "score_l3": -1.2758,
+     "score_l1": -0.2,
+     "score_l3": -1.2545,
      "n_total": 330,
      "n_ungraded": 0,
      "grade_source": {
@@ -3007,15 +3007,15 @@
     },
     "procedural": {
      "n": 175,
-     "correct": 0.2629,
-     "incorrect": 0.64,
+     "correct": 0.2514,
+     "incorrect": 0.6514,
      "not_attempted": 0.0971,
-     "cga": 0.2911,
-     "f": 0.2763,
-     "hallucination_rate": 0.7089,
-     "stale_share_of_errors": 0.0179,
-     "score_l1": -0.3771,
-     "score_l3": -1.6571,
+     "cga": 0.2785,
+     "f": 0.2643,
+     "hallucination_rate": 0.7215,
+     "stale_share_of_errors": 0.0175,
+     "score_l1": -0.4,
+     "score_l3": -1.7029,
      "n_total": 175,
      "n_ungraded": 0,
      "grade_source": {
@@ -3024,15 +3024,15 @@
     },
     "temporal": {
      "n": 135,
-     "correct": 0.0593,
+     "correct": 0.0519,
      "incorrect": 0.7037,
-     "not_attempted": 0.237,
-     "cga": 0.0777,
-     "f": 0.0672,
-     "hallucination_rate": 0.9223,
-     "stale_share_of_errors": 0.1895,
-     "score_l1": -0.6444,
-     "score_l3": -2.0519,
+     "not_attempted": 0.2444,
+     "cga": 0.0686,
+     "f": 0.0591,
+     "hallucination_rate": 0.9314,
+     "stale_share_of_errors": 0.2105,
+     "score_l1": -0.6519,
+     "score_l3": -2.0593,
      "n_total": 135,
      "n_ungraded": 0,
      "grade_source": {
@@ -3042,14 +3042,14 @@
     "term": {
      "n": 9,
      "correct": 0.3333,
-     "incorrect": 0.4444,
-     "not_attempted": 0.2222,
-     "cga": 0.4286,
-     "f": 0.375,
-     "hallucination_rate": 0.5714,
+     "incorrect": 0.5556,
+     "not_attempted": 0.1111,
+     "cga": 0.375,
+     "f": 0.3529,
+     "hallucination_rate": 0.625,
      "stale_share_of_errors": 0.0,
-     "score_l1": -0.1111,
-     "score_l3": -1.0,
+     "score_l1": -0.2222,
+     "score_l3": -1.3333,
      "n_total": 9,
      "n_ungraded": 0,
      "grade_source": {
@@ -3058,15 +3058,15 @@
     },
     "yes_no": {
      "n": 188,
-     "correct": 0.5426,
-     "incorrect": 0.4415,
+     "correct": 0.5479,
+     "incorrect": 0.4362,
      "not_attempted": 0.016,
-     "cga": 0.5514,
-     "f": 0.5469,
-     "hallucination_rate": 0.4486,
+     "cga": 0.5568,
+     "f": 0.5523,
+     "hallucination_rate": 0.4432,
      "stale_share_of_errors": 0.0,
-     "score_l1": 0.1011,
-     "score_l3": -0.7819,
+     "score_l1": 0.1117,
+     "score_l3": -0.7606,
      "n_total": 188,
      "n_ungraded": 0,
      "grade_source": {
@@ -3078,14 +3078,14 @@
     "changed_2024_2025": {
      "n": 211,
      "correct": 0.0806,
-     "incorrect": 0.7299,
-     "not_attempted": 0.1896,
-     "cga": 0.0994,
-     "f": 0.089,
-     "hallucination_rate": 0.9006,
-     "stale_share_of_errors": 0.1169,
-     "score_l1": -0.6493,
-     "score_l3": -2.109,
+     "incorrect": 0.7251,
+     "not_attempted": 0.1943,
+     "cga": 0.1,
+     "f": 0.0892,
+     "hallucination_rate": 0.9,
+     "stale_share_of_errors": 0.1242,
+     "score_l1": -0.6445,
+     "score_l3": -2.0948,
      "n_total": 211,
      "n_ungraded": 0,
      "grade_source": {
@@ -3094,15 +3094,15 @@
     },
     "changed_2026": {
      "n": 24,
-     "correct": 0.3333,
-     "incorrect": 0.3333,
+     "correct": 0.2917,
+     "incorrect": 0.375,
      "not_attempted": 0.3333,
-     "cga": 0.5,
-     "f": 0.4,
-     "hallucination_rate": 0.5,
-     "stale_share_of_errors": 0.25,
-     "score_l1": 0.0,
-     "score_l3": -0.6667,
+     "cga": 0.4375,
+     "f": 0.35,
+     "hallucination_rate": 0.5625,
+     "stale_share_of_errors": 0.3333,
+     "score_l1": -0.0833,
+     "score_l3": -0.8333,
      "n_total": 24,
      "n_ungraded": 0,
      "grade_source": {
@@ -3111,15 +3111,15 @@
     },
     "stable_pre2024": {
      "n": 716,
-     "correct": 0.4022,
+     "correct": 0.405,
      "incorrect": 0.5098,
-     "not_attempted": 0.088,
-     "cga": 0.441,
-     "f": 0.4207,
-     "hallucination_rate": 0.559,
+     "not_attempted": 0.0852,
+     "cga": 0.4427,
+     "f": 0.423,
+     "hallucination_rate": 0.5573,
      "stale_share_of_errors": 0.0,
-     "score_l1": -0.1075,
-     "score_l3": -1.1271,
+     "score_l1": -0.1047,
+     "score_l3": -1.1243,
      "n_total": 716,
      "n_ungraded": 0,
      "grade_source": {
@@ -3130,15 +3130,15 @@
    "by_stale_pair": {
     "False": {
      "n": 794,
-     "correct": 0.3829,
+     "correct": 0.3854,
      "incorrect": 0.5239,
-     "not_attempted": 0.0932,
-     "cga": 0.4222,
-     "f": 0.4016,
-     "hallucination_rate": 0.5778,
+     "not_attempted": 0.0907,
+     "cga": 0.4238,
+     "f": 0.4037,
+     "hallucination_rate": 0.5762,
      "stale_share_of_errors": 0.0,
-     "score_l1": -0.1411,
-     "score_l3": -1.1889,
+     "score_l1": -0.1385,
+     "score_l3": -1.1864,
      "n_total": 794,
      "n_ungraded": 0,
      "grade_source": {
@@ -3147,15 +3147,15 @@
     },
     "True": {
      "n": 157,
-     "correct": 0.0573,
+     "correct": 0.051,
      "incorrect": 0.707,
-     "not_attempted": 0.2357,
-     "cga": 0.075,
-     "f": 0.065,
-     "hallucination_rate": 0.925,
-     "stale_share_of_errors": 0.1802,
-     "score_l1": -0.6497,
-     "score_l3": -2.0637,
+     "not_attempted": 0.242,
+     "cga": 0.0672,
+     "f": 0.058,
+     "hallucination_rate": 0.9328,
+     "stale_share_of_errors": 0.1982,
+     "score_l1": -0.6561,
+     "score_l3": -2.0701,
      "n_total": 157,
      "n_ungraded": 0,
      "grade_source": {
@@ -3184,14 +3184,14 @@
     "codex": {
      "n": 294,
      "correct": 0.3435,
-     "incorrect": 0.5782,
-     "not_attempted": 0.0782,
-     "cga": 0.3727,
-     "f": 0.3575,
-     "hallucination_rate": 0.6273,
+     "incorrect": 0.5748,
+     "not_attempted": 0.0816,
+     "cga": 0.3741,
+     "f": 0.3582,
+     "hallucination_rate": 0.6259,
      "stale_share_of_errors": 0.0118,
-     "score_l1": -0.2347,
-     "score_l3": -1.3912,
+     "score_l1": -0.2313,
+     "score_l3": -1.381,
      "n_total": 294,
      "n_ungraded": 0,
      "grade_source": {
@@ -3200,15 +3200,15 @@
     },
     "gemini": {
      "n": 258,
-     "correct": 0.3488,
+     "correct": 0.3566,
      "incorrect": 0.5465,
-     "not_attempted": 0.1047,
-     "cga": 0.3896,
-     "f": 0.3681,
-     "hallucination_rate": 0.6104,
+     "not_attempted": 0.0969,
+     "cga": 0.3948,
+     "f": 0.3747,
+     "hallucination_rate": 0.6052,
      "stale_share_of_errors": 0.0,
-     "score_l1": -0.1977,
-     "score_l3": -1.2907,
+     "score_l1": -0.1899,
+     "score_l3": -1.2829,
      "n_total": 258,
      "n_ungraded": 0,
      "grade_source": {
@@ -3217,15 +3217,15 @@
     },
     "nemotron": {
      "n": 138,
-     "correct": 0.0942,
-     "incorrect": 0.6232,
+     "correct": 0.087,
+     "incorrect": 0.6304,
      "not_attempted": 0.2826,
-     "cga": 0.1313,
-     "f": 0.1097,
-     "hallucination_rate": 0.8687,
-     "stale_share_of_errors": 0.1163,
-     "score_l1": -0.529,
-     "score_l3": -1.7754,
+     "cga": 0.1212,
+     "f": 0.1013,
+     "hallucination_rate": 0.8788,
+     "stale_share_of_errors": 0.1379,
+     "score_l1": -0.5435,
+     "score_l3": -1.8043,
      "n_total": 138,
      "n_ungraded": 0,
      "grade_source": {
@@ -4411,15 +4411,15 @@
   "apertus-v1.5-8b__open_book": {
    "overall": {
     "n": 951,
-    "correct": 0.9485,
-    "incorrect": 0.0368,
-    "not_attempted": 0.0147,
-    "cga": 0.9626,
-    "f": 0.9555,
-    "hallucination_rate": 0.0374,
-    "stale_share_of_errors": 0.0286,
-    "score_l1": 0.9117,
-    "score_l3": 0.8381,
+    "correct": 0.9506,
+    "incorrect": 0.0358,
+    "not_attempted": 0.0137,
+    "cga": 0.9638,
+    "f": 0.9571,
+    "hallucination_rate": 0.0362,
+    "stale_share_of_errors": 0.0588,
+    "score_l1": 0.9148,
+    "score_l3": 0.8433,
     "n_total": 951,
     "n_ungraded": 0,
     "grade_source": {
@@ -4427,54 +4427,54 @@
     },
     "ci95": {
      "correct": [
-      0.9348,
-      0.9621
+      0.9369,
+      0.9642
      ],
      "incorrect": [
-      0.0252,
-      0.0494
+      0.0242,
+      0.0484
      ],
      "not_attempted": [
       0.0074,
-      0.0221
+      0.021
      ],
      "cga": [
-      0.9496,
-      0.9742
+      0.9511,
+      0.9755
      ],
      "f": [
-      0.9427,
-      0.9677
+      0.9445,
+      0.9693
      ],
      "hallucination_rate": [
-      0.0258,
-      0.0504
+      0.0245,
+      0.0489
      ],
      "stale_share_of_errors": [
       0.0,
-      0.1034
+      0.1482
      ],
      "score_l1": [
-      0.8864,
-      0.9359
+      0.8896,
+      0.939
      ],
      "score_l3": [
-      0.7855,
-      0.8843
+      0.795,
+      0.8896
      ]
     }
    },
    "lang:de-CH": {
     "n": 327,
-    "correct": 0.9602,
+    "correct": 0.9633,
     "incorrect": 0.0367,
-    "not_attempted": 0.0031,
-    "cga": 0.9632,
-    "f": 0.9617,
-    "hallucination_rate": 0.0368,
+    "not_attempted": 0.0,
+    "cga": 0.9633,
+    "f": 0.9633,
+    "hallucination_rate": 0.0367,
     "stale_share_of_errors": 0.0,
-    "score_l1": 0.9235,
-    "score_l3": 0.8502,
+    "score_l1": 0.9266,
+    "score_l3": 0.8532,
     "n_total": 327,
     "n_ungraded": 0,
     "grade_source": {
@@ -4482,8 +4482,8 @@
     },
     "ci95": {
      "correct": [
-      0.9358,
-      0.9786
+      0.9418,
+      0.9817
      ],
      "incorrect": [
       0.0183,
@@ -4491,31 +4491,31 @@
      ],
      "not_attempted": [
       0.0,
-      0.0092
+      0.0
      ],
      "cga": [
-      0.9413,
-      0.9816
+      0.9418,
+      0.9817
      ],
      "f": [
-      0.9388,
-      0.9801
+      0.9418,
+      0.9817
      ],
      "hallucination_rate": [
-      0.0184,
-      0.0587
+      0.0183,
+      0.0582
      ],
      "stale_share_of_errors": [
       0.0,
       0.0
      ],
      "score_l1": [
-      0.8777,
-      0.9602
+      0.8836,
+      0.9633
      ],
      "score_l3": [
-      0.7583,
-      0.9235
+      0.7673,
+      0.9266
      ]
     }
    },
@@ -4527,7 +4527,7 @@
     "cga": 0.9673,
     "f": 0.9579,
     "hallucination_rate": 0.0327,
-    "stale_share_of_errors": 0.0,
+    "stale_share_of_errors": 0.1,
     "score_l1": 0.9167,
     "score_l3": 0.8526,
     "n_total": 312,
@@ -4562,7 +4562,7 @@
      ],
      "stale_share_of_errors": [
       0.0,
-      0.0
+      0.3333
      ],
      "score_l1": [
       0.8718,
@@ -4576,15 +4576,15 @@
    },
    "lang:it-CH": {
     "n": 312,
-    "correct": 0.9359,
-    "incorrect": 0.0417,
+    "correct": 0.9391,
+    "incorrect": 0.0385,
     "not_attempted": 0.0224,
-    "cga": 0.9574,
-    "f": 0.9465,
-    "hallucination_rate": 0.0426,
-    "stale_share_of_errors": 0.0769,
-    "score_l1": 0.8942,
-    "score_l3": 0.8109,
+    "cga": 0.9607,
+    "f": 0.9498,
+    "hallucination_rate": 0.0393,
+    "stale_share_of_errors": 0.0833,
+    "score_l1": 0.9006,
+    "score_l3": 0.8237,
     "n_total": 312,
     "n_ungraded": 0,
     "grade_source": {
@@ -4592,40 +4592,40 @@
     },
     "ci95": {
      "correct": [
-      0.9071,
-      0.9584
+      0.9135,
+      0.9615
      ],
      "incorrect": [
-      0.0224,
-      0.0673
+      0.0192,
+      0.0641
      ],
      "not_attempted": [
       0.0096,
       0.0385
      ],
      "cga": [
-      0.9316,
-      0.977
+      0.9355,
+      0.9804
      ],
      "f": [
-      0.9203,
-      0.9676
+      0.9251,
+      0.9709
      ],
      "hallucination_rate": [
-      0.023,
-      0.0684
+      0.0196,
+      0.0645
      ],
      "stale_share_of_errors": [
       0.0,
-      0.25
+      0.2727
      ],
      "score_l1": [
-      0.8429,
-      0.9359
+      0.8526,
+      0.9423
      ],
      "score_l3": [
-      0.7115,
-      0.8878
+      0.7276,
+      0.9038
      ]
     }
    },
@@ -4637,7 +4637,7 @@
     "cga": 0.9481,
     "f": 0.9481,
     "hallucination_rate": 0.0519,
-    "stale_share_of_errors": 0.1429,
+    "stale_share_of_errors": 0.2857,
     "score_l1": 0.8963,
     "score_l3": 0.7926,
     "n_total": 135,
@@ -4648,11 +4648,11 @@
    },
    "language_consistency": {
     "n_cores": 312,
-    "same_grade_all_three": 0.9231,
+    "same_grade_all_three": 0.9295,
     "correct_on_parallel_cores": {
-     "de": 0.9583,
+     "de": 0.9615,
      "fr": 0.9487,
-     "it": 0.9359
+     "it": 0.9391
     }
    },
    "by_domain": {
@@ -4698,7 +4698,7 @@
      "cga": 0.9339,
      "f": 0.9262,
      "hallucination_rate": 0.0661,
-     "stale_share_of_errors": 0.125,
+     "stale_share_of_errors": 0.25,
      "score_l1": 0.8537,
      "score_l3": 0.7236,
      "n_total": 123,
@@ -4743,15 +4743,15 @@
     },
     "kvg_billing": {
      "n": 93,
-     "correct": 0.9892,
+     "correct": 1.0,
      "incorrect": 0.0,
-     "not_attempted": 0.0108,
+     "not_attempted": 0.0,
      "cga": 1.0,
-     "f": 0.9946,
+     "f": 1.0,
      "hallucination_rate": 0.0,
      "stale_share_of_errors": 0.0,
-     "score_l1": 0.9892,
-     "score_l3": 0.9892,
+     "score_l1": 1.0,
+     "score_l3": 1.0,
      "n_total": 93,
      "n_ungraded": 0,
      "grade_source": {
@@ -4794,15 +4794,15 @@
     },
     "uvg_atsg": {
      "n": 156,
-     "correct": 0.9615,
-     "incorrect": 0.0256,
+     "correct": 0.9679,
+     "incorrect": 0.0192,
      "not_attempted": 0.0128,
-     "cga": 0.974,
-     "f": 0.9677,
-     "hallucination_rate": 0.026,
+     "cga": 0.9805,
+     "f": 0.9742,
+     "hallucination_rate": 0.0195,
      "stale_share_of_errors": 0.0,
-     "score_l1": 0.9359,
-     "score_l3": 0.8846,
+     "score_l1": 0.9487,
+     "score_l3": 0.9103,
      "n_total": 156,
      "n_ungraded": 0,
      "grade_source": {
@@ -4830,15 +4830,15 @@
     },
     "false_premise": {
      "n": 54,
-     "correct": 0.6481,
+     "correct": 0.6667,
      "incorrect": 0.1111,
-     "not_attempted": 0.2407,
-     "cga": 0.8537,
-     "f": 0.7368,
-     "hallucination_rate": 0.1463,
+     "not_attempted": 0.2222,
+     "cga": 0.8571,
+     "f": 0.75,
+     "hallucination_rate": 0.1429,
      "stale_share_of_errors": 0.0,
-     "score_l1": 0.537,
-     "score_l3": 0.3148,
+     "score_l1": 0.5556,
+     "score_l3": 0.3333,
      "n_total": 54,
      "n_ungraded": 0,
      "grade_source": {
@@ -4847,15 +4847,15 @@
     },
     "numeric": {
      "n": 330,
-     "correct": 0.9879,
-     "incorrect": 0.0121,
+     "correct": 0.9909,
+     "incorrect": 0.0091,
      "not_attempted": 0.0,
-     "cga": 0.9879,
-     "f": 0.9879,
-     "hallucination_rate": 0.0121,
+     "cga": 0.9909,
+     "f": 0.9909,
+     "hallucination_rate": 0.0091,
      "stale_share_of_errors": 0.0,
-     "score_l1": 0.9758,
-     "score_l3": 0.9515,
+     "score_l1": 0.9818,
+     "score_l3": 0.9636,
      "n_total": 330,
      "n_ungraded": 0,
      "grade_source": {
@@ -4887,7 +4887,7 @@
      "cga": 0.9481,
      "f": 0.9481,
      "hallucination_rate": 0.0519,
-     "stale_share_of_errors": 0.1429,
+     "stale_share_of_errors": 0.2857,
      "score_l1": 0.8963,
      "score_l3": 0.7926,
      "n_total": 135,
@@ -4940,7 +4940,7 @@
      "cga": 0.9429,
      "f": 0.9406,
      "hallucination_rate": 0.0571,
-     "stale_share_of_errors": 0.0833,
+     "stale_share_of_errors": 0.1667,
      "score_l1": 0.8815,
      "score_l3": 0.7678,
      "n_total": 211,
@@ -4968,15 +4968,15 @@
     },
     "stable_pre2024": {
      "n": 716,
-     "correct": 0.9511,
-     "incorrect": 0.0307,
-     "not_attempted": 0.0182,
-     "cga": 0.9687,
-     "f": 0.9598,
-     "hallucination_rate": 0.0313,
+     "correct": 0.9539,
+     "incorrect": 0.0293,
+     "not_attempted": 0.0168,
+     "cga": 0.9702,
+     "f": 0.962,
+     "hallucination_rate": 0.0298,
      "stale_share_of_errors": 0.0,
-     "score_l1": 0.9204,
-     "score_l3": 0.8589,
+     "score_l1": 0.9246,
+     "score_l3": 0.8659,
      "n_total": 716,
      "n_ungraded": 0,
      "grade_source": {
@@ -4987,15 +4987,15 @@
    "by_stale_pair": {
     "False": {
      "n": 794,
-     "correct": 0.9471,
-     "incorrect": 0.0353,
-     "not_attempted": 0.0176,
-     "cga": 0.9641,
-     "f": 0.9555,
-     "hallucination_rate": 0.0359,
+     "correct": 0.9496,
+     "incorrect": 0.034,
+     "not_attempted": 0.0164,
+     "cga": 0.9654,
+     "f": 0.9575,
+     "hallucination_rate": 0.0346,
      "stale_share_of_errors": 0.0,
-     "score_l1": 0.9118,
-     "score_l3": 0.8413,
+     "score_l1": 0.9156,
+     "score_l3": 0.8476,
      "n_total": 794,
      "n_ungraded": 0,
      "grade_source": {
@@ -5010,7 +5010,7 @@
      "cga": 0.9554,
      "f": 0.9554,
      "hallucination_rate": 0.0446,
-     "stale_share_of_errors": 0.1429,
+     "stale_share_of_errors": 0.2857,
      "score_l1": 0.9108,
      "score_l3": 0.8217,
      "n_total": 157,
@@ -5040,15 +5040,15 @@
     },
     "codex": {
      "n": 294,
-     "correct": 0.9592,
-     "incorrect": 0.0408,
+     "correct": 0.9626,
+     "incorrect": 0.0374,
      "not_attempted": 0.0,
-     "cga": 0.9592,
-     "f": 0.9592,
-     "hallucination_rate": 0.0408,
+     "cga": 0.9626,
+     "f": 0.9626,
+     "hallucination_rate": 0.0374,
      "stale_share_of_errors": 0.0,
-     "score_l1": 0.9184,
-     "score_l3": 0.8367,
+     "score_l1": 0.9252,
+     "score_l3": 0.8503,
      "n_total": 294,
      "n_ungraded": 0,
      "grade_source": {
@@ -5057,15 +5057,15 @@
     },
     "gemini": {
      "n": 258,
-     "correct": 0.8992,
+     "correct": 0.9031,
      "incorrect": 0.0504,
-     "not_attempted": 0.0504,
-     "cga": 0.9469,
-     "f": 0.9225,
-     "hallucination_rate": 0.0531,
+     "not_attempted": 0.0465,
+     "cga": 0.9472,
+     "f": 0.9246,
+     "hallucination_rate": 0.0528,
      "stale_share_of_errors": 0.0,
-     "score_l1": 0.8488,
-     "score_l3": 0.7481,
+     "score_l1": 0.8527,
+     "score_l3": 0.7519,
      "n_total": 258,
      "n_ungraded": 0,
      "grade_source": {
@@ -5080,7 +5080,7 @@
      "cga": 0.9343,
      "f": 0.9309,
      "hallucination_rate": 0.0657,
-     "stale_share_of_errors": 0.1111,
+     "stale_share_of_errors": 0.2222,
      "score_l1": 0.8623,
      "score_l3": 0.7319,
      "n_total": 138,

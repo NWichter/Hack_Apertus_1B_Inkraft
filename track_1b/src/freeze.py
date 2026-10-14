@@ -2,7 +2,7 @@
 metadata.jsonl, the ablation subset and FREEZE.json. Needs --go (the freeze is Niklas' decision).
 
 python src/freeze.py --fedlex <fedlex-v2> --go [--version 1.0.0] [--corpus <multilegalpile dir>]
-Afterwards: commit, `git tag dataset-v1.0.0`, push (printed at the end, not executed).
+Afterwards: report/fill_numbers.py, commit and `git tag dataset-v1.0.0` (printed at the end, not executed).
 """
 
 import argparse
@@ -160,7 +160,7 @@ def main():
     print(json.dumps(info["stats"], indent=1))
     print(
         "\nnext: scripts/run_after_freeze.sh (first freeze) or the rest of scripts/after_human_check.sh,\n"
-        "then python report/numbers.py, commit track_1b/data and tag dataset-v<version>"
+        "then python report/fill_numbers.py, commit track_1b/data and tag dataset-v<version>"
     )
 
 

@@ -1,0 +1,68 @@
+[
+ {
+  "id": "ag-0030-it",
+  "question": "La durata di contribuzione nell'AVS è già completa se una persona vanta 20 anni di contribuzione?",
+  "answer": "No, 20 anni non bastano di regola: È completa se una persona presenta lo stesso numero di anni di contribuzione degli assicurati della sua classe d’età.",
+  "why": "La domanda chiede se 20 anni bastano, ma la risposta dipende dalla classe d'età, che non è specificata nel quesito."
+ },
+ {
+  "id": "ag-0036-it",
+  "question": "Un fornitore di prestazioni può trattenere gli sconti sui farmaci prescritti senza trasferirli al debitore della rimunerazione?",
+  "answer": "No, la legge lo vieta: Il fornitore di prestazioni deve fare usufruire il debitore della rimunerazione di sconti diretti o indiretti.",
+  "why": "La domanda non specifica se si tratti di sconti ottenuti dal fornitore in base alle condizioni di cui al comma, lasciando aperta un'interpretazione restrittiva rispetto all'ambito di applicazione dell'obbligo."
+ },
+ {
+  "id": "ag-0065-fr",
+  "question": "À combien d'indemnités journalières au plus a-t-on droit avec une période de cotisation de 12 mois dans l'assurance-chômage?",
+  "answer": "260 indemnités",
+  "why": "La question ne précise pas l'âge du bénéficiaire, or selon le paragraphe, une personne de 55 ans ou plus peut avoir droit à 520 indemnités même avec 12 mois de cotisation si elle remplit d'autres conditions."
+ },
+ {
+  "id": "cx-0014-fr",
+  "question": "Qui effectue ou prescrit, dans l’assurance obligatoire des soins, les examens destinés à détecter à temps les maladies?",
+  "answer": "un médecin",
+  "why": "Le paragraphe mentionne uniquement le médecin, donc le dentiste n'est pas inclus selon le texte de la loi."
+ },
+ {
+  "id": "cx-0087-it",
+  "question": "Dopo quale termine dalla nascita del diritto l’assicurazione sociale deve interessi di mora sulle prestazioni, se l’assicurato ha pienamente collaborato?",
+  "answer": "24 mesi",
+  "why": "La frase 'ma al più presto 12 mesi dopo che si è fatto valere il diritto' introduce una condizione che potrebbe far interpretare il termine minimo effettivo come 12 mesi in alcuni casi, creando ambiguità sull'unicità della risposta."
+ },
+ {
+  "id": "cx-0092-it",
+  "question": "A chi posso consegnare direttamente una richiesta scritta in una procedura di assicurazione sociale al più tardi l’ultimo giorno del termine?",
+  "answer": "all’assicuratore",
+  "why": "La domanda chiede a chi si può consegnare direttamente la richiesta, ma il testo di legge prevede più opzioni valide entro il termine, inclusi uffici postali e rappresentanze consolari, rendendo difendibile più di una risposta."
+ },
+ {
+  "id": "nmv-0017-de",
+  "question": "Welche Vorsorgeguthaben reduzieren den Höchstbetrag der Einkaufssumme?",
+  "answer": "Vorsorgeguthaben, die in der bisherigen Vorsorgeeinrichtung verbleiben",
+  "why": "Die Frage nennt nur Vorsorgeguthaben, der Absatz aber nennt zusätzlich Freizügigkeitsguthaben als reduzierenden Betrag, was eine zweiteilige Antwort nahelegt."
+ },
+ {
+  "id": "nmv-0017-fr",
+  "question": "Quels avoirs de prévoyance réduisent le montant maximal de la somme de rachat ?",
+  "answer": "avoirs de prévoyance auprès de l'institution de prévoyance précédente",
+  "why": "Le texte cité mentionne deux types d'avoirs réduisant le montant maximal de la somme de rachat : les avoirs auprès de l'institution précédente et les avoirs de libre passage non transférés ; la question ne précise pas qu'il faut exclure les avoirs de libre passage, ce qui permet une interprétation large fondée sur le texte."
+ },
+ {
+  "id": "nmv-0017-it",
+  "question": "Quali averi di previdenza riducono l'ammontare massimo della somma di acquisto?",
+  "answer": "avere di previdenza che rimane nel precedente istituto di previdenza",
+  "why": "La domanda chiede quali averi riducono la somma di acquisto, ma il paragrafo cita due casi: l'avere di previdenza nel precedente istituto e l'avere di libero passaggio non trasferito; entrambi riducono l'importo, quindi un'interpretazione rigorosa include entrambi."
+ },
+ {
+  "id": "nmv-0021-fr",
+  "question": "Quel montant l’assureur rembourse-t-il au canton lorsque celui-ci accorde une réduction de primes pour une période pour laquelle l’assureur a déjà annoncé une créance dans son décompte final, ou annule une réduction de primes en raison d’une double assurance?",
+  "answer": "montant identique à celui pris en charge par le canton",
+  "why": "La formulation « un pourcentage de la réduction de primes » dans le texte peut prêter à confusion quant à savoir si le montant rétrocédé est le montant identique ou un pourcentage de celui-ci, bien que le reste de la phrase précise qu’il s’agit d’un montant identique."
+ },
+ {
+  "id": "nmv-0033-de",
+  "question": "Können kontrollfreie Tage einzeln bezogen werden?",
+  "answer": "Werden die Beratung und die Vermittlung nicht beeinträchtigt",
+  "why": "Die Frage, ob kontrollfreie Tage einzeln bezogen werden können, lässt zwei Auslegungen zu: die grundsätzliche Regel (wochenweise Bezug) oder die Ausnahme (tageweiser Bezug bei Unbeeinträchtigung der Beratung und Vermittlung), was im Gesetzestext explizit geregelt ist."
+ }
+]

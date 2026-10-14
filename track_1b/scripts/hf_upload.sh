@@ -27,5 +27,5 @@ fi
 VIS="--public"; [ "${PRIVATE:-0}" = 1 ] && VIS=""
 python src/hf_release.py upload --repo "$REPO" --go $VIS ${ENV:+--env "$ENV"}
 echo "https://huggingface.co/datasets/$REPO" > data/hf_url.txt
-python report/numbers.py
-echo "done: https://huggingface.co/datasets/$REPO (tag v$VERSION); URL written to data/hf_url.txt and into the documents (report/numbers.py). Rebuild the report PDF."
+python report/fill_numbers.py
+echo "done: https://huggingface.co/datasets/$REPO (tag v$VERSION); URL written to data/hf_url.txt and into the documents (report/fill_numbers.py). Rebuild the report PDF."

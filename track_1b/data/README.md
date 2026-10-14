@@ -4,7 +4,7 @@ License: CDLA-Permissive-2.0 (see [`LICENSE`](LICENSE)) for our questions, answe
 `license` field. Quoted federal statute text (`source.quote`) is public domain under Art. 5 para. 1 lit. a URG
 (`source.license: public-domain-ch-urg-art5`) and is not relicensed.
 
-Release **v<!--n:version-->·<!--/n-->**: <!--n:cores-->·<!--/n--> German cores, <!--n:rows-->·<!--/n--> rows. Data card: [`../docs/DATA_CARD.md`](../docs/DATA_CARD.md).
+Release **v<!--n:version-->1.0.0-rc1<!--/n-->**: <!--n:cores-->327<!--/n--> German cores, <!--n:rows-->951<!--/n--> rows. Data card: [`../docs/DATA_CARD.md`](../docs/DATA_CARD.md).
 
 | File | Content |
 | --- | --- |

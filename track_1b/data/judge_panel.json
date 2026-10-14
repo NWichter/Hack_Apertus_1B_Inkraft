@@ -1,0 +1,102 @@
+{
+ "judges": [
+  "qwen/qwen3-235b-a22b-2507",
+  "z-ai/glm-5.3",
+  "deepseek/deepseek-v3.2"
+ ],
+ "rule": "majority of the three-way grade; no majority -> first judge",
+ "runs": {
+  "apertus-v1.5-70b__closed_dated": {
+   "n": 951,
+   "no_majority": 1,
+   "missing_votes": 0,
+   "judges": [
+    "qwen/qwen3-235b-a22b-2507",
+    "z-ai/glm-5.3",
+    "deepseek/deepseek-v3.2"
+   ]
+  },
+  "apertus-v1.5-70b__closed_plain": {
+   "n": 327,
+   "no_majority": 0,
+   "missing_votes": 0,
+   "judges": [
+    "qwen/qwen3-235b-a22b-2507"
+   ]
+  },
+  "apertus-v1.5-70b__closed_swiss": {
+   "n": 327,
+   "no_majority": 0,
+   "missing_votes": 0,
+   "judges": [
+    "qwen/qwen3-235b-a22b-2507"
+   ]
+  },
+  "apertus-v1.5-70b__open_book": {
+   "n": 951,
+   "no_majority": 0,
+   "missing_votes": 0,
+   "judges": [
+    "qwen/qwen3-235b-a22b-2507",
+    "z-ai/glm-5.3",
+    "deepseek/deepseek-v3.2"
+   ]
+  },
+  "apertus-v1.5-8b__closed_dated": {
+   "n": 951,
+   "no_majority": 2,
+   "missing_votes": 0,
+   "judges": [
+    "qwen/qwen3-235b-a22b-2507",
+    "z-ai/glm-5.3",
+    "deepseek/deepseek-v3.2"
+   ]
+  },
+  "apertus-v1.5-8b__closed_plain": {
+   "n": 327,
+   "no_majority": 0,
+   "missing_votes": 0,
+   "judges": [
+    "qwen/qwen3-235b-a22b-2507"
+   ]
+  },
+  "apertus-v1.5-8b__closed_swiss": {
+   "n": 327,
+   "no_majority": 0,
+   "missing_votes": 0,
+   "judges": [
+    "qwen/qwen3-235b-a22b-2507"
+   ]
+  },
+  "apertus-v1.5-8b__open_book": {
+   "n": 951,
+   "no_majority": 1,
+   "missing_votes": 0,
+   "judges": [
+    "qwen/qwen3-235b-a22b-2507",
+    "z-ai/glm-5.3",
+    "deepseek/deepseek-v3.2"
+   ]
+  }
+ },
+ "fleiss_kappa_3class": 0.9478,
+ "fleiss_kappa_5class": 0.8882,
+ "unanimous_share_3class": 0.9653,
+ "no_majority_rows": 4,
+ "agreement_with_majority": {
+  "qwen/qwen3-235b-a22b-2507": 0.9937,
+  "z-ai/glm-5.3": 0.9834,
+  "deepseek/deepseek-v3.2": 0.9871
+ },
+ "agreement_with_majority_5class": {
+  "qwen/qwen3-235b-a22b-2507": 0.9727,
+  "z-ai/glm-5.3": 0.9721,
+  "deepseek/deepseek-v3.2": 0.9703
+ },
+ "n_rows": 3804,
+ "judging_cost_usd": {
+  "qwen/qwen3-235b-a22b-2507": 0.4385,
+  "z-ai/glm-5.3": 1.0889,
+  "deepseek/deepseek-v3.2": 0.8146
+ }
+}

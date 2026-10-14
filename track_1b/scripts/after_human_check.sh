@@ -5,7 +5,7 @@
 #
 #   EXPORT=<export.json> FEDLEX=<fedlex-v2 dir> ENVFILE=<.env> [CORPUS=<multilegalpile dir>] GO=1 sh scripts/after_human_check.sh
 #
-# report/numbers.py then writes every number into the report, the data card, the READMEs and the project page;
+# report/fill_numbers.py then writes every number into the report, the data card, the READMEs and the project page;
 # rebuild the PDF, then scripts/hf_upload.sh (dry run; upload only after the curator's go).
 set -eu
 cd "$(dirname "$0")/.."
@@ -34,4 +34,4 @@ python -m inkraft --data data expect --judge-model panel --note "v1.0.0 runs, ju
 python -m inkraft --data data replay
 python report/analysis.py --judge-model panel
 python report/make_figures.py --judge-model panel
-python report/numbers.py
+python report/fill_numbers.py

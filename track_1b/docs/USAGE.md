@@ -87,6 +87,6 @@ python src/after_review.py ... ; python src/freeze.py --rc ...         # release
 sh scripts/run_after_freeze.sh                                         # calibration, Apertus runs, judging
 python src/draw_human_sample.py ...                                    # human samples (fixed seed)
 EXPORT=... FEDLEX=... ENVFILE=... GO=1 sh scripts/after_human_check.sh # import, freeze v1.0.0, re-judge changed rows, rescore
-python report/numbers.py                                               # every number in report, card, READMEs, website
+python report/fill_numbers.py                                               # every number in report, card, READMEs, website
 sh scripts/hf_upload.sh                                                # Hugging Face release (dry run by default)
 ```

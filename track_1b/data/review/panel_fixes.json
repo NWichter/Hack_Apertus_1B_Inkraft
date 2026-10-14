@@ -1,0 +1,91 @@
+{
+ "version": "panel-fixes-v1",
+ "reviewer": "automatic (panel_fixes.py)",
+ "created": "2026-10-14",
+ "decisions": [
+  {
+   "core_id": "ag-0026",
+   "action": "patch",
+   "reason": "answer variants added after panel disagreement; each variant checked against the cited paragraph (evidence: ag-0026-fr: aucune franchise n’est exigée)",
+   "fr": {
+    "answer_aliases": [
+     "Aucune franchise",
+     "0 franc",
+     "CHF 0",
+     "aucune franchise n’est exigée"
+    ]
+   }
+  },
+  {
+   "core_id": "cl-0026",
+   "action": "patch",
+   "reason": "answer variants added after panel disagreement; each variant checked against the cited paragraph (evidence: cl-0026-de: Der tägliche Beitrag an die Kosten des Aufenthalts im Spital nach Artikel 64 Abs)",
+   "de": {
+    "answer_aliases": [
+     "15 Franken pro Tag",
+     "Fr. 15.–",
+     "15 Franken",
+     "täglicher Beitrag... 15 Franken"
+    ]
+   }
+  },
+  {
+   "core_id": "cl-0084",
+   "action": "patch",
+   "reason": "answer variants added after panel disagreement; each variant checked against the cited paragraph (evidence: cl-0084-de: seinem Arbeitgeber oder dem Versicherer)",
+   "de": {
+    "answer_aliases": [
+     "dem Arbeitgeber oder dem Unfallversicherer",
+     "dem Arbeitgeber oder dem Versicherer"
+    ]
+   }
+  },
+  {
+   "core_id": "cx-0014",
+   "action": "patch",
+   "reason": "answer variants added after panel disagreement; each variant checked against the cited paragraph (evidence: cx-0014-fr: effectués ou prescrits par un médecin)",
+   "fr": {
+    "answer_aliases": [
+     "médecin",
+     "le médecin"
+    ]
+   }
+  },
+  {
+   "core_id": "cx-0092",
+   "action": "patch",
+   "reason": "answer variants added after panel disagreement; each variant checked against the cited paragraph (evidence: cx-0092-it: Le richieste scritte devono essere consegnate all’assicuratore oppure, a lui ind)",
+   "it": {
+    "answer_aliases": [
+     "l’assicuratore",
+     "all’assicuratore oppure, a lui indirizzate, a un ufficio postale svizzero o a una rappresentanza diplomatica o consolare svizzera"
+    ]
+   }
+  },
+  {
+   "core_id": "nmv-0017",
+   "action": "patch",
+   "reason": "answer variants added after panel disagreement; each variant checked against the cited paragraph (evidence: nmv-0017-fr: avoirs de prévoyance auprès de l'institution de prévoyance précédente)",
+   "fr": {
+    "answer_aliases": [
+     "avoirs de prévoyance auprès de l'institution de prévoyance précédente",
+     "avoirs de prévoyance de l'institution précédente",
+     "avoirs de prévoyance restants auprès de l'institution précédente",
+     "avoirs de prévoyance auprès de l'institution précédente"
+    ]
+   }
+  },
+  {
+   "core_id": "nmv-0033",
+   "action": "patch",
+   "reason": "answer variants added after panel disagreement; each variant checked against the cited paragraph (evidence: nmv-0033-de: Werden die Beratung und die Vermittlung nicht beeinträchtigt)",
+   "de": {
+    "answer_aliases": [
+     "Beratung und die Vermittlung nicht beeinträchtigt",
+     "die Beratung und die Vermittlung nicht beeinträchtigt",
+     "Beratung und Vermittlung nicht beeinträchtigt"
+    ]
+   }
+  }
+ ]
+}
