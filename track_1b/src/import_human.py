@@ -39,6 +39,12 @@ def main():
     args = ap.parse_args()
     data = Path(args.data)
     ex = json.loads(Path(args.export).read_text(encoding="utf-8"))
+    who = ex.get("annotator")
+    who_text = json.dumps(who, ensure_ascii=False).lower()
+    if any(w in who_text for w in ("claude", "gpt", "gemini", "qwen", "nemotron", "apertus", "ki,", "(ki", " ai ", "model")):
+        sys.exit(f"export annotator {who!r} is not a person: a model's labels are not a human check")
+    if isinstance(who, str) and who.strip():
+        args.name = who.strip()
     strata = {
         r["core_id"]: r["stratum"]
         for r in dataset.read_jsonl(data / "human_labels" / "dataset_sample.jsonl")
@@ -92,6 +98,8 @@ def main():
                 else g,
                 "human_subtype": g if g in ("OTHER", "STALE", "NEAR_MISS") else None,
                 "uncertain": bool(b.get("u")),
+                "lang": r["id"].rsplit("-", 1)[1],
+                "translation_aid": bool(b.get("translation_aid")),
                 "annotator": args.annotator,
                 "labelled_at": b.get("at"),
             }
@@ -105,6 +113,13 @@ def main():
             j for j in dataset.read_jsonl(p) if j.get("judge_model") == args.judge_model
         ]
     agree = human.agreement(labels, judgements) if labels else {"n": 0}
+    if labels:
+        agree["by_language_group"] = {
+            "de (original only)": human.agreement([x for x in labels if x["lang"] == "de"], judgements),
+            "fr/it (human with machine translation)": human.agreement([x for x in labels if x["lang"] != "de"], judgements),
+        }
+        agree["translation_aid"] = ex.get("translation_aid")
+        agree["uncertain_labels"] = sum(x["uncertain"] for x in labels)
     summary = {
         "annotator": args.name,
         "exported_at": ex.get("exported_at"),

@@ -40,6 +40,10 @@ def main():
         help="judge sample share (20 %% plus a margin for later drops)",
     )
     ap.add_argument("--out", required=True)
+    ap.add_argument(
+        "--part-a",
+        help="export of the check page whose part A (dataset labels) is preloaded; its part B is ignored",
+    )
     args = ap.parse_args()
     data = Path(args.data)
     freeze = json.loads((data / "FREEZE.json").read_text(encoding="utf-8"))
@@ -114,13 +118,35 @@ def main():
     # order independent of the other response files (human.sample shuffles across all of them)
     jsample.sort(key=lambda r: r["id"])
     random.Random(SEED).shuffle(jsample)
+    tr_path = data / "human_labels" / "translations_de.json"
+    tr = json.loads(tr_path.read_text(encoding="utf-8")) if tr_path.exists() else {}
+    by_source = {(v["lang"], v["source"]): v for v in tr.values()}
+
+    def de(lang, text):
+        v = by_source.get((lang, text)) if text else None
+        return v["de"] if v else None
+
     judge_view = []
     for r in jsample:
         it = items[r["id"]]
+        lang = r["id"].rsplit("-", 1)[1]
+        aid = None
+        if lang in ("fr", "it"):
+            aid = {
+                "question": de(lang, it["question"]),
+                "answer": de(lang, it["answer"]),
+                "response": de(lang, r["response"]),
+                **{f: [de(lang, x) or x for x in it.get(f) or []] for f in ("answer_aliases", "outdated_answers", "near_miss_answers")},
+                "model": next(iter(tr.values()))["model"] if tr else None,
+            }
+            if not all(aid[k] for k in ("question", "answer", "response")):
+                raise SystemExit(f"translation missing for {r['id']}: run src/translate_sample.py")
         judge_view.append(
             {
                 "key": f"{r['id']}|{r['model']}|{r['condition']}",
                 **{k: r[k] for k in ("id", "model", "condition", "response")},
+                "lang": lang,
+                "de": aid,
                 **{
                     k: it.get(k)
                     for k in (
@@ -171,8 +197,16 @@ def main():
     (out_dir / "sample_meta.json").write_text(
         json.dumps(meta, indent=1) + "\n", encoding="utf-8"
     )
+    pre_a = {}
+    if args.part_a:
+        ex = json.loads(Path(args.part_a).read_text(encoding="utf-8"))
+        if not ex.get("version", "").endswith(fp):
+            raise SystemExit(f"part A export is for {ex.get('version')}, not for sample {fp}")
+        pre_a = {c: v for c, v in (ex.get("dataset") or {}).items() if c in dict(pick)}
     payload = {
         "version": f"{freeze['version']}-{fp}",
+        "pre_a": pre_a,
+        "pre_a_source": Path(args.part_a).name if args.part_a else None,
         "cores": [core_view(c, g) for c, g in pick],
         "judge": judge_view,
     }
