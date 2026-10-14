@@ -1,7 +1,8 @@
 """Every number quoted in the report, the data card, the READMEs, the project page and the pitch, computed from the
 stored files, and written into those documents between markers <!--n:KEY-->…<!--/n-->.
 
-Numbers that depend on the human check show "[[NIKLAS-PRÜFUNG: KEY]]" until data/human_labels/summary.json exists.
+Numbers that depend on the human check show "[[NIKLAS-PRÜFUNG: KEY]]" until data/human_labels/summary.json exists
+(in website/ a neutral "pending" text with the marker as an HTML comment instead).
 
 python report/fill_numbers.py            # write report/numbers.json and fill all documents
 python report/fill_numbers.py --check    # fail if a document has a marker whose value differs (or an unknown key)
@@ -28,6 +29,10 @@ DOCS = [
 ]
 MARK = re.compile(r"<!--n:([A-Za-z0-9_]+)-->(.*?)<!--/n-->", re.S)
 PENDING = "[[NIKLAS-PRÜFUNG: {}]]"
+# Public pages (website/) never show the raw marker: a neutral text is visible, the marker stays as an HTML comment inside
+# the same <!--n:KEY-->…<!--/n--> span, so filling in the real value replaces text and marker together.
+PENDING_WEB = "pending (human check in progress – results on 16 October)<!--[[NIKLAS-PRÜFUNG: {}]]-->"
+PENDING_WEB_TEXT = {"hf_url": "Hugging Face link follows on 16 October<!--[[NIKLAS-PRÜFUNG: {}]]-->"}
 M8, M70 = "apertus-v1.5-8b", "apertus-v1.5-70b"
 
 
@@ -412,13 +417,14 @@ HUMAN_KEYS = {
 }
 
 
-def fill(text, n, missing):
+def fill(text, n, missing, web=False):
     def rep(m):
         k = m.group(1)
         if k in n:
             return f"<!--n:{k}-->{n[k]}<!--/n-->"
         if k in HUMAN_KEYS:
-            return f"<!--n:{k}-->{PENDING.format(k)}<!--/n-->"
+            pending = PENDING_WEB_TEXT.get(k, PENDING_WEB) if web else PENDING
+            return f"<!--n:{k}-->{pending.format(k)}<!--/n-->"
         missing.add(k)
         return m.group(0)
 
@@ -441,7 +447,7 @@ def main():
         if not doc.exists():
             continue
         t = doc.read_text(encoding="utf-8")
-        new = fill(t, n, missing)
+        new = fill(t, n, missing, web=(REPO / "website") in doc.parents)
         if new != t:
             changed.append(doc.name)
             if not args.check:
