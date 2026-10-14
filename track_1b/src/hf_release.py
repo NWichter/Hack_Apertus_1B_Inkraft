@@ -49,12 +49,28 @@ def card(args):
     summary = load_json(DATA / "review" / "after_review_summary.json")
     agreement = load_json(DATA / "human_labels" / "agreement.json")
     calib = load_json(DATA / "judge_calibration.json")
+    panel = load_json(DATA / "judge_panel.json")
+    calibs = {
+        j: load_json(DATA / f"judge_calibration__{j.replace('/', '_')}.json", False)
+        or (calib if j == calib.get("judge_model") else None)
+        for j in panel["judges"]
+    }
     human = load_json(DATA / "human_labels" / "summary.json")
     human_dataset = "; ".join(
         f"{g}: {s['drop']} of {s['n']} rejected (Wilson 95 % {s['error_rate_wilson95']}), {s['unsure']} unsure"
         for g, s in sorted(human["dataset_check"].items())
     )
     st = freeze["stats"]
+    vp = agreement.get("vs_panel") or {}
+    agreement_text = (
+        f"{agreement['n']} grades; Cohen's kappa human vs first judge {agreement['kappa']:.2f} "
+        f"(95 % CI {agreement['kappa_ci95'][0]:.2f}–{agreement['kappa_ci95'][1]:.2f})"
+        + (
+            f", human vs panel majority {vp['kappa']:.2f} (95 % CI {vp['kappa_ci95'][0]:.2f}–{vp['kappa_ci95'][1]:.2f})"
+            if vp
+            else ""
+        )
+    )
     sample = DATA / "human_labels" / "sample_20pct.jsonl"
     n_sample = (
         sum(1 for x in sample.read_text(encoding="utf-8").splitlines() if x.strip())
@@ -95,12 +111,21 @@ def card(args):
             ],
             ["Human spot check (stratified random sample)", human_dataset],
             [
-                "Judge calibration on constructed answers (gate 0.95)",
-                f"grade accuracy {calib.get('grade_accuracy')}, with subtype {calib.get('subtype_accuracy')} (n = {calib.get('n')})",
+                "Judge calibration on 61 constructed answers (gate 0.95 per judge)",
+                "; ".join(
+                    f"{j}: grade {c['grade_accuracy']:.3f}, with subtype {c['subtype_accuracy']:.3f}"
+                    for j, c in calibs.items()
+                    if c
+                ),
             ],
             [
-                "Human check of a random 20 % of judge grades",
-                f"{n_sample} grades, Cohen's kappa {agreement.get('kappa', agreement.get('kappa_3'))}",
+                "Agreement within the judge panel (all main rows)",
+                f"Fleiss' kappa {panel['fleiss_kappa_3class']:.2f} (3 grades), {panel['fleiss_kappa_5class']:.2f} (5 grades with subtypes); "
+                + "; ".join(f"{j} agrees with the majority on {100 * v:.1f} %" for j, v in panel["agreement_with_majority"].items()),
+            ],
+            [
+                f"Human check of a stratified random {100 * n_sample / st['rows']:.0f} % of judge grades",
+                agreement_text,
             ],
         ],
     )
@@ -115,7 +140,7 @@ def card(args):
         "VERSION": freeze["version"],
         "FROZEN_AT": freeze["frozen_at"][:10],
         "MODELS": ", ".join(models) if models else None,
-        "JUDGE": os.environ.get("JUDGE_NAME") or calib.get("judge_model"),
+        "PANEL": ", ".join(panel["judges"]),
         "CORES": st["cores"],
         "ROWS": st["rows"],
         "TRILINGUAL": st["trilingual_cores"],
@@ -128,7 +153,7 @@ def card(args):
         "REJECT_TABLE": rej,
         "HUMAN_DATASET": human_dataset,
         "SAMPLE_N": n_sample,
-        "AGREEMENT": json.dumps({k: v for k, v in agreement.items() if "kappa" in k}),
+        "AGREEMENT": agreement_text,
         "HF_REPO": args.repo,
     }
     missing = [k for k, v in vals.items() if v in (None, "", [])]
@@ -158,8 +183,14 @@ def files_to_upload():
         DATA / "results.json",
         DATA / "expected_results.json",
         ROOT / "report" / "analysis.json",
+        DATA / "judge_panel.json",
         DATA / "judge_calibration.json",
         DATA / "judge_calibration__apertus-v1.5-70b.json",
+        *[
+            DATA / f"judge_calibration__{j.replace('/', '_')}.json"
+            for j in (load_json(DATA / "judge_panel.json", False) or {}).get("judges", [])
+            if (DATA / f"judge_calibration__{j.replace('/', '_')}.json").exists()
+        ],
         DATA / "judge_agreement_qwen_vs_apertus70b.json",
         DATA / "contamination.summary.json",
         DATA / "sources" / "fedlex_manifest.v2.json",

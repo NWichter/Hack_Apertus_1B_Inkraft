@@ -15,6 +15,14 @@ from .prompts import CONDITIONS
 DEFAULT_DATA = Path(__file__).resolve().parents[2] / "data"
 
 
+def _extra(value):
+    """Extra request fields: JSON text or a path to a JSON file."""
+    if not value:
+        return None
+    p = Path(value)
+    return json.loads(p.read_text(encoding="utf-8") if p.exists() else value)
+
+
 def _items(args):
     items = dataset.load(args.data)
     if args.lang:
@@ -63,7 +71,10 @@ def cmd_judge(args):
         if args.condition and cond not in args.condition:
             continue
         out = judge.judge_path(args.data, ep.model, model, cond)
-        n = judge.run(ep, items, dataset.read_jsonl(p), out, workers=args.workers)
+        n = judge.run(
+            ep, items, dataset.read_jsonl(p), out, workers=args.workers,
+            extra_params=_extra(args.judge_extra),
+        )
         print(f"judged {n} responses of {model} {cond} -> {out}")
 
 
@@ -167,7 +178,10 @@ def cmd_agreement(args):
 def cmd_calibrate(args):
     ep = Endpoint.from_env("JUDGE", args.judge_model)
     rows = dataset.read_jsonl(args.calibration)
-    res = judge.calibrate(ep, rows, workers=args.workers)
+    res = judge.calibrate(
+        ep, rows, workers=args.workers,
+        extra_params=_extra(args.judge_extra),
+    )
     out = Path(
         args.out
         or Path(args.data) / f"judge_calibration__{ep.model.replace('/', '_')}.json"
@@ -245,6 +259,7 @@ def main(argv=None):
         else:
             p.add_argument("--judge-model", help="overrides JUDGE_NAME")
             p.add_argument("--examinee", nargs="+")
+            p.add_argument("--judge-extra", help='extra request fields as JSON, e.g. {"reasoning": {"enabled": false}}')
         p.set_defaults(fn=fn)
 
     s = sub.add_parser("score")
@@ -307,6 +322,7 @@ def main(argv=None):
     )
     c.add_argument("--workers", type=int, default=3)
     c.add_argument("--out")
+    c.add_argument("--judge-extra", help="extra request fields as JSON")
     c.set_defaults(fn=cmd_calibrate)
 
     ct = sub.add_parser(

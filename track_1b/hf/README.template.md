@@ -31,7 +31,7 @@ configs:
   - config_name: judgements
     data_files:
       - split: test
-        path: judgements/qwen_*.jsonl
+        path: judgements/panel__*.jsonl
 ---
 
 # Dataset Card for Inkraft
@@ -83,10 +83,11 @@ reported separately.
 | `data/test.jsonl` | one row per item and language: `id`, `core_id`, `lang`, `domain`, `question_type`, `register`, `difficulty_prior`, `question`, `answer`, `answer_aliases`, `answer_core`, `answer_type`, `answer_normalized`, `calc`, `outdated_answers`, `near_miss_answers`, `as_of` |
 | `data/metadata.jsonl` | per `id`: `source` (act, SR number, article, paragraph, ELI URL with version date, verbatim quote and evidence, licence), `temporal` (bucket per evidence sentence, earlier versions and their evidence), `future_change`, `authoring` (generator, manual corrections), `review` (decision, reviewer, time), `license`, `canary` |
 | `responses/<model>__<condition>.jsonl` | Apertus 1.5 responses ({{MODELS}}) with prompt, parameters, tokens and latency; `closed_dated` and `open_book` on all rows, `closed_swiss` and `closed_plain` on the German rows |
-| `judgements/qwen_*.jsonl` | judge grades ({{JUDGE}}) with the rule-based pre-grade and the raw judge output |
+| `judgements/panel__*.jsonl` | grades used for every score: majority of the judge panel ({{PANEL}}); the ablation conditions `closed_swiss` and `closed_plain` are graded by the first judge only |
+| `judgements/<judge>__*.jsonl` | grades of each panel judge with the rule-based pre-grade and the raw judge output |
 | `judgements/apertus-v1.5-70b__*.jsonl` | comparison judge on `closed_dated` (diagnostic of self-preference, not used for scores) |
 | `human_labels/` | human spot check of the dataset (`dataset_sample.jsonl`) and blind human labels of the judge sample (`sample_20pct.jsonl`, `labels_*.jsonl`, `agreement.json`, `summary.json`) |
-| `results/` | `results.json` (all scores), `expected_results.json` (what `make run` replays), `analysis.json` (numbers of the report), judge calibration and judge–judge agreement |
+| `results/` | `results.json` (all scores), `expected_results.json` (what `make run` replays), `analysis.json` (numbers of the report), judge panel statistics (`judge_panel.json`: Fleiss' κ, agreement of each judge with the majority, cost), judge calibration and judge–judge agreement |
 | `FREEZE.json` | version, SHA-256 of the data files (LF line endings), statistics |
 
 Only a `test` split. `core_id` links the three language versions of an item.
@@ -157,14 +158,17 @@ drafting model:
 
 {{REJECT_TABLE}}
 
-Human spot check (stratified random sample, blind to model outputs, `src/make_check_file.py`):
+Human spot check (stratified random sample with a fixed seed, blind to model outputs, `src/draw_human_sample.py`):
 {{HUMAN_DATASET}}. Judge check: stratified random sample of {{SAMPLE_N}} judge grades of the submitted run,
-labelled blind; agreement {{AGREEMENT}}. Guidelines: `docs/annotation_guidelines.md`.
+labelled blind (the grades of the judges are never shown); {{AGREEMENT}}. Guidelines: `docs/annotation_guidelines.md`.
 
 #### Annotator Details
 
 One curator (German speaker, not a native Swiss speaker). French and Italian answers and evidence come
-from the authentic texts; the questions are model translations, not reviewed by native speakers.
+from the authentic texts; the questions are model translations, not reviewed by native speakers. For French and
+Italian rows of the judge sample the curator saw a German machine translation (Apertus 1.5 70B) as a reading aid
+next to the original; each label records this (`translation_aid`), and κ is reported separately for German and
+for French/Italian rows.
 
 ## Risks, Bias, and Limitations
 

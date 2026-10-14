@@ -1,0 +1,27 @@
+{
+ "judge_model": "deepseek/deepseek-v3.2",
+ "prompt_id": "inkraft-judge-v1",
+ "n": 61,
+ "grade_accuracy": 1.0,
+ "subtype_accuracy": 0.9836,
+ "errors": [
+  {
+   "cal_id": "cal-044",
+   "kind": "conflicting",
+   "expected": "INCORRECT",
+   "expected_subtype": "OTHER",
+   "got": {
+    "grade": "INCORRECT",
+    "incorrect_subtype": "NEAR_MISS",
+    "reason": "The model gives two conflicting answers, one of which matches the near-miss value."
+   },
+   "grade_ok": true,
+   "subtype_ok": false
+  }
+ ],
+ "usage": {
+  "tokens_in": 31133,
+  "tokens_out": 2295,
+  "cost_usd": 0.006335
+ }
+}

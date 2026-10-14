@@ -1077,93 +1077,52 @@
       <h2>Built from the statute book.</h2>
       <div class="top">
         <div class="card tile">
-          <div class="n">327</div>
+          <div class="n"><!--n:cores-->·<!--/n--></div>
           <div class="l">core questions in German</div>
         </div>
         <div class="card tile">
-          <div class="n">951</div>
+          <div class="n"><!--n:rows-->·<!--/n--></div>
           <div class="l">rows across DE · FR · IT</div>
         </div>
         <div class="card tile">
-          <div class="n">312</div>
+          <div class="n"><!--n:trilingual-->·<!--/n--></div>
           <div class="l">cores in all three languages</div>
         </div>
         <div class="card tile">
-          <div class="n">53</div>
+          <div class="n"><!--n:stale_pairs-->·<!--/n--></div>
           <div class="l">cores with the previous rule stored as stale answer</div>
         </div>
       </div>
       <div class="bottom">
         <div class="bars">
-          <h3>Core questions per federal law</h3>
-          <div class="bar">
-            <b>KVG</b><i style="width: 100%"></i><span>54</span>
-          </div>
-          <div class="bar">
-            <b>AHVG</b><i style="width: 92.6%"></i><span>50</span>
-          </div>
-          <div class="bar">
-            <b>KVV</b><i style="width: 61.1%"></i><span>33</span>
-          </div>
-          <div class="bar">
-            <b>UVG</b><i style="width: 53.7%"></i><span>29</span>
-          </div>
-          <div class="bar">
-            <b>EOG</b><i style="width: 51.9%"></i><span>28</span>
-          </div>
-          <div class="bar">
-            <b>ATSG</b><i style="width: 50%"></i><span>27</span>
-          </div>
-          <div class="bar">
-            <b>IVG</b><i style="width: 46.3%"></i><span>25</span>
-          </div>
-          <div class="bar">
-            <b>BVG</b><i style="width: 35.2%"></i><span>19</span>
-          </div>
-          <div class="bar">
-            <b>OR</b><i style="width: 31.5%"></i><span>17</span>
-          </div>
-          <div class="bar">
-            <b>ELG</b><i style="width: 24.1%"></i><span>13</span>
-          </div>
-          <div class="bar">
-            <b>AVIG</b><i style="width: 18.5%"></i><span>10</span>
-          </div>
-          <div class="bar">
-            <b>8 more</b><i style="width: 40.7%"></i><span>22</span>
-          </div>
-        </div>
+          <h3>Core questions per federal law</h3><!--n:pitch_act_bars-->·<!--/n--></div>
         <div class="split">
           <h3>Cited sentence last amended</h3>
-          <div class="stack">
-            <div style="width: 75.8%; background: var(--navy)">248</div>
-            <div style="width: 21.7%; background: var(--green)">71</div>
-            <div style="width: 2.4%; background: var(--grey-ink)">8</div>
-          </div>
+          <div class="stack"><!--n:pitch_bucket_stack-->·<!--/n--></div>
           <div class="legend">
             <div><i style="background: var(--navy)"></i>before 2024</div>
             <div><i style="background: var(--green)"></i>in 2024 or 2025</div>
             <div><i style="background: var(--grey-ink)"></i>in 2026</div>
           </div>
           <div class="proof">
-            <b>951 / 951</b> rows pass the source check: the evidence appears
+            <b><!--n:rows-->·<!--/n--> / <!--n:rows-->·<!--/n--></b> rows pass the source check: the evidence appears
             word for word in the cited fedlex paragraph, in the row's own
             language.
           </div>
         </div>
       </div>
       <div class="foot">
-        Release candidate v1.0.0-rc1, 13 Oct 2026. All cores are LLM drafts (98
-        GPT-5.5 via Codex, 97 Claude, 86 Gemini, 46 Nemotron 3 Ultra), checked
-        against fedlex and by a second model.
-        <span class="tbd">Human spot check pending; v1.0.0 = rc1 minus rejected cores</span>
+        Release v<!--n:version-->·<!--/n-->. All cores are LLM drafts (<!--n:gen_codex-->·<!--/n-->
+        GPT-5.5 via Codex, <!--n:gen_claude-->·<!--/n--> Claude, <!--n:gen_gemini-->·<!--/n--> Gemini, <!--n:gen_nemotron-->·<!--/n--> Nemotron 3 Ultra), checked
+        against fedlex, by a second model and by a human on a random sample of
+        <!--n:sample_cores-->·<!--/n--> cores (<!--n:human_drops-->[[NIKLAS-PRÜFUNG: human_drops]]<!--/n--> rejected and removed).
       </div>
     </section>
 
     <!-- 6 EVALUATION -->
     <section class="slide s6">
       <p class="kicker">Evaluation</p>
-      <h2>Graded like SimpleQA. Human check in progress.</h2>
+      <h2>Graded like SimpleQA. Checked by a human.</h2>
       <div class="steps">
         <div class="card step">
           <div class="k">1 · RULES</div>
@@ -1174,26 +1133,26 @@
           </p>
         </div>
         <div class="card step">
-          <div class="k">2 · LLM JUDGE</div>
-          <h4>A different model family</h4>
+          <div class="k">2 · JUDGE PANEL</div>
+          <h4><!--n:panel_size-->·<!--/n--> open-weight judges, majority</h4>
           <p>
-            Judge Qwen3-235B (61 / 61 on calibration) grades correct · stale ·
+            <!--n:panel_short-->·<!--/n-->, each calibrated on 61 cases. Grades: correct · stale ·
             near miss · other · not attempted.
           </p>
         </div>
         <div class="card step">
-          <div class="k">3 · HUMAN <span class="tbd">(in progress)</span></div>
-          <h4>22 % blind sample</h4>
+          <div class="k">3 · HUMAN</div>
+          <h4><!--n:judge_share-->·<!--/n--> % blind sample</h4>
           <p>
-            Graded without seeing the judge. Agreement as Cohen's κ,
-            <span class="tbd">reported with v1.0.0</span>
+            Graded without seeing the judges. Cohen's κ <!--n:kappa_qwen-->[[NIKLAS-PRÜFUNG: kappa_qwen]]<!--/n--> vs the
+            first judge, <!--n:kappa_panel-->[[NIKLAS-PRÜFUNG: kappa_panel]]<!--/n--> vs the panel majority.
           </p>
         </div>
       </div>
       <table class="res">
         <thead>
           <tr>
-            <th>Apertus 1.5 <span class="tbd">preliminary*</span></th>
+            <th>Apertus 1.5</th>
             <th>Correct DE · FR · IT</th>
             <th>Rule changed, old answer stored: correct · old rule given</th>
             <th>Not attempted</th>
@@ -1203,24 +1162,24 @@
         <tbody>
           <tr>
             <td>8B</td>
-            <td>34 · 34 · 31 %</td>
-            <td>9 / 157 · 20 / 157</td>
-            <td>11.7 %</td>
-            <td>-1.5 pts (p = 0.27)</td>
+            <td><!--n:lang_de_8b-->·<!--/n--> · <!--n:lang_fr_8b-->·<!--/n--> · <!--n:lang_it_8b-->·<!--/n--> %</td>
+            <td><!--n:stalepair_correct_k_8b-->·<!--/n--> / <!--n:stale_rows-->·<!--/n--> · <!--n:stalepair_stale_k_8b-->·<!--/n--> / <!--n:stale_rows-->·<!--/n--></td>
+            <td><!--n:na_8b-->·<!--/n--> %</td>
+            <td><!--n:date_effect_8b-->·<!--/n--> pts (p = <!--n:date_p_8b-->·<!--/n-->)</td>
           </tr>
           <tr>
             <td>70B</td>
-            <td>53 · 51 · 49 %</td>
-            <td>12 / 157 · 45 / 157</td>
-            <td>1.1 %</td>
-            <td>-0.3 pts (p = 1.0)</td>
+            <td><!--n:lang_de_70b-->·<!--/n--> · <!--n:lang_fr_70b-->·<!--/n--> · <!--n:lang_it_70b-->·<!--/n--> %</td>
+            <td><!--n:stalepair_correct_k_70b-->·<!--/n--> / <!--n:stale_rows-->·<!--/n--> · <!--n:stalepair_stale_k_70b-->·<!--/n--> / <!--n:stale_rows-->·<!--/n--></td>
+            <td><!--n:na_70b-->·<!--/n--> %</td>
+            <td><!--n:date_effect_70b-->·<!--/n--> pts (p = <!--n:date_p_70b-->·<!--/n-->)</td>
           </tr>
         </tbody>
       </table>
       <p class="conds">
-        <span class="tbd">* Preliminary, human sample pending · v1.0.0-rc1, 951 rows, judge Qwen3-235B</span><br />
-        <b>Overall correct:</b> 8B 32.9 %, 70B 51.0 %. <b>Open book</b> (law paragraph in the prompt):
-        70B right in 97.5 % of the 157 stale-pair rows. Date effect on the 327 German rows.
+        Release v<!--n:version-->·<!--/n-->, <!--n:rows-->·<!--/n--> rows, majority of <!--n:panel_size-->·<!--/n--> judges.<br />
+        <b>Overall correct:</b> 8B <!--n:correct_8b-->·<!--/n--> %, 70B <!--n:correct_70b-->·<!--/n--> %. <b>Open book</b> (law paragraph in the prompt):
+        70B right in <!--n:openbook_stalepair_70b-->·<!--/n--> % of the <!--n:stale_rows-->·<!--/n--> stale-pair rows. Date effect on the <!--n:cores-->·<!--/n--> German rows.
       </p>
     </section>
 
@@ -1240,7 +1199,7 @@
             check which version of the rule it contains.
           </p>
           <p>
-            Leak check: 55 of 951 questions share a 13-gram with the corpus
+            Leak check: <!--n:cont_13gram-->·<!--/n--> of <!--n:rows-->·<!--/n--> questions share a 13-gram with the corpus
             (statutory phrasing; the questions are new).
           </p>
         </div>
@@ -1248,25 +1207,25 @@
           <div class="bk cur">
             <div>
               <b>Current rule in that corpus</b
-              ><span>seen and still valid · 564 rows</span>
+              ><span>seen and still valid · <!--n:exp_current_rows-->·<!--/n--> rows</span>
             </div>
             <div class="v">
-              <span class="vh">70B, PRELIM.</span>64 %
+              <span class="vh">70B</span><!--n:exp_current_correct_70b_r-->·<!--/n--> %
             </div>
           </div>
           <div class="bk old">
             <div>
               <b>Previous rule in that corpus</b
-              ><span>seen, then amended · 84 rows</span>
+              ><span>seen, then amended · <!--n:exp_outdated_rows-->·<!--/n--> rows</span>
             </div>
             <div class="v">
-              <span class="vh">70B, PRELIM.</span>12 %
+              <span class="vh">70B</span><!--n:exp_outdated_correct_70b_r-->·<!--/n--> %
             </div>
           </div>
           <div class="bk abs">
-            <div><b>Not in that corpus</b><span>not found there · 277 rows</span></div>
+            <div><b>Not in that corpus</b><span>not found there · <!--n:exp_absent_rows-->·<!--/n--> rows</span></div>
             <div class="v">
-              <span class="vh">70B, PRELIM.</span>39 %
+              <span class="vh">70B</span><!--n:exp_absent_correct_70b_r-->·<!--/n--> %
             </div>
           </div>
         </div>
@@ -1282,11 +1241,11 @@
         <div>
           <div class="term">
             <span class="p">Replay</span> · no keys, no GPU<br />
-            <span class="c">recomputes 8 result blocks from 5,112 stored</span
+            <span class="c">recomputes <!--n:replay_blocks-->·<!--/n--> result blocks from <!--n:stored_answers-->·<!--/n--> stored</span
             ><br />
             <span class="c">answers and grades, checks expected results</span>
             <span class="ok">PASS</span><br />
-            <span class="c">release candidate v1.0.0-rc1</span>
+            <span class="c">dataset release v<!--n:version-->·<!--/n--></span>
           </div>
           <div class="term">
             <span class="p">Full mode</span><br />
@@ -1298,12 +1257,12 @@
           <div class="files">
             <div>test.jsonl <span>questions and gold</span></div>
             <div>metadata.jsonl <span>fedlex ELI with version date</span></div>
-            <div>responses/ <span>every model answer · 5,112</span></div>
-            <div>judgements/ <span>every grade · Qwen3-235B</span></div>
-            <div>human_labels/ <span>22 % sample · in progress</span></div>
+            <div>responses/ <span>every model answer · <!--n:stored_answers-->·<!--/n--></span></div>
+            <div>judgements/ <span>every grade · <!--n:panel_size-->·<!--/n--> judges + majority</span></div>
+            <div>human_labels/ <span><!--n:judge_share-->·<!--/n--> % sample · κ</span></div>
           </div>
           <div class="lic">
-            <b>Hugging Face:</b> huggingface.co/datasets/NWichter/inkraft<br />
+            <b>Hugging Face:</b> <!--n:hf_url-->[[NIKLAS-PRÜFUNG: hf_url]]<!--/n--><br />
             <b>Law text:</b> public domain (Art. 5 URG)<br />
             <b>Dataset:</b> CDLA-Permissive-2.0 · <b>Code:</b> Apache-2.0<br />
             <b>Report and docs:</b> CC-BY-4.0

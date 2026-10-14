@@ -164,7 +164,7 @@
             <article class="card feature">
               <h3>An as-of date</h3>
               <p>
-                For 53 provisions amended since 2024 the item also stores the
+                For <!--n:stale_pairs-->·<!--/n--> provisions amended since 2024 the item also stores the
                 earlier rule, quoted from the earlier fedlex version. A wrong
                 answer that matches it counts as
                 <em>stale</em>, not as invented.
@@ -204,13 +204,14 @@
               extracted in all three languages.
             </li>
             <li>
-              <strong>Then a judge</strong>, Qwen3-235B, from a different
-              model family than Apertus: 61 of 61 constructed answers graded
-              correctly before use.
+              <strong>Then a panel of <!--n:panel_size-->·<!--/n--> open-weight judges</strong> from other
+              model families than Apertus (<!--n:panel_judges-->·<!--/n-->); each graded 61 constructed
+              answers correctly before use, and the majority counts.
             </li>
             <li>
-              <strong>Then a human</strong> grades a blind 22&nbsp;% sample
-              of the judge's grades (in progress); we report Cohen's κ.
+              <strong>Then a human</strong> graded a blind <!--n:judge_share-->·<!--/n-->&nbsp;% sample
+              of the grades: Cohen's κ <!--n:kappa_qwen-->[[NIKLAS-PRÜFUNG: kappa_qwen]]<!--/n--> against the first judge,
+              <!--n:kappa_panel-->[[NIKLAS-PRÜFUNG: kappa_panel]]<!--/n--> against the panel majority.
             </li>
             <li>
               <strong>Then <code>make run</code></strong> replays the scoring.
@@ -225,9 +226,7 @@
         <div class="wrap">
           <h2>Status</h2>
           <p class="section-lead">
-            Release candidate v1.0.0-rc1 of 13 October 2026. All numbers are
-            <strong>preliminary, human sample pending</strong>: the rows are verified automatically, the
-            human spot check is still open.
+            Dataset release v<!--n:version-->·<!--/n-->, evaluated with Apertus 1.5 8B and 70B.
           </p>
           <div class="status-list">
             <div class="status-row">
@@ -241,18 +240,19 @@
               </div>
             </div>
             <div class="status-row">
-              <span class="pill pill-progress">In progress</span>
+              <span class="pill pill-done">Done</span>
               <div>
                 <h3>Dataset</h3>
                 <p>
-                  Release candidate v1.0.0-rc1: 327 German core questions, 951
-                  question–answer rows in German, French and Italian, from 19
-                  federal acts and ordinances. 53 questions store the previous
+                  <!--n:cores-->·<!--/n--> German core questions, <!--n:rows-->·<!--/n-->
+                  question–answer rows in German, French and Italian, from <!--n:acts-->·<!--/n-->
+                  federal acts and ordinances. <!--n:stale_pairs-->·<!--/n--> questions store the previous
                   rule word for word from the earlier fedlex version. All cores
-                  are LLM drafts (98 GPT-5.5 via Codex, 97 Claude, 86 Gemini,
-                  46 the open model Nemotron 3 Ultra). Every row passes the
+                  are LLM drafts (<!--n:gen_codex-->·<!--/n--> GPT-5.5 via Codex, <!--n:gen_claude-->·<!--/n--> Claude, <!--n:gen_gemini-->·<!--/n--> Gemini,
+                  <!--n:gen_nemotron-->·<!--/n--> the open model Nemotron 3 Ultra). Every row passes the
                   check against fedlex and an independent check by a second
-                  model; a human spot check of a random sample is open.
+                  model; a human checked a random sample of <!--n:sample_cores-->·<!--/n--> cores and
+                  removed <!--n:human_drops-->[[NIKLAS-PRÜFUNG: human_drops]]<!--/n-->.
                 </p>
               </div>
             </div>
@@ -262,26 +262,25 @@
                 <h3>Exposure check against Apertus training data</h3>
                 <p>
                   The Swiss legislation in MultiLegalPile is part of the Apertus
-                  1.5 training mix. Of the 951 rows, the corpus holds the
-                  current wording for 564, only the <em>old</em> wording for 84
-                  and neither for 277. For the 135 rows of temporal questions it
-                  holds the current wording once and the old one 76 times.
+                  1.5 training mix. Of the <!--n:rows-->·<!--/n--> rows, the corpus holds the
+                  current wording for <!--n:cont_current-->·<!--/n-->, only the <em>old</em> wording for <!--n:cont_outdated-->·<!--/n-->
+                  and neither for <!--n:cont_absent-->·<!--/n-->. For the <!--n:cont_temporal_rows-->·<!--/n--> rows of temporal questions it
+                  holds the current wording <!--n:cont_temporal_current-->·<!--/n--> times and the old one <!--n:cont_temporal_outdated-->·<!--/n--> times.
                 </p>
               </div>
             </div>
             <div class="status-row">
-              <span class="pill pill-progress">Preliminary</span>
+              <span class="pill pill-done">Done</span>
               <div>
                 <h3>Results for Apertus 1.5 8B and 70B</h3>
                 <p>
-                  Preliminary, human sample pending (judge Qwen3-235B, release
-                  candidate): the 70B answers 51.0&nbsp;% of
-                  the rows correctly, the 8B 32.9&nbsp;%. On
-                  the 157 rows whose rule changed and whose old answer is stored,
-                  the 70B is right in 7.6&nbsp;%
-                  and gives the old rule in 28.7&nbsp;%.
+                  Graded by the judge panel: the 70B answers <!--n:correct_70b-->·<!--/n-->&nbsp;% of
+                  the rows correctly, the 8B <!--n:correct_8b-->·<!--/n-->&nbsp;%. On
+                  the <!--n:stale_rows-->·<!--/n--> rows whose rule changed and whose old answer is stored,
+                  the 70B is right in <!--n:stalepair_correct_70b-->·<!--/n-->&nbsp;%
+                  and gives the old rule in <!--n:stalepair_stale_70b-->·<!--/n-->&nbsp;%.
                   With the paragraph in the prompt it is right in
-                  97.5&nbsp;% of the same rows. Adding today's date to
+                  <!--n:openbook_stalepair_70b-->·<!--/n-->&nbsp;% of the same rows. Adding today's date to
                   the prompt changes nothing.
                 </p>
               </div>
@@ -333,8 +332,8 @@
             <a class="card link-card" href="report.pdf">
               <h3>Technical report</h3>
               <p>
-                Six pages, results on release candidate v1.0.0-rc1;
-                preliminary until the human sample is done.
+                Six pages: dataset, judge panel, human check and results for
+                Apertus 1.5 8B and 70B.
               </p>
               <span class="more">Download PDF →</span>
             </a>

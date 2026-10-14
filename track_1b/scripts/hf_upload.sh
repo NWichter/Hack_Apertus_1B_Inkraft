@@ -17,7 +17,7 @@ case "$VERSION" in
 esac
 python -m inkraft --data data replay | tail -n 1
 python src/hf_release.py card --repo "$REPO"
-grep -n -E 'TBD|More Information Needed|\{\{' hf/README.md && { echo "placeholder left in hf/README.md" >&2; exit 3; } || true
+grep -n -E 'TBD|More Information Needed|NIKLAS-PRÜFUNG|\{\{' hf/README.md && { echo "placeholder left in hf/README.md" >&2; exit 3; } || true
 
 if [ "${GO:-0}" != 1 ]; then
   python src/hf_release.py upload --repo "$REPO"
@@ -26,4 +26,6 @@ if [ "${GO:-0}" != 1 ]; then
 fi
 VIS="--public"; [ "${PRIVATE:-0}" = 1 ] && VIS=""
 python src/hf_release.py upload --repo "$REPO" --go $VIS ${ENV:+--env "$ENV"}
-echo "done: https://huggingface.co/datasets/$REPO (tag v$VERSION). Put this URL into technical_report.md, README.md and the pitch."
+echo "https://huggingface.co/datasets/$REPO" > data/hf_url.txt
+python report/numbers.py
+echo "done: https://huggingface.co/datasets/$REPO (tag v$VERSION); URL written to data/hf_url.txt and into the documents (report/numbers.py). Rebuild the report PDF."

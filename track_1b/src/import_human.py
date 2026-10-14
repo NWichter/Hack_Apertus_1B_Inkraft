@@ -1,4 +1,5 @@
-"""Import the export of the human check page (make_check_file.py) and compute the numbers.
+"""Import the export of the human check page (offline HTML page over data/human_labels/dataset_sample.jsonl and
+sample_20pct.jsonl, written by src/draw_human_sample.py) and compute the numbers.
 
 Writes data/human_labels/labels_<annotator>.jsonl (judge sample, format of inkraft agreement),
 data/review/human_check_log.jsonl (dataset decisions, review-log format for auto_review.py --human-log)
@@ -35,7 +36,8 @@ def main():
     ap.add_argument("--data", default=str(ROOT / "data"))
     ap.add_argument("--annotator", default="niklas")
     ap.add_argument("--name", default="Niklas Wichter")
-    ap.add_argument("--judge-model", required=True)
+    ap.add_argument("--judge-model", required=True, help="judge the sample was drawn on (primary)")
+    ap.add_argument("--also", nargs="*", default=["panel"], help="further judges to compare with (default: panel majority)")
     args = ap.parse_args()
     data = Path(args.data)
     ex = json.loads(Path(args.export).read_text(encoding="utf-8"))
@@ -71,7 +73,7 @@ def main():
                 "timestamp": a.get("at"),
                 "duration_s": None,
                 "agent_revealed_before_decision": False,
-                "tool": "tools/check (make_check_file.py)",
+                "tool": "offline check page (blind)",
                 "note": a.get("note") or "",
             }
         )
@@ -107,19 +109,33 @@ def main():
     dataset.write_jsonl(
         data / "human_labels" / f"labels_{args.annotator}.jsonl", labels
     )
-    judgements = []
-    for p in sorted((data / "judgements").glob("*.jsonl")):
-        judgements += [
-            j for j in dataset.read_jsonl(p) if j.get("judge_model") == args.judge_model
-        ]
-    agree = human.agreement(labels, judgements) if labels else {"n": 0}
-    if labels:
-        agree["by_language_group"] = {
+    def judge_rows(name):
+        snap = data / "human_labels" / f"sample_grades_{name.replace('/', '_').replace(':', '_')}.jsonl"
+        if snap.exists():  # grades as they were when the sample was drawn
+            return dataset.read_jsonl(snap)
+        rows = []
+        for p in sorted((data / "judgements").glob("*.jsonl")):
+            rows += [j for j in dataset.read_jsonl(p) if j.get("judge_model") == name]
+        return rows
+
+    def full(judgements):
+        if not labels:
+            return {"n": 0}
+        a = human.agreement(labels, judgements)
+        a["by_language_group"] = {
             "de (original only)": human.agreement([x for x in labels if x["lang"] == "de"], judgements),
             "fr/it (human with machine translation)": human.agreement([x for x in labels if x["lang"] != "de"], judgements),
         }
-        agree["translation_aid"] = ex.get("translation_aid")
-        agree["uncertain_labels"] = sum(x["uncertain"] for x in labels)
+        return a
+
+    agree = full(judge_rows(args.judge_model))
+    agree["judge_model"] = args.judge_model
+    agree["translation_aid"] = ex.get("translation_aid")
+    agree["uncertain_labels"] = sum(x["uncertain"] for x in labels)
+    for other in args.also:
+        rows = judge_rows(other)
+        if rows:
+            agree[f"vs_{other}"] = full(rows)
     summary = {
         "annotator": args.name,
         "exported_at": ex.get("exported_at"),

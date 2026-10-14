@@ -1,7 +1,7 @@
 """After the human review: apply the exported decisions to the dataset and the candidates, recompute the
 temporal buckets per evidence sentence and write merged.v2.jsonl with a summary. Does not freeze.
 
-Inputs are the exports of the review tool (tools/review): review_decisions.json and review_log.jsonl.
+Inputs are the logged release decisions (src/auto_review.py): review_decisions.json and review_log.jsonl.
 
 python src/after_review.py --fedlex <fedlex-v2> --decisions data/review/review_decisions.json
     --log data/review/review_log.jsonl [--allow-open]

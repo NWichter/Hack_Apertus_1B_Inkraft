@@ -159,10 +159,8 @@ def main():
     )
     print(json.dumps(info["stats"], indent=1))
     print(
-        "\nnext (manual): update CHANGELOG/DATA_CARD numbers, then\n"
-        f"  git add track_1b/data && git commit -m 'feat(data): freeze dataset v{args.version}'\n"
-        f"  git tag dataset-v{args.version} && git push origin main --tags\n"
-        "then scripts/run_after_freeze.sh"
+        "\nnext: scripts/run_after_freeze.sh (first freeze) or the rest of scripts/after_human_check.sh,\n"
+        "then python report/numbers.py, commit track_1b/data and tag dataset-v<version>"
     )
 
 

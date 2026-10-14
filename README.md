@@ -1,102 +1,83 @@
-# Inkraft — Swiss Legal Temporal & Factual Q&A Benchmark (Track 1B)
+# Inkraft — does Apertus know the law in force? (Hack Apertus 2026, Track 1B)
 
-[![License: Apache-2.0](https://img.shields.io/badge/Code_License-Apache_2.0-blue.svg)](LICENSE)
-[![Data License: CDLA-Permissive-2.0](https://img.shields.io/badge/Data_License-CDLA_Permissive_2.0-green.svg)](track_1b/data/LICENSE)
-[![Docs License: CC-BY-4.0](https://img.shields.io/badge/Docs_License-CC_BY_4.0-lightgrey.svg)](LICENSE-docs)
-[![Hack Apertus](https://img.shields.io/badge/Hack_Apertus-2026-red.svg)](https://hackapertus.ch/)
+[![Code: Apache-2.0](https://img.shields.io/badge/Code-Apache_2.0-blue.svg)](LICENSE)
+[![Data: CDLA-Permissive-2.0](https://img.shields.io/badge/Data-CDLA_Permissive_2.0-green.svg)](track_1b/data/LICENSE)
+[![Docs: CC-BY-4.0](https://img.shields.io/badge/Docs-CC_BY_4.0-lightgrey.svg)](LICENSE-docs)
 
-**Inkraft** is a trilingual factual and temporal benchmark evaluating large language models (specifically the Swiss open-weights Apertus model family) on Swiss federal social and health insurance law (19 acts and ordinances: KVG/KVV/KLV, AHVG/AHVV, IVG/IVV, ELG/ELV, UVG, ATSG, AVIG/AVIV, EOG, BVG/BVV, FamZG, OR) as of **1 October 2026**. Release candidate v1.0.0-rc1: 327 core questions (312 in all three languages, 15 German only), 951 rows, 53 STALE pairs.
+**Inkraft** is a trilingual (German, French, Italian) short-answer benchmark on Swiss federal social and health
+insurance law as of **1 October 2026** (dimension: Core Task Intelligence). Release v<!--n:version-->·<!--/n-->:
+<!--n:cores-->·<!--/n--> core questions (<!--n:trilingual-->·<!--/n--> in all three languages, <!--n:de_only-->·<!--/n--> German only), <!--n:rows-->·<!--/n--> question–answer
+rows from <!--n:acts-->·<!--/n--> acts and ordinances. Every gold answer is quoted verbatim from the authentic Fedlex text; for
+<!--n:stale_pairs-->·<!--/n--> amended provisions the previous answer is stored verbatim from the earlier version, so a wrong answer
+can be classed as _stale_ (earlier law) rather than invented.
 
-Every question is anchored in a verified federal law provision ([fedlex.admin.ch](https://www.fedlex.admin.ch/)). Inkraft measures:
-1. **Core Factuality & Hallucination Rate** across German, French, and Italian.
-2. **Temporal Drift (`STALE`)**: Distinguishing genuinely outdated legal knowledge (from training cutoff) vs. invented answers.
-3. **Cross-Lingual Consistency**: Evaluating whether parallel legal questions receive identical answers in all national languages.
-4. **Training Corpus Contamination**: Verbatim and n-gram overlap checks against Swiss legal pretraining corpora (`Multi_Legal_Pile / switzerland_lexfind`).
+**Results** (Apertus 1.5, majority of a panel of <!--n:panel_size-->·<!--/n--> open-weight judges, human-checked sample):
+the 70B answers <!--n:correct_70b-->·<!--/n--> % of the rows correctly (8B: <!--n:correct_8b-->·<!--/n--> %). On the <!--n:stale_rows-->·<!--/n--> rows whose rule
+changed and whose earlier answer is stored, the 70B is correct in <!--n:stalepair_correct_70b-->·<!--/n--> % and gives the earlier law in
+<!--n:stalepair_stale_70b-->·<!--/n--> %; with the cited paragraph in the prompt it is correct in <!--n:openbook_stalepair_70b-->·<!--/n--> %. A date in the
+system prompt does not help. Human check: Cohen's κ human–judge <!--n:kappa_qwen-->[[NIKLAS-PRÜFUNG: kappa_qwen]]<!--/n-->
+(panel majority <!--n:kappa_panel-->[[NIKLAS-PRÜFUNG: kappa_panel]]<!--/n-->) on <!--n:judge_sample-->·<!--/n--> judgements;
+<!--n:human_drops-->[[NIKLAS-PRÜFUNG: human_drops]]<!--/n--> of <!--n:sample_cores-->·<!--/n--> sampled cores rejected and removed.
 
-Part of the **Apertool** submission suite for [Hack Apertus 2026](https://hackapertus.ch/).
+## For the jury: where to look
 
----
+1. **Technical report:** [`track_1b/Apertool_Report.pdf`](track_1b/Apertool_Report.pdf) (source: `track_1b/technical_report.md`).
+2. **Data card:** [`track_1b/docs/DATA_CARD.md`](track_1b/docs/DATA_CARD.md) (also the Hugging Face card: <!--n:hf_url-->[[NIKLAS-PRÜFUNG: hf_url]]<!--/n-->).
+3. **Reproduce:** `make run` and `make test` (below).
+4. **Data:** `track_1b/data/` — `test.jsonl`, `metadata.jsonl`, `responses/`, `judgements/`, `human_labels/`,
+   `expected_results.json`, `FREEZE.json` (file hashes); see [`track_1b/data/README.md`](track_1b/data/README.md).
+5. **Code:** `track_1b/src/inkraft/` (evaluation package), `track_1b/src/*.py` (dataset construction and checks),
+   usage in [`track_1b/docs/USAGE.md`](track_1b/docs/USAGE.md).
 
-## 🚀 Quickstart (`make run`)
+## Reproduce
 
-Judges can run the reproducible benchmark directly via Docker on a clean checkout:
+Requirements: Docker and GNU make. **Runtime** a few minutes (image build) plus seconds for the replay;
+**hardware** any laptop, no GPU; **API keys** none for the replay; **model weights** none (the stored Apertus answers
+are replayed).
 
 ```bash
-make run
+make run     # replay: recompute every result block from the stored answers and grades, compare with expected_results.json -> PASS/FAIL
+make test    # unit tests in the same image
 ```
 
-By default, `make run` executes the offline replay without API credentials: it recomputes all eight result blocks (Apertus 1.5 8B and 70B × `closed_dated`, `open_book`, `closed_swiss`, `closed_plain`) from the stored responses and judgements in `track_1b/data/` and compares them with `track_1b/data/expected_results.json` (PASS/FAIL). Expected runtime: under a minute after the image build; no GPU, no keys.
-
-### Live Evaluation (`MODE=full`)
-
-To evaluate a live OpenAI-compatible Apertus endpoint:
+Evaluate another model or rerun Apertus (OpenAI-compatible endpoint; the judges are graded the same way):
 
 ```bash
-export LLM_NAME="apertus-v1.5-8b"
-export LLM_BASE_URL="https://your-apertus-endpoint.cscs.ch/v1"
-export LLM_API_KEY="your-api-key"
-
-# Optional judge endpoint (the reported results use Qwen3-235B-A22B-2507 via OpenRouter)
-export JUDGE_NAME="qwen/qwen3-235b-a22b-2507"
-export JUDGE_BASE_URL="https://openrouter.ai/api/v1"
-export JUDGE_API_KEY="your-judge-key"
-
-make run MODE=full
+export LLM_BASE_URL=https://…/v1 LLM_API_KEY=… LLM_NAME=apertus-v1.5-70b
+export JUDGE_BASE_URL=https://openrouter.ai/api/v1 JUDGE_API_KEY=… JUDGE_NAME=qwen/qwen3-235b-a22b-2507
+make run MODE=full LIMIT=50   # LIMIT for a smoke test; without JUDGE_* the rule pre-grade is used (provisional)
 ```
 
----
+The full pipeline (Fedlex download → version diff → drafting → checks → human sample → freeze → runs → panel →
+scores) is described in the report, section Reproducibility, and in `track_1b/docs/USAGE.md`.
 
-## 📦 Benchmark Structure
+## Repository layout
 
-| Directory | Content |
+| Path | Content |
 | --- | --- |
-| `track_1b/` | Official track root directory (contains `Makefile`, `run.sh`, `technical_report.md`) |
-| `track_1b/src/inkraft/` | Python CLI and evaluation library (`generate`, `judge`, `score`, `human`, `contam`) |
-| `track_1b/data/` | Release candidate v1.0.0-rc1 (`test.jsonl`, `metadata.jsonl`, `FREEZE.json`), model responses, judgements, `expected_results.json`, `results.json`; all rows `auto_verified`, human spot check in progress |
-| `track_1b/docs/` | Dataset Card, annotation guidelines, and CLI usage documentation |
-| `track_1b/src/*.py` | Dataset construction: `fetch_fedlex.py` (sources), `make_batches.py` / `build_items.py` / `assemble.py` (drafting), `validate_items.py`, `apply_review.py`, `find_changes.py` (version diff and sentence-level change check), `calibration_pilot.py` |
-| `track_1b/src/*.py` (pipeline after drafting) | `gen_nemotron.py` (temporal candidates from version diffs, open model), `gen_proposals.py` (review proposals), `check_candidates.py`, `make_review_package.py`, `after_review.py` (apply the human review), `freeze.py` (v1.0.0), `hf_release.py` (dataset card and upload); `track_1b/scripts/run_after_freeze.sh` (judge calibration, runs, scoring, human sample) |
-| `tools/review/` | Local review tool (`index.html`, no server): every core next to the statute text, decisions logged; loads the review package `track_1b/data/review/review_package.v1.jsonl`. Guide (German): `tools/review/ANLEITUNG.md`. `fedlex_texte.js` is built locally with `build_fedlex.py` and not committed |
-| `track_1b/report/` | Report build (`build.sh`, `build.ps1`), `analysis.py` and `make_figures.py` (every number and the figure of the report) |
-| `track_1b/src/*.py` (release candidate) | `auto_fix.py` (open-model fixes of candidate notes), `auto_review.py` (logged automatic decisions), `second_check.py` (independent check by Qwen3-235B), `make_check_file.py` / `import_human.py` (human spot check page and its analysis), `judge_agreement.py` |
-| `website/` | Project landing page and interactive report preview; demo video embedded (`website/media/video.mp4`, subtitles `website/media/video.vtt`) |
+| `Makefile` | `make run`, `make test` (delegate to `track_1b/Makefile`) |
+| `track_1b/` | official track directory: `Makefile`, `Dockerfile`, `run.sh`, `technical_report.md`, `Apertool_Report.pdf` |
+| `track_1b/src/inkraft/` | evaluation package and CLI (`generate`, `judge`, `calibrate`, `score`, `replay`, `expect`, `contam`, `agreement`) |
+| `track_1b/src/` | dataset construction (`fetch_fedlex.py`, `find_changes.py`, `make_batches.py`, `build_items.py`, `gen_nemotron.py`, `validate_items.py`), release checks (`auto_fix.py`, `auto_review.py`, `second_check.py`, `after_review.py`, `panel_fixes.py`, `freeze.py`), human check (`draw_human_sample.py`, `translate_sample.py`, `import_human.py`), judge panel (`panel.py`, `rejudge_changed.py`, `judge_agreement.py`), release (`hf_release.py`) |
+| `track_1b/scripts/` | `run_after_freeze.sh` (calibration, runs, judging), `after_human_check.sh` (import, freeze, rescoring), `hf_upload.sh` (Hugging Face release, dry run by default) |
+| `track_1b/report/` | report build (`build.sh`, `build.ps1`), `analysis.py`, `make_figures.py`, `numbers.py` (every number in the documents) |
+| `track_1b/tests/` | unit tests and the replay fixture |
+| `website/` | project page https://inkraft.apertool.ch with pitch and demo video |
 
-### Results (v1.0.0-rc1, judge Qwen3-235B)
-
-Apertus 1.5 70B answers 51.0 % of the 951 rows correctly (8B: 32.9 %). On the 157 rows of the 53 STALE pairs the 70B is correct in 7.6 % and gives the earlier law in 28.7 %; with the cited paragraph in the prompt (`open_book`) it is correct in 97.5 % of the same rows. On all 235 rows whose cited sentence changed since 2024 the 70B is correct in 17.0 % (8B: 10.6 %). A date in the system prompt does not change accuracy (German rows, exact McNemar p = 1.0 for the 70B). Details, intervals and limitations in `track_1b/technical_report.md`; numbers in `track_1b/data/results.json` and `track_1b/report/analysis.json`. The rows are automatically verified against Fedlex and by an independent model check; two human checks are in progress: a random sample of 35 dataset cores, and a blind re-grade of 211 judge grades (22 % of the 70B `closed_dated` run) for the human–judge κ.
-
----
-
-## 🛠 Local CLI Installation
-
-```bash
-cd track_1b
-python -m venv .venv
-source .venv/bin/activate  # on Windows: .venv\Scripts\activate
-pip install -e .
-python -m pytest -q
-```
-
----
-
-## 📜 License
-
-Licensed as required by the Hack Apertus [Terms & Conditions](https://hackapertus.ch/terms-and-conditions) (§ 6, "What you build is open source"):
+## License
 
 | Part | License | File |
 | --- | --- | --- |
 | Code (`track_1b/src/`, `track_1b/tests/`, build and run scripts, website code) | Apache-2.0 | [`LICENSE`](LICENSE) |
-| Documentation and technical report (`README.md`, `track_1b/docs/`, `track_1b/technical_report.md`, `track_1b/report/`, `Apertool_Report.pdf`) | CC-BY-4.0 | [`LICENSE-docs`](LICENSE-docs) |
-| Submitted dataset (`track_1b/data/`: questions, answers, metadata; licence stored per item in `metadata.jsonl`) | CDLA-Permissive-2.0 | [`track_1b/data/LICENSE`](track_1b/data/LICENSE) |
+| Documentation and technical report | CC-BY-4.0 | [`LICENSE-docs`](LICENSE-docs) |
+| Dataset (`track_1b/data/`: questions, answers, metadata; licence stored per item) | CDLA-Permissive-2.0 | [`track_1b/data/LICENSE`](track_1b/data/LICENSE) |
 
-Third-party material keeps its own licence and is not relicensed:
+Third-party material keeps its own licence: Swiss federal statute text (not protected by copyright, Art. 5 para. 1
+lit. a URG; marked per item as `source.license: public-domain-ch-urg-art5`); MultiLegalPile (CC BY-NC-SA, used only
+locally for the exposure check, not redistributed); SimpleQA grader of openai/simple-evals (MIT, adapted judge
+prompt); Inter font in `website/assets/fonts/` (SIL OFL 1.1).
 
-- **Swiss federal statute text** quoted from [fedlex.admin.ch](https://www.fedlex.admin.ch/) (`source.quote` in each item): not protected by copyright (Art. 5 para. 1 lit. a URG, SR 231.1); marked per item as `source.license: public-domain-ch-urg-art5`.
-- **MultiLegalPile** (CC BY-NC-SA): used only locally for the exposure check, not redistributed.
-- **SimpleQA grader** of [openai/simple-evals](https://github.com/openai/simple-evals) (MIT): the judge prompt adapts its grading rules.
-- **Inter** font in `website/assets/fonts/` (SIL Open Font License 1.1, see `LICENSE-Inter.txt`).
-
-## 📖 Citation
+## Citation
 
 ```bibtex
 @misc{apertool2026inkraft,

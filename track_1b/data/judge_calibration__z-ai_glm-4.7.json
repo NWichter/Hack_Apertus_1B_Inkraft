@@ -1,0 +1,153 @@
+{
+ "judge_model": "z-ai/glm-4.7",
+ "prompt_id": "inkraft-judge-v1",
+ "n": 61,
+ "grade_accuracy": 0.7705,
+ "subtype_accuracy": 0.7541,
+ "errors": [
+  {
+   "cal_id": "cal-002",
+   "kind": "hedged_correct",
+   "expected": "CORRECT",
+   "expected_subtype": null,
+   "got": null,
+   "grade_ok": false,
+   "subtype_ok": false
+  },
+  {
+   "cal_id": "cal-008",
+   "kind": "stale",
+   "expected": "INCORRECT",
+   "expected_subtype": "STALE",
+   "got": null,
+   "grade_ok": false,
+   "subtype_ok": false
+  },
+  {
+   "cal_id": "cal-011",
+   "kind": "correct_verbose",
+   "expected": "CORRECT",
+   "expected_subtype": null,
+   "got": null,
+   "grade_ok": false,
+   "subtype_ok": false
+  },
+  {
+   "cal_id": "cal-013",
+   "kind": "stale",
+   "expected": "INCORRECT",
+   "expected_subtype": "STALE",
+   "got": null,
+   "grade_ok": false,
+   "subtype_ok": false
+  },
+  {
+   "cal_id": "cal-016",
+   "kind": "hedged_correct",
+   "expected": "CORRECT",
+   "expected_subtype": null,
+   "got": null,
+   "grade_ok": false,
+   "subtype_ok": false
+  },
+  {
+   "cal_id": "cal-017",
+   "kind": "stale",
+   "expected": "INCORRECT",
+   "expected_subtype": "STALE",
+   "got": null,
+   "grade_ok": false,
+   "subtype_ok": false
+  },
+  {
+   "cal_id": "cal-018",
+   "kind": "correct_verbose",
+   "expected": "CORRECT",
+   "expected_subtype": null,
+   "got": null,
+   "grade_ok": false,
+   "subtype_ok": false
+  },
+  {
+   "cal_id": "cal-019",
+   "kind": "stale",
+   "expected": "INCORRECT",
+   "expected_subtype": "STALE",
+   "got": null,
+   "grade_ok": false,
+   "subtype_ok": false
+  },
+  {
+   "cal_id": "cal-020",
+   "kind": "conflicting",
+   "expected": "INCORRECT",
+   "expected_subtype": "OTHER",
+   "got": null,
+   "grade_ok": false,
+   "subtype_ok": false
+  },
+  {
+   "cal_id": "cal-028",
+   "kind": "stale",
+   "expected": "INCORRECT",
+   "expected_subtype": "STALE",
+   "got": null,
+   "grade_ok": false,
+   "subtype_ok": false
+  },
+  {
+   "cal_id": "cal-031",
+   "kind": "correct_verbose",
+   "expected": "CORRECT",
+   "expected_subtype": null,
+   "got": null,
+   "grade_ok": false,
+   "subtype_ok": false
+  },
+  {
+   "cal_id": "cal-036",
+   "kind": "conflicting",
+   "expected": "INCORRECT",
+   "expected_subtype": "OTHER",
+   "got": {
+    "grade": "INCORRECT",
+    "incorrect_subtype": "NEAR_MISS",
+    "reason": "The model gives two conflicting answers, including the near-miss value of 3 years."
+   },
+   "grade_ok": true,
+   "subtype_ok": false
+  },
+  {
+   "cal_id": "cal-044",
+   "kind": "conflicting",
+   "expected": "INCORRECT",
+   "expected_subtype": "OTHER",
+   "got": null,
+   "grade_ok": false,
+   "subtype_ok": false
+  },
+  {
+   "cal_id": "cal-049",
+   "kind": "wrong_language",
+   "expected": "CORRECT",
+   "expected_subtype": null,
+   "got": null,
+   "grade_ok": false,
+   "subtype_ok": false
+  },
+  {
+   "cal_id": "cal-060",
+   "kind": "conflicting",
+   "expected": "INCORRECT",
+   "expected_subtype": "OTHER",
+   "got": null,
+   "grade_ok": false,
+   "subtype_ok": false
+  }
+ ],
+ "usage": {
+  "tokens_in": 30512,
+  "tokens_out": 10441,
+  "cost_usd": 0.03987
+ }
+}

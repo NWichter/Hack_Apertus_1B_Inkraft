@@ -20,7 +20,7 @@ human review decision (`src/after_review.py`).
    in `authoring.manual_correction`.
 4. `src/check_candidates.py` (validator, duplicates against merged.v1 and among candidates, quote verbatim, outdated
    evidence verbatim in an earlier version, provenance) → `../checks/`.
-5. Agent pre-assessment (claude-opus-5-5, three parallel readers, not a human review) → `assessment.json`. The review
+5. Pre-assessment during development (LLM-assisted, not a human review) → `assessment.json`. The review
    tool hides it until the reviewer has decided.
 
 ## Results

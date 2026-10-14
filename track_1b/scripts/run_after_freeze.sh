@@ -51,6 +51,6 @@ if want score; then
 fi
 
 if want sample; then
-  python src/make_check_file.py --judge-model "$JUDGE_NAME" --out human_check.html
-  echo "open human_check.html, label, export JSON, then: python src/import_human.py <export.json> --judge-model $JUDGE_NAME"
+  python src/draw_human_sample.py --judge-model "$JUDGE_NAME"
+  echo "label data/human_labels/dataset_sample.jsonl and sample_20pct.jsonl blind (inkraft label, or a check page), then: python src/import_human.py <export.json> --judge-model $JUDGE_NAME"
 fi

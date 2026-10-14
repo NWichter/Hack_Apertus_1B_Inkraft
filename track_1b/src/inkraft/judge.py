@@ -187,14 +187,19 @@ def calibrate(endpoint, rows, workers=4, extra_params=None):
                 **chat_kwargs,
             )
             got = parse(d["choices"][0]["message"].get("content"))
+            usage = d.get("usage") or {}
         except Exception:  # noqa: BLE001
-            got = None
-        return x, got
+            got, usage = None, {}
+        return x, got, usage
 
     results = []
+    usage_sum = {"tokens_in": 0, "tokens_out": 0, "cost_usd": 0.0}
     with ThreadPoolExecutor(workers) as ex:
         for fut in as_completed([ex.submit(one, x) for x in rows]):
-            x, got = fut.result()
+            x, got, usage = fut.result()
+            usage_sum["tokens_in"] += usage.get("prompt_tokens") or 0
+            usage_sum["tokens_out"] += usage.get("completion_tokens") or 0
+            usage_sum["cost_usd"] += usage.get("cost") or 0.0
             ok = bool(got) and got["grade"] == x["expected_grade"]
             sub_ok = ok and (x["expected_grade"] != "INCORRECT" or got["incorrect_subtype"] == x["expected_subtype"])
             results.append({"cal_id": x["cal_id"], "kind": x["kind"], "expected": x["expected_grade"],
@@ -206,4 +211,5 @@ def calibrate(endpoint, rows, workers=4, extra_params=None):
         "grade_accuracy": round(sum(r["grade_ok"] for r in results) / n, 4) if n else None,
         "subtype_accuracy": round(sum(r["subtype_ok"] for r in results) / n, 4) if n else None,
         "errors": [r for r in results if not r["subtype_ok"]],
+        "usage": {**usage_sum, "cost_usd": round(usage_sum["cost_usd"], 6)},
     }
