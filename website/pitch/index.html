@@ -13,13 +13,26 @@
       href="../assets/inkraft-favicon.svg"
       type="image/svg+xml"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap"
-      rel="stylesheet"
-    />
     <style>
+      /* fonts are served from this site (SIL OFL 1.1, licences in ../assets/fonts/) */
+      @font-face {
+        font-family: "Inter";
+        src: url("../assets/fonts/inter-latin-wght-normal.woff2") format("woff2-variations");
+        font-weight: 100 900;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "JetBrains Mono";
+        src: url("../assets/fonts/jetbrains-mono-latin-wght-normal.woff2") format("woff2-variations");
+        font-weight: 100 800;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "Source Serif 4";
+        src: url("../assets/fonts/source-serif-4-latin-opsz-normal.woff2") format("woff2-variations");
+        font-weight: 200 900;
+        font-display: swap;
+      }
       :root {
         --paper: #f6f4ee;
         --card: #ffffff;
@@ -1103,10 +1116,10 @@
       </div>
     </section>
 
-    <!-- 4 STALE VS INVENTED -->
+    <!-- 4 STALE VS OTHER WRONG -->
     <section class="slide s4">
       <p class="kicker">What Inkraft measures</p>
-      <h2>A wrong answer is not always invented.</h2>
+      <h2>Not every wrong answer is a hallucination.</h2>
       <div class="out">
         <div class="o c">
           <span class="tag g">CORRECT</span>
@@ -1126,9 +1139,9 @@
           <div class="grade">outdated_answers</div>
         </div>
         <div class="o i">
-          <span class="tag r">INVENTED</span>
+          <span class="tag r">OTHER WRONG</span>
           <div class="amt">CHF 1,300</div>
-          <p>Example: an amount in no version of the law. A hallucination.</p>
+          <p>Example: an amount in no stored version of the law. Often a hallucination.</p>
           <div class="grade">any other answer</div>
         </div>
         <div class="o n">
@@ -1138,7 +1151,7 @@
           <div class="grade">abstention</div>
         </div>
       </div>
-      <p class="punch">Stale is not invented. Inkraft tells them apart.</p>
+      <p class="punch">A stale answer was once right. Inkraft tells it apart.</p>
     </section>
 
     <!-- 5 DATASET -->

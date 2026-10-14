@@ -6,7 +6,7 @@
     <title>Inkraft · Swiss insurance law, as of today</title>
     <meta
       name="description"
-      content="Inkraft is a trilingual benchmark (German, French, Italian) on Swiss social and health insurance law as of 1 October 2026. Every gold answer rests on a verbatim fedlex quote. It tells correct, stale and invented answers apart."
+      content="Inkraft is a trilingual benchmark (German, French, Italian) on Swiss social and health insurance law as of 1 October 2026. Every gold answer rests on a verbatim fedlex quote. It tells correct, stale and other wrong answers apart."
     />
     <meta name="color-scheme" content="light dark" />
     <meta
@@ -26,7 +26,7 @@
     <meta property="og:title" content="Inkraft · The law is the answer key." />
     <meta
       property="og:description"
-      content="A trilingual benchmark on Swiss social and health insurance law as of 1 October 2026. Correct, stale or invented?"
+      content="A trilingual benchmark on Swiss social and health insurance law as of 1 October 2026. Correct, stale or wrong?"
     />
     <meta property="og:url" content="https://inkraft.apertool.ch/" />
     <meta property="og:locale" content="en_GB" />
@@ -55,8 +55,8 @@
         <nav aria-label="Sections">
           <a href="#problem">Problem</a>
           <a href="#approach">Approach</a>
-          <a href="#status">Status</a>
-          <a class="nav-wide" href="#material">Pitch &amp; report</a>
+          <a class="nav-wide" href="#status">Status</a>
+          <a href="#material">Pitch &amp; report</a>
         </nav>
       </div>
     </header>
@@ -72,8 +72,8 @@
               health insurance law, in German, French and Italian, as of
               <strong>1&nbsp;October&nbsp;2026</strong>. Every gold answer rests
               on a verbatim quote from the federal statute. Every wrong answer is sorted: was
-              it the rule that applied <em>before</em> an amendment, or was it
-              invented?
+              it the rule that applied <em>before</em> an amendment, or does it
+              match no stored version?
             </p>
             <div class="cta">
               <a class="btn" href="#approach">How it works</a>
@@ -167,7 +167,7 @@
                 For <!--n:stale_pairs-->53<!--/n--> provisions amended since 2024 the item also stores the
                 earlier rule, quoted from the earlier fedlex version. A wrong
                 answer that matches it counts as
-                <em>stale</em>, not as invented.
+                <em>stale</em>, not as another error.
               </p>
             </article>
             <article class="card feature">
@@ -252,7 +252,7 @@
                   are LLM drafts (<!--n:gen_codex-->98<!--/n--> GPT-5.5 via Codex, <!--n:gen_claude-->97<!--/n--> Claude, <!--n:gen_gemini-->86<!--/n--> Gemini,
                   <!--n:gen_nemotron-->46<!--/n--> the open model Nemotron 3 Ultra). Every row passes the
                   check against fedlex, and every core was checked by a second model
-                  (7 flagged calculation cores were kept because the validator recomputes them);
+                  (15 flagged: 8 dropped, 7 calculation cores kept because the validator recomputes them);
                   a human checks a random sample of <!--n:sample_cores-->35<!--/n--> cores<!--when:human:off and
                   removed <!~~n:human_drops~~>pending (human check in progress – results on 16 October)<!~~[[NIKLAS-PRÜFUNG: human_drops]]~~><!~~/n~~>/when:human:off--><!--when:pending--> (results with release v1.0.0)<!--/when:pending-->.
                 </p>
@@ -442,7 +442,8 @@
           <p class="contact-privacy">
             Your name, e-mail address and message are forwarded by e-mail to Team
             Apertool, solely to answer you. The form does not store them and does not
-            pass them on.
+            pass them on. This site uses no analytics and sets no cookies. Fonts are served from
+            this site.
           </p>
         </div>
       </section>

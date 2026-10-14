@@ -9,4 +9,4 @@
 
 #include "body.typ"
 
-#bibliography("refs.bib", style: "apa")
+#bibliography("refs.bib", style: "apa", title: "References")

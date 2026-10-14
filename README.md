@@ -10,13 +10,13 @@ insurance law as of **1 October 2026** (dimension: Core Task Intelligence). Rele
 rows from <!--n:acts-->19<!--/n--> acts and ordinances. Every gold answer is backed by a verbatim quote from the authentic Fedlex text (calculation and yes/no answers are
 derived from the quoted values; the validator recomputes calculations); for
 <!--n:stale_pairs-->53<!--/n--> amended provisions the previous answer is stored verbatim from the earlier version, so a wrong answer
-can be classed as _stale_ (earlier law) rather than invented.
+can be classed as _stale_ (earlier law) rather than as another error.
 
 **Results** (Apertus 1.5, majority of a panel of <!--n:panel_size-->3<!--/n--> open-weight judges):
-the 70B answers <!--n:correct_70b-->50.7<!--/n--> % of the rows correctly (8B: <!--n:correct_8b-->33.0<!--/n--> %). On the <!--n:stale_rows-->157<!--/n--> rows whose rule
+the 70B answers <!--n:correct_70b-->50.7<!--/n--> % of the rows correctly (8B: <!--n:correct_8b-->33.0<!--/n--> %); among its attempted answers <!--n:hall_70b-->48.7<!--/n--> % are wrong (hallucination rate I/(C+I); 8B: <!--n:hall_8b-->62.7<!--/n--> %). On the <!--n:stale_rows-->157<!--/n--> rows whose rule
 changed and whose earlier answer is stored, the 70B is correct in <!--n:stalepair_correct_70b-->7.0<!--/n--> % and gives the earlier law in
-<!--n:stalepair_stale_70b-->29.9<!--/n--> %; with the cited paragraph in the prompt it is correct in <!--n:openbook_stalepair_70b-->98.7<!--/n--> %. A date in the
-as-of date in the system prompt does not change accuracy significantly (German rows). <!--when:human:offHuman check: Cohen's κ human–judge <!~~n:kappa_qwen~~>pending (human check in progress – results on 16 October)<!~~[[NIKLAS-PRÜFUNG: kappa_qwen]]~~><!~~/n~~>
+<!--n:stalepair_stale_70b-->29.9<!--/n--> %; with the cited paragraph in the prompt it is correct in <!--n:openbook_stalepair_70b-->98.7<!--/n--> %.
+Adding the as-of date to the system prompt does not change accuracy significantly (German rows, first judge; 70B: <!--n:date_effect_70b-->−0.3<!--/n--> points). <!--when:human:offHuman check: Cohen's κ human–judge <!~~n:kappa_qwen~~>pending (human check in progress – results on 16 October)<!~~[[NIKLAS-PRÜFUNG: kappa_qwen]]~~><!~~/n~~>
 (panel majority <!~~n:kappa_panel~~>pending (human check in progress – results on 16 October)<!~~[[NIKLAS-PRÜFUNG: kappa_panel]]~~><!~~/n~~>) on <!~~n:judge_sample~~>211<!~~/n~~> judgements of the 70B main run;
 <!~~n:human_drops~~>pending (human check in progress – results on 16 October)<!~~[[NIKLAS-PRÜFUNG: human_drops]]~~><!~~/n~~> of <!~~n:sample_cores~~>35<!~~/n~~> sampled cores rejected and removed./when:human:off--><!--when:pending-->Human check of
 <!--n:judge_sample-->211<!--/n--> judgements of the 70B main run and <!--n:sample_cores-->35<!--/n--> sampled cores: in progress, results with release v1.0.0.<!--/when:pending-->
@@ -50,6 +50,9 @@ export JUDGE_BASE_URL=https://openrouter.ai/api/v1 JUDGE_API_KEY=… JUDGE_NAME=
 make run MODE=full LIMIT=50   # LIMIT for a smoke test; without JUDGE_* the rule pre-grade is used (provisional)
 ```
 
+Answers already stored for the same `LLM_NAME` are reused (the run resumes). To rerun Apertus from scratch, delete
+`track_1b/data/responses/<LLM_NAME>__closed_dated.jsonl` before `make run MODE=full` (the image is rebuilt from the folder).
+
 The full pipeline (Fedlex download → version diff → drafting → checks → human sample → freeze → runs → panel →
 scores) is described in the report, section Reproducibility, and in `track_1b/docs/USAGE.md`.
 
@@ -77,7 +80,7 @@ scores) is described in the report, section Reproducibility, and in `track_1b/do
 Third-party material keeps its own licence: Swiss federal statute text (not protected by copyright, Art. 5 para. 1
 lit. a URG; marked per item as `source.license: public-domain-ch-urg-art5`); MultiLegalPile (CC BY-NC-SA, used only
 locally for the exposure check, not redistributed); SimpleQA grader of openai/simple-evals (MIT, adapted judge
-prompt); Inter font in `website/assets/fonts/` (SIL OFL 1.1).
+prompt); Inter, JetBrains Mono and Source Serif 4 fonts in `website/assets/fonts/` (SIL OFL 1.1, licence files next to them).
 
 ## Citation
 

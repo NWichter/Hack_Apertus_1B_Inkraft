@@ -12,16 +12,16 @@ answers split into #emph[stale] (earlier law) and other errors. Graded
 by a panel of 3 open-weight judges, Apertus 1.5 70B answers 50.7 % of
 rows correctly but only 7.0 % of the rows whose rule changed with a
 stored earlier answer, where it gives the earlier law in 29.9 %; with
-the cited paragraph in the prompt it reaches 98.7 % on the same rows,
-and a date in the prompt does not help.
+the cited paragraph in the prompt it reaches 98.7 % on the same rows;
+adding the as-of date to the prompt does not change accuracy
+significantly.
 ]
 
 #strong[Track:] Apertus Readiness - Track 1B (Swiss Voices, Core Task
 Intelligence) \ #strong[Event:] Online \ #strong[Team:] Apertool ---
 Niklas Wichter \ #strong[Demo:] project page
 https:/\/inkraft.apertool.ch; Hugging Face dataset with test items,
-model responses, judgements and metadata: Hugging Face link follows on
-16 October
+model responses, judgements and metadata: link follows after the upload
 
 #divider()
 
@@ -147,10 +147,11 @@ version diff was the scarce resource, 160 further temporal candidates
 were drafted by the open model Nemotron 3 Ultra from ranked version
 diffs (prompt `nemotron-temporal-v2`, hash stored per row), including
 four found by a numeric diff of acts outside the first manifest (FamZG,
-EOV, KLV) and checked against the stored Fedlex versions. French and
-Italian questions are translations, but their gold answers and evidence
-come from the authentic French and Italian text of the same paragraph,
-because all three versions are equally binding @publg2023art14.
+EOV, KLV; the EOV candidates did not pass the checks) and checked
+against the stored Fedlex versions. French and Italian questions are
+translations, but their gold answers and evidence come from the
+authentic French and Italian text of the same paragraph, because all
+three versions are equally binding @publg2023art14.
 
 #strong[Automatic verification] (`src/validate_items.py`, every row):
 schema; the evidence occurs verbatim in the cited paragraph of the
@@ -249,25 +250,26 @@ outdated and near-miss answers with the same prompt (temperature 0)
 (DeepSeek, open weights). None of them drafted a released item or is an
 examinee. The majority grade counts; without a majority the first judge
 decides (4 of 3804 answers). On 61 constructed answers with known grades
-every judge passes the 0.95 gate (Qwen3-235B-A22B-2507 61/61, GLM-5.3
-61/61, DeepSeek V3.2 61/61); Mistral Large 3, planned as the European
-judge, was rate-limited upstream on OpenRouter throughout and was
-replaced by DeepSeek V3.2. Inter-judge agreement: Fleiss' κ = 0.95
-(three grades), 0.89 with subtypes; unanimous on 97 % of answers;
-agreement of each judge with the majority: Qwen3-235B-A22B-2507 99.4 %;
-GLM-5.3 98.3 %; DeepSeek V3.2 98.7 %. The German ablation rows are
-graded by Qwen alone, and the paired date and prompt comparisons use
-Qwen on both sides. (3) A human graded a stratified random 22 % sample
-of the judgements of the submitted run (Apertus 70B, `closed_dated`: 211
-answers) blind to the grades; French and Italian answers were read with
-a German machine translation (Apertus 70B) next to the original.
-Agreement (Cohen's κ against the first judge, on which the sample was
-drawn, and against the panel majority) follows with release v1.0.0; the
-human check is in progress @cohen1960kappa@bavaresco2025llmjudges. As a
-diagnostic Apertus 70B also graded the `closed_dated` runs: it agrees
-with Qwen (κ 0.86 on 70B answers, 0.93 on 8B answers) but marks 48 more
-of its own answers correct, against 19 on the 8B's answers, consistent
-with self-preference; it is never used for scores.
+every judge passes the 0.95 gate on the three grades (error subtype 57
+to 60 of 61; Qwen3-235B-A22B-2507 61/61, GLM-5.3 61/61, DeepSeek V3.2
+61/61); Mistral Large 3, planned as the European judge, was rate-limited
+upstream on OpenRouter throughout and was replaced by DeepSeek V3.2.
+Inter-judge agreement: Fleiss' κ = 0.95 (three grades), 0.89 with
+subtypes; unanimous on 97 % of answers; agreement of each judge with the
+majority: Qwen3-235B-A22B-2507 99.4 %; GLM-5.3 98.3 %; DeepSeek V3.2
+98.7 %. The German ablation rows are graded by Qwen alone, and the
+paired date and prompt comparisons use Qwen on both sides. (3) A human
+graded a stratified random 22 % sample of the judgements of the
+submitted run (Apertus 70B, `closed_dated`: 211 answers) blind to the
+grades; French and Italian answers were read with a German machine
+translation (Apertus 70B) next to the original. Agreement (Cohen's κ
+against the first judge, on which the sample was drawn, and against the
+panel majority) follows with release v1.0.0; the human check is in
+progress @cohen1960kappa@bavaresco2025llmjudges. As a diagnostic Apertus
+70B also graded the `closed_dated` runs: it agrees with Qwen (κ 0.86 on
+70B answers, 0.93 on 8B answers) but marks 48 more of its own answers
+correct, against 19 on the 8B's answers, consistent with
+self-preference; it is never used for scores.
 
 == Evaluation setup and inference parameters
 <evaluation-setup-and-inference-parameters>
@@ -303,8 +305,12 @@ USD; Nemotron was used free of charge.
   , caption: [Main results on v1.0.0-rc1, % correct unless stated
   (Wilson 95 % CI), majority of the judge panel
   (`report/analysis.json`). Corpus rows: exposure bucket of the cited
-  wording in MultiLegalPile. Incorrect / not attempted overall: 8B 55.4
-  \/ 11.6 %, 70B 48.2 / 1.2 %; F-score 0.35 and 0.51.]
+  wording in MultiLegalPile. Intervals treat rows as independent (the
+  three languages of a core are correlated; cluster bootstrap by core in
+  `data/results.json`). Incorrect / not attempted overall: 8B 55.4 /
+  11.6 %, 70B 48.2 / 1.2 %; hallucination rate I/(C+I) 8B 62.7 %, 70B
+  48.7 % (correct given attempted 37.3 % and 51.3 %); F-score 0.35 and
+  0.51.]
   , kind: table
   )
 
@@ -331,18 +337,19 @@ Exposure tracks accuracy.] Where only the earlier wording occurs in the
 published training corpus, the 70B is correct in 10.7 % and stale in
 36.9 %; where the current wording occurs, it is correct in 63.6 %
 (association; bucket, act and change date are confounded). #strong[\(4)
-The date does not help.] On the German rows the date in the system
-prompt changes the correct rate by −0.3 points for the 70B (11 vs 12
-discordant rows, p = 1.0) and by −1.5 for the 8B (p = 0.27); the full
-system prompt against the bare question changes it by +1.5 and +1.8
-points (p = 0.64, 0.54). #strong[\(5) Size helps mostly on stable law.]
-The 70B is 21 points ahead on unchanged rules (61.9 vs 40.5 %) but 6 on
-changed ones; overall it beats the 8B on 222 rows and loses on 54 (exact
-McNemar p \< 0.001), in DE (53 %), FR (50 %) and IT (48 %); by question
-type the 70B is correct on 67 % of yes/no items (8B 55 %, guessing rate
-50 %), 62 % of calculations, 50 % of false premises and 7 % of temporal
-questions (table in the data card); it gives the same grade in all three
-languages for 68 % of the cores (8B: 49 %).
+The date does not help significantly.] On the German rows (first judge
+on both sides) the as-of date in the system prompt changes the correct
+rate by −0.3 points for the 70B (11 vs 12 discordant rows, p = 1.0) and
+by −1.5 for the 8B (p = 0.27); the full system prompt against the bare
+question changes it by +1.5 and +1.8 points (p = 0.64, 0.54).
+#strong[\(5) Size helps mostly on stable law.] The 70B is 21 points
+ahead on unchanged rules (61.9 vs 40.5 %) but 6 on changed ones; overall
+it beats the 8B on 222 rows and loses on 54 (exact McNemar p \< 0.001);
+by language the 70B is correct in DE 53 %, FR 50 % and IT 48 %; by
+question type the 70B is correct on 67 % of yes/no items (8B 55 %,
+guessing rate 50 %), 62 % of calculations, 50 % of false premises and 7
+% of temporal questions (table in the data card); it gives the same
+grade in all three languages for 68 % of the cores (8B: 49 %).
 
 = Dataset Limitations
 <dataset-limitations>
@@ -368,19 +375,20 @@ not the quality of advice.
 
 = Lessons Learnt and Recommendations
 <lessons-learnt-and-recommendations>
-For the model: a date in the system prompt does not make Apertus more
-current, while the cited paragraph fixes almost every error, so the fix
-has to come from data or retrieval: a refreshed legislation corpus,
-retrieval with a version filter instead of parametric recall
-@prior2026oldfriend, and training abstention instead of rewarding
-guesses @kalai2025hallucinate. For the dataset: yearly updates on 1
-January from the version diff, native-speaker review of French and
-Italian, a cantonal extension. For benchmark builders: the scarce
-resource is not drafting but real value changes; a paragraph diff over
-all intermediate versions plus a verbatim check of the earlier answer
-found 53 usable STALE pairs, a panel of judges from different model
-families makes grading less dependent on one model, and the examinee as
-judge was measurably lenient with itself.
+For the model: the as-of date in the system prompt does not make Apertus
+measurably more current, while the cited paragraph fixes almost every
+error, so the fix has to come from data or retrieval: a refreshed
+legislation corpus, retrieval with a version filter instead of
+parametric recall @prior2026oldfriend, and training abstention instead
+of rewarding guesses @kalai2025hallucinate. For the dataset: yearly
+updates on 1 January from the version diff, native-speaker review of
+French and Italian, a cantonal extension. For benchmark builders: the
+scarce resource is not drafting but real value changes; a paragraph diff
+over all intermediate versions plus a verbatim check of the earlier
+answer found 53 usable STALE pairs, a panel of judges from different
+model families makes grading less dependent on one model, and Apertus
+70B as a judge was more lenient than Qwen overall and more so on its own
+answers (+48 correct on 70B answers, +19 on 8B answers).
 
 = Reproducibility
 <reproducibility>
@@ -410,6 +418,3 @@ This report and the documentation: CC-BY-4.0. Code: Apache-2.0. Dataset
 item in `metadata.jsonl`. Statute quotes: not protected by copyright
 (Art. 5 URG). The judge prompt adapts the SimpleQA grader of OpenAI
 simple-evals (MIT).
-
-= References
-<references>

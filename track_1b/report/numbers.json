@@ -153,10 +153,14 @@
  "incorrect_8b": "55.4",
  "na_8b": "11.6",
  "f_8b": "0.35",
+ "hall_8b": "62.7",
+ "cga_8b": "37.3",
  "openbook_gain_8b": "+62",
  "incorrect_70b": "48.2",
  "na_70b": "1.2",
  "f_70b": "0.51",
+ "hall_70b": "48.7",
+ "cga_70b": "51.3",
  "openbook_gain_70b": "+46",
  "qt_numeric_70b": "58",
  "qt_numeric_8b": "33",
@@ -229,6 +233,10 @@
  "stable_correct_70b_r": "62",
  "incorrect_8b_r": "55",
  "na_8b_r": "12",
+ "hall_8b_r": "63",
+ "cga_8b_r": "37",
  "incorrect_70b_r": "48",
- "na_70b_r": "1"
+ "na_70b_r": "1",
+ "hall_70b_r": "49",
+ "cga_70b_r": "51"
 }
