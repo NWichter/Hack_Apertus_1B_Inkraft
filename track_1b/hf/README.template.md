@@ -38,7 +38,7 @@ configs:
 
 Inkraft is a short-answer benchmark on Swiss federal social and health insurance law in German, French and
 Italian, as of **1 October 2026**. Every gold answer is backed by a verbatim quote from the authentic text of a
-federal act on fedlex (yes/no and calculation answers are derived from it). For amended provisions the previously valid answer is stored as well, so a wrong answer can be
+federal act on fedlex (yes/no and calculation answers are derived from it). For {{STALE_PAIRS}} amended provisions the previously valid answer is stored verbatim from the earlier version, so a wrong answer can be
 classed as _stale_ (it matches the earlier law) or as another error. Track 1B (Core Task Intelligence),
 Hack Apertus 2026, Team Apertool.
 
@@ -164,7 +164,7 @@ labelled blind; agreement {{AGREEMENT}}. Guidelines: `docs/annotation_guidelines
 #### Annotator Details
 
 One curator (German speaker, not a native Swiss speaker). French and Italian answers and evidence come
-from the authentic texts; the questions are model translations checked by the curator.
+from the authentic texts; the questions are model translations, not reviewed by native speakers.
 
 ## Risks, Bias, and Limitations
 
