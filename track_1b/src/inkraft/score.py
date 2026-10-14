@@ -163,12 +163,17 @@ def breakdown(rows, key):
 
 
 def compute_deltas(results):
-    """Compute condition deltas (open_book gain, date effect, context effect) per model."""
+    """Compute condition deltas (open_book gain, date effect, context effect) per model.
+
+    The date effect compares the German rows only (closed_swiss and closed_plain exist for German rows), each run graded
+    as scored. The paired McNemar test with one judge on both sides is in report/analysis.py (ablation_de).
+    """
     models = {k.split("__")[0] for k in results if "__" in k}
     deltas = {}
     for m in sorted(models):
         m_deltas = {}
         c_dated = results.get(f"{m}__closed_dated", {}).get("overall")
+        c_dated_de = results.get(f"{m}__closed_dated", {}).get("lang:de-CH") or c_dated
         c_swiss = results.get(f"{m}__closed_swiss", {}).get("overall")
         c_plain = results.get(f"{m}__closed_plain", {}).get("overall")
         c_open = results.get(f"{m}__open_book", {}).get("overall")
@@ -177,11 +182,11 @@ def compute_deltas(results):
                 "delta_correct": round(c_open["correct"] - c_dated["correct"], 4),
                 "delta_f": round(c_open["f"] - c_dated["f"], 4),
             }
-        if c_dated and c_swiss:
-            m_deltas["date_effect"] = {
-                "delta_correct": round(c_dated["correct"] - c_swiss["correct"], 4),
+        if c_dated_de and c_swiss:
+            m_deltas["date_effect_de"] = {
+                "delta_correct": round(c_dated_de["correct"] - c_swiss["correct"], 4),
                 "delta_stale_share": round(
-                    c_dated.get("stale_share_of_errors", 0.0)
+                    c_dated_de.get("stale_share_of_errors", 0.0)
                     - c_swiss.get("stale_share_of_errors", 0.0),
                     4,
                 ),

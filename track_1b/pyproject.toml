@@ -1,6 +1,6 @@
 [project]
 name = "inkraft"
-version = "0.1.0"
+version = "1.0.0"
 description = "Short-answer benchmark on Swiss social and health insurance law with an as-of date"
 readme = "README.md"
 requires-python = ">=3.11"

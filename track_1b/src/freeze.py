@@ -146,6 +146,7 @@ def main():
         },
         "fedlex_manifest_sha256": sha(data / "sources" / "fedlex_manifest.v2.json"),
         "stats": stats(rows),
+        "stats_note": "yes_no_cores counts answer_type yes_no; by_question_type.yes_no counts the question type (a core of another question type, e.g. temporal, can have a yes/no answer)",
         "ablation_cores": len(ablation),
         "release_candidate": bool(args.rc),
         "review_status_cores": {

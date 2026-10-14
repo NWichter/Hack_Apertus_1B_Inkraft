@@ -15,7 +15,9 @@ VERSION=$(python -c 'import json;print(json.load(open("data/FREEZE.json"))["vers
 case "$VERSION" in
   *-rc*) [ "${ALLOW_RC:-0}" = 1 ] || { echo "FREEZE.json is $VERSION: run scripts/after_human_check.sh (GO=1) first, or set ALLOW_RC=1" >&2; exit 2; } ;;
 esac
-python -m inkraft --data data replay | tail -n 1
+REPLAY=$(mktemp)
+python -m inkraft --data data replay > "$REPLAY" 2>&1 || { cat "$REPLAY"; echo "replay failed: no upload" >&2; exit 4; }
+tail -n 1 "$REPLAY"
 python src/hf_release.py card --repo "$REPO"
 grep -n -E 'TBD|More Information Needed|NIKLAS-PRÜFUNG|\{\{' hf/README.md && { echo "placeholder left in hf/README.md" >&2; exit 3; } || true
 

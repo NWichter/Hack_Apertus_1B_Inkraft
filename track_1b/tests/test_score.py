@@ -127,7 +127,8 @@ def test_compute_deltas():
 
     mock_res = {
         "modelA__closed_dated": {
-            "overall": {"correct": 0.50, "f": 0.50, "stale_share_of_errors": 0.40}
+            "overall": {"correct": 0.60, "f": 0.60, "stale_share_of_errors": 0.20},
+            "lang:de-CH": {"correct": 0.50, "f": 0.50, "stale_share_of_errors": 0.40},
         },
         "modelA__closed_swiss": {
             "overall": {"correct": 0.45, "f": 0.45, "stale_share_of_errors": 0.10}
@@ -138,7 +139,8 @@ def test_compute_deltas():
     deltas = compute_deltas(mock_res)
     assert "modelA" in deltas
     m_d = deltas["modelA"]
-    assert m_d["open_book_gain"]["delta_correct"] == 0.35
-    assert m_d["date_effect"]["delta_correct"] == 0.05
-    assert m_d["date_effect"]["delta_stale_share"] == 0.30
+    assert m_d["open_book_gain"]["delta_correct"] == 0.25
+    # date effect only on the German rows, which closed_swiss covers
+    assert m_d["date_effect_de"]["delta_correct"] == 0.05
+    assert m_d["date_effect_de"]["delta_stale_share"] == 0.30
     assert m_d["swiss_context_effect"]["delta_correct"] == 0.15
