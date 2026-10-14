@@ -97,7 +97,7 @@ grades = load_dataset("{{HF_REPO}}", "judgements", split="test")  # judge panel 
 | `judgements/<judge>__*.jsonl` | grades of each panel judge with the rule-based pre-grade and the raw judge output |
 | `judgements/apertus-v1.5-70b__*.jsonl` | comparison judge on `closed_dated` (diagnostic of self-preference, not used for scores) |
 | `human_labels/` | human spot check of the dataset (`dataset_sample.jsonl`) and blind human labels of the judge sample (`sample_20pct.jsonl`, `labels_*.jsonl`, `agreement.json`, `summary.json`) |
-| `results/` | `results.json` (all scores), `expected_results.json` (what `make run` replays), `analysis.json` (numbers of the report), judge panel statistics (`judge_panel.json`: Fleiss' κ, agreement of each judge with the majority, cost), judge calibration and judge–judge agreement |
+| `results/` | `results.json` (all scores), `expected_results.json` (what `make run` replays), `analysis.json` (numbers of the report), judge panel statistics (`judge_panel.json`: Fleiss' κ, agreement of each judge with the majority, cost), `contamination_buckets.jsonl` (exposure bucket per row, no corpus text), judge calibration and judge–judge agreement |
 | `FREEZE.json` | version, SHA-256 of the data files (LF line endings), statistics |
 
 Only a `test` split. `core_id` links the three language versions of an item.

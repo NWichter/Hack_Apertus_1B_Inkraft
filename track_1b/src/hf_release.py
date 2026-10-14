@@ -157,7 +157,7 @@ def card(args):
         "HF_REPO": args.repo,
         "PATCHED_VARIANTS": len(
             {
-                r["core_id"]
+                r["id"].rsplit("-", 1)[0]
                 for r in (json.loads(x) for x in (DATA / "metadata.jsonl").read_text(encoding="utf-8").splitlines() if x.strip())
                 for m in ((r.get("authoring") or {}).get("manual_correction") or [])
                 if isinstance(m, dict) and m.get("review") == "panel-fixes-v1"

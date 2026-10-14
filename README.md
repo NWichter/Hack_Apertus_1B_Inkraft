@@ -24,7 +24,7 @@ as-of date in the system prompt does not change accuracy significantly (German r
 ## For the jury: where to look
 
 1. **Technical report:** [`track_1b/Apertool_Report.pdf`](track_1b/Apertool_Report.pdf) (source: `track_1b/technical_report.md`).
-2. **Data card:** [`track_1b/docs/DATA_CARD.md`](track_1b/docs/DATA_CARD.md) <!--when:hf:off(also the Hugging Face card: <!~~n:hf_url~~>Hugging Face link follows on 16 October<!~~[[NIKLAS-PRÜFUNG: hf_url]]~~><!~~/n~~>)/when:hf:off--><!--when:nohf-->(also the Hugging Face card, published with release v1.0.0)<!--/when:nohf-->.
+2. **Data card:** [`track_1b/docs/DATA_CARD.md`](track_1b/docs/DATA_CARD.md) <!--when:hf:off(also the Hugging Face card: <!~~n:hf_url~~>Hugging Face link follows on 16 October<!~~[[NIKLAS-PRÜFUNG: hf_url]]~~><!~~/n~~>)/when:hf:off--><!--when:nohf-->(also the Hugging Face card; link follows after the upload)<!--/when:nohf-->.
 3. **Reproduce:** `make run` and `make test` (below).
 4. **Data:** `track_1b/data/` — `test.jsonl`, `metadata.jsonl`, `responses/`, `judgements/`, `human_labels/`,
    `expected_results.json`, `FREEZE.json` (file hashes); see [`track_1b/data/README.md`](track_1b/data/README.md).
