@@ -140,7 +140,6 @@ def test_compute_deltas():
     assert "modelA" in deltas
     m_d = deltas["modelA"]
     assert m_d["open_book_gain"]["delta_correct"] == 0.25
-    # date effect only on the German rows, which closed_swiss covers
-    assert m_d["date_effect_de"]["delta_correct"] == 0.05
-    assert m_d["date_effect_de"]["delta_stale_share"] == 0.30
+    # no date effect here: the panel grades closed_dated, the first judge the ablation (see report/analysis.py)
+    assert "date_effect" not in m_d and "date_effect_de" not in m_d
     assert m_d["swiss_context_effect"]["delta_correct"] == 0.15

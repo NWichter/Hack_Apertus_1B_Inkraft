@@ -113,7 +113,7 @@ def cmd_score(args):
 
 
 def cmd_replay(args):
-    """Recompute every number from the stored responses and judgements and compare to expected."""
+    """Recompute every result block from the stored responses and judgements and compare to expected."""
     expected_path = Path(args.data) / "expected_results.json"
     if not expected_path.exists():
         sys.exit(f"missing {expected_path}")

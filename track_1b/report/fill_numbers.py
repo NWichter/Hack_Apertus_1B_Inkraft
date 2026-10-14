@@ -295,6 +295,8 @@ def compute():
         n[f"incorrect_{key}"] = pct(o["incorrect"])
         n[f"na_{key}"] = pct(o["not_attempted"])
         n[f"f_{key}"] = f"{o['f']:.2f}"
+        n[f"hall_{key}"] = pct(o["hallucination_rate"])
+        n[f"cga_{key}"] = pct(o["cga"])
         n[f"stable_correct_{key}"] = pct(
             res[f"{m}__closed_dated"]["by_temporal"]["stable_pre2024"]["correct"]
         )
@@ -532,7 +534,8 @@ def main():
     args = ap.parse_args()
     sys.stdout.reconfigure(encoding="utf-8")
     n = compute()
-    (HERE / "numbers.json").write_text(
+    if not args.check:
+        (HERE / "numbers.json").write_text(
         json.dumps(n, ensure_ascii=False, indent=1) + "\n",
         encoding="utf-8",
         newline="\n",

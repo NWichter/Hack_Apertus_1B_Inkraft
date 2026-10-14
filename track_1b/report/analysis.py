@@ -52,7 +52,7 @@ def share(rows, pred):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--judge-model", default="qwen/qwen3-235b-a22b-2507")
+    ap.add_argument("--judge-model", default="panel")
     ap.add_argument(
         "--ablation-judge",
         default="qwen/qwen3-235b-a22b-2507",

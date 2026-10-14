@@ -59,7 +59,7 @@ def cat_of(row):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--judge-model", default="qwen/qwen3-235b-a22b-2507")
+    ap.add_argument("--judge-model", default="panel")
     args = ap.parse_args()
     data = ROOT / "data"
     items = dataset.load(data)

@@ -7,7 +7,7 @@ ENV_FILE := $(wildcard .env)
 build:
 	docker build -t $(IMAGE) .
 
-# make run            recompute every reported number from the stored responses and judgements (no keys, no GPU)
+# make run            recompute every result block from the stored responses and judgements (no keys, no GPU)
 # make run MODE=full  query LLM_* (and judge with JUDGE_*), then score; LIMIT=50 for a smoke test
 run: build
 ifeq ($(MODE),full)
