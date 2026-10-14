@@ -22,7 +22,13 @@ for it in out:
     if it["_batch"] == "b02_kvv" and it["fr"] and it["fr"]["answer"] == "1 mois" and "dans le mois qui suit" in it["fr"]["evidence"]:
         it["fr"]["answer"], it["fr"]["answer_aliases"] = "dans le mois qui suit l’information", ["1 mois", "un mois"]
         it["it"]["answer"], it["it"]["answer_aliases"] = "nel mese che segue l’informazione", ["1 mese", "un mese"]
-        it["_manual_correction"] = "fr/it answer replaced by the literal phrase of the authentic text (was '1 mois'/'1 mese', not literal)"
+        it["_manual_correction"] = [
+            {
+                "review": "draft correction (2026-10-01)",
+                "by": "drafting pipeline",
+                "reason": "fr/it answer replaced by the literal phrase of the authentic text (was '1 mois'/'1 mese', not literal)",
+            }
+        ]
         corrections.append(it["de"]["question"])
 Path("codex.compact.jsonl").write_text("".join(json.dumps(i, ensure_ascii=False) + "\n" for i in out), encoding="utf-8")
 print(len(out), "items;", "corrections:", corrections)

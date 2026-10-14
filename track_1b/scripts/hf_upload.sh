@@ -18,6 +18,7 @@ esac
 REPLAY=$(mktemp)
 python -m inkraft --data data replay > "$REPLAY" 2>&1 || { cat "$REPLAY"; echo "replay failed: no upload" >&2; exit 4; }
 tail -n 1 "$REPLAY"
+python src/check_hf_schema.py || { echo "a configuration has mixed column types: load_dataset would fail" >&2; exit 5; }
 python src/hf_release.py card --repo "$REPO"
 grep -n -E 'TBD|More Information Needed|NIKLAS-PRÜFUNG|\{\{' hf/README.md && { echo "placeholder left in hf/README.md" >&2; exit 3; } || true
 

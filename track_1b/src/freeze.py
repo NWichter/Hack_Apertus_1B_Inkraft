@@ -101,6 +101,12 @@ def main():
         env=env,
     )
 
+    import check_hf_schema
+
+    mixed = check_hf_schema.conflicts([data / "test.jsonl", data / "metadata.jsonl"])
+    if mixed:
+        sys.exit(f"mixed column types, load_dataset would fail: {mixed}")
+
     de = [r for r in rows if r["lang"] == "de-CH"]
     temporal = sorted(
         r["core_id"] for r in de if r["temporal"]["bucket"] != "stable_pre2024"
