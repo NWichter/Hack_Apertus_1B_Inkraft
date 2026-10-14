@@ -7,22 +7,24 @@
 **Inkraft** is a trilingual (German, French, Italian) short-answer benchmark on Swiss federal social and health
 insurance law as of **1 October 2026** (dimension: Core Task Intelligence). Release v<!--n:version-->1.0.0-rc1<!--/n-->:
 <!--n:cores-->327<!--/n--> core questions (<!--n:trilingual-->312<!--/n--> in all three languages, <!--n:de_only-->15<!--/n--> German only), <!--n:rows-->951<!--/n--> question–answer
-rows from <!--n:acts-->19<!--/n--> acts and ordinances. Every gold answer is quoted verbatim from the authentic Fedlex text; for
+rows from <!--n:acts-->19<!--/n--> acts and ordinances. Every gold answer is backed by a verbatim quote from the authentic Fedlex text (calculation and yes/no answers are
+derived from the quoted values; the validator recomputes calculations); for
 <!--n:stale_pairs-->53<!--/n--> amended provisions the previous answer is stored verbatim from the earlier version, so a wrong answer
 can be classed as _stale_ (earlier law) rather than invented.
 
-**Results** (Apertus 1.5, majority of a panel of <!--n:panel_size-->3<!--/n--> open-weight judges, human-checked sample):
+**Results** (Apertus 1.5, majority of a panel of <!--n:panel_size-->3<!--/n--> open-weight judges):
 the 70B answers <!--n:correct_70b-->50.7<!--/n--> % of the rows correctly (8B: <!--n:correct_8b-->33.0<!--/n--> %). On the <!--n:stale_rows-->157<!--/n--> rows whose rule
 changed and whose earlier answer is stored, the 70B is correct in <!--n:stalepair_correct_70b-->7.0<!--/n--> % and gives the earlier law in
 <!--n:stalepair_stale_70b-->29.9<!--/n--> %; with the cited paragraph in the prompt it is correct in <!--n:openbook_stalepair_70b-->98.7<!--/n--> %. A date in the
-system prompt does not help. Human check: Cohen's κ human–judge <!--n:kappa_qwen-->[[NIKLAS-PRÜFUNG: kappa_qwen]]<!--/n-->
-(panel majority <!--n:kappa_panel-->[[NIKLAS-PRÜFUNG: kappa_panel]]<!--/n-->) on <!--n:judge_sample-->211<!--/n--> judgements;
-<!--n:human_drops-->[[NIKLAS-PRÜFUNG: human_drops]]<!--/n--> of <!--n:sample_cores-->35<!--/n--> sampled cores rejected and removed.
+as-of date in the system prompt does not change accuracy significantly (German rows). <!--when:human:offHuman check: Cohen's κ human–judge <!~~n:kappa_qwen~~>pending (human check in progress – results on 16 October)<!~~[[NIKLAS-PRÜFUNG: kappa_qwen]]~~><!~~/n~~>
+(panel majority <!~~n:kappa_panel~~>pending (human check in progress – results on 16 October)<!~~[[NIKLAS-PRÜFUNG: kappa_panel]]~~><!~~/n~~>) on <!~~n:judge_sample~~>211<!~~/n~~> judgements of the 70B main run;
+<!~~n:human_drops~~>pending (human check in progress – results on 16 October)<!~~[[NIKLAS-PRÜFUNG: human_drops]]~~><!~~/n~~> of <!~~n:sample_cores~~>35<!~~/n~~> sampled cores rejected and removed./when:human:off--><!--when:pending-->Human check of
+<!--n:judge_sample-->211<!--/n--> judgements of the 70B main run and <!--n:sample_cores-->35<!--/n--> sampled cores: in progress, results with release v1.0.0.<!--/when:pending-->
 
 ## For the jury: where to look
 
 1. **Technical report:** [`track_1b/Apertool_Report.pdf`](track_1b/Apertool_Report.pdf) (source: `track_1b/technical_report.md`).
-2. **Data card:** [`track_1b/docs/DATA_CARD.md`](track_1b/docs/DATA_CARD.md) (also the Hugging Face card: <!--n:hf_url-->[[NIKLAS-PRÜFUNG: hf_url]]<!--/n-->).
+2. **Data card:** [`track_1b/docs/DATA_CARD.md`](track_1b/docs/DATA_CARD.md) <!--when:hf:off(also the Hugging Face card: <!~~n:hf_url~~>Hugging Face link follows on 16 October<!~~[[NIKLAS-PRÜFUNG: hf_url]]~~><!~~/n~~>)/when:hf:off--><!--when:nohf-->(also the Hugging Face card, published with release v1.0.0)<!--/when:nohf-->.
 3. **Reproduce:** `make run` and `make test` (below).
 4. **Data:** `track_1b/data/` — `test.jsonl`, `metadata.jsonl`, `responses/`, `judgements/`, `human_labels/`,
    `expected_results.json`, `FREEZE.json` (file hashes); see [`track_1b/data/README.md`](track_1b/data/README.md).

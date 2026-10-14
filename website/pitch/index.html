@@ -1223,7 +1223,7 @@
         </div>
       </div>
       <div class="foot">
-        v<!--n:version-->1.0.0-rc1<!--/n--> · LLM drafts (Codex <!--n:gen_codex-->98<!--/n-->, Claude <!--n:gen_claude-->97<!--/n-->, Gemini <!--n:gen_gemini-->86<!--/n-->, Nemotron <!--n:gen_nemotron-->46<!--/n-->), checked by validator, second model and a human (<!--n:sample_cores-->35<!--/n--> cores, <!--n:human_drops-->pending (human check in progress – results on 16 October)<!--[[NIKLAS-PRÜFUNG: human_drops]]--><!--/n--> removed).
+        v<!--n:version-->1.0.0-rc1<!--/n--> · LLM drafts (Codex <!--n:gen_codex-->98<!--/n-->, Claude <!--n:gen_claude-->97<!--/n-->, Gemini <!--n:gen_gemini-->86<!--/n-->, Nemotron <!--n:gen_nemotron-->46<!--/n-->), checked by validator, second model and a human (<!--n:sample_cores-->35<!--/n--> cores<!--when:human:off, <!~~n:human_drops~~>pending (human check in progress – results on 16 October)<!~~[[NIKLAS-PRÜFUNG: human_drops]]~~><!~~/n~~> removed/when:human:off--><!--when:pending-->, in progress<!--/when:pending-->).
       </div>
     </section>
 
@@ -1246,7 +1246,7 @@
         <div class="g"><b><!--n:openbook_stalepair_70b_r-->99<!--/n--> %</b>correct with the cited paragraph in the prompt</div>
         <div><b><!--n:date_effect_70b-->−0.3<!--/n--> pts</b>effect of today's date in the prompt, German rows (p = <!--n:date_p_70b-->1.0<!--/n-->)</div>
       </div>
-      <div class="foot">A knowledge gap, not a reading gap. Graded by the majority of <!--n:panel_size-->3<!--/n--> open-weight judges; release v<!--n:version-->1.0.0-rc1<!--/n-->.</div>
+      <div class="foot">A knowledge gap, not a reading gap. Main results: majority of <!--n:panel_size-->3<!--/n--> open-weight judges; date ablation (German rows): first judge only. Release v<!--n:version-->1.0.0-rc1<!--/n-->.</div>
     </section>
 
     <!-- 7 EVALUATION -->
@@ -1274,8 +1274,9 @@
           <div class="k">3 · HUMAN</div>
           <h4><!--n:judge_share-->22<!--/n--> % blind sample</h4>
           <p>
-            Graded without seeing the judges. Cohen's κ <!--n:kappa_qwen-->pending (human check in progress – results on 16 October)<!--[[NIKLAS-PRÜFUNG: kappa_qwen]]--><!--/n--> vs the
-            first judge, <!--n:kappa_panel-->pending (human check in progress – results on 16 October)<!--[[NIKLAS-PRÜFUNG: kappa_panel]]--><!--/n--> vs the panel majority.
+            Graded without seeing the judges<!--when:human:off. Cohen's κ <!~~n:kappa_qwen~~>pending (human check in progress – results on 16 October)<!~~[[NIKLAS-PRÜFUNG: kappa_qwen]]~~><!~~/n~~> vs the
+            first judge, <!~~n:kappa_panel~~>pending (human check in progress – results on 16 October)<!~~[[NIKLAS-PRÜFUNG: kappa_panel]]~~><!~~/n~~> vs the panel majority/when:human:off--><!--when:pending-->; of the
+            <!--n:rows-->951<!--/n--> judgements of the 70B main run. Agreement (Cohen's κ) follows with release v1.0.0<!--/when:pending-->.
           </p>
         </div>
       </div>
@@ -1285,7 +1286,7 @@
             <th>Apertus 1.5</th>
             <th>Correct DE · FR · IT</th>
             <th>Rule changed, old answer stored: correct · old rule given</th>
-            <th>Not attempted</th>
+            <th>Not attempted (all rows)</th>
             <th>Effect of the date in the prompt</th>
           </tr>
         </thead>
@@ -1309,7 +1310,7 @@
       <p class="conds">
         Release v<!--n:version-->1.0.0-rc1<!--/n-->, <!--n:rows-->951<!--/n--> rows, majority of <!--n:panel_size-->3<!--/n--> judges.<br />
         <b>Overall correct:</b> 8B <!--n:correct_8b-->33.0<!--/n--> %, 70B <!--n:correct_70b-->50.7<!--/n--> %. <b>Open book</b> (law paragraph in the prompt):
-        70B right in <!--n:openbook_stalepair_70b-->98.7<!--/n--> % of the <!--n:stale_rows-->157<!--/n--> stale-pair rows. Date effect on the <!--n:cores-->327<!--/n--> German rows.
+        70B right in <!--n:openbook_stalepair_70b-->98.7<!--/n--> % of the <!--n:stale_rows-->157<!--/n--> stale-pair rows. Date effect on the <!--n:cores-->327<!--/n--> German rows, graded by the first judge.
       </p>
     </section>
 
@@ -1364,7 +1365,7 @@
           </div>
         </div>
       </div>
-      <p class="q">In the corpus but not learned, or not in it? Now we can tell.</p>
+      <p class="q">We can now relate accuracy to the exposure of the wording in the training corpus.</p>
     </section>
 
     <!-- 9 REPRODUCIBILITY -->
@@ -1414,7 +1415,7 @@
           </p>
           <div class="links">
             <div>
-              <b>Dataset</b><span><!--n:hf_url-->Hugging Face link follows on 16 October<!--[[NIKLAS-PRÜFUNG: hf_url]]--><!--/n--></span>
+              <b>Dataset</b><span><!--when:hf:off<!~~n:hf_url~~>Hugging Face link follows on 16 October<!~~[[NIKLAS-PRÜFUNG: hf_url]]~~><!~~/n~~>/when:hf:off--><!--when:nohf-->Hugging Face, with release v1.0.0<!--/when:nohf--></span>
             </div>
             <div><b>Code</b><span>github.com/NWichter/Hack_Apertus_1B_Inkraft</span></div>
             <div>

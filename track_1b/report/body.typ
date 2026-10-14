@@ -20,8 +20,8 @@ and a date in the prompt does not help.
 Intelligence) \ #strong[Event:] Online \ #strong[Team:] Apertool ---
 Niklas Wichter \ #strong[Demo:] project page
 https:/\/inkraft.apertool.ch; Hugging Face dataset with test items,
-model responses, judgements and metadata: \[\[NIKLAS-PRÜFUNG:
-hf\_url\]\]
+model responses, judgements and metadata: Hugging Face link follows on
+16 October
 
 #divider()
 
@@ -49,10 +49,10 @@ allowances and registration deadlines reach municipal AHV branch
 offices, front-office staff in medical practices, social services and
 the insured themselves. Mistakes cost money: a missed switching deadline
 binds a person to an insurer for another year, a wrong waiting period
-delays an invalidity insurance (IV) claim. Public administrations
-already deploy Apertus @swissai2026apertus15, so the question is not
-only whether the model knows this law, but whether it knows the law
-#emph[in force].
+delays an invalidity insurance (IV) claim. Apertus is an open Swiss
+model that public bodies can run on their own infrastructure
+@swissai2026apertus15, so the question is not only whether the model
+knows this law, but whether it knows the law #emph[in force].
 
 Social insurance law changes on fixed dates. The minimum child allowance
 under Art. 5 para. 1 FamZG was CHF 200 per month until 2024 and is CHF
@@ -64,8 +64,9 @@ cutoffs @cheng2024dateddata, legal hallucinations are frequent
 @dahl2024legalfictions, and outdated statutory knowledge has been shown
 for German law @prior2026oldfriend. Inkraft therefore separates three
 kinds of failure: an answer that matches the rule before an amendment
-(#emph[stale]), an answer that matches no version (#emph[other],
-including near misses), and an honest refusal (#emph[not attempted]).
+(#emph[stale]), an answer that matches neither the current nor a stored
+earlier answer (#emph[other], including near misses), and an honest
+refusal (#emph[not attempted]).
 
 = Dataset Summary
 <dataset-summary>
@@ -159,14 +160,15 @@ from the current value; a near-miss value valid in an earlier version is
 rejected; calculation items are recomputed from inputs anchored in the
 cited text; duplicates; language and value consistency across DE/FR/IT;
 Swiss spelling and a PII scan. #strong[v1.0.0-rc1: 0 errors on 951
-rows], 216 warnings (most only flag a published later version).
+rows], 216 warnings (87 a published later version, 44 threshold words,
+23 discretionary rules, 62 other; none blocks a row).
 
 #strong[Release rules] (`src/auto_review.py`, fixed before any model
 output was scored; decisions logged per core in `data/review/auto/`):
 existing cores lose paragraph clusters and near-duplicates (19 dropped)
 and gain proposed answer variants and outdated answers only when the
 validator passes (21 patched); a candidate needs no validator error, no
-duplicate and no "reject" in the development pre-assessment, and its
+duplicate and no "reject" in the development pre-screen, and its
 correction notes are applied by Nemotron and re-validated
 (`src/auto_fix.py`). Every remaining core then gets an
 #strong[independent second check by Qwen3-235B] (`src/second_check.py`):
@@ -184,18 +186,14 @@ its words occur in the cited paragraph) and its evidence span is
 verbatim in the paragraph (`src/panel_fixes.py`, logged with evidence; 0
 cores). Ambiguity flags were listed, never applied automatically.
 
-#strong[Human check] (`src/draw_human_sample.py`, seed 20261013,
-`src/import_human.py`). A stratified random sample of 35 cores (15 STALE
-pairs, 20 others) was checked by the curator against the linked
-paragraph, blind to model outputs: \[\[NIKLAS-PRÜFUNG: human\_drops\]\]
-rejected and removed before the freeze (STALE stratum
-\[\[NIKLAS-PRÜFUNG: human\_err\_stale\]\], Wilson 95 %
-\[\[NIKLAS-PRÜFUNG: human\_err\_stale\_ci\]\] %; other stratum
-\[\[NIKLAS-PRÜFUNG: human\_err\_other\]\], \[\[NIKLAS-PRÜFUNG:
-human\_err\_other\_ci\]\] %): \[\[NIKLAS-PRÜFUNG:
-human\_dropped\_list\]\]. All other rows are `auto_verified`\; rows a
-human checked are `reviewed`. No item was selected, changed or removed
-on model outcomes.
+#strong[Human check] (`src/draw_human_sample.py`, seeds 20261013 for
+cores and 20261016 for judgements, `src/import_human.py`). A stratified
+random sample of 35 cores (15 STALE pairs, 20 others) was checked by the
+curator against the linked paragraph, blind to model outputs: the result
+follows with release v1.0.0 (human check in progress). All other rows
+are `auto_verified`\; rows a human checked are `reviewed`. No item was
+selected or removed on model outcomes; answer variants were added in 0
+cores where the judges disagreed (logged with evidence).
 
 #strong[Exposure check.] Apertus 1.5 was trained on the Swiss
 legislation subset `switzerland_lexfind` of MultiLegalPile
@@ -223,8 +221,8 @@ under CDLA-Permissive-2.0; the licence is stored per item. The
 intermediate MultiLegalPile files (CC BY-NC-SA) are analysed locally and
 not redistributed. The data card follows the Hack Apertus template,
 Datasheets and Data Cards @gebru2021datasheets@pushkarna2022datacards\;
-a canary GUID in every file lets model builders exclude the set from
-training @srivastava2023bigbench.
+a canary GUID in every metadata record and on the dataset card lets
+model builders exclude the set from training @srivastava2023bigbench.
 
 = Evaluation
 <evaluation>
@@ -263,17 +261,13 @@ Qwen on both sides. (3) A human graded a stratified random 22 % sample
 of the judgements of the submitted run (Apertus 70B, `closed_dated`: 211
 answers) blind to the grades; French and Italian answers were read with
 a German machine translation (Apertus 70B) next to the original.
-Agreement with the first judge (on which the sample was drawn): κ =
-\[\[NIKLAS-PRÜFUNG: kappa\_qwen\]\] (95 % CI \[\[NIKLAS-PRÜFUNG:
-kappa\_qwen\_ci\]\], raw \[\[NIKLAS-PRÜFUNG: agree\_qwen\]\] %; DE
-\[\[NIKLAS-PRÜFUNG: kappa\_qwen\_de\]\], FR/IT \[\[NIKLAS-PRÜFUNG:
-kappa\_qwen\_frit\]\]); with the panel majority κ = \[\[NIKLAS-PRÜFUNG:
-kappa\_panel\]\] (raw \[\[NIKLAS-PRÜFUNG: agree\_panel\]\] %)
-@cohen1960kappa@bavaresco2025llmjudges. As a diagnostic Apertus 70B also
-graded the `closed_dated` runs: it agrees with Qwen (κ 0.86 on 70B
-answers, 0.93 on 8B answers) but marks 48 more of its own answers
-correct, against 19 on the 8B's answers, consistent with
-self-preference; it is never used for scores.
+Agreement (Cohen's κ against the first judge, on which the sample was
+drawn, and against the panel majority) follows with release v1.0.0; the
+human check is in progress @cohen1960kappa@bavaresco2025llmjudges. As a
+diagnostic Apertus 70B also graded the `closed_dated` runs: it agrees
+with Qwen (κ 0.86 on 70B answers, 0.93 on 8B answers) but marks 48 more
+of its own answers correct, against 19 on the 8B's answers, consistent
+with self-preference; it is never used for scores.
 
 == Evaluation setup and inference parameters
 <evaluation-setup-and-inference-parameters>
@@ -344,8 +338,11 @@ system prompt against the bare question changes it by +1.5 and +1.8
 points (p = 0.64, 0.54). #strong[\(5) Size helps mostly on stable law.]
 The 70B is 21 points ahead on unchanged rules (61.9 vs 40.5 %) but 6 on
 changed ones; overall it beats the 8B on 222 rows and loses on 54 (exact
-McNemar p \< 0.001), in DE (53 %), FR (50 %) and IT (48 %); it gives the
-same grade in all three languages for 68 % of the cores (8B: 49 %).
+McNemar p \< 0.001), in DE (53 %), FR (50 %) and IT (48 %); by question
+type the 70B is correct on 67 % of yes/no items (8B 55 %, guessing rate
+50 %), 62 % of calculations, 50 % of false premises and 7 % of temporal
+questions (table in the data card); it gives the same grade in all three
+languages for 68 % of the cores (8B: 49 %).
 
 = Dataset Limitations
 <dataset-limitations>
@@ -403,8 +400,8 @@ scripted end to end (`src/fetch_fedlex.py` → `find_changes.py` →
 `gen_nemotron.py` → `validate_items.py` → `auto_fix.py` →
 `auto_review.py` → `second_check.py` → `draw_human_sample.py` /
 `import_human.py` → `after_review.py` → `panel_fixes.py` → `freeze.py`).
-Seeds: 20261001 (generation), 20261016 (bootstrap), 20261013 (human
-samples).
+Seeds: 20261001 (generation), 20261016 (bootstrap and judgement sample),
+20261013 (core sample).
 
 = License
 <license>

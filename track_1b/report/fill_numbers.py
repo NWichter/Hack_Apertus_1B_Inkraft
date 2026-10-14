@@ -1,8 +1,9 @@
 """Every number quoted in the report, the data card, the READMEs, the project page and the pitch, computed from the
 stored files, and written into those documents between markers <!--n:KEY-->…<!--/n-->.
 
-Numbers that depend on the human check show "[[NIKLAS-PRÜFUNG: KEY]]" until data/human_labels/summary.json exists
-(in website/ a neutral "pending" text with the marker as an HTML comment instead).
+Numbers that depend on the human check show a neutral "pending" text (the marker "[[NIKLAS-PRÜFUNG: KEY]]" stays as an
+HTML comment) until data/human_labels/summary.json exists. Sentences that only make sense with or without the human check
+sit in <!--when:human-->…<!--/when:human--> / <!--when:pending-->…<!--/when:pending--> blocks (also hf / nohf).
 
 python report/fill_numbers.py            # write report/numbers.json and fill all documents
 python report/fill_numbers.py --check    # fail if a document has a marker whose value differs (or an unknown key)
@@ -32,7 +33,9 @@ PENDING = "[[NIKLAS-PRÜFUNG: {}]]"
 # Public pages (website/) never show the raw marker: a neutral text is visible, the marker stays as an HTML comment inside
 # the same <!--n:KEY-->…<!--/n--> span, so filling in the real value replaces text and marker together.
 PENDING_WEB = "pending (human check in progress – results on 16 October)<!--[[NIKLAS-PRÜFUNG: {}]]-->"
-PENDING_WEB_TEXT = {"hf_url": "Hugging Face link follows on 16 October<!--[[NIKLAS-PRÜFUNG: {}]]-->"}
+PENDING_WEB_TEXT = {
+    "hf_url": "Hugging Face link follows on 16 October<!--[[NIKLAS-PRÜFUNG: {}]]-->"
+}
 M8, M70 = "apertus-v1.5-8b", "apertus-v1.5-70b"
 
 
@@ -201,9 +204,22 @@ def compute():
     )
     vr = (DATA / f"validation_report.v{fr['version']}.md").read_text(encoding="utf-8")
     m = re.search(
-        r"Fehler \(ERROR\): \*\*(\d+)\*\*.*?Warnungen \(WARN\): \*\*(\d+)\*\*", vr
+        r"(?:Fehler|Errors) \(ERROR\): \*\*(\d+)\*\*.*?(?:Warnungen|warnings) \(WARN\): \*\*(\d+)\*\*",
+        vr,
     )
     n.update(validator_errors=int(m.group(1)), validator_warnings=int(m.group(2)))
+    warn = {
+        c: int(k) for c, k in re.findall(r"^\| WARN ([\w.]+) \| (\d+) \|", vr, re.M)
+    }
+    n["warn_future"] = warn.get("source.future_change", 0)
+    n["warn_threshold"] = warn.get("answer.threshold_word", 0)
+    n["warn_discretion"] = warn.get("source.discretion", 0)
+    n["warn_other"] = (
+        n["validator_warnings"]
+        - n["warn_future"]
+        - n["warn_threshold"]
+        - n["warn_discretion"]
+    )
     a = load("analysis.json", HERE)
     for key, m in (("8b", M8), ("70b", M70)):
         x = a["models"][m]
@@ -285,6 +301,31 @@ def compute():
         n[f"openbook_gain_{key}"] = (
             f"{100 * (res[f'{m}__open_book']['overall']['correct'] - o['correct']):+.0f}"
         )
+    qnames = {
+        "numeric": "numeric (amount, rate, deadline)",
+        "procedural": "procedural (body, step)",
+        "yes_no": "yes/no (50 % guessing rate)",
+        "temporal": "temporal (rule changed)",
+        "calc": "calculation (derived from cited values)",
+        "false_premise": "false premise",
+        "term": "legal term",
+    }
+    q8 = res[f"{M8}__closed_dated"]["by_question_type"]
+    q70 = res[f"{M70}__closed_dated"]["by_question_type"]
+    rows_q = [
+        "| Question type | rows | 8B correct | 70B correct | 70B not attempted | 70B stale share of errors |",
+        "| --- | --: | --: | --: | --: | --: |",
+    ]
+    for k in sorted(q70, key=lambda k: -q70[k]["n"]):
+        a8, a70 = q8.get(k, {}), q70[k]
+        rows_q.append(
+            f"| {qnames.get(k, k)} | {a70['n']} | {pct(a8.get('correct', 0))} % | {pct(a70['correct'])} % | "
+            f"{pct(a70['not_attempted'])} % | {pct(a70.get('stale_share_of_errors', 0))} % |"
+        )
+        n[f"qt_{k}_70b"] = pct(a70["correct"], 0)
+        n[f"qt_{k}_8b"] = pct(a8.get("correct", 0), 0)
+        n[f"qt_{k}_rows"] = a70["n"]
+    n["qtype_table"] = "\n\n" + "\n".join(rows_q) + "\n\n"
     n["size_gain_stable"] = (
         f"{float(n['stable_correct_70b']) - float(n['stable_correct_8b']):.0f}"
     )
@@ -308,10 +349,14 @@ def compute():
         cals = []
         for j in p["judges"]:
             c = load(f"judge_calibration__{j.replace('/', '_')}.json") or (
-                load("judge_calibration.json") if j == "qwen/qwen3-235b-a22b-2507" else None
+                load("judge_calibration.json")
+                if j == "qwen/qwen3-235b-a22b-2507"
+                else None
             )
             if c:
-                cals.append(f"{judge_label(j).split(' (')[0]} {round(c['grade_accuracy'] * c['n'])}/{c['n']}")
+                cals.append(
+                    f"{judge_label(j).split(' (')[0]} {round(c['grade_accuracy'] * c['n'])}/{c['n']}"
+                )
         n["panel_calibration"] = ", ".join(cals)
         n["panel_short"] = " · ".join(
             judge_label(j).split(" (")[0] for j in p["judges"]
@@ -346,6 +391,7 @@ def compute():
     hf = DATA / "hf_url.txt"
     if hf.exists() and hf.read_text(encoding="utf-8").strip():
         n["hf_url"] = hf.read_text(encoding="utf-8").strip()
+        n["hf_link"] = f'<a href="{n["hf_url"]}">dataset on Hugging Face</a>'
     hs = load("human_labels/summary.json")
     if hs:
         dc = hs["dataset_check"]
@@ -388,7 +434,9 @@ def compute():
             )
             or "none"
         )
-    for k, v in list(n.items()):  # rounded variants for headline numbers (pitch, form text)
+    for k, v in list(
+        n.items()
+    ):  # rounded variants for headline numbers (pitch, form text)
         if isinstance(v, str) and re.fullmatch(r"\d+\.\d", v) and k + "_r" not in n:
             n[k + "_r"] = f"{float(v):.0f}"
     return {k: v for k, v in n.items() if v is not None}
@@ -396,6 +444,7 @@ def compute():
 
 HUMAN_KEYS = {
     "hf_url",
+    "hf_link",
     "human_drops",
     "human_checked",
     "human_unsure",
@@ -417,7 +466,33 @@ HUMAN_KEYS = {
 }
 
 
-def fill(text, n, missing, web=False):
+WHEN = re.compile(
+    r"<!--when:(\w+)-->(.*?)<!--/when:\1-->|<!--when:(\w+):off(.*?)/when:\3:off-->",
+    re.S,
+)
+
+
+def _esc(s):
+    return s.replace("<!--", "<!~~").replace("-->", "~~>")
+
+
+def _unesc(s):
+    return s.replace("<!~~", "<!--").replace("~~>", "-->")
+
+
+def conditions(n):
+    human = "kappa_qwen" in n
+    hf = "hf_url" in n
+    return {"human": human, "pending": not human, "hf": hf, "nohf": not hf}
+
+
+def fill(text, n, missing, web=True):
+    """Fill <!--n:KEY-->…<!--/n--> markers and switch <!--when:COND-->…<!--/when:COND--> blocks.
+
+    An inactive block is kept as one HTML comment (inner comments escaped), so Markdown, Pandoc and browsers hide it
+    and the next run can switch it on again. Conditions: human / pending (human check imported or not), hf / nohf.
+    """
+
     def rep(m):
         k = m.group(1)
         if k in n:
@@ -428,7 +503,27 @@ def fill(text, n, missing, web=False):
         missing.add(k)
         return m.group(0)
 
-    return MARK.sub(rep, text)
+    cond = conditions(n)
+
+    def block(m):
+        name, body = (
+            (m.group(1), m.group(2)) if m.group(1) else (m.group(3), _unesc(m.group(4)))
+        )
+        if name not in cond:
+            missing.add(f"when:{name}")
+            return m.group(0)
+        body = MARK.sub(rep, body)
+        if cond[name]:
+            return f"<!--when:{name}-->{body}<!--/when:{name}-->"
+        return f"<!--when:{name}:off{_esc(body)}/when:{name}:off-->"
+
+    out, pos = [], 0
+    for m in WHEN.finditer(text):
+        out.append(MARK.sub(rep, text[pos : m.start()]))
+        out.append(block(m))
+        pos = m.end()
+    out.append(MARK.sub(rep, text[pos:]))
+    return "".join(out)
 
 
 def main():
@@ -447,7 +542,7 @@ def main():
         if not doc.exists():
             continue
         t = doc.read_text(encoding="utf-8")
-        new = fill(t, n, missing, web=(REPO / "website") in doc.parents)
+        new = fill(t, n, missing)
         if new != t:
             changed.append(doc.name)
             if not args.check:

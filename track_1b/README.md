@@ -1,5 +1,9 @@
 # Challenge 1B: Swiss Voices
 
+> **Submission Inkraft (Team Apertool):** start with the [root README](../README.md), the technical report
+> [`Apertool_Report.pdf`](Apertool_Report.pdf) and the data card [`docs/DATA_CARD.md`](docs/DATA_CARD.md). The text below is the
+> unchanged challenge description of the template.
+
 This track 1 is focused on improving the multimodal Apertus v1.5 8B and 70B models. There are two different paths. Path B focuses on localising Apertus to the languages, dialects, knowledge and values of Switzerland. Submissions can focus either on the 8B or 70B model.
 
 The submission must comply with the [HackApertus T&C](https://hackapertus.ch/terms-and-conditions). For this challenge it is essential that you pay particular attention to the conditions for responsibly sourced datasets.

@@ -11,7 +11,7 @@ Python ≥ 3.11, no runtime dependencies (standard library only). Apache-2.0.
 ## Quick start
 
 ```sh
-make run                 # Docker: recompute every reported number, compare with data/expected_results.json
+make run                 # Docker: recompute every result block, compare with data/expected_results.json
 make test                # Docker: unit tests
 make run MODE=full LIMIT=50   # Docker: query LLM_* (and JUDGE_* if set), then score
 ```

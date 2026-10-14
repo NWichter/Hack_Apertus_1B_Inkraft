@@ -7,7 +7,7 @@ data about them.
 ---
 
 **Project:** Inkraft, a benchmark on Swiss social and health insurance law (Team Apertool, Hack Apertus 2026)
-**Contact:** via the issue tracker of the project repository
+**Contact:** hello@apertool.ch or the issue tracker of the project repository
 
 **What you are asked to do.** Read questions and answers about Swiss federal law and either (a) check that a
 question is clear and its answer matches the cited legal text, or (b) grade model answers as correct,

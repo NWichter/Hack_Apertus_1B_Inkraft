@@ -189,7 +189,8 @@
               <strong>Stale</strong> matches the rule before an amendment
             </li>
             <li class="o-invented">
-              <strong>Invented</strong> matches neither
+              <strong>Other error</strong> matches neither the current nor a
+              stored earlier answer
             </li>
             <li class="o-na">
               <strong>Not attempted</strong> the model declines or refers to an
@@ -206,16 +207,16 @@
             <li>
               <strong>Then a panel of <!--n:panel_size-->3<!--/n--> open-weight judges</strong> from other
               model families than Apertus (<!--n:panel_judges-->Qwen3-235B-A22B-2507 (Alibaba, open weights), GLM-5.3 (Z.ai, open weights), DeepSeek V3.2 (DeepSeek, open weights)<!--/n-->); each graded 61 constructed
-              answers correctly before use, and the majority counts.
+              answers correctly before use (error subtype 57 to 60 of 61), and the majority counts.
             </li>
             <li>
-              <strong>Then a human</strong> graded a blind <!--n:judge_share-->22<!--/n-->&nbsp;% sample
-              of the grades: Cohen's κ <!--n:kappa_qwen-->pending (human check in progress – results on 16 October)<!--[[NIKLAS-PRÜFUNG: kappa_qwen]]--><!--/n--> against the first judge,
-              <!--n:kappa_panel-->pending (human check in progress – results on 16 October)<!--[[NIKLAS-PRÜFUNG: kappa_panel]]--><!--/n--> against the panel majority.
+              <strong>Then a human</strong> grades a blind <!--n:judge_share-->22<!--/n-->&nbsp;% sample
+              of the <!--n:rows-->951<!--/n--> judgements of the 70B main run<!--when:human:off: Cohen's κ <!~~n:kappa_qwen~~>pending (human check in progress – results on 16 October)<!~~[[NIKLAS-PRÜFUNG: kappa_qwen]]~~><!~~/n~~> against the first judge,
+              <!~~n:kappa_panel~~>pending (human check in progress – results on 16 October)<!~~[[NIKLAS-PRÜFUNG: kappa_panel]]~~><!~~/n~~> against the panel majority/when:human:off--><!--when:pending--> (in progress; agreement follows with release v1.0.0)<!--/when:pending-->.
             </li>
             <li>
               <strong>Then <code>make run</code></strong> replays the scoring.
-              It recomputes every number from the stored answers and
+              It recomputes every result block from the stored answers and
               grades and checks them against the expected results.
             </li>
           </ol>
@@ -250,9 +251,10 @@
                   rule word for word from the earlier fedlex version. All cores
                   are LLM drafts (<!--n:gen_codex-->98<!--/n--> GPT-5.5 via Codex, <!--n:gen_claude-->97<!--/n--> Claude, <!--n:gen_gemini-->86<!--/n--> Gemini,
                   <!--n:gen_nemotron-->46<!--/n--> the open model Nemotron 3 Ultra). Every row passes the
-                  check against fedlex and an independent check by a second
-                  model; a human checked a random sample of <!--n:sample_cores-->35<!--/n--> cores and
-                  removed <!--n:human_drops-->pending (human check in progress – results on 16 October)<!--[[NIKLAS-PRÜFUNG: human_drops]]--><!--/n-->.
+                  check against fedlex, and every core was checked by a second model
+                  (7 flagged calculation cores were kept because the validator recomputes them);
+                  a human checks a random sample of <!--n:sample_cores-->35<!--/n--> cores<!--when:human:off and
+                  removed <!~~n:human_drops~~>pending (human check in progress – results on 16 October)<!~~[[NIKLAS-PRÜFUNG: human_drops]]~~><!~~/n~~>/when:human:off--><!--when:pending--> (results with release v1.0.0)<!--/when:pending-->.
                 </p>
               </div>
             </div>
@@ -264,8 +266,8 @@
                   The Swiss legislation in MultiLegalPile is part of the Apertus
                   1.5 training mix. Of the <!--n:rows-->951<!--/n--> rows, the corpus holds the
                   current wording for <!--n:cont_current-->564<!--/n-->, only the <em>old</em> wording for <!--n:cont_outdated-->84<!--/n-->
-                  and neither for <!--n:cont_absent-->277<!--/n-->. For the <!--n:cont_temporal_rows-->135<!--/n--> rows of temporal questions it
-                  holds the current wording <!--n:cont_temporal_current-->1<!--/n--> times and the old one <!--n:cont_temporal_outdated-->76<!--/n--> times.
+                  and neither for <!--n:cont_absent-->277<!--/n--> (<!--n:cont_short-->26<!--/n--> evidences are too short to search). Of the
+                  <!--n:cont_temporal_rows-->135<!--/n--> rows of temporal questions it holds the current wording for <!--n:cont_temporal_current-->1<!--/n--> and the old one for <!--n:cont_temporal_outdated-->76<!--/n-->.
                 </p>
               </div>
             </div>
@@ -280,8 +282,9 @@
                   the 70B is right in <!--n:stalepair_correct_70b-->7.0<!--/n-->&nbsp;%
                   and gives the old rule in <!--n:stalepair_stale_70b-->29.9<!--/n-->&nbsp;%.
                   With the paragraph in the prompt it is right in
-                  <!--n:openbook_stalepair_70b-->98.7<!--/n-->&nbsp;% of the same rows. Adding today's date to
-                  the prompt changes nothing.
+                  <!--n:openbook_stalepair_70b-->98.7<!--/n-->&nbsp;% of the same rows. Adding the as-of date to
+                  the prompt does not change accuracy significantly (<!--n:date_effect_70b-->−0.3<!--/n--> points,
+                  p&nbsp;=&nbsp;<!--n:date_p_70b-->1.0<!--/n-->; German rows, graded by the first judge).
                 </p>
               </div>
             </div>
@@ -320,7 +323,7 @@
             <a class="card link-card" href="pitch/">
               <h3>Pitch</h3>
               <p>
-                Nine slides on the problem, the dataset and how it is graded.
+                Ten slides on the problem, the dataset, the finding and how it is graded.
               </p>
               <span class="more">Open the pitch →</span>
             </a>
@@ -338,6 +341,13 @@
               <span class="more">Download PDF →</span>
             </a>
           </div>
+          <p class="section-lead">
+            Code and data:
+            <a href="https://github.com/NWichter/Hack_Apertus_1B_Inkraft">GitHub repository</a>
+            (data card, <code>make run</code>)<!--when:hf:off ·
+            <!~~n:hf_link~~>pending (human check in progress – results on 16 October)<!~~[[NIKLAS-PRÜFUNG: hf_link]]~~><!~~/n~~>/when:hf:off--><!--when:nohf-->;
+            the Hugging Face dataset follows with release v1.0.0<!--/when:nohf-->.
+          </p>
         </div>
       </section>
 

@@ -76,6 +76,16 @@ registers (`lay`, `professional`), all three official languages (equally binding
 explicit as-of date, and the earlier answer for amended rules. Yes/no items ({{YES_NO_SHARE}}) are
 reported separately.
 
+## How to load
+
+```python
+from datasets import load_dataset
+
+test = load_dataset("{{HF_REPO}}", "test", split="test")          # questions and gold answers
+meta = load_dataset("{{HF_REPO}}", "metadata", split="test")      # source, temporal and provenance per row
+grades = load_dataset("{{HF_REPO}}", "judgements", split="test")  # judge panel majority per answer
+```
+
 ## Dataset Structure
 
 | File | Content |
@@ -179,7 +189,8 @@ for French/Italian rows.
 - Exposure is measured against MultiLegalPile `switzerland_lexfind` (revision `911e1d2`, 2024-01-12) only;
   web crawls were not scanned. Exposure shows association, not causation.
 - The full draft was answered once by Apertus 1.5 before the review (preliminary run); no item was
-  selected, changed or removed on model outcome.
+  selected or removed on model outcomes; answer variants were added in {{PATCHED_VARIANTS}} cores where the judges
+  disagreed (logged with evidence in `data/review/panel_fixes_log.json`).
 
 ### Personally Identifiable Information
 

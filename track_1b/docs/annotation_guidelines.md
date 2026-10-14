@@ -43,12 +43,15 @@ the reason under `authoring.manual_correction`. Dropped items are listed with th
 
 ## 2. Human check of judge grades
 
-Run `inkraft label --annotator <name>`. The tool shows the question, gold answer, accepted variants,
-outdated and near-miss answers and the model response. It never shows the judge's grade.
+The v1.0.0 check was done in a self-contained offline HTML page with the same fields and grades; `inkraft label
+--annotator <name>` is the command-line equivalent. Both show the question, gold answer, accepted variants,
+outdated and near-miss answers and the model response, never a judge's grade. The samples are drawn by
+`src/draw_human_sample.py` (seed 20261013 for the 35 cores, 20261016 for the judgement sample, `inkraft.human.SEED`);
+`src/import_human.py` imports the exported labels.
 
 | Key | Grade         | When                                                                                                                                                                             |
 | --- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `c` | CORRECT       | the response contains the gold answer or an accepted variant or an equivalent value ("90 Tage" for "3 Monate"), and nothing contradicts it; hedging with one final answer counts |
+| `c` | CORRECT       | the response contains the gold answer or an accepted variant or an equivalent value ("12 Monate" for "ein Jahr"), and nothing contradicts it; hedging with one final answer counts |
 | `i` | INCORRECT     | a different value or fact, several conflicting answers, or a contradiction anywhere in the response                                                                              |
 | `n` | NOT_ATTEMPTED | no definite answer: refuses, says it does not know, only refers to an office or a website, or asks back                                                                          |
 
