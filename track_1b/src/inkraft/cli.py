@@ -65,14 +65,20 @@ def cmd_judge(args):
     for p in sorted((Path(args.data) / "responses").glob("*.jsonl")):
         model, cond = p.stem.split("__", 1)
         if args.examinee:
-            candidates = {m.replace("/", "_").replace(":", "_") for m in args.examinee} | set(args.examinee)
+            candidates = {
+                m.replace("/", "_").replace(":", "_") for m in args.examinee
+            } | set(args.examinee)
             if model not in candidates:
                 continue
         if args.condition and cond not in args.condition:
             continue
         out = judge.judge_path(args.data, ep.model, model, cond)
         n = judge.run(
-            ep, items, dataset.read_jsonl(p), out, workers=args.workers,
+            ep,
+            items,
+            dataset.read_jsonl(p),
+            out,
+            workers=args.workers,
             extra_params=_extra(args.judge_extra),
         )
         print(f"judged {n} responses of {model} {cond} -> {out}")
@@ -179,7 +185,9 @@ def cmd_calibrate(args):
     ep = Endpoint.from_env("JUDGE", args.judge_model)
     rows = dataset.read_jsonl(args.calibration)
     res = judge.calibrate(
-        ep, rows, workers=args.workers,
+        ep,
+        rows,
+        workers=args.workers,
         extra_params=_extra(args.judge_extra),
     )
     out = Path(
@@ -205,6 +213,9 @@ def cmd_contam(args):
     rows = contam.check(dataset.load(args.data), corpora)
     out = Path(args.out or Path(args.data) / "contamination.jsonl")
     dataset.write_jsonl(out, rows)
+    dataset.write_jsonl(
+        out.with_name("contamination_buckets.jsonl"), contam.public_rows(rows)
+    )
     summ = contam.summary(rows)
     out.with_suffix(".summary.json").write_text(
         json.dumps(summ, indent=1) + "\n", encoding="utf-8"
@@ -251,7 +262,9 @@ def main(argv=None):
             "--sample", type=int, help="random subset of N cores (all languages)"
         )
         p.add_argument("--seed", type=int, default=20261001)
-        p.add_argument("--cores", help="file with one core_id per line (ablation subset)")
+        p.add_argument(
+            "--cores", help="file with one core_id per line (ablation subset)"
+        )
         p.add_argument("--workers", type=int, default=3)
         if name == "generate":
             p.add_argument("--model", help="overrides LLM_NAME")
@@ -259,13 +272,18 @@ def main(argv=None):
         else:
             p.add_argument("--judge-model", help="overrides JUDGE_NAME")
             p.add_argument("--examinee", nargs="+")
-            p.add_argument("--judge-extra", help='extra request fields as JSON, e.g. {"reasoning": {"enabled": false}}')
+            p.add_argument(
+                "--judge-extra",
+                help='extra request fields as JSON, e.g. {"reasoning": {"enabled": false}}',
+            )
         p.set_defaults(fn=fn)
 
     s = sub.add_parser("score")
     s.add_argument("--judge-model", default=os.environ.get("JUDGE_NAME"))
     s.add_argument("--out")
-    s.add_argument("--cluster", action="store_true", help="cluster-bootstrap over core_id")
+    s.add_argument(
+        "--cluster", action="store_true", help="cluster-bootstrap over core_id"
+    )
     s.add_argument(
         "--breakdowns",
         action="store_true",

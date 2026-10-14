@@ -155,6 +155,14 @@ def card(args):
         "SAMPLE_N": n_sample,
         "AGREEMENT": agreement_text,
         "HF_REPO": args.repo,
+        "PATCHED_VARIANTS": len(
+            {
+                r["core_id"]
+                for r in (json.loads(x) for x in (DATA / "metadata.jsonl").read_text(encoding="utf-8").splitlines() if x.strip())
+                for m in ((r.get("authoring") or {}).get("manual_correction") or [])
+                if isinstance(m, dict) and m.get("review") == "panel-fixes-v1"
+            }
+        ),
     }
     missing = [k for k, v in vals.items() if v in (None, "", [])]
     if missing:
@@ -193,6 +201,7 @@ def files_to_upload():
         ],
         DATA / "judge_agreement_qwen_vs_apertus70b.json",
         DATA / "contamination.summary.json",
+        DATA / "contamination_buckets.jsonl",
         DATA / "sources" / "fedlex_manifest.v2.json",
     ):
         out[f"results/{p.name}"] = p

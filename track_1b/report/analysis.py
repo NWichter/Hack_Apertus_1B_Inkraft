@@ -62,7 +62,10 @@ def main():
     data = ROOT / "data"
     items = dataset.load(data)
     by_id = {it["id"]: it for it in items}
-    contam = {r["id"]: r for r in dataset.read_jsonl(data / "contamination.jsonl")}
+    cpath = data / "contamination.jsonl"
+    if not cpath.exists():  # the full file quotes the corpus and stays local; the per-row buckets are published
+        cpath = data / "contamination_buckets.jsonl"
+    contam = {r["id"]: r for r in dataset.read_jsonl(cpath)}
     out = {
         "judge_model": args.judge_model,
         "ablation_judge": args.ablation_judge,

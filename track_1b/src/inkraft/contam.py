@@ -144,6 +144,23 @@ def _bucket(cur, prev, has_prev):
     return "current" if cur else ("outdated" if prev else "absent")
 
 
+PUBLIC_FIELDS = (
+    "id",
+    "lang",
+    "question_type",
+    "bucket",
+    "evidence_chars",
+    "current_docs",
+    "previous_docs",
+    "question_13gram_hits",
+)
+
+
+def public_rows(rows):
+    """Per-row result without corpus text (the corpus is CC BY-NC-SA and is not redistributed)."""
+    return [{k: r.get(k) for k in PUBLIC_FIELDS} for r in rows]
+
+
 def summary(rows):
     out = {"n": len(rows), "bucket": dict(Counter(r["bucket"] for r in rows))}
     out["bucket_by_lang"] = {
