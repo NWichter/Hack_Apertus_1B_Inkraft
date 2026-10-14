@@ -30,7 +30,7 @@
      "fr": {"question": "À partir de quel âge révolu les personnes nées en 1964 ou après peuvent-elles obtenir dans l’AVS le versement anticipé de la rente de vieillesse si elles remplissent les conditions d’octroi?", "near_miss_answers": ["65 ans révolus"]},
      "it": {"question": "Dal compimento di quale età le persone nate nel 1964 o dopo possono nell’AVS anticipare la riscossione della rendita di vecchiaia se adempiono le condizioni?", "near_miss_answers": ["65 anni"]}},
     {"core_id": "cx-0063", "action": "keep",
-     "reason": "OPEN (decision N3, Niklas): the question already contains the answer condition ('wenn ... vorbezieht' -> 'sobald ... vorbezieht'), so the item is circular. Not changed silently; rewrite or drop before the freeze."},
+     "reason": "Open point (curator decision): the question already contains the answer condition ('wenn ... vorbezieht' -> 'sobald ... vorbezieht'), so the item is circular. Not changed silently; rewrite or drop before the freeze."},
     {"core_id": "ag-0020", "action": "patch",
      "reason": "Question stated both limits, so it was plain subtraction and could not show outdated knowledge although the article changed on 2025-01-01. Limits removed from the question; outdated answer 62'475 (88'200 - 25'725, version of 2023-09-26) added.",
      "de": {"question": "Wie hoch ist nach BVG der höchstmögliche koordinierte Lohn, also die Differenz zwischen dem oberen und dem unteren Grenzbetrag des zu versichernden Jahreslohnes?", "outdated_answers": ["CHF 62475"]},

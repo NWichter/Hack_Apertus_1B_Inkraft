@@ -5,17 +5,17 @@
   {
    "core_id": "cx-0063",
    "action": "patch",
-   "reason": "Decision N3: the question named the condition that is also the answer ('wenn ... vorbezieht' -> 'sobald ... vorbezieht'), so it was circular. Rewritten as an open question about the latest end of the entitlement (Art. 10 para. 3 IVG): gold = until the advance drawing of a whole old-age pension, at the latest the end of the month in which the reference age is reached; outdated = any pension advance or the retirement age (version 2023-01-01).",
+   "reason": "Curator decision: the question named the condition that is also the answer ('wenn ... vorbezieht' -> 'sobald ... vorbezieht'), so it was circular. Rewritten as an open question about the latest end of the entitlement (Art. 10 para. 3 IVG): gold = until the advance drawing of a whole old-age pension, at the latest the end of the month in which the reference age is reached; outdated = any pension advance or the retirement age (version 2023-01-01).",
    "all": {
     "difficulty_prior": 2,
     "review_notes": [
      {
       "review": "review-v2 (2026-10-04)",
-      "note": "OPEN (decision N3, Niklas): the question already contains the answer condition ('wenn ... vorbezieht' -> 'sobald ... vorbezieht'), so the item is circular. Not changed silently; rewrite or drop before the freeze."
+      "note": "Open point (curator decision): the question already contains the answer condition ('wenn ... vorbezieht' -> 'sobald ... vorbezieht'), so the item is circular. Not changed silently; rewrite or drop before the freeze."
      },
      {
       "review": "review-v3-cx0063 (2026-10-04)",
-      "note": "N3 resolved by Niklas (2026-10-04): rewrite instead of keeping it open. New open question on the latest end of the entitlement."
+      "note": "Resolved by the curator (2026-10-04): rewrite instead of keeping it open. New open question on the latest end of the entitlement."
      }
     ]
    },

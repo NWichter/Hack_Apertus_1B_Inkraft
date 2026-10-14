@@ -4,8 +4,8 @@
  "as_of": "2026-10-01",
  "files": {
   "test.jsonl": "5165d0b04504fd6936c818247ccbdaed82dac4046ecfcd3eb17f8c9052cf4a16",
-  "metadata.jsonl": "dd6469197d6a883ab3abaeeef444cd4e2cf7a4ab7d1dd894f878089ed027d341",
-  "merged.v1.0.0-rc1.jsonl": "04a12248ec6c8bb779d66507dfc567dc9a42d5d8133c5f744afdc206c75d370f",
+  "metadata.jsonl": "806209a66b108f1a5cc9ab2628966414310005c19e05f22cbc0f43f06d613313",
+  "merged.v1.0.0-rc1.jsonl": "7852688f0b153c3cdbfb95c6ddd493bbf17c7417e82c99c3bd492fc7cfee3391",
   "ablation_cores.txt": "c8820808f2201f43e774d6a04e42c3eccca077e42bfab09685a7f026fa598272"
  },
  "fedlex_manifest_sha256": "074f17b0f0b141dcffc165c1a1349f649d944cc99e9f1dbbc6a664eb49d79f3d",
@@ -79,6 +79,6 @@
  },
  "review_log_sha256": "3d7cc4e57627c59a2a5517149ed86da22f24b5770aad9cad320d75a2238f53cd",
  "hash_note": "SHA-256 over the file content with LF line endings",
- "metadata_amended": "2026-10-15: reviewer roles in authoring.manual_correction[].by neutralised; the 3 rows of cx-0018 store manual_correction as a list like all others (load_dataset needs one type). No question, answer, variant or evidence changed; hashes recomputed",
+ "metadata_amended": "2026-10-15: reviewer roles in authoring.manual_correction[].by neutralised; the 3 rows of cx-0018 store manual_correction as a list like all others (load_dataset needs one type). No question, answer, variant or evidence changed; hashes recomputed; internal decision labels in historical review notes reworded",
  "stats_note": "yes_no_cores counts answer_type yes_no; by_question_type.yes_no counts the question type (a core of another question type, e.g. temporal, can have a yes/no answer)"
 }

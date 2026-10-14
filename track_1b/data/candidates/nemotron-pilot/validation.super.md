@@ -1,3 +1,5 @@
+> Historical pilot report (German, superseded). The release is checked by `data/validation_report.v<version>.md`; the hand-written share target mentioned below was an early development goal and was dropped (all cores are LLM drafts, disclosed per row).
+
 # Validierungsbericht Stichtag (Entwürfe)
 
 Erzeugt: 2026-10-04T03:46:41 mit `validate_items.py`  
