@@ -77,6 +77,16 @@
   "reviewed": 0,
   "auto_verified": 327
  },
+ "human_spot_check": {
+  "part_a_cores_checked": 35,
+  "confirmed": 34,
+  "rejected": [
+   "nmv-0012"
+  ],
+  "sample_fingerprint": "b841e2ffd9",
+  "details": "data/human_labels/part_a_rc1.json",
+  "note": "Part A (random sample of 35 cores, checked by the curator against Fedlex, blind to model outputs, 2026-10-14). review_status_cores counts the row status, which only changes with v1.0.0 (rejected core removed then); part B (211 judge grades) is open."
+ },
  "review_log_sha256": "3d7cc4e57627c59a2a5517149ed86da22f24b5770aad9cad320d75a2238f53cd",
  "hash_note": "SHA-256 over the file content with LF line endings",
  "metadata_amended": "2026-10-15: reviewer roles in authoring.manual_correction[].by neutralised; the 3 rows of cx-0018 store manual_correction as a list like all others (load_dataset needs one type). No question, answer, variant or evidence changed; hashes recomputed; internal decision labels in historical review notes reworded",

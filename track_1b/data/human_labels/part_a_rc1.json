@@ -1,0 +1,57 @@
+{
+ "version": "1.0.0-rc1",
+ "sample_fingerprint": "b841e2ffd9",
+ "part": "A (dataset sample)",
+ "checked_by": "the curator, blind to model outputs",
+ "checked_at": "2026-10-14",
+ "exported_at": "2026-10-14T16:08:20.042Z",
+ "cores_checked": 35,
+ "strata": {
+  "stale": 15,
+  "other": 20
+ },
+ "ok": [
+  "ag-0010",
+  "ag-0026",
+  "ag-0042",
+  "ag-0059",
+  "ag-0077",
+  "ag-0084",
+  "ag-0091",
+  "cl-0010",
+  "cl-0020",
+  "cl-0035",
+  "cl-0038",
+  "cl-0039",
+  "cl-0041",
+  "cl-0058",
+  "cl-0071",
+  "cl-0100",
+  "cx-0004",
+  "cx-0038",
+  "cx-0048",
+  "cx-0050",
+  "cx-0074",
+  "cx-0083",
+  "cx-0086",
+  "cx-0093",
+  "nmf-0001",
+  "nmu-0004",
+  "nmu-0018",
+  "nmv-0001",
+  "nmv-0010",
+  "nmv-0019",
+  "nmv-0021",
+  "nmv-0068",
+  "nmv-0087",
+  "nmv-0127"
+ ],
+ "drop": [
+  {
+   "core_id": "nmv-0012",
+   "note": "Referenzalter nach Artikel 21 Absatz 1",
+   "stratum": "stale"
+  }
+ ],
+ "status": "The rc1 rows keep status auto_verified; the drop is applied and the rows get status reviewed with release v1.0.0 (scripts/after_human_check.sh). Part B (211 judge grades) is still open."
+}
