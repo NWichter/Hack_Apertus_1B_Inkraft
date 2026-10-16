@@ -4,15 +4,15 @@ practices and social services need exact amounts, deadlines and
 responsibilities from Swiss social and health insurance law, and a model
 that states last year's rule is worse than one that says it does not
 know. Inkraft is a trilingual (German, French, Italian) short-answer
-benchmark of 327 questions (951 rows) in which every gold answer is
+benchmark of 326 questions (948 rows) in which every gold answer is
 backed by a verbatim quote from the authentic text of a federal act as
-of 1 October 2026, and for 53 amended provisions the previously valid
+of 1 October 2026, and for 52 amended provisions the previously valid
 answer is stored verbatim from the earlier Fedlex version, so that wrong
 answers split into #emph[stale] (earlier law) and other errors. Graded
-by a panel of 3 open-weight judges, Apertus 1.5 70B answers 50.7 % of
-rows correctly but only 7.0 % of the rows whose rule changed with a
-stored earlier answer, where it gives the earlier law in 29.9 %; with
-the cited paragraph in the prompt it reaches 98.7 % on the same rows;
+by a panel of 3 open-weight judges, Apertus 1.5 70B answers 50.8 % of
+rows correctly but only 7.1 % of the rows whose rule changed with a
+stored earlier answer, where it gives the earlier law in 30.5 %; with
+the cited paragraph in the prompt it reaches 99.4 % on the same rows;
 adding the as-of date to the prompt does not change accuracy
 significantly.
 ]
@@ -113,19 +113,19 @@ the evaluated model.
   , kind: table
   )
 
-Release #strong[v1.0.0-rc1] (`data/FREEZE.json`) has #strong[327 German
-core questions, 951 rows], 312 cores in all three languages. Question
-types: numeric 114, yes/no 66, procedural 61, temporal 45, calculation
-20 (recomputed by the validator from cited inputs), false premise 18,
-term 3. Registers: professional 170, lay 157. A coverage matrix (domain
-× question type × change status) is in the data card. The temporal
-bucket is set per #emph[evidence sentence] over all stored versions: 248
-cores cite a sentence unchanged since 2024, 79 a sentence that changed
-in 2024--2026; #strong[53 of them are STALE pairs] (157 rows) whose
-earlier answer occurs verbatim in an earlier Fedlex version and differs
-from the current one. Drafting models: GPT-5.5 via Codex 98 cores,
-Claude 97, Gemini 86 (disclosed per row) and the open model Nemotron 3
-Ultra 46 (33 of the STALE pairs).
+Release #strong[v1.0.0] (`data/FREEZE.json`) has #strong[326 German core
+questions, 948 rows], 311 cores in all three languages. Question types:
+numeric 114, yes/no 66, procedural 61, temporal 44, calculation 20
+(recomputed by the validator from cited inputs), false premise 18, term
+3. Registers: professional 169, lay 157. A coverage matrix (domain ×
+question type × change status) is in the data card. The temporal bucket
+is set per #emph[evidence sentence] over all stored versions: 248 cores
+cite a sentence unchanged since 2024, 78 a sentence that changed in
+2024--2026; #strong[52 of them are STALE pairs] (154 rows) whose earlier
+answer occurs verbatim in an earlier Fedlex version and differs from the
+current one. Drafting models: GPT-5.5 via Codex 98 cores, Claude 97,
+Gemini 86 (disclosed per row) and the open model Nemotron 3 Ultra 45 (32
+of the STALE pairs).
 
 = Data Collection Method
 <data-collection-method>
@@ -160,9 +160,9 @@ outdated answer occurs verbatim in an earlier stored version and differs
 from the current value; a near-miss value valid in an earlier version is
 rejected; calculation items are recomputed from inputs anchored in the
 cited text; duplicates; language and value consistency across DE/FR/IT;
-Swiss spelling and a PII scan. #strong[v1.0.0-rc1: 0 errors on 951
-rows], 216 warnings (87 a published later version, 44 threshold words,
-23 discretionary rules, 62 other; none blocks a row).
+Swiss spelling and a PII scan. #strong[v1.0.0: 0 errors on 948 rows],
+216 warnings (87 a published later version, 44 threshold words, 23
+discretionary rules, 62 other; none blocks a row).
 
 #strong[Release rules] (`src/auto_review.py`, fixed before any model
 output was scored; decisions logged per core in `data/review/auto/`):
@@ -184,17 +184,19 @@ as "ordentliches Rentenalter" → "Referenzalter"). Where the judge panel
 disagreed on an answer, an open model proposed further answer variants;
 a variant was added only if its number equals the gold number (or all
 its words occur in the cited paragraph) and its evidence span is
-verbatim in the paragraph (`src/panel_fixes.py`, logged with evidence; 0
+verbatim in the paragraph (`src/panel_fixes.py`, logged with evidence; 7
 cores). Ambiguity flags were listed, never applied automatically.
 
 #strong[Human check] (`src/draw_human_sample.py`, seeds 20261013 for
 cores and 20261016 for judgements, `src/import_human.py`). A stratified
 random sample of 35 cores (15 STALE pairs, 20 others) was checked by the
-curator against the linked paragraph, blind to model outputs: the result
-follows with release v1.0.0 (human check in progress). All other rows
-are `auto_verified`\; rows a human checked are `reviewed`. No item was
-selected or removed on model outcomes; answer variants were added in 0
-cores where the judges disagreed (logged with evidence).
+curator against the linked paragraph, blind to model outputs: 1 rejected
+and removed before the freeze (STALE stratum 1 of 15, Wilson 95 % 1--30
+%; other stratum 0 of 20, 0--16 %): nmv-0012 (Referenzalter nach Artikel
+21 Absatz 1). All other rows are `auto_verified`\; rows a human checked
+are `reviewed`. No item was selected or removed on model outcomes;
+answer variants were added in 7 cores where the judges disagreed (logged
+with evidence).
 
 #strong[Exposure check.] Apertus 1.5 was trained on the Swiss
 legislation subset `switzerland_lexfind` of MultiLegalPile
@@ -203,9 +205,9 @@ search the verbatim current evidence and, for amended provisions, the
 earlier evidence in the German, French and Italian files at the
 published revision of 12 January 2024; we also count 13-gram overlaps
 between questions and the corpus @brown2020gpt3@sainz2023contamination.
-The current wording occurs in 564 rows, only the earlier wording in 84,
-neither in 277 (26 evidences too short). For the 135 `temporal` rows the
-corpus holds the current wording for 1 and the earlier one for 76. 55
+The current wording occurs in 564 rows, only the earlier wording in 81,
+neither in 277 (26 evidences too short). For the 132 `temporal` rows the
+corpus holds the current wording for 1 and the earlier one for 73. 55
 questions share a 13-gram with the corpus; they reuse statutory
 phrasing, the questions themselves are new.
 
@@ -249,25 +251,25 @@ outdated and near-miss answers with the same prompt (temperature 0)
 (Alibaba, open weights), GLM-5.3 (Z.ai, open weights), DeepSeek V3.2
 (DeepSeek, open weights). None of them drafted a released item or is an
 examinee. The majority grade counts; without a majority the first judge
-decides (4 of 3804 answers). On 61 constructed answers with known grades
+decides (4 of 3792 answers). On 61 constructed answers with known grades
 every judge passes the 0.95 gate on the three grades (error subtype 57
 to 60 of 61; Qwen3-235B-A22B-2507 61/61, GLM-5.3 61/61, DeepSeek V3.2
 61/61); Mistral Large 3, planned as the European judge, was rate-limited
 upstream on OpenRouter throughout and was replaced by DeepSeek V3.2.
 Inter-judge agreement: Fleiss' κ = 0.95 (three grades), 0.89 with
 subtypes; unanimous on 97 % of answers; agreement of each judge with the
-majority: Qwen3-235B-A22B-2507 99.4 %; GLM-5.3 98.3 %; DeepSeek V3.2
+majority: Qwen3-235B-A22B-2507 99.4 %; GLM-5.3 98.4 %; DeepSeek V3.2
 98.7 %. The German ablation rows are graded by Qwen alone, and the
 paired date and prompt comparisons use Qwen on both sides. (3) A human
 graded a stratified random 22 % sample of the judgements of the
 submitted run (Apertus 70B, `closed_dated`: 211 answers) blind to the
 grades; French and Italian answers were read with a German machine
-translation (Apertus 70B) next to the original. Agreement (Cohen's κ
-against the first judge, on which the sample was drawn, and against the
-panel majority) follows with release v1.0.0; the human check is in
-progress @cohen1960kappa@bavaresco2025llmjudges. As a diagnostic Apertus
-70B also graded the `closed_dated` runs: it agrees with Qwen (κ 0.86 on
-70B answers, 0.93 on 8B answers) but marks 48 more of its own answers
+translation (Apertus 70B) next to the original. Agreement with the first
+judge (on which the sample was drawn): κ = 0.91 (95 % CI 0.85--0.96, raw
+95.3 %; DE 0.89, FR/IT 0.92); with the panel majority κ = 0.92 (raw 95.7
+%) @cohen1960kappa@bavaresco2025llmjudges. As a diagnostic Apertus 70B
+also graded the `closed_dated` runs: it agrees with Qwen (κ 0.86 on 70B
+answers, 0.93 on 8B answers) but marks 48 more of its own answers
 correct, against 19 on the 8B's answers, consistent with
 self-preference; it is never used for scores.
 
@@ -291,26 +293,25 @@ USD; Nemotron was used free of charge.
     align: (auto,right,right,right,),
     table.header([`closed_dated`], [n], [8B], [70B],),
     table.hline(),
-    [All rows], [951], [33.0 (30--36)], [50.7 (48--54)],
-    [Changed sentence: correct], [235], [10.2 (7--15)], [16.6 (12--22)],
-    [STALE pairs: correct], [157], [5.1 (3--10)], [7.0 (4--12)],
-    [STALE pairs: #strong[earlier law]], [157], [14.0 (9--20)], [29.9
-    (23--38)],
-    [STALE pairs, open book], [157], [95.5 (91--98)], [98.7 (95--100)],
+    [All rows], [948], [33.1 (30--36)], [50.8 (48--54)],
+    [Changed sentence: correct], [232], [10.3 (7--15)], [16.8 (13--22)],
+    [STALE pairs: correct], [154], [5.2 (3--10)], [7.1 (4--12)],
+    [STALE pairs: #strong[earlier law]], [154], [14.3 (10--21)], [30.5
+    (24--38)],
+    [STALE pairs, open book], [154], [96.8 (93--99)], [99.4 (96--100)],
     [Corpus has current text], [564], [41.1 (37--45)], [63.6 (60--68)],
     [Corpus has no wording], [277], [25.6 (21--31)], [38.3 (33--44)],
-    [Corpus has only earlier], [84], [7.1 (3--15)], [10.7 (6--19)],
-    [… of which earlier law], [84], [23.8 (16--34)], [36.9 (27--48)],
+    [Corpus has only earlier], [81], [7.4 (3--15)], [11.1 (6--20)],
+    [… of which earlier law], [81], [24.7 (17--35)], [38.3 (28--49)],
   )]
-  , caption: [Main results on v1.0.0-rc1, % correct unless stated
-  (Wilson 95 % CI), majority of the judge panel
-  (`report/analysis.json`). Corpus rows: exposure bucket of the cited
-  wording in MultiLegalPile. Intervals treat rows as independent (the
-  three languages of a core are correlated; cluster bootstrap by core in
-  `data/results.json`). Incorrect / not attempted overall: 8B 55.4 /
-  11.6 %, 70B 48.2 / 1.2 %; hallucination rate I/(C+I) 8B 62.7 %, 70B
-  48.7 % (correct given attempted 37.3 % and 51.3 %); F-score 0.35 and
-  0.51.]
+  , caption: [Main results on v1.0.0, % correct unless stated (Wilson 95
+  % CI), majority of the judge panel (`report/analysis.json`). Corpus
+  rows: exposure bucket of the cited wording in MultiLegalPile.
+  Intervals treat rows as independent (the three languages of a core are
+  correlated; cluster bootstrap by core in `data/results.json`).
+  Incorrect / not attempted overall: 8B 55.4 / 11.5 %, 70B 48.0 / 1.2 %;
+  hallucination rate I/(C+I) 8B 62.6 %, 70B 48.6 % (correct given
+  attempted 37.4 % and 51.4 %); F-score 0.35 and 0.51.]
   , kind: table
   )
 
@@ -322,20 +323,20 @@ USD; Nemotron was used free of charge.
   ]
 )
 
-#strong[\(1) Apertus knows the old law, not the new one.] On the 157
-STALE-pair rows the 70B is correct in 7.0 % and gives the earlier rule
-in 29.9 %; for 23 of the 53 amended provisions it states the earlier
+#strong[\(1) Apertus knows the old law, not the new one.] On the 154
+STALE-pair rows the 70B is correct in 7.1 % and gives the earlier rule
+in 30.5 %; for 23 of the 52 amended provisions it states the earlier
 value in at least one language. The 8B answers less (24 % not attempted)
-and is stale in 14.0 %. On all 235 rows whose cited sentence changed
-since 2024 the 70B is correct in 16.6 % and the 8B in 10.2 %.
+and is stale in 14.3 %. On all 232 rows whose cited sentence changed
+since 2024 the 70B is correct in 16.8 % and the 8B in 10.3 %.
 #strong[\(2) It is a knowledge gap, not a reading gap.] With the cited
-paragraph in the prompt the 8B and the 70B answer 95.1 % and 96.5 % of
-all rows and 95.5 % and 98.7 % of the STALE-pair rows correctly
+paragraph in the prompt the 8B and the 70B answer 95.2 % and 96.7 % of
+all rows and 96.8 % and 99.4 % of the STALE-pair rows correctly
 (open-book gain +46 points for the 70B, +62 for the 8B); this also shows
 that the gold answers are recoverable from the cited text. #strong[\(3)
 Exposure tracks accuracy.] Where only the earlier wording occurs in the
-published training corpus, the 70B is correct in 10.7 % and stale in
-36.9 %; where the current wording occurs, it is correct in 63.6 %
+published training corpus, the 70B is correct in 11.1 % and stale in
+38.3 %; where the current wording occurs, it is correct in 63.6 %
 (association; bucket, act and change date are confounded). #strong[\(4)
 The date does not help significantly.] On the German rows (first judge
 on both sides) the as-of date in the system prompt changes the correct
@@ -345,11 +346,11 @@ question changes it by +1.5 and +1.8 points (p = 0.64, 0.54).
 #strong[\(5) Size helps mostly on stable law.] The 70B is 21 points
 ahead on unchanged rules (61.9 vs 40.5 %) but 6 on changed ones; overall
 it beats the 8B on 222 rows and loses on 54 (exact McNemar p \< 0.001);
-by language the 70B is correct in DE 53 %, FR 50 % and IT 48 %; by
+by language the 70B is correct in DE 53 %, FR 50 % and IT 49 %; by
 question type the 70B is correct on 67 % of yes/no items (8B 55 %,
-guessing rate 50 %), 62 % of calculations, 50 % of false premises and 7
+guessing rate 50 %), 62 % of calculations, 50 % of false premises and 8
 % of temporal questions (table in the data card); it gives the same
-grade in all three languages for 68 % of the cores (8B: 49 %).
+grade in all three languages for 68 % of the cores (8B: 50 %).
 
 = Dataset Limitations
 <dataset-limitations>
@@ -357,14 +358,14 @@ Only federal law; cantonal rules are excluded. Items are verified by
 deterministic checks against Fedlex, an independent model check and a
 human spot check of 35 cores, not by a full human review; the second
 check flagged little (15 of 335), so it is a weak filter for subtle
-ambiguity. 281 of 327 cores were drafted by closed models (Claude,
+ambiguity. 281 of 326 cores were drafted by closed models (Claude,
 GPT-5.5, Gemini), disclosed per row; accuracy by drafting model is
 reported in `data/results.json`, but drafting model and question type
 are confounded (all calculation and false-premise items come from
 Gemini, most STALE pairs from Nemotron). French and Italian questions
 are model translations; answers come from the authentic texts; the
 French and Italian part of the human judge check relied on a machine
-translation. One annotator, not a native Swiss speaker. 20 % yes/no
+translation. One annotator, not a native Swiss speaker. 21 % yes/no
 items (50 % guessing rate, reported separately). The STALE-pair set is
 limited by the version diff: most changes since 2024 are renamings or
 cross-reference renumbering, not new values. The as-of date ages; 29
@@ -385,7 +386,7 @@ updates on 1 January from the version diff, native-speaker review of
 French and Italian, a cantonal extension. For benchmark builders: the
 scarce resource is not drafting but real value changes; a paragraph diff
 over all intermediate versions plus a verbatim check of the earlier
-answer found 53 usable STALE pairs, a panel of judges from different
+answer found 52 usable STALE pairs, a panel of judges from different
 model families makes grading less dependent on one model, and Apertus
 70B as a judge was more lenient than Qwen overall and more so on its own
 answers (+48 correct on 70B answers, +19 on 8B answers).

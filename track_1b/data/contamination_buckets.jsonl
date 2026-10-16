@@ -871,9 +871,6 @@
 {"id": "nmv-0011-de", "lang": "de-CH", "question_type": "procedural", "bucket": "absent", "evidence_chars": 228, "current_docs": 0, "previous_docs": null, "question_13gram_hits": 0}
 {"id": "nmv-0011-fr", "lang": "fr-CH", "question_type": "procedural", "bucket": "absent", "evidence_chars": 242, "current_docs": 0, "previous_docs": null, "question_13gram_hits": 0}
 {"id": "nmv-0011-it", "lang": "it-CH", "question_type": "procedural", "bucket": "absent", "evidence_chars": 286, "current_docs": 0, "previous_docs": null, "question_13gram_hits": 0}
-{"id": "nmv-0012-de", "lang": "de-CH", "question_type": "temporal", "bucket": "outdated", "evidence_chars": 38, "current_docs": 0, "previous_docs": 1, "question_13gram_hits": 0}
-{"id": "nmv-0012-fr", "lang": "fr-CH", "question_type": "temporal", "bucket": "outdated", "evidence_chars": 40, "current_docs": 0, "previous_docs": 1, "question_13gram_hits": 0}
-{"id": "nmv-0012-it", "lang": "it-CH", "question_type": "temporal", "bucket": "outdated", "evidence_chars": 52, "current_docs": 0, "previous_docs": 1, "question_13gram_hits": 0}
 {"id": "nmv-0014-de", "lang": "de-CH", "question_type": "procedural", "bucket": "absent", "evidence_chars": 127, "current_docs": 0, "previous_docs": null, "question_13gram_hits": 0}
 {"id": "nmv-0014-fr", "lang": "fr-CH", "question_type": "procedural", "bucket": "absent", "evidence_chars": 88, "current_docs": 0, "previous_docs": null, "question_13gram_hits": 0}
 {"id": "nmv-0014-it", "lang": "it-CH", "question_type": "procedural", "bucket": "absent", "evidence_chars": 64, "current_docs": 0, "previous_docs": null, "question_13gram_hits": 0}

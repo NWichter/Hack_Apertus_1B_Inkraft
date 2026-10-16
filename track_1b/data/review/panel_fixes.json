@@ -1,7 +1,7 @@
 {
  "version": "panel-fixes-v1",
  "reviewer": "automatic (panel_fixes.py)",
- "created": "2026-10-14",
+ "created": "2026-10-16",
  "decisions": [
   {
    "core_id": "ag-0026",

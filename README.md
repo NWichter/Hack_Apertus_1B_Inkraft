@@ -5,21 +5,21 @@
 [![Docs: CC-BY-4.0](https://img.shields.io/badge/Docs-CC_BY_4.0-lightgrey.svg)](LICENSE-docs)
 
 **Inkraft** is a trilingual (German, French, Italian) short-answer benchmark on Swiss federal social and health
-insurance law as of **1 October 2026** (dimension: Core Task Intelligence). Release v<!--n:version-->1.0.0-rc1<!--/n-->:
-<!--n:cores-->327<!--/n--> core questions (<!--n:trilingual-->312<!--/n--> in all three languages, <!--n:de_only-->15<!--/n--> German only), <!--n:rows-->951<!--/n--> question–answer
+insurance law as of **1 October 2026** (dimension: Core Task Intelligence). Release v<!--n:version-->1.0.0<!--/n-->:
+<!--n:cores-->326<!--/n--> core questions (<!--n:trilingual-->311<!--/n--> in all three languages, <!--n:de_only-->15<!--/n--> German only), <!--n:rows-->948<!--/n--> question–answer
 rows from <!--n:acts-->19<!--/n--> acts and ordinances. Every gold answer is backed by a verbatim quote from the authentic Fedlex text (calculation and yes/no answers are
 derived from the quoted values; the validator recomputes calculations); for
-<!--n:stale_pairs-->53<!--/n--> amended provisions the previous answer is stored verbatim from the earlier version, so a wrong answer
+<!--n:stale_pairs-->52<!--/n--> amended provisions the previous answer is stored verbatim from the earlier version, so a wrong answer
 can be classed as _stale_ (earlier law) rather than as another error.
 
 **Results** (Apertus 1.5, majority of a panel of <!--n:panel_size-->3<!--/n--> open-weight judges):
-the 70B answers <!--n:correct_70b-->50.7<!--/n--> % of the rows correctly (8B: <!--n:correct_8b-->33.0<!--/n--> %); among its attempted answers <!--n:hall_70b-->48.7<!--/n--> % are wrong (hallucination rate I/(C+I); 8B: <!--n:hall_8b-->62.7<!--/n--> %). On the <!--n:stale_rows-->157<!--/n--> rows whose rule
-changed and whose earlier answer is stored, the 70B is correct in <!--n:stalepair_correct_70b-->7.0<!--/n--> % and gives the earlier law in
-<!--n:stalepair_stale_70b-->29.9<!--/n--> %; with the cited paragraph in the prompt it is correct in <!--n:openbook_stalepair_70b-->98.7<!--/n--> %.
-Adding the as-of date to the system prompt does not change accuracy significantly (German rows, first judge; 70B: <!--n:date_effect_70b-->−0.3<!--/n--> points). <!--when:human:offHuman check: Cohen's κ human–judge <!~~n:kappa_qwen~~>pending (human check in progress – results on 16 October)<!~~[[NIKLAS-PRÜFUNG: kappa_qwen]]~~><!~~/n~~>
-(panel majority <!~~n:kappa_panel~~>pending (human check in progress – results on 16 October)<!~~[[NIKLAS-PRÜFUNG: kappa_panel]]~~><!~~/n~~>) on <!~~n:judge_sample~~>211<!~~/n~~> judgements of the 70B main run;
-<!~~n:human_drops~~>pending (human check in progress – results on 16 October)<!~~[[NIKLAS-PRÜFUNG: human_drops]]~~><!~~/n~~> of <!~~n:sample_cores~~>35<!~~/n~~> sampled cores rejected and removed./when:human:off--><!--when:pending-->Human check of
-<!--n:judge_sample-->211<!--/n--> judgements of the 70B main run and <!--n:sample_cores-->35<!--/n--> sampled cores: in progress, results with release v1.0.0.<!--/when:pending-->
+the 70B answers <!--n:correct_70b-->50.8<!--/n--> % of the rows correctly (8B: <!--n:correct_8b-->33.1<!--/n--> %); among its attempted answers <!--n:hall_70b-->48.6<!--/n--> % are wrong (hallucination rate I/(C+I); 8B: <!--n:hall_8b-->62.6<!--/n--> %). On the <!--n:stale_rows-->154<!--/n--> rows whose rule
+changed and whose earlier answer is stored, the 70B is correct in <!--n:stalepair_correct_70b-->7.1<!--/n--> % and gives the earlier law in
+<!--n:stalepair_stale_70b-->30.5<!--/n--> %; with the cited paragraph in the prompt it is correct in <!--n:openbook_stalepair_70b-->99.4<!--/n--> %.
+Adding the as-of date to the system prompt does not change accuracy significantly (German rows, first judge; 70B: <!--n:date_effect_70b-->−0.3<!--/n--> points). <!--when:human-->Human check: Cohen's κ human–judge <!--n:kappa_qwen-->0.91<!--/n-->
+(panel majority <!--n:kappa_panel-->0.92<!--/n-->) on <!--n:judge_sample-->211<!--/n--> judgements of the 70B main run;
+<!--n:human_drops-->1<!--/n--> of <!--n:sample_cores-->35<!--/n--> sampled cores rejected and removed.<!--/when:human--><!--when:pending:offHuman check of
+<!~~n:judge_sample~~>211<!~~/n~~> judgements of the 70B main run and <!~~n:sample_cores~~>35<!~~/n~~> sampled cores: in progress, results with release v1.0.0./when:pending:off-->
 
 ## For the jury: where to look
 

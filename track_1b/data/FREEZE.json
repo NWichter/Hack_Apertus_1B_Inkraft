@@ -1,33 +1,33 @@
 {
- "version": "1.0.0-rc1",
- "frozen_at": "2026-10-13T18:05:47+00:00",
+ "version": "1.0.0",
+ "frozen_at": "2026-10-16T07:53:39+00:00",
  "as_of": "2026-10-01",
  "files": {
-  "test.jsonl": "5165d0b04504fd6936c818247ccbdaed82dac4046ecfcd3eb17f8c9052cf4a16",
-  "metadata.jsonl": "806209a66b108f1a5cc9ab2628966414310005c19e05f22cbc0f43f06d613313",
-  "merged.v1.0.0-rc1.jsonl": "7852688f0b153c3cdbfb95c6ddd493bbf17c7417e82c99c3bd492fc7cfee3391",
-  "ablation_cores.txt": "c8820808f2201f43e774d6a04e42c3eccca077e42bfab09685a7f026fa598272"
+  "test.jsonl": "65a292abdfd8625951d8f451e83b3fd6f10c81d3265efbc10ce7b9c8596454ee",
+  "metadata.jsonl": "61e6e61ee2c9cc39657731bc4eaf3c47deb9cff6a87258bbc2db96ab2a139aca",
+  "merged.v1.0.0.jsonl": "c6747ba598db677af75dcecc41fbb568de518f7d604d3d242dafcb01c7b487f1",
+  "ablation_cores.txt": "83ba6dc1a52b3bc98739753966ebba5fff402303070d7fdffe14f1d098ca962b"
  },
  "fedlex_manifest_sha256": "074f17b0f0b141dcffc165c1a1349f649d944cc99e9f1dbbc6a664eb49d79f3d",
  "stats": {
-  "cores": 327,
-  "rows": 951,
-  "trilingual_cores": 312,
-  "temporal_changed_cores": 79,
-  "stale_pair_cores": 53,
+  "cores": 326,
+  "rows": 948,
+  "trilingual_cores": 311,
+  "temporal_changed_cores": 78,
+  "stale_pair_cores": 52,
   "yes_no_cores": 67,
-  "yes_no_share": 0.205,
+  "yes_no_share": 0.206,
   "rows_without_variants": 6,
   "by_generator": {
    "gemini": 86,
    "claude": 97,
    "codex": 98,
-   "nemotron": 46
+   "nemotron": 45
   },
   "by_act": {
    "KVV": 33,
    "KVG": 54,
-   "AHVG": 50,
+   "AHVG": 49,
    "EOG": 28,
    "AVIG": 10,
    "UVG": 29,
@@ -47,7 +47,7 @@
   },
   "by_domain": {
    "kvg_insured": 57,
-   "ahv": 56,
+   "ahv": 55,
    "eo_alv": 41,
    "uvg_atsg": 56,
    "or_illness": 17,
@@ -63,32 +63,20 @@
    "numeric": 114,
    "procedural": 61,
    "term": 3,
-   "temporal": 45
+   "temporal": 44
   },
   "by_bucket": {
    "stable_pre2024": 248,
-   "changed_2024_2025": 71,
+   "changed_2024_2025": 70,
    "changed_2026": 8
   }
  },
- "ablation_cores": 139,
- "release_candidate": true,
+ "stats_note": "yes_no_cores counts answer_type yes_no; by_question_type.yes_no counts the question type (a core of another question type, e.g. temporal, can have a yes/no answer)",
+ "ablation_cores": 138,
+ "release_candidate": false,
  "review_status_cores": {
-  "reviewed": 0,
-  "auto_verified": 327
+  "reviewed": 34,
+  "auto_verified": 292
  },
- "human_spot_check": {
-  "part_a_cores_checked": 35,
-  "confirmed": 34,
-  "rejected": [
-   "nmv-0012"
-  ],
-  "sample_fingerprint": "b841e2ffd9",
-  "details": "data/human_labels/part_a_rc1.json",
-  "note": "Part A (random sample of 35 cores, checked by the curator against Fedlex, blind to model outputs, 2026-10-14). review_status_cores counts the row status, which only changes with v1.0.0 (rejected core removed then); part B (211 judge grades) is open."
- },
- "review_log_sha256": "3d7cc4e57627c59a2a5517149ed86da22f24b5770aad9cad320d75a2238f53cd",
- "hash_note": "SHA-256 over the file content with LF line endings",
- "metadata_amended": "2026-10-15: reviewer roles in authoring.manual_correction[].by neutralised; the 3 rows of cx-0018 store manual_correction as a list like all others (load_dataset needs one type). No question, answer, variant or evidence changed; hashes recomputed; internal decision labels in historical review notes reworded",
- "stats_note": "yes_no_cores counts answer_type yes_no; by_question_type.yes_no counts the question type (a core of another question type, e.g. temporal, can have a yes/no answer)"
+ "review_log_sha256": "88d4df57a7c51dfca46253a919424645144e7aa0fefa51808cfa2d8fa7312201"
 }

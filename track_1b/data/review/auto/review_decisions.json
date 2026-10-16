@@ -2093,8 +2093,8 @@
   },
   {
    "core_id": "nmv-0012",
-   "action": "patch",
-   "reason": "auto fix (accept_minor): auto fix of the pre-assessment note: Genuine change (women 64/men 65 -> reference age); make the canonical answer 'Referenzalter' (article ref only as alias) and remove the near-miss 'Artikel 21 Absatz 1', which denotes the correct answer.",
+   "action": "drop",
+   "reason": "human: Referenzalter nach Artikel 21 Absatz 1",
    "de": {
     "answer": "Referenzalter",
     "near_miss_answers": [

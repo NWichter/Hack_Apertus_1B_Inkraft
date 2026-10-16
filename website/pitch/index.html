@@ -1160,19 +1160,19 @@
       <h2>Built from the statute book.</h2>
       <div class="top">
         <div class="card tile">
-          <div class="n"><!--n:cores-->327<!--/n--></div>
+          <div class="n"><!--n:cores-->326<!--/n--></div>
           <div class="l">core questions in German</div>
         </div>
         <div class="card tile">
-          <div class="n"><!--n:rows-->951<!--/n--></div>
+          <div class="n"><!--n:rows-->948<!--/n--></div>
           <div class="l">rows across DE · FR · IT</div>
         </div>
         <div class="card tile">
-          <div class="n"><!--n:trilingual-->312<!--/n--></div>
+          <div class="n"><!--n:trilingual-->311<!--/n--></div>
           <div class="l">cores in all three languages</div>
         </div>
         <div class="card tile">
-          <div class="n"><!--n:stale_pairs-->53<!--/n--></div>
+          <div class="n"><!--n:stale_pairs-->52<!--/n--></div>
           <div class="l">cores with the previous rule stored as stale answer</div>
         </div>
       </div>
@@ -1183,7 +1183,7 @@
             <b>KVG</b><i style="width: 100.0%"></i><span>54</span>
           </div>
           <div class="bar">
-            <b>AHVG</b><i style="width: 92.6%"></i><span>50</span>
+            <b>AHVG</b><i style="width: 90.7%"></i><span>49</span>
           </div>
           <div class="bar">
             <b>KVV</b><i style="width: 61.1%"></i><span>33</span>
@@ -1219,9 +1219,9 @@
         <div class="split">
           <h3>Cited sentence last amended</h3>
           <div class="stack"><!--n:pitch_bucket_stack-->
-            <div style="width: 75.8%; background: var(--navy)">248</div>
-            <div style="width: 21.7%; background: var(--green)">71</div>
-            <div style="width: 2.4%; background: var(--grey-ink)">8</div>
+            <div style="width: 76.1%; background: var(--navy)">248</div>
+            <div style="width: 21.5%; background: var(--green)">70</div>
+            <div style="width: 2.5%; background: var(--grey-ink)">8</div>
           <!--/n--></div>
           <div class="legend">
             <div><i style="background: var(--navy)"></i>before 2024</div>
@@ -1229,14 +1229,14 @@
             <div><i style="background: var(--grey-ink)"></i>in 2026</div>
           </div>
           <div class="proof">
-            <b><!--n:rows-->951<!--/n--> / <!--n:rows-->951<!--/n--></b> rows pass the source check: the evidence appears
+            <b><!--n:rows-->948<!--/n--> / <!--n:rows-->948<!--/n--></b> rows pass the source check: the evidence appears
             word for word in the cited fedlex paragraph, in the row's own
             language.
           </div>
         </div>
       </div>
       <div class="foot">
-        v<!--n:version-->1.0.0-rc1<!--/n--> · LLM drafts (Codex <!--n:gen_codex-->98<!--/n-->, Claude <!--n:gen_claude-->97<!--/n-->, Gemini <!--n:gen_gemini-->86<!--/n-->, Nemotron <!--n:gen_nemotron-->46<!--/n-->), checked by validator, second model and a human (<!--n:sample_cores-->35<!--/n--> cores<!--when:human:off, <!~~n:human_drops~~>pending (human check in progress – results on 16 October)<!~~[[NIKLAS-PRÜFUNG: human_drops]]~~><!~~/n~~> removed/when:human:off--><!--when:pending-->, in progress<!--/when:pending-->).
+        v<!--n:version-->1.0.0<!--/n--> · LLM drafts (Codex <!--n:gen_codex-->98<!--/n-->, Claude <!--n:gen_claude-->97<!--/n-->, Gemini <!--n:gen_gemini-->86<!--/n-->, Nemotron <!--n:gen_nemotron-->45<!--/n-->), checked by validator, second model and a human (<!--n:sample_cores-->35<!--/n--> cores<!--when:human-->, <!--n:human_drops-->1<!--/n--> removed<!--/when:human--><!--when:pending:off, in progress/when:pending:off-->).
       </div>
     </section>
 
@@ -1248,7 +1248,7 @@
         <div>
           <h2>When a rule changed, Apertus 70B gives the old rule.</h2>
           <p class="sub">
-            On the <!--n:stale_rows-->157<!--/n--> rows whose rule changed since 2024 and whose earlier
+            On the <!--n:stale_rows-->154<!--/n--> rows whose rule changed since 2024 and whose earlier
             answer is stored, the 70B states the earlier law in <!--n:stalepair_stale_70b_r-->30<!--/n-->&nbsp;% of
             answers and the rule in force in only <!--n:stalepair_correct_70b_r-->7<!--/n-->&nbsp;%.
           </p>
@@ -1259,7 +1259,7 @@
         <div class="g"><b><!--n:openbook_stalepair_70b_r-->99<!--/n--> %</b>correct with the cited paragraph in the prompt</div>
         <div><b><!--n:date_effect_70b-->−0.3<!--/n--> pts</b>effect of today's date in the prompt, German rows (p = <!--n:date_p_70b-->1.0<!--/n-->)</div>
       </div>
-      <div class="foot">A knowledge gap, not a reading gap. Main results: majority of <!--n:panel_size-->3<!--/n--> open-weight judges; date ablation (German rows): first judge only. Release v<!--n:version-->1.0.0-rc1<!--/n-->.</div>
+      <div class="foot">A knowledge gap, not a reading gap. Main results: majority of <!--n:panel_size-->3<!--/n--> open-weight judges; date ablation (German rows): first judge only. Release v<!--n:version-->1.0.0<!--/n-->.</div>
     </section>
 
     <!-- 7 EVALUATION -->
@@ -1287,9 +1287,9 @@
           <div class="k">3 · HUMAN</div>
           <h4><!--n:judge_share-->22<!--/n--> % blind sample</h4>
           <p>
-            Graded without seeing the judges<!--when:human:off. Cohen's κ <!~~n:kappa_qwen~~>pending (human check in progress – results on 16 October)<!~~[[NIKLAS-PRÜFUNG: kappa_qwen]]~~><!~~/n~~> vs the
-            first judge, <!~~n:kappa_panel~~>pending (human check in progress – results on 16 October)<!~~[[NIKLAS-PRÜFUNG: kappa_panel]]~~><!~~/n~~> vs the panel majority/when:human:off--><!--when:pending-->; of the
-            <!--n:rows-->951<!--/n--> judgements of the 70B main run. Agreement (Cohen's κ) follows with release v1.0.0<!--/when:pending-->.
+            Graded without seeing the judges<!--when:human-->. Cohen's κ <!--n:kappa_qwen-->0.91<!--/n--> vs the
+            first judge, <!--n:kappa_panel-->0.92<!--/n--> vs the panel majority<!--/when:human--><!--when:pending:off; of the
+            <!~~n:rows~~>948<!~~/n~~> judgements of the 70B main run. Agreement (Cohen's κ) follows with release v1.0.0/when:pending:off-->.
           </p>
         </div>
       </div>
@@ -1307,23 +1307,23 @@
           <tr>
             <td>8B</td>
             <td><!--n:lang_de_8b-->34<!--/n--> · <!--n:lang_fr_8b-->34<!--/n--> · <!--n:lang_it_8b-->31<!--/n--> %</td>
-            <td><!--n:stalepair_correct_k_8b-->8<!--/n--> / <!--n:stale_rows-->157<!--/n--> · <!--n:stalepair_stale_k_8b-->22<!--/n--> / <!--n:stale_rows-->157<!--/n--></td>
-            <td><!--n:na_8b-->11.6<!--/n--> %</td>
+            <td><!--n:stalepair_correct_k_8b-->8<!--/n--> / <!--n:stale_rows-->154<!--/n--> · <!--n:stalepair_stale_k_8b-->22<!--/n--> / <!--n:stale_rows-->154<!--/n--></td>
+            <td><!--n:na_8b-->11.5<!--/n--> %</td>
             <td><!--n:date_effect_8b-->−1.5<!--/n--> pts (p = <!--n:date_p_8b-->0.27<!--/n-->)</td>
           </tr>
           <tr>
             <td>70B</td>
-            <td><!--n:lang_de_70b-->53<!--/n--> · <!--n:lang_fr_70b-->50<!--/n--> · <!--n:lang_it_70b-->48<!--/n--> %</td>
-            <td><!--n:stalepair_correct_k_70b-->11<!--/n--> / <!--n:stale_rows-->157<!--/n--> · <!--n:stalepair_stale_k_70b-->47<!--/n--> / <!--n:stale_rows-->157<!--/n--></td>
+            <td><!--n:lang_de_70b-->53<!--/n--> · <!--n:lang_fr_70b-->50<!--/n--> · <!--n:lang_it_70b-->49<!--/n--> %</td>
+            <td><!--n:stalepair_correct_k_70b-->11<!--/n--> / <!--n:stale_rows-->154<!--/n--> · <!--n:stalepair_stale_k_70b-->47<!--/n--> / <!--n:stale_rows-->154<!--/n--></td>
             <td><!--n:na_70b-->1.2<!--/n--> %</td>
             <td><!--n:date_effect_70b-->−0.3<!--/n--> pts (p = <!--n:date_p_70b-->1.0<!--/n-->)</td>
           </tr>
         </tbody>
       </table>
       <p class="conds">
-        Release v<!--n:version-->1.0.0-rc1<!--/n-->, <!--n:rows-->951<!--/n--> rows, majority of <!--n:panel_size-->3<!--/n--> judges.<br />
-        <b>Overall correct:</b> 8B <!--n:correct_8b-->33.0<!--/n--> %, 70B <!--n:correct_70b-->50.7<!--/n--> %. <b>Open book</b> (law paragraph in the prompt):
-        70B right in <!--n:openbook_stalepair_70b-->98.7<!--/n--> % of the <!--n:stale_rows-->157<!--/n--> stale-pair rows. Date effect on the <!--n:cores-->327<!--/n--> German rows, graded by the first judge.
+        Release v<!--n:version-->1.0.0<!--/n-->, <!--n:rows-->948<!--/n--> rows, majority of <!--n:panel_size-->3<!--/n--> judges.<br />
+        <b>Overall correct:</b> 8B <!--n:correct_8b-->33.1<!--/n--> %, 70B <!--n:correct_70b-->50.8<!--/n--> %. <b>Open book</b> (law paragraph in the prompt):
+        70B right in <!--n:openbook_stalepair_70b-->99.4<!--/n--> % of the <!--n:stale_rows-->154<!--/n--> stale-pair rows. Date effect on the <!--n:cores-->326<!--/n--> German rows, graded by the first judge.
       </p>
     </section>
 
@@ -1343,11 +1343,11 @@
             check which version of the rule it contains.
           </p>
           <p>
-            Rows: <!--n:exp_current_rows-->564<!--/n--> + <!--n:exp_outdated_rows-->84<!--/n--> + <!--n:exp_absent_rows-->277<!--/n--> in the three buckets, <!--n:cont_short-->26<!--/n--> with evidence
-            too short to search (<!--n:rows-->951<!--/n--> in total).
+            Rows: <!--n:exp_current_rows-->564<!--/n--> + <!--n:exp_outdated_rows-->81<!--/n--> + <!--n:exp_absent_rows-->277<!--/n--> in the three buckets, <!--n:cont_short-->26<!--/n--> with evidence
+            too short to search (<!--n:rows-->948<!--/n--> in total).
           </p>
           <p>
-            Leak check: <!--n:cont_13gram-->55<!--/n--> of <!--n:rows-->951<!--/n--> questions share a 13-gram with the corpus
+            Leak check: <!--n:cont_13gram-->55<!--/n--> of <!--n:rows-->948<!--/n--> questions share a 13-gram with the corpus
             (statutory phrasing; the questions are new).
           </p>
         </div>
@@ -1364,7 +1364,7 @@
           <div class="bk old">
             <div>
               <b>Previous rule in that corpus</b
-              ><span>seen, then amended (not the same set as the stale-pair rows) · <!--n:exp_outdated_rows-->84<!--/n--> rows</span>
+              ><span>seen, then amended (not the same set as the stale-pair rows) · <!--n:exp_outdated_rows-->81<!--/n--> rows</span>
             </div>
             <div class="v">
               <span class="vh">70B correct</span><!--n:exp_outdated_correct_70b_r-->11<!--/n--> %
@@ -1389,7 +1389,7 @@
         <div>
           <div class="term">
             <span class="p">$ make run</span> <span class="c"># Docker, no keys, no GPU</span><br />
-            <span class="c">recomputes every result block from <!--n:stored_answers-->5,112<!--/n--> stored answers and grades</span><br />
+            <span class="c">recomputes every result block from <!--n:stored_answers-->5,096<!--/n--> stored answers and grades</span><br />
             <span class="ok">PASS: all <!--n:replay_blocks-->8<!--/n--> result blocks match expected_results.json</span>
           </div>
           <div class="term">
@@ -1402,7 +1402,7 @@
           <div class="files">
             <div>test.jsonl <span>questions and gold</span></div>
             <div>metadata.jsonl <span>fedlex ELI with version date</span></div>
-            <div>responses/ <span>every model answer · <!--n:stored_answers-->5,112<!--/n--></span></div>
+            <div>responses/ <span>every model answer · <!--n:stored_answers-->5,096<!--/n--></span></div>
             <div>judgements/ <span>every grade · <!--n:panel_size-->3<!--/n--> judges + majority</span></div>
             <div>human_labels/ <span><!--n:judge_share-->22<!--/n--> % sample · κ</span></div>
           </div>

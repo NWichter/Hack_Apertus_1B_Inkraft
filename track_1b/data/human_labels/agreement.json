@@ -1,0 +1,211 @@
+{
+ "n": 211,
+ "raw_agreement": 0.9526,
+ "kappa": 0.9073,
+ "kappa_ci95": [
+  0.8502,
+  0.962
+ ],
+ "confusion_human_rows_judge_cols": {
+  "CORRECT": {
+   "CORRECT": 103,
+   "INCORRECT": 5,
+   "NOT_ATTEMPTED": 0
+  },
+  "INCORRECT": {
+   "CORRECT": 4,
+   "INCORRECT": 96,
+   "NOT_ATTEMPTED": 1
+  },
+  "NOT_ATTEMPTED": {
+   "CORRECT": 0,
+   "INCORRECT": 0,
+   "NOT_ATTEMPTED": 2
+  }
+ },
+ "kappa_5class": 0.8226,
+ "stale_metrics": {
+  "human_stale_count": 11,
+  "judge_stale_count": 13,
+  "both_stale_count": 11,
+  "precision": 0.8462,
+  "recall": 1.0
+ },
+ "by_language_group": {
+  "de (original only)": {
+   "n": 72,
+   "raw_agreement": 0.9444,
+   "kappa": 0.8898,
+   "kappa_ci95": [
+    0.7767,
+    0.9725
+   ],
+   "confusion_human_rows_judge_cols": {
+    "CORRECT": {
+     "CORRECT": 37,
+     "INCORRECT": 2,
+     "NOT_ATTEMPTED": 0
+    },
+    "INCORRECT": {
+     "CORRECT": 1,
+     "INCORRECT": 31,
+     "NOT_ATTEMPTED": 1
+    },
+    "NOT_ATTEMPTED": {
+     "CORRECT": 0,
+     "INCORRECT": 0,
+     "NOT_ATTEMPTED": 0
+    }
+   },
+   "kappa_5class": 0.8888,
+   "stale_metrics": {
+    "human_stale_count": 3,
+    "judge_stale_count": 3,
+    "both_stale_count": 3,
+    "precision": 1.0,
+    "recall": 1.0
+   }
+  },
+  "fr/it (human with machine translation)": {
+   "n": 139,
+   "raw_agreement": 0.9568,
+   "kappa": 0.916,
+   "kappa_ci95": [
+    0.835,
+    0.9717
+   ],
+   "confusion_human_rows_judge_cols": {
+    "CORRECT": {
+     "CORRECT": 66,
+     "INCORRECT": 3,
+     "NOT_ATTEMPTED": 0
+    },
+    "INCORRECT": {
+     "CORRECT": 3,
+     "INCORRECT": 65,
+     "NOT_ATTEMPTED": 0
+    },
+    "NOT_ATTEMPTED": {
+     "CORRECT": 0,
+     "INCORRECT": 0,
+     "NOT_ATTEMPTED": 2
+    }
+   },
+   "kappa_5class": 0.789,
+   "stale_metrics": {
+    "human_stale_count": 8,
+    "judge_stale_count": 10,
+    "both_stale_count": 8,
+    "precision": 0.8,
+    "recall": 1.0
+   }
+  }
+ },
+ "judge_model": "qwen/qwen3-235b-a22b-2507",
+ "translation_aid": "FR/IT rows of part B shown with a German machine translation (Apertus 70B) next to the original",
+ "uncertain_labels": 0,
+ "vs_panel": {
+  "n": 211,
+  "raw_agreement": 0.9573,
+  "kappa": 0.9166,
+  "kappa_ci95": [
+   0.8607,
+   0.9629
+  ],
+  "confusion_human_rows_judge_cols": {
+   "CORRECT": {
+    "CORRECT": 103,
+    "INCORRECT": 5,
+    "NOT_ATTEMPTED": 0
+   },
+   "INCORRECT": {
+    "CORRECT": 3,
+    "INCORRECT": 97,
+    "NOT_ATTEMPTED": 1
+   },
+   "NOT_ATTEMPTED": {
+    "CORRECT": 0,
+    "INCORRECT": 0,
+    "NOT_ATTEMPTED": 2
+   }
+  },
+  "kappa_5class": 0.8826,
+  "stale_metrics": {
+   "human_stale_count": 11,
+   "judge_stale_count": 13,
+   "both_stale_count": 11,
+   "precision": 0.8462,
+   "recall": 1.0
+  },
+  "by_language_group": {
+   "de (original only)": {
+    "n": 72,
+    "raw_agreement": 0.9444,
+    "kappa": 0.8898,
+    "kappa_ci95": [
+     0.7767,
+     0.9725
+    ],
+    "confusion_human_rows_judge_cols": {
+     "CORRECT": {
+      "CORRECT": 37,
+      "INCORRECT": 2,
+      "NOT_ATTEMPTED": 0
+     },
+     "INCORRECT": {
+      "CORRECT": 1,
+      "INCORRECT": 31,
+      "NOT_ATTEMPTED": 1
+     },
+     "NOT_ATTEMPTED": {
+      "CORRECT": 0,
+      "INCORRECT": 0,
+      "NOT_ATTEMPTED": 0
+     }
+    },
+    "kappa_5class": 0.9109,
+    "stale_metrics": {
+     "human_stale_count": 3,
+     "judge_stale_count": 3,
+     "both_stale_count": 3,
+     "precision": 1.0,
+     "recall": 1.0
+    }
+   },
+   "fr/it (human with machine translation)": {
+    "n": 139,
+    "raw_agreement": 0.964,
+    "kappa": 0.93,
+    "kappa_ci95": [
+     0.8557,
+     0.9858
+    ],
+    "confusion_human_rows_judge_cols": {
+     "CORRECT": {
+      "CORRECT": 66,
+      "INCORRECT": 3,
+      "NOT_ATTEMPTED": 0
+     },
+     "INCORRECT": {
+      "CORRECT": 2,
+      "INCORRECT": 66,
+      "NOT_ATTEMPTED": 0
+     },
+     "NOT_ATTEMPTED": {
+      "CORRECT": 0,
+      "INCORRECT": 0,
+      "NOT_ATTEMPTED": 2
+     }
+    },
+    "kappa_5class": 0.8686,
+    "stale_metrics": {
+     "human_stale_count": 8,
+     "judge_stale_count": 10,
+     "both_stale_count": 8,
+     "precision": 0.8,
+     "recall": 1.0
+    }
+   }
+  }
+ }
+}

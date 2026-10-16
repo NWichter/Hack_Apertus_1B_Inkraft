@@ -7,7 +7,7 @@
  "rule": "majority of the three-way grade; no majority -> first judge",
  "runs": {
   "apertus-v1.5-70b__closed_dated": {
-   "n": 951,
+   "n": 948,
    "no_majority": 1,
    "missing_votes": 0,
    "judges": [
@@ -17,7 +17,7 @@
    ]
   },
   "apertus-v1.5-70b__closed_plain": {
-   "n": 327,
+   "n": 326,
    "no_majority": 0,
    "missing_votes": 0,
    "judges": [
@@ -25,7 +25,7 @@
    ]
   },
   "apertus-v1.5-70b__closed_swiss": {
-   "n": 327,
+   "n": 326,
    "no_majority": 0,
    "missing_votes": 0,
    "judges": [
@@ -33,7 +33,7 @@
    ]
   },
   "apertus-v1.5-70b__open_book": {
-   "n": 951,
+   "n": 948,
    "no_majority": 0,
    "missing_votes": 0,
    "judges": [
@@ -43,7 +43,7 @@
    ]
   },
   "apertus-v1.5-8b__closed_dated": {
-   "n": 951,
+   "n": 948,
    "no_majority": 2,
    "missing_votes": 0,
    "judges": [
@@ -53,7 +53,7 @@
    ]
   },
   "apertus-v1.5-8b__closed_plain": {
-   "n": 327,
+   "n": 326,
    "no_majority": 0,
    "missing_votes": 0,
    "judges": [
@@ -61,7 +61,7 @@
    ]
   },
   "apertus-v1.5-8b__closed_swiss": {
-   "n": 327,
+   "n": 326,
    "no_majority": 0,
    "missing_votes": 0,
    "judges": [
@@ -69,7 +69,7 @@
    ]
   },
   "apertus-v1.5-8b__open_book": {
-   "n": 951,
+   "n": 948,
    "no_majority": 1,
    "missing_votes": 0,
    "judges": [
@@ -79,24 +79,24 @@
    ]
   }
  },
- "fleiss_kappa_3class": 0.9478,
- "fleiss_kappa_5class": 0.8882,
- "unanimous_share_3class": 0.9653,
+ "fleiss_kappa_3class": 0.9483,
+ "fleiss_kappa_5class": 0.8893,
+ "unanimous_share_3class": 0.9657,
  "no_majority_rows": 4,
  "agreement_with_majority": {
   "qwen/qwen3-235b-a22b-2507": 0.9937,
-  "z-ai/glm-5.3": 0.9834,
-  "deepseek/deepseek-v3.2": 0.9871
+  "z-ai/glm-5.3": 0.9836,
+  "deepseek/deepseek-v3.2": 0.9873
  },
  "agreement_with_majority_5class": {
-  "qwen/qwen3-235b-a22b-2507": 0.9727,
-  "z-ai/glm-5.3": 0.9721,
-  "deepseek/deepseek-v3.2": 0.9703
+  "qwen/qwen3-235b-a22b-2507": 0.972,
+  "z-ai/glm-5.3": 0.9728,
+  "deepseek/deepseek-v3.2": 0.9715
  },
- "n_rows": 3804,
+ "n_rows": 3792,
  "judging_cost_usd": {
-  "qwen/qwen3-235b-a22b-2507": 0.4385,
-  "z-ai/glm-5.3": 1.0889,
-  "deepseek/deepseek-v3.2": 0.8146
+  "qwen/qwen3-235b-a22b-2507": 0.4371,
+  "z-ai/glm-5.3": 1.0907,
+  "deepseek/deepseek-v3.2": 0.812
  }
 }

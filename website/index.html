@@ -164,7 +164,7 @@
             <article class="card feature">
               <h3>An as-of date</h3>
               <p>
-                For <!--n:stale_pairs-->53<!--/n--> provisions amended since 2024 the item also stores the
+                For <!--n:stale_pairs-->52<!--/n--> provisions amended since 2024 the item also stores the
                 earlier rule, quoted from the earlier fedlex version. A wrong
                 answer that matches it counts as
                 <em>stale</em>, not as another error.
@@ -211,8 +211,8 @@
             </li>
             <li>
               <strong>Then a human</strong> grades a blind <!--n:judge_share-->22<!--/n-->&nbsp;% sample
-              of the <!--n:rows-->951<!--/n--> judgements of the 70B main run<!--when:human:off: Cohen's κ <!~~n:kappa_qwen~~>pending (human check in progress – results on 16 October)<!~~[[NIKLAS-PRÜFUNG: kappa_qwen]]~~><!~~/n~~> against the first judge,
-              <!~~n:kappa_panel~~>pending (human check in progress – results on 16 October)<!~~[[NIKLAS-PRÜFUNG: kappa_panel]]~~><!~~/n~~> against the panel majority/when:human:off--><!--when:pending--> (in progress; agreement follows with release v1.0.0)<!--/when:pending-->.
+              of the <!--n:rows-->948<!--/n--> judgements of the 70B main run<!--when:human-->: Cohen's κ <!--n:kappa_qwen-->0.91<!--/n--> against the first judge,
+              <!--n:kappa_panel-->0.92<!--/n--> against the panel majority<!--/when:human--><!--when:pending:off (in progress; agreement follows with release v1.0.0)/when:pending:off-->.
             </li>
             <li>
               <strong>Then <code>make run</code></strong> replays the scoring.
@@ -227,7 +227,7 @@
         <div class="wrap">
           <h2>Status</h2>
           <p class="section-lead">
-            Dataset release v<!--n:version-->1.0.0-rc1<!--/n-->, evaluated with Apertus 1.5 8B and 70B.
+            Dataset release v<!--n:version-->1.0.0<!--/n-->, evaluated with Apertus 1.5 8B and 70B.
           </p>
           <div class="status-list">
             <div class="status-row">
@@ -245,16 +245,16 @@
               <div>
                 <h3>Dataset</h3>
                 <p>
-                  <!--n:cores-->327<!--/n--> German core questions, <!--n:rows-->951<!--/n-->
+                  <!--n:cores-->326<!--/n--> German core questions, <!--n:rows-->948<!--/n-->
                   question–answer rows in German, French and Italian, from <!--n:acts-->19<!--/n-->
-                  federal acts and ordinances. <!--n:stale_pairs-->53<!--/n--> questions store the previous
+                  federal acts and ordinances. <!--n:stale_pairs-->52<!--/n--> questions store the previous
                   rule word for word from the earlier fedlex version. All cores
                   are LLM drafts (<!--n:gen_codex-->98<!--/n--> GPT-5.5 via Codex, <!--n:gen_claude-->97<!--/n--> Claude, <!--n:gen_gemini-->86<!--/n--> Gemini,
-                  <!--n:gen_nemotron-->46<!--/n--> the open model Nemotron 3 Ultra). Every row passes the
+                  <!--n:gen_nemotron-->45<!--/n--> the open model Nemotron 3 Ultra). Every row passes the
                   check against fedlex, and every core was checked by a second model
                   (15 flagged: 8 dropped, 7 calculation cores kept because the validator recomputes them);
-                  a human checks a random sample of <!--n:sample_cores-->35<!--/n--> cores<!--when:human:off and
-                  removed <!~~n:human_drops~~>pending (human check in progress – results on 16 October)<!~~[[NIKLAS-PRÜFUNG: human_drops]]~~><!~~/n~~>/when:human:off--><!--when:pending--> (results with release v1.0.0)<!--/when:pending-->.
+                  a human checks a random sample of <!--n:sample_cores-->35<!--/n--> cores<!--when:human--> and
+                  removed <!--n:human_drops-->1<!--/n--><!--/when:human--><!--when:pending:off (results with release v1.0.0)/when:pending:off-->.
                 </p>
               </div>
             </div>
@@ -264,10 +264,10 @@
                 <h3>Exposure check against Apertus training data</h3>
                 <p>
                   The Swiss legislation in MultiLegalPile is part of the Apertus
-                  1.5 training mix. Of the <!--n:rows-->951<!--/n--> rows, the corpus holds the
-                  current wording for <!--n:cont_current-->564<!--/n-->, only the <em>old</em> wording for <!--n:cont_outdated-->84<!--/n-->
+                  1.5 training mix. Of the <!--n:rows-->948<!--/n--> rows, the corpus holds the
+                  current wording for <!--n:cont_current-->564<!--/n-->, only the <em>old</em> wording for <!--n:cont_outdated-->81<!--/n-->
                   and neither for <!--n:cont_absent-->277<!--/n--> (<!--n:cont_short-->26<!--/n--> evidences are too short to search). Of the
-                  <!--n:cont_temporal_rows-->135<!--/n--> rows of temporal questions it holds the current wording for <!--n:cont_temporal_current-->1<!--/n--> and the old one for <!--n:cont_temporal_outdated-->76<!--/n-->.
+                  <!--n:cont_temporal_rows-->132<!--/n--> rows of temporal questions it holds the current wording for <!--n:cont_temporal_current-->1<!--/n--> and the old one for <!--n:cont_temporal_outdated-->73<!--/n-->.
                 </p>
               </div>
             </div>
@@ -276,13 +276,13 @@
               <div>
                 <h3>Results for Apertus 1.5 8B and 70B</h3>
                 <p>
-                  Graded by the judge panel: the 70B answers <!--n:correct_70b-->50.7<!--/n-->&nbsp;% of
-                  the rows correctly, the 8B <!--n:correct_8b-->33.0<!--/n-->&nbsp;%. On
-                  the <!--n:stale_rows-->157<!--/n--> rows whose rule changed and whose old answer is stored,
-                  the 70B is right in <!--n:stalepair_correct_70b-->7.0<!--/n-->&nbsp;%
-                  and gives the old rule in <!--n:stalepair_stale_70b-->29.9<!--/n-->&nbsp;%.
+                  Graded by the judge panel: the 70B answers <!--n:correct_70b-->50.8<!--/n-->&nbsp;% of
+                  the rows correctly, the 8B <!--n:correct_8b-->33.1<!--/n-->&nbsp;%. On
+                  the <!--n:stale_rows-->154<!--/n--> rows whose rule changed and whose old answer is stored,
+                  the 70B is right in <!--n:stalepair_correct_70b-->7.1<!--/n-->&nbsp;%
+                  and gives the old rule in <!--n:stalepair_stale_70b-->30.5<!--/n-->&nbsp;%.
                   With the paragraph in the prompt it is right in
-                  <!--n:openbook_stalepair_70b-->98.7<!--/n-->&nbsp;% of the same rows. Adding the as-of date to
+                  <!--n:openbook_stalepair_70b-->99.4<!--/n-->&nbsp;% of the same rows. Adding the as-of date to
                   the prompt does not change accuracy significantly (<!--n:date_effect_70b-->−0.3<!--/n--> points,
                   p&nbsp;=&nbsp;<!--n:date_p_70b-->1.0<!--/n-->; German rows, graded by the first judge).
                 </p>

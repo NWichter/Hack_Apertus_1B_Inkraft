@@ -1,33 +1,33 @@
 {
- "n": 951,
+ "n": 948,
  "bucket": {
   "current": 564,
   "absent": 277,
   "evidence_too_short": 26,
-  "outdated": 84
+  "outdated": 81
  },
  "bucket_by_lang": {
   "de-CH": {
    "current": 196,
    "evidence_too_short": 5,
    "absent": 97,
-   "outdated": 29
+   "outdated": 28
   },
   "fr-CH": {
    "current": 185,
    "absent": 88,
    "evidence_too_short": 12,
-   "outdated": 27
+   "outdated": 26
   },
   "it-CH": {
    "current": 183,
    "absent": 92,
    "evidence_too_short": 9,
-   "outdated": 28
+   "outdated": 27
   }
  },
  "temporal_bucket": {
-  "outdated": 76,
+  "outdated": 73,
   "absent": 53,
   "evidence_too_short": 5,
   "current": 1

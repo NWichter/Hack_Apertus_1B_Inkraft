@@ -1,22 +1,22 @@
 {
- "cores": 327,
- "rows": 951,
- "trilingual_cores": 312,
- "temporal_changed_cores": 79,
- "stale_pair_cores": 53,
+ "cores": 326,
+ "rows": 948,
+ "trilingual_cores": 311,
+ "temporal_changed_cores": 78,
+ "stale_pair_cores": 52,
  "yes_no_cores": 67,
- "yes_no_share": 0.205,
+ "yes_no_share": 0.206,
  "rows_without_variants": 6,
  "by_generator": {
   "gemini": 86,
   "claude": 97,
   "codex": 98,
-  "nemotron": 46
+  "nemotron": 45
  },
  "by_act": {
   "KVV": 33,
   "KVG": 54,
-  "AHVG": 50,
+  "AHVG": 49,
   "EOG": 28,
   "AVIG": 10,
   "UVG": 29,
@@ -36,7 +36,7 @@
  },
  "by_domain": {
   "kvg_insured": 57,
-  "ahv": 56,
+  "ahv": 55,
   "eo_alv": 41,
   "uvg_atsg": 56,
   "or_illness": 17,
@@ -52,20 +52,20 @@
   "numeric": 114,
   "procedural": 61,
   "term": 3,
-  "temporal": 45
+  "temporal": 44
  },
  "by_bucket": {
   "stable_pre2024": 248,
-  "changed_2024_2025": 71,
+  "changed_2024_2025": 70,
   "changed_2026": 8
  },
  "decisions": {
   "keep": 276,
-  "drop": 136,
-  "patch": 51
+  "drop": 137,
+  "patch": 50
  },
  "candidates_decided": 160,
- "candidates_accepted": 46,
+ "candidates_accepted": 45,
  "reject_rate_by_generator": {
   "gemini": {
    "decided": 95,
@@ -84,19 +84,19 @@
   },
   "nemotron": {
    "decided": 160,
-   "dropped": 114,
-   "rate": 0.713
+   "dropped": 115,
+   "rate": 0.719
   }
  },
  "review_time_h": 0.0,
  "median_review_s": 0,
  "bucket_moves": {
-  "changed_2024_2025->changed_2024_2025": 199,
+  "changed_2024_2025->changed_2024_2025": 196,
   "changed_2024_2025->stable_pre2024": 162,
   "changed_2026->changed_2024_2025": 12,
   "changed_2026->changed_2026": 24,
   "changed_2026->stable_pre2024": 124,
   "stable_pre2024->stable_pre2024": 430
  },
- "log_sha256": "3d7cc4e57627c59a2a5517149ed86da22f24b5770aad9cad320d75a2238f53cd"
+ "log_sha256": "88d4df57a7c51dfca46253a919424645144e7aa0fefa51808cfa2d8fa7312201"
 }
