@@ -21,7 +21,8 @@ significantly.
 Intelligence) \ #strong[Event:] Online \ #strong[Team:] Apertool ---
 Niklas Wichter \ #strong[Demo:] project page
 https:/\/inkraft.apertool.ch; Hugging Face dataset with test items,
-model responses, judgements and metadata: link follows after the upload
+model responses, judgements and metadata:
+https:/\/huggingface.co/datasets/NWichter/inkraft
 
 #divider()
 

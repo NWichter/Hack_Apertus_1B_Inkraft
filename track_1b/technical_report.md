@@ -5,7 +5,7 @@
 **Track:** Apertus Readiness - Track 1B (Swiss Voices, Core Task Intelligence)  
 **Event:** Online  
 **Team:** Apertool — Niklas Wichter  
-**Demo:** project page https://inkraft.apertool.ch; Hugging Face dataset with test items, model responses, judgements and metadata: <!--when:hf:off<!~~n:hf_url~~>Hugging Face link follows on 16 October<!~~[[NIKLAS-PRÜFUNG: hf_url]]~~><!~~/n~~>/when:hf:off--><!--when:nohf-->link follows after the upload<!--/when:nohf-->
+**Demo:** project page https://inkraft.apertool.ch; Hugging Face dataset with test items, model responses, judgements and metadata: <!--when:hf--><!--n:hf_url-->https://huggingface.co/datasets/NWichter/inkraft<!--/n--><!--/when:hf--><!--when:nohf:offlink follows after the upload/when:nohf:off-->
 
 ---
 

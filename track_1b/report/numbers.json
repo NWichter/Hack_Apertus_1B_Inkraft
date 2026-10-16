@@ -208,6 +208,8 @@
  "sample_other": 20,
  "judge_sample": 211,
  "judge_share": "22",
+ "hf_url": "https://huggingface.co/datasets/NWichter/inkraft",
+ "hf_link": "<a href=\"https://huggingface.co/datasets/NWichter/inkraft\">dataset on Hugging Face</a>",
  "human_drops": 1,
  "human_checked": 35,
  "human_unsure": 0,
